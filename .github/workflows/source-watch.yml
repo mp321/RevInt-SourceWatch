@@ -1,0 +1,56 @@
+name: source-watch
+
+on:
+  schedule:
+    - cron: "0 14 * * 1"    # Mondays 14:00 UTC (6/7am Pacific). One-line change for other cadences.
+  workflow_dispatch:         # manual Run workflow button
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run checker
+        id: check
+        run: |
+          set +e
+          python source_check.py --update --dashboard docs/index.md
+          echo "needs_review=$?" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Commit baseline, reports, snapshots, dashboard
+        run: |
+          git config user.name "source-watch-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add reports snapshots docs || true
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "watch: $(date -u +%Y-%m-%d) run"
+            git push
+          fi
+
+      - name: Open alert issue if review needed
+        if: ${{ steps.check.outputs.needs_review == '1' && hashFiles('run_summary.md') != '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "Source update detected $(date -u +%Y-%m-%d)" \
+            --body-file run_summary.md \
+            --label "source-update" || \
+          gh issue create \
+            --title "Source update detected $(date -u +%Y-%m-%d)" \
+            --body-file run_summary.md
