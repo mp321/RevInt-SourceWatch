@@ -1,0 +1,231 @@
+# SF DPH Revenue Integrity - source watchlist (all programs, modular). v1.3
+# Toggle a whole program with `enabled:`; run a subset with --programs.
+# Entry types: pdf | html | binary | linkpage | bulletin_probe
+#   expect_shell: true = known client-rendered page; monitored for shell
+#                        changes but honestly labeled blind to content.
+#   manual: true       = cannot be checked automatically (robots.txt, bot
+#                        wall, or broken redirect); reported MANUAL_REVIEW
+#                        so a human checks it on a cadence.
+#   master_keys / master_note = which Master-sheet rows to re-verify on change.
+# v1.2 changes reflect the first live run (2026-07-02): leginfo blocked by
+# robots, eCFR bot wall, PPBI landing redirects to a legacy host, DHCS OFP
+# and Medi-Cal Rx CDL render client-side, TRI fee schedule re-versioned.
+
+programs:
+
+  fpact:
+    enabled: true
+    entries:
+      - id: fpact_ppbi_landing
+        type: linkpage
+        manual: true
+        url: https://familypact.org/providers/policies-procedures-and-billing-instructions/
+        manual_note: Redirects off-site to the legacy files.medi-cal.ca.gov
+          manual-query page, which timed out on 2026-07-02; current PPBI
+          sections live on the client-rendered mcweb portal. Detection is
+          MCSS + fpact_news_archive; open the PPBI manually when flagged.
+        master_note: ppbi_source_section rows for any changed section
+
+      - id: fpact_news_archive
+        type: linkpage
+        url: https://familypact.org/news-and-updates-archive/
+        link_pattern: 'href="(https://familypact\.org/(?!wp-json|feed|comments)[^"#?]+(?:/|\.pdf))"'
+        note: Program news archive; new post or PDF links = policy updates to
+          read. Pattern excludes feed/json noise.
+        master_note: triage per announcement
+
+      - id: fpact_superbill_current
+        type: pdf
+        url: https://familypact.org/wp-content/uploads/2026/03/Superbill-Updated-1.2026_2.27.26_508.pdf
+        note: Versioned URL - a revision ships under a NEW filename; the
+          news archive linkpage catches the new link.
+        master_note: all rows with on_superbill = yes
+
+      - id: fpact_enrollment
+        type: html
+        url: https://familypact.org/providers/enrollment/
+        master_note: provider-enrollment / site-certifier rows and denials
+
+      - id: fpact_dhcs_telephonic_guidance
+        type: pdf
+        url: https://www.dhcs.ca.gov/wp-content/uploads/2025/10/Guidance-Telephonic-Communications.pdf
+        master_keys: ["G2010", "G2012"]
+        note: Telephonic/virtual communication benefit guidance (Oct 2025).
+
+      - id: fpact_ofp_page
+        type: html
+        expect_shell: true
+        url: https://www.dhcs.ca.gov/services/ofp/Pages/default.aspx
+        note: Rendered client-side (observed 2026-07-02) - blind to content;
+          familypact.org and MCSS carry OFP program news.
+        master_note: program-level changes; triage per announcement
+
+      - id: fpact_wic_24005
+        type: html
+        manual: true
+        url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=24005.&lawCode=WIC
+        manual_note: leginfo robots.txt disallows automated fetch - review
+          quarterly by hand. Statute changes arrive via bills, so MCSS and
+          program news normally give advance notice.
+        master_note: eligibility / payer-of-last-resort denial rows
+
+      - id: fpact_manual_page_mcweb
+        type: html
+        url: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact
+        expect_shell: true
+        note: Angular shell - plain GET returns no content (verified
+          2026-07-02). Kept to detect shell changes; NOT a content detector.
+          MCSS is.
+
+      - id: fpact_manual_docs
+        type: manual_list
+        url: ""
+        asset_base: "https://mcweb.apps.prd.cammis.medi-cal.ca.gov"
+        note: Per-document monitor for the entire Family PACT manual list
+          (the page that shows a Revision Date per section). Paste the JSON
+          endpoint the page loads its list from (README, one-time DevTools
+          step). Every PDF found is then watched individually - content
+          hash, portal Revision Date, new docs auto-discovered, removals
+          flagged - and CHANGED sections get a before/after text diff in
+          reports/diffs/. Until the url is set, this reports CONFIG_TODO
+          and MCSS remains the detector.
+        master_note: ppbi_source_section rows for any changed section
+
+      - id: fpact_bulletin_probe
+        type: bulletin_probe
+        url_template: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/bulletin?community=family-pact&issueNumber={issue}
+        seed_issue: 223
+        probe_count: 3
+        note: Best-effort probe; portal is client-rendered so expect
+          PROBE_INCONCLUSIVE - MCSS email is the reliable detector.
+
+  medi_cal_ffs:
+    enabled: true
+    entries:
+      - id: ffs_tri_page
+        type: linkpage
+        url: https://www.dhcs.ca.gov/medi-cal-targeted-provider-rate-increases-and-investments/
+        link_pattern: 'href="([^"]+\.(?:pdf|xlsx)[^"]*)"'
+        note: TRI landing; link-set diff catches re-versioned fee schedule
+          filenames and new APL redlines.
+        master_note: reimbursement_basis rows citing TRI / SB 94
+
+      - id: ffs_tri_fee_schedule
+        type: binary
+        url: https://www.dhcs.ca.gov/wp-content/uploads/2025/10/CY-2024-TRI-Fee-Schedule-Feb.xlsx
+        note: Current file linked from the TRI page (first run showed the
+          older CY-1062024.xlsx registry link was superseded). Versioned
+          filename - replacement appears via ffs_tri_page.
+
+      - id: ffs_sb94_fp_fee_schedule
+        type: binary
+        url: https://www.dhcs.ca.gov/wp-content/uploads/2025/10/SB94-Family-Planning-Services-Fee-Schedule.xlsx
+        note: SB 94 family-planning augmented fee schedule (supersedes TRI
+          for FP codes with Z30.x). Discovered on the TRI page, first run.
+        master_note: FPACT rows priced on the SB 94 schedule
+
+      - id: ffs_supplement_39
+        type: pdf
+        url: https://www.dhcs.ca.gov/formsandpubs/laws/Documents/Supplement-39-to-Attachment-419-B.pdf
+        note: SPA 23-0035 TRI methodology.
+
+      - id: ffs_wic_14105_201
+        type: html
+        manual: true
+        url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14105.201.&lawCode=WIC
+        manual_note: leginfo robots.txt disallows automated fetch - review
+          quarterly by hand.
+
+      - id: ffs_rates_page_mcweb
+        type: html
+        url: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/rates?tab=rates
+        expect_shell: true
+        note: Client-rendered; rate lookups must be done interactively.
+
+  managed_medi_cal:
+    enabled: true
+    entries:
+      - id: mcp_apl_index
+        type: linkpage
+        url: https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx
+        link_pattern: 'href="([^"]+\.pdf[^"]*)"'
+        note: First run matched zero links with the APL-specific pattern -
+          broadened to all PDFs; text hash still covers page changes. If the
+          link list stays empty, capture the real APL listing URL from the
+          browser and repoint.
+
+      - id: mcp_boilerplate_contract
+        type: pdf
+        url: https://www.dhcs.ca.gov/hi/wp-content/uploads/2025/10/2024-Managed-Care-Boilerplate-Contract.pdf
+
+      - id: mcp_tri_faq
+        type: pdf
+        url: https://www.dhcs.ca.gov/services/Documents/DirectedPymts/CY-2024-TRI-FAQ-20250312.pdf
+
+      - id: mcp_sfhp_providers
+        type: html
+        url: https://www.sfhp.org/providers/
+        note: SF Local Initiative plan; plan-specific PA/modifier/filing news.
+
+  fqhc:
+    enabled: true
+    entries:
+      - id: fqhc_wic_14132_100
+        type: html
+        manual: true
+        url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14132.100.&lawCode=WIC
+        manual_note: leginfo robots.txt disallows automated fetch. ACTION -
+          AB 116 amendment took effect 2026-07-01; manually verify the
+          amended provider list and update the fqhc-billing reference.
+        master_note: PPS-billable provider list in fqhc-billing reference
+
+      - id: fqhc_chw_faq
+        type: pdf
+        url: https://www.dhcs.ca.gov/services/medi-cal/Documents/CHW-FAQs-FQHC-RHC-IHS.pdf
+
+      - id: fqhc_cms_center
+        type: html
+        url: https://www.cms.gov/medicare/payment/prospective-payment-systems/federally-qualified-health-centers-fqhc-center
+        note: G2025 rate, care-management code set, telehealth expiries.
+
+      - id: fqhc_ecfr_405_subpart_x
+        type: html
+        manual: true
+        url: https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-405/subpart-X
+        manual_note: eCFR bot wall redirects automated fetches off-host.
+          eCFR publishes an official public API for exactly this use (see
+          ecfr.gov developer documentation) - switching this entry to the
+          API endpoint for Title 42 Part 405 is the planned fix; until then
+          review by hand when CMS guidance changes.
+
+      - id: fqhc_dhcs_3097_page
+        type: html
+        url: https://www.dhcs.ca.gov/forms-laws-publications/forms/cost-report-forms-and-documents/
+        note: Wrap reconciliation forms and due-date extensions.
+
+      - id: fqhc_manual_page_mcweb
+        type: html
+        url: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=rural
+        expect_shell: true
+
+  medi_cal_rx:
+    enabled: true
+    entries:
+      - id: rx_cdl_page
+        type: html
+        expect_shell: true
+        url: https://medi-calrx.dhcs.ca.gov/home/cdl/
+        note: Client-rendered (observed 2026-07-02) - blind to content. Use
+          the Medi-Cal Rx subscription service on the same site as the
+          detector; if a direct CDL download URL is captured from the
+          browser, add it here as a binary entry.
+
+  ncci:
+    enabled: true
+    entries:
+      - id: ncci_medicaid_files
+        type: linkpage
+        url: https://www.cms.gov/medicare/coding-billing/ncci-medicaid/medicaid-ncci-edit-files
+        link_pattern: 'href="([^"]+\.(?:zip|xlsx)[^"]*)"'
+        note: Quarterly PTP/MUE file drops appear as new links (first run
+          captured the 2026 Q3 set effective 07/01/2026).

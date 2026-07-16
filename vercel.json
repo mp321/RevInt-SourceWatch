@@ -1,0 +1,13 @@
+{
+  "crons": [
+    { "path": "/api/check", "schedule": "0 15 1 * *" }
+  ],
+  "functions": {
+    "api/check.py": {
+      "maxDuration": 300,
+      "includeFiles": "{source_check.py,watchlist.yaml}"
+    },
+    "api/subscribe.py": { "maxDuration": 10 },
+    "api/report.py": { "maxDuration": 10 }
+  }
+}
