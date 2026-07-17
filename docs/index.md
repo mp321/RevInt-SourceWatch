@@ -1,70 +1,589 @@
 # Revenue Integrity Source Watch
 
 Automated monitor for the official billing sources behind the
-Revenue Integrity registry. Alert tool only, not a source of truth.
-Verify every flagged item against the live official source. No PHI.
+Revenue Integrity registry. **Alert tool only, not a source of
+record.** Verify every flagged item against the live official source
+before acting on it. No PHI.
 
-Last run: 2026-07-16T22:04:20+00:00  
-Needs review: 4
+**Last run:** 2026-07-16T22:04:20+00:00 - **Needs review: 4**
 
-If Last run is more than 35 days old, the checker itself needs attention.
+If the last run is more than 35 days old, the checker itself needs
+attention: check the [Actions tab](https://github.com/mp321/RevInt-SourceWatch/actions).
 
-## fpact
+Where to click: [change log (CSV)](https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/changes_log.csv) · [reports folder](https://github.com/mp321/RevInt-SourceWatch/tree/main/reports) (diff reports land in `reports/diffs/`) · [latest raw report (JSON)](https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/latest_report.json) · [watchlist definition](https://github.com/mp321/RevInt-SourceWatch/blob/main/watchlist.yaml)
 
-| Source | Verdict | Revision / Page updated | Checked | Diff |
-|---|---|---|---|---|
-| fpact_ppbi_landing [link](https://familypact.org/providers/policies-procedures-and-billing-instructions/) | MANUAL_REVIEW |  |  |  |
-| fpact_news_archive [link](https://familypact.org/news-and-updates-archive/) | unchanged |  | 2026-07-16 |  |
-| fpact_superbill_current [link](https://familypact.org/wp-content/uploads/2026/03/Superbill-Updated-1.2026_2.27.26_508.pdf) | unchanged |  | 2026-07-16 |  |
-| fpact_enrollment [link](https://familypact.org/providers/enrollment/) | unchanged |  | 2026-07-16 |  |
-| fpact_dhcs_telephonic_guidance [link](https://www.dhcs.ca.gov/wp-content/uploads/2025/10/Guidance-Telephonic-Communications.pdf) | unchanged |  | 2026-07-16 |  |
-| fpact_ofp_page [link](https://www.dhcs.ca.gov/services/ofp/Pages/default.aspx) | UNREACHABLE |  | 2026-07-03 |  |
-| fpact_wic_24005 [link](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=24005.&lawCode=WIC) | MANUAL_REVIEW |  |  |  |
-| fpact_manual_page_mcweb [link](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact) | unchanged |  | 2026-07-16 |  |
-| fpact_manual_docs  | CONFIG_TODO |  | 2026-07-16 |  |
-| fpact_bulletin_probe [link](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/bulletin?community=family-pact&issueNumber={issue}) | PROBE_INCONCLUSIVE |  | 2026-07-16 |  |
+## Needs review since last run (4)
 
-## medi_cal_ffs
+Work this list top to bottom; every item links straight to the source and, when text changed, to the exact diff.
 
-| Source | Verdict | Revision / Page updated | Checked | Diff |
-|---|---|---|---|---|
-| ffs_tri_page [link](https://www.dhcs.ca.gov/medi-cal-targeted-provider-rate-increases-and-investments/) | unchanged |  | 2026-07-16 |  |
-| ffs_tri_fee_schedule [link](https://www.dhcs.ca.gov/wp-content/uploads/2025/10/CY-2024-TRI-Fee-Schedule-Feb.xlsx) | unchanged |  | 2026-07-16 |  |
-| ffs_sb94_fp_fee_schedule [link](https://www.dhcs.ca.gov/wp-content/uploads/2025/10/SB94-Family-Planning-Services-Fee-Schedule.xlsx) | unchanged |  | 2026-07-16 |  |
-| ffs_supplement_39 [link](https://www.dhcs.ca.gov/formsandpubs/laws/Documents/Supplement-39-to-Attachment-419-B.pdf) | unchanged |  | 2026-07-16 |  |
-| ffs_wic_14105_201 [link](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14105.201.&lawCode=WIC) | MANUAL_REVIEW |  |  |  |
-| ffs_rates_page_mcweb [link](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/rates?tab=rates) | unchanged |  | 2026-07-16 |  |
+- [REVIEW] **CHANGED** - [fqhc_cms_center](https://www.cms.gov/medicare/payment/prospective-payment-systems/federally-qualified-health-centers-fqhc-center) _(FQHC)_
+  - **What happened:** content text hash differs
+  - **What to do:** Open the diff to see the exact lines, re-read that part of the live source, then verify the listed Master rows (superbill, tipsheet, Epic review as applicable).
+  - **Exact change:** no diff was written this run (no prior text snapshot to compare against) - compare the live source with your last known state.
+  - **Master rows to verify:** none mapped in the watchlist; triage by judgment.
+- [REVIEW] **CHANGED** - [mcp_apl_index](https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx) _(Managed Medi-Cal)_
+  - **What happened:** content text hash differs
+  - **What to do:** Open the diff to see the exact lines, re-read that part of the live source, then verify the listed Master rows (superbill, tipsheet, Epic review as applicable).
+  - **Exact change:** no diff was written this run (no prior text snapshot to compare against) - compare the live source with your last known state.
+  - **Master rows to verify:** none mapped in the watchlist; triage by judgment.
+- [REVIEW] **CHANGED** - [mcp_sfhp_providers](https://www.sfhp.org/providers/) _(Managed Medi-Cal)_
+  - **What happened:** content text hash differs
+  - **What to do:** Open the diff to see the exact lines, re-read that part of the live source, then verify the listed Master rows (superbill, tipsheet, Epic review as applicable).
+  - **Exact change:** no diff was written this run (no prior text snapshot to compare against) - compare the live source with your last known state.
+  - **Master rows to verify:** none mapped in the watchlist; triage by judgment.
+- [REVIEW] **CHANGED** - [ncci_medicaid_files](https://www.cms.gov/medicare/coding-billing/ncci-medicaid/medicaid-ncci-edit-files) _(NCCI)_
+  - **What happened:** content text hash differs
+  - **What to do:** Open the diff to see the exact lines, re-read that part of the live source, then verify the listed Master rows (superbill, tipsheet, Epic review as applicable).
+  - **Exact change:** no diff was written this run (no prior text snapshot to compare against) - compare the live source with your last known state.
+  - **Master rows to verify:** none mapped in the watchlist; triage by judgment.
 
-## managed_medi_cal
+### Could not be checked automatically (2)
 
-| Source | Verdict | Revision / Page updated | Checked | Diff |
-|---|---|---|---|---|
-| mcp_apl_index [link](https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx) | CHANGED |  | 2026-07-16 |  |
-| mcp_boilerplate_contract [link](https://www.dhcs.ca.gov/hi/wp-content/uploads/2025/10/2024-Managed-Care-Boilerplate-Contract.pdf) | unchanged |  | 2026-07-16 |  |
-| mcp_tri_faq [link](https://www.dhcs.ca.gov/services/Documents/DirectedPymts/CY-2024-TRI-FAQ-20250312.pdf) | unchanged |  | 2026-07-16 |  |
-| mcp_sfhp_providers [link](https://www.sfhp.org/providers/) | CHANGED |  | 2026-07-16 |  |
+Monitoring gaps, not confirmed source changes - these sources are effectively unwatched until fixed. (Permanently manual or blind entries - MANUAL_REVIEW, BLIND_SHELL, PROBE_INCONCLUSIVE - are by design and listed in their program sections with the reason in the fine print.)
 
-## fqhc
+- [GAP] **CONFIG_TODO** - `fpact_manual_docs` _(Family PACT)_
+  - **Why:** manual_list url is empty - paste the portal JSON endpoint (README: one-time DevTools step)
+  - **What to do:** Finish the entry in watchlist.yaml; the Why line says what is missing.
+- [GAP] **UNREACHABLE** - [fpact_ofp_page](https://www.dhcs.ca.gov/services/ofp/Pages/default.aspx) _(Family PACT)_
+  - **Why:** The server answered HTTP 404 - the page is missing or has moved.
+  - **What to do:** If it persists more than one run, open the URL in a browser; the page may have moved. Then fix watchlist.yaml. Until then this source is unmonitored.
 
-| Source | Verdict | Revision / Page updated | Checked | Diff |
-|---|---|---|---|---|
-| fqhc_wic_14132_100 [link](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14132.100.&lawCode=WIC) | MANUAL_REVIEW |  |  |  |
-| fqhc_chw_faq [link](https://www.dhcs.ca.gov/services/medi-cal/Documents/CHW-FAQs-FQHC-RHC-IHS.pdf) | unchanged |  | 2026-07-16 |  |
-| fqhc_cms_center [link](https://www.cms.gov/medicare/payment/prospective-payment-systems/federally-qualified-health-centers-fqhc-center) | CHANGED |  | 2026-07-16 |  |
-| fqhc_ecfr_405_subpart_x [link](https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-405/subpart-X) | MANUAL_REVIEW |  |  |  |
-| fqhc_dhcs_3097_page [link](https://www.dhcs.ca.gov/forms-laws-publications/forms/cost-report-forms-and-documents/) | unchanged |  | 2026-07-16 |  |
-| fqhc_manual_page_mcweb [link](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=rural) | unchanged |  | 2026-07-16 |  |
+## Verdict legend
 
-## medi_cal_rx
+| Marker | Verdict | What it means | What you should do |
+|---|---|---|---|
+| [REVIEW] | `CHANGED` | The extracted text of this source differs from the last run. | Open the diff to see the exact lines, re-read that part of the live source, then verify the listed Master rows (superbill, tipsheet, Epic review as applicable). |
+| [REVIEW] | `NEW` | First run for this source; its current state became the baseline. | Skim the source once to confirm it is the right document. |
+| [REVIEW] | `DATE_CHANGED` | A revision or 'page updated' stamp moved but the content text did not. | Open the source and confirm nothing substantive changed; usually a republish. |
+| [REVIEW] | `LINKS_CHANGED` | The set of files this page links to changed (often a re-versioned filename, e.g. a new Superbill). | Open the page, find the added or removed file named in Why, and if a watched file was re-versioned, point watchlist.yaml at the new URL. |
+| [REVIEW] | `NEW_ISSUE` | A probed bulletin issue number returned real content. | Read the new bulletin and triage anything affecting the Master sheet. |
+| [REVIEW] | `REMOVED` | A document disappeared from the portal's list. | Check the portal: retired, renamed, or moved? Update the Master sheet reference if the section is gone. |
+| [REVIEW] | `URL_CHANGED_IN_CONFIG` | The URL in watchlist.yaml differs from the URL the baseline was built from. | Confirm the new URL is intentional; the next run with --update re-baselines it. |
+| [REVIEW] | `CHANGED_METADATA_ONLY` | The portal says this section was revised (new revision date or file id) but the PDF itself could not be downloaded, so there is no text diff. | Open the section on the portal, re-read it, and verify the listed Master rows. |
+| [REVIEW] | `LIST_TRUNCATED` | The portal returned fewer documents than its own count claims. | Open the portal list and compare; some sections may be silently unmonitored until this clears. |
+| [GAP] | `UNREACHABLE` | The fetch failed this run (HTTP error, network error, robots.txt, or an off-site redirect) - the Why line says which. | If it persists more than one run, open the URL in a browser; the page may have moved. Then fix watchlist.yaml. Until then this source is unmonitored. |
+| [GAP] | `MANUAL_REVIEW` | This source cannot be fetched automatically, by design (reason in the fine print). | Open the link by hand on the cadence given in the fine print; MCSS email is the push detector. |
+| [GAP] | `BLIND_SHELL` | The page builds its content with JavaScript, so the checker sees only an empty app shell and cannot detect content changes. | Do not rely on this row for detection; MCSS email covers it. Open the page yourself when in doubt. |
+| [GAP] | `PROBE_INCONCLUSIVE` | The bulletin probe could not confirm or rule out a new issue (client-rendered portal). | Nothing to do; MCSS email is the reliable detector for bulletins. |
+| [GAP] | `CONFIG_TODO` | The watchlist entry is incomplete, so nothing is monitored for it yet. | Finish the entry in watchlist.yaml; the Why line says what is missing. |
+| [OK] | `unchanged` | No change detected. | Nothing to do. |
+| [OK] | `metadata_only_unchanged` | The PDF is not directly downloadable, but the portal's revision metadata is unchanged. | Nothing to do. |
 
-| Source | Verdict | Revision / Page updated | Checked | Diff |
-|---|---|---|---|---|
-| rx_cdl_page [link](https://medi-calrx.dhcs.ca.gov/home/cdl/) | unchanged |  | 2026-07-16 |  |
+## All sources by program
 
-## ncci
+Every watched source, including the quiet ones. Open the fine print under a row for exactly what is checked and its caveats.
 
-| Source | Verdict | Revision / Page updated | Checked | Diff |
-|---|---|---|---|---|
-| ncci_medicaid_files [link](https://www.cms.gov/medicare/coding-billing/ncci-medicaid/medicaid-ncci-edit-files) | CHANGED |  | 2026-07-16 |  |
+### Family PACT (`fpact`)
 
-Change log: reports/changes_log.csv in the repository.
+#### [GAP] fpact_bulletin_probe - PROBE_INCONCLUSIVE
+
+[Open the source](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/bulletin?community=family-pact&issueNumber={issue}) - checked 2026-07-16
+
+Why: #224:shell(0ch); #225:shell(0ch); #226:shell(0ch) - portal is client-rendered; MCSS email is the reliable detector
+
+<details>
+<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<ul>
+<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/bulletin?community=family-pact&amp;issueNumber={issue}">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/bulletin?community=family-pact&amp;issueNumber={issue}</a> (template; {issue} is the probed issue number)</li>
+<li><b>How:</b> The checker requests the next few issue numbers of the bulletin URL to see whether a new issue returns real content. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
+<li><b>This run:</b> PROBE_INCONCLUSIVE - #224:shell(0ch); #225:shell(0ch); #226:shell(0ch) - portal is client-rendered; MCSS email is the reliable detector</li>
+<li><b>Last checked:</b> 2026-07-16</li>
+<li><b>Last recorded change:</b> none since the change log began</li>
+<li><b>Watchlist note:</b> Best-effort probe; portal is client-rendered so expect PROBE_INCONCLUSIVE - MCSS email is the reliable detector.</li>
+<li><b>Master rows to verify on change:</b> none mapped in the watchlist; triage by judgment.</li>
+</ul>
+</details>
+
+#### [OK] fpact_dhcs_telephonic_guidance - unchanged
+
+[Open the source](https://www.dhcs.ca.gov/wp-content/uploads/2025/10/Guidance-Telephonic-Communications.pdf) - checked 2026-07-16
+
+<details>
+<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<ul>
+<li><b>URL checked:</b> <a href="https://www.dhcs.ca.gov/wp-content/uploads/2025/10/Guidance-Telephonic-Communications.pdf">https://www.dhcs.ca.gov/wp-content/uploads/2025/10/Guidance-Telephonic-Communications.pdf</a></li>
+<li><b>How:</b> The PDF is downloaded (conditional GET - the server may answer '304 not modified' and skip the download), its text is extracted and hashed, and the hash is compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
+<li><b>This run:</b> unchanged - 304 not modified</li>
+<li><b>Last checked:</b> 2026-07-16</li>
+<li><b>Last recorded change:</b> none since the change log began</li>
+<li><b>Watchlist note:</b> Telephonic/virtual communication benefit guidance (Oct 2025).</li>
+<li><b>Master rows to verify on change:</b> <code>G2010;G2012</code></li>
+</ul>
+</details>
+
+#### [OK] fpact_enrollment - unchanged
+
+[Open the source](https://familypact.org/providers/enrollment/) - checked 2026-07-16
+
+<details>
+<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<ul>
+<li><b>URL checked:</b> <a href="https://familypact.org/providers/enrollment/">https://familypact.org/providers/enrollment/</a></li>
+<li><b>How:</b> The page is downloaded (conditional GET), scripts and styles are stripped, and the visible text is hashed and compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
+<li><b>This run:</b> unchanged</li>
+<li><b>Last checked:</b> 2026-07-16</li>
+<li><b>Last recorded change:</b> none since the change log began</li>
+<li><b>Master rows to verify on change:</b> provider-enrollment / site-certifier rows and denials</li>
+</ul>
+</details>
+
+#### [GAP] fpact_manual_docs - CONFIG_TODO
+
+checked 2026-07-16
+
+Why: manual_list url is empty - paste the portal JSON endpoint (README: one-time DevTools step)
+
+<details>
+<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<ul>
+<li><b>URL checked:</b> none configured yet.</li>
+<li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
+<li><b>This run:</b> CONFIG_TODO - manual_list url is empty - paste the portal JSON endpoint (README: one-time DevTools step)</li>
+<li><b>Last checked:</b> 2026-07-16</li>
+<li><b>Last recorded change:</b> none since the change log began</li>
+<li><b>Watchlist note:</b> Per-document monitor for the entire Family PACT manual list (the page that shows a Revision Date per section). Paste the JSON endpoint the page loads its list from (README, one-time DevTools step). Every PDF found is then watched individually - content hash, portal Revision Date, new docs auto-discovered, removals flagged - and CHANGED sections get a before/after text diff in reports/diffs/. Until the url is set, this reports CONFIG_TODO and MCSS remains the detector.</li>
+<li><b>Master rows to verify on change:</b> ppbi_source_section rows for any changed section</li>
+</ul>
+</details>
+
+#### [OK] fpact_manual_page_mcweb - unchanged
+
+[Open the source](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact) - checked 2026-07-16
+
+<details>
+<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<ul>
+<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact</a></li>
+<li><b>How:</b> The page is downloaded (conditional GET), scripts and styles are stripped, and the visible text is hashed and compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
+<li><b>This run:</b> unchanged - 304 not modified</li>
+<li><b>Blind spot:</b> This page is client-rendered - the checker sees only the app shell and cannot detect content changes. Detection relies on the MCSS email subscription; open the page yourself when in doubt: <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact</a></li>
+<li><b>Last checked:</b> 2026-07-16</li>
+<li><b>Last recorded change:</b> none since the change log began</li>
+<li><b>Watchlist note:</b> Angular shell - plain GET returns no content (verified 2026-07-02). Kept to detect shell changes; NOT a content detector. MCSS is.</li>
+<li><b>Master rows to verify on change:</b> none mapped in the watchlist; triage by judgment.</li>
+</ul>
+</details>
+
+#### [OK] fpact_news_archive - unchanged
+
+[Open the source](https://familypact.org/news-and-updates-archive/) - checked 2026-07-16
+
+<details>
+<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<ul>
+<li><b>URL checked:</b> <a href="https://familypact.org/news-and-updates-archive/">https://familypact.org/news-and-updates-archive/</a></li>
+<li><b>How:</b> The page's visible text is hashed AND every file link matching the entry's pattern is collected; a new or removed link is flagged even when the page text is unchanged. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
+<li><b>This run:</b> unchanged</li>
+<li><b>Last checked:</b> 2026-07-16</li>
+<li><b>Last recorded change:</b> none since the change log began</li>
+<li><b>Watchlist note:</b> Program news archive; new post or PDF links = policy updates to read. Pattern excludes feed/json noise.</li>
+<li><b>Master rows to verify on change:</b> triage per announcement</li>
+</ul>
+</details>
+
+#### [GAP] fpact_ofp_page - UNREACHABLE
+
+[Open the source](https://www.dhcs.ca.gov/services/ofp/Pages/default.aspx) - checked 2026-07-03
+
+Why: The server answered HTTP 404 - the page is missing or has moved.
+
+<details>
+<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<ul>
+<li><b>URL checked:</b> <a href="https://www.dhcs.ca.gov/services/ofp/Pages/default.aspx">https://www.dhcs.ca.gov/services/ofp/Pages/default.aspx</a></li>
+<li><b>How:</b> The page is downloaded (conditional GET), scripts and styles are stripped, and the visible text is hashed and compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
+<li><b>This run:</b> UNREACHABLE - http 404</li>
+<li><b>Last checked:</b> 2026-07-03</li>
+<li><b>Last recorded change:</b> none since the change log began</li>
+<li><b>Watchlist note:</b> Rendered client-side (observed 2026-07-02) - blind to content; familypact.org and MCSS carry OFP program news.</li>
+<li><b>Master rows to verify on change:</b> program-level changes; triage per announcement</li>
+</ul>
+</details>
+
+#### [GAP] fpact_ppbi_landing - MANUAL_REVIEW
+
+[Open the source](https://familypact.org/providers/policies-procedures-and-billing-instructions/) - not fetched automatically
+
+Why: Redirects off-site to the legacy files.medi-cal.ca.gov manual-query page, which timed out on 2026-07-02; current PPBI sections live on the client-rendered mcweb portal. Detection is MCSS + fpact_news_archive; open the PPBI manually when flagged.
+
+<details>
+<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<ul>
+<li><b>URL checked:</b> <a href="https://familypact.org/providers/policies-procedures-and-billing-instructions/">https://familypact.org/providers/policies-procedures-and-billing-instructions/</a></li>
+<li><b>How:</b> Not fetched automatically. The weekly run lists it every time as a standing reminder.</li>
+<li><b>Why it cannot be auto-checked:</b> Redirects off-site to the legacy files.medi-cal.ca.gov manual-query page, which timed out on 2026-07-02; current PPBI sections live on the client-rendered mcweb portal. Detection is MCSS + fpact_news_archive; open the PPBI manually when flagged.</li>
+<li><b>What to do instead:</b> Open it yourself: <a href="https://familypact.org/providers/policies-procedures-and-billing-instructions/">https://familypact.org/providers/policies-procedures-and-billing-instructions/</a>. Follow the cadence in the reason above; if none is stated, re-read it when program news suggests a change.</li>
+<li><b>Last checked:</b> never fetched automatically</li>
+<li><b>Last recorded change:</b> none since the change log began</li>
+<li><b>Master rows to verify on change:</b> ppbi_source_section rows for any changed section</li>
+</ul>
+</details>
+
+#### [OK] fpact_superbill_current - unchanged
+
+[Open the source](https://familypact.org/wp-content/uploads/2026/03/Superbill-Updated-1.2026_2.27.26_508.pdf) - checked 2026-07-16
+
+<details>
+<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<ul>
+<li><b>URL checked:</b> <a href="https://familypact.org/wp-content/uploads/2026/03/Superbill-Updated-1.2026_2.27.26_508.pdf">https://familypact.org/wp-content/uploads/2026/03/Superbill-Updated-1.2026_2.27.26_508.pdf</a></li>
+<li><b>How:</b> The PDF is downloaded (conditional GET - the server may answer '304 not modified' and skip the download), its text is extracted and hashed, and the hash is compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
+<li><b>This run:</b> unchanged</li>
+<li><b>Last checked:</b> 2026-07-16</li>
+<li><b>Last recorded change:</b> none since the change log began</li>
+<li><b>Watchlist note:</b> Versioned URL - a revision ships under a NEW filename; the news archive linkpage catches the new link.</li>
+<li><b>Master rows to verify on change:</b> all rows with on_superbill = yes</li>
+</ul>
+</details>
+
+#### [GAP] fpact_wic_24005 - MANUAL_REVIEW
+
+[Open the source](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=24005.&lawCode=WIC) - not fetched automatically
+
+Why: leginfo robots.txt disallows automated fetch - review quarterly by hand. Statute changes arrive via bills, so MCSS and program news normally give advance notice.
+
+<details>
+<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<ul>
+<li><b>URL checked:</b> <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=24005.&amp;lawCode=WIC">https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=24005.&amp;lawCode=WIC</a></li>
+<li><b>How:</b> Not fetched automatically. The weekly run lists it every time as a standing reminder.</li>
+<li><b>Why it cannot be auto-checked:</b> leginfo robots.txt disallows automated fetch - review quarterly by hand. Statute changes arrive via bills, so MCSS and program news normally give advance notice.</li>
+<li><b>What to do instead:</b> Open it yourself: <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=24005.&amp;lawCode=WIC">https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=24005.&amp;lawCode=WIC</a>. Follow the cadence in the reason above; if none is stated, re-read it when program news suggests a change.</li>
+<li><b>Last checked:</b> never fetched automatically</li>
+<li><b>Last recorded change:</b> none since the change log began</li>
+<li><b>Master rows to verify on change:</b> eligibility / payer-of-last-resort denial rows</li>
+</ul>
+</details>
+
+### FQHC (`fqhc`)
+
+#### [OK] fqhc_chw_faq - unchanged
+
+[Open the source](https://www.dhcs.ca.gov/services/medi-cal/Documents/CHW-FAQs-FQHC-RHC-IHS.pdf) - checked 2026-07-16
+
+<details>
+<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<ul>
+<li><b>URL checked:</b> <a href="https://www.dhcs.ca.gov/services/medi-cal/Documents/CHW-FAQs-FQHC-RHC-IHS.pdf">https://www.dhcs.ca.gov/services/medi-cal/Documents/CHW-FAQs-FQHC-RHC-IHS.pdf</a></li>
+<li><b>How:</b> The PDF is downloaded (conditional GET - the server may answer '304 not modified' and skip the download), its text is extracted and hashed, and the hash is compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
+<li><b>This run:</b> unchanged - 304 not modified</li>
+<li><b>Last checked:</b> 2026-07-16</li>
+<li><b>Last recorded change:</b> none since the change log began</li>
+<li><b>Master rows to verify on change:</b> none mapped in the watchlist; triage by judgment.</li>
+</ul>
+</details>
+
+#### [REVIEW] fqhc_cms_center - CHANGED
+
+[Open the source](https://www.cms.gov/medicare/payment/prospective-payment-systems/federally-qualified-health-centers-fqhc-center) - checked 2026-07-16
+
+Why: content text hash differs
+
+<details>
+<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<ul>
+<li><b>URL checked:</b> <a href="https://www.cms.gov/medicare/payment/prospective-payment-systems/federally-qualified-health-centers-fqhc-center">https://www.cms.gov/medicare/payment/prospective-payment-systems/federally-qualified-health-centers-fqhc-center</a></li>
+<li><b>How:</b> The page is downloaded (conditional GET), scripts and styles are stripped, and the visible text is hashed and compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
+<li><b>This run:</b> CHANGED - content text hash differs</li>
+<li><b>Last checked:</b> 2026-07-16</li>
+<li><b>Last recorded change:</b> 2026-07-16 (CHANGED)</li>
+<li><b>Watchlist note:</b> G2025 rate, care-management code set, telehealth expiries.</li>
+<li><b>Master rows to verify on change:</b> none mapped in the watchlist; triage by judgment.</li>
+</ul>
+</details>
+
+#### [OK] fqhc_dhcs_3097_page - unchanged
+
+[Open the source](https://www.dhcs.ca.gov/forms-laws-publications/forms/cost-report-forms-and-documents/) - checked 2026-07-16
+
+<details>
+<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<ul>
+<li><b>URL checked:</b> <a href="https://www.dhcs.ca.gov/forms-laws-publications/forms/cost-report-forms-and-documents/">https://www.dhcs.ca.gov/forms-laws-publications/forms/cost-report-forms-and-documents/</a></li>
+<li><b>How:</b> The page is downloaded (conditional GET), scripts and styles are stripped, and the visible text is hashed and compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
+<li><b>This run:</b> unchanged</li>
+<li><b>Last checked:</b> 2026-07-16</li>
+<li><b>Last recorded change:</b> none since the change log began</li>
+<li><b>Watchlist note:</b> Wrap reconciliation forms and due-date extensions.</li>
+<li><b>Master rows to verify on change:</b> none mapped in the watchlist; triage by judgment.</li>
+</ul>
+</details>
+
+#### [GAP] fqhc_ecfr_405_subpart_x - MANUAL_REVIEW
+
+[Open the source](https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-405/subpart-X) - not fetched automatically
+
+Why: eCFR bot wall redirects automated fetches off-host. eCFR publishes an official public API for exactly this use (see ecfr.gov developer documentation) - switching this entry to the API endpoint for Title 42 Part 405 is the planned fix; until then review by hand when CMS guidance changes.
+
+<details>
+<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<ul>
+<li><b>URL checked:</b> <a href="https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-405/subpart-X">https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-405/subpart-X</a></li>
+<li><b>How:</b> Not fetched automatically. The weekly run lists it every time as a standing reminder.</li>
+<li><b>Why it cannot be auto-checked:</b> eCFR bot wall redirects automated fetches off-host. eCFR publishes an official public API for exactly this use (see ecfr.gov developer documentation) - switching this entry to the API endpoint for Title 42 Part 405 is the planned fix; until then review by hand when CMS guidance changes.</li>
+<li><b>What to do instead:</b> Open it yourself: <a href="https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-405/subpart-X">https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-405/subpart-X</a>. Follow the cadence in the reason above; if none is stated, re-read it when program news suggests a change.</li>
+<li><b>Last checked:</b> never fetched automatically</li>
+<li><b>Last recorded change:</b> none since the change log began</li>
+<li><b>Master rows to verify on change:</b> none mapped in the watchlist; triage by judgment.</li>
+</ul>
+</details>
+
+#### [OK] fqhc_manual_page_mcweb - unchanged
+
+[Open the source](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=rural) - checked 2026-07-16
+
+<details>
+<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<ul>
+<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=rural">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=rural</a></li>
+<li><b>How:</b> The page is downloaded (conditional GET), scripts and styles are stripped, and the visible text is hashed and compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
+<li><b>This run:</b> unchanged - 304 not modified</li>
+<li><b>Blind spot:</b> This page is client-rendered - the checker sees only the app shell and cannot detect content changes. Detection relies on the MCSS email subscription; open the page yourself when in doubt: <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=rural">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=rural</a></li>
+<li><b>Last checked:</b> 2026-07-16</li>
+<li><b>Last recorded change:</b> none since the change log began</li>
+<li><b>Master rows to verify on change:</b> none mapped in the watchlist; triage by judgment.</li>
+</ul>
+</details>
+
+#### [GAP] fqhc_wic_14132_100 - MANUAL_REVIEW
+
+[Open the source](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14132.100.&lawCode=WIC) - not fetched automatically
+
+Why: leginfo robots.txt disallows automated fetch. ACTION - AB 116 amendment took effect 2026-07-01; manually verify the amended provider list and update the fqhc-billing reference.
+
+<details>
+<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<ul>
+<li><b>URL checked:</b> <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14132.100.&amp;lawCode=WIC">https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14132.100.&amp;lawCode=WIC</a></li>
+<li><b>How:</b> Not fetched automatically. The weekly run lists it every time as a standing reminder.</li>
+<li><b>Why it cannot be auto-checked:</b> leginfo robots.txt disallows automated fetch. ACTION - AB 116 amendment took effect 2026-07-01; manually verify the amended provider list and update the fqhc-billing reference.</li>
+<li><b>What to do instead:</b> Open it yourself: <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14132.100.&amp;lawCode=WIC">https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14132.100.&amp;lawCode=WIC</a>. Follow the cadence in the reason above; if none is stated, re-read it when program news suggests a change.</li>
+<li><b>Last checked:</b> never fetched automatically</li>
+<li><b>Last recorded change:</b> none since the change log began</li>
+<li><b>Master rows to verify on change:</b> PPS-billable provider list in fqhc-billing reference</li>
+</ul>
+</details>
+
+### Managed Medi-Cal (`managed_medi_cal`)
+
+#### [REVIEW] mcp_apl_index - CHANGED
+
+[Open the source](https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx) - checked 2026-07-16
+
+Why: content text hash differs
+
+<details>
+<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<ul>
+<li><b>URL checked:</b> <a href="https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx">https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx</a></li>
+<li><b>How:</b> The page's visible text is hashed AND every file link matching the entry's pattern is collected; a new or removed link is flagged even when the page text is unchanged. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
+<li><b>This run:</b> CHANGED - content text hash differs</li>
+<li><b>Last checked:</b> 2026-07-16</li>
+<li><b>Last recorded change:</b> 2026-07-16 (CHANGED)</li>
+<li><b>Watchlist note:</b> First run matched zero links with the APL-specific pattern - broadened to all PDFs; text hash still covers page changes. If the link list stays empty, capture the real APL listing URL from the browser and repoint.</li>
+<li><b>Master rows to verify on change:</b> none mapped in the watchlist; triage by judgment.</li>
+</ul>
+</details>
+
+#### [OK] mcp_boilerplate_contract - unchanged
+
+[Open the source](https://www.dhcs.ca.gov/hi/wp-content/uploads/2025/10/2024-Managed-Care-Boilerplate-Contract.pdf) - checked 2026-07-16
+
+<details>
+<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<ul>
+<li><b>URL checked:</b> <a href="https://www.dhcs.ca.gov/hi/wp-content/uploads/2025/10/2024-Managed-Care-Boilerplate-Contract.pdf">https://www.dhcs.ca.gov/hi/wp-content/uploads/2025/10/2024-Managed-Care-Boilerplate-Contract.pdf</a></li>
+<li><b>How:</b> The PDF is downloaded (conditional GET - the server may answer '304 not modified' and skip the download), its text is extracted and hashed, and the hash is compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
+<li><b>This run:</b> unchanged - 304 not modified</li>
+<li><b>Last checked:</b> 2026-07-16</li>
+<li><b>Last recorded change:</b> none since the change log began</li>
+<li><b>Master rows to verify on change:</b> none mapped in the watchlist; triage by judgment.</li>
+</ul>
+</details>
+
+#### [REVIEW] mcp_sfhp_providers - CHANGED
+
+[Open the source](https://www.sfhp.org/providers/) - checked 2026-07-16
+
+Why: content text hash differs
+
+<details>
+<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<ul>
+<li><b>URL checked:</b> <a href="https://www.sfhp.org/providers/">https://www.sfhp.org/providers/</a></li>
+<li><b>How:</b> The page is downloaded (conditional GET), scripts and styles are stripped, and the visible text is hashed and compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
+<li><b>This run:</b> CHANGED - content text hash differs</li>
+<li><b>Last checked:</b> 2026-07-16</li>
+<li><b>Last recorded change:</b> 2026-07-16 (CHANGED)</li>
+<li><b>Watchlist note:</b> SF Local Initiative plan; plan-specific PA/modifier/filing news.</li>
+<li><b>Master rows to verify on change:</b> none mapped in the watchlist; triage by judgment.</li>
+</ul>
+</details>
+
+#### [OK] mcp_tri_faq - unchanged
+
+[Open the source](https://www.dhcs.ca.gov/services/Documents/DirectedPymts/CY-2024-TRI-FAQ-20250312.pdf) - checked 2026-07-16
+
+<details>
+<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<ul>
+<li><b>URL checked:</b> <a href="https://www.dhcs.ca.gov/services/Documents/DirectedPymts/CY-2024-TRI-FAQ-20250312.pdf">https://www.dhcs.ca.gov/services/Documents/DirectedPymts/CY-2024-TRI-FAQ-20250312.pdf</a></li>
+<li><b>How:</b> The PDF is downloaded (conditional GET - the server may answer '304 not modified' and skip the download), its text is extracted and hashed, and the hash is compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
+<li><b>This run:</b> unchanged - 304 not modified</li>
+<li><b>Last checked:</b> 2026-07-16</li>
+<li><b>Last recorded change:</b> none since the change log began</li>
+<li><b>Master rows to verify on change:</b> none mapped in the watchlist; triage by judgment.</li>
+</ul>
+</details>
+
+### Medi-Cal FFS (`medi_cal_ffs`)
+
+#### [OK] ffs_rates_page_mcweb - unchanged
+
+[Open the source](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/rates?tab=rates) - checked 2026-07-16
+
+<details>
+<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<ul>
+<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/rates?tab=rates">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/rates?tab=rates</a></li>
+<li><b>How:</b> The page is downloaded (conditional GET), scripts and styles are stripped, and the visible text is hashed and compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
+<li><b>This run:</b> unchanged - 304 not modified</li>
+<li><b>Blind spot:</b> This page is client-rendered - the checker sees only the app shell and cannot detect content changes. Detection relies on the MCSS email subscription; open the page yourself when in doubt: <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/rates?tab=rates">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/rates?tab=rates</a></li>
+<li><b>Last checked:</b> 2026-07-16</li>
+<li><b>Last recorded change:</b> none since the change log began</li>
+<li><b>Watchlist note:</b> Client-rendered; rate lookups must be done interactively.</li>
+<li><b>Master rows to verify on change:</b> none mapped in the watchlist; triage by judgment.</li>
+</ul>
+</details>
+
+#### [OK] ffs_sb94_fp_fee_schedule - unchanged
+
+[Open the source](https://www.dhcs.ca.gov/wp-content/uploads/2025/10/SB94-Family-Planning-Services-Fee-Schedule.xlsx) - checked 2026-07-16
+
+<details>
+<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<ul>
+<li><b>URL checked:</b> <a href="https://www.dhcs.ca.gov/wp-content/uploads/2025/10/SB94-Family-Planning-Services-Fee-Schedule.xlsx">https://www.dhcs.ca.gov/wp-content/uploads/2025/10/SB94-Family-Planning-Services-Fee-Schedule.xlsx</a></li>
+<li><b>How:</b> The raw file bytes are hashed and compared; no text is extracted, so this entry can never produce a text diff. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
+<li><b>This run:</b> unchanged - 304 not modified</li>
+<li><b>Last checked:</b> 2026-07-16</li>
+<li><b>Last recorded change:</b> none since the change log began</li>
+<li><b>Watchlist note:</b> SB 94 family-planning augmented fee schedule (supersedes TRI for FP codes with Z30.x). Discovered on the TRI page, first run.</li>
+<li><b>Master rows to verify on change:</b> FPACT rows priced on the SB 94 schedule</li>
+</ul>
+</details>
+
+#### [OK] ffs_supplement_39 - unchanged
+
+[Open the source](https://www.dhcs.ca.gov/formsandpubs/laws/Documents/Supplement-39-to-Attachment-419-B.pdf) - checked 2026-07-16
+
+<details>
+<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<ul>
+<li><b>URL checked:</b> <a href="https://www.dhcs.ca.gov/formsandpubs/laws/Documents/Supplement-39-to-Attachment-419-B.pdf">https://www.dhcs.ca.gov/formsandpubs/laws/Documents/Supplement-39-to-Attachment-419-B.pdf</a></li>
+<li><b>How:</b> The PDF is downloaded (conditional GET - the server may answer '304 not modified' and skip the download), its text is extracted and hashed, and the hash is compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
+<li><b>This run:</b> unchanged - 304 not modified</li>
+<li><b>Last checked:</b> 2026-07-16</li>
+<li><b>Last recorded change:</b> none since the change log began</li>
+<li><b>Watchlist note:</b> SPA 23-0035 TRI methodology.</li>
+<li><b>Master rows to verify on change:</b> none mapped in the watchlist; triage by judgment.</li>
+</ul>
+</details>
+
+#### [OK] ffs_tri_fee_schedule - unchanged
+
+[Open the source](https://www.dhcs.ca.gov/wp-content/uploads/2025/10/CY-2024-TRI-Fee-Schedule-Feb.xlsx) - checked 2026-07-16
+
+<details>
+<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<ul>
+<li><b>URL checked:</b> <a href="https://www.dhcs.ca.gov/wp-content/uploads/2025/10/CY-2024-TRI-Fee-Schedule-Feb.xlsx">https://www.dhcs.ca.gov/wp-content/uploads/2025/10/CY-2024-TRI-Fee-Schedule-Feb.xlsx</a></li>
+<li><b>How:</b> The raw file bytes are hashed and compared; no text is extracted, so this entry can never produce a text diff. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
+<li><b>This run:</b> unchanged - 304 not modified</li>
+<li><b>Last checked:</b> 2026-07-16</li>
+<li><b>Last recorded change:</b> none since the change log began</li>
+<li><b>Watchlist note:</b> Current file linked from the TRI page (first run showed the older CY-1062024.xlsx registry link was superseded). Versioned filename - replacement appears via ffs_tri_page.</li>
+<li><b>Master rows to verify on change:</b> none mapped in the watchlist; triage by judgment.</li>
+</ul>
+</details>
+
+#### [OK] ffs_tri_page - unchanged
+
+[Open the source](https://www.dhcs.ca.gov/medi-cal-targeted-provider-rate-increases-and-investments/) - checked 2026-07-16
+
+<details>
+<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<ul>
+<li><b>URL checked:</b> <a href="https://www.dhcs.ca.gov/medi-cal-targeted-provider-rate-increases-and-investments/">https://www.dhcs.ca.gov/medi-cal-targeted-provider-rate-increases-and-investments/</a></li>
+<li><b>How:</b> The page's visible text is hashed AND every file link matching the entry's pattern is collected; a new or removed link is flagged even when the page text is unchanged. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
+<li><b>This run:</b> unchanged</li>
+<li><b>Last checked:</b> 2026-07-16</li>
+<li><b>Last recorded change:</b> none since the change log began</li>
+<li><b>Watchlist note:</b> TRI landing; link-set diff catches re-versioned fee schedule filenames and new APL redlines.</li>
+<li><b>Master rows to verify on change:</b> reimbursement_basis rows citing TRI / SB 94</li>
+</ul>
+</details>
+
+#### [GAP] ffs_wic_14105_201 - MANUAL_REVIEW
+
+[Open the source](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14105.201.&lawCode=WIC) - not fetched automatically
+
+Why: leginfo robots.txt disallows automated fetch - review quarterly by hand.
+
+<details>
+<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<ul>
+<li><b>URL checked:</b> <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14105.201.&amp;lawCode=WIC">https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14105.201.&amp;lawCode=WIC</a></li>
+<li><b>How:</b> Not fetched automatically. The weekly run lists it every time as a standing reminder.</li>
+<li><b>Why it cannot be auto-checked:</b> leginfo robots.txt disallows automated fetch - review quarterly by hand.</li>
+<li><b>What to do instead:</b> Open it yourself: <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14105.201.&amp;lawCode=WIC">https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14105.201.&amp;lawCode=WIC</a>. Follow the cadence in the reason above; if none is stated, re-read it when program news suggests a change.</li>
+<li><b>Last checked:</b> never fetched automatically</li>
+<li><b>Last recorded change:</b> none since the change log began</li>
+<li><b>Master rows to verify on change:</b> none mapped in the watchlist; triage by judgment.</li>
+</ul>
+</details>
+
+### Medi-Cal Rx (`medi_cal_rx`)
+
+#### [OK] rx_cdl_page - unchanged
+
+[Open the source](https://medi-calrx.dhcs.ca.gov/home/cdl/) - checked 2026-07-16
+
+<details>
+<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<ul>
+<li><b>URL checked:</b> <a href="https://medi-calrx.dhcs.ca.gov/home/cdl/">https://medi-calrx.dhcs.ca.gov/home/cdl/</a></li>
+<li><b>How:</b> The page is downloaded (conditional GET), scripts and styles are stripped, and the visible text is hashed and compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
+<li><b>This run:</b> unchanged</li>
+<li><b>Blind spot:</b> This page is client-rendered - the checker sees only the app shell and cannot detect content changes. Detection relies on the MCSS email subscription; open the page yourself when in doubt: <a href="https://medi-calrx.dhcs.ca.gov/home/cdl/">https://medi-calrx.dhcs.ca.gov/home/cdl/</a></li>
+<li><b>Last checked:</b> 2026-07-16</li>
+<li><b>Last recorded change:</b> none since the change log began</li>
+<li><b>Watchlist note:</b> Client-rendered (observed 2026-07-02) - blind to content. Use the Medi-Cal Rx subscription service on the same site as the detector; if a direct CDL download URL is captured from the browser, add it here as a binary entry.</li>
+<li><b>Master rows to verify on change:</b> none mapped in the watchlist; triage by judgment.</li>
+</ul>
+</details>
+
+### NCCI (`ncci`)
+
+#### [REVIEW] ncci_medicaid_files - CHANGED
+
+[Open the source](https://www.cms.gov/medicare/coding-billing/ncci-medicaid/medicaid-ncci-edit-files) - checked 2026-07-16
+
+Why: content text hash differs
+
+<details>
+<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<ul>
+<li><b>URL checked:</b> <a href="https://www.cms.gov/medicare/coding-billing/ncci-medicaid/medicaid-ncci-edit-files">https://www.cms.gov/medicare/coding-billing/ncci-medicaid/medicaid-ncci-edit-files</a></li>
+<li><b>How:</b> The page's visible text is hashed AND every file link matching the entry's pattern is collected; a new or removed link is flagged even when the page text is unchanged. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
+<li><b>This run:</b> CHANGED - content text hash differs</li>
+<li><b>Last checked:</b> 2026-07-16</li>
+<li><b>Last recorded change:</b> 2026-07-16 (CHANGED)</li>
+<li><b>Watchlist note:</b> Quarterly PTP/MUE file drops appear as new links (first run captured the 2026 Q3 set effective 07/01/2026).</li>
+<li><b>Master rows to verify on change:</b> none mapped in the watchlist; triage by judgment.</li>
+</ul>
+</details>
+
+---
+
+This page is regenerated on every run by `write_dashboard` in [source_check.py](https://github.com/mp321/RevInt-SourceWatch/blob/main/source_check.py); edit that, not this file. Alert tool only - verify against the live official source. No PHI.

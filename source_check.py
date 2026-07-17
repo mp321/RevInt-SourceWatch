@@ -38,6 +38,7 @@ import argparse
 import csv
 import difflib
 import hashlib
+import html
 import io
 import json
 import os
@@ -760,32 +761,407 @@ def check_manual_list(entry: dict, base: dict, fetch: Fetcher, snaps: SnapshotSt
     return rows, frag
 
 
-def write_dashboard(path: Path, report: dict) -> None:
-    by_prog: dict[str, list[dict]] = {}
-    for r in report["results"]:
-        by_prog.setdefault(r["program"], []).append(r)
-    lines = ["# Revenue Integrity Source Watch", "",
-             "Automated monitor for the official billing sources behind the",
-             "Revenue Integrity registry. Alert tool only, not a source of truth.",
-             "Verify every flagged item against the live official source. No PHI.",
-             "",
-             f"Last run: {report['generated']}  ",
-             f"Needs review: {len(report['needs_review'])}",
-             "",
-             "If Last run is more than 35 days old, the checker itself needs attention.",
-             ""]
-    for prog, rs in by_prog.items():
-        lines += [f"## {prog}", "",
-                  "| Source | Verdict | Revision / Page updated | Checked | Diff |",
-                  "|---|---|---|---|---|"]
-        for r in rs:
-            flag = r["verdict"] if r["verdict"] in NEEDS_REVIEW else r["verdict"]
-            link = f"[link]({r['url']})" if r.get("url") else ""
-            diff = f"[diff]({r['diff_report']})" if r.get("diff_report") else ""
-            lines.append(f"| {r['id']} {link} | {flag} | {r.get('page_updated','')} "
-                         f"| {r.get('checked_at','')[:10]} | {diff} |")
+# --------------------------------------------------------------- dashboard --
+# GitHub Pages serves the /docs folder only, so a repo-relative link like
+# reports/diffs/x.md 404s on the published site, and viewed on github.com it
+# resolves relative to docs/ (also wrong). Every generated link is therefore
+# an absolute github.com URL. OWNER/REPO comes from the GITHUB_REPOSITORY env
+# var that Actions always sets, with a hardcoded fallback for local runs.
+REPO_FALLBACK = "mp321/RevInt-SourceWatch"
+
+
+def repo_slug() -> str:
+    return (os.environ.get("GITHUB_REPOSITORY") or "").strip() or REPO_FALLBACK
+
+
+def blob_url(rel_path: str) -> str:
+    return f"https://github.com/{repo_slug()}/blob/main/{rel_path}"
+
+
+def tree_url(rel_path: str) -> str:
+    return f"https://github.com/{repo_slug()}/tree/main/{rel_path}"
+
+
+def pages_home_url() -> str:
+    owner, _, repo = repo_slug().partition("/")
+    return f"https://{owner}.github.io/{repo}/"
+
+
+def repo_rel(p: str) -> str:
+    """Reduce a diff-report path (absolute on some venues) to the repo-relative
+    posix path git tracks, e.g. reports/diffs/x.md."""
+    parts = Path(p).parts
+    if "reports" in parts:
+        parts = parts[parts.index("reports"):]
+    return "/".join(parts)
+
+
+def md_cell(s) -> str:
+    """Free text -> safe on one markdown line. detail can carry '|' (multiple
+    page_updated stamps are '|'-joined and get embedded in DATE_CHANGED
+    details), '<...>' (requests exception reprs), and newlines; unescaped
+    they break GFM tables and get eaten as HTML. That is why v1.3 omitted
+    detail from the dashboard instead of escaping it."""
+    s = re.sub(r"\s+", " ", str(s)).strip()
+    return (s.replace("&", "&amp;").replace("<", "&lt;")
+             .replace(">", "&gt;").replace("|", "&#124;"))
+
+
+def esc(s) -> str:
+    """HTML-escape free text for the <details> fine-print blocks."""
+    return html.escape(re.sub(r"\s+", " ", str(s)).strip(), quote=True)
+
+
+QUIET = {"unchanged", "metadata_only_unchanged"}
+GAPS = {"UNREACHABLE", "CONFIG_TODO"}    # fixable monitoring gaps
+CADENCE_NOTE = "Checked by the weekly Monday run (14:00 UTC GitHub Action)."
+
+PROGRAM_NAMES = {
+    "fpact": "Family PACT",
+    "medi_cal_ffs": "Medi-Cal FFS",
+    "managed_medi_cal": "Managed Medi-Cal",
+    "fqhc": "FQHC",
+    "medi_cal_rx": "Medi-Cal Rx",
+    "ncci": "NCCI",
+}
+
+TYPE_HOW = {
+    "pdf": "The PDF is downloaded (conditional GET - the server may answer "
+           "'304 not modified' and skip the download), its text is extracted "
+           "and hashed, and the hash is compared with the previous run.",
+    "html": "The page is downloaded (conditional GET), scripts and styles are "
+            "stripped, and the visible text is hashed and compared with the "
+            "previous run.",
+    "linkpage": "The page's visible text is hashed AND every file link "
+                "matching the entry's pattern is collected; a new or removed "
+                "link is flagged even when the page text is unchanged.",
+    "binary": "The raw file bytes are hashed and compared; no text is "
+              "extracted, so this entry can never produce a text diff.",
+    "bulletin_probe": "The checker requests the next few issue numbers of the "
+                      "bulletin URL to see whether a new issue returns real "
+                      "content.",
+    "manual_list": "The portal's JSON list endpoint is queried; every document "
+                   "it lists is watched individually (PDF text hash plus the "
+                   "portal's revision date). New documents are auto-discovered "
+                   "and removals are flagged.",
+}
+
+# verdict -> (marker, what it means, what the reader should do)
+VERDICT_LEGEND: list[tuple[str, str, str, str]] = [
+    ("CHANGED", "[REVIEW]",
+     "The extracted text of this source differs from the last run.",
+     "Open the diff to see the exact lines, re-read that part of the live "
+     "source, then verify the listed Master rows (superbill, tipsheet, Epic "
+     "review as applicable)."),
+    ("NEW", "[REVIEW]",
+     "First run for this source; its current state became the baseline.",
+     "Skim the source once to confirm it is the right document."),
+    ("DATE_CHANGED", "[REVIEW]",
+     "A revision or 'page updated' stamp moved but the content text did not.",
+     "Open the source and confirm nothing substantive changed; usually a "
+     "republish."),
+    ("LINKS_CHANGED", "[REVIEW]",
+     "The set of files this page links to changed (often a re-versioned "
+     "filename, e.g. a new Superbill).",
+     "Open the page, find the added or removed file named in Why, and if a "
+     "watched file was re-versioned, point watchlist.yaml at the new URL."),
+    ("NEW_ISSUE", "[REVIEW]",
+     "A probed bulletin issue number returned real content.",
+     "Read the new bulletin and triage anything affecting the Master sheet."),
+    ("REMOVED", "[REVIEW]",
+     "A document disappeared from the portal's list.",
+     "Check the portal: retired, renamed, or moved? Update the Master sheet "
+     "reference if the section is gone."),
+    ("URL_CHANGED_IN_CONFIG", "[REVIEW]",
+     "The URL in watchlist.yaml differs from the URL the baseline was built "
+     "from.",
+     "Confirm the new URL is intentional; the next run with --update "
+     "re-baselines it."),
+    ("CHANGED_METADATA_ONLY", "[REVIEW]",
+     "The portal says this section was revised (new revision date or file id) "
+     "but the PDF itself could not be downloaded, so there is no text diff.",
+     "Open the section on the portal, re-read it, and verify the listed "
+     "Master rows."),
+    ("LIST_TRUNCATED", "[REVIEW]",
+     "The portal returned fewer documents than its own count claims.",
+     "Open the portal list and compare; some sections may be silently "
+     "unmonitored until this clears."),
+    ("UNREACHABLE", "[GAP]",
+     "The fetch failed this run (HTTP error, network error, robots.txt, or an "
+     "off-site redirect) - the Why line says which.",
+     "If it persists more than one run, open the URL in a browser; the page "
+     "may have moved. Then fix watchlist.yaml. Until then this source is "
+     "unmonitored."),
+    ("MANUAL_REVIEW", "[GAP]",
+     "This source cannot be fetched automatically, by design (reason in the "
+     "fine print).",
+     "Open the link by hand on the cadence given in the fine print; MCSS "
+     "email is the push detector."),
+    ("BLIND_SHELL", "[GAP]",
+     "The page builds its content with JavaScript, so the checker sees only "
+     "an empty app shell and cannot detect content changes.",
+     "Do not rely on this row for detection; MCSS email covers it. Open the "
+     "page yourself when in doubt."),
+    ("PROBE_INCONCLUSIVE", "[GAP]",
+     "The bulletin probe could not confirm or rule out a new issue "
+     "(client-rendered portal).",
+     "Nothing to do; MCSS email is the reliable detector for bulletins."),
+    ("CONFIG_TODO", "[GAP]",
+     "The watchlist entry is incomplete, so nothing is monitored for it yet.",
+     "Finish the entry in watchlist.yaml; the Why line says what is missing."),
+    ("unchanged", "[OK]",
+     "No change detected.",
+     "Nothing to do."),
+    ("metadata_only_unchanged", "[OK]",
+     "The PDF is not directly downloadable, but the portal's revision "
+     "metadata is unchanged.",
+     "Nothing to do."),
+]
+VERDICT_HELP = {v: (mark, meaning, action)
+                for v, mark, meaning, action in VERDICT_LEGEND}
+
+
+def marker_for(verdict: str) -> str:
+    if verdict in NEEDS_REVIEW:
+        return "[REVIEW]"
+    if verdict in QUIET:
+        return "[OK]"
+    return "[GAP]" if verdict in VERDICT_HELP else "[?]"
+
+
+def action_for(verdict: str) -> str:
+    return VERDICT_HELP.get(verdict, ("", "", "Review the Why text and the "
+                                      "fine print for this source."))[2]
+
+
+def plain_why(r: dict) -> str:
+    """One plain-English sentence for the row's detail (verbatim where it is
+    already prose, translated where it is a status code)."""
+    d = re.sub(r"\s+", " ", str(r.get("detail") or "")).strip()
+    if r.get("verdict") == "UNREACHABLE":
+        if d.startswith("robots"):
+            return "The site's robots.txt forbids automated fetching."
+        if d.startswith("offhost_redirect:"):
+            return (f"The URL redirected off-site (to {d.split(':', 1)[1]}); "
+                    "the checker refuses off-site redirects, so nothing was "
+                    "read.")
+        if d.startswith("error:"):
+            return f"Network error while fetching: {d[len('error:'):]}"
+        if d.startswith("http "):
+            code = d[len("http "):]
+            hint = " - the page is missing or has moved" if code == "404" else ""
+            return f"The server answered HTTP {code}{hint}."
+    return d
+
+
+def last_change_map(log_path: Path | None) -> dict[str, tuple[str, str]]:
+    """id -> (generated, verdict) of the latest change-log event. The log is
+    append-only chronological, so the last row per id wins."""
+    out: dict[str, tuple[str, str]] = {}
+    if not log_path or not Path(log_path).exists():
+        return out
+    try:
+        with Path(log_path).open(encoding="utf-8", newline="") as f:
+            for row in csv.DictReader(f):
+                if row.get("id"):
+                    out[row["id"]] = (row.get("generated", ""),
+                                      row.get("verdict", ""))
+    except OSError:
+        pass
+    return out
+
+
+def fine_print(r: dict, last_change: dict[str, tuple[str, str]]) -> list[str]:
+    """One <details> block of pure HTML (kramdown and GFM both pass raw HTML
+    through but do not process markdown inside it, so no markdown in here)."""
+    is_manual = r.get("http") == "manual"
+    url = r.get("url", "")
+    li: list[str] = []
+    if url:
+        li.append(f'<li><b>URL checked:</b> <a href="{esc(url)}">{esc(url)}</a>'
+                  + (" (template; {issue} is the probed issue number)"
+                     if r.get("type") == "bulletin_probe" else "") + "</li>")
+    else:
+        li.append("<li><b>URL checked:</b> none configured yet.</li>")
+    if is_manual:
+        li.append("<li><b>How:</b> Not fetched automatically. The weekly run "
+                  "lists it every time as a standing reminder.</li>")
+        li.append(f"<li><b>Why it cannot be auto-checked:</b> "
+                  f"{esc(r.get('detail') or 'no reason recorded')}</li>")
+        li.append(f'<li><b>What to do instead:</b> Open it yourself: '
+                  f'<a href="{esc(url)}">{esc(url)}</a>. Follow the cadence in '
+                  f"the reason above; if none is stated, re-read it when "
+                  f"program news suggests a change.</li>")
+    else:
+        how = TYPE_HOW.get(r.get("type", "html"), TYPE_HOW["html"])
+        li.append(f"<li><b>How:</b> {how} {CADENCE_NOTE}</li>")
+        li.append(f"<li><b>This run:</b> {esc(r.get('verdict', ''))}"
+                  + (f" - {esc(r['detail'])}" if r.get("detail") else "")
+                  + "</li>")
+    if r.get("shell") is True and not is_manual:
+        li.append("<li><b>Blind spot:</b> This page is client-rendered - the "
+                  "checker sees only the app shell and cannot detect content "
+                  "changes. Detection relies on the MCSS email subscription; "
+                  f'open the page yourself when in doubt: <a href="{esc(url)}">'
+                  f"{esc(url)}</a></li>")
+    checked = (r.get("checked_at") or "")[:10]
+    li.append(f"<li><b>Last checked:</b> "
+              f"{checked if checked else 'never fetched automatically'}</li>")
+    lc = last_change.get(r.get("id", ""))
+    li.append("<li><b>Last recorded change:</b> "
+              + (f"{lc[0][:10]} ({esc(lc[1])})" if lc
+                 else "none since the change log began") + "</li>")
+    if r.get("note"):
+        li.append(f"<li><b>Watchlist note:</b> {esc(r['note'])}</li>")
+    keys, scope = r.get("master_keys", ""), r.get("master_note", "")
+    if keys or scope:
+        li.append("<li><b>Master rows to verify on change:</b> "
+                  + " - ".join(x for x in
+                               (f"<code>{esc(keys)}</code>" if keys else "",
+                                esc(scope) if scope else "") if x) + "</li>")
+    else:
+        li.append("<li><b>Master rows to verify on change:</b> none mapped in "
+                  "the watchlist; triage by judgment.</li>")
+    if r.get("diff_report"):
+        rel = repo_rel(r["diff_report"])
+        li.append(f'<li><b>Latest diff report:</b> <a href="{blob_url(rel)}">'
+                  f"{esc(rel)}</a></li>")
+    return (["<details>",
+             "<summary>Fine print: exactly what is checked here, how, and "
+             "its caveats</summary>", "<ul>"] + li + ["</ul>", "</details>"])
+
+
+def needs_review_item(r: dict) -> list[str]:
+    mark = marker_for(r["verdict"])
+    title = (f"[{r['id']}]({r['url']})" if r.get("url") else f"`{r['id']}`")
+    out = [f"- {mark} **{r['verdict']}** - {title} "
+           f"_({PROGRAM_NAMES.get(r['program'], r['program'])})_",
+           f"  - **What happened:** {md_cell(plain_why(r)) or 'no detail recorded.'}",
+           f"  - **What to do:** {md_cell(action_for(r['verdict']))}"]
+    if r.get("diff_report"):
+        rel = repo_rel(r["diff_report"])
+        out.append(f"  - **Exact change:** [{md_cell(rel)}]({blob_url(rel)})")
+    elif r["verdict"] == "CHANGED":
+        out.append("  - **Exact change:** no diff was written this run (no "
+                   "prior text snapshot to compare against) - compare the "
+                   "live source with your last known state.")
+    if r.get("page_updated"):
+        out.append(f"  - **Revision stamp:** {md_cell(r['page_updated'])}")
+    keys, scope = r.get("master_keys", ""), r.get("master_note", "")
+    if keys or scope:
+        out.append("  - **Master rows to verify:** "
+                   + " - ".join(x for x in
+                                (f"`{md_cell(keys)}`" if keys else "",
+                                 md_cell(scope) if scope else "") if x))
+    else:
+        out.append("  - **Master rows to verify:** none mapped in the "
+                   "watchlist; triage by judgment.")
+    return out
+
+
+def write_dashboard(path: Path, report: dict,
+                    log_path: Path | None = None) -> None:
+    """Render the GitHub Pages status page from a run report.
+
+    Output is deterministic for a given report + change log: programs and
+    sources are sorted alphabetically and all links derive from
+    GITHUB_REPOSITORY (fallback REPO_FALLBACK), so the weekly commit diff
+    stays readable. Plain markdown + raw HTML <details> only - Jekyll's
+    default (primer) theme renders it with no client-side build step.
+    """
+    last_change = last_change_map(log_path)
+    results = sorted(report["results"], key=lambda r: (r["program"], r["id"]))
+    flagged = [r for r in results if r["verdict"] in NEEDS_REVIEW]
+    gaps = [r for r in results if r["verdict"] in GAPS]
+
+    lines = [
+        "# Revenue Integrity Source Watch", "",
+        "Automated monitor for the official billing sources behind the",
+        "Revenue Integrity registry. **Alert tool only, not a source of",
+        "record.** Verify every flagged item against the live official source",
+        "before acting on it. No PHI.", "",
+        f"**Last run:** {report['generated']} - **Needs review: "
+        f"{len(flagged)}**", "",
+        "If the last run is more than 35 days old, the checker itself needs",
+        f"attention: check the [Actions tab](https://github.com/{repo_slug()}"
+        "/actions).", "",
+        "Where to click: "
+        f"[change log (CSV)]({blob_url('reports/changes_log.csv')}) · "
+        f"[reports folder]({tree_url('reports')}) (diff reports land in "
+        "`reports/diffs/`) · "
+        f"[latest raw report (JSON)]({blob_url('reports/latest_report.json')}) · "
+        f"[watchlist definition]({blob_url('watchlist.yaml')})", "",
+    ]
+
+    lines += [f"## Needs review since last run ({len(flagged)})", ""]
+    if flagged:
+        lines.append("Work this list top to bottom; every item links straight "
+                     "to the source and, when text changed, to the exact diff.")
         lines.append("")
-    lines += ["Change log: reports/changes_log.csv in the repository.", ""]
+        for r in flagged:
+            lines += needs_review_item(r)
+        lines.append("")
+    else:
+        lines += ["[OK] Nothing needs review from the last run.", ""]
+
+    if gaps:
+        lines += [f"### Could not be checked automatically ({len(gaps)})", "",
+                  "Monitoring gaps, not confirmed source changes - these "
+                  "sources are effectively unwatched until fixed. "
+                  "(Permanently manual or blind entries - MANUAL_REVIEW, "
+                  "BLIND_SHELL, PROBE_INCONCLUSIVE - are by design and listed "
+                  "in their program sections with the reason in the fine "
+                  "print.)", ""]
+        for r in gaps:
+            title = (f"[{r['id']}]({r['url']})" if r.get("url")
+                     else f"`{r['id']}`")
+            lines += [f"- [GAP] **{r['verdict']}** - {title} "
+                      f"_({PROGRAM_NAMES.get(r['program'], r['program'])})_",
+                      f"  - **Why:** {md_cell(plain_why(r))}",
+                      f"  - **What to do:** {md_cell(action_for(r['verdict']))}"]
+        lines.append("")
+
+    lines += ["## Verdict legend", "",
+              "| Marker | Verdict | What it means | What you should do |",
+              "|---|---|---|---|"]
+    for v, mark, meaning, action in VERDICT_LEGEND:
+        lines.append(f"| {mark} | `{v}` | {md_cell(meaning)} "
+                     f"| {md_cell(action)} |")
+    lines.append("")
+
+    lines += ["## All sources by program", "",
+              "Every watched source, including the quiet ones. Open the fine "
+              "print under a row for exactly what is checked and its caveats.",
+              ""]
+    for prog in sorted({r["program"] for r in results}):
+        rs = [r for r in results if r["program"] == prog]
+        lines += [f"### {PROGRAM_NAMES.get(prog, prog)} (`{prog}`)", ""]
+        for r in rs:
+            lines.append(f"#### {marker_for(r['verdict'])} {r['id']} - "
+                         f"{r['verdict']}")
+            lines.append("")
+            bits = []
+            if r.get("url"):
+                bits.append(f"[Open the source]({r['url']})")
+            if r.get("page_updated"):
+                bits.append(f"revision {md_cell(r['page_updated'])}")
+            checked = (r.get("checked_at") or "")[:10]
+            bits.append(f"checked {checked}" if checked
+                        else "not fetched automatically")
+            if r.get("diff_report"):
+                rel = repo_rel(r["diff_report"])
+                bits.append(f"[text diff]({blob_url(rel)})")
+            lines += [" - ".join(bits), ""]
+            if r["verdict"] not in QUIET:
+                lines += [f"Why: {md_cell(plain_why(r)) or 'no detail recorded.'}",
+                          ""]
+            lines += fine_print(r, last_change)
+            lines.append("")
+    lines += ["---", "",
+              "This page is regenerated on every run by `write_dashboard` in "
+              f"[source_check.py]({blob_url('source_check.py')}); edit that, "
+              "not this file. Alert tool only - verify against the live "
+              "official source. No PHI.", ""]
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text("\n".join(lines), encoding="utf-8")
 
@@ -812,7 +1188,8 @@ def append_changes_log(out_dir: Path, report: dict) -> None:
 def write_run_summary(root: Path, report: dict) -> None:
     try:
         lines = [f"Source watch run {report['generated']} - "
-                 f"{len(report['needs_review'])} item(s) need review.", ""]
+                 f"{len(report['needs_review'])} item(s) need review.",
+                 f"Dashboard: {pages_home_url()}", ""]
         for r in report["results"]:
             if r["id"] not in report["needs_review"]:
                 continue
@@ -821,7 +1198,7 @@ def write_run_summary(root: Path, report: dict) -> None:
                 lines.append(f"  {r['url']}")
             lines.append(f"  detail: {r['detail']}")
             if r.get("diff_report"):
-                lines.append(f"  diff: {r['diff_report']}")
+                lines.append(f"  diff: {blob_url(repo_rel(r['diff_report']))}")
             if r.get("master_keys"):
                 lines.append(f"  Master rows: {r['master_keys']}")
             if r.get("master_note"):
@@ -930,7 +1307,7 @@ def run(watchlist: Path, out_dir: Path, only, update: bool,
     if review:
         write_run_summary(root, report)
     if dashboard:
-        write_dashboard(dashboard, report)
+        write_dashboard(dashboard, report, log_path=out_dir / "changes_log.csv")
 
     print(f"\nneeds review: {len(review)}  ->  {out_dir}/check_{stamp}.csv")
     if update:
@@ -998,6 +1375,9 @@ def main() -> int:
     ap.add_argument("--update", action="store_true", help="save new baseline")
     ap.add_argument("--dashboard", type=Path, default=None,
                     help="write a markdown status page (e.g. docs/index.md)")
+    ap.add_argument("--dashboard-only", action="store_true",
+                    help="regenerate the dashboard from reports/"
+                         "latest_report.json without any network fetch")
     ap.add_argument("--snapshots", type=Path, default=None,
                     help="snapshot directory (default: ./snapshots)")
     ap.add_argument("--list", action="store_true", help="print watchlist and exit")
@@ -1014,6 +1394,17 @@ def main() -> int:
 
     if args.seed_manual_list:
         return seed_manual_list(args.watchlist, args.out, args.seed_manual_list)
+
+    if args.dashboard_only:
+        report_path = args.out / "latest_report.json"
+        if not report_path.exists():
+            print(f"no report to render: {report_path}")
+            return 1
+        report = json.loads(report_path.read_text(encoding="utf-8"))
+        dash = args.dashboard or Path("docs/index.md")
+        write_dashboard(dash, report, log_path=args.out / "changes_log.csv")
+        print(f"dashboard regenerated from {report_path} -> {dash}")
+        return 0
 
     report = run(args.watchlist, args.out, args.programs, args.update,
                  snapshots_dir=args.snapshots, dashboard=args.dashboard)

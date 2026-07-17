@@ -43,6 +43,7 @@ The issue lists each flagged source with its verdict, link, Master rows to re-ve
     python source_check.py --programs fpact       # one program
     python source_check.py --update               # accept current state as baseline
     python source_check.py --update --dashboard docs/index.md
+    python source_check.py --dashboard-only       # rebuild docs/index.md from reports/latest_report.json, no network
 
 Exit code 1 when anything needs review.
 
