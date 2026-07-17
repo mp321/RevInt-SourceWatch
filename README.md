@@ -18,8 +18,11 @@ A weekly GitHub Actions run fetches every source in `watchlist.yaml`, extracts a
 | Need | Location |
 |---|---|
 | Current status of every source | Dashboard: docs/index.md (GitHub Pages) |
-| What exactly changed | reports/diffs/*.md (diff plus codes touched) |
+| Team-friendly review of recent changes | Change review page: docs/changes.md (Pages, /changes.html) |
+| What exactly changed | reports/diffs/*.md (diff plus a structured code table) |
+| Draft staff announcement on tracked-code changes | reports/comms/*.md (DRAFT, human review required) |
 | Machine-readable change log | reports/changes_log.csv (Power BI reads this) |
+| Codes the Master sheet tracks | data/tracked_codes.csv (code, description, master_row) |
 | Email alerts | Watch this repo (Custom > Issues) |
 | Feed for Power Automate / Teams | Repo Issues, or commits feed .../commits/main.atom |
 
@@ -29,7 +32,20 @@ Runs as a GitHub Action (`.github/workflows/source-watch.yml`, Mondays 14:00 UTC
 
 ## Reading an alert
 
-The issue lists each flagged source with its status, link, Master rows to re-verify, and a diff report path when text changed. In the diff, `-` lines were removed and `+` lines added. The codes list is a regex heuristic over changed lines only; expect occasional noise. Always verify against the live official source before acting, then route: provider communication, superbill or tipsheet update, Epic review (charge master, preference lists, claim edits, ICD-10 mappings). Keep Epic build details out of this public repo.
+The issue lists each flagged source with its status, link, Master rows to re-verify, a "Codes touched" section (added / removed / tracked matches, with `url#page=N` deep links for PDFs), and a diff report path when text changed. In the diff, `-` lines were removed and `+` lines added. Always verify against the live official source before acting, then route: provider communication, superbill or tipsheet update, Epic review (charge master, preference lists, claim edits, ICD-10 mappings). Keep Epic build details out of this public repo.
+
+## Code extraction heuristic
+
+Diff reports carry a structured table of possible billing codes on changed lines: code, system (CPT / HCPCS / ICD-10-CM / modifier), direction (added / removed / both), confidence, tracked flag, page, and a context excerpt. Every row is a **text heuristic requiring human verification** - it can be wrong or incomplete, especially on table-heavy PDFs.
+
+- HCPCS (`[A-Z]0000`), ICD-10-CM (`A00.0000`), CPT category/PLA suffixes (`0000F/T/U/M`), and `modifier NN` phrases are format-distinctive and always included.
+- A bare five-digit number is only counted as CPT when code-ish vocabulary (code, CPT, HCPCS, ICD, procedure, modifier, bill-, unit, TAR, rate) appears on the same or an adjacent line, or the code is listed in `data/tracked_codes.csv`. This filters SF zip codes (941xx), fee amounts, form numbers, and years.
+- Confidence: tracked or vocabulary on the same line = high; vocabulary only on a neighboring line = medium; distinctive format but no vocabulary = low. When unsure the code is included with low confidence rather than dropped.
+- Page numbers come from the nearest preceding page marker in the extracted PDF text and render as `url#page=N` deep links (browser PDF viewers open that page).
+
+`data/tracked_codes.csv` (columns: code, description, master_row) lists the codes the Master sheet cares about. A changed tracked code is flagged **TRACKED** everywhere and, on a CHANGED source, also produces a draft announcement in `reports/comms/` - clearly headed DRAFT, machine-generated, human review required; nothing is ever sent automatically. Extend the CSV from the Master sheet (codes only, no PHI). The synthetic regression test for all of the above is `tests/test_code_extraction.py` (`python -m pytest tests/`).
+
+In a Claude Code session, `/triage` reads the latest diff reports and change log and drafts a plain-language triage with Master-sheet action proposals (citing diff line numbers, never inventing codes).
 
 ## Local use
 
@@ -67,4 +83,4 @@ Teams incoming webhook post on change; registry-as-a-page (render watchlist.yaml
 
 ## Credit
 
-Built and maintained by [mp321](https://github.com/mp321). Copyright (c) 2026 mp321. Provided as-is for internal use; see this repository for any applicable license terms before reuse elsewhere.
+Built and maintained by [Michael Phipps](https://github.com/mp321). Provided as-is for internal use; see this repository for any applicable license terms before reuse elsewhere.

@@ -9,10 +9,9 @@ Each week a GitHub Action fetches every source listed below, compares it against
 
 **Last run:** 2026-07-16T22:04:20+00:00 - **Needs review: 4**
 
-If the last run is more than 35 days old, the checker itself needs
-attention: check the [Actions tab](https://github.com/mp321/RevInt-SourceWatch/actions).
+Where to click: [change review page](https://mp321.github.io/RevInt-SourceWatch/changes.html) · [change log (CSV)](https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/changes_log.csv) · [reports folder](https://github.com/mp321/RevInt-SourceWatch/tree/main/reports) (diff reports land in `reports/diffs/`) · [latest raw report (JSON)](https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/latest_report.json) · [watchlist definition](https://github.com/mp321/RevInt-SourceWatch/blob/main/watchlist.yaml)
 
-Where to click: [change log (CSV)](https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/changes_log.csv) · [reports folder](https://github.com/mp321/RevInt-SourceWatch/tree/main/reports) (diff reports land in `reports/diffs/`) · [latest raw report (JSON)](https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/latest_report.json) · [watchlist definition](https://github.com/mp321/RevInt-SourceWatch/blob/main/watchlist.yaml)
+Statuses like `CHANGED` or `BLIND_SHELL` are explained in the [status legend](#status-legend) at the bottom of this page.
 
 ## Needs review since last run (4)
 
@@ -50,41 +49,29 @@ Monitoring gaps, not confirmed source changes - these sources are effectively un
   - **Why:** The server answered HTTP 404 - the page is missing or has moved.
   - **What to do:** If it persists more than one run, open the URL in a browser; the page may have moved. Then fix watchlist.yaml. Until then this source is unmonitored.
 
-## Status legend
-
-| Status | Code | What it means | What you should do |
-|---|---|---|---|
-| <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> | `CHANGED` | The extracted text of this source differs from the last run. | Open the diff to see the exact lines, re-read that part of the live source, then verify the listed Master rows (superbill, tipsheet, Epic review as applicable). |
-| <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> | `NEW` | First run for this source; its current state became the baseline. | Skim the source once to confirm it is the right document. |
-| <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> | `DATE_CHANGED` | A revision or 'page updated' stamp moved but the content text did not. | Open the source and confirm nothing substantive changed; usually a republish. |
-| <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> | `LINKS_CHANGED` | The set of files this page links to changed (often a re-versioned filename, e.g. a new Superbill). | Open the page, find the added or removed file named in Why, and if a watched file was re-versioned, point watchlist.yaml at the new URL. |
-| <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> | `NEW_ISSUE` | A probed bulletin issue number returned real content. | Read the new bulletin and triage anything affecting the Master sheet. |
-| <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> | `REMOVED` | A document disappeared from the portal's list. | Check the portal: retired, renamed, or moved? Update the Master sheet reference if the section is gone. |
-| <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> | `URL_CHANGED_IN_CONFIG` | The URL in watchlist.yaml differs from the URL the baseline was built from. | Confirm the new URL is intentional; the next run with --update re-baselines it. |
-| <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> | `CHANGED_METADATA_ONLY` | The portal says this section was revised (new revision date or file id) but the PDF itself could not be downloaded, so there is no text diff. | Open the section on the portal, re-read it, and verify the listed Master rows. |
-| <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> | `LIST_TRUNCATED` | The portal returned fewer documents than its own count claims. | Open the portal list and compare; some sections may be silently unmonitored until this clears. |
-| <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#fff6e0;color:#7a4a00;white-space:nowrap">Can't verify</span> | `UNREACHABLE` | The fetch failed this run (HTTP error, network error, robots.txt, or an off-site redirect) - the Why line says which. | If it persists more than one run, open the URL in a browser; the page may have moved. Then fix watchlist.yaml. Until then this source is unmonitored. |
-| <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#fff6e0;color:#7a4a00;white-space:nowrap">Can't verify</span> | `MANUAL_REVIEW` | This source cannot be fetched automatically, by design (reason in the fine print). | Open the link by hand on the cadence given in the fine print; MCSS email is the push detector. |
-| <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#fff6e0;color:#7a4a00;white-space:nowrap">Can't verify</span> | `BLIND_SHELL` | The page builds its content with JavaScript, so the checker sees only an empty app shell and cannot detect content changes. | Do not rely on this row for detection; MCSS email covers it. Open the page yourself when in doubt. |
-| <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#fff6e0;color:#7a4a00;white-space:nowrap">Can't verify</span> | `PROBE_INCONCLUSIVE` | The bulletin probe could not confirm or rule out a new issue (client-rendered portal). | Nothing to do; MCSS email is the reliable detector for bulletins. |
-| <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#fff6e0;color:#7a4a00;white-space:nowrap">Can't verify</span> | `CONFIG_TODO` | The watchlist entry is incomplete, so nothing is monitored for it yet. | Finish the entry in watchlist.yaml; the Why line says what is missing. |
-| <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> | `unchanged` | No change detected. | Nothing to do. |
-| <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> | `metadata_only_unchanged` | The PDF is not directly downloadable, but the portal's revision metadata is unchanged. | Nothing to do. |
-
 ## All sources by program
 
-Every watched source, including the quiet ones. Open the fine print under a row for exactly what is checked and its caveats.
+Programs on this page (every watched source, including the quiet ones):
+
+- [Family PACT](#family-pact-fpact) - 10 sources
+- [FQHC](#fqhc-fqhc) - 6 sources, 1 needs review
+- [Managed Medi-Cal](#managed-medi-cal-managed-medi-cal) - 4 sources, 2 needs review
+- [Medi-Cal FFS](#medi-cal-ffs-medi-cal-ffs) - 6 sources
+- [Medi-Cal Rx](#medi-cal-rx-medi-cal-rx) - 1 source
+- [NCCI](#ncci-ncci) - 1 source, 1 needs review
+
+Each block: the status line first, then (indented) the source link and a Details fold-out with exactly what is checked and its caveats.
 
 ### Family PACT (`fpact`)
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#fff6e0;color:#7a4a00;white-space:nowrap">Can't verify</span> fpact_bulletin_probe - `PROBE_INCONCLUSIVE`
 
-[Open the source](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/bulletin?community=family-pact&issueNumber={issue}) - checked 2026-07-16
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/bulletin?community=family-pact&amp;issueNumber={issue}">Open the source</a> - checked 2026-07-16</p>
 
-Why: #224:shell(0ch); #225:shell(0ch); #226:shell(0ch) - portal is client-rendered; MCSS email is the reliable detector
+<p style="margin:.2em 0 .2em 2em"><b>Why:</b> #224:shell(0ch); #225:shell(0ch); #226:shell(0ch) - portal is client-rendered; MCSS email is the reliable detector</p>
 
-<details style="margin:.3em 0 1.1em 0">
-<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<details style="margin:.3em 0 1.1em 2em">
+<summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/bulletin?community=family-pact&amp;issueNumber={issue}">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/bulletin?community=family-pact&amp;issueNumber={issue}</a> (template; {issue} is the probed issue number)</li>
 <li><b>How:</b> The checker requests the next few issue numbers of the bulletin URL to see whether a new issue returns real content. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
@@ -98,10 +85,10 @@ Why: #224:shell(0ch); #225:shell(0ch); #226:shell(0ch) - portal is client-render
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fpact_dhcs_telephonic_guidance - `unchanged`
 
-[Open the source](https://www.dhcs.ca.gov/wp-content/uploads/2025/10/Guidance-Telephonic-Communications.pdf) - checked 2026-07-16
+<p style="margin:.2em 0 .2em 2em"><a href="https://www.dhcs.ca.gov/wp-content/uploads/2025/10/Guidance-Telephonic-Communications.pdf">Open the source</a> - checked 2026-07-16</p>
 
-<details style="margin:.3em 0 1.1em 0">
-<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<details style="margin:.3em 0 1.1em 2em">
+<summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://www.dhcs.ca.gov/wp-content/uploads/2025/10/Guidance-Telephonic-Communications.pdf">https://www.dhcs.ca.gov/wp-content/uploads/2025/10/Guidance-Telephonic-Communications.pdf</a></li>
 <li><b>How:</b> The PDF is downloaded (conditional GET - the server may answer '304 not modified' and skip the download), its text is extracted and hashed, and the hash is compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
@@ -115,10 +102,10 @@ Why: #224:shell(0ch); #225:shell(0ch); #226:shell(0ch) - portal is client-render
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fpact_enrollment - `unchanged`
 
-[Open the source](https://familypact.org/providers/enrollment/) - checked 2026-07-16
+<p style="margin:.2em 0 .2em 2em"><a href="https://familypact.org/providers/enrollment/">Open the source</a> - checked 2026-07-16</p>
 
-<details style="margin:.3em 0 1.1em 0">
-<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<details style="margin:.3em 0 1.1em 2em">
+<summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://familypact.org/providers/enrollment/">https://familypact.org/providers/enrollment/</a></li>
 <li><b>How:</b> The page is downloaded (conditional GET), scripts and styles are stripped, and the visible text is hashed and compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
@@ -131,12 +118,12 @@ Why: #224:shell(0ch); #225:shell(0ch); #226:shell(0ch) - portal is client-render
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#fff6e0;color:#7a4a00;white-space:nowrap">Can't verify</span> fpact_manual_docs - `CONFIG_TODO`
 
-checked 2026-07-16
+<p style="margin:.2em 0 .2em 2em">checked 2026-07-16</p>
 
-Why: manual_list url is empty - paste the portal JSON endpoint (README: one-time DevTools step)
+<p style="margin:.2em 0 .2em 2em"><b>Why:</b> manual_list url is empty - paste the portal JSON endpoint (README: one-time DevTools step)</p>
 
-<details style="margin:.3em 0 1.1em 0">
-<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<details style="margin:.3em 0 1.1em 2em">
+<summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> none configured yet.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
@@ -150,10 +137,10 @@ Why: manual_list url is empty - paste the portal JSON endpoint (README: one-time
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fpact_manual_page_mcweb - `unchanged`
 
-[Open the source](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact) - checked 2026-07-16
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">Open the source</a> - checked 2026-07-16</p>
 
-<details style="margin:.3em 0 1.1em 0">
-<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<details style="margin:.3em 0 1.1em 2em">
+<summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact</a></li>
 <li><b>How:</b> The page is downloaded (conditional GET), scripts and styles are stripped, and the visible text is hashed and compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
@@ -168,10 +155,10 @@ Why: manual_list url is empty - paste the portal JSON endpoint (README: one-time
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fpact_news_archive - `unchanged`
 
-[Open the source](https://familypact.org/news-and-updates-archive/) - checked 2026-07-16
+<p style="margin:.2em 0 .2em 2em"><a href="https://familypact.org/news-and-updates-archive/">Open the source</a> - checked 2026-07-16</p>
 
-<details style="margin:.3em 0 1.1em 0">
-<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<details style="margin:.3em 0 1.1em 2em">
+<summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://familypact.org/news-and-updates-archive/">https://familypact.org/news-and-updates-archive/</a></li>
 <li><b>How:</b> The page's visible text is hashed AND every file link matching the entry's pattern is collected; a new or removed link is flagged even when the page text is unchanged. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
@@ -185,12 +172,12 @@ Why: manual_list url is empty - paste the portal JSON endpoint (README: one-time
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#fff6e0;color:#7a4a00;white-space:nowrap">Can't verify</span> fpact_ofp_page - `UNREACHABLE`
 
-[Open the source](https://www.dhcs.ca.gov/services/ofp/Pages/default.aspx) - checked 2026-07-03
+<p style="margin:.2em 0 .2em 2em"><a href="https://www.dhcs.ca.gov/services/ofp/Pages/default.aspx">Open the source</a> - checked 2026-07-03</p>
 
-Why: The server answered HTTP 404 - the page is missing or has moved.
+<p style="margin:.2em 0 .2em 2em"><b>Why:</b> The server answered HTTP 404 - the page is missing or has moved.</p>
 
-<details style="margin:.3em 0 1.1em 0">
-<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<details style="margin:.3em 0 1.1em 2em">
+<summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://www.dhcs.ca.gov/services/ofp/Pages/default.aspx">https://www.dhcs.ca.gov/services/ofp/Pages/default.aspx</a></li>
 <li><b>How:</b> The page is downloaded (conditional GET), scripts and styles are stripped, and the visible text is hashed and compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
@@ -204,12 +191,12 @@ Why: The server answered HTTP 404 - the page is missing or has moved.
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#fff6e0;color:#7a4a00;white-space:nowrap">Can't verify</span> fpact_ppbi_landing - `MANUAL_REVIEW`
 
-[Open the source](https://familypact.org/providers/policies-procedures-and-billing-instructions/) - not fetched automatically
+<p style="margin:.2em 0 .2em 2em"><a href="https://familypact.org/providers/policies-procedures-and-billing-instructions/">Open the source</a> - not fetched automatically</p>
 
-Why: Redirects off-site to the legacy files.medi-cal.ca.gov manual-query page, which timed out on 2026-07-02; current PPBI sections live on the client-rendered mcweb portal. Detection is MCSS + fpact_news_archive; open the PPBI manually when flagged.
+<p style="margin:.2em 0 .2em 2em"><b>Why:</b> Redirects off-site to the legacy files.medi-cal.ca.gov manual-query page, which timed out on 2026-07-02; current PPBI sections live on the client-rendered mcweb portal. Detection is MCSS + fpact_news_archive; open the PPBI manually when flagged.</p>
 
-<details style="margin:.3em 0 1.1em 0">
-<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<details style="margin:.3em 0 1.1em 2em">
+<summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://familypact.org/providers/policies-procedures-and-billing-instructions/">https://familypact.org/providers/policies-procedures-and-billing-instructions/</a></li>
 <li><b>How:</b> Not fetched automatically. The weekly run lists it every time as a standing reminder.</li>
@@ -223,10 +210,10 @@ Why: Redirects off-site to the legacy files.medi-cal.ca.gov manual-query page, w
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fpact_superbill_current - `unchanged`
 
-[Open the source](https://familypact.org/wp-content/uploads/2026/03/Superbill-Updated-1.2026_2.27.26_508.pdf) - checked 2026-07-16
+<p style="margin:.2em 0 .2em 2em"><a href="https://familypact.org/wp-content/uploads/2026/03/Superbill-Updated-1.2026_2.27.26_508.pdf">Open the source</a> - checked 2026-07-16</p>
 
-<details style="margin:.3em 0 1.1em 0">
-<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<details style="margin:.3em 0 1.1em 2em">
+<summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://familypact.org/wp-content/uploads/2026/03/Superbill-Updated-1.2026_2.27.26_508.pdf">https://familypact.org/wp-content/uploads/2026/03/Superbill-Updated-1.2026_2.27.26_508.pdf</a></li>
 <li><b>How:</b> The PDF is downloaded (conditional GET - the server may answer '304 not modified' and skip the download), its text is extracted and hashed, and the hash is compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
@@ -240,12 +227,12 @@ Why: Redirects off-site to the legacy files.medi-cal.ca.gov manual-query page, w
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#fff6e0;color:#7a4a00;white-space:nowrap">Can't verify</span> fpact_wic_24005 - `MANUAL_REVIEW`
 
-[Open the source](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=24005.&lawCode=WIC) - not fetched automatically
+<p style="margin:.2em 0 .2em 2em"><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=24005.&amp;lawCode=WIC">Open the source</a> - not fetched automatically</p>
 
-Why: leginfo robots.txt disallows automated fetch - review quarterly by hand. Statute changes arrive via bills, so MCSS and program news normally give advance notice.
+<p style="margin:.2em 0 .2em 2em"><b>Why:</b> leginfo robots.txt disallows automated fetch - review quarterly by hand. Statute changes arrive via bills, so MCSS and program news normally give advance notice.</p>
 
-<details style="margin:.3em 0 1.1em 0">
-<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<details style="margin:.3em 0 1.1em 2em">
+<summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=24005.&amp;lawCode=WIC">https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=24005.&amp;lawCode=WIC</a></li>
 <li><b>How:</b> Not fetched automatically. The weekly run lists it every time as a standing reminder.</li>
@@ -261,10 +248,10 @@ Why: leginfo robots.txt disallows automated fetch - review quarterly by hand. St
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fqhc_chw_faq - `unchanged`
 
-[Open the source](https://www.dhcs.ca.gov/services/medi-cal/Documents/CHW-FAQs-FQHC-RHC-IHS.pdf) - checked 2026-07-16
+<p style="margin:.2em 0 .2em 2em"><a href="https://www.dhcs.ca.gov/services/medi-cal/Documents/CHW-FAQs-FQHC-RHC-IHS.pdf">Open the source</a> - checked 2026-07-16</p>
 
-<details style="margin:.3em 0 1.1em 0">
-<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<details style="margin:.3em 0 1.1em 2em">
+<summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://www.dhcs.ca.gov/services/medi-cal/Documents/CHW-FAQs-FQHC-RHC-IHS.pdf">https://www.dhcs.ca.gov/services/medi-cal/Documents/CHW-FAQs-FQHC-RHC-IHS.pdf</a></li>
 <li><b>How:</b> The PDF is downloaded (conditional GET - the server may answer '304 not modified' and skip the download), its text is extracted and hashed, and the hash is compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
@@ -277,12 +264,12 @@ Why: leginfo robots.txt disallows automated fetch - review quarterly by hand. St
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> fqhc_cms_center - `CHANGED`
 
-[Open the source](https://www.cms.gov/medicare/payment/prospective-payment-systems/federally-qualified-health-centers-fqhc-center) - checked 2026-07-16
+<p style="margin:.2em 0 .2em 2em"><a href="https://www.cms.gov/medicare/payment/prospective-payment-systems/federally-qualified-health-centers-fqhc-center">Open the source</a> - checked 2026-07-16</p>
 
-Why: content text hash differs
+<p style="margin:.2em 0 .2em 2em"><b>Why:</b> content text hash differs</p>
 
-<details style="margin:.3em 0 1.1em 0">
-<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<details style="margin:.3em 0 1.1em 2em">
+<summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://www.cms.gov/medicare/payment/prospective-payment-systems/federally-qualified-health-centers-fqhc-center">https://www.cms.gov/medicare/payment/prospective-payment-systems/federally-qualified-health-centers-fqhc-center</a></li>
 <li><b>How:</b> The page is downloaded (conditional GET), scripts and styles are stripped, and the visible text is hashed and compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
@@ -296,10 +283,10 @@ Why: content text hash differs
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fqhc_dhcs_3097_page - `unchanged`
 
-[Open the source](https://www.dhcs.ca.gov/forms-laws-publications/forms/cost-report-forms-and-documents/) - checked 2026-07-16
+<p style="margin:.2em 0 .2em 2em"><a href="https://www.dhcs.ca.gov/forms-laws-publications/forms/cost-report-forms-and-documents/">Open the source</a> - checked 2026-07-16</p>
 
-<details style="margin:.3em 0 1.1em 0">
-<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<details style="margin:.3em 0 1.1em 2em">
+<summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://www.dhcs.ca.gov/forms-laws-publications/forms/cost-report-forms-and-documents/">https://www.dhcs.ca.gov/forms-laws-publications/forms/cost-report-forms-and-documents/</a></li>
 <li><b>How:</b> The page is downloaded (conditional GET), scripts and styles are stripped, and the visible text is hashed and compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
@@ -313,12 +300,12 @@ Why: content text hash differs
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#fff6e0;color:#7a4a00;white-space:nowrap">Can't verify</span> fqhc_ecfr_405_subpart_x - `MANUAL_REVIEW`
 
-[Open the source](https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-405/subpart-X) - not fetched automatically
+<p style="margin:.2em 0 .2em 2em"><a href="https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-405/subpart-X">Open the source</a> - not fetched automatically</p>
 
-Why: eCFR bot wall redirects automated fetches off-host. eCFR publishes an official public API for exactly this use (see ecfr.gov developer documentation) - switching this entry to the API endpoint for Title 42 Part 405 is the planned fix; until then review by hand when CMS guidance changes.
+<p style="margin:.2em 0 .2em 2em"><b>Why:</b> eCFR bot wall redirects automated fetches off-host. eCFR publishes an official public API for exactly this use (see ecfr.gov developer documentation) - switching this entry to the API endpoint for Title 42 Part 405 is the planned fix; until then review by hand when CMS guidance changes.</p>
 
-<details style="margin:.3em 0 1.1em 0">
-<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<details style="margin:.3em 0 1.1em 2em">
+<summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-405/subpart-X">https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-405/subpart-X</a></li>
 <li><b>How:</b> Not fetched automatically. The weekly run lists it every time as a standing reminder.</li>
@@ -332,10 +319,10 @@ Why: eCFR bot wall redirects automated fetches off-host. eCFR publishes an offic
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fqhc_manual_page_mcweb - `unchanged`
 
-[Open the source](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=rural) - checked 2026-07-16
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=rural">Open the source</a> - checked 2026-07-16</p>
 
-<details style="margin:.3em 0 1.1em 0">
-<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<details style="margin:.3em 0 1.1em 2em">
+<summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=rural">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=rural</a></li>
 <li><b>How:</b> The page is downloaded (conditional GET), scripts and styles are stripped, and the visible text is hashed and compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
@@ -349,12 +336,12 @@ Why: eCFR bot wall redirects automated fetches off-host. eCFR publishes an offic
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#fff6e0;color:#7a4a00;white-space:nowrap">Can't verify</span> fqhc_wic_14132_100 - `MANUAL_REVIEW`
 
-[Open the source](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14132.100.&lawCode=WIC) - not fetched automatically
+<p style="margin:.2em 0 .2em 2em"><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14132.100.&amp;lawCode=WIC">Open the source</a> - not fetched automatically</p>
 
-Why: leginfo robots.txt disallows automated fetch. ACTION - AB 116 amendment took effect 2026-07-01; manually verify the amended provider list and update the fqhc-billing reference.
+<p style="margin:.2em 0 .2em 2em"><b>Why:</b> leginfo robots.txt disallows automated fetch. ACTION - AB 116 amendment took effect 2026-07-01; manually verify the amended provider list and update the fqhc-billing reference.</p>
 
-<details style="margin:.3em 0 1.1em 0">
-<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<details style="margin:.3em 0 1.1em 2em">
+<summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14132.100.&amp;lawCode=WIC">https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14132.100.&amp;lawCode=WIC</a></li>
 <li><b>How:</b> Not fetched automatically. The weekly run lists it every time as a standing reminder.</li>
@@ -370,12 +357,12 @@ Why: leginfo robots.txt disallows automated fetch. ACTION - AB 116 amendment too
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> mcp_apl_index - `CHANGED`
 
-[Open the source](https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx) - checked 2026-07-16
+<p style="margin:.2em 0 .2em 2em"><a href="https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx">Open the source</a> - checked 2026-07-16</p>
 
-Why: content text hash differs
+<p style="margin:.2em 0 .2em 2em"><b>Why:</b> content text hash differs</p>
 
-<details style="margin:.3em 0 1.1em 0">
-<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<details style="margin:.3em 0 1.1em 2em">
+<summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx">https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx</a></li>
 <li><b>How:</b> The page's visible text is hashed AND every file link matching the entry's pattern is collected; a new or removed link is flagged even when the page text is unchanged. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
@@ -389,10 +376,10 @@ Why: content text hash differs
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> mcp_boilerplate_contract - `unchanged`
 
-[Open the source](https://www.dhcs.ca.gov/hi/wp-content/uploads/2025/10/2024-Managed-Care-Boilerplate-Contract.pdf) - checked 2026-07-16
+<p style="margin:.2em 0 .2em 2em"><a href="https://www.dhcs.ca.gov/hi/wp-content/uploads/2025/10/2024-Managed-Care-Boilerplate-Contract.pdf">Open the source</a> - checked 2026-07-16</p>
 
-<details style="margin:.3em 0 1.1em 0">
-<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<details style="margin:.3em 0 1.1em 2em">
+<summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://www.dhcs.ca.gov/hi/wp-content/uploads/2025/10/2024-Managed-Care-Boilerplate-Contract.pdf">https://www.dhcs.ca.gov/hi/wp-content/uploads/2025/10/2024-Managed-Care-Boilerplate-Contract.pdf</a></li>
 <li><b>How:</b> The PDF is downloaded (conditional GET - the server may answer '304 not modified' and skip the download), its text is extracted and hashed, and the hash is compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
@@ -405,12 +392,12 @@ Why: content text hash differs
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> mcp_sfhp_providers - `CHANGED`
 
-[Open the source](https://www.sfhp.org/providers/) - checked 2026-07-16
+<p style="margin:.2em 0 .2em 2em"><a href="https://www.sfhp.org/providers/">Open the source</a> - checked 2026-07-16</p>
 
-Why: content text hash differs
+<p style="margin:.2em 0 .2em 2em"><b>Why:</b> content text hash differs</p>
 
-<details style="margin:.3em 0 1.1em 0">
-<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<details style="margin:.3em 0 1.1em 2em">
+<summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://www.sfhp.org/providers/">https://www.sfhp.org/providers/</a></li>
 <li><b>How:</b> The page is downloaded (conditional GET), scripts and styles are stripped, and the visible text is hashed and compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
@@ -424,10 +411,10 @@ Why: content text hash differs
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> mcp_tri_faq - `unchanged`
 
-[Open the source](https://www.dhcs.ca.gov/services/Documents/DirectedPymts/CY-2024-TRI-FAQ-20250312.pdf) - checked 2026-07-16
+<p style="margin:.2em 0 .2em 2em"><a href="https://www.dhcs.ca.gov/services/Documents/DirectedPymts/CY-2024-TRI-FAQ-20250312.pdf">Open the source</a> - checked 2026-07-16</p>
 
-<details style="margin:.3em 0 1.1em 0">
-<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<details style="margin:.3em 0 1.1em 2em">
+<summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://www.dhcs.ca.gov/services/Documents/DirectedPymts/CY-2024-TRI-FAQ-20250312.pdf">https://www.dhcs.ca.gov/services/Documents/DirectedPymts/CY-2024-TRI-FAQ-20250312.pdf</a></li>
 <li><b>How:</b> The PDF is downloaded (conditional GET - the server may answer '304 not modified' and skip the download), its text is extracted and hashed, and the hash is compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
@@ -442,10 +429,10 @@ Why: content text hash differs
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> ffs_rates_page_mcweb - `unchanged`
 
-[Open the source](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/rates?tab=rates) - checked 2026-07-16
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/rates?tab=rates">Open the source</a> - checked 2026-07-16</p>
 
-<details style="margin:.3em 0 1.1em 0">
-<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<details style="margin:.3em 0 1.1em 2em">
+<summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/rates?tab=rates">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/rates?tab=rates</a></li>
 <li><b>How:</b> The page is downloaded (conditional GET), scripts and styles are stripped, and the visible text is hashed and compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
@@ -460,10 +447,10 @@ Why: content text hash differs
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> ffs_sb94_fp_fee_schedule - `unchanged`
 
-[Open the source](https://www.dhcs.ca.gov/wp-content/uploads/2025/10/SB94-Family-Planning-Services-Fee-Schedule.xlsx) - checked 2026-07-16
+<p style="margin:.2em 0 .2em 2em"><a href="https://www.dhcs.ca.gov/wp-content/uploads/2025/10/SB94-Family-Planning-Services-Fee-Schedule.xlsx">Open the source</a> - checked 2026-07-16</p>
 
-<details style="margin:.3em 0 1.1em 0">
-<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<details style="margin:.3em 0 1.1em 2em">
+<summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://www.dhcs.ca.gov/wp-content/uploads/2025/10/SB94-Family-Planning-Services-Fee-Schedule.xlsx">https://www.dhcs.ca.gov/wp-content/uploads/2025/10/SB94-Family-Planning-Services-Fee-Schedule.xlsx</a></li>
 <li><b>How:</b> The raw file bytes are hashed and compared; no text is extracted, so this entry can never produce a text diff. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
@@ -477,10 +464,10 @@ Why: content text hash differs
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> ffs_supplement_39 - `unchanged`
 
-[Open the source](https://www.dhcs.ca.gov/formsandpubs/laws/Documents/Supplement-39-to-Attachment-419-B.pdf) - checked 2026-07-16
+<p style="margin:.2em 0 .2em 2em"><a href="https://www.dhcs.ca.gov/formsandpubs/laws/Documents/Supplement-39-to-Attachment-419-B.pdf">Open the source</a> - checked 2026-07-16</p>
 
-<details style="margin:.3em 0 1.1em 0">
-<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<details style="margin:.3em 0 1.1em 2em">
+<summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://www.dhcs.ca.gov/formsandpubs/laws/Documents/Supplement-39-to-Attachment-419-B.pdf">https://www.dhcs.ca.gov/formsandpubs/laws/Documents/Supplement-39-to-Attachment-419-B.pdf</a></li>
 <li><b>How:</b> The PDF is downloaded (conditional GET - the server may answer '304 not modified' and skip the download), its text is extracted and hashed, and the hash is compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
@@ -494,10 +481,10 @@ Why: content text hash differs
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> ffs_tri_fee_schedule - `unchanged`
 
-[Open the source](https://www.dhcs.ca.gov/wp-content/uploads/2025/10/CY-2024-TRI-Fee-Schedule-Feb.xlsx) - checked 2026-07-16
+<p style="margin:.2em 0 .2em 2em"><a href="https://www.dhcs.ca.gov/wp-content/uploads/2025/10/CY-2024-TRI-Fee-Schedule-Feb.xlsx">Open the source</a> - checked 2026-07-16</p>
 
-<details style="margin:.3em 0 1.1em 0">
-<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<details style="margin:.3em 0 1.1em 2em">
+<summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://www.dhcs.ca.gov/wp-content/uploads/2025/10/CY-2024-TRI-Fee-Schedule-Feb.xlsx">https://www.dhcs.ca.gov/wp-content/uploads/2025/10/CY-2024-TRI-Fee-Schedule-Feb.xlsx</a></li>
 <li><b>How:</b> The raw file bytes are hashed and compared; no text is extracted, so this entry can never produce a text diff. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
@@ -511,10 +498,10 @@ Why: content text hash differs
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> ffs_tri_page - `unchanged`
 
-[Open the source](https://www.dhcs.ca.gov/medi-cal-targeted-provider-rate-increases-and-investments/) - checked 2026-07-16
+<p style="margin:.2em 0 .2em 2em"><a href="https://www.dhcs.ca.gov/medi-cal-targeted-provider-rate-increases-and-investments/">Open the source</a> - checked 2026-07-16</p>
 
-<details style="margin:.3em 0 1.1em 0">
-<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<details style="margin:.3em 0 1.1em 2em">
+<summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://www.dhcs.ca.gov/medi-cal-targeted-provider-rate-increases-and-investments/">https://www.dhcs.ca.gov/medi-cal-targeted-provider-rate-increases-and-investments/</a></li>
 <li><b>How:</b> The page's visible text is hashed AND every file link matching the entry's pattern is collected; a new or removed link is flagged even when the page text is unchanged. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
@@ -528,12 +515,12 @@ Why: content text hash differs
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#fff6e0;color:#7a4a00;white-space:nowrap">Can't verify</span> ffs_wic_14105_201 - `MANUAL_REVIEW`
 
-[Open the source](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14105.201.&lawCode=WIC) - not fetched automatically
+<p style="margin:.2em 0 .2em 2em"><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14105.201.&amp;lawCode=WIC">Open the source</a> - not fetched automatically</p>
 
-Why: leginfo robots.txt disallows automated fetch - review quarterly by hand.
+<p style="margin:.2em 0 .2em 2em"><b>Why:</b> leginfo robots.txt disallows automated fetch - review quarterly by hand.</p>
 
-<details style="margin:.3em 0 1.1em 0">
-<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<details style="margin:.3em 0 1.1em 2em">
+<summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14105.201.&amp;lawCode=WIC">https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14105.201.&amp;lawCode=WIC</a></li>
 <li><b>How:</b> Not fetched automatically. The weekly run lists it every time as a standing reminder.</li>
@@ -549,10 +536,10 @@ Why: leginfo robots.txt disallows automated fetch - review quarterly by hand.
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> rx_cdl_page - `unchanged`
 
-[Open the source](https://medi-calrx.dhcs.ca.gov/home/cdl/) - checked 2026-07-16
+<p style="margin:.2em 0 .2em 2em"><a href="https://medi-calrx.dhcs.ca.gov/home/cdl/">Open the source</a> - checked 2026-07-16</p>
 
-<details style="margin:.3em 0 1.1em 0">
-<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<details style="margin:.3em 0 1.1em 2em">
+<summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://medi-calrx.dhcs.ca.gov/home/cdl/">https://medi-calrx.dhcs.ca.gov/home/cdl/</a></li>
 <li><b>How:</b> The page is downloaded (conditional GET), scripts and styles are stripped, and the visible text is hashed and compared with the previous run. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
@@ -569,12 +556,12 @@ Why: leginfo robots.txt disallows automated fetch - review quarterly by hand.
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> ncci_medicaid_files - `CHANGED`
 
-[Open the source](https://www.cms.gov/medicare/coding-billing/ncci-medicaid/medicaid-ncci-edit-files) - checked 2026-07-16
+<p style="margin:.2em 0 .2em 2em"><a href="https://www.cms.gov/medicare/coding-billing/ncci-medicaid/medicaid-ncci-edit-files">Open the source</a> - checked 2026-07-16</p>
 
-Why: content text hash differs
+<p style="margin:.2em 0 .2em 2em"><b>Why:</b> content text hash differs</p>
 
-<details style="margin:.3em 0 1.1em 0">
-<summary>Fine print: exactly what is checked here, how, and its caveats</summary>
+<details style="margin:.3em 0 1.1em 2em">
+<summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://www.cms.gov/medicare/coding-billing/ncci-medicaid/medicaid-ncci-edit-files">https://www.cms.gov/medicare/coding-billing/ncci-medicaid/medicaid-ncci-edit-files</a></li>
 <li><b>How:</b> The page's visible text is hashed AND every file link matching the entry's pattern is collected; a new or removed link is flagged even when the page text is unchanged. Checked by the weekly Monday run (14:00 UTC GitHub Action).</li>
@@ -586,8 +573,66 @@ Why: content text hash differs
 </ul>
 </details>
 
+### Source URLs at a glance
+
+Plain list of every URL this page's data comes from.
+
+```text
+fpact_bulletin_probe: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/bulletin?community=family-pact&issueNumber={issue}
+fpact_dhcs_telephonic_guidance: https://www.dhcs.ca.gov/wp-content/uploads/2025/10/Guidance-Telephonic-Communications.pdf
+fpact_enrollment: https://familypact.org/providers/enrollment/
+fpact_manual_page_mcweb: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact
+fpact_news_archive: https://familypact.org/news-and-updates-archive/
+fpact_ofp_page: https://www.dhcs.ca.gov/services/ofp/Pages/default.aspx
+fpact_ppbi_landing: https://familypact.org/providers/policies-procedures-and-billing-instructions/
+fpact_superbill_current: https://familypact.org/wp-content/uploads/2026/03/Superbill-Updated-1.2026_2.27.26_508.pdf
+fpact_wic_24005: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=24005.&lawCode=WIC
+fqhc_chw_faq: https://www.dhcs.ca.gov/services/medi-cal/Documents/CHW-FAQs-FQHC-RHC-IHS.pdf
+fqhc_cms_center: https://www.cms.gov/medicare/payment/prospective-payment-systems/federally-qualified-health-centers-fqhc-center
+fqhc_dhcs_3097_page: https://www.dhcs.ca.gov/forms-laws-publications/forms/cost-report-forms-and-documents/
+fqhc_ecfr_405_subpart_x: https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-405/subpart-X
+fqhc_manual_page_mcweb: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=rural
+fqhc_wic_14132_100: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14132.100.&lawCode=WIC
+mcp_apl_index: https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx
+mcp_boilerplate_contract: https://www.dhcs.ca.gov/hi/wp-content/uploads/2025/10/2024-Managed-Care-Boilerplate-Contract.pdf
+mcp_sfhp_providers: https://www.sfhp.org/providers/
+mcp_tri_faq: https://www.dhcs.ca.gov/services/Documents/DirectedPymts/CY-2024-TRI-FAQ-20250312.pdf
+ffs_rates_page_mcweb: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/rates?tab=rates
+ffs_sb94_fp_fee_schedule: https://www.dhcs.ca.gov/wp-content/uploads/2025/10/SB94-Family-Planning-Services-Fee-Schedule.xlsx
+ffs_supplement_39: https://www.dhcs.ca.gov/formsandpubs/laws/Documents/Supplement-39-to-Attachment-419-B.pdf
+ffs_tri_fee_schedule: https://www.dhcs.ca.gov/wp-content/uploads/2025/10/CY-2024-TRI-Fee-Schedule-Feb.xlsx
+ffs_tri_page: https://www.dhcs.ca.gov/medi-cal-targeted-provider-rate-increases-and-investments/
+ffs_wic_14105_201: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14105.201.&lawCode=WIC
+rx_cdl_page: https://medi-calrx.dhcs.ca.gov/home/cdl/
+ncci_medicaid_files: https://www.cms.gov/medicare/coding-billing/ncci-medicaid/medicaid-ncci-edit-files
+```
+
+## Status legend
+
+<table style="font-size:.85em;line-height:1.45">
+<tr><th>Status</th><th>Code</th><th>What it means, and what to do</th></tr>
+<tr><td><span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span></td><td><code>CHANGED</code></td><td>The extracted text of this source differs from the last run. <i>Open the diff to see the exact lines, re-read that part of the live source, then verify the listed Master rows (superbill, tipsheet, Epic review as applicable).</i></td></tr>
+<tr><td><span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span></td><td><code>NEW</code></td><td>First run for this source; its current state became the baseline. <i>Skim the source once to confirm it is the right document.</i></td></tr>
+<tr><td><span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span></td><td><code>DATE_CHANGED</code></td><td>A revision or &#x27;page updated&#x27; stamp moved but the content text did not. <i>Open the source and confirm nothing substantive changed; usually a republish.</i></td></tr>
+<tr><td><span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span></td><td><code>LINKS_CHANGED</code></td><td>The set of files this page links to changed (often a re-versioned filename, e.g. a new Superbill). <i>Open the page, find the added or removed file named in Why, and if a watched file was re-versioned, point watchlist.yaml at the new URL.</i></td></tr>
+<tr><td><span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span></td><td><code>NEW_ISSUE</code></td><td>A probed bulletin issue number returned real content. <i>Read the new bulletin and triage anything affecting the Master sheet.</i></td></tr>
+<tr><td><span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span></td><td><code>REMOVED</code></td><td>A document disappeared from the portal&#x27;s list. <i>Check the portal: retired, renamed, or moved? Update the Master sheet reference if the section is gone.</i></td></tr>
+<tr><td><span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span></td><td><code>URL_CHANGED_IN_CONFIG</code></td><td>The URL in watchlist.yaml differs from the URL the baseline was built from. <i>Confirm the new URL is intentional; the next run with --update re-baselines it.</i></td></tr>
+<tr><td><span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span></td><td><code>CHANGED_METADATA_ONLY</code></td><td>The portal says this section was revised (new revision date or file id) but the PDF itself could not be downloaded, so there is no text diff. <i>Open the section on the portal, re-read it, and verify the listed Master rows.</i></td></tr>
+<tr><td><span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span></td><td><code>LIST_TRUNCATED</code></td><td>The portal returned fewer documents than its own count claims. <i>Open the portal list and compare; some sections may be silently unmonitored until this clears.</i></td></tr>
+<tr><td><span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#fff6e0;color:#7a4a00;white-space:nowrap">Can't verify</span></td><td><code>UNREACHABLE</code></td><td>The fetch failed this run (HTTP error, network error, robots.txt, or an off-site redirect) - the Why line says which. <i>If it persists more than one run, open the URL in a browser; the page may have moved. Then fix watchlist.yaml. Until then this source is unmonitored.</i></td></tr>
+<tr><td><span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#fff6e0;color:#7a4a00;white-space:nowrap">Can't verify</span></td><td><code>MANUAL_REVIEW</code></td><td>This source cannot be fetched automatically, by design (reason in the fine print). <i>Open the link by hand on the cadence given in the fine print; MCSS email is the push detector.</i></td></tr>
+<tr><td><span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#fff6e0;color:#7a4a00;white-space:nowrap">Can't verify</span></td><td><code>BLIND_SHELL</code></td><td>The page builds its content with JavaScript, so the checker sees only an empty app shell and cannot detect content changes. <i>Do not rely on this row for detection; MCSS email covers it. Open the page yourself when in doubt.</i></td></tr>
+<tr><td><span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#fff6e0;color:#7a4a00;white-space:nowrap">Can't verify</span></td><td><code>PROBE_INCONCLUSIVE</code></td><td>The bulletin probe could not confirm or rule out a new issue (client-rendered portal). <i>Nothing to do; MCSS email is the reliable detector for bulletins.</i></td></tr>
+<tr><td><span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#fff6e0;color:#7a4a00;white-space:nowrap">Can't verify</span></td><td><code>CONFIG_TODO</code></td><td>The watchlist entry is incomplete, so nothing is monitored for it yet. <i>Finish the entry in watchlist.yaml; the Why line says what is missing.</i></td></tr>
+<tr><td><span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span></td><td><code>unchanged</code></td><td>No change detected. <i>Nothing to do.</i></td></tr>
+<tr><td><span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span></td><td><code>metadata_only_unchanged</code></td><td>The PDF is not directly downloadable, but the portal&#x27;s revision metadata is unchanged. <i>Nothing to do.</i></td></tr>
+</table>
+
 ---
+
+If the last run shown at the top of this page is more than 35 days old, this monitor may not be active or may need an update - notify the maintainer.
 
 This page is regenerated on every run by `write_dashboard` in [source_check.py](https://github.com/mp321/RevInt-SourceWatch/blob/main/source_check.py); edit that, not this file. Alert tool only - verify against the live official source.
 
-Built and maintained by [mp321](https://github.com/mp321). Copyright (c) 2026 mp321. See the [repository](https://github.com/mp321/RevInt-SourceWatch) for source, history, and license terms.
+Built and maintained by [Michael Phipps](https://github.com/mp321). See the [repository](https://github.com/mp321/RevInt-SourceWatch) for source, history, and license terms.

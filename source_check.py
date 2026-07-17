@@ -8,8 +8,10 @@ manual entries, master_keys mapping) and adds four things:
 
   1. Snapshots + diffs. The extracted text of every pdf/html source is stored
      under snapshots/. On CHANGED, a unified before/after diff is written to
-     reports/diffs/ with a heuristic list of possible CPT / HCPCS / ICD-10-CM
-     codes touched. Git history preserves every prior snapshot.
+     reports/diffs/ with a structured table of possible CPT / HCPCS /
+     ICD-10-CM / modifier codes touched (system, direction, confidence,
+     tracked flag from data/tracked_codes.csv, page-anchored PDF deep links).
+     Git history preserves every prior snapshot.
   2. manual_list entry type. Points at the JSON endpoint behind a client-
      rendered manual page (e.g. the mcweb Family PACT manual). Every PDF it
      lists is monitored individually: content text hash, the portal Revision
@@ -73,10 +75,202 @@ DIFF_MAX_LINES = 3000
 DIRECTUS_TOKEN_RE = r'window\.DIRECTUS_TOKEN\s*=\s*"([^"]+)"'
 
 # Heuristic billing-code patterns, applied to changed diff lines only.
+# The five-digit CPT pattern is the noisy one (SF zip codes 941xx, fee
+# amounts, form numbers all look like CPT codes), so a bare five-digit
+# candidate only counts when code-ish vocabulary appears on the same or a
+# neighboring changed line, or the code is listed in data/tracked_codes.csv.
+# Letter-bearing systems (HCPCS, ICD-10-CM, CPT category/PLA suffixes,
+# "modifier NN") are format-distinctive and always included, with confidence
+# downgraded when no vocabulary is nearby. Documented in README "Code
+# extraction heuristic".
 RE_HCPCS = re.compile(r"\b[A-Z]\d{4}\b")                  # J7300, S5000, G2012
 RE_ICD10 = re.compile(r"\b[A-Z]\d{2}\.[0-9A-Z]{1,4}\b")   # Z30.011
-RE_CPT = re.compile(r"\b\d{4}[0-9A-Z]\b")                 # 99213, 0001U
+RE_CPT = re.compile(r"\b\d{5}\b")                         # 99213 (context-gated)
+RE_CPT_ALPHA = re.compile(r"\b\d{4}[FTUM]\b")             # 0001U, 1234F
 CPT_NOISE = re.compile(r"^(19|20)\d{2,3}$")               # years / year-like
+RE_MODIFIER = re.compile(r"\bmodifiers?\s*[-:]?\s*([0-9A-Z]{2})\b", re.I)
+CODE_VOCAB = re.compile(
+    r"\b(codes?|cpt|hcpcs|icd|procedures?|modifiers?|bill(?:ing|ed|able)?"
+    r"|units?|tar|rates?)\b", re.I)
+PAGE_MARK = re.compile(r"\[\[page (\d+)\]\]")
+_MONTH = r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*"
+EFFECTIVE_RE = re.compile(
+    r"effective\s+(?:date\s*[:\-]?\s*)?"
+    rf"({_MONTH}\s+\d{{1,2}},?\s+\d{{4}}|{_MONTH}\s+\d{{4}}"
+    r"|\d{1,2}/\d{1,2}/\d{2,4}|\d{4}-\d{2}-\d{2})", re.I)
+
+
+def load_tracked_codes(path: Path) -> dict[str, dict]:
+    """data/tracked_codes.csv (code, description, master_row) -> dict keyed by
+    uppercased code. Optional file; empty dict when absent or unreadable."""
+    out: dict[str, dict] = {}
+    try:
+        if not path.exists():
+            return out
+        with path.open(encoding="utf-8", newline="") as f:
+            for r in csv.DictReader(f):
+                code = (r.get("code") or "").strip().upper()
+                if code:
+                    out[code] = {"description": (r.get("description") or "").strip(),
+                                 "master_row": (r.get("master_row") or "").strip()}
+    except OSError:
+        pass
+    return out
+
+
+def snapshot_page_map(snapshot_text: str) -> dict[str, int]:
+    """line content -> page number, from the [[page N]] markers that
+    pdf_text_and_dates writes into PDF snapshots. First occurrence wins.
+    HTML snapshots have no markers and yield an empty map."""
+    pages: dict[str, int] = {}
+    cur = 0
+    for ln in snapshot_text.splitlines():
+        m = PAGE_MARK.fullmatch(ln)
+        if m:
+            cur = int(m.group(1))
+            continue
+        if cur and ln not in pages:
+            pages[ln] = cur
+    return pages
+
+
+def extract_code_entries(diff_lines: list[str], old_text: str = "",
+                         new_text: str = "",
+                         tracked: dict[str, dict] | None = None) -> list[dict]:
+    """Structured billing-code candidates from a unified diff. Heuristic only.
+
+    Returns one dict per (code, system): {code, system, direction
+    (added/removed/both), confidence (high/medium/low), tracked (bool),
+    master_row, context (line excerpt), page (int or None)}.
+
+    Confidence: tracked or vocab on the same line -> high; vocab only on a
+    neighboring changed line -> medium; format-distinctive code with no vocab
+    nearby -> low; bare five-digit number with no vocab and not tracked ->
+    excluded entirely (zip codes, fee amounts, form numbers).
+
+    Page comes from the nearest preceding [[page N]] marker in the relevant
+    snapshot text (old for removed lines, new for added).
+    """
+    tracked = tracked or {}
+    old_pages = snapshot_page_map(old_text)
+    new_pages = snapshot_page_map(new_text)
+    # Keep context lines and hunk boundaries so the "neighboring line" vocab
+    # check means adjacent in the document, not adjacent in the change list.
+    body_lines: list[tuple[str, str]] = []          # (sign, body)
+    for line in diff_lines:
+        if not line or line.startswith(("+++", "---")):
+            continue
+        if line.startswith("@@"):
+            body_lines.append(("@", ""))            # hunk boundary sentinel
+        elif line[0] in "+- ":
+            body_lines.append((line[0], line[1:]))
+
+    def vocab_level(i: int) -> str:
+        """'same' | 'neighbor' | 'none' for body line i."""
+        if CODE_VOCAB.search(body_lines[i][1]):
+            return "same"
+        for j in (i - 1, i + 1):
+            if 0 <= j < len(body_lines) and CODE_VOCAB.search(body_lines[j][1]):
+                return "neighbor"
+        return "none"
+
+    def excerpt(body: str, code: str) -> str:
+        body = body.strip()
+        if len(body) <= 110:
+            return body
+        pos = body.find(code)
+        start = max(0, pos - 45)
+        return ("..." if start else "") + body[start:start + 100] + "..."
+
+    entries: dict[tuple[str, str], dict] = {}
+
+    def add(code: str, system: str, sign: str, i: int, distinctive: bool):
+        body = body_lines[i][1]
+        code_u = code.upper()
+        is_tracked = code_u in tracked
+        vl = vocab_level(i)
+        if not distinctive and not is_tracked and vl == "none":
+            return                                   # bare 5-digit, no context
+        if is_tracked or vl == "same":
+            conf = "high"
+        elif vl == "neighbor":
+            conf = "medium"
+        else:
+            conf = "low"
+        page = (new_pages if sign == "+" else old_pages).get(body.strip())
+        direction = "added" if sign == "+" else "removed"
+        key = (code_u, system)
+        e = entries.get(key)
+        if not e:
+            entries[key] = {
+                "code": code_u, "system": system, "direction": direction,
+                "confidence": conf, "tracked": is_tracked,
+                "master_row": tracked.get(code_u, {}).get("master_row", ""),
+                "description": tracked.get(code_u, {}).get("description", ""),
+                "context": excerpt(body, code), "page": page,
+            }
+            return
+        if e["direction"] != direction:
+            e["direction"] = "both"
+        order = {"low": 0, "medium": 1, "high": 2}
+        if order[conf] > order[e["confidence"]]:
+            e["confidence"] = conf
+        if e["page"] is None:
+            e["page"] = page
+
+    for i, (sign, body) in enumerate(body_lines):
+        if sign not in "+-":
+            continue
+        icd = set(RE_ICD10.findall(body))
+        for c in icd:
+            add(c, "ICD-10-CM", sign, i, distinctive=True)
+        for c in set(RE_HCPCS.findall(body)):
+            # an ICD-10 match like Z30.011 also matches [A-Z]\d{4} across the
+            # dot-free prefix on some inputs; skip anything inside an ICD hit
+            if any(c in x for x in icd):
+                continue
+            add(c, "HCPCS", sign, i, distinctive=True)
+        for c in set(RE_CPT_ALPHA.findall(body)):
+            add(c, "CPT", sign, i, distinctive=True)
+        for m in RE_MODIFIER.finditer(body):
+            add(m.group(1), "modifier", sign, i, distinctive=True)
+        for c in set(RE_CPT.findall(body)):
+            if CPT_NOISE.match(c):
+                continue
+            add(c, "CPT", sign, i, distinctive=False)
+
+    conf_order = {"high": 0, "medium": 1, "low": 2}
+    return sorted(entries.values(),
+                  key=lambda e: (not e["tracked"], conf_order[e["confidence"]],
+                                 e["system"], e["code"]))
+
+
+def effective_dates_in_diff(diff_lines: list[str]) -> list[str]:
+    """Effective-date phrases on added lines, for the comms draft. Heuristic."""
+    out: list[str] = []
+    for line in diff_lines:
+        if line.startswith("+") and not line.startswith("+++"):
+            for m in EFFECTIVE_RE.finditer(line[1:]):
+                if m.group(1) not in out:
+                    out.append(m.group(1))
+    return out
+
+
+def page_link(url: str, page, is_pdf: bool) -> str:
+    """Markdown cell for a page reference: a working deep link when the source
+    is a PDF (browser viewers honor #page=N), plain text otherwise."""
+    if page is None:
+        return ""
+    if is_pdf and url:
+        return f"[p.{page}]({url}#page={page})"
+    return f"p.{page}"
+
+
+def codes_brief(entries: list[dict]) -> str:
+    """One-line summary of code entries for CSV cells and log lines."""
+    return "; ".join(
+        f"{e['code']}({e['system']},{e['direction']}"
+        + (",TRACKED" if e["tracked"] else "") + ")" for e in entries)
 
 
 # ----------------------------------------------------------------- helpers --
@@ -149,21 +343,6 @@ def slug(s: str) -> str:
 
 def now_iso() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
-
-
-def codes_in_diff(diff_lines: list[str]) -> list[str]:
-    """Possible billing codes on added/removed lines. Heuristic only."""
-    codes: set[str] = set()
-    for line in diff_lines:
-        if not line or line[0] not in "+-" or line.startswith(("+++", "---")):
-            continue
-        body = line[1:]
-        codes.update(RE_HCPCS.findall(body))
-        codes.update(RE_ICD10.findall(body))
-        for m in RE_CPT.findall(body):
-            if not CPT_NOISE.match(m):
-                codes.add(m)
-    return sorted(codes)
 
 
 # ------------------------------------------------------------------ fetch ---
@@ -443,10 +622,16 @@ class SnapshotStore:
     degrades to hash-only detection, which matches v1.2 behavior.
     """
 
-    def __init__(self, snap_dir: Path, diff_dir: Path):
+    def __init__(self, snap_dir: Path, diff_dir: Path,
+                 tracked: dict[str, dict] | None = None):
         self.snap_dir = snap_dir
         self.diff_dir = diff_dir
         self.written: list[str] = []
+        self.tracked = tracked or {}
+        # per-source structured code candidates and effective-date phrases
+        # from the latest CHANGED diff, keyed by the row id (eid / cid)
+        self.codes: dict[str, list[dict]] = {}
+        self.effective: dict[str, list[str]] = {}
 
     def _path(self, program: str, eid: str) -> Path:
         return self.snap_dir / program / f"{eid}.txt"
@@ -465,7 +650,10 @@ class SnapshotStore:
                 dl = list(difflib.unified_diff(
                     old.splitlines(), text.splitlines(),
                     fromfile="previous", tofile="current", lineterm="", n=2))
-                codes = codes_in_diff(dl)
+                codes = extract_code_entries(dl, old, text, self.tracked)
+                self.codes[eid] = codes
+                self.effective[eid] = effective_dates_in_diff(dl)
+                is_pdf = bool(PAGE_MARK.search(text) or PAGE_MARK.search(old))
                 if len(dl) > DIFF_MAX_LINES:
                     dl = dl[:DIFF_MAX_LINES] + [
                         "", f"[diff truncated at {DIFF_MAX_LINES} lines; full prior "
@@ -484,8 +672,28 @@ class SnapshotStore:
                           "Machine-extracted text; diffs can contain extraction noise.",
                           ""]
                 if codes:
-                    lines += ["## Possible codes touched (heuristic, verify each)",
-                              "", ", ".join(codes), ""]
+                    lines += ["## Possible billing codes touched",
+                              "",
+                              "Heuristic extraction from changed lines only - "
+                              "**verify every row against the live source "
+                              "before acting**. Page numbers come from the "
+                              "extracted-text snapshot"
+                              + (" and link into the PDF." if is_pdf
+                                 else "; this source is not a PDF, so no page "
+                                      "links.") ,
+                              "",
+                              "| Code | System | Direction | Confidence | "
+                              "Tracked | Page | Context (excerpt) |",
+                              "|---|---|---|---|---|---|---|"]
+                    for e in codes:
+                        tr = (f"**TRACKED** {md_cell(e['master_row'])}".strip()
+                              if e["tracked"] else "")
+                        lines.append(
+                            f"| `{e['code']}` | {e['system']} | {e['direction']} "
+                            f"| {e['confidence']} | {tr} "
+                            f"| {page_link(entry_url, e['page'], is_pdf)} "
+                            f"| {md_cell(e['context'])} |")
+                    lines.append("")
                 lines += ["## Text diff (previous -> current)", "", "```diff",
                           "\n".join(dl), "```", ""]
                 rp.write_text("\n".join(lines), encoding="utf-8")
@@ -1053,8 +1261,8 @@ def fine_print(r: dict, last_change: dict[str, tuple[str, str]]) -> list[str]:
     # Loose line-height and left indent so a long run of fine print doesn't
     # read as one dense wall of text; kept inline since Pages markdown does
     # not process a class attribute against an external stylesheet here.
-    return (["<details style=\"margin:.3em 0 1.1em 0\">",
-             "<summary>Fine print: exactly what is checked here, how, and "
+    return (["<details style=\"margin:.3em 0 1.1em 2em\">",
+             "<summary>Details: exactly what is checked here, how, and "
              "its caveats</summary>",
              '<ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">']
             + li + ["</ul>", "</details>"])
@@ -1073,6 +1281,32 @@ def needs_review_item(r: dict) -> list[str]:
         out.append("  - **Exact change:** no diff was written this run (no "
                    "prior text snapshot to compare against) - compare the "
                    "live source with your last known state.")
+    codes = r.get("codes_touched") or []
+    if codes:
+        url = r.get("url", "")
+        is_pdf = any(e["page"] is not None for e in codes)
+        shown = codes[:8]
+        parts = []
+        for e in shown:
+            ref = f"`{e['code']}` ({e['system']}, {e['direction']}"
+            if e["confidence"] != "high":
+                ref += f", {e['confidence']} conf."
+            ref += ")"
+            if e["tracked"]:
+                ref = "**TRACKED** " + ref
+            pl = page_link(url, e["page"], is_pdf)
+            if pl:
+                ref += f" {pl}"
+            parts.append(ref)
+        more = f" - plus {len(codes) - 8} more in the diff report" \
+            if len(codes) > 8 else ""
+        out.append("  - **Codes touched (heuristic, verify each):** "
+                   + "; ".join(parts) + more)
+    if r.get("comms_draft"):
+        rel = repo_rel(r["comms_draft"])
+        out.append(f"  - **Comms draft (DRAFT - human review required "
+                   f"before any distribution):** [{md_cell(rel)}]"
+                   f"({blob_url(rel)})")
     if r.get("page_updated"):
         out.append(f"  - **Revision stamp:** {md_cell(r['page_updated'])}")
     keys, scope = r.get("master_keys", ""), r.get("master_note", "")
@@ -1117,15 +1351,15 @@ def write_dashboard(path: Path, report: dict,
         f"[GitHub repository](https://github.com/{repo_slug()}).", "",
         f"**Last run:** {report['generated']} - **Needs review: "
         f"{len(flagged)}**", "",
-        "If the last run is more than 35 days old, the checker itself needs",
-        f"attention: check the [Actions tab](https://github.com/{repo_slug()}"
-        "/actions).", "",
         "Where to click: "
+        f"[change review page]({pages_home_url()}changes.html) · "
         f"[change log (CSV)]({blob_url('reports/changes_log.csv')}) · "
         f"[reports folder]({tree_url('reports')}) (diff reports land in "
         "`reports/diffs/`) · "
         f"[latest raw report (JSON)]({blob_url('reports/latest_report.json')}) · "
         f"[watchlist definition]({blob_url('watchlist.yaml')})", "",
+        "Statuses like `CHANGED` or `BLIND_SHELL` are explained in the "
+        "[status legend](#status-legend) at the bottom of this page.", "",
     ]
 
     lines += [f"## Needs review since last run ({len(flagged)})", ""]
@@ -1156,51 +1390,172 @@ def write_dashboard(path: Path, report: dict,
                       f"  - **What to do:** {md_cell(action_for(r['verdict']))}"]
         lines.append("")
 
-    lines += ["## Status legend", "",
-              "| Status | Code | What it means | What you should do |",
-              "|---|---|---|---|"]
-    for v, kind, meaning, action in VERDICT_LEGEND:
-        lines.append(f"| {badge(kind)} | `{v}` | {md_cell(meaning)} "
-                     f"| {md_cell(action)} |")
-    lines.append("")
+    def anchor(name: str, prog: str) -> str:
+        return re.sub(r"[^a-z0-9]+", "-", f"{name} {prog}".lower()).strip("-")
 
+    progs = sorted({r["program"] for r in results})
     lines += ["## All sources by program", "",
-              "Every watched source, including the quiet ones. Open the fine "
-              "print under a row for exactly what is checked and its caveats.",
-              ""]
-    for prog in sorted({r["program"] for r in results}):
+              "Programs on this page (every watched source, including the "
+              "quiet ones):", ""]
+    for prog in progs:
         rs = [r for r in results if r["program"] == prog]
-        lines += [f"### {PROGRAM_NAMES.get(prog, prog)} (`{prog}`)", ""]
+        name = PROGRAM_NAMES.get(prog, prog)
+        n_flag = sum(1 for r in rs if r["verdict"] in NEEDS_REVIEW)
+        lines.append(f"- [{name}](#{anchor(name, prog)}) - {len(rs)} source"
+                     f"{'s' if len(rs) != 1 else ''}"
+                     + (f", {n_flag} needs review" if n_flag else ""))
+    lines += ["",
+              "Each block: the status line first, then (indented) the source "
+              "link and a Details fold-out with exactly what is checked and "
+              "its caveats.", ""]
+    for prog in progs:
+        rs = [r for r in results if r["program"] == prog]
+        name = PROGRAM_NAMES.get(prog, prog)
+        lines += [f"### {name} (`{prog}`)", ""]
         for r in rs:
             lines.append(f"#### {badge_for(r['verdict'])} {r['id']} - "
                          f"`{r['verdict']}`")
             lines.append("")
             bits = []
             if r.get("url"):
-                bits.append(f"[Open the source]({r['url']})")
+                bits.append(f'<a href="{esc(r["url"])}">Open the source</a>')
             if r.get("page_updated"):
-                bits.append(f"revision {md_cell(r['page_updated'])}")
+                bits.append(f"revision {esc(r['page_updated'])}")
             checked = (r.get("checked_at") or "")[:10]
             bits.append(f"checked {checked}" if checked
                         else "not fetched automatically")
             if r.get("diff_report"):
                 rel = repo_rel(r["diff_report"])
-                bits.append(f"[text diff]({blob_url(rel)})")
-            lines += [" - ".join(bits), ""]
+                bits.append(f'<a href="{blob_url(rel)}">text diff</a>')
+            lines += [f'<p style="margin:.2em 0 .2em 2em">'
+                      f'{" - ".join(bits)}</p>', ""]
             if r["verdict"] not in QUIET:
-                lines += [f"Why: {md_cell(plain_why(r)) or 'no detail recorded.'}",
+                lines += [f'<p style="margin:.2em 0 .2em 2em"><b>Why:</b> '
+                          f'{esc(plain_why(r)) or "no detail recorded."}</p>',
                           ""]
             lines += fine_print(r, last_change)
             lines.append("")
+
+    lines += ["### Source URLs at a glance", "",
+              "Plain list of every URL this page's data comes from.", "",
+              "```text"]
+    for prog in progs:
+        for r in (r for r in results if r["program"] == prog):
+            if r.get("url"):
+                lines.append(f"{r['id']}: {r['url']}")
+    lines += ["```", ""]
+
+    lines += ["## Status legend", ""]
+    lines.append('<table style="font-size:.85em;line-height:1.45">')
+    lines.append("<tr><th>Status</th><th>Code</th>"
+                 "<th>What it means, and what to do</th></tr>")
+    for v, kind, meaning, action in VERDICT_LEGEND:
+        lines.append(f"<tr><td>{badge(kind)}</td><td><code>{esc(v)}</code></td>"
+                     f"<td>{esc(meaning)} <i>{esc(action)}</i></td></tr>")
+    lines += ["</table>", ""]
+
     lines += ["---", "",
+              "If the last run shown at the top of this page is more than 35 "
+              "days old, this monitor may not be active or may need an "
+              "update - notify the maintainer.", "",
               "This page is regenerated on every run by `write_dashboard` in "
               f"[source_check.py]({blob_url('source_check.py')}); edit that, "
               "not this file. Alert tool only - verify against the live "
               "official source.", "",
-              f"Built and maintained by [mp321](https://github.com/mp321). "
-              f"Copyright (c) 2026 mp321. See the "
+              f"Built and maintained by "
+              f"[Michael Phipps](https://github.com/mp321). See the "
               f"[repository]({f'https://github.com/{repo_slug()}'}) for "
               "source, history, and license terms.", ""]
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("\n".join(lines), encoding="utf-8")
+
+
+def write_changes_page(path: Path, report: dict,
+                       log_path: Path | None = None) -> None:
+    """Team-facing change review page (docs/changes.md, published on Pages
+    next to the dashboard). One block per item needing review: what changed
+    in plain language, the exact codes with page-anchored deep links into the
+    source, and the full diff. Built for minimal reading - every line points
+    at a working URL for the source of truth."""
+    results = sorted(report["results"], key=lambda r: (r["program"], r["id"]))
+    flagged = [r for r in results if r["verdict"] in NEEDS_REVIEW]
+    lines = [
+        "# Change review", "",
+        f"[Back to the dashboard]({pages_home_url()}) - **run "
+        f"{report['generated']}** - {len(flagged)} item(s) to review.", "",
+        "Each block below is one flagged source: what happened, which billing "
+        "codes moved (heuristic - **verify each against the linked source "
+        "before acting**), and a working link to the exact spot in the "
+        "official document.", "",
+    ]
+    if not flagged:
+        lines += [f"{badge('ok')} Nothing to review from the last run.", ""]
+    for r in flagged:
+        prog = PROGRAM_NAMES.get(r["program"], r["program"])
+        lines += [f"## {r['id']} - {prog}", "",
+                  f"{badge_for(r['verdict'])} `{r['verdict']}` - detected "
+                  f"{(r.get('checked_at') or report['generated'])[:10]}", "",
+                  f"**What happened:** {md_cell(plain_why(r)) or 'no detail recorded.'}",
+                  ""]
+        if r.get("url"):
+            lines.append(f"**Source of truth:** [{md_cell(r['url'])}]({r['url']})")
+            lines.append("")
+        codes = r.get("codes_touched") or []
+        if codes:
+            url = r.get("url", "")
+            is_pdf = any(e["page"] is not None for e in codes)
+            lines += ["**Codes that moved** (machine-extracted, verify each):",
+                      "",
+                      "| Code | System | What | Confidence | Tracked "
+                      "| Open at |", "|---|---|---|---|---|---|"]
+            for e in codes:
+                tr = (f"**TRACKED** {md_cell(e['master_row'])}".strip()
+                      if e["tracked"] else "")
+                where = page_link(url, e["page"], is_pdf) or (
+                    f"[source]({url})" if url else "")
+                lines.append(f"| `{e['code']}` | {e['system']} "
+                             f"| {e['direction']} | {e['confidence']} | {tr} "
+                             f"| {where} |")
+            lines.append("")
+        if r.get("diff_report"):
+            rel = repo_rel(r["diff_report"])
+            lines.append(f"**Full before/after diff:** [{md_cell(rel)}]"
+                         f"({blob_url(rel)})")
+            lines.append("")
+        if r.get("comms_draft"):
+            rel = repo_rel(r["comms_draft"])
+            lines.append(f"**Comms draft** (DRAFT - human review required "
+                         f"before any distribution): [{md_cell(rel)}]"
+                         f"({blob_url(rel)})")
+            lines.append("")
+        keys, scope = r.get("master_keys", ""), r.get("master_note", "")
+        if keys or scope:
+            lines.append("**Master rows to verify:** "
+                         + " - ".join(x for x in
+                                      (f"`{md_cell(keys)}`" if keys else "",
+                                       md_cell(scope) if scope else "") if x))
+            lines.append("")
+    hist = []
+    if log_path and Path(log_path).exists():
+        try:
+            with Path(log_path).open(encoding="utf-8", newline="") as f:
+                hist = list(csv.DictReader(f))[-20:]
+        except OSError:
+            hist = []
+    if hist:
+        lines += ["## Recent change history (last 20 events)", "",
+                  "| Date | Source | Status | Diff |", "|---|---|---|---|"]
+        for h in reversed(hist):
+            diff = h.get("diff_report", "")
+            cell = (f"[diff]({blob_url(repo_rel(diff))})" if diff else "")
+            lines.append(f"| {md_cell((h.get('generated') or '')[:10])} "
+                         f"| `{md_cell(h.get('id', ''))}` "
+                         f"| `{md_cell(h.get('verdict', ''))}` | {cell} |")
+        lines.append("")
+    lines += ["---", "",
+              "Machine-generated review aid; not a source of record. Built "
+              "and maintained by [Michael Phipps](https://github.com/mp321).",
+              ""]
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text("\n".join(lines), encoding="utf-8")
 
@@ -1224,6 +1579,17 @@ def append_changes_log(out_dir: Path, report: dict) -> None:
         pass
 
 
+def _code_ref(e: dict, url: str, is_pdf: bool) -> str:
+    """`99213 (CPT, p.4 https://...#page=4)`-style reference for summaries."""
+    bits = [e["system"]]
+    if e["confidence"] != "high":
+        bits.append(f"{e['confidence']} confidence")
+    if e["page"] is not None:
+        bits.append(f"p.{e['page']} {url}#page={e['page']}" if is_pdf and url
+                    else f"p.{e['page']}")
+    return f"{e['code']} ({', '.join(bits)})"
+
+
 def write_run_summary(root: Path, report: dict) -> None:
     try:
         lines = [f"Source watch run {report['generated']} - "
@@ -1242,12 +1608,109 @@ def write_run_summary(root: Path, report: dict) -> None:
                 lines.append(f"  Master rows: {r['master_keys']}")
             if r.get("master_note"):
                 lines.append(f"  Master scope: {r['master_note']}")
+            codes = r.get("codes_touched") or []
+            if codes:
+                url = r.get("url", "")
+                is_pdf = any(e["page"] is not None for e in codes)
+                added = [e for e in codes if e["direction"] in ("added", "both")]
+                removed = [e for e in codes if e["direction"] in ("removed", "both")]
+                tracked_hits = [e for e in codes if e["tracked"]]
+                lines.append("  Codes touched (heuristic - verify each):")
+                if added:
+                    lines.append("    added:   " + ", ".join(
+                        _code_ref(e, url, is_pdf) for e in added))
+                if removed:
+                    lines.append("    removed: " + ", ".join(
+                        _code_ref(e, url, is_pdf) for e in removed))
+                if tracked_hits:
+                    lines.append("    TRACKED matches: " + ", ".join(
+                        f"{e['code']}"
+                        + (f" (Master row {e['master_row']})"
+                           if e["master_row"] else "")
+                        for e in tracked_hits))
+            if r.get("comms_draft"):
+                lines.append(f"  comms draft (DRAFT, human review required): "
+                             f"{blob_url(repo_rel(r['comms_draft']))}")
             lines.append("")
         lines.append("Decision support only - verify against the live official "
                      "source before updating the Master sheet.")
         (root / "run_summary.md").write_text("\n".join(lines), encoding="utf-8")
     except OSError:
         pass
+
+
+def write_comms_draft(root: Path, r: dict, stamp: str,
+                      effective: list[str]) -> str:
+    """Draft announcement for billing/coding staff when a CHANGED source
+    touches tracked codes. Written to reports/comms/, never sent anywhere.
+    Returns the path or ''."""
+    try:
+        codes = r.get("codes_touched", [])
+        tracked = [e for e in codes if e["tracked"]]
+        if not tracked:
+            return ""
+        cdir = root / "reports" / "comms"
+        cdir.mkdir(parents=True, exist_ok=True)
+        cp = cdir / f"{stamp}_{r['id']}.md"
+        url = r.get("url", "")
+        is_pdf = any(e["page"] is not None for e in codes)
+        prog = PROGRAM_NAMES.get(r["program"], r["program"])
+        lines = [
+            f"# DRAFT - source change notice: {r['id']}",
+            "",
+            "> **DRAFT. Machine-generated by the source watcher. Requires "
+            "human review and approval before any distribution.** Nothing is "
+            "sent automatically. Verify every statement against the live "
+            "official source first.",
+            "",
+            f"**Audience:** billing / coding staff, SF DPH network - "
+            f"{prog}", "",
+            "## What changed", "",
+            f"The official source below was updated (detected "
+            f"{r.get('checked_at', '')[:10]}). The billing codes listed here "
+            "appeared on changed lines of the document text.", "",
+            f"- Source: {url}",
+        ]
+        if effective:
+            lines.append(f"- Possible effective date(s) found in the change: "
+                         f"{', '.join(effective)} (verify in the document)")
+        else:
+            lines.append("- Effective date: not stated on the changed lines - "
+                         "check the document.")
+        if r.get("diff_report"):
+            lines.append(f"- Exact before/after diff: "
+                         f"{blob_url(repo_rel(r['diff_report']))}")
+        lines += ["", "## Codes affected (tracked)", ""]
+        for e in tracked:
+            desc = f" - {e['description']}" if e.get("description") else ""
+            mrow = (f" (Master row: {e['master_row']})"
+                    if e.get("master_row") else "")
+            pl = ""
+            if e["page"] is not None:
+                pl = (f" - see page {e['page']}"
+                      + (f": {url}#page={e['page']}" if is_pdf and url else ""))
+            lines.append(f"- **{e['code']}** ({e['system']}, {e['direction']})"
+                         f"{desc}{mrow}{pl}")
+        others = [e for e in codes if not e["tracked"]]
+        if others:
+            lines += ["", "## Other codes seen on changed lines (unverified "
+                          "heuristic)", "",
+                      ", ".join(f"{e['code']} ({e['system']}, "
+                                f"{e['confidence']} confidence)"
+                                for e in others)]
+        lines += ["", "## Before acting", "",
+                  "1. Open the source link above and re-read the changed "
+                  "section.",
+                  "2. Confirm each code, direction, and any effective date "
+                  "against the document itself - the list above is a text "
+                  "heuristic and can be wrong or incomplete.",
+                  "3. Route through the normal review chain (Master sheet, "
+                  "superbill / tipsheet, Epic review) before telling anyone "
+                  "to change billing behavior.", ""]
+        cp.write_text("\n".join(lines), encoding="utf-8")
+        return str(cp)
+    except OSError:
+        return ""
 
 
 def run(watchlist: Path, out_dir: Path, only, update: bool,
@@ -1262,8 +1725,9 @@ def run(watchlist: Path, out_dir: Path, only, update: bool,
         base = json.loads(baseline_path.read_text()) if baseline_path.exists() else {}
 
     root = Path(watchlist).resolve().parent
+    tracked = load_tracked_codes(root / "data" / "tracked_codes.csv")
     snaps = SnapshotStore(snapshots_dir or (root / "snapshots"),
-                          out_dir / "diffs")
+                          out_dir / "diffs", tracked=tracked)
     fetch = Fetcher()
     rows, new_base, review = [], {}, []
     ts = now_iso()
@@ -1329,13 +1793,26 @@ def run(watchlist: Path, out_dir: Path, only, update: bool,
         print(f"{verdict:22} {entry['program']:16} {eid}")
 
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    # Attach the structured code candidates from the diff layer to their rows
+    # (JSON report and dashboard read them), then draft a comms note for any
+    # CHANGED source touching tracked codes. Drafts are files only.
+    for r in rows:
+        r["codes_touched"] = snaps.codes.get(r["id"], [])
+        r["comms_draft"] = ""
+        if r["verdict"] == "CHANGED" and any(e["tracked"]
+                                             for e in r["codes_touched"]):
+            r["comms_draft"] = write_comms_draft(
+                root, r, stamp, snaps.effective.get(r["id"], []))
+            if r["comms_draft"]:
+                print(f"comms draft (needs human review) -> {r['comms_draft']}")
     report = {"generated": now_iso(), "needs_review": review, "results": rows}
     (out_dir / f"check_{stamp}.json").write_text(json.dumps(report, indent=2))
     (out_dir / "latest_report.json").write_text(json.dumps(report, indent=2))
     with (out_dir / f"check_{stamp}.csv").open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0].keys()) if rows else ["id"])
         w.writeheader()
-        w.writerows(rows)
+        w.writerows({**r, "codes_touched": codes_brief(r["codes_touched"])}
+                    for r in rows)
     append_changes_log(out_dir, report)
     rs = root / "run_summary.md"
     if rs.exists():
@@ -1347,6 +1824,8 @@ def run(watchlist: Path, out_dir: Path, only, update: bool,
         write_run_summary(root, report)
     if dashboard:
         write_dashboard(dashboard, report, log_path=out_dir / "changes_log.csv")
+        write_changes_page(dashboard.parent / "changes.md", report,
+                           log_path=out_dir / "changes_log.csv")
 
     print(f"\nneeds review: {len(review)}  ->  {out_dir}/check_{stamp}.csv")
     if update:
@@ -1442,7 +1921,10 @@ def main() -> int:
         report = json.loads(report_path.read_text(encoding="utf-8"))
         dash = args.dashboard or Path("docs/index.md")
         write_dashboard(dash, report, log_path=args.out / "changes_log.csv")
-        print(f"dashboard regenerated from {report_path} -> {dash}")
+        write_changes_page(dash.parent / "changes.md", report,
+                           log_path=args.out / "changes_log.csv")
+        print(f"dashboard + changes page regenerated from {report_path} "
+              f"-> {dash}, {dash.parent / 'changes.md'}")
         return 0
 
     report = run(args.watchlist, args.out, args.programs, args.update,

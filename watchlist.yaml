@@ -120,7 +120,7 @@ programs:
           internal endpoint that can change shape or auth without notice; MCSS
           email remains the backstop detector and must not be retired on the
           strength of this integration. Decision support, not a source of
-          record. No PHI.
+          record. 
         master_note: ppbi_source_section rows for any changed section
 
       - id: fpact_bulletin_probe
