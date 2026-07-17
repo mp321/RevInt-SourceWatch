@@ -22,7 +22,7 @@ manual entries, master_keys mapping) and adds four things:
 
 A change verdict means one thing only: a human re-reads that source and, if
 needed, updates the Master sheet. Nothing is written to any system of record.
-Decision support, not a source of truth. No PHI ever.
+Decision support, not a source of truth.
 
 Run:
   python source_check.py                       # all enabled programs
@@ -846,87 +846,111 @@ TYPE_HOW = {
                    "and removals are flagged.",
 }
 
-# verdict -> (marker, what it means, what the reader should do)
+# badge kind -> (label, text color, background). Plain inline-styled spans,
+# not emoji: they render identically everywhere Jekyll/kramdown outputs raw
+# HTML, need no font support, and read fine to a screen reader.
+BADGE_STYLE = {
+    "review": ("Needs review", "#7a271a", "#ffebe9"),
+    "gap":    ("Can't verify", "#7a4a00", "#fff6e0"),
+    "ok":     ("Clear",        "#0f5132", "#e6f4ea"),
+    "unknown": ("Unknown",     "#374151", "#f1f3f5"),
+}
+
+
+def badge(kind: str) -> str:
+    label, fg, bg = BADGE_STYLE.get(kind, BADGE_STYLE["unknown"])
+    return (f'<span style="display:inline-block;padding:.1em .6em;'
+            f'border-radius:1em;font-size:.82em;font-weight:600;'
+            f'background:{bg};color:{fg};white-space:nowrap">{label}</span>')
+
+
+# status -> (badge kind, what it means, what the reader should do)
 VERDICT_LEGEND: list[tuple[str, str, str, str]] = [
-    ("CHANGED", "[REVIEW]",
+    ("CHANGED", "review",
      "The extracted text of this source differs from the last run.",
      "Open the diff to see the exact lines, re-read that part of the live "
      "source, then verify the listed Master rows (superbill, tipsheet, Epic "
      "review as applicable)."),
-    ("NEW", "[REVIEW]",
+    ("NEW", "review",
      "First run for this source; its current state became the baseline.",
      "Skim the source once to confirm it is the right document."),
-    ("DATE_CHANGED", "[REVIEW]",
+    ("DATE_CHANGED", "review",
      "A revision or 'page updated' stamp moved but the content text did not.",
      "Open the source and confirm nothing substantive changed; usually a "
      "republish."),
-    ("LINKS_CHANGED", "[REVIEW]",
+    ("LINKS_CHANGED", "review",
      "The set of files this page links to changed (often a re-versioned "
      "filename, e.g. a new Superbill).",
      "Open the page, find the added or removed file named in Why, and if a "
      "watched file was re-versioned, point watchlist.yaml at the new URL."),
-    ("NEW_ISSUE", "[REVIEW]",
+    ("NEW_ISSUE", "review",
      "A probed bulletin issue number returned real content.",
      "Read the new bulletin and triage anything affecting the Master sheet."),
-    ("REMOVED", "[REVIEW]",
+    ("REMOVED", "review",
      "A document disappeared from the portal's list.",
      "Check the portal: retired, renamed, or moved? Update the Master sheet "
      "reference if the section is gone."),
-    ("URL_CHANGED_IN_CONFIG", "[REVIEW]",
+    ("URL_CHANGED_IN_CONFIG", "review",
      "The URL in watchlist.yaml differs from the URL the baseline was built "
      "from.",
      "Confirm the new URL is intentional; the next run with --update "
      "re-baselines it."),
-    ("CHANGED_METADATA_ONLY", "[REVIEW]",
+    ("CHANGED_METADATA_ONLY", "review",
      "The portal says this section was revised (new revision date or file id) "
      "but the PDF itself could not be downloaded, so there is no text diff.",
      "Open the section on the portal, re-read it, and verify the listed "
      "Master rows."),
-    ("LIST_TRUNCATED", "[REVIEW]",
+    ("LIST_TRUNCATED", "review",
      "The portal returned fewer documents than its own count claims.",
      "Open the portal list and compare; some sections may be silently "
      "unmonitored until this clears."),
-    ("UNREACHABLE", "[GAP]",
+    ("UNREACHABLE", "gap",
      "The fetch failed this run (HTTP error, network error, robots.txt, or an "
      "off-site redirect) - the Why line says which.",
      "If it persists more than one run, open the URL in a browser; the page "
      "may have moved. Then fix watchlist.yaml. Until then this source is "
      "unmonitored."),
-    ("MANUAL_REVIEW", "[GAP]",
+    ("MANUAL_REVIEW", "gap",
      "This source cannot be fetched automatically, by design (reason in the "
      "fine print).",
      "Open the link by hand on the cadence given in the fine print; MCSS "
      "email is the push detector."),
-    ("BLIND_SHELL", "[GAP]",
+    ("BLIND_SHELL", "gap",
      "The page builds its content with JavaScript, so the checker sees only "
      "an empty app shell and cannot detect content changes.",
      "Do not rely on this row for detection; MCSS email covers it. Open the "
      "page yourself when in doubt."),
-    ("PROBE_INCONCLUSIVE", "[GAP]",
+    ("PROBE_INCONCLUSIVE", "gap",
      "The bulletin probe could not confirm or rule out a new issue "
      "(client-rendered portal).",
      "Nothing to do; MCSS email is the reliable detector for bulletins."),
-    ("CONFIG_TODO", "[GAP]",
+    ("CONFIG_TODO", "gap",
      "The watchlist entry is incomplete, so nothing is monitored for it yet.",
      "Finish the entry in watchlist.yaml; the Why line says what is missing."),
-    ("unchanged", "[OK]",
+    ("unchanged", "ok",
      "No change detected.",
      "Nothing to do."),
-    ("metadata_only_unchanged", "[OK]",
+    ("metadata_only_unchanged", "ok",
      "The PDF is not directly downloadable, but the portal's revision "
      "metadata is unchanged.",
      "Nothing to do."),
 ]
-VERDICT_HELP = {v: (mark, meaning, action)
-                for v, mark, meaning, action in VERDICT_LEGEND}
+VERDICT_HELP = {v: (kind, meaning, action)
+                for v, kind, meaning, action in VERDICT_LEGEND}
 
 
-def marker_for(verdict: str) -> str:
+def kind_for(verdict: str) -> str:
+    if verdict in VERDICT_HELP:
+        return VERDICT_HELP[verdict][0]
     if verdict in NEEDS_REVIEW:
-        return "[REVIEW]"
+        return "review"
     if verdict in QUIET:
-        return "[OK]"
-    return "[GAP]" if verdict in VERDICT_HELP else "[?]"
+        return "ok"
+    return "unknown"
+
+
+def badge_for(verdict: str) -> str:
+    return badge(kind_for(verdict))
 
 
 def action_for(verdict: str) -> str:
@@ -1026,15 +1050,19 @@ def fine_print(r: dict, last_change: dict[str, tuple[str, str]]) -> list[str]:
         rel = repo_rel(r["diff_report"])
         li.append(f'<li><b>Latest diff report:</b> <a href="{blob_url(rel)}">'
                   f"{esc(rel)}</a></li>")
-    return (["<details>",
+    # Loose line-height and left indent so a long run of fine print doesn't
+    # read as one dense wall of text; kept inline since Pages markdown does
+    # not process a class attribute against an external stylesheet here.
+    return (["<details style=\"margin:.3em 0 1.1em 0\">",
              "<summary>Fine print: exactly what is checked here, how, and "
-             "its caveats</summary>", "<ul>"] + li + ["</ul>", "</details>"])
+             "its caveats</summary>",
+             '<ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">']
+            + li + ["</ul>", "</details>"])
 
 
 def needs_review_item(r: dict) -> list[str]:
-    mark = marker_for(r["verdict"])
     title = (f"[{r['id']}]({r['url']})" if r.get("url") else f"`{r['id']}`")
-    out = [f"- {mark} **{r['verdict']}** - {title} "
+    out = [f"- {badge_for(r['verdict'])} `{r['verdict']}` - {title} "
            f"_({PROGRAM_NAMES.get(r['program'], r['program'])})_",
            f"  - **What happened:** {md_cell(plain_why(r)) or 'no detail recorded.'}",
            f"  - **What to do:** {md_cell(action_for(r['verdict']))}"]
@@ -1079,7 +1107,14 @@ def write_dashboard(path: Path, report: dict,
         "Automated monitor for the official billing sources behind the",
         "Revenue Integrity registry. **Alert tool only, not a source of",
         "record.** Verify every flagged item against the live official source",
-        "before acting on it. No PHI.", "",
+        "before acting on it.", "",
+        "Each week a GitHub Action fetches every source listed below, compares "
+        "it against the copy from the previous run, and flags anything that "
+        "changed, disappeared, or could not be checked. A flag here does not "
+        "mean the Master sheet is wrong - it means a human should re-read that "
+        "source and confirm whether anything downstream needs to change. For "
+        f"source definitions, run history, and the full codebase, see the "
+        f"[GitHub repository](https://github.com/{repo_slug()}).", "",
         f"**Last run:** {report['generated']} - **Needs review: "
         f"{len(flagged)}**", "",
         "If the last run is more than 35 days old, the checker itself needs",
@@ -1102,7 +1137,7 @@ def write_dashboard(path: Path, report: dict,
             lines += needs_review_item(r)
         lines.append("")
     else:
-        lines += ["[OK] Nothing needs review from the last run.", ""]
+        lines += [f"{badge('ok')} Nothing needs review from the last run.", ""]
 
     if gaps:
         lines += [f"### Could not be checked automatically ({len(gaps)})", "",
@@ -1115,17 +1150,17 @@ def write_dashboard(path: Path, report: dict,
         for r in gaps:
             title = (f"[{r['id']}]({r['url']})" if r.get("url")
                      else f"`{r['id']}`")
-            lines += [f"- [GAP] **{r['verdict']}** - {title} "
+            lines += [f"- {badge_for(r['verdict'])} `{r['verdict']}` - {title} "
                       f"_({PROGRAM_NAMES.get(r['program'], r['program'])})_",
                       f"  - **Why:** {md_cell(plain_why(r))}",
                       f"  - **What to do:** {md_cell(action_for(r['verdict']))}"]
         lines.append("")
 
-    lines += ["## Verdict legend", "",
-              "| Marker | Verdict | What it means | What you should do |",
+    lines += ["## Status legend", "",
+              "| Status | Code | What it means | What you should do |",
               "|---|---|---|---|"]
-    for v, mark, meaning, action in VERDICT_LEGEND:
-        lines.append(f"| {mark} | `{v}` | {md_cell(meaning)} "
+    for v, kind, meaning, action in VERDICT_LEGEND:
+        lines.append(f"| {badge(kind)} | `{v}` | {md_cell(meaning)} "
                      f"| {md_cell(action)} |")
     lines.append("")
 
@@ -1137,8 +1172,8 @@ def write_dashboard(path: Path, report: dict,
         rs = [r for r in results if r["program"] == prog]
         lines += [f"### {PROGRAM_NAMES.get(prog, prog)} (`{prog}`)", ""]
         for r in rs:
-            lines.append(f"#### {marker_for(r['verdict'])} {r['id']} - "
-                         f"{r['verdict']}")
+            lines.append(f"#### {badge_for(r['verdict'])} {r['id']} - "
+                         f"`{r['verdict']}`")
             lines.append("")
             bits = []
             if r.get("url"):
@@ -1161,7 +1196,11 @@ def write_dashboard(path: Path, report: dict,
               "This page is regenerated on every run by `write_dashboard` in "
               f"[source_check.py]({blob_url('source_check.py')}); edit that, "
               "not this file. Alert tool only - verify against the live "
-              "official source. No PHI.", ""]
+              "official source.", "",
+              f"Built and maintained by [mp321](https://github.com/mp321). "
+              f"Copyright (c) 2026 mp321. See the "
+              f"[repository]({f'https://github.com/{repo_slug()}'}) for "
+              "source, history, and license terms.", ""]
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text("\n".join(lines), encoding="utf-8")
 
@@ -1205,7 +1244,7 @@ def write_run_summary(root: Path, report: dict) -> None:
                 lines.append(f"  Master scope: {r['master_note']}")
             lines.append("")
         lines.append("Decision support only - verify against the live official "
-                     "source before updating the Master sheet. No PHI.")
+                     "source before updating the Master sheet.")
         (root / "run_summary.md").write_text("\n".join(lines), encoding="utf-8")
     except OSError:
         pass
