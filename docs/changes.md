@@ -1,6 +1,6 @@
 # Change review
 
-[Back to the dashboard](https://mp321.github.io/RevInt-SourceWatch/) - **run 2026-07-16T22:04:20+00:00** - 4 item(s) to review.
+[Back to the dashboard](https://mp321.github.io/RevInt-SourceWatch/) - **run 2026-07-16T22:04:20+00:00** - 3 item(s) to review.
 
 Each block below is one flagged source: what happened, which billing codes moved (heuristic - **verify each against the linked source before acting**), and a working link to the exact spot in the official document.
 
@@ -20,14 +20,6 @@ Each block below is one flagged source: what happened, which billing codes moved
 
 **Source of truth:** [https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx](https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx)
 
-## mcp_sfhp_providers - Managed Medi-Cal
-
-<span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> `CHANGED` - detected 2026-07-16
-
-**What happened:** content text hash differs
-
-**Source of truth:** [https://www.sfhp.org/providers/](https://www.sfhp.org/providers/)
-
 ## ncci_medicaid_files - NCCI
 
 <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> `CHANGED` - detected 2026-07-16
@@ -42,7 +34,6 @@ Each block below is one flagged source: what happened, which billing codes moved
 |---|---|---|---|
 | 2026-07-16 | `ncci_medicaid_files` | `CHANGED` |  |
 | 2026-07-16 | `fqhc_cms_center` | `CHANGED` |  |
-| 2026-07-16 | `mcp_sfhp_providers` | `CHANGED` |  |
 | 2026-07-16 | `mcp_apl_index` | `CHANGED` |  |
 
 ---

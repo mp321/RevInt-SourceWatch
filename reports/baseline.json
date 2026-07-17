@@ -1,15 +1,4 @@
 {
-  "ffs_rates_page_mcweb": {
-    "byte_sha": "9df4506c85a14aae96c916423d2bb91baddc71fd00d7105e49396690e53fa451",
-    "checked_at": "2026-07-16T22:03:46+00:00",
-    "etag": "W/\"6a02539e-da1\"",
-    "last_modified": "Mon, 11 May 2026 22:09:34 GMT",
-    "links": [],
-    "page_updated": "",
-    "shell": true,
-    "text_sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/rates?tab=rates"
-  },
   "ffs_sb94_fp_fee_schedule": {
     "byte_sha": "80e17ecbc8dc0126eb63bf5692ea53624bca8f793f35eba72f43cfaecf350cdf",
     "checked_at": "2026-07-16T22:03:46+00:00",
@@ -20,28 +9,6 @@
     "shell": false,
     "text_sha": "80e17ecbc8dc0126eb63bf5692ea53624bca8f793f35eba72f43cfaecf350cdf",
     "url": "https://www.dhcs.ca.gov/wp-content/uploads/2025/10/SB94-Family-Planning-Services-Fee-Schedule.xlsx"
-  },
-  "ffs_supplement_39": {
-    "byte_sha": "c14f1b1c01fe728a59616403e4b29a59f19f7a90e1c1931bc9d302342b7e8fa3",
-    "checked_at": "2026-07-16T22:03:46+00:00",
-    "etag": "\"6b741104fb2d9935\"",
-    "last_modified": "Sat, 11 Oct 2025 04:39:53 GMT",
-    "links": [],
-    "page_updated": "",
-    "shell": false,
-    "text_sha": "b4c4b4f8a6867fe7b7193c946186f73e6e9ec9c5121b8523623cb3048f49742c",
-    "url": "https://www.dhcs.ca.gov/formsandpubs/laws/Documents/Supplement-39-to-Attachment-419-B.pdf"
-  },
-  "ffs_tri_fee_schedule": {
-    "byte_sha": "76fe5631e58421c1d78126a79466fca3fbe293e25d5cdc9970c1e96d761682ad",
-    "checked_at": "2026-07-16T22:03:46+00:00",
-    "etag": "\"cdb6626985551ba6\"",
-    "last_modified": "Fri, 10 Oct 2025 04:21:44 GMT",
-    "links": [],
-    "page_updated": "",
-    "shell": false,
-    "text_sha": "76fe5631e58421c1d78126a79466fca3fbe293e25d5cdc9970c1e96d761682ad",
-    "url": "https://www.dhcs.ca.gov/wp-content/uploads/2025/10/CY-2024-TRI-Fee-Schedule-Feb.xlsx"
   },
   "ffs_tri_page": {
     "byte_sha": "d23a4e83034c8de6328421237d4e8673620fb03316cb0b0d1819655c5e239f8d",
@@ -63,28 +30,6 @@
     "checked_at": "2026-07-16T22:03:46+00:00",
     "last_seen_issue": 223,
     "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/bulletin?community=family-pact&issueNumber={issue}"
-  },
-  "fpact_dhcs_telephonic_guidance": {
-    "byte_sha": "2136bcfe97de05e3bad99ff971bdaf181a6ed8dcf75602100a2f599bf3a4341d",
-    "checked_at": "2026-07-16T22:03:46+00:00",
-    "etag": "\"29907aab06bd3147\"",
-    "last_modified": "Fri, 10 Oct 2025 20:10:04 GMT",
-    "links": [],
-    "page_updated": "",
-    "shell": false,
-    "text_sha": "2fa84f3f59223e0f88a0d87221631c0aa9a2f7d420915a27e15898e1d225500a",
-    "url": "https://www.dhcs.ca.gov/wp-content/uploads/2025/10/Guidance-Telephonic-Communications.pdf"
-  },
-  "fpact_enrollment": {
-    "byte_sha": "de059e53a292168f0077ef34a8b4add97bb266e4bd47d58299cd891051a8360f",
-    "checked_at": "2026-07-16T22:03:46+00:00",
-    "etag": "",
-    "last_modified": "",
-    "links": [],
-    "page_updated": "",
-    "shell": false,
-    "text_sha": "f8ca8508611e868d8bf44b632fa160e35670fbb30cd6748cf651edf98322c253",
-    "url": "https://familypact.org/providers/enrollment/"
   },
   "fpact_manual_docs": {
     "checked_at": "2026-07-17T02:07:27+00:00",
@@ -476,17 +421,6 @@
     "title": "Treatment Authorization Request (TAR) (tar)",
     "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/0CEE81EC-C0E9-4B4A-89FD-AE96C95FA705"
   },
-  "fpact_manual_page_mcweb": {
-    "byte_sha": "9df4506c85a14aae96c916423d2bb91baddc71fd00d7105e49396690e53fa451",
-    "checked_at": "2026-07-16T22:03:46+00:00",
-    "etag": "W/\"6a02539e-da1\"",
-    "last_modified": "Mon, 11 May 2026 22:09:34 GMT",
-    "links": [],
-    "page_updated": "",
-    "shell": true,
-    "text_sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact"
-  },
   "fpact_news_archive": {
     "byte_sha": "51e0c2827d7274ba815d82a5f9ba3ed885ef53cbc89f17b3f28e492c5402b8d6",
     "checked_at": "2026-07-16T22:03:46+00:00",
@@ -533,41 +467,8 @@
     "text_sha": "319797cb9cda0b0e4c75d87df166932f36bf4c48f92ba17a9f176f764d1ae76c",
     "url": "https://familypact.org/news-and-updates-archive/"
   },
-  "fpact_ofp_page": {
-    "byte_sha": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
-    "checked_at": "2026-07-03T00:48:07+00:00",
-    "etag": "",
-    "last_modified": "",
-    "links": [],
-    "page_updated": "",
-    "shell": true,
-    "text_sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "url": "https://www.dhcs.ca.gov/services/ofp/Pages/default.aspx"
-  },
   "fpact_ppbi_landing": {},
-  "fpact_superbill_current": {
-    "byte_sha": "3cc758b54e3116f844b4098bb240ab8dcc7c97897ab25cbccc39a18b1ff38c7a",
-    "checked_at": "2026-07-16T22:03:46+00:00",
-    "etag": "\"6a176c72-3427b\"",
-    "last_modified": "Wed, 27 May 2026 22:13:06 GMT",
-    "links": [],
-    "page_updated": "",
-    "shell": false,
-    "text_sha": "0d3fcf2394e1dc28e5d2f7da86c9d50b815a480ab7a4b4643c945971a31b231e",
-    "url": "https://familypact.org/wp-content/uploads/2026/03/Superbill-Updated-1.2026_2.27.26_508.pdf"
-  },
   "fpact_wic_24005": {},
-  "fqhc_chw_faq": {
-    "byte_sha": "e545c0999d5947a0b8920a62b908c4b8fa04ff6bae2122fe71cb52e571247bdf",
-    "checked_at": "2026-07-16T22:03:46+00:00",
-    "etag": "\"86fba65786a1a7a2\"",
-    "last_modified": "Thu, 09 Oct 2025 20:33:15 GMT",
-    "links": [],
-    "page_updated": "",
-    "shell": false,
-    "text_sha": "fbb06cbc858aff4fb13f6787ae8b5af08e37690664e8a3bc00a7f5326e7f3b6f",
-    "url": "https://www.dhcs.ca.gov/services/medi-cal/Documents/CHW-FAQs-FQHC-RHC-IHS.pdf"
-  },
   "fqhc_cms_center": {
     "byte_sha": "f41feb86a3a79795e73d7a1631e3c5a0fc153383939ad3d28cf2d4eb9a355e2f",
     "checked_at": "2026-07-16T22:03:46+00:00",
@@ -628,17 +529,6 @@
     "text_sha": "0cd0d5446ba2953b0e891527b36e6335a96cc631f632539ce3b2c2a254f952af",
     "url": "https://www.dhcs.ca.gov/hi/wp-content/uploads/2025/10/2024-Managed-Care-Boilerplate-Contract.pdf"
   },
-  "mcp_sfhp_providers": {
-    "byte_sha": "e671a9a9c6aad2b5f1e28034a6800c6145faa54ca0d518ebc2d3893b7f91e737",
-    "checked_at": "2026-07-16T22:03:46+00:00",
-    "etag": "",
-    "last_modified": "",
-    "links": [],
-    "page_updated": "",
-    "shell": false,
-    "text_sha": "a78574ea25c92a0b53ab7dfaabddf2776248781f53e5d5b6209a58457e1843f3",
-    "url": "https://www.sfhp.org/providers/"
-  },
   "mcp_tri_faq": {
     "byte_sha": "eb4a4b4b59ca87a3cad5690cae9f23295d0001fa0ae414387d46138defc3c705",
     "checked_at": "2026-07-16T22:03:46+00:00",
@@ -675,16 +565,5 @@
     "shell": false,
     "text_sha": "73746ee60e2243fdaf9b52e450b77b1fe94db44471ea5f9a960f1573b8d68e07",
     "url": "https://www.cms.gov/medicare/coding-billing/ncci-medicaid/medicaid-ncci-edit-files"
-  },
-  "rx_cdl_page": {
-    "byte_sha": "5372e7f2e7a1bff52681d3f9c4759ffe8463ebe74cda8f0fc2495fa4bc60fbf5",
-    "checked_at": "2026-07-16T22:03:46+00:00",
-    "etag": "",
-    "last_modified": "Fri, 27 Mar 2026 19:38:00 GMT",
-    "links": [],
-    "page_updated": "",
-    "shell": true,
-    "text_sha": "c5ffa00296b8aa1fe35b361d9e64a03b488ce92fd9fbe0ae66c529b56052244c",
-    "url": "https://medi-calrx.dhcs.ca.gov/home/cdl/"
   }
 }

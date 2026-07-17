@@ -80,7 +80,7 @@ def send_alert(report: dict, heartbeat: bool = False) -> str:
             lines.append(f"  Master scope: {r['master_note']}")
         lines.append("")
     lines.append("Decision support only - verify against the live official "
-                 "source before updating the Master sheet. No PHI.")
+                 "source before acting.")
     resp = requests.post(
         "https://api.resend.com/emails",
         headers={"Authorization": f"Bearer {key}"},

@@ -7,11 +7,12 @@ manual revision would, and runs the actual diff path (SnapshotStore.handle).
 
 Asserts the heuristic's contract:
   - real codes on changed lines are caught (99213 CPT with code vocabulary,
-    Z30.011 ICD-10-CM, tracked G2012 HCPCS, modifier 25);
+    Z30.011 ICD-10-CM, G2012 HCPCS, modifier 25);
   - false-positive bait is excluded (SF zip 94110 on a line with no code
     vocabulary, year 2026);
   - page anchors come from the nearest preceding [[page N]] marker and are
-    rendered as url#page=N deep links in the diff report.
+    rendered as url#page=N deep links in the diff report;
+  - the per-page 'Page updated' stamp capture serializes and diffs by page.
 """
 from pathlib import Path
 import sys
@@ -20,8 +21,8 @@ REPO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO))
 
 from source_check import (  # noqa: E402
-    SnapshotStore, extract_code_entries, load_tracked_codes,
-    effective_dates_in_diff, snapshot_page_map,
+    SnapshotStore, extract_code_entries, snapshot_page_map,
+    parse_page_stamps, stamp_change_detail, stamps_display,
 )
 
 REAL_SNAPSHOT = REPO / "snapshots" / "fqhc" / "fqhc_cms_center.txt"
@@ -61,7 +62,7 @@ def make_old_and_new() -> tuple[str, str]:
            + ["Telehealth billing code G2012 rate update pending"]
            + ["[[page 2]]"] + real[6:12])
     new = list(old)
-    # removal: the tracked-code line disappears from page 1
+    # removal: the HCPCS-code line disappears from page 1
     new.remove("Telehealth billing code G2012 rate update pending")
     # additions on page 2: real codes plus false-positive bait
     new += [
@@ -75,9 +76,7 @@ def make_old_and_new() -> tuple[str, str]:
 
 
 def run_diff(tmp_path: Path) -> tuple[str, SnapshotStore]:
-    store = SnapshotStore(
-        tmp_path / "snapshots", tmp_path / "diffs",
-        tracked=load_tracked_codes(REPO / "data" / "tracked_codes.csv"))
+    store = SnapshotStore(tmp_path / "snapshots", tmp_path / "diffs")
     old_text, new_text = make_old_and_new()
     p = store._path("fpact", "synthetic_doc")
     p.parent.mkdir(parents=True, exist_ok=True)
@@ -94,8 +93,7 @@ def test_codes_table_catches_real_codes_and_pages(tmp_path):
 
     assert "| `99213` | CPT | added | high |" in table
     assert "Z30.011" in table
-    assert "| `G2012` | HCPCS | removed |" in table
-    assert "**TRACKED**" in table          # G2012 is in data/tracked_codes.csv
+    assert "| `G2012` | HCPCS | removed | high |" in table
     assert "| `25` | modifier |" in table
 
     # page anchors: G2012 was removed from page 1, 99213 added on page 2
@@ -105,7 +103,6 @@ def test_codes_table_catches_real_codes_and_pages(tmp_path):
     entries = {e["code"]: e for e in store.codes["synthetic_doc"]}
     assert entries["99213"]["page"] == 2
     assert entries["G2012"]["page"] == 1
-    assert entries["G2012"]["tracked"] is True
 
 
 def test_false_positive_bait_is_excluded(tmp_path):
@@ -116,11 +113,9 @@ def test_false_positive_bait_is_excluded(tmp_path):
     assert "94110" not in codes and "94110" not in table   # SF zip, no vocab
     assert "2026" not in codes                              # year
     assert not any(c.startswith("20") and len(c) == 4 for c in codes)
-    # "effective in 2026" is not a real effective date and must not be one
-    assert store.effective["synthetic_doc"] == []
 
 
-def test_five_digit_needs_vocab_or_tracked():
+def test_five_digit_needs_vocab():
     diff = ["--- previous", "+++ current",
             "+Send payment of 12345 dollars to the district office",
             " unrelated context line",
@@ -130,16 +125,26 @@ def test_five_digit_needs_vocab_or_tracked():
     assert "12345" not in codes            # amount, no vocab anywhere near
     assert codes["93000"]["confidence"] == "high"          # vocab on the line
 
-    tracked = {"12345": {"description": "test", "master_row": "R9"}}
-    codes2 = {e["code"]: e for e in extract_code_entries(diff, tracked=tracked)}
-    assert "12345" in codes2 and codes2["12345"]["tracked"] is True
-
-
-def test_effective_date_detection():
-    diff = ["+Rates apply effective July 1, 2026 per the bulletin"]
-    assert effective_dates_in_diff(diff) == ["July 1, 2026"]
-
 
 def test_page_map_nearest_preceding_marker():
     pm = snapshot_page_map("[[page 1]]\nalpha\n[[page 3]]\nbeta")
     assert pm == {"alpha": 1, "beta": 3}
+
+
+def test_page_stamp_roundtrip_and_diff():
+    s = "p1: May 2026|p2: May 2026|p4: November 2024"
+    assert parse_page_stamps(s) == {1: "May 2026", 2: "May 2026",
+                                    4: "November 2024"}
+    assert parse_page_stamps("May 2026") is None            # legacy format
+    assert parse_page_stamps("") == {}
+    assert stamps_display(s) == "May 2026 (p1-2); November 2024 (p4)"
+    # portal revision dates and legacy values pass through unchanged
+    assert stamps_display("2025-05-23T00:02:23") == "2025-05-23T00:02:23"
+
+    detail = stamp_change_detail(s, "p1: May 2026|p2: June 2026|p5: June 2026")
+    assert "page 2: 'May 2026' -> 'June 2026'" in detail
+    assert "page 5 now stamped 'June 2026'" in detail
+    assert "page 4 stamp removed (was 'November 2024')" in detail
+    assert "page 1" not in detail                           # unchanged page
+    # legacy fallback keeps the raw before/after
+    assert stamp_change_detail("May 2026", s) == f"'May 2026' -> '{s}'"
