@@ -40,6 +40,7 @@ import difflib
 import hashlib
 import io
 import json
+import os
 import re
 import sys
 import textwrap
@@ -60,8 +61,15 @@ SHELL_MIN_CHARS = 400          # visible text below this => JS app shell
 DATE_RE = re.compile(r"Page updated:\s*([A-Za-z]+\s+\d{4})")
 DEFAULT_LINK_RE = r'href="([^"]+\.pdf[^"]*)"'
 NEEDS_REVIEW = {"NEW", "CHANGED", "DATE_CHANGED", "LINKS_CHANGED",
-                "NEW_ISSUE", "URL_CHANGED_IN_CONFIG", "REMOVED"}
+                "NEW_ISSUE", "URL_CHANGED_IN_CONFIG", "REMOVED",
+                "CHANGED_METADATA_ONLY", "LIST_TRUNCATED"}
 DIFF_MAX_LINES = 3000
+
+# Self-heal: a read-only Directus SPA bakes a static public token into its
+# runtime config bundle. If MCWEB_TOKEN is unset or has been rotated, the
+# watcher re-reads the current token from this bundle. Never a secret value
+# in the repo; the bundle is served anonymously.
+DIRECTUS_TOKEN_RE = r'window\.DIRECTUS_TOKEN\s*=\s*"([^"]+)"'
 
 # Heuristic billing-code patterns, applied to changed diff lines only.
 RE_HCPCS = re.compile(r"\b[A-Z]\d{4}\b")                  # J7300, S5000, G2012
@@ -205,6 +213,49 @@ class Fetcher:
             "content": r.content if r.status_code != 304 else b"",
         }
 
+    def _finalize(self, r, url: str) -> dict:
+        """Same response-dict shape and same-host redirect guard as get()."""
+        start_host = urlparse(url).hostname
+        for hop in list(r.history) + [r]:
+            if urlparse(hop.url).hostname != start_host:
+                return {"status": f"offhost_redirect:{urlparse(hop.url).hostname}"}
+        return {
+            "status": str(r.status_code),
+            "final_url": r.url,
+            "etag": r.headers.get("ETag", ""),
+            "last_modified": r.headers.get("Last-Modified", ""),
+            "content_type": r.headers.get("Content-Type", ""),
+            "content": r.content if r.status_code != 304 else b"",
+        }
+
+    def get_auth(self, url: str, prev: dict, extra_headers: dict | None = None) -> dict:
+        """Conditional GET that also sends per-request headers (e.g. a Bearer
+        token for authenticated asset downloads). get() is left untouched so
+        every existing entry keeps its exact behavior; only callers that opt
+        in (manual_list assets) send credentials, and only to their own host.
+        """
+        if not self.robots_ok(url):
+            return {"status": "robots_blocked"}
+        headers = dict(extra_headers or {})
+        if prev.get("etag"):
+            headers["If-None-Match"] = prev["etag"]
+        elif prev.get("last_modified"):
+            headers["If-Modified-Since"] = prev["last_modified"]
+        r = self.sess.get(url, timeout=TIMEOUT, allow_redirects=True,
+                          headers=headers)
+        return self._finalize(r, url)
+
+    def post_json(self, url: str, body_dict: dict,
+                  extra_headers: dict | None = None) -> dict:
+        """POST a JSON body (Directus/GraphQL). Same UA, robots gate, timeout,
+        and response-dict shape as get(). Never mutates get()."""
+        if not self.robots_ok(url):
+            return {"status": "robots_blocked"}
+        headers = {"Content-Type": "application/json", **(extra_headers or {})}
+        r = self.sess.post(url, json=body_dict, timeout=TIMEOUT,
+                           allow_redirects=True, headers=headers)
+        return self._finalize(r, url)
+
 
 # ------------------------------------------------------------- per entry ----
 def signature(entry: dict, resp: dict) -> dict:
@@ -290,14 +341,57 @@ def probe_bulletin(entry: dict, prev: dict, fetch: Fetcher) -> tuple[str, str, d
 
 
 # ------------------------------------------------------ manual_list entry ---
-def parse_manual_list(raw: bytes, asset_base: str) -> list[dict]:
-    """Parse a portal publication-list JSON into document dicts.
+def parse_manual_list(raw: bytes, asset_base: str) -> tuple[list[dict], int | None]:
+    """Parse a portal publication-list JSON into (documents, expected_count).
 
-    Generic by design: finds leaf objects mentioning a .pdf, pulls the pdf
-    path, a display title, and any revision-date-looking field. Endpoint
-    shapes vary; adjust here if a portal needs it.
+    Two parsers:
+      * Directus/GraphQL branch (when the JSON has data.manuals): iterate the
+        manuals array directly. doc_id = slug(stem of file.filename_download)
+        (stable across revisions), title = manuals.title, url =
+        asset_base + /assets/ + file.id, revision_date = file.modified_on as a
+        RAW STRING. expected_count comes from manuals_aggregated (truncation
+        tripwire). The generic scanner cannot handle this shape: it would emit
+        the bare "00letter.pdf" as the URL and miss modified_on entirely
+        (its key regex only looks for revis|date|publish|updated).
+      * Generic fallback (any other portal): find leaf objects mentioning a
+        .pdf and pull the path, a title, and a revision-date-looking field.
+
+    expected_count is None when the endpoint carries no aggregate.
     """
     data = json.loads(raw.decode("utf-8", errors="replace"))
+
+    # ---- Directus / GraphQL branch --------------------------------------
+    if (isinstance(data, dict) and isinstance(data.get("data"), dict)
+            and isinstance(data["data"].get("manuals"), list)):
+        manuals = data["data"]["manuals"]
+        expected: int | None = None
+        agg = data["data"].get("manuals_aggregated")
+        if isinstance(agg, list) and agg:
+            try:
+                expected = int(agg[0]["count"]["id"])
+            except (KeyError, TypeError, ValueError):
+                expected = None
+        docs: list[dict] = []
+        for m in manuals:
+            if not isinstance(m, dict):
+                continue
+            f = m.get("file") or {}
+            fid = (f.get("id") or "").strip()
+            fname = f.get("filename_download") or ""
+            if not fid:
+                continue
+            stem = Path(fname).stem if fname else fid
+            base = asset_base.rstrip("/") if asset_base else ""
+            docs.append({
+                "doc_id": slug(stem),
+                "title": m.get("title") or fname or stem,
+                "url": f"{base}/assets/{fid}",
+                "revision_date": str(f.get("modified_on") or ""),
+                "file_id": fid,
+            })
+        return docs, expected
+
+    # ---- Generic fallback (unchanged behavior) --------------------------
     leaves: list[dict] = []
 
     def collect(o):
@@ -335,8 +429,9 @@ def parse_manual_list(raw: bytes, asset_base: str) -> list[dict]:
                 if re.search(r"revis", str(k), re.I):
                     break
         docs.append({"doc_id": slug(Path(url.split("?")[0]).stem),
-                     "title": title, "url": url, "revision_date": rev})
-    return docs
+                     "title": title, "url": url, "revision_date": rev,
+                     "file_id": ""})
+    return docs, None
 
 
 # --------------------------------------------------------- snapshot layer ---
@@ -414,6 +509,40 @@ def get_with_retry(fetch: Fetcher, url: str, prev: dict, tries: int = 2) -> dict
             time.sleep(3)
 
 
+def get_with_retry_auth(fetch: Fetcher, url: str, prev: dict,
+                        headers: dict, tries: int = 2) -> dict:
+    for attempt in range(tries):
+        try:
+            return fetch.get_auth(url, prev, headers)
+        except requests.RequestException:
+            if attempt + 1 == tries:
+                raise
+            time.sleep(3)
+
+
+def read_bundle_token(fetch: Fetcher, url: str, pattern: str | None) -> str:
+    """Read a static public token out of a SPA runtime-config bundle. Returns
+    the token or "". Never logs the value."""
+    try:
+        resp = fetch.get(url, {})
+        if resp.get("status") != "200":
+            return ""
+        text = resp.get("content", b"").decode("utf-8", errors="replace")
+        m = re.search(pattern or DIRECTUS_TOKEN_RE, text)
+        return m.group(1).strip() if m else ""
+    except Exception:
+        return ""
+
+
+def auth_headers(token: str) -> dict:
+    """Wrap a token as an Authorization header. Accepts a bare token or a
+    value that already includes the scheme."""
+    if not token:
+        return {}
+    value = token if token.lower().startswith("bearer ") else f"Bearer {token}"
+    return {"Authorization": value}
+
+
 def load_watchlist(path: Path, only: list[str] | None) -> list[dict]:
     cfg = yaml.safe_load(path.read_text(encoding="utf-8"))
     entries = []
@@ -451,24 +580,83 @@ def check_manual_list(entry: dict, base: dict, fetch: Fetcher, snaps: SnapshotSt
         frag[eid] = base.get(eid, {})
         return rows, frag
 
-    resp = get_with_retry(fetch, entry["url"], {})
+    portal = entry.get("portal_page") or entry.get("url", "")
+
+    # -- credential resolution: env secret preferred, static bundle token as
+    #    a self-healing fallback (read-only Directus SPAs bake a public token
+    #    into their runtime config; if MCWEB_TOKEN is unset/rotated we re-read
+    #    the current one). No token value is ever logged or stored.
+    env_name = entry.get("auth_header_env")
+    token = (os.environ.get(env_name) or "").strip() if env_name else ""
+    bundle_url = entry.get("token_bundle_url")
+    bundle_re = entry.get("token_bundle_re")
+    used_bundle = False
+    if not token and bundle_url:
+        token = read_bundle_token(fetch, bundle_url, bundle_re)
+        used_bundle = bool(token)
+    hdrs = auth_headers(token)
+    method = (entry.get("method") or "GET").upper()
+
+    def list_fetch(h):
+        for attempt in range(2):
+            try:
+                if method == "POST":
+                    return fetch.post_json(entry["url"],
+                                           entry.get("graphql_body") or {}, h)
+                return fetch.get_auth(entry["url"], {}, h)
+            except requests.RequestException:
+                if attempt == 1:
+                    raise
+                time.sleep(3)
+
+    try:
+        resp = list_fetch(hdrs)
+    except requests.RequestException as exc:
+        rows.append(row(eid, "UNREACHABLE", f"list endpoint error: {exc}"))
+        frag[eid] = base.get(eid, {})
+        return rows, frag
     time.sleep(SLEEP)
+    # Self-heal: an auth failure with the env token means it was rotated; pull
+    # the fresh public token from the bundle and retry once.
+    if resp["status"] in ("400", "401", "403") and not used_bundle and bundle_url:
+        token = read_bundle_token(fetch, bundle_url, bundle_re)
+        if token:
+            hdrs, used_bundle = auth_headers(token), True
+            try:
+                resp = list_fetch(hdrs)
+            except requests.RequestException as exc:
+                rows.append(row(eid, "UNREACHABLE", f"list endpoint error: {exc}"))
+                frag[eid] = base.get(eid, {})
+                return rows, frag
+            time.sleep(SLEEP)
+
     if resp["status"] != "200":
-        rows.append(row(eid, "UNREACHABLE", f"list endpoint http {resp['status']}"))
+        hint = ("" if hdrs else " (no credential: set MCWEB_TOKEN or a "
+                "token_bundle_url)")
+        rows.append(row(eid, "UNREACHABLE",
+                        f"list endpoint http {resp['status']}{hint}", url=portal))
         frag[eid] = base.get(eid, {})
         return rows, frag
     try:
-        docs = parse_manual_list(resp["content"], entry.get("asset_base", ""))
+        docs, expected = parse_manual_list(resp["content"], entry.get("asset_base", ""))
     except Exception as exc:
         rows.append(row(eid, "UNREACHABLE", f"list endpoint parse error: {exc}"))
         frag[eid] = base.get(eid, {})
         return rows, frag
     if not docs:
         rows.append(row(eid, "CONFIG_TODO",
-                        "endpoint returned JSON but no PDF entries were parsed - "
-                        "adjust parse_manual_list for this portal shape"))
+                        "endpoint returned JSON but no documents were parsed - "
+                        "adjust parse_manual_list for this portal shape", url=portal))
         frag[eid] = base.get(eid, {})
         return rows, frag
+
+    # Truncation tripwire: the aggregate must equal the array length, else the
+    # list came back short (paging/filter regression) and we flag the parent.
+    if expected is not None and expected != len(docs):
+        rows.append(row(eid, "LIST_TRUNCATED",
+                        f"aggregate count {expected} != {len(docs)} parsed docs; "
+                        "list may be truncated or filtered - verify the portal",
+                        url=portal))
 
     prev_parent = base.get(eid, {})
     prev_docs = set(prev_parent.get("docs", []))
@@ -479,22 +667,66 @@ def check_manual_list(entry: dict, base: dict, fetch: Fetcher, snaps: SnapshotSt
         seen.append(d["doc_id"])
         prev = base.get(cid, {})
         try:
-            dresp = get_with_retry(fetch, d["url"], prev)
+            dresp = get_with_retry_auth(fetch, d["url"], prev, hdrs)
         except requests.RequestException as exc:
-            rows.append(row(cid, "UNREACHABLE", f"error:{exc}", url=d["url"]))
+            rows.append(row(cid, "UNREACHABLE", f"error:{exc}", url=d["url"],
+                            page_updated=d["revision_date"]))
             frag[cid] = prev
             continue
         time.sleep(SLEEP)
+        status = dresp["status"]
+
+        # Degrade path: the list is readable but the asset is not (token scoped
+        # to collections, not directus_files). Do NOT cry UNREACHABLE - the
+        # portal metadata still tells us whether the section moved. Compare the
+        # raw revision_date and file.id; this comparison runs even though the
+        # fetch failed (previously it was skipped on any non-200).
+        if status in ("401", "403"):
+            rev_prev = prev.get("revision_date", "")
+            fid_prev = prev.get("file_id", "")
+            meta_changed = ((d["revision_date"] or "") != rev_prev
+                            or (d.get("file_id", "") != fid_prev))
+            if not prev:
+                verdict = "CHANGED_METADATA_ONLY"
+                detail = (f"assets blocked (http {status}); metadata recorded, "
+                          f"no baseline yet. No text diff - read the section at "
+                          f"{portal}")
+            elif meta_changed:
+                verdict = "CHANGED_METADATA_ONLY"
+                detail = (f"assets blocked (http {status}); portal revision "
+                          f"'{rev_prev}' -> '{d['revision_date']}' (file.id "
+                          f"{'changed' if d.get('file_id','') != fid_prev else 'same'}). "
+                          f"No text diff available - read the section at {portal}")
+            else:
+                verdict = "metadata_only_unchanged"
+                detail = f"assets blocked (http {status}); portal metadata unchanged"
+            frag[cid] = {**prev, "url": d["url"], "title": d["title"],
+                         "revision_date": d["revision_date"],
+                         "file_id": d.get("file_id", ""), "checked_at": ts}
+            rows.append(row(cid, verdict, detail, url=d["url"],
+                            page_updated=d["revision_date"]))
+            continue
+
         sig = signature({"type": "pdf", "id": cid, "url": d["url"]}, dresp)
         verdict, detail = verdict_for({"type": "pdf", "url": d["url"]},
                                       prev, dresp, sig)
-        # URL churn (rotating access tokens) is expected on portals; the
-        # document identity is the doc_id, so ignore URL_CHANGED_IN_CONFIG.
+        # URL churn (a new file.id per revision) is expected on portals; the
+        # document identity is the doc_id, so resolve URL_CHANGED_IN_CONFIG by
+        # content hash instead.
         if verdict == "URL_CHANGED_IN_CONFIG":
             if sig["text_sha"] != prev.get("text_sha"):
                 verdict, detail = "CHANGED", "content text hash differs"
             else:
                 verdict, detail = "unchanged", "url token rotated, content same"
+        # A metadata-only seed carries revision_date + file.id but no text_sha.
+        # The first successful fetch establishes the hash: keep it quiet ONLY
+        # when the portal metadata still matches the seed; a metadata drift is
+        # a real change and must stay flagged.
+        hash_pending = bool(prev) and not prev.get("text_sha") and prev.get("revision_date")
+        meta_same = ((d["revision_date"] or "") == prev.get("revision_date", "")
+                     and d.get("file_id", "") == prev.get("file_id", ""))
+        if verdict == "CHANGED" and hash_pending and meta_same:
+            verdict, detail = "unchanged", "seed baseline hash established"
         rev_prev = prev.get("revision_date", "")
         if verdict == "unchanged" and (d["revision_date"] or "") != rev_prev:
             verdict = "DATE_CHANGED"
@@ -502,12 +734,14 @@ def check_manual_list(entry: dict, base: dict, fetch: Fetcher, snaps: SnapshotSt
         report = snaps.handle(entry["program"], cid, verdict, sig, d["url"],
                               extra={"Title": d["title"],
                                      "Portal revision date": d["revision_date"] or "n/a"})
-        if dresp["status"] == "304":
+        if status == "304":
             frag[cid] = {**prev, "checked_at": ts,
-                         "revision_date": d["revision_date"] or rev_prev}
-        elif dresp["status"] == "200":
+                         "revision_date": d["revision_date"] or rev_prev,
+                         "file_id": d.get("file_id", "") or prev.get("file_id", "")}
+        elif status == "200":
             frag[cid] = {"url": d["url"], "title": d["title"],
                          "revision_date": d["revision_date"],
+                         "file_id": d.get("file_id", ""),
                          **{k: sig[k] for k in ("text_sha", "byte_sha",
                                                 "page_updated", "links", "shell")},
                          "etag": dresp.get("etag", ""),
@@ -706,6 +940,56 @@ def run(watchlist: Path, out_dir: Path, only, update: bool,
     return report
 
 
+def seed_manual_list(watchlist: Path, out_dir: Path, entry_id: str) -> int:
+    """Prime the baseline for one manual_list entry from its seed CSV so the
+    first live run does not flood NEW rows. Seeds metadata only (revision_date
+    + file.id per doc); the first live fetch fills the content hash and stays
+    quiet as long as the portal metadata still matches the seed.
+    """
+    entries = load_watchlist(watchlist, None)
+    target = next((e for e in entries
+                   if e.get("id") == entry_id and e.get("type") == "manual_list"), None)
+    if not target:
+        print(f"no manual_list entry with id={entry_id} in {watchlist}")
+        return 1
+    seed_csv = target.get("seed_csv")
+    if not seed_csv:
+        print(f"entry {entry_id} has no seed_csv field; nothing to seed from")
+        return 1
+    csv_path = Path(watchlist).resolve().parent / seed_csv
+    if not csv_path.exists():
+        print(f"seed csv not found: {csv_path}")
+        return 1
+
+    out_dir.mkdir(parents=True, exist_ok=True)
+    baseline_path = out_dir / "baseline.json"
+    base = json.loads(baseline_path.read_text()) if baseline_path.exists() else {}
+    asset_base = (target.get("asset_base", "") or "").rstrip("/")
+    ts = now_iso()
+    seen, n = [], 0
+    with csv_path.open(encoding="utf-8") as fh:
+        for r in csv.DictReader(fh):
+            did = slug(r["doc_id"])
+            fid = (r.get("file_id") or "").strip()
+            cid = f"{entry_id}--{did}"
+            seen.append(did)
+            base[cid] = {
+                "url": f"{asset_base}/assets/{fid}" if asset_base else f"/assets/{fid}",
+                "title": r.get("title", ""),
+                "revision_date": r.get("modified_on", ""),
+                "file_id": fid,
+                "text_sha": "", "byte_sha": "", "page_updated": "",
+                "links": [], "shell": False, "etag": "", "last_modified": "",
+                "checked_at": ts, "seeded": True,
+            }
+            n += 1
+    base[entry_id] = {"url": target.get("url", ""), "docs": seen, "checked_at": ts}
+    baseline_path.write_text(json.dumps(base, indent=2, sort_keys=True))
+    print(f"seeded {n} docs for {entry_id} -> {baseline_path}")
+    print("metadata-only seed; content hashes fill on the first live run.")
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--watchlist", default="watchlist.yaml", type=Path)
@@ -717,6 +1001,9 @@ def main() -> int:
     ap.add_argument("--snapshots", type=Path, default=None,
                     help="snapshot directory (default: ./snapshots)")
     ap.add_argument("--list", action="store_true", help="print watchlist and exit")
+    ap.add_argument("--seed-manual-list", metavar="ENTRY_ID", default=None,
+                    help="prime the baseline for a manual_list entry from its "
+                         "seed_csv, then exit (e.g. fpact_manual_docs)")
     args = ap.parse_args()
 
     if args.list:
@@ -724,6 +1011,9 @@ def main() -> int:
             print(f"{e['program']:16} {e.get('type','html'):15} {e['id']:32} "
                   f"{e.get('url', e.get('url_template',''))}")
         return 0
+
+    if args.seed_manual_list:
+        return seed_manual_list(args.watchlist, args.out, args.seed_manual_list)
 
     report = run(args.watchlist, args.out, args.programs, args.update,
                  snapshots_dir=args.snapshots, dashboard=args.dashboard)

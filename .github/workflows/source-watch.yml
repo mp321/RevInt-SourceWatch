@@ -24,6 +24,11 @@ jobs:
 
       - name: Run checker
         id: check
+        env:
+          # Static public read-only Directus token for the mcweb Family PACT
+          # manual list. Optional: if unset, the checker self-heals by reading
+          # the current token from the SPA's public /environment.js bundle.
+          MCWEB_TOKEN: ${{ secrets.MCWEB_TOKEN }}
         run: |
           set +e
           python source_check.py --update --dashboard docs/index.md

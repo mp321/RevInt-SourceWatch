@@ -79,16 +79,48 @@ programs:
 
       - id: fpact_manual_docs
         type: manual_list
-        url: ""
+        method: POST
+        url: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/graphql
         asset_base: "https://mcweb.apps.prd.cammis.medi-cal.ca.gov"
-        note: Per-document monitor for the entire Family PACT manual list
-          (the page that shows a Revision Date per section). Paste the JSON
-          endpoint the page loads its list from (README, one-time DevTools
-          step). Every PDF found is then watched individually - content
-          hash, portal Revision Date, new docs auto-discovered, removals
+        portal_page: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact
+        seed_csv: data/seeds/fpact_manuals_seed_2026-07-16.csv
+        # Directus GraphQL. communityId 25 = Family PACT. The aggregate is a
+        # truncation tripwire: parsed docs must equal manuals_aggregated.count.
+        graphql_body:
+          operationName: CommunityManuals
+          variables:
+            communityId: "25"
+          query: >-
+            query CommunityManuals($communityId: GraphQLStringOrFloat) {
+            manuals(filter: {community: {communities_id: {id: {_eq:
+            $communityId}}}}, sort: ["file.filename_download"], limit: -1) { id
+            title file { id filename_download modified_on } }
+            manuals_aggregated(filter: {community: {communities_id: {id: {_eq:
+            $communityId}}}}) { count { id } } }
+        # The endpoint needs a Bearer token. It is a STATIC PUBLIC read-only
+        # token that mcweb bakes into /environment.js (window.DIRECTUS_TOKEN),
+        # served anonymously - not a personal or session credential. Preferred
+        # source is the MCWEB_TOKEN secret; if unset or rotated, the watcher
+        # self-heals by re-reading token_bundle_url. Never put the literal
+        # token in this file.
+        auth_header_env: MCWEB_TOKEN
+        token_bundle_url: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/environment.js
+        token_bundle_re: 'window\.DIRECTUS_TOKEN\s*=\s*"([^"]+)"'
+        note: Per-document monitor for the entire Family PACT manual list (the
+          page that shows a Revision Date per section), all 24 sections. Backed
+          by the undocumented mcweb Directus GraphQL endpoint (POST /graphql,
+          CommunityManuals, communityId 25). Each section is watched
+          individually - full PDF text hash (assets are readable with the same
+          token, verified 2026-07-16), portal Revision Date (file.modified_on,
+          compared as a raw string), new docs auto-discovered, removals
           flagged - and CHANGED sections get a before/after text diff in
-          reports/diffs/. Until the url is set, this reports CONFIG_TODO
-          and MCSS remains the detector.
+          reports/diffs/. If the token ever grants the list but not the assets,
+          the entry degrades to CHANGED_METADATA_ONLY (revision-date + file.id
+          churn, no text diff) instead of going blind. This is an undocumented
+          internal endpoint that can change shape or auth without notice; MCSS
+          email remains the backstop detector and must not be retired on the
+          strength of this integration. Decision support, not a source of
+          record. No PHI.
         master_note: ppbi_source_section rows for any changed section
 
       - id: fpact_bulletin_probe

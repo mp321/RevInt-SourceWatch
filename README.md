@@ -28,7 +28,7 @@ A weekly GitHub Actions run fetches every source in `watchlist.yaml`, extracts a
 3. Actions tab > source-watch > Run workflow. First run reports everything as NEW, saves the baseline, and commits `reports/`, `snapshots/`, and `docs/`.
 4. Settings > Pages > Deploy from a branch > main, folder /docs > Save. Dashboard appears at `https://OWNER.github.io/REPO/`.
 5. Each team member: Watch > Custom > check Issues. GitHub emails on every alert.
-6. One-time step for the Family PACT manual (the `fpact_manual_docs` entry, currently CONFIG_TODO): open https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact in a browser, press F12 > Network > filter Fetch/XHR > reload. Find the request whose JSON response contains the document list with revision dates, copy its URL, paste it as that entry's `url` in `watchlist.yaml`, commit. Every manual section is then watched individually with per-section diffs.
+6. Family PACT manual (`fpact_manual_docs`): already wired to the mcweb Directus GraphQL endpoint, and its baseline is seeded from `data/seeds/`, so every one of the 24 sections is watched individually (full text hash + portal Revision Date) with per-section diffs. The endpoint needs a Bearer token, but it is a *static public* read-only token the site serves in `/environment.js`, so the checker reads it automatically and no secret is required. Optionally pin it: Settings > Secrets and variables > Actions > New repository secret > name `MCWEB_TOKEN`, value = the `window.DIRECTUS_TOKEN` string from `https://mcweb.apps.prd.cammis.medi-cal.ca.gov/environment.js`; the workflow already passes it. If you ever re-seed after a portal batch, run `python source_check.py --seed-manual-list fpact_manual_docs` before the first live run.
 
 The schedule is Mondays 14:00 UTC in `.github/workflows/source-watch.yml`; change the cron line for another cadence. GitHub may delay scheduled runs by minutes.
 
@@ -52,7 +52,7 @@ Edit `watchlist.yaml`. Toggle a program with `enabled:`. Entry types: `pdf`, `ht
 
 ## Verdicts
 
-NEW, CHANGED (diff written), DATE_CHANGED (revision or page-updated stamp moved without a text change), LINKS_CHANGED, NEW_ISSUE, REMOVED, and URL_CHANGED_IN_CONFIG need review. MANUAL_REVIEW, BLIND_SHELL, PROBE_INCONCLUSIVE, CONFIG_TODO, and UNREACHABLE describe sources the run could not fully see. unchanged is quiet.
+NEW, CHANGED (diff written), DATE_CHANGED (revision or page-updated stamp moved without a text change), LINKS_CHANGED, NEW_ISSUE, REMOVED, and URL_CHANGED_IN_CONFIG need review. CHANGED_METADATA_ONLY (a manual_list section whose portal Revision Date or file id moved but whose PDF the run could not fetch, so no text diff) and LIST_TRUNCATED (a manual_list endpoint returned fewer documents than its own aggregate count) also need review. MANUAL_REVIEW, BLIND_SHELL, PROBE_INCONCLUSIVE, CONFIG_TODO, and UNREACHABLE describe sources the run could not fully see. unchanged and metadata_only_unchanged are quiet.
 
 ## Limits
 
