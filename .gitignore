@@ -1,0 +1,16 @@
+notes/mcweb_browser_curl.txt
+
+# Logs
+logs/
+*.log
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+.DS_Store
