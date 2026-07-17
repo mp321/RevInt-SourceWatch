@@ -1,0 +1,423 @@
+[[page 1]]
+office
+1
+Family PACT – Office Visits: Evaluation and Management and Education Counseling
+Services
+Office Visits: Evaluation and Management and Education
+Counseling Services
+Page updated: February 2021
+This section provides the CPT® and HCPCS codes billed for Evaluation and Management
+(E&M) and Education and Counseling (E&C) office visits. The services are rendered in an
+enrolled Family PACT (Planning, Access, Care and Treatment) Program provider’s office,
+clinic or other ambulatory facility and in offices of non-Family PACT Medi-Cal providers who
+deliver services upon referral from a Family PACT provider.
+Unless stated otherwise in this manual, standard Medi-Cal policy for billing E&M CPT codes,
+HCPCS codes and modifiers apply. The CPT code book includes detailed instructions for
+selecting an appropriate E&M service level. Only the codes listed in this section as Family
+PACT benefits may be billed to the Family PACT Program. For more information, refer to the
+Benefits: Family Planning section in this manual.
+E&M Office Visits
+Evaluation and management services must be performed by a clinician. ‹‹Consistent with
+American Medical Association (AMA) CPT 2021,›› selection of the appropriate E&M CPT
+code level is determined either by:
+• ‹‹Medical Decision Making (MDM)
+This includes establishing diagnoses, assessing the status of a condition, and/or
+selecting a management option. MDM is defined by three elements:
+– the number and complexity of problem(s) that are addressed during the encounter
+– the amount and/or complexity of data to be reviewed and analyzed
+– the risk of complications, morbidity, and/or mortality of patient management
+decisions made at the visit, associated with the patient’s problem(s), the diagnostic
+procedure(s), treatment(s), or
+• Time
+Time for services is the total time on the date of encounter. It includes both
+face-to-face and non-face-to-face time personally spent by the physician and/or other
+qualified health care professional.››
+The total time must be documented in the medical record.
+Laboratory, medication and contraceptive supply codes, as well as certain CPT procedure
+codes, may be billed on the same date of service as an E&M CPT office visit code.
+[[page 2]]
+office
+2
+Family PACT – Office Visits: Evaluation and Management and Education Counseling
+Services
+Page updated: October 2023
+Billing Office Visits
+Office visits are reimbursable as follows:
+Office Visit CPT Codes Tables
+CPT Code New Patients
+99202 Females/Males
+99203 Females/Males
+99204 ‹‹Females/Males››
+CPT Code Established Patients
+99211 Females/Males
+99212 Females/Males
+99213 Females/Males
+99214 ‹‹Females/Males››
+Medical record documentation must reflect the clinical rationale for providing, ordering or
+deferring services for clients according to Family PACT Standards, including, but not limited
+to, client assessment, diagnosis, treatment and follow-up. Chart documentation must
+support services billed for reimbursement. Additional E&M CPT codes may be billed when
+there is a complication of a method or treatment.
+RN Billing with CPT E&M Codes
+Registered nurses (RNs) can administer or dispense hormonal contraceptives
+(oral contraceptive, injectable contraceptive, contraceptive patch, vaginal ring and
+emergency contraceptive pills) pursuant to California Business and Professions Code
+(B&P Code), Section 2725.2. If performed by an RN who has completed the required
+training, E&M procedure CPT codes 99202, 99211 and 99212 (office or other outpatient visit
+for the evaluation and management of an established patient, which requires a medically
+appropriate history and/or examination and straightforward medical decision making) must
+be billed with modifier TD.
+E&M and CPT Procedure Codes on the Same Date of Service
+The CPT codes for surgical procedures include performance of relevant history and physical
+examination, administration of local anesthesia (if necessary), performance of the
+procedure, immediate postoperative care and preoperative and postoperative counseling
+applicable to the procedure. However, CPT convention states that if a “significant, separately
+identifiable E&M service is provided by the same clinician on the same day of the
+procedure,” then an E&M claim for the evaluation of the separate condition may be billed as
+well. Modifier 25 is used to designate this service for Family PACT. For more information,
+refer to the Evaluation and Management (E&M) and Modifiers Used With Procedure Codes
+sections in the appropriate Part 2 Medi-Cal manual.
+For examples of claims that require two claim forms, refer to the
+Claim Completion: CMS-1500 and Claim Completion: UB-04 sections.
+[[page 3]]
+office
+3
+Family PACT – Office Visits: Evaluation and Management and Education Counseling
+Services
+Page updated: October 2022
+The following CPT procedure codes will accommodate an E&M code with modifier 25 when
+a significant, separately identifiable E&M service is provided by the same clinician on the
+same date of the procedure.
+‹‹Procedure Codes Table››
+CPT Code Description
+11976 Removal, implantable contraceptive capsules
+11981 Insertion, drug-delivery implant (ie, bioresorbable, biodegradable,
+non-biodegradable)
+54050 Destruction of lesion(s), penis (eg, condyloma, papilloma,
+molluscum contagiosum, herpetic vesicle), simple; chemical
+54056 Destruction of lesion(s), penis (eg, condyloma, papilloma,
+molluscum contagiosum, herpetic vesicle), simple; cryosurgery
+54100 Biopsy of penis; (separate procedure)
+56501 Destruction of lesion(s), vulva; simple (eg, laser surgery,
+electrosurgery, cryosurgery, chemosurgery)
+56605 Biopsy of vulva or perineum (separate procedure); one lesion
+57061 Destruction of vaginal lesion(s); simple (eg, laser surgery,
+electrosurgery, cryosurgery, chemosurgery)
+57452 Colposcopy of the cervix including upper/adjacent vagina;
+57454 Colposcopy of the cervix including upper/adjacent vagina; with
+biopsy(s) of the cervix and endocervical curettage
+57455 Colposcopy of the cervix including upper/adjacent vagina; with
+biopsy(s) of the cervix
+57456 Colposcopy of the cervix including upper/adjacent vagina; with
+endocervical curettage
+57460 Colposcopy of the cervix including upper/adjacent vagina; with
+loop electrode biopsy(s) of the cervix
+57511 Cautery of cervix; cryocautery, initial or repeat
+58100 Endometrial sampling (biopsy) with or without endocervical
+sampling (biopsy), without cervical dilation, any method (separate
+procedure)
+58110 Endometrial sampling (biopsy) performed in conjunction with
+colposcopy (List separately in addition to code for primary
+procedure.)
+58300 Insertion of intrauterine device (IUD)
+58301 Removal of intrauterine device (IUD)
+[[page 4]]
+office
+4
+Family PACT – Office Visits: Evaluation and Management and Education Counseling
+Services
+Page updated: February 2021
+E&C Office Visits
+‹‹Health education and counseling may be provided by either clinicians or non-clinician
+counselors. For more information, refer to “Non-Clinician Counselors” on a following page.››
+Laboratory, surgical, medication and supply codes may be billed on the same date of service
+as an E&C visit. In very limited circumstances, E&M and E&C visit codes may be billed on
+the same date of service. (refer to the chart on the last pages of this section).
+Medical record documentation must reflect the scope of education and counseling services
+provided to clients according to Family PACT Standards, including, but not limited to,
+individual client assessment, topics discussed, name and title of counselor. Documentation
+must support services billed for reimbursement. The total time must be documented in the
+medical record.
+Billing for E&C Visits
+Clients may be oriented to the Family PACT Program by a ‹‹clinician or by a non-clinician
+counselor›› either in a group session of two or more clients or in an individual session.
+Providers may select only one of the following codes:
+HCPCS Code Description
+S9445 Individual orientation to Family PACT, only once by
+the same provider for the same client
+or
+HCPCS Code Description
+S9446 Family planning group education (including
+orientation to Family PACT), only once by the same
+provider for the same client
+E&C HCPCS code S9445 or S9446 may be billed alone, or with E&M CPT code
+(‹‹99202 thru 99204,›› 99211 thru 99214), or with a higher level E&C service (code
+99401U6, 99402U6 or 99403U6), one time per client by the same provider.
+[[page 5]]
+office
+5
+Family PACT – Office Visits: Evaluation and Management and Education Counseling
+Services
+Page updated: October 2022
+The following E&C visits use CPT E&M counseling codes (up to two per provider, per 30
+days, per client).
+The provider shall take into consideration the cumulative time spent counseling the client by
+all staff when selecting a preventive medicine service counseling code for billing.
+‹‹Counseling Codes Table››
+CPT Code/Modifier Description
+99401U6 Preventive medicine counseling service for family
+planning counseling (up to 15 minutes)
+99402U6 Preventive medicine counseling service for family
+planning counseling (16 thru 30 minutes)
+99403U6 Preventive medicine counseling service for family
+planning counseling (31 thru 45 minutes)
+E&C visits billed with CPT code 99401, 99402 or 99403 must be billed with a U6 modifier to
+indicate individual family planning counseling provided during the office visit.
+Summary of Differences Between E&M and E&C Services
+Office Visit Provided By Level Computed By
+E&M Clinician Based on MDM or clinician time
+E&C Non-Clinician Counselor Counselor time
+[[page 6]]
+office
+6
+Family PACT – Office Visits: Evaluation and Management and Education Counseling
+Services
+Page updated: August 2020
+Non-Clinician Counselors
+Providers may choose to include non-clinician counselors in the process of client health
+education and counseling services. These services are subject to supervision by health care
+professionals who themselves are qualified to provide education and counseling services.
+Providers must ensure that: non-clinician counselors have been trained in all family planning
+methods; are knowledgeable about the Family PACT Standards and program benefits; and
+have the essential core competence to deliver education and counseling services, including
+individual client history and assessment of health education and counseling needs. Within
+the personnel files of non-clinician counselors, providers must maintain documentation of
+education and counseling training and performance. Non-clinician counselors shall work
+under the direction of the enrolled Family PACT provider. Practice-specific education and
+counseling protocols or other written delegation arrangements must be established by non-
+clinician counselors and must be consistent with Family PACT Standards.
+Services provided by non-clinician counselors must be accompanied by onsite direct
+supervision. Acceptable supervisors of non-clinician counselors include: physicians; non-
+physician medical practitioners (NMPs); registered nurses (RNs); public health nurses;
+counseling professionals, including the categories of Marriage, Family and Child Counselor
+(MFCC) or Marriage and Family Therapist (MFT); Licensed Clinical Social Worker (LCSW);
+clinician psychologist; or masters-degree prepared health educator. Refer to Sect. 1905,
+(a)(5), (6), (9), (13), (17), (21), (28) of the Social Security Act; Title 42, Code of Federal
+Regulations, Part IV, Subpart A, Sect. 440.2 and 440.60.
+[[page 7]]
+office
+7
+Family PACT – Office Visits: Evaluation and Management and Education Counseling
+Services
+Page updated: February 2021
+Summary of E&C Visit Codes
+The following codes may be used to bill for family planning education and counseling for
+males and females. The services must be delivered in a manner consistent with the Family
+PACT Standards.
+E&C Visit Codes Table
+Family PACT Education and
+Counseling Services
+HCPCS and CPT
+Codes
+Restrictions
+Individual orientation to Family
+PACT:
+• Scope of Family PACT
+services
+• Information about family
+planning methods and select
+related conditions
+• Provided by a clinician
+and/or counselor
+• Up to 10 minutes
+S9445: May be billed
+with E&M codes
+‹‹99202 thru 99204,››
+99211 thru 99214, or
+with E&C codes
+99401U6, 99402 U6 or
+99403U6
+This code may be reported only
+once per client, per provider.
+Each client may receive either
+individual orientation or group
+orientation (S9446), but not
+both.
+Group family planning education
+(including orientation to Family
+PACT):
+• Scope of Family PACT
+services
+• Information about family
+planning methods and select
+related conditions
+• A group setting of two or
+more clients
+• Provided by a clinician
+and/or counselor
+S9446: May be billed
+with E&M codes
+‹‹99202 thru 99204,››
+99211 thru 99214, or
+with E&C codes
+99401U6, 99402U6 or
+99403U6.
+This code may be reported only
+once per client, per provider.
+Each client may receive either
+group orientation or individual
+orientation (S9445), but not
+both.
+[[page 8]]
+office
+8
+Family PACT – Office Visits: Evaluation and Management and Education Counseling
+Services
+Page updated: April 2022
+E&C Visit Codes Table (continued)
+Family PACT Education and
+Counseling Services
+HCPCS and CPT
+Codes
+Restrictions
+Individual family planning
+counseling:
+• Lasting up to 15 minutes
+• Provided by a non-clinician
+counselor
+99401U6: May be
+billed with E&M codes
+for services rendered
+by clinician, but not
+with 99402U6 or
+99403U6. ‹‹Modifier 25
+must be appended to
+the E&M code.››
+Limited to two CPT E&C code
+office visits (99401U6 thru
+99403U6) per client, per 30 days,
+per provider.
+Codes may be billed with Family
+PACT laboratory, surgical,
+medication and supply codes.
+These codes may be used to
+report counseling issues,
+including lifestyle and relationship
+issues, risk reduction
+interventions, method use and
+adherence, infertility,
+preconception counseling,
+pregnancy options and sexually
+transmitted infection (STI)
+prevention.
+Documentation Requirements:
+Medical record documentation
+must support services claimed for
+reimbursement.
+[[page 9]]
+office
+9
+Family PACT – Office Visits: Evaluation and Management and Education Counseling
+Services
+Page updated: April 2022
+E&C Visit Codes Table (continued)
+Family PACT Education and
+Counseling Services
+HCPCS and CPT
+Codes
+Restrictions
+Individual family planning
+counseling:
+• Lasting up to 16 thru 30
+minutes
+• Provided by a non-clinician
+counselor
+99402U6: May be
+billed with E&M codes
+for services rendered
+by clinician, but not
+with 99401U6 or
+99403U6. ‹‹Modifier 25
+must be appended to
+the E&M code.››
+Limited to two CPT E&C code
+office visits (99401U6 thru
+99403U6) per client, per 30 days,
+per provider.
+Codes may be billed with Family
+PACT laboratory, surgical,
+medication and supply codes.
+These codes may be used to
+report counseling issues,
+including lifestyle and relationship
+issues, risk reduction
+interventions, method use and
+adherence, infertility,
+preconception counseling,
+pregnancy options and sexually
+transmitted infection (STI)
+prevention.
+Documentation Requirements:
+Medical record documentation
+must support services claimed for
+reimbursement.
+[[page 10]]
+office
+10
+Family PACT – Office Visits: Evaluation and Management and Education Counseling
+Services
+Page updated: April 2022
+E&C Visit Codes Table (continued)
+Family PACT Education and
+Counseling Services
+HCPCS and CPT
+Codes
+Restrictions
+Individual family planning
+counseling:
+• Lasting up to 31 thru 45
+minutes
+• Provided by a non-clinician
+counselor
+99403U6: May be
+billed with E&M codes
+for services rendered
+by clinician, but not
+with 99401U6 or
+99402U6. ‹‹Modifier 25
+must be appended to
+the E&M code.››
+Limited to two CPT E&C code
+office visits (99401U6 thru
+99403U6) per client, per 30 days,
+per provider.
+Codes may be billed with Family
+PACT laboratory, surgical,
+medication and supply codes.
+These codes may be used to
+report counseling issues,
+including lifestyle and relationship
+issues, risk reduction
+interventions, method use and
+adherence, infertility,
+preconception counseling,
+pregnancy options and sexually
+transmitted infection (STI)
+prevention.
+Documentation Requirements:
+Medical record documentation
+must support services claimed for
+reimbursement.
+[[page 11]]
+office
+11
+Family PACT – Office Visits: Evaluation and Management and Education Counseling
+Services
+Page updated: August 2020
+‹‹Legend››
+‹‹Symbols used in the document above are explained in the following table.››
+Symbol Description
+‹‹ This is a change mark symbol. It is used to indicate where on the page the
+most recent change begins.
+›› This is a change mark symbol. It is used to indicate where on the page the
+most recent change ends.

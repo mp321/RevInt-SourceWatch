@@ -1,0 +1,237 @@
+[[page 1]]
+1
+C
+ALENDAR YEAR 2024 TARGETED PROVIDER
+RATE INCREASES FREQUENTLY ASKED
+QUESTIONS
+March 12, 2025
+[[page 2]]
+2
+Background
+1. What is the status of SPA 23-0035?
+The Calendar Year (CY) 2024 targeted provider rate increases (TRI) were approved
+by Centers for Medicare & Medicaid Services (CMS) on December 19, 2023,
+through State Plan Amendment 23-0035.
+2. What is the status of the Managed Care Organization Tax?
+Assembly Bill (AB) 119 (Chapter 13, Statutes of 2023) authorized a Managed Care
+Organization (MCO) tax eﬀective April 1, 2023, through December 31, 2026.
+Revenues from the MCO tax will be used to support the Medi-Cal program
+including targeted provider rate increases and other investments that advance
+access, quality, and equity for Medi-Cal members and promote provider
+participation in the Medi-Cal program. CMS formally approved the State of
+California's MCO Tax on December 15, 2023. In addition, Senate Bill 136 (Chapter
+6, Statutes of 2024) and AB 160 (Chapter 39, Statutes of 2024) authorized further
+modiﬁcations to the MCO tax eﬀective January 1, 2024 which are pending CMS
+approval.
+3. Where will the rates be updated on DHCS’ website?
+The TRI rates have been published on both the provider manual website
+and the
+Medi-Cal Targeted Provider Rate Increases and Investments website.
+4. How were the TRI increases determined?
+Pursuant to AB 118, the CY 2024 TRI Fee Schedule rate was calculated at the
+greater of:
+A. 87.5% of the lowest 2023 Medicare locality rate in California
+B. The existing basic rate on the legacy Medi-Cal fee schedule eﬀective
+December 31, 2023, plus any applicable Proposition 56 Physician Services
+supplemental payment amount.
+[[page 3]]
+3
+DHCS calculated an equivalent targeted rate for services that do not have a rate
+established by Medicare. Codes on the CY 2024 TRI Fee Schedule will be exempt
+from the AB 97 provider payment reduction.
+Procedure Code Eligibility
+5. What procedure codes qualify for TRI? Why do certain codes that are non-
+beneﬁts appear on the TRI Fee Schedule?
+Only codes listed on the TRI fee schedule are eligible for TRI increases. These
+codes were selected based on their status as primary care, obstetric, and non-
+specialty mental health services. Non-beneﬁt procedure codes are not published
+on the monthly rate ﬁle. The TRI Fee Schedule does not supersede FFS beneﬁt
+and billing policies described in the California Medicaid State Plan, Medi-Cal
+Provider Manual, Medi-Cal Provider Bulletins, or Title 22, Division 3 of the
+California Code of Regulations (CCR) including, but not limited to Beneﬁt
+Restrictions, and Multiple Procedure Payment Reductions. Certain codes marked
+with a "1" in the Beneﬁts Restriction column on the 2024 TRI fee schedule may
+not be eligible for reimbursement without a Treatment Authorization Request
+(TAR). For additional information, please see the TAR and Non-Beneﬁt
+section of
+the provider manual and the “Notes” tab in the 2024 TRI Fee Schedule located on
+the
+DHCS website. Due to the complexity of the provider manual and the nuance
+between the Fee-for-Service (FFS) and the Managed Care requirements, DHCS
+recommends that all entities refer to the TRI fee schedule (TRI Fee Schedule
+v1.06.01082024) posted to the Medi-
+Cal Targeted Provider Rate Increases and
+Investments website.
+6. How are Alternative Conversion Factors taken into consideration?
+In the FFS delivery system, Medi-Cal will continue to reimburse services at no less
+than the net reimbursement amount, inclusive of any alternative conversion
+factors and supplemental payments, authorized pursuant to the California
+Medicaid State Plan in eﬀect on December 31, 2023.
+In the Managed Care delivery system, DHCS is not directing MCPs to pay legacy
+rates calculated with alternative conversion factors in excess of the CY 2024 TRI
+[[page 4]]
+4
+Fee Schedule rate, except for qualifying SB 94 comprehensive family planning
+services.
+7. What about Rate Adjustments? Are they taken into consideration in the TRI
+fee schedule?
+The CY 2024 TRI Fee Schedule rate is subject to further adjustment for speciﬁed
+codes:
+- 39.7% payment augmentation for speciﬁed physicians' services
+provided to a Medi-Cal member eligible under the California Children's
+Services program.
+- 20% payment reduction for speciﬁed procedures performed in
+outpatient facilities. The applicable codes are identiﬁed on the TRI Fee
+Schedule. Please refer to the Notes tab for additional information.
+Medi-Cal Targeted Rate Increase Fee Schedule effective dates of service January 1,
+2024
+Procedure
+Code Description Category
+Targeted
+Provider
+Rate
+January
+1, 2024
+Benefit
+Restrictions
+Cutback
+Indicator
+CCS
+Authorized
+Physician
+Service
+10040 Acne
+Surgery
+Primary/General
+Care $108.61 1 1
+10060 Damage of
+skin abscess
+Primary/General
+Care $109.05 1 1
+10061 Draining of
+skin abscess
+Primary/General
+Care $195.14 1
+8. Does DHCS have any speciﬁc guidance on place of service (POS) codes that
+are eligible for TRI?
+Pursuant to the 2023 Budget Act and AB 118 (Chapter 42, Statutes of 2023),
+DHCS implemented the ﬁrst phase of Targeted Rate Increases eﬀective January 1,
+2024. The target rate for OB and NSMH procedure codes are reimbursed at the
+TRI rate regardless of FI Claim Type (UB-04 and CMS-1500). For primary care
+[[page 5]]
+5
+procedure codes, they are restricted to only FI Claim Type 05 (CMS-1500 form)
+and eligible provider types. There are no additional place of service restrictions.
+9. What happened to the Proposition 56 Physician’s Supplemental/Directed
+Payments?
+Eﬀective for dates of service on or after January 1, 2024, the CY 2024 TRI Fee
+Schedule rates are inclusive of the former Proposition 56 Physician Services
+supplemental payments for applicable codes. Pursuant to AB 118, the CY 2024
+TRI Fee Schedule does not include procedure codes related to Proposition 56
+dental, Proposition 56 family planning, or Proposition 56 abortion services.
+Proposition 56 supplemental payments applicable to these services will not
+change eﬀective January 1, 2024.
+Provider Eligibility
+10. Which providers are eligible?
+Codes identiﬁed as primary/general care services on the TRI Fee Schedule and
+billed using Health Insurance Claim Form (CMS-1500) are eligible for TRI only
+when rendered by the following types of eligible providers: Physicians Physician
+Assistants, Nurse Practitioners, Podiatrists, Certiﬁed Nurse Midwife, Licensed
+Midwives, Doula Providers, Psychologists, Licensed Professional Clinical
+Counselors, Licensed Clinical Social Workers, and Marriage and Family Therapists.
+Codes identiﬁed as obstetric care services and non-specialty outpatient mental
+health services are eligible for TRI when billed or rendered by a provider who is
+otherwise eligible to bill the code.
+11. Does provider specialty or taxonomy impact eligibility for TRI?
+Provider taxonomy and specialty is not used to deﬁne eligibility for TRI. However,
+MCPs may utilize taxonomy, specialty, or other datapoints as resources to
+determine provider type. DHCS expects MCPs to work with Providers to identify
+whether they qualify for TRI increases based on the provider type list.
+[[page 6]]
+6
+12. How does DHCS determine provider type in the FFS Delivery System?
+In the FFS delivery system, providers enroll in Medi-Cal Fee-for-Service using the
+Provider Application and Validation for Enrollment System (PAVE). The PAVE
+application requires providers to include provider data including National
+Provider Identiﬁer (NPI) and provider type. DHCS’ Provider Enrollment Division
+(PED) publishes a list of provider types by business structure on the PAVE website
+from which providers may select from. Additionally, when a provider applies for a
+NPI through NPPES, they are required to include a taxonomy code (a unique 10-
+character code that designates provider classiﬁcation and specialization). CMS
+updates the Medicare provider and supplier taxonomy crosswalk semiannually,
+which crosswalks taxonomy to a provider/supplier type description.
+13. What if my provider type is not listed as eligible for TRI?
+For codes identiﬁed as Primary/General Care, all other providers will continue to
+be reimbursed at the legacy Medi-Cal rate. For procedure codes identiﬁed as
+Obstetric and Non-Specialty Mental Health Services, all providers otherwise
+eligible to bill these codes will be reimbursed at the CY 2024 TRI Fee Schedule
+rate.
+14. Do services (CPT codes) that are carved out of the managed care program
+fall under the FFS timeline or the managed care timeline?
+If the service is being reimbursed by Medi-Cal FFS then it will be under the FFS
+timeline. If the service is being reimbursed in the Managed Care delivery system,
+then it will be under the managed care timeline.
+15. Who can I contact about my reimbursement amounts?
+In the FFS delivery system providers may reach out to CA-MMIS at 1-800-541-
+5555 for payment or billing questions. In the Managed Care delivery system
+providers may reach out their individual managed care plan for internal
+processing timelines and procedures.
+[[page 7]]
+7
+16. What are the exact requirements in Managed Care?
+The contractual requirements for Managed Care Plans are detailed in
+All Plan
+Letter 24-007.
+17. How does TRI aﬀect provider reimbursement in a per-service (FFS)
+arrangement from a Managed Care Plan?
+In instances where the Network Provider is reimbursed on a per service basis, TRI
+requirements apply at the procedure code level.
+18. How does TRI aﬀect provider reimbursement in non-per service (capitated or
+other arrangement) relationship with an MCPs, their Subcontractors, or
+Downstream Subcontractors?
+In instances where a Network Provider is reimbursed on a capitated basis, MCPs
+must ensure the Network Provider receives reimbursement that provides
+payment that is at least equal to, or projected to be at least equal to, the CY 2024
+TRI Fee Schedule rates for applicable services at minimum. Therefore, MCPs are
+not required to adjust payment for capitated subcontracts that are already being
+reimbursed at levels at or above the new TRI rates. Examples of non-per service
+relationships include, but are not limited to, Health Maintenance Organization
+(HMO), capitation and full risk payment, payments with shared savings and
+recoupments, performance payments, etc.
+For examples of payment requirements for per service and non-per service
+relationships see the July 17, 2024 Provider Webinar
+slides 23 and 24.
+19. How do these reimbursement requirements aﬀect MCPs and providers when
+there are multiple layers of contracting such as Independent Practice
+Associations?
+In accordance with Exhibit A, Attachment III, Subsection 3.1.5 (Requirements for
+Network Provider Agreements, Subcontractor Agreements, and Downstream
+Subcontractor Agreements) of the MCP Contract and 22 CCR section 53250, each
+Network Provider Agreement and Subcontractor Agreement must also comply
+[[page 8]]
+8
+with all applicable State and federal law and contract requirements as well as
+DHCS guidance, including all applicable APLs and Policy Letters.
+TRI-equivalent payment levels are evaluated at the Network Provider level. The
+Network Provider must be paid at a level that meets TRI requirements regardless
+of whether the contract is directly with the MCPs, their Subcontractors, or
+Downstream Subcontractors.
+20. Are Federally Qualiﬁed Health Centers (FQHCs) and Rural Health Clinics
+(RHCs), Indian Health Care Providers, or Cost-Based Reimbursement Clinics
+(CBRCs) eligible for TRI? Are there any parity requirements?
+FQHC, RHC, Indian Health Care Provider, and CBRC services do not qualify for
+reimbursement under the TRI Fee Schedule in the FFS delivery system and thus
+are not qualifying services for the purposes of this directed payment
+arrangement. Pursuant to W&I section 14087.325(d), MCPs are required to
+reimburse contracted FQHCs and RHCs in a manner that is no less than the level
+and amount of payment that the MCP would make for the same scope of services
+if the services were furnished by another Provider type that is not an FQHC or
+RHC. MCPs must also comply with the requirements of Provision 3.3.7 of Exhibit
+A, Attachment III, of the MCP Contract speciﬁc to non-contracting FQHCs and
+RHCs.
+21. How should MCPs treat Proposition 56 physician services supplemental
+payments until full compliance with APL 24-0007 is achieved?
+Until such time that MCPs achieve full compliance with the requirements of APL
+24-0007, DHCS anticipates MCPs will ensure that eligible Network Providers
+continue to receive the equivalent value of former Proposition 56 physician
+services supplemental payments.

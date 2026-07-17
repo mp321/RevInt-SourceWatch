@@ -1,0 +1,271 @@
+[[page 1]]
+claim cms
+1
+Claim Completion: CMS-1500
+Claim Completion: CMS-1500
+Page updated: August 2020
+The examples in this section assist providers billing for Family PACT (Planning, Access,
+Care and Treatment) Program services on the CMS-1500 claim form. While Family PACT
+claims are generally billed with the same method as Medi-Cal claims, there are some unique
+differences for Family PACT. Providers should carefully read the information in this manual
+concerning Family PACT ICD-10-CM diagnosis codes and documentation requirements.
+Refer to Benefits: Family Planning and Benefits: Family Planning-Related Services sections
+of this manual for detailed policy information.
+Claim Completion Instructions Overview
+For general claim completion instructions, refer to the following sections in the Part 2
+Medi-Cal manual:
+• Correct Coding Initiative: National
+• CMS-1500 Completion
+• CMS-1500 Special Billing Instructions
+• CMS-1500 Submission and Timeliness Instructions
+• CMS-1500 Tips for Billing
+• Physician-Administered Drugs – NDC: CMS-1500 Billing Instructions
+Claim Examples
+This section includes examples of family planning and family planning-related services that
+require appropriate ICD-10-CM coding for reimbursement. It also includes an example of
+when two claim forms are required for the same date of service, because different additional
+ICD-10-CM diagnosis codes are required for treatment services provided in a single visit.
+Because these claims are submitted with a diagnosis code, an ICD indicator is required
+between the dotted lines in the ICD Ind. area of Box 21. An indicator is required only when
+an ICD-10-CM/PCS code is entered on the claim.
+Note: These are examples only. National Drug Code (NDC) numbers and charges used for
+the examples may be fictitious or outdated and are not intended for use on the actual
+claim form. Adapt to your billing situation.
+Billing Tips
+When completing claims, do not enter the decimal point in any codes or dollar amounts. If
+requested information does not fit neatly in the Additional Claim Information (Box 19) of the
+claim, type it on an 8½ x 11-inch sheet of paper and attach it to the claim.
+[[page 2]]
+claim cms
+2
+Claim Completion: CMS-1500
+Page updated: September 2021
+Example 1
+Evaluation and Management (E&M) office visit, blood draw for laboratory
+screening tests and onsite dispensing of oral contraceptives
+‹‹In this example, an established client, who is currently using oral contraceptives, has a
+history update and a blood pressure check. A full year supply of oral contraceptives is
+dispensed onsite. Samples for a gonorrhea/chlamydia nucleic acid amplification (NAAT) test,
+syphilis, and HIV screening tests are sent to a clinical laboratory. The total clinician time for
+this visit is 22 minutes; 15 minutes with the client and 7 minutes to review prior record and
+enter a note in the electronic medical record.››
+Both the product ID qualifier (N4) and National Drug Code (NDC) are required on the claim
+because the oral contraceptive dispensed (claim line 2) is a “physician-administered” drug.
+Providers enter the product ID qualifier/NDC number in the shaded area of Box 24A and the
+unit of measure/numeric quantity for the contraceptive in the shaded area of Box 24D.
+Note that: 1) Unit of measure and numeric quantity are optional. Absence of these two
+elements will not result in claim denial. And 2) Section 340B drugs may be billed on the
+same claim as non-340B drugs, but the 340B drugs must include modifier UD with the
+applicable HCPCS and NDC codes. Refer to the appropriate Part 2 manual section
+Physician-Administered Drugs – NDC: CMS-1500 Billing Instructions for details on NDC and
+340B billing requirements.
+[[page 3]]
+claim cms
+3
+Claim Completion: CMS-1500
+Page updated: May 2023
+Example 2
+Initial visit with point of care laboratory work and a blood draw sent to an
+outside laboratory (a prescription for contraceptives and antibiotic is
+provided).
+In this example, a client has a new patient family planning office visit, which includes a
+comprehensive patient history, clinically indicated physical exam and counseling about all
+family planning methods. A point of care pregnancy test is performed because of unclear
+last menstrual period. A dipstick urinalysis is performed in the office for symptoms of urinary
+tract infection (UTI). The client is given a prescription for oral contraceptives and an
+antibiotic for the treatment of acute cystitis. The physician dispenses condoms as a back-up
+method and for sexually transmitted disease (STD) prevention.
+Note: Contraceptive supply codes A4267 and A4269U1 are exempt from being billed in
+connection with a National Drug Code (NDC).
+[[page 4]]
+claim cms
+4
+Claim Completion: CMS-1500
+Page updated: October 2025
+Example 3
+A vasectomy performed by a Medi-Cal provider who is not enrolled in
+Family PACT (client was referred by a Family PACT provider)
+In this example, a client is referred by a Family PACT provider to a non-Family PACT
+Medi-Cal provider for a vasectomy. The vasectomy is performed in the doctor’s office. In
+addition to the vasectomy, the surgeon bills for supplies required for the procedure.
+Referring Provider
+‹‹The referring Family PACT physician provides the surgeon with the information required to
+complete the form, such as the client’s Health Access Programs (HAP) ID number, the
+referring provider’s NPI, the appropriate ICD-10-CM diagnosis code, and a copy of the
+Consent For Sterilization Form (DHCS 8649). Enter the referring provider’s name in the
+Name of Referring Provider or Other Source field (Box 17) and the NPI in the NPI field (Box
+17B).››
+[[page 5]]
+claim cms
+5
+Claim Completion: CMS-1500
+Page updated: September 2021
+Example 4
+A colposcopy and vaginal discharge diagnostic test (two claim forms
+required)
+‹‹In an initial visit, a client, who received depot medroxyprogesterone acetate (DMPA) for
+contraception, had a cervical cytology screening test done. The result was reported a few
+days later as a high-grade squamous intraepithelial lesion (HSIL).›› This example shows a
+follow-up office visit for a colposcopy with biopsy and endocervical curettage. ‹‹In addition, at
+the same visit, she complains of a vaginal discharge.›› Office microscopy is performed and
+the client is given a prescription to take to the pharmacy to treat trichomonal vulvovaginitis.
+Two claim forms are required for the same date of service because there are two family
+planning-related conditions requiring different diagnosis codes for each set of claims. Do not
+use field 21.3 or 21.4 in the Diagnosis or Nature of Illness or Injury field (Box 21). Refer to
+the following page for the second claim form.
+[[page 6]]
+claim cms
+6
+Claim Completion: CMS-1500
+Page updated: June 2022
+‹‹Example 4 (continued)››
+A colposcopy and vaginal discharge diagnostic test (second claim form)
+(continued)
+On the second claim form, (E&M) code 99213 with modifier 25 is used to identify a
+separately identifiable E&M) visit above and beyond the other service provided (refer to the
+first claim form on a preceding page).
+‹‹It also includes an example of when two claim forms are required for the same date of
+service, because different additional ICD-10-CM diagnosis codes are required for treatment
+services provided in a single visit.››
+[[page 7]]
+claim cms
+7
+Claim Completion: CMS-1500
+Page updated: October 2025
+Example 5
+Bilateral tubal ligation performed by a Medi-Cal provider who is not
+enrolled in Family PACT (client was referred by a Family PACT provider)
+In this example, a non-Family PACT provider performs a laparoscopic tubal ligation. The
+client was referred by a Family PACT provider. This example shows how the surgeon bills
+for the procedure.
+Referring Provider
+‹‹The referring Family PACT physician provides the surgeon with the information required to
+complete the form, such as the client’s HAP ID number, the referring provider’s NPI, the
+family planning ICD-10-CM diagnosis code, and a copy of the sterilization Consent For
+Sterilization Form (DHCS 8649). Enter the referring provider’s name in the Name of
+Referring Provider or Other Source field (Box 17) and the NPI in the NPI field (Box 17B).››
+[[page 8]]
+claim cms
+8
+Claim Completion: CMS-1500
+Page updated: June 2022
+Example ‹‹6››
+Intrauterine contraceptive (IUC) removal and the start of oral
+contraceptives on the same date of service (two claim forms required)
+In this example, an established client requests for her expired IUC be removed and
+discloses that she would like to start using oral contraceptives. The clinician provided 15
+minutes of method contraceptive counseling. The total time of the visit (excluding the time
+for the IUC removal) was 24 minutes.
+Two claim forms are required for the same date of service because there are two
+contraceptive management ICD-10-CM diagnosis codes.
+Refer to the following page for the second claim form.
+The first claim form should include the information below. Do not bill for an Evaluation and
+Management (E&M) visit with IUC removal on the same date of service.
+[[page 9]]
+claim cms
+9
+Claim Completion: CMS-1500
+Page updated: October 2022
+Example ‹‹6 (continued)››
+Intrauterine contraceptive (IUC) removal and start of oral contraceptives
+on same date of service (second claim form) (continued)
+The second claim form includes the E&M code for the portion of the visit focusing on
+contraceptive counseling and the prescription of the oral contraceptives dispensed onsite
+(refer to the first claim form on the preceding page).
+Both the product ID qualifier N4 and National Drug Code (NDC) are required on the claim
+because the oral contraceptive dispensed (claim line 2) is a physician-administered drug
+(PAD). Providers enter the product ID qualifier/NDC number in the shaded area of Box 24A
+and the unit of measure/numeric quantity for the contraceptive in the shaded area of Box
+24D. (Refer to Part 2, Medi-Cal Manual section Physician-Administered Drugs – NDC:
+CMS-1500 Billing Instructions for help.)
+Note: Unit of measure and numeric quantity are optional. Absence of these two elements
+will not result in claim denial.
+[[page 10]]
+claim cms
+10
+Claim Completion: CMS-1500
+Page updated: October 2022
+Example ‹‹7››
+Contraceptive implant insertion by a Medi-Cal provider who is not
+enrolled in Family PACT (client was referred by a Family PACT group
+provider)
+In this example, a client is referred by a Family PACT group provider to a non-Family PACT
+Medi-Cal provider for contraceptive implant insertion. A Nurse Practitioner (NP) performs the
+procedure. This example shows how the rendering provider bills for the procedure. Enter the
+supervising physician’s individual NPI in the NPI field on each applicable claim line (Box
+24J). Enter the name of the NP, title, and the NP’s individual NPI number in Box 19.
+Referring Provider
+The referring Family PACT group provider provides the rendering provider with the
+information required to complete the form, such as the client’s HAP ID number, the referring
+provider’s group NPI, and the appropriate ICD-10-CM diagnosis code. Enter the referring
+Family PACT group provider’s name in the Name of Referring Provider or Other Source field
+(Box 17) and the NPI in the NPI field (Box 17B).
+[[page 11]]
+claim cms
+11
+Claim Completion: CMS-1500
+Page updated: October 2022
+Example ‹‹8››
+Office visit, Depo Medroxyprogesterone Acetate (DMPA) injection) onsite
+administration for contraceptive use, 150 mg
+In this example, a registered nurse who has completed the required training pursuant to
+California Business and Professions Code, Section 2725.2, dispensed and administered
+DMPA to an established client who is continuing on this contraceptive method.
+Both the product ID qualifier N4 and National Drug Code (NDC) are required on the claim
+because the drug dispensed (claim line 2) is a physician administered drug (PAD). (Refer to
+Part 2, Medi-Cal Manual section Physician-Administered Drugs – NCD: CMS-1500 Billing
+Instructions for additional help.)
+Providers enter the product ID qualifier/NDC number in the shaded area of Box 24A, the unit
+of measure/numeric quantity for the drug in the shaded area of Box 24D and must include
+the modifier U8 in the modifier area (unshaded) of Box 24D. Note that unit of measure and
+numeric quantity are optional. Absence of these two elements will not result in claim denial.
+Note: Providers billing for physician-administered drugs subject to the federally established
+340B Drug Pricing Program must include the modifier UD in the modifier area of Box
+24D to the right of, or in second position to, modifier U8. Section 340B drugs may be
+billed on the same claim as non-340B drugs.
+[[page 12]]
+claim cms
+12
+Claim Completion: CMS-1500
+Page updated: August 2022
+The price listed for DMPA on the Medi-Cal Rates page of the Medi-Cal website includes a
+one-time administration fee. Refer to the Drugs: Onsite Dispensing Billing Instructions
+section of this manual for specific instructions on the one-time administration fee.
+[[page 13]]
+claim cms
+13
+Claim Completion: CMS-1500
+Page updated: October 2022
+Example ‹‹9››
+Initial visit with on-site dispensing of diaphragm (contoured)
+In this example, a client has an initial family planning office visit, which includes a
+comprehensive patient history, physical exam and counseling about all family planning
+methods. As clinically indicated, point-of-care pregnancy test is performed. The physician
+dispenses a contraceptive diaphragm (contoured), contraceptive jelly and condoms.
+Note: Contraceptive supply codes A4266, A4267 and A4269UI are exempt from being
+billed in connection with a National Drug Code (NDC).
+[[page 14]]
+claim cms
+14
+Claim Completion: CMS-1500
+Page updated: October 2022
+Example ‹‹10››
+Evaluation and Management (E&M) visit for pharmacist furnishing oral
+contraceptives
+In this example, a Family PACT client is seen by a pharmacist for the evaluation and
+management service associated with furnishing the client with oral contraceptives. The
+appropriate ICD-10-CM diagnosis code is indicated by D1D1D1 in this example. For detailed
+instructions on how to complete a CMS-1500 claim form, providers should refer to the
+CMS-1500 Completion section in the appropriate Part 2 Medi-Cal manual.
+[[page 15]]
+claim cms
+15
+Claim Completion: CMS-1500
+Page updated: August 2022
+Legend
+Symbols used in the document above are explained in the following table.
+Symbol Description
+‹‹ This is a change mark symbol. It is used to indicate where on the page the
+most recent change begins.
+›› This is a change mark symbol. It is used to indicate where on the page the
+most recent change ends.

@@ -1,0 +1,140 @@
+[[page 1]]
+pharm
+1
+Family PACT – Pharmacy Billing Overview
+Pharmacy Billing Overview
+Page updated: December 2021
+This section is a Family Planning, Access, Care and Treatment (Family PACT) Program
+billing overview for pharmacy providers only. ‹‹For a list of reimbursable drugs and
+contraceptive supplies dispensed by pharmacies, refer to the Family PACT Pharmacy
+Formulary on the Medi-Cal Rx website (https://medi-calrx.dhcs.ca.gov).››
+Pharmacy Dispensing
+‹‹Medi-Cal pharmacy providers may bill Family PACT for FDA-approved drugs and medical
+supplies that are included in the Family PACT Pharmacy Formulary on the Medi-Cal Rx
+website (https://medi-calrx.dhcs.ca.gov/) and are prescribed by an enrolled Family PACT
+provider or associated practitioner.››
+No Enrollment Necessary for Medi-Cal Pharmacy Providers
+Medi-Cal pharmacy providers are not required to enroll in the Family PACT Program.
+In addition, pharmacy providers are not required to attend a Provider Orientation in order to
+be reimbursed for services rendered to Family PACT clients.
+‹‹Medi-Cal Rx Claims Submission
+Pharmacies should submit claims to Medi-Cal Rx for all Family PACT drug and
+contraceptive supply billing transactions.››
+Reimbursement Rate
+The reimbursement rates for Family PACT drugs and contraceptive supplies dispensed at
+pharmacies are the same as those for the Medi-Cal program.
+No Charge to Clients
+Pharmacy providers may not request a copayment, donation or other amount in conjunction
+with provision of services to Family PACT clients.
+[[page 2]]
+pharm
+2
+Family PACT – Pharmacy Billing Overview
+Page updated: April 2023
+Codes for Contraceptives
+Pharmacists must bill the following contraceptive supplies using a National Drug Code
+(NDC), Universal Product Code (UPC) or Health Related Items (HRI) number:
+• Condoms (internal and male)
+• Diaphragms
+• Cervical caps
+• Basal thermometers
+• Lubricating jelly
+• Spermicides and vaginal films
+Treatment Authorization Request
+‹‹All drugs to manage a complication of a Family PACT benefit require authorization using a
+Treatment Authorization Request (TAR). Drugs needed to treat complications are limited to
+drugs and supplies identified in the Family PACT Pharmacy Formulary on the Medi-Cal Rx
+website (https://medi-calrx.dhcs.ca.gov/), and the Clinic Formulary sections in this manual.››
+For authorization information for pharmacies, refer to the Family PACT Pharmacy Formulary
+on the Medi-Cal Rx website (https://medi-calrx.dhcs.ca.gov/).
+For general Family PACT-related TAR information, refer to the Treatment Authorization
+Request (TAR) section in this manual.
+Use of Authorized Labelers
+For the list of current authorized labelers, refer to the Medi-Cal Rx Contract Drugs List –
+Authorized Drug Manufacturer Labeler Codes section of the Contract Drugs List on the
+Medi-Cal Rx website (https://medi-calrx.dhcs.ca.gov).
+Pharmacist Services
+This heading provides information on pharmacist services policy and billing for pharmacy
+providers who are enrolled in Medi-Cal and participate in the delivery of pharmacist services
+authorized pursuant to Welfare and Institutions Code (W&I Code), Section 14132.968. The
+services include, among other things, furnishing self-administered hormonal contraception.
+Furnishing Pharmacist
+Furnishing pharmacists (the pharmacist ordering the medication) must be enrolled as an
+ordering, referring and prescribing (ORP) provider for claims to be reimbursed. Applications
+are available on the Medi-Cal website: www.medi-cal.ca.gov.
+[[page 3]]
+pharm
+3
+Family PACT – Pharmacy Billing Overview
+Page updated: October 2022
+A pharmacist may furnish self-administered hormonal contraception pursuant to Business
+and Professions Code (B&P Code), Section 4052.3. The furnishing pharmacist must follow
+the standardized protocols promulgated in California Code of Regulations (CCR), Title 16,
+Section 1746.1, that includes, but is not limited to, the following:
+• The ordering pharmacist must be qualified to furnish self-administered hormonal
+contraception pursuant to the Board of Pharmacy Regulation.
+• Proof of successful completion of training must be retained onsite for auditing
+purposes.
+• The pharmacy must retain proper records.
+Refer to “Documentation Requirements” for additional information
+The following CPT® codes and corresponding ICD-10-CM diagnosis codes must be used by
+the pharmacy to bill for the furnishing of self-administered hormonal contraception:
+‹‹CPT and ICD-10-CM Codes Table››
+CPT Code Use when billing for ICD-10-CM Diagnosis Codes
+99202 New patient Z30.011, Z30.012, Z30.015, Z30.016,
+Z30.09, Z30.41, Z30.44 and Z30.45
+99212 Established patient Z30.011, Z30.012, Z30.015, Z30.016,
+Z30.09, Z30.41, Z30.44 and Z30.45
+New Patient
+A new patient is one who has not received any professional services from the pharmacy
+within the past three years. If a new patient visit has been reimbursed, any subsequent claim
+for a new patient service by the same provider, for the same patient, received within three
+years, will be reimbursed at the level of the comparable established patient procedure.
+Established Patient
+An established patient is one who has received applicable professional services from a
+pharmacist at the same pharmacy location within the past three years.
+Determination of new or established patient status is based on the owner of the medical
+record, which is generally the pharmacy and not the individual pharmacist providing the
+service at the time.
+ICD-10-CM Diagnosis Codes
+ICD-10-CM diagnosis codes that relate to family planning services are listed in the
+Benefits: Family Planning section of this manual.
+[[page 4]]
+pharm
+4
+Family PACT – Pharmacy Billing Overview
+Page updated: August 2020
+Documentation Requirements
+Providers are required to retain documentation for all pharmacist evaluation and
+management services. All providers should be aware that if the service is not documented,
+the service is not considered to have been provided.
+Medical record documentation is required to record an individual’s applicable health history
+including applicable past and present illnesses, self-screening questionnaires, tests,
+treatments and outcomes. The medical record chronologically documents the care of the
+patient and is an important element that contributes to high quality care.
+An appropriately documented medical record may serve as a legal document to verify the
+care provided. Documentation should be complete, legible and concise. At a minimum, the
+records must include the following:
+• Regulation-required questionnaire
+• Reason for encounter
+• Appropriateness of therapeutic services provided
+• Applicable test results (blood pressure/pulse)
+• Client’s relevant medical history
+• Site of service
+• Total time spent with client and time spent on counseling, if applicable
+• Date, time of service and identity of pharmacist providing the service
+• Action taken as a result of the encounter
+CMS-1500 Claim Form Example
+For a claim form example, refer to the Claim Completion: CMS-1500 section in this manual.
+[[page 5]]
+pharm
+5
+Family PACT – Pharmacy Billing Overview
+Page updated: August 2020
+‹‹Legend››
+‹‹Symbols used in the document above are explained in the following table.››
+Symbol Description
+‹‹ This is a change mark symbol. It is used to indicate where on the page the
+most recent change begins.
+›› This is a change mark symbol. It is used to indicate where on the page the
+most recent change ends.

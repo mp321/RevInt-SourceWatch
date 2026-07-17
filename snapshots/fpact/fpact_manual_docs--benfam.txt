@@ -1,0 +1,2125 @@
+[[page 1]]
+ben fam
+1
+Family PACT – Benefits: Family Planning
+Benefits: Family Planning
+Page updated: June 2022
+This section identifies Family Planning, Access, Care and Treatment (Family PACT)
+Program services available to clients for family planning services. Additionally, services are
+reimbursable only for the specific contraceptive methods that are identified. Services are
+tailored to the management of each contraceptive method designated by ICD-10-CM codes
+noted in this section. Services to manage complications of covered contraceptive methods
+and specified reproductive health screening tests are also included in this section.
+Family Planning Services
+Family planning services are categorized according to contraceptive methods. For more
+information, refer to the following pages in this section.
+‹‹ICD-10-CM Code Table: Family Planning Services››
+ICD-10-CM Code Description
+Z30.011 Encounter for initial prescription of contraceptive pills
+Z30.012 Encounter for prescription of emergency contraception
+Z30.013 Encounter for initial prescription of injectable contraceptive
+Z30.015 Encounter for initial prescription of vaginal ring hormonal
+contraceptive
+Z30.016 Encounter for initial prescription of transdermal patch hormonal
+contraceptive device
+Z30.017 Encounter for initial prescription of implantable subdermal
+contraceptive
+Z30.018 Encounter for initial prescription of other contraceptives
+Encounter for initial prescription of barrier contraception
+Encounter for initial prescription of diaphragm
+Z30.02 Counseling and instruction in natural family planning to avoid
+pregnancy
+Z30.09 Encounter for other general counseling and advice on
+contraception
+Z30.2 Encounter for sterilization
+[[page 2]]
+ben fam
+2
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+ICD-10-CM Code Table: Family Planning Services (continued)
+ICD-10-CM Code Description
+Z30.41 Encounter for surveillance of contraceptive pills
+Z30.42 Encounter for surveillance of injectable contraceptive
+Z30.430 Encounter for insertion of intrauterine contraceptive device
+Z30.431 Encounter for routine checking of intrauterine contraceptive
+device
+Z30.432 Encounter for removal of intrauterine contraceptive device
+Z30.433 Encounter for removal and reinsertion of intrauterine
+contraceptive device
+Z30.44 Encounter for surveillance of vaginal ring hormonal
+contraceptive device
+Z30.45 Encounter for surveillance of transdermal patch hormonal
+contraceptive device
+Z30.46 Encounter for surveillance of implantable subdermal
+contraceptive
+Encounter for checking, reinsertion or removal of implantable
+subdermal contraceptive
+Z30.49 Encounter for surveillance of other contraceptives
+Encounter for surveillance of barrier contraception
+Encounter for surveillance of diaphragm
+Z31.61 Procreative counseling and advice using natural family
+planning
+Z98.51 Tubal ligation status
+Z98.52 Vasectomy status
+Drugs and Contraceptive Supplies
+For a list of reimbursable drugs and dispensing guidelines, including restrictions and
+authorization requirements, refer to the Family PACT Pharmacy Formulary on the Medi-Cal
+Rx website (https://medi-calrx.dhcs.ca.gov), as well as the Clinic Formulary section and the
+“Treatment and Dispensing Guidelines for Clinicians” chart in the Benefits Grid section in
+this manual.
+[[page 3]]
+ben fam
+3
+Family PACT – Benefits: Family Planning
+Page updated: October 2023
+Modifiers
+Family PACT defers to Medi-Cal policy and billing procedures for use of modifiers, unless
+otherwise stated in this manual. For further information, refer to the following sections of the
+Part 2 Medi-Cal provider manual:
+• Modifiers
+• Modifiers: Approved List
+• Modifiers Used With Procedure Codes
+• Non-Physician Medical Practitioners (NMP)
+• Pathology: Billing and Modifiers
+• Pathology: Cytopathology
+• Surgery: Billing With Modifiers
+Family Planning Services
+The following services are reimbursable with the family planning ICD-10-CM codes listed on
+a preceding page, except for Z30.012, Z30.09 and Z31.61, as noted in the following pages.
+Office Visits or Other Outpatient Evaluation and Management (E&M)
+Visits
+Use the following codes for Evaluation and Management (E&M) visits.
+CPT® Code Table: Evaluation and Management Visits
+CPT Code Description
+99202 New patient, females/males
+99203 New patient, females/males
+99204 ‹‹New patient, females/males››
+99211 Established patient, females/males
+99212 Established patient, females/males
+99213 Established patient, females/males
+99214 ‹‹Established patient, females/males››
+For information and billing guidelines for E&M visits, refer to the Office Visits: Evaluation and
+Management and Education and Counseling Services section in this manual.
+[[page 4]]
+ben fam
+4
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+Education and Counseling (E&C) Visits – New/Established Clients
+Use the following codes for Education and Counseling (E&C) visits.
+‹‹HCPCS/CPT Code Table: Education and Counseling (E&C) Visits››
+HCPCS/CPT
+Code/Modifier
+Description
+S9445 Individual orientation to Family PACT
+S9446 Group family planning education (including orientation to Family
+PACT)
+99401U6 Preventive medicine counseling service for family planning
+counseling (up to 15 minutes)
+99402U6 Preventive medicine counseling service for family planning
+counseling (16 - 30 minutes)
+99403U6 Preventive medicine counseling services for family planning
+counseling (31 - 45 minutes)
+Note: CPT codes 99401, 99402 and 99403 are billed with modifier U6 to indicate individual
+family planning E&C visits.
+For information and billing guidelines for E&C visits, refer to the Office Visits: Evaluation and
+Management and Education and Counseling Services section in this manual.
+Facility Use
+A Family PACT provider must have the appropriate provider type on file with Medi-Cal
+Provider Enrollment Division to bill for facility use.
+‹‹HCPCS Code Table: Facility Use››
+HCPCS Code Description
+Z7500 Use of hospital examining or treatment room
+Laboratory
+‹‹CPT Code Table: Laboratory››
+CPT Code Description
+81025 Urine pregnancy test, by visual color comparison methods
+Note: Urine pregnancy test should only be done as clinically indicated.
+[[page 5]]
+ben fam
+5
+Family PACT – Benefits: Family Planning
+Page updated: October 2022
+Procedures
+CPT Code Table: Procedures
+CPT Code Description
+99000 Handling and/or conveyance of specimen for transfer from the
+physician’s office to an unaffiliated laboratory. For Family PACT,
+this pertains to blood specimens only.
+Note: Blood tests should be ordered only as clinically indicated for safe use of contraceptive
+method.
+Barrier Supplies and Emergency Contraception
+HCPCS Code Table: Barrier Supplies and Emergency Contraception
+HCPCS
+Code/Modifier
+Description
+A4261 Cervical cap for contraceptive use
+A4266 Diaphragm for contraceptive use
+A4267 Condom, male
+A4268 Condom, internal
+A4269 Contraceptive supply, spermicide
+A4269U1 Gel/jelly/foam/cream
+A4269U2 Suppository
+A4269U3 Vaginal film
+A4269U4 Contraceptive sponge
+A4269U5 Vaginal gel
+S5199 Lubricant
+J3490U5 Ulipristal acetate 30 mg one (1) pack (one [1] tablet) limited to
+female clients
+J3490U6 ‹‹Levonorgestrel 1.5 mg pack (one [1] tablet) limited to female
+clients››
+Note: HCPCS code A4269 is billed with modifier U1, U2, U3 or U4 to indicate the type of
+spermicide.
+Note: HCPCS code J3490 is billed with modifier U5 and U6 to indicate emergency
+contraceptive pills.
+[[page 6]]
+ben fam
+6
+Family PACT – Benefits: Family Planning
+Page updated: April 2023
+Over-the-counter barrier supplies and emergency contraception may also be dispensed by
+prescription at Medi-Cal participating pharmacies. For a complete list of drugs and
+contraceptive supplies reimbursed by the Family PACT Program, refer to the Family PACT
+Pharmacy Formulary on the Medi-Cal Rx website (https://medi-calrx.dhcs.ca.gov) and the
+Clinic Formulary section in this manual.
+Complication Services
+‹‹Complications that arise from the use of a covered contraceptive method that can be
+reasonably managed on an outpatient basis are included in this section under each
+contraceptive method. A Treatment Authorization Request (TAR) is required for complication
+services, unless stated otherwise in this manual. For additional information, refer to the
+Benefits: Clinical Services Overview and Treatment Authorization Request (TAR) sections in
+this manual.››
+When a procedure, laboratory test or drug is for the management of a complication resulting
+from the use of a particular contraceptive method, an ICD-10-CM code for the complication
+is required on the claim. This code must be billed with the diagnosis code that identifies the
+contraceptive method for which the client is being seen.
+Outpatient Services
+The following services are available to manage all complications on an outpatient basis.
+Additional services to manage complications of covered contraceptive methods are included
+under each method in this section.
+Procedures
+CPT Code Table: Outpatient Procedures
+CPT Code Description
+99000 Handling and/or conveyance of specimen for transfer from the
+physician’s office to an unaffiliated laboratory. For Family PACT,
+this pertains to blood specimens only.
+Office Visit
+CPT Code Table: Complication Services Office Visits
+CPT Code Description
+99202 thru 99204 New patient
+99211 thru 99214 Established patient
+[[page 7]]
+ben fam
+7
+Family PACT – Benefits: Family Planning
+Page updated: April 2023
+Consultation
+CPT Code Table: Consultations
+CPT Code Description
+99242 thru 99244 Office Consultation, new or established patient
+Facility Use
+A Family PACT provider must have the appropriate provider type on file with Medi-Cal
+Provider Enrollment Division to bill for facility use.
+HCPCS Code Table: Facility Use
+HCPCS Code Description
+Z7500 Use of hospital examining or treatment room
+Laboratory Tests
+‹‹Laboratory tests to manage a complication of a contraceptive method are reimbursable
+and are noted under each method in this section and listed in the Laboratory Services
+section. A TAR may be required for some laboratory tests.››
+Drugs and Supplies
+‹‹Drugs and supplies to manage a complication of a Family PACT benefit, found in the
+Family PACT Pharmacy Formulary on the Medi-Cal Rx website
+(https://medi-calrx.dhcs.ca.gov) and the Clinic Formulary section in this manual, require an
+authorization when determined to be medically necessary during the course of treatment.››
+Preoperative Evaluation of a Medical Condition
+Additional tests and procedures for preoperative evaluation of a medical condition to identify
+surgical contraindications for permanent female and male contraception require
+authorization as noted. These are reimbursable with ICD-10-CM codes Z01.812 or Z01.818,
+as appropriate, and must be billed with code Z30.09. For details of these benefits, see
+“Female Sterilization – 21 Years of Age and Older” and “Male Sterilization – 21 Years of Age
+and Older” in this section.
+[[page 8]]
+ben fam
+8
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+Inpatient Services
+All services to manage complications requiring inpatient services require an approved TAR.
+Additional Facility Use
+Providers must have the appropriate provider type on file with Medi-Cal Provider Enrollment
+Division to bill for facility use.
+‹‹HCPCS Code Table: Facility Use››
+HCPCS Code Description
+Z7506 Use of operating room, first hour
+Z7508 Use of operating room, first subsequent half-hour
+Z7510 Use of operating room, second subsequent half-hour
+Z7512 Use of recovery room
+Z7514 Room and board, general nursing care for less than 24 hours,
+including ordinary medications
+Anesthesia
+Anesthesia services are reimbursable when medically necessary for a procedure that is
+authorized for treatment of a complication. These services require an approved TAR. These
+complications have been preselected and are included in this section under each
+contraceptive method. This code must be billed with the diagnosis code that identifies the
+contraceptive method for which the client is being seen.
+Contraceptive Counseling
+Contraceptive Counseling Encounters
+The following ICD-10-CM codes indicate encounters for contraceptive counseling when the
+client is not on any contraceptive method.
+‹‹ICD-10-CM Code Table: Contraceptive Counseling››
+ICD-10-CM Code Description
+Z30.012 Encounter for prescription of emergency contraception
+Note: Encounters under diagnosis code Z30.012 are for emergency contraceptives only,
+and no contraceptive method is initiated or currently used by the client. If the
+encounter includes services for contraceptive management or initiation of a
+contraceptive method, the family planning ICD-10-CM code for which the client is
+being seen, or for the method selected by the client, is to be used.
+[[page 9]]
+ben fam
+9
+Family PACT – Benefits: Family Planning
+Page updated: October 2022
+Services reimbursable under ICD-10-CM code Z30.012 are limited to the following, for
+females only:
+Office Visits
+CPT Code Table: Office Visits
+CPT Code Description
+99202 New patient
+99211, 99212 Established patient
+For additional office visits reimbursed with Z30.012, refer to “Education and Counseling
+(E&C) Visits – New and Established Clients” on a preceding page in this section.
+Emergency Contraceptives
+HCPCS Code Table: Emergency Contraceptives
+HCPCS
+Code/Modifier
+Description
+J3490U5 Ulipristal acetate 30mg one pack (one tablet) limited to female
+clients
+J3490U6 ‹‹Levonorgestrel 1.5 mg pack (one tablet) limited to female
+clients››
+Note: HCPCS code J3490 is billed with modifier U5 or U6 to indicate emergency
+contraceptive pills.
+Laboratory
+CPT Code Table: Laboratory
+CPT Code Description
+81025 Urine pregnancy test, by visual color comparison methods
+[[page 10]]
+ben fam
+10
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+‹‹The following ICD-10-CM codes indicate encounters for contraceptive counseling.››
+‹‹ICD-10-CM Code Table: Contraceptive Counseling››
+ICD-10-CM Code Description
+Z30.09 Encounter for other general counseling and advice on
+contraception
+Note: Encounters under Z30.09 are for sterilization counseling and advice, including
+consent and preoperative evaluation, if indicated (refer to the “Permanent
+Contraception” on a following page in this section).
+Z30.09 is also used for counseling on contraceptive methods but no contraceptive
+method is initiated during the visit or currently used by the client. If a contraceptive
+method is initiated, or the client is already on a method, use the family planning
+ICD-10-CM code for the method selected by the client.
+Services reimbursable under ICD-10-CM code Z30.09 for general counseling and advice on
+contraceptive methods, other than sterilization, are limited to the following for males and
+females:
+Office Visits
+‹‹CPT Code Table: Office Visits››
+CPT Code Description
+99202, 99203 New patient
+99211 thru 99213 Established patient
+For additional office visits reimbursed with Z30.09, refer to “Education and Counseling (E&C)
+Visits – New and Established Clients” on a preceding page in this section.
+Laboratory
+‹‹CPT Code Table: Laboratory››
+CPT Code Description
+81025 Urine pregnancy test, by visual color comparison methods
+Note: Pregnancy test is covered only when clinically indicated to rule out pregnancy prior to
+initiation of contraceptive method, but no contraceptive method is initiated during the
+visit or currently used by the client. Providers must include the justification in the
+Remarks field (Box 80) on the UB-04 claim and Additional Claim Information field
+(Box 19) on the CMS-1500 claim. Pregnancy confirmation for women not seeking
+family planning services is not reimbursable under Z30.09.
+[[page 11]]
+ben fam
+11
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+Contraceptive Methods
+Reversible Contraception
+Family PACT reversible contraceptive methods include procedures, prescription drugs,
+devices, selected over-the-counter products and contraceptive supplies that are provided by
+clinicians during an office visit, or dispensed by a pharmacy, along with education and
+counseling on all contraceptive methods.
+Oral Contraceptives, Transdermal Patch and Vaginal Ring
+Oral contraception, transdermal patch and vaginal ring services are billed with ICD-10-CM
+codes Z30.011, Z30.015, Z30.016, Z30.41, Z30.44 or Z30.45 as appropriate.
+‹‹ICD-10-CM Code Table: Oral Contraceptives, Transdermal Patch and Vaginal Ring››
+ICD-10-CM Code Description
+Z30.011 Encounter for initial prescription of contraceptive pills
+Z30.015 Encounter for initial prescription of vaginal ring hormonal
+contraceptive
+Z30.016 Encounter for initial prescription of transdermal patch hormonal
+contraceptive device
+Z30.41 Encounter for surveillance of contraceptive pills
+Z30.44 Encounter for surveillance of vaginal ring hormonal contraceptive
+device
+Z30.45 Encounter for surveillance of transdermal patch hormonal
+contraceptive device
+[[page 12]]
+ben fam
+12
+Family PACT – Benefits: Family Planning
+Page updated June 2022
+Supplies
+No additional supply services are reimbursable for these methods.
+Drugs Onsite Dispensing
+HCPCS Code Table: Drugs Onsite Dispensing
+HCPCS Code Description
+J7294 Segesterone acetate and ethinyl estradiol 0.15mg, 0.013mg per
+24 hours; yearly vaginal system, each
+J7295 Ethinyl estradiol and etonogestrel 0.015mg, 0.12mg per 24 hours;
+monthly vaginal ring, each
+J7304 Contraceptive transdermal patch
+S4993 Oral contraceptives
+J7304U1 Contraceptive supply, hormone containing patch, each
+(norelgestromin and ethinyl estradiol transdermal system)
+J7304U2 Contraceptive supply, hormone containing patch, each
+(levonorgestrel and ethinyl estradiol transdermal system)
+S5000/S5001 Prescription drugs, generic/brand (Estradiol)
+Note: Billing of estradiol requires additional ICD-10-CM code N92.1 (excessive and frequent
+menstruation with irregular cycle).
+Pharmacy
+For a complete list of drugs and contraceptive supplies reimbursed by the Family PACT
+Program, refer to the Family PACT Pharmacy Formulary on the Medi-Cal Rx website
+(https://medi-calrx.dhcs.ca.gov) and the Clinic Formulary section in this manual.
+Laboratory Tests for Oral Contraceptives, Transdermal Patch and Vaginal Ring, as Clinically
+Indicated
+There are no additional laboratory tests for this method.
+[[page 13]]
+ben fam
+13
+Family PACT – Benefits: Family Planning
+Page updated June 2022
+Management of Complications
+The following ICD-10-CM codes are used to bill for complication services related to oral
+contraceptives, contraceptive patch and vaginal ring. An approved TAR is required unless
+stated otherwise. An additional ICD-10-CM code that identifies the contraceptive method in
+which the complication arose is required.
+‹‹ICD-10-CM Code Table: Management of Complications››
+ICD-10-CM Code Description
+I26.99 Other pulmonary embolism without acute cor pulmonale
+I82.401 Acute embolism and thrombosis of unspecified deep veins of right
+lower extremity
+I82.402 Acute embolism and thrombosis of unspecified deep veins of left
+lower extremity
+I82.403 Acute embolism and thrombosis of unspecified deep veins of lower
+extremity, bilateral
+I82.409 Acute embolism and thrombosis of unspecified deep veins of
+unspecified lower extremity
+I82.411 Acute embolism and thrombosis of right femoral vein
+I82.412 Acute embolism and thrombosis of left femoral vein
+I82.413 Acute embolism and thrombosis of femoral vein, bilateral
+I82.419 Acute embolism and thrombosis of unspecified femoral vein
+I82.421 Acute embolism and thrombosis of right iliac vein
+I82.422 Acute embolism and thrombosis of left iliac vein
+I82.423 Acute embolism and thrombosis of iliac vein, bilateral
+I82.429 Acute embolism and thrombosis of unspecified iliac vein
+I82.431 Acute embolism and thrombosis of right popliteal vein
+I82.432 Acute embolism and thrombosis of left popliteal vein
+I82.433 Acute embolism and thrombosis of popliteal vein, bilateral
+I82.439 Acute embolism and thrombosis of unspecified popliteal vein
+I82.441 Acute embolism and thrombosis of right tibial vein
+I82.442 Acute embolism and thrombosis of left tibial vein
+I82.443 Acute embolism and thrombosis of tibial vein, bilateral
+I82.449 Acute embolism and thrombosis of unspecified tibial vein
+[[page 14]]
+ben fam
+14
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+‹‹ICD-10-CM Code Table: Management of Complications (continued)››
+ICD-10-CM Code Description
+I82.491 Acute embolism and thrombosis of other specified deep vein of
+right lower extremity
+I82.492 Acute embolism and thrombosis of other specified deep vein of left
+lower extremity
+I82.493 Acute embolism and thrombosis of other specified deep vein of
+lower extremity, bilateral
+I82.499 Acute embolism and thrombosis of other specified deep vein of
+unspecified lower extremity
+I82.4Y1 Acute embolism and thrombosis of unspecified deep veins of right
+proximal lower extremity
+I82.4Y2 Acute embolism and thrombosis of unspecified deep veins of left
+proximal lower extremity
+I82.4Y3 Acute embolism and thrombosis of unspecified deep veins of
+proximal lower extremity, bilateral
+I82.4Y9 Acute embolism and thrombosis of unspecified deep veins of
+unspecified proximal lower extremity
+I82.4Z1 Acute embolism and thrombosis of unspecified deep veins of right
+distal lower extremity
+I82.4Z2 Acute embolism and thrombosis of unspecified deep veins of left
+distal lower extremity
+I82.4Z3 Acute embolism and thrombosis of unspecified deep veins of distal
+lower extremity, bilateral
+I82.4Z9 Acute embolism and thrombosis of unspecified deep veins of
+unspecified distal lower extremity
+The following additional services are reimbursable with ICD-10-CM codes I26.99,
+I82.401 thru I82.403, I82.409, I82.411 thru I82.413, I82.419, I82.421 thru I82.423, I82.429,
+I82.431 thru I82.433, I82.439, I82.441 thru I82.443, I82.449, I82.491 thru I82.493, I82.499,
+I82.4Y1 thru I82.4Y3, I82.4Y9, I82.4Z1 thru I82.4Z3, I82.4Z9.
+[[page 15]]
+ben fam
+15
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+Procedures
+‹‹CPT Code Table: Procedures››
+CPT Code Description
+36000 Introduction of needle/intracatheter, vein
+36425 Venipuncture, cutdown
+Radiology
+‹‹CPT Code Table: Radiology››
+CPT Code Description
+75741 Angiography pulmonary, unilateral, selective, radiological
+supervision and interpretation
+75820 Venography, extremity, unilateral, radiological supervision and
+interpretation
+75822 Venography, extremity, bilateral, radiological supervision and
+interpretation
+78456 Acute venous thrombosis imaging, peptide
+78457 Venous thrombosis imaging, venogram; unilateral
+78458 Venous thrombosis imaging, venogram; bilateral
+Extremity Venous Studies
+‹‹CPT Code Table: Extremity Venous Studies››
+CPT Code Description
+78596 Pulmonary quantitative differential function (ventilation/perfusion)
+study
+93965 Noninvasive physiologic studies of extremity veins, complete
+bilateral study (eg, Doppler waveform analysis with responses to
+compression and other maneuvers, phleborheography, impedance
+plethysmography)
+93970 Duplex scan of extremity veins including responses to
+compression and other maneuvers; complete bilateral study
+93971 Duplex scan of extremity veins including responses to
+compression and other maneuvers; unilateral or limited study
+[[page 16]]
+ben fam
+16
+Family PACT – Benefits: Family Planning
+Page updated: September 2025
+Laboratory
+CPT Code Table: Laboratory
+CPT Code Description
+82803 Gases, blood, pH only
+82805 Gases, blood, with O2 saturation, by direct measurement, except
+pulse oximetry
+82810 Gases, blood,,O2 saturation only, by direct measurement, except
+pulse oximetry
+Pharmacy
+Heparin
+Warfarin sodium
+For authorization requirements and dispensing guidelines, refer to the Family PACT
+Pharmacy Formulary on the Medi-Cal Rx website (https://medi-calrx.dhcs.ca.gov) and the
+Clinic Formulary section in this manual.
+Contraceptive Injection
+Contraceptive injection services are billed with ICD-10-CM codes Z30.013 or Z30.42, as
+appropriate.
+ICD-10-CM Code Table: Contraceptive Injection
+ICD-10-CM Code Description
+Z30.013 Encounter for initial prescription of injectable contraceptive
+Z30.42 Encounter for surveillance of injectable contraceptive
+Supplies
+No additional supply services are reimbursable for this method.
+Drugs Onsite Dispensing
+HCPCS Code Table: Drugs Onsite Dispensing
+HCPCS Code Description
+‹‹J3490 Medroxyprogesterone acetate 104mg/0.65ml SQ››
+‹‹J3490U8 Medroxyprogesterone acetate 150 mg IM
+Note: HCPCS code J3490 is billed with modifier U8 to indicate
+medroxyprogesterone acetate for contraceptive use››
+S5000/S5001 Prescription drugs, generic/brand (Estradiol)
+Note: Billing of estradiol requires additional ICD-10-CM code N92.1 (excessive and frequent
+menstruation with irregular cycle).
+[[page 17]]
+ben fam
+17
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+Drugs Administered by a Physician or Clinic
+Any drug administered by a physician or clinic must be billed by the physician or clinic, not
+by the pharmacy providing the drug for such administration, unless otherwise exempt
+through Assignment of Benefit (AOB) or Short-Doyle exceptions. Pharmacy providers should
+refer to the Medi-Cal Rx website (https://medi-calrx.dhcs.ca.gov) for information regarding
+how to seek these exemptions.
+Pharmacy
+Medroxyprogesterone acetate 104 mg for subcutaneous administration
+For a complete list of drugs and contraceptive supplies reimbursed by the Family PACT
+Program, refer to the Family PACT Pharmacy Formulary on the Medi-Cal Rx website
+(https://medi-calrx.dhcs.ca.gov) and the Clinic Formulary section in this manual.
+Laboratory Tests for Contraceptive Injection
+There are no additional laboratory tests for this method.
+Management of Complications
+The following ICD-10-CM codes are used to bill for complication services related to
+contraceptive injections. An approved TAR is required, unless stated otherwise. An
+additional ICD-10-CM code that identifies the contraceptive method in which the
+complication arose is required.
+‹‹ICD-10-CM Code Table: Management of Complications››
+ICD-10-CM Code Description
+N92.0 Excessive or frequent menstruation with regular cycle
+The following additional services are reimbursable with ICD-10-CM code N92.0.
+Anesthesia
+‹‹CPT Code Table: Anesthesia››
+CPT Code Description
+00840 Anesthesia for intraperitoneal procedures in lower abdomen
+including laparoscopy; not otherwise specified
+00940 Anesthesia for vaginal procedures (including biopsy of labia,
+vagina, cervix or endometrium); not otherwise specified
+[[page 18]]
+ben fam
+18
+Family PACT – Benefits: Family Planning
+Page updated: May 2026
+Procedures
+CPT Code Table: Procedures
+CPT Code Description
+58100 Endometrial sampling (biopsy) with or without endocervical
+sampling (biopsy), without cervical dilation, any method (separate
+procedure)
+58120 Dilatation and curettage, diagnostic and/or therapeutic
+(nonobstetrical)
+58150 Total abdominal hysterectomy, including partial vaginectomy, with
+para-aortic and pelvic lymph node sampling, with or without
+removal of tube(s), with or without removal of ovary(s)
+Hydration
+CPT Code Table: Hydration
+CPT Code Description
+96360 Intravenous infusion, hydration; initial, 31 minutes to 1 hour
+96361 Intravenous infusion, hydration; each additional hour (list
+separately in addition to code for primary procedure)
+Laboratory
+CPT Code Table: Laboratory
+CPT Code Description
+85014 Blood count; hematocrit (Hct)
+85018 Hemoglobin (Hgb)
+85025 Hemoglobin (Hgb); complete (CBC), automated (Hgb, Hct, RBX,
+WBC and platelet count) and automated differential WBC count
+85027 Hemoglobin (Hgb); complete (CBC), automated (Hgb, Hct, RBC,
+WBC and platelet count)
+88305 Level IV – Surgical pathology, gross and microscopic
+Subdermal Contraceptive Implant
+Subdermal contraceptive implant services are billed with family planning ICD-10-CM code
+Z30.017 or Z30.46, as appropriate.
+[[page 19]]
+ben fam
+19
+Family PACT – Benefits: Family Planning
+Page updated: May 2026
+ICD-10-CM Code Table: Subdermal Contraceptive Implant
+ICD-10-CM Code Description
+Z30.017 Encounter for initial prescription of implantable subdermal
+contraceptive
+Z30.46 Encounter for surveillance of implantable subdermal contraceptive
+Encounter for checking, reinsertion or removal of implantable
+subdermal contraceptive
+Procedures
+CPT Code Table: Procedures
+CPT Code Description
+11976 Removal, implantable contraceptive capsules
+11981 Insertion, drug-delivery implant (ie, bioresorbable, biodegradable,
+non-biodegradable)
+Note: Modifiers UA and UB are not reimbursable with code 11981 when billed in
+conjunction with HCPCS code J7307 (etonogestrel [contraceptive] implant system,
+including implant and supplies) because surgical supplies are included in code J7307.
+Supplies
+Modifier UA is required when billing supplies for the following procedure code.
+CPT Code Table: Supplies
+CPT Code Description
+11976 Removal, implantable contraceptive capsules
+Drugs
+The following code is used to bill for a subdermal contraceptive implant.
+HCPCS Code Description Table: Implant
+HCPCS Code Description
+J7307 Etonogestrel contraceptive implant
+Note: Providers must document the medical necessity for billing repeat implant placement
+within the device’s duration of use, as noted by the label, in the Remarks field
+(Box 80)/Additional Claim Information field (Box 19) of the claim.
+‹‹Note: All providers performing Nexplanon insertions or removals must complete the
+FDA-required Risk Evaluation and Mitigation Strategy (REMS) certification. For
+more information, visit the Nexplanon REMS website. Potential insertion- and
+removal-related events must be reported immediately to the Nexplanon REMS
+using the Insertion and Removal-Related Events Documentation Form, which is
+available on the Nexplanon REMS website, or by calling 1-833-697-7367.››
+[[page 20]]
+ben fam
+20
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+‹‹Drugs Onsite Dispensing››
+‹‹HCPCS Code Table: Drugs Onsite Dispensing››
+HCPCS Code Description
+S5000/ S5001 Prescription drugs, generic/brand (Estradiol)
+Note: Billing of estradiol requires additional ICD-10-CM code N92.1 (excessive and frequent
+menstruation with irregular cycle).
+Radiology
+The following CPT codes require ICD-10-CM code Z30.46. These codes are restricted to
+use for evaluating impalpable subdermal contraceptive implants only.
+‹‹CPT Code Description Table: Radiology››
+CPT Code Description
+73060 Radiologic examination; humerus, minimum 2 views
+76882 Ultrasound, limited, joint or other nonvascular extremity
+structure(s), real-time with image documentation
+Pharmacy
+For a complete list of drugs and contraceptive supplies reimbursed by the Family PACT
+Program, refer to the Family PACT Pharmacy Formulary on the Medi-Cal Rx website
+(https://medi-calrx.dhcs.ca.gov) and the Clinic Formulary section in this manual.
+Laboratory Tests for Subdermal Contraceptive Implant
+There are no additional laboratory tests for this method.
+Management of Complications
+The following ICD-10-CM codes are used to bill for complication services related to the
+subdermal contraceptive implant. An approved TAR is required unless stated otherwise. An
+additional ICD-10-CM code that identifies the contraceptive method in which the
+complication arose is required, unless otherwise noted.
+[[page 21]]
+ben fam
+21
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+‹‹ICD-10-CM Code Table: Management of Complications Related to Displacement››
+ICD-10-CM Code Description
+T85.628A Initial encounter, displacement of other specified internal prosthetic
+devices, implants and grafts
+T85.628D Subsequent encounter, displacement of other specified internal
+prosthetic devices, implants and grafts
+T85.628S Sequela, displacement of other specified internal prosthetic
+devices, implants and grafts
+Indications: The above listed ICD-10 CM codes are for procedures/services associated
+with removal of the contraceptive implant
+The following additional services are reimbursable with T85.628A, T85.628D and T85.628S.
+Procedures
+‹‹CPT Code Table: Procedures››
+CPT Code Description
+11976 Removal, implantable contraceptive capsules (no TAR required for
+this code)
+24201 Removal of foreign body, upper arm or elbow area; deep
+(subfascial or intramuscular)
+Anesthesia
+‹‹CPT Code Table: Anesthesia››
+CPT Code Description
+01710 Anesthesia for procedures on nerves, muscles, tendons, fascia,
+and bursae of upper arm and elbow; not otherwise specified
+99152 Moderate sedation services provided by the same physician or
+other qualified health care professional performing the diagnostic
+or therapeutic service that the sedation supports, requiring the
+presence of an independent trained observer to assist in the
+monitoring of the patient’s level of consciousness and
+physiological status; initial 15 minutes of intra-service time, patient
+age 5 years or older
+[[page 22]]
+ben fam
+22
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+‹‹CPT Code Table: Anesthesia (continued)››
+CPT Code Description
+99153 Moderate sedation services provided by the same physician or
+other qualified health care professional performing the diagnostic
+or therapeutic service that the sedation supports, requiring the
+presence of an independent trained observer to assist in the
+monitoring of the patient’s level of consciousness and
+physiological status; each additional 15 minutes intra-service time
+Radiology
+‹‹CPT Code Table: Radiology ››
+CPT Code Description
+73218 Magnetic resonance (eg, proton) imaging, upper extremity, other
+than joint; without contrast material(s)
+Note: CPT code 73218 is reimbursable only when the upper
+extremity x-ray or ultrasound results are indeterminate and further
+imaging is necessary for surgical management.
+76000 Fluoroscopy, (separate procedure), up to 1 hour physician or other
+qualified health care professional time
+76998 Ultrasonic guidance, intraoperative
+Note: CPT code 76998 is reimbursable with 11976 or 24201, as
+clinically indicated.
+Laboratory
+‹‹CPT Code Table: Laboratory››
+CPT Code Description
+88300 Level I – Surgical pathology, gross examination only
+[[page 23]]
+ben fam
+23
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+‹‹ICD-10-CM Code Table: Management of Complications Related to Infection››
+ICD-10-CM Code Description
+T85.79XA Initial encounter, infection and inflammatory reaction due to other
+internal prosthetic devices, implants and grafts
+T85.79XD Subsequent encounter, infection and inflammatory reaction due to
+other internal prosthetic devices, implants and grafts
+T85.79XS Sequela, infection and inflammatory reaction due to other internal
+prosthetic devices, implants and grafts
+The following additional services are reimbursable with T85.79XA, T85.79XD and T85.79XS.
+‹‹CPT Code Table: Procedures››
+CPT Code Description
+10060 Incision and drainage of abscess (e.g., carbuncle, suppurative
+hidradenitis, cutaneous or subcutaneous abscess, cyst, furuncle,
+or panonychia); simple or single
+‹‹CPT Code Table: Laboratory Services››
+CPT Code Description
+85025 Blood count; complete (CBC), automated (Hgb, Hct, RBC, WBC
+and platelet count) and automated differential WBC count
+85651 Sedimentation rate, erythrocyte; non-automated
+85652 Sedimentation rate, erythrocyte; automated
+87081 Culture, presumptive, pathogenic organisms, screening only
+87181 Susceptibility studies, antimicrobial agent (reflex from positive
+87081)
+87184 Susceptibility studies, disk method, per plate (reflex from positive
+87081)
+87186 Susceptibility studies, microdilution or agar dilution (minimum
+inhibitory concentration [MIC] or breakpoint), each
+multi-antimicrobial, per plate (reflex from positive 87081)
+[[page 24]]
+ben fam
+24
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+Pharmacy
+Cephalexin
+Clindamycin
+For authorization requirements and dispensing guidelines, refer to the Family PACT
+Pharmacy Formulary on the Medi-Cal Rx website (https://medi-calrx.dhcs.ca.gov) and the
+Clinic Formulary section in this manual.
+‹‹ICD-10-CM Code Table: Management of Complications Related to
+Hematoma/Hemorrhage››
+ICD-10-CM Code Description
+L76.02 Intraoperative hemorrhage and hematoma of skin and
+subcutaneous tissue complicating other procedure
+L76.22 Postprocedural hemorrhage of skin and subcutaneous tissue
+following other procedure
+L76.32 Postprocedural hematoma of skin and subcutaneous tissue
+following other procedure
+Indications for the above listed ICD-10-CM codes: Hematoma/hemorrhage at contraceptive
+implant insertion site/removal site
+The following additional service is reimbursable with L76.02, L76.22 and L76.32.
+Procedures
+‹‹CPT Code Table: Procedures››
+CPT Code Description
+10140 Incision and drainage of hematoma, seroma or fluid collection
+[[page 25]]
+ben fam
+25
+Family PACT – Benefits: Family Planning
+Page updated: October 2022
+ICD-10-CM Code Table: Management of Complications Related to Excessive/Frequent
+Menstruation
+ICD-10-CM Code Description
+N92.0 Excessive or frequent menstruation with regular cycle
+The following services are reimbursable with ICD-10-CM Code N92.0.
+Anesthesia
+CPT Code Table: Anesthesia
+CPT Code Description
+00840 Anesthesia for intraperitoneal procedures in lower abdomen
+including laparoscopy; not otherwise specified
+00940 Anesthesia for vaginal procedures (including biopsy of labia,
+vagina, cervix or endometrium); not otherwise specified
+Procedures
+CPT Code Table: Procedures
+CPT Code Description
+58100 Endometrial sampling (biopsy) with or without endocervical
+sampling (biopsy), without cervical dilation, any method (separate
+procedure)
+58120 Dilatation and curettage, diagnostic and/or therapeutic
+(nonobstetrical)
+58150 Total abdominal hysterectomy, including partial vaginectomy, with
+para-aortic and pelvic lymph node sampling, with or without
+removal of tube(s), with or without removal of ovary(s)
+Hydration
+CPT Code Table: Hydration
+CPT Code Description
+96360 Intravenous infusion, hydration; initial, 31 minutes to 1 hour
+96361 ‹‹Intravenous infusion, hydration; each additional hour (list
+separately in addition to code for primary procedure)››
+[[page 26]]
+ben fam
+26
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+Laboratory
+‹‹CPT Code Table: Laboratory››
+CPT Code Description
+85014 Blood count; hematocrit (Hct)
+85018 Blood count; Hemoglobin (Hgb)
+85025 Blood count; complete (CBC), automated (Hgb, Hct, RBC, WBC
+and platelet count) and automated differential WBC count
+85027 Blood count; complete (CBC), automated (Hgb, Hct, RBC, WBC
+and platelet count)
+88305 Level IV – Surgical pathology, gross and microscopic examination
+Intrauterine Contraceptives
+Intrauterine contraceptive device (IUC/IUD) procedures are billed with ICD-10-CM codes
+Z30.430 thru Z30.433, as appropriate.
+‹‹ICD-10-CM Code Table: Intrauterine Contraceptives››
+ICD-10-CM Code Description
+Z30.430 Encounter for insertion of intrauterine contraceptive device
+Z30.431 Encounter for routine checking of intrauterine contraceptive device
+Z30.432 Encounter for removal of intrauterine contraceptive device
+Z30.433 Encounter for removal and reinsertion of intrauterine device
+Indications: Use Z30.433 when replacing an intrauterine
+contraceptive device (IUC/IUD) with another of the same type or
+a different type. Both insertion and removal may be billed on the
+same date of service.
+Procedures
+‹‹CPT Code Table: Procedures››
+CPT Code Description
+58300 Insertion of IUC/IUD
+58301 Removal of IUC/IUD
+[[page 27]]
+ben fam
+27
+Family PACT – Benefits: Family Planning
+Page updated: March 2026
+Supplies
+Modifier UA is required for the following supplies.
+CPT Code Table: Supplies
+CPT Code Description
+58300 Insertion supplies
+58301 Removal supplies
+Drugs Onsite Dispensing
+HCPCS Code Table: Drugs Onsite Dispensing
+HCPCS Code Description
+J7296 Levonorgestrel-releasing intrauterine contraceptive system
+(Kyleena), 19.5 mg
+J7297 Levonorgestrel-releasing intrauterine contraceptive system
+(Liletta), 52 mg
+J7298 Levonorgestrel-releasing intrauterine contraceptive system
+(Mirena), 52 mg
+‹‹J7299 Intrauterine copper contraceptive (Miudella)››
+J7300 ‹‹Intrauterine copper contraceptive (Paragard)››
+J7301 Levonorgestrel-releasing intrauterine contraceptive system
+(Skyla), 13.5 mg
+S5000/ S5001 Prescription drugs, generic/brand (Estradiol)
+Note: Billing of estradiol requires additional ICD-10-CM code N92.1 (excessive and frequent
+menstruation with irregular cycle).
+Providers must document the medical necessity for billing repeat IUC/IUD placement
+of the same device within the device’s duration of use, as noted by the label, in the
+Remarks field (Box 80)/Additional Claim Information field (Box 19) of the claim.
+[[page 28]]
+ben fam
+28
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+Radiology
+The following codes require ICD-10-CM code Z30.431. These codes are restricted to use for
+evaluating missing IUC/IUD strings or malposition of IUC/IUD only.
+‹‹CPT Code Table: Radiology››
+CPT Code Description
+74018 Radiologic examination, abdomen; one view
+76830 Ultrasound, transvaginal
+76857 Ultrasound, pelvic (nonobstetric), real time with image
+documentation; limited or follow-up
+Pharmacy
+For a complete list of drugs and contraceptive supplies reimbursed by the Family PACT
+Program, refer to the Family PACT Pharmacy Formulary on the Medi-Cal Rx website
+(https://medi-calrx.dhcs.ca.gov) and the Clinic Formulary section in this manual.
+Laboratory
+‹‹CPT Code Table: Laboratory››
+CPT Code Description Additional Restrictions
+85013 Blood count; spun
+microhematocrit
+When medically indicated in the
+context of contraceptive services.
+85014 Blood count; hematocrit (Hct) When medically indicated in the
+context of contraceptive services.
+85018 Blood count; hemoglobin
+(Hgb)
+When medically indicated in the
+context of contraceptive services.
+[[page 29]]
+ben fam
+29
+Family PACT – Benefits: Family Planning
+Page updated: October 2022
+‹‹Management of Complications
+The following ICD-10-CM codes are used to bill for complication services related to IUC/IUD.
+An approved TAR is required unless stated otherwise. No additional ICD-10-CM code is
+required.››
+ICD-10-CM Code Table: Management of Mechanical Complications
+ICD-10-CM Code Description
+T83.39XA Initial encounter, other mechanical complication of IUC
+T83.39XD Subsequent encounter, other mechanical complication of IUC
+T83.39XS Sequela, other mechanical complication of intrauterine
+contraceptive device
+Note: Indications for these codes include leakage, obstruction, perforation, protrusion, and
+translocation.
+The following additional services are reimbursable with ICD-10-CM T83.39XA, T83.39XD, or
+T83.39XS.
+Anesthesia
+CPT Code Table: Anesthesia
+CPT Code Description
+00940 Anesthesia for vaginal procedures (including biopsy of labia,
+vagina, cervix or endometrium); not otherwise specified
+00952 Anesthesia for vaginal procedures (including biopsy of labia,
+vagina, cervix or endometrium); hysteroscopy and/or
+hysterosalpinography
+Procedures
+CPT Code Table: Procedures
+CPT Code Description
+49000 Exploratory laparotomy, exploratory celiotomy with or without
+biopsy(s), (separate procedure)
+49320 Laparoscopy, abdomen, peritoneum, and omentum, diagnostic,
+with or without collection of specimen(s) by brushing or washing
+(separate procedure)
+49402 Removal of peritoneal foreign body from peritoneal cavity
+58120 Dilatation and curettage, diagnostic and/or therapeutic
+(nonobstetrical)
+58301 Remove IUC/IUD (No TAR required for this code.)
+58555 Hysteroscopy diagnostic, separate procedure
+58562 Hysteroscopy, remove impacted foreign body
+[[page 30]]
+ben fam
+30
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+Laboratory
+‹‹Codes Table: Laboratory››
+CPT Code Description
+88305 Level IV – Surgical pathology, gross and microscopic examination
+Pharmacy
+Antibiotic regimens are the same as for treatment of uncomplicated PID, as listed in the
+“Treatment and Dispensing Guidelines for Clinicians” in the Benefits Grid section in this
+manual.
+Refer to the Family PACT Pharmacy Formulary on the Medi-Cal Rx website
+(https://medi-calrx.dhcs.ca.gov) and the Clinic Formulary section in this manual.
+Barrier Methods
+Encounters regarding correct and effective use of barrier methods are billed with Z30.018 or
+Z30.49.
+ICD-10-CM Code Table: Barrier Methods
+ICD-10-CM Code Description
+Z30.018 Encounter for initial prescription of other contraceptives
+Encounter for initial prescription of barrier contraception
+Encounter for initial prescription of diaphragm
+Z30.49 Encounter for surveillance of other contraceptives
+Encounter for surveillance of barrier contraception
+Encounter for surveillance of diaphragm
+[[page 31]]
+ben fam
+31
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+Procedure
+‹‹CPT Code Table: Procedure››
+CPT Code Description
+57170 Diaphragm or cervical cap fitting with instructions
+Onsite Supplies Dispensing
+‹‹HCPCS Code Table: Onsite Supplies››
+HCPCS
+Code/Modifier
+Description
+A4261 Cervical cap for contraceptive use
+A4266 Diaphragm for contraceptive use
+A4267 Condom, male
+A4268 Condom, internal
+A4269 U1 Gel/jelly/foam/cream
+A4269 U2 Suppository
+A4269 U3 Vaginal film
+A4269 U4 Contraceptive sponge
+A4269 U5 Vaginal gel
+S5199 Lubricant
+Note: A4269 (contraceptive supply, spermicide) is billed with modifier U1, U2, U3 or U4 to
+indicate the type of spermicide.
+Pharmacy
+For a complete list of drugs and contraceptive supplies reimbursed by the Family PACT
+Program, refer to the Family PACT Pharmacy Formulary on the Medi-Cal Rx website
+(https://medi-calrx.dhcs.ca.gov) and the Clinic Formulary section in this manual.
+‹‹Laboratory››
+There are no additional laboratory tests for this method.
+[[page 32]]
+ben fam
+32
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+Natural Family Planning
+Encounters for natural family planning are billed with the following ICD-10-CM codes.
+‹‹ICD-10-CM Code Table: Natural Family Planning››
+ICD-10-CM Code Description
+Z30.02 Counseling and instruction in natural family planning to avoid
+pregnancy
+Z31.61 Procreative counseling and advice using natural family planning
+Services reimbursable under ICD-10-CM code Z31.61 are limited to the following:
+Office Visits
+‹‹CPT Code Table: Office Visits››
+CPT Code Description
+99202, 99203 New patient
+99211 thru 99213 Established patient
+For additional office visits reimbursed with Z31.61, refer to “Education and Counseling (E&C)
+Visits – New and Established Clients” on a preceding page in this section.
+Use of codes 99202, 99203, 99211 thru 99213 or 99401U6 thru 99403U6, with inclusive
+diagnosis code Z31.61, are limited to a maximum of two occurrences in any combination in a
+12-month period per recipient, per provider.
+‹‹Laboratory››
+‹‹CPT Code Table: Laboratory››
+CPT Code Description
+81025 Urine pregnancy test, by visual color comparison methods
+Supplies
+Basal body thermometer
+[[page 33]]
+ben fam
+33
+Family PACT – Benefits: Family Planning
+Page updated: October 2025
+Permanent Contraception
+These methods include female and male sterilization procedures, preoperative screening
+and postoperative management.
+‹‹Informed consent for sterilization must be documented on the Consent For Sterilization
+Form (DHCS 8649) at least 30 days prior to the procedure. A completed Consent For
+Sterilization Form is required for elective sterilization procedures and anesthesia and must
+be attached to all claims for sterilization services. The provider must maintain the completed
+and signed Consent For Sterilization Form in the client’s chart as a permanent part of the
+medical record. The Family PACT provider must make the consent form available to any
+providers and facilities to which the client is being referred. A copy must be attached to
+claims for sterilization services. For information about completing the Consent For
+Sterilization Form, refer to the Sterilization section in the appropriate Part 2 Medi-Cal
+Provider manual.››
+Unless stated otherwise, Family PACT defers to Medi-Cal policy and billing procedures for
+sterilization services. For more information, refer to the Sterilization section in the
+appropriate Part 2 Medi-Cal manual.
+At the end of the 90-day postoperative period, or earlier, if the clinician determines a client is
+no longer at risk for pregnancy or causing pregnancy, the client is no longer eligible for the
+Family PACT Program.
+Once the post-operative period is complete, the client is no longer eligible for the Family
+PACT Program, and the HAP Identification Number must be de-activated. For more
+information, refer to the Client Eligibility and Health Access Programs (HAP) section of this
+manual.
+Female Sterilization – 21 Years of Age and Older
+Bilateral tubal ligation (BTL) procedures are billed with ICD-10-CM code Z30.2 and the
+following pre-selected procedure codes, as appropriate.
+Additionally, Z01.812 (encounter for preprocedural laboratory examination) and Z01.818
+(encounter for other preprocedural examination) are billed for women with medical
+conditions that need screening for surgical contraindications. An approved TAR is required
+for preprocedural examination and tests unless noted otherwise. ICD-10-CM codes Z01.812
+and Z01.818 must be billed with ICD-10-CM code Z30.09.
+[[page 34]]
+ben fam
+34
+Family PACT – Benefits: Family Planning
+Page updated: August 2022
+ICD-10-CM Code Table: Female Sterilization
+ICD-10-CM Code Description
+Z30.09 Encounter for other general counseling and advice on
+contraception Indication: Encounter for family planning advice,
+NOS.
+Z30.2 Encounter for sterilization
+Z98.51 Tubal ligation status
+Indication: Postoperative management and surveillance,
+whether or not the client is new to the provider.
+Z01.812 Encounter for preprocedural laboratory examination
+Z01.818 Other specified preprocedural examination
+Procedures
+CPT Code Table: Procedures
+CPT Code Description Restrictions
+58600 Ligation or transection of fallopian
+tube(s), abdominal or vaginal approach,
+unilateral or bilateral
+NA
+58615 Occlusion of fallopian tube(s) by device
+(eg, band, clip, Falope ring) vaginal or
+suprapubic approach
+NA
+58661 Laparoscopy, surgical; with removal of
+adnexal structures (partial or total
+oophorectomy and/or salpingectomy)
+NA
+58670 Laparoscopy, surgical; with fulguration of
+oviducts (with or without transection)
+NA
+58671 Laparoscopy, surgical; with occlusion of
+oviducts by device (eg, band, clip, or
+Falope ring)
+NA
+58700 Salpingectomy, complete or partial,
+unilateral or bilateral
+NA
+[[page 35]]
+ben fam
+35
+Family PACT – Benefits: Family Planning
+Page updated: August 2022
+Anesthesia
+CPT Code Table: Anesthesia
+CPT Code Description
+00851 Anesthesia for intraperitoneal procedures in lower abdomen
+including laparoscopy; tubal ligation/transaction
+00952 Anesthesia for vaginal procedures (including biopsy of labia,
+vagina, cervix, or endometrium); hysteroscopy and/or
+hysterosalpingography
+99152 Moderate sedation services provided by the same physician or
+other qualified health care professional performing the diagnostic or
+therapeutic service that the sedation supports, requiring the
+presence of an independent trained observer to assist in the
+monitoring of the patient’s level of consciousness and physiological
+status; initial 15 minutes of intra-service time, patient age 5 years or
+older
+99153 Moderate sedation services provided by the same physician or
+other qualified health care professional performing the diagnostic or
+therapeutic service that the sedation supports, requiring the
+presence of an independent trained observer to assist in the
+monitoring of the patient’s level of consciousness and physiological
+status; each additional 15 minutes intra-service time (List
+separately in addition to code for primary service)
+[[page 36]]
+ben fam
+36
+Family PACT – Benefits: Family Planning
+Page updated: October 2022
+Supplies
+Modifier UA or UB is required for the following supplies.
+CPT Code Table: Female Sterilization Supplies
+CPT Code Description Restrictions
+58600 Minilap supplies N/A
+58615 Minilap w/clip supplies N/A
+58661 Laparoscopy surgical with removal
+of adnexal structures supplies
+N/A
+58670 Lapscope fulguration supplies N/A
+58671 Lapscope w/ring or clip supplies N/A
+58700 Salpingectomy complete or partial
+supplies
+N/A
+Hydration
+CPT Code Table: Hydration
+CPT Code Description
+96360 Intravenous infusion, hydration, initial; 31 minutes to 1 hour
+96361 ‹‹Intravenous infusion, hydration; each additional hour (list separately
+in addition to code for primary procedure)››
+[[page 37]]
+ben fam
+37
+Family PACT – Benefits: Family Planning
+Page updated: August 2022
+Radiology
+CPT Code Table: Radiology
+CPT Code Description Restrictions
+71046 Radiologic examination, chest, two
+views
+When required by the outpatient
+facility or medically indicated by
+clinical assessment in the context
+of provision of contraceptive
+services. TAR not required, limited
+to ICD-10-CM code Z01.818.
+Cardiography
+CPT Code Table: Cardiography
+CPT Code Description Restrictions
+93000 Electrocardiogram, routine ECG with
+at least 12 leads; with interpretation
+and report
+Limited to evaluation of a
+pre-existing cardiovascular
+condition as medically indicated
+for preoperative evaluation. TAR
+not required, limited to
+ICD-10-CM code Z01.818.
+[[page 38]]
+ben fam
+38
+Family PACT – Benefits: Family Planning
+Page updated: December 2022
+Echocardiography
+CPT Code Table: Echocardiography
+CPT Code Description Restrictions
+93307 Echocardiography, transthoracic,
+real-time with image documentation
+(2D), includes M-mode recording,
+when performed, complete, without
+spectral or color Doppler
+echocardiography
+Limited to evaluation of a
+pre-existing cardiovascular
+condition as medically indicated
+for preoperative evaluation. TAR
+required; limited to ICD-10-CM
+code Z01.818.
+Consultation
+CPT Code Table: Consultation
+CPT Code Description Restrictions
+‹‹99242 thru
+99245››
+Office, initial, new or established
+patient
+TAR required; limited to
+ICD-10-CM code Z01.818.
+‹‹99252 thru
+99255››
+Inpatient, initial, new or established
+patient
+TAR required; limited to
+ICD-10-CM code Z01.818.
+Facility Use
+HCPCS Code Table: Facility Use
+HCPCS Code Description
+Z7506 Use of operating room, first hour
+Z7508 Use of operating room, first subsequent half hour
+Z7510 Use of operating room, second subsequent half hour
+Z7512 Use of recovery room
+Z7514 Room and board, general nursing care for less than 24 hours,
+including ordinary medications
+[[page 39]]
+ben fam
+39
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+Laboratory
+‹‹CPT Code Table: Laboratory››
+CPT Code Description Restrictions
+81000 Urinalysis, by dipstick or tablet
+reagent for bilirubin, glucose,
+hemoglobin, ketones, leukocytes,
+nitrite, pH, protein, specific gravity,
+urobilinogen, any number of these
+constituents; non-automated, with
+microscopy
+N/A
+81001 Urinalysis, by dipstick or tablet
+reagent for bilirubin, glucose,
+hemoglobin, ketones, leukocytes,
+nitrite, pH, protein, specific gravity,
+urobilinogen, any number of these
+constituents; automated with
+microscopy
+N/A
+81002 Urinalysis, by dipstick or tablet
+reagent for bilirubin, glucose,
+hemoglobin, ketones, leukocytes,
+nitrite, pH, protein, specific gravity,
+urobilinogen, any number of these
+constituents; non-automated, without
+microscopy
+N/A
+81003 Urinalysis, by dipstick or tablet
+reagent for bilirubin, glucose,
+hemoglobin, ketones, leukocytes,
+nitrite, pH, protein, specific gravity,
+urobilinogen, any number of these
+constituents; automated, without
+microscopy
+N/A
+85002 Bleeding time TAR required, limited to
+ICD-10-CM code Z01.812.
+85013 Blood count; spun microhematocrit N/A
+85014 Blood count; hematocrit (Hct) N/A
+[[page 40]]
+ben fam
+40
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+‹‹CPT Code Table: Laboratory Services (continued)››
+CPT Code Description Restrictions
+85025 Blood count; complete (CBC),
+automated (Hgb, Hct, RBC, WBC
+and platelet count) and automated
+differential WBC count
+When required by the outpatient
+facility or medically indicated by
+clinical assessment in the context of
+provision of sterilization services.
+85027 Blood count; complete (CBC),
+automated (Hgb, Hct, RBC, WBC
+and platelet count)
+When required by the outpatient
+facility or medically indicated by
+clinical assessment in the context of
+provision of sterilization services.
+85610 Prothrombin time TAR required, limited to ICD-10-CM
+code Z01.812.
+85730 Thromboplastin time TAR required, limited to ICD-10-CM
+code Z01.812.
+88302 Surgical pathology, gross and
+microscopic examination
+Two specimens only
+Management of Complications
+The following ICD-10-CM codes are used to bill for complication services related to tubal
+sterilization. An approved TAR is required unless stated otherwise. An additional
+ICD-10-CM code that identifies the contraceptive method in which the complication arose is
+required. The ICD-10-CM codes for complications must be billed with Z30.2.
+‹‹ICD-10-CM Code Table: Management of Complications Related to Anesthesia››
+ICD-10-CM Code Description
+T41.0X5A Initial encounter, adverse effect of inhaled anesthetics
+T41.0X5D Subsequent encounter, adverse effect of inhaled anesthetics
+T41.0X5S Sequela, adverse effect of inhaled anesthetics
+T41.1X5A Initial encounter, adverse effect of intravenous anesthetics
+T41.1X5D Subsequent encounter, adverse effect of intravenous anesthetics
+T41.1X5S Sequela, adverse effect of intravenous anesthetics
+T41.205A Initial encounter, adverse effect of unspecified general anesthetics
+T41.205D Subsequent encounter, adverse effect of unspecified general
+anesthetics
+[[page 41]]
+ben fam
+41
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+‹‹ICD-10-CM Code Table: Management of Complications Related to Anesthesia
+(continued)››
+ICD-10-CM Code Description
+T41.205S Sequela, adverse effect of unspecified general anesthetics
+T41.295A Initial encounter, adverse effect of other general anesthetics
+T41.295D Subsequent encounter, adverse effect of other general anesthetics
+T41.295S Sequela, adverse effect of other general anesthetics
+T41.45XA Initial encounter, adverse effect of unspecified anesthetic
+T41.45XD Subsequent encounter, adverse effect of unspecified anesthetic
+T41.45XS Sequela, adverse effect of unspecified anesthetic
+T88.59XA Initial encounter, other complications of anesthesia
+T88.59XD Subsequent encounter, other complications of anesthesia
+T88.59XS Sequela, other complications of anesthesia
+The following additional benefits are reimbursable with any of the above listed ICD-10 CM
+anesthesia complications that require an overnight hospital stay.
+Evaluation and Management
+‹‹CPT Code Table: Evaluation and Management››
+CPT Code Description
+99221 thru 99223 Initial hospital care, per day
+99231 thru 99233 Subsequent hospital care, per day
+99238 Hospital discharge day management; 30 minutes or less
+99239 Hospital discharge day management; more than 30 minutes
+‹‹ICD-10-CM Code Table: Management of Complications Related to Intraoperative/
+Postprocedural Injury››
+ICD-10-CM Code Description
+K91.72 Accidental puncture and laceration of a digestive system organ or
+structure during other procedure
+N99.61 Intraoperative hemorrhage and hematoma of genitourinary organ
+or structure complicating a genitourinary system procedure
+N99.71 Accidental puncture and laceration of a genitourinary system
+organ or structure during a genitourinary system procedure
+[[page 42]]
+ben fam
+42
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+‹‹ICD-10-CM Code Table: Management of Complications Related to
+Intraoperative/Postprocedural Injury (continued)››
+ICD-10-CM Code Description
+N99.820 Postprocedural hemorrhage of a genitourinary system organ or
+structure following a genitourinary system procedure
+N99.840 Postprocedural hematoma of a genitourinary system organ or
+structure following a genitourinary system procedure
+R50.82 Postprocedural fever
+Indications for the above listed ICD-10-CM codes: within 30 days postoperative.
+The following additional benefits are reimbursable with K91.72: N99.61, N99.71, N99.820,
+N99.840 or R50.82.
+Anesthesia
+‹‹CPT Code Table: Anesthesia››
+CPT Code Description
+00840 Anesthesia for intraperitoneal procedures in lower abdomen
+including laparoscopy; not otherwise specified
+Procedures
+‹‹CPT Code Table: Procedures››
+CPT Code Description
+49000 Exploratory laparotomy, exploratory celiotomy with or without
+biopsy
+49320 Laparoscopy, abdomen, peritoneum, and omentum, diagnostic,
+with or without collection of specimen(s) by brushing or washing
+(separate procedure)
+Laboratory
+‹‹CPT Code Table: Laboratory››
+CPT Code Description
+88305 Level IV – Surgical pathology, gross and microscopic examination
+[[page 43]]
+ben fam
+43
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+‹‹ICD-10-CM Code Table: Management of Complications Related to Postprocedural
+Infection››
+ICD-10-CM Code Description
+T81.40XA Infection following a procedure, unspecified; initial encounter
+T81.40XD Infection following a procedure, unspecified; subsequent
+encounter
+T81.40XS Infection following a procedure, unspecified; sequela
+T81.41XA Infection following a procedure, superficial incisional surgical site,
+initial encounter
+T81.41XD Infection following a procedure, superficial incisional surgical site,
+subsequent encounter
+T81.41XS Infection following a procedure, superficial incisional surgical site,
+sequela
+T81.42XA Infection following a procedure, deep incisional surgical site, initial
+encounter
+T81.42XD Infection following a procedure, deep incisional surgical site,
+subsequent encounter
+T81.42XS Infection following a procedure, deep incisional surgical site,
+sequela
+T81.43XA Infection following a procedure, organ and space surgical site,
+initial encounter
+T81.43XD Infection following a procedure, organ and space surgical site,
+subsequent encounter
+T81.43XS Infection following a procedure, organ and space surgical site,
+sequela
+T81.49XA Infection following a procedure, other surgical site, initial encounter
+T81.49XD Infection following a procedure, other surgical site, subsequent
+encounter
+T81.49XS Infection following a procedure, other surgical site, sequela
+Indications for the above listed ICD-10-CM codes: within 30 days postoperative
+The following additional procedures are reimbursable with ICD-10-CM diagnosis codes
+T81.40XA, T81.40XD, T81.40XS, T81.41XA, T81.41XD, T81.41XS, T81.42XA, T81.42XD,
+T81.42XS, T81.43XA, T81.43XD, T81.43XS, T81.49XA, T81.49XD, T81.49XS.
+[[page 44]]
+ben fam
+44
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+Anesthesia
+‹‹CPT Code Table: Anesthesia››
+CPT Code Description
+00840 Anesthesia for intraperitoneal procedures in lower abdomen
+including laparoscopy; not otherwise specified
+Procedures
+‹‹CPT Code Table: Procedures››
+CPT Code Description
+10060 Incision and drainage of abscess (eg, carbuncle, suppurative
+hidradenitis, cutaneous or subcutaneous abscess, cyst, furuncle,
+or panonychia); simple or single
+10180 Incision and drainage, complex, postoperative wound infection
+49000 Exploratory laparotomy, exploratory celiotomy with or without
+biopsy
+49320 Laparoscopy, abdomen, peritoneum, and omentum, diagnostic,
+with or without collection of specimen(s) by brushing or washing
+(separate procedure)
+Laboratory
+‹‹CPT Code Table: Laboratory Services››
+CPT Code Description
+87081 Culture, presumptive, pathogenic organisms, screening only
+87181 Susceptibility studies, antimicrobial agent; agar dilution method,
+per agent (eg, antibiotic gradient strip)
+87184 Susceptibility studies, antimicrobial agent; disk method, per plate
+(12 or fewer agents)
+87186 Susceptibility studies, antimicrobial agent; microdilution or agar
+dilution (minimum inhibitory concentration (MIC or breakpoint),
+each multi-antimicrobial, per plate
+88305 Level IV – Surgical pathology, gross and microscopic examination
+Pharmacy
+Cephalexin
+Clindamycin
+For authorization requirements and dispensing guidelines, refer to the Family PACT
+Pharmacy Formulary on the Medi-Cal Rx website (https://medi-calrx.dhcs.ca.gov) and the
+Clinic Formulary section in this manual.
+[[page 45]]
+ben fam
+45
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+Male Sterilization – 21 Years of Age and Older
+Vasectomy procedures for male sterilization are billed with ICD-10-CM codes Z30.2 and the
+following pre-selected procedure codes, as appropriate.
+Additionally, Z01.812 (preprocedural laboratory examination) is billed for men with medical
+conditions that need screening for surgical contraindications. ICD-10-CM code Z01.812 must
+be billed with ICD-10-CM code Z30.09.
+‹‹ICD-10-CM Code Table: Male Sterilization››
+ICD-10-CM Code Description
+Z01.812 Preprocedural laboratory examination
+Z30.09 Encounter for other general counseling and advice on
+contraception
+Indication: Encounter for family planning advice, NOS.
+Z30.2 Encounter for sterilization
+Z98.52 Vasectomy status
+Indications: Routine postoperative management and
+surveillance, and postoperative semen analysis up to 90 days.
+Procedures
+‹‹CPT Code Table: Procedures››
+CPT Code Description
+55250 Vasectomy, unilateral or bilateral (separate procedure), including
+postoperative semen examination(s)
+[[page 46]]
+ben fam
+46
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+Anesthesia
+‹‹CPT Code Table: Anesthesia››
+CPT Code Description
+00921 Anesthesia, vasectomy, unilateral or bilateral
+99152 Moderate sedation services provided by the same physician or
+other qualified health care professional performing the diagnostic
+or therapeutic service that the sedation supports, requiring the
+presence of an independent trained observer to assist in the
+monitoring of the patient’s level of consciousness and
+physiological status; initial 15 minutes of intra-service time, patient
+age 5 years or older
+99153 Moderate sedation services provided by the same physician or
+other qualified health care professional performing the diagnostic
+or therapeutic service that the sedation supports, requiring the
+presence of an independent trained observer to assist in the
+monitoring of the patient’s level of consciousness and
+physiological status; each additional 15 minutes intra-service time
+Supplies
+Modifier UA or UB is required for the following supply.
+‹‹CPT Code Table: Supplies››
+CPT Code Description
+55250 Vasectomy supplies
+Laboratory
+‹‹CPT Code Table: Laboratory››
+CPT Code Description Restrictions
+81000 Urinalysis, by dipstick or tablet reagent
+for bilirubin, glucose, hemoglobin,
+ketones, leukocytes, nitrite, pH,
+protein, specific gravity, urobilinogen,
+any number of these constituents;
+non-automated, with microscopy
+Preoperative testing only.
+[[page 47]]
+ben fam
+47
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+‹‹CPT Code Table: Laboratory (continued)››
+CPT Code Description Restrictions
+81001 Urinalysis, by dipstick or tablet reagent
+for bilirubin, glucose, hemoglobin,
+ketones, leukocytes, nitrite, pH,
+protein, specific gravity, urobilinogen,
+any number of these constituents;
+automated with microscopy
+Preoperative testing only.
+81002 Urinalysis, by dipstick or tablet reagent
+for bilirubin, glucose, hemoglobin,
+ketones, leukocytes, nitrite, pH,
+protein, specific gravity, urobilinogen,
+any number of these constituents;
+non-automated, without microscopy
+Preoperative testing only.
+81003 Urinalysis, by dipstick or tablet reagent
+for bilirubin, glucose, hemoglobin,
+ketones, leukocytes, nitrite, pH,
+protein, specific gravity, urobilinogen,
+any number of these constituents;
+automated, without microscopy
+Preoperative testing only.
+85013 Urinalysis, by dipstick or tablet reagent
+for bilirubin, glucose, hemoglobin,
+ketones, leukocytes, nitrite, pH,
+protein, specific gravity, urobilinogen,
+any number of these constituents; spun
+microhematocrit
+Preoperative testing only.
+85014 Urinalysis, by dipstick or tablet reagent
+for bilirubin, glucose, hemoglobin,
+ketones, leukocytes, nitrite, pH,
+protein, specific gravity, urobilinogen,
+any number of these constituents;
+hematocrit (Hct)
+Preoperative testing only.
+85018 Urinalysis, by dipstick or tablet reagent
+for bilirubin, glucose, hemoglobin,
+ketones, leukocytes, nitrite, pH,
+protein, specific gravity, urobilinogen,
+any number of these constituents;
+hemoglobin (Hgb)
+Preoperative testing only.
+[[page 48]]
+ben fam
+48
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+‹‹CPT Code Table: Laboratory (continued)››
+CPT Code Description Restrictions
+85025 Blood count complete (CBC),
+automated (Hgb, Hct, RBC, WBC and
+platelet count) and automated
+differential WBC count
+When required by the outpatient
+facility or medically indicated by
+clinical assessment.
+85027 Blood count complete (CBC),
+automated (Hgb, Hct, RBC, WBC and
+platelet count)
+When required by the outpatient
+facility or medically indicated by
+clinical assessment.
+88302 Surgical pathology, gross and
+microscopic examination
+Two specimens only
+Management of Complications
+The following ICD-10-CM codes are used to bill for complication services. An approved TAR
+is required unless stated otherwise. An additional ICD-10-CM code that identifies the
+contraceptive method in which the complication arose is required. The ICD-10-CM codes for
+complications must be billed with Z30.2.
+‹‹ICD-10-CM Code Management of Table: Complications Related to Postprocedural
+Hematoma/Hemorrhage››
+ICD-10-CM Code Description
+N99.820 Postprocedural hemorrhage of a genitourinary system organ or
+structure following a genitourinary system procedure
+N99.840 Postprocedural hematoma of a genitourinary system organ or
+structure following a genitourinary system procedure
+Indications for the above listed ICD-10-CM codes: Hemorrhage/hematoma within 30 days
+postoperative
+The following additional services are reimbursable with N99.820 and N99.840.
+Anesthesia
+‹‹CPT Code Table: Anesthesia››
+CPT Code Description
+00920 Anesthesia for procedures on male genitalia (including open
+urethral procedures; NOS)
+[[page 49]]
+ben fam
+49
+Family PACT – Benefits: Family Planning
+Page updated: October 2022
+Procedures
+CPT Code Table: Procedures
+CPT Code Description
+54520 Orichiectomy, simple (including subcapsular), with or without
+testicular prosthesis, scrotal or inguinal approach
+54670 Suture/repair of testicular injury
+54700 Incision and drainage of epididymis, testis and/or scrotal space
+(eg, abscess or hematoma)
+54865 Exploration of epididymis, with or without biopsy
+Laboratory
+‹‹CPT Code Table: Laboratory››
+CPT Code Description
+85018 Blood count; hemoglobin (Hgb)
+85025 Blood count; complete (CBC) automated (Hgb, Hct, RBC, WBC
+and platelet count) and automated differential WBC count
+Note: CPT codes 85018 and 85025 do not require a TAR.
+ICD-10-CM Code Table: Management of Complications Related to Postprocedural
+Infection
+ICD-10-CM Code Description
+T81.40XA Infection following a procedure, unspecified; initial encounter
+T81.40XD Infection following a procedure, unspecified; subsequent
+encounter
+T81.40XS Infection following a procedure, unspecified; sequela
+T81.41XA Infection following a procedure, superficial incisional surgical site,
+initial encounter
+T81.41XD Infection following a procedure, superficial incisional surgical site,
+subsequent encounter
+T81.41XS Infection following a procedure, superficial incisional surgical site,
+sequela
+[[page 50]]
+ben fam
+50
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+‹‹ICD-10-CM Code Table: Management of Complications Related to Postprocedural
+Infection (continued)››
+ICD-10-CM Code Description
+T81.42XA Infection following a procedure, deep incisional surgical site, initial
+encounter
+T81.42XD Infection following a procedure, deep incisional surgical site,
+subsequent encounter
+T81.42XS Infection following a procedure, deep incisional surgical site,
+sequela
+T81.43XA Infection following a procedure, organ and space surgical site,
+initial encounter
+T81.43XD Infection following a procedure, organ and space surgical site,
+subsequent encounter
+T81.43XS Infection following a procedure, organ and space surgical site,
+sequela
+T81.49XA Infection following a procedure, other surgical site, initial encounter
+T81.49XD Infection following a procedure, other surgical site, subsequent
+encounter
+T81.49XS Infection following a procedure, other surgical site, sequela
+The following additional procedures are reimbursable with ICD-10-CM diagnosis codes
+T81.40XA, T81.40XD, T81.40XS, T81.41XA, T81.41XD, T81.41XS, T81.42XA, T81.42XD,
+T81.42XS, T81.43XA, T81.43XD, T81.43XS, T81.49XA, T81.49XD, T81.49XS.
+Anesthesia
+‹‹CPT Code Table: Anesthesia››
+CPT Code Description
+00920 Anesthesia for procedures on male genitalia (including open
+urethral procedures; NOS)
+Procedures
+‹‹CPT Code Table: Additional Procedures››
+CPT Code Description
+54520 Orichiectomy, simple (including subcapsular), with or without
+testicular prosthesis, scrotal or inguinal approach
+54700 Incision and drainage of epididymis, testis and/or scrotal space
+(eg, abscess or hematoma)
+55100 Drain scrotal abscess
+[[page 51]]
+ben fam
+51
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+Laboratory
+‹‹CPT Code Table: Laboratory Services››
+CPT Code Description
+87081 Culture, presumptive, pathogenic organisms, screening only
+87181 Susceptibility studies, antimicrobial agent; agar dilution method,
+per agent (eg, antibiotic gradient strip)
+87184 Susceptibility studies, antimicrobial agent; agar dilution method,
+per agent (eg, antibiotic gradient strip); disk method, per plate (12
+or fewer agents)
+87186 Susceptibility studies, antimicrobial agent; agar dilution method,
+per agent (eg, antibiotic gradient strip); microdilution or agar
+dilution (minimum inhibitory concentration (MIC or breakpoint),
+each multi-antimicrobial, per plate
+Pharmacy
+Cephalexin
+Clindamycin
+For authorization requirements and dispensing guidelines, refer to the Family PACT
+Pharmacy Formulary on the Medi-Cal Rx website (https://medi-calrx.dhcs.ca.gov) and the
+Clinic Formulary section in this manual.
+‹‹ICD-10-CM Code Table: Management of Complications Related to Chronic
+Postprocedural Pain››
+ICD-10-CM Code Description
+G89.28 Other chronic postprocedural pain
+Indication: Testicular pain within 30 days postoperative
+The following additional services are reimbursable with G89.28.
+Anesthesia
+‹‹CPT Code Table: Anesthesia››
+CPT Code Description
+00920 Anesthesia, for procedures on male genitalia (including open
+urethral procedures, NOS)
+[[page 52]]
+ben fam
+52
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+Procedures
+‹‹CPT Code Table: Procedures››
+CPT Code Description
+54865 Exploration of epididymis, with or without biopsy
+55110 Scrotal exploration
+55520 Excision of lesion of spermatic cord (separate procedure)
+Reproductive Health Screening Tests
+These services may be provided as clinically indicated. These services are not reimbursable
+for Z30.012, Z30.09 and Z31.61 as noted in preceding pages in this section.
+Table of Reproductive Health Screening Tests
+CPT Code Description
+Reflex Testing (based on a
+positive screening test
+result) Restrictions
+86592 † VDRL, RPR 86780 †
+TP-confirmatory test; if positive,
+86593 is required
+NA
+86592 † VDRL, RPR 86593 †
+Syphilis test,
+non-treponemal antibody;
+quantitative
+NA
+86701 HIV-1 antibody 86689 †
+HIV confirmatory test
+(e.g. Western Blot) or
+86701 and 86702 differentiation
+assay and
+87535
+HIV – NAAT
+(if differentiation assay results
+are negative or indeterminate)
+86689 limited to
+HIV antibody
+[[page 53]]
+ben fam
+53
+Family PACT – Benefits: Family Planning
+Page updated: June 2022
+Table of Reproductive Health Screening Tests (continued)
+CPT Code Description
+Reflex Testing (based on a
+positive screening test
+result) Restrictions
+86702 † HIV-2 antibody 86689 †
+HIV confirmatory test
+(e.g. Western Blot) or
+86701 and 86702
+differentiation assay and
+87535
+HIV – NAAT
+(if differentiation assay results
+are negative or indeterminate)
+86689 limited to
+HIV antibody
+86703
+HIV-1 and HIV-2
+antibodies, single
+result
+86689 †
+HIV confirmatory test
+(e.g. Western Blot) or
+86701 and 86702
+differentiation assay and
+87535
+HIV – NAAT
+(if differentiation assay results
+are negative or indeterminate)
+86689 limited to
+HIV antibody
+87389 HIV-1 antigen(s),
+with HIV-1 and
+HIV-2 antibodies,
+single result
+86689 †
+HIV confirmatory test
+(e.g. Western Blot) or
+86701 and 86702
+differentiation assay and
+87535
+HIV – NAAT
+(if differentiation assay results
+are negative or indeterminate)
+86689 limited to
+HIV antibody
+[[page 54]]
+ben fam
+54
+Family PACT – Benefits: Family Planning
+Page updated: July 2022
+Table of Reproductive Health Screening Tests (continued)
+CPT Code Description
+Reflex Testing (based on a
+positive screening test
+result) Restrictions
+87806 HIV-1 antigen(s),
+with HIV-1 and
+HIV-2 antibodies
+86689 †
+HIV confirmatory test
+(e.g. Western Blot) or
+86701 and 86702
+differentiation assay and
+87535
+HIV – NAAT
+(if differentiation assay results
+are negative or indeterminate)
+86689 limited to
+HIV antibody
+87491 ‡
+NAAT – Chlamydia
+None Refer to the CT
+and GC screening
+guidelines
+87591 ‡
+NAAT – Gonorrhea
+None Refer to the CT
+and GC screening
+guidelines
+‹‹87661 NAAT –
+Trichomonas
+None Female
+Refer to the
+trichomoniasis
+screening
+guidelines
+87808 Infectious agent
+antigen detection –
+trichomonas
+vaginalis
+None Female
+Refer to the
+trichomoniasis
+screening
+guidelines››
+[[page 55]]
+ben fam
+55
+Family PACT – Benefits: Family Planning
+Page updated: July 2022
+The Centers for Disease Control and Prevention (CDC) Sexually Transmitted Infections
+Treatment Guidelines, 2021 recommends annual Chlamydia Trachomatis (CT) and
+Neisseria gonorrhoeae (GC) screening for all sexually active women under 25 years of age
+and targeted CT and GC screening only for women 25 years of age and older with risk
+factors.
+‹‹CDC recommends diagnostic testing for trichomoniasis for women seeking care for vaginal
+discharge and recommends annual trichomoniasis screening for asymptomatic women with
+HIV infection. In addition, CDC states that annual screening for trichomoniasis might be
+considered for asymptomatic women at high risk for infection, including those with multiple
+sex partners, those who engage in transactional sex, and those with a history of drug misuse
+or sexually transmitted infections.››
+Table of STI Risk Factors and Related ICD-10-CM Codes
+ICD-10-CM
+Code Definition Indications
+Z11.3 Encounter for screening for
+infections with a predominantly
+sexual mode of transmission
+High prevalence at practice site (GC
+greater than 1%)
+‹‹Z11.6 Encounter for screening for
+other protozoal diseases and
+helminthiases
+Targeted trichomoniasis screening for
+asymptomatic women with the
+following:
+• Multiple sex partners
+• Transactional sex
+• Drug misuse
+• History of STIs
+• History of incarceration
+Routine annual screening for
+asymptomatic women with HIV
+infection››
+Z11.8 Encounter for screening for
+other infectious and parasitic
+diseases
+High prevalence at practice site (CT
+greater than 3 percent)
+[[page 56]]
+ben fam
+56
+Family PACT – Benefits: Family Planning
+Page updated: July 2022
+Table of STI Risk Factors and Related ICD-10-CM Codes (continued)
+Code Definition Indications
+Z20.2 Contact with and (suspected)
+exposure to infections with a
+predominantly sexual mode of
+transmission
+Recent contact (exposure) to an STD,
+specifically chlamydia, gonorrhea,
+non-gonococcal urethritis,
+epididymitis, trichomoniasis, syphilis
+or HIV
+Z22.4 Carrier of infections with a
+predominantly sexual mode of
+transmission
+Diagnosed with trichomoniasis
+(women), syphilis, or HIV, either
+confirmed or presumptively treated,
+who may be co-infected with
+chlamydia or gonorrhea
+Z72.51 High risk heterosexual behavior Targeted STD screening:
+• Infection with chlamydia or
+gonorrhea in the past 2 years;
+• More than one sex partner in
+the previous 12 months;
+• A new sex partner in the
+previous three months;
+Belief that a partner from the previous
+12 months may have had other sex
+partners at the same time
+[[page 57]]
+ben fam
+57
+Family PACT – Benefits: Family Planning
+Page updated: July 2022
+Table of STI Risk Factors and Related ICD-10-CM Codes (continued)
+Code Definition Indications
+Z72.52 High risk homosexual behavior Targeted STD screening:
+• Infection with chlamydia or
+gonorrhea in the past two
+years;
+• More than one sex partner in
+the previous 12 months;
+• A new sex partner in the
+previous three months;
+• Belief that a partner from the
+previous 12 months may have
+had other sex partners at the
+same time
+Z72.53 High risk bisexual behavior Targeted STD screening:
+• Infection with chlamydia or
+gonorrhea in the past two
+years;
+• More than one sex partner in
+the previous 12 months;
+• A new sex partner in the
+previous three months;
+• Belief that a partner from the
+previous 12 months may have
+had other sex partners at the
+same time
+Z86.19 Personal history of certain
+other infectious and parasitic
+diseases
+Retesting in three months after
+treatment of CT or GC ‹‹and
+trichomoniasis››
+Reproductive health screening tests for CT and GC may require an additional ICD-10-CM
+diagnosis code on the Family PACT claim form. For additional information refer to the Family
+PACT CT and GC screening guidelines in this section.
+For CT and GC screening test(s) to be reimbursed, the ordering provider must indicate the
+medical necessity for the test with the ICD-10-CM code noted above, as appropriate, on the
+laboratory order. The laboratory provider must include the ICD-10-CM diagnosis code that
+identifies the contraceptive method for which the patient is being seen.
+[[page 58]]
+ben fam
+58
+Family PACT – Benefits: Family Planning
+Page updated: July 2022
+Family PACT Chlamydia and Gonorrhea Screening Guidelines
+Gender Age
+GC/CT Test 87491
+and 87591
+Additional
+ICD-10-CM Code
+Required
+Billing
+Restrictions
+Females Younger 25
+years
+Routine annual (1x)
+screening, any
+provider
+None Covered when
+provided as part
+of the family
+planning visit.
+Females Younger
+than 25
+years
+Screening more
+than 1x per year/
+same provider
+based on risk
+factors
+Z11.3, Z11.8,
+Z20.2, Z22.4,
+Z72.51 thru Z72.53,
+Z86.19 ◊
+Covered when
+provided as part
+of the family
+planning visit.
+Females 25 years and
+older
+Restricted to those
+with increased risk
+of infection
+Z11.3, Z11.8,
+Z20.2, Z22.4,
+Z72.51 thru Z72.53,
+Z86.19 ◊
+Covered when
+provided as part
+of the family
+planning visit.
+Males Any age Restricted to those
+with increased risk
+of infection
+Z11.3, Z11.8,
+Z20.2, Z22.4,
+Z72.51 thru Z72.53,
+Z86.19 ◊
+Covered when
+provided as part
+of the family
+planning visit.
+‹‹Family PACT Trichomoniasis Screening Guidelines
+Gender
+Trichomoniasis Test
+87661 and 87808
+Additional
+ICD-10-CM Code
+Required
+Billing
+Restrictions
+Females Restricted to those with
+increased risk of
+infection
+Z11.6, Z20.2, Z22.4,
+Z72.51 thru Z72.53,
+Z86.19
+Covered when
+provided as part of
+the family planning
+visit››
+[[page 59]]
+ben fam
+59
+Family PACT – Benefits: Family Planning
+Page updated: July 2022
+Legend
+Symbols used in the document above are explained in the following table.
+Symbol Description
+‹‹ This is a change mark symbol. It is used to indicate where on the page the
+most recent change begins.
+›› This is a change mark symbol. It is used to indicate where on the page the
+most recent change ends.
+† Two (2) tests per recipient per day.
+‡ Three (3) tests per recipient per day.
+◊ See Benefits: Family Planning-Related Services for additional ICD-10-CM
+codes for CT and GC diagnostic testing

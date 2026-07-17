@@ -1,0 +1,251 @@
+[[page 1]]
+0B hw to use
+1
+Part 1 – How to Use This Manual
+How to Use This Manual
+Page updated: May 2025
+This section explains the following components of the Medi-Cal and Specialty Program
+provider manuals:
+• Manual organization
+• Navigation tools
+• Manual section elements
+• How and when the manual is updated
+• Provider inquiries/comments
+Manual Organization
+The provider manual is structured into multiple parts customized to meet individual provider
+needs. The parts are designed to form an ideal working set of manuals that includes:
+• Part 1 – Medi-Cal Program and Eligibility
+• Part 2 – Medi-Cal Billing and Policy
+• Specialty Program Manuals
+A complete manual will include both Part 1, Part 2 and Specialty Programs Manuals.
+Additionally, each part is split into manual sections that assemble policy by similar topics to
+help specific communities of providers navigate easier. There are currently 25 complete Part
+2 provider manuals.
+Each provider manual is a part of a larger provider “umbrella,” which can assist providers
+find which manual they should refer to based on which claim form(s) they traditionally use.
+‹‹See the “Navigating Medi-Cal and Specialty Health Programs” chart on the Medi-Cal
+Provider website for more information about the correlation between claim forms and
+umbrellas.››
+[[page 2]]
+0B hw to use
+2
+Part 1 – How to Use This Manual
+Page updated: January 2024
+Allied Health Community
+• Acupuncture Manual
+• Audiology and Hearing Aids Manual
+• Chiropractic Manual
+• Durable Medical Equipment and Medical Supplies Manual
+• Medical Transportation Manual
+• Orthotics and Prosthetics Manual
+• Psychological Services Manual
+• Therapies Manual
+Inpatient/Outpatient Community
+• Inpatient Services Manual
+• ‹‹Medi-Cal Waiver Program Manual››
+• Clinics and Hospitals Manual
+• Chronic Dialysis Clinics Manual
+• Community–Based Adult Services Manual
+• Heroin Detoxification Manual
+• Home Health Agencies/Home and Community-Based Services Manual
+• Hospice Care Program Manual
+• Local Educational Agency Manual
+• Multipurpose Senior Services Program Manual
+• Rehabilitation Clinics Manual
+Long Term Care Community
+• Long Term Care Manual
+Medical Services Community
+• General Medicine Manual
+• Obstetrics Manual
+[[page 3]]
+0B hw to use
+3
+Part 1 – How to Use This Manual
+Page updated: September 2020
+Pharmacy Community
+• Pharmacy Manual
+Vision Care Community
+• Vision Care Manual
+Specialty Programs
+• Family PACT Manual
+Part 1 – Medi-Cal Program and Eligibility
+Part 1 – Medi-Cal Program and Eligibility is an orientation to Medi-Cal services, programs
+and claim reimbursement. It provides information about recipient eligibility and provider
+participation. Each provider manual has the same Part 1 since the information therein is
+applicable to all providers.
+Part 2 – Medi-Cal Billing and Policy
+Part 2 – Medi-Cal Billing and Policy contains specific program policies, code lists, and claim
+form billing and follow-up instructions related to individual provider communities. While
+Part 1 of the provider manual is applicable to all provider communities, the Part 2 of the
+provider manual will be different for every provider community.
+Note: There may be some manual sections that are shared amongst several provider
+communities, but an Acupuncture provider will find all the information they need on
+billing, specific program policies and follow-up instructions, in the Acupuncture Part 2
+provider manual. In contrast, an Obstetrics provider will find all of their information in
+the Obstetrics Part 2 provider manual.
+Again, Part 1 offers orientation information to providers regarding Medi-Cal. Part 2 describes
+specific billing policy by billing code, procedure, or service.
+Specialty Program Manuals
+The Family PACT Policies, Procedures and Billing Instructions (PPBI) manual is a specialty
+program manual that includes specific policy, eligibility requirements, code lists, and claim
+form completion instructions pertaining to the Family PACT program. This manual works
+together with the Medi-Cal Part 1 and Part 2 manuals, and a Family PACT provider may
+need to refer to a specific Part 2 provider manual in addition to the Family PACT manual for
+comprehensive insight into the billing policy in question.
+[[page 4]]
+0B hw to use
+4
+Part 1 – How to Use This Manual
+Page updated: September 2020
+Which Manual Do I Need?
+Use Part 1 – Medi-Cal Program and Eligibility, for general Medi-Cal information, such as
+learning who is eligible for Medi-Cal services and what programs Medi-Cal administers. Use
+Part 2 – Medi-Cal Billing and Policy, and the Family PACT program manual for your
+day-to-day billing needs, such as learning about authorization and billing for specific services
+or procedure codes. In some cases, you may need all three manuals to research a particular
+area or question.
+Navigation Tools
+The following navigation tools will help navigate and fine information in the manuals:
+• Locator keys
+• Page numbering system
+Locator Keys
+Each manual section has a locator key, which is an abbreviated form of the section’s title
+and is located at the top right corner of each page. Locator keys function as section names
+and can assist when searching and organizing sections (see Figure 1).
+Figure 1: An example of locator key in the top right corner. A locator key is an abbreviated
+version of the full title. In this case, “prov guide” is the locator key for the manual section
+“Provider Guidelines.”
+Page Numbering System
+The page numbering system uses the section locator key and the page number. For
+example, in the Provider Guidelines section, the topic “How to Enroll” is on page one. The
+complete page reference for this topic would be prov guide 1 (see Figure 2).
+[[page 5]]
+0B hw to use
+5
+Part 1 – How to Use This Manual
+Page updated: September 2020
+Manual Section Elements
+Provider manual sections include basic document elements:
+• Page Header, which includes:
+– Locator Key
+– Page Number
+Figure 2: Example of a locator key and page number.
+• Section Title, which is located on the first page of every manual section.
+Figure 3: Example of a section title.
+• Page Updated, which is located at the very top of every page, and details when the
+page was last edited. A manual section can have multiple “Page Updated” dates
+throughout the section.
+– For example: Page 5 can list October 2020, while page 6 can list August 2020. This
+information is made available to contextualize what is new in a document since a
+reader last engaged with it.
+Figure 4: Example of a “page updated.”
+• Heading Levels: Manual sections have a hierarchy of knowledge that can be viewed
+visually via the format of the text, or both visually and non-visually via the bookmarks.
+For visual readers relying on the format of the text, the hierarchy is as follows:
+– Level 1: Text is bold and underlined
+– Level 2: Text is bold
+– Level 3: Text is underlined
+– Level 4: Text is neither bold nor underlined
+[[page 6]]
+0B hw to use
+6
+Part 1 – How to Use This Manual
+Page updated: September 2020
+Figure 5: Example of the various heading levels.
+• Page Footer, which includes Manual Part Number and Section Title
+Figure 6: Example of the manual section page footer.
+[[page 7]]
+0B hw to use
+7
+Part 1 – How to Use This Manual
+Page updated: September 2020
+• Legend, which is located on the last page of every manual section and will contain
+footnotes to symbols or references made earlier in the manual section.
+Figure 7: Example of the Legend that is located at the end of every manual section.
+• Change Brackets, which will be located throughout the section at variable intervals.
+These brackets enclose content that has been changed as of the date listed as the
+page updated date.
+– For example: Page 5 has a certain paragraph bracketed. The “Page Updated”
+element lists “August 2020.” This means that that paragraph was updated in some
+way as part of the August 2020 publication.
+• If no change brackets are present, this means the content on the page has shifted in
+some manner as of the date listed in the page updated element, but ultimately no new
+policy changes were introduced on that page.
+[[page 8]]
+0B hw to use
+8
+Part 1 – How to Use This Manual
+Page updated: September 2020
+Figure 8: An example of a manual section with locator key, title, page number page
+updated and various heading levels.
+[[page 9]]
+0B hw to use
+9
+Part 1 – How to Use This Manual
+Page updated: September 2020
+How and When Provider Manuals are Updated
+Manual pages in the provider manual are updated through the following online resources:
+• Medi-Cal Update bulletins
+• How to Tell the Manual Has Been Updated in the Bulletins
+• How to Find Page Updates in a Manual Section
+Medi-Cal Update Bulletins
+The Medi-Cal Update bulletins and the Family PACT Policies, Procedures and Billing
+Instructions (PPBI) manual and monthly program bulletin are delivered online via the
+Medi-Cal Provider website, and contain articles with the latest program, policy and billing
+information and links to all provider manual updates that occurred because of these
+program, policy and billing updates.
+Currently the Medi-Cal Update bulletins release on:
+• The general release occurs on the 16th of every month or the business day before.
+• The Pharmacy Priority release occurs on the last business day of the month.
+How to Tell the Manual Has Been Updated in the Bulletins
+The provider manual is not updated outside of the Medi-Cal Bulletins.
+If a manual section is updated as part of a policy change described in the Medi-Cal Updates,
+there will be a table at the end of every article describing what provider manual, provider
+manual section, and page were updated as a part of the policy change.
+Additionally, if applicable, at the end of every bulletin is an article titled “Provider Manual
+Revisions,” which lists manual sections and pages that were updated during that Medi-Cal
+Update that had no accompanying bulletin article.
+How to Find Page Updates in a Manual Section
+New or Changed Text: When a page is updated, new or revised text is identified by a
+change bracket.
+Text Deletions
+Generally, when information is deleted from a page, only the “page updated” date is
+changed. However, if a deletion significantly alters the meaning of the text, a change bracket
+is added around the surrounding text where the deleted text previously existed, as a
+reminder to review the information.
+[[page 10]]
+0B hw to use
+10
+Part 1 – How to Use This Manual
+Page updated: September 2020
+Figure 9: An example of a manual section page with “page updated” but no change
+brackets.
+[[page 11]]
+0B hw to use
+11
+Part 1 – How to Use This Manual
+Page updated: September 2020
+Figure 10: Example of a manual section before deletions were applied.
+Figure 11: Example of manual section after deletion with change brackets applied.
+[[page 12]]
+0B hw to use
+12
+Part 1 – How to Use This Manual
+Page updated: September 2020
+Provider Inquiries
+If a provider is interested in contacting Medi-Cal with questions about how to access or use
+the provider manual, they can contact the Telephone Service Center (TSC). For information
+about TSC and for a description of the billing and training assistance available to providers,
+please refer to the Provider Relations Directory section in the Part 1 manual.
+[[page 13]]
+0B hw to use
+13
+Part 1 – How to Use This Manual
+Page updated: September 2020
+‹‹Legend››
+‹‹Symbols used in the document above are explained in the following table.››
+Symbol Description
+‹‹ This is a change mark symbol. It is used to indicate where on the page the
+most recent change begins.
+›› This is a change mark symbol. It is used to indicate where on the page the
+most recent change ends.

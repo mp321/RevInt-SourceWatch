@@ -505,6 +505,16 @@ def signature(entry: dict, resp: dict) -> dict:
         sig["text_sha"] = sha(text) if text else sig["byte_sha"]
         sig["page_updated"] = stamps
         sig["snapshot_text"] = line_text
+        # A 200 that is not a parseable PDF (observed live 2026-07-17:
+        # dhcs.ca.gov served an HTML page for a .pdf URL) must not be
+        # hash-compared as content - that both cries CHANGED falsely and,
+        # after --update, baselines the garbage so the source goes silently
+        # blind. verdict_for turns this flag into an honest UNREACHABLE.
+        if raw and not text:
+            sig["pdf_parse_failed"] = True
+            head = raw.lstrip()[:300].lower()
+            sig["looks_html"] = (head.startswith((b"<!doctype", b"<html"))
+                                 or b"<html" in head)
     elif etype == "binary":
         sig["text_sha"] = sig["byte_sha"]
     else:                                            # html / linkpage
@@ -528,6 +538,11 @@ def verdict_for(entry: dict, prev: dict, resp: dict, sig: dict) -> tuple[str, st
                 else "unchanged"), "304 not modified"
     if resp["status"] not in ("200",):
         return "UNREACHABLE", f"http {resp['status']}"
+    if sig.get("pdf_parse_failed"):
+        kind = "an HTML page" if sig.get("looks_html") else "unreadable data"
+        return "UNREACHABLE", (f"expected a PDF but the server returned {kind} "
+                               "- the document may have moved or sit behind a "
+                               "bot check; the previous baseline is kept")
     if not prev:
         return "NEW", "no baseline yet"
     if entry.get("url") != prev.get("url"):
@@ -744,7 +759,12 @@ class SnapshotStore:
                 rp.write_text("\n".join(lines), encoding="utf-8")
                 report_path = str(rp)
                 self.written.append(report_path)
-            if verdict in ("NEW", "CHANGED"):
+            # Also store when no snapshot exists yet regardless of verdict:
+            # seeded manual_list docs come out "unchanged" on their first
+            # live fetch (hash established quietly), and without this their
+            # first real revision would flag CHANGED with no prior text to
+            # diff against (observed on the 2026-07-17 first live run).
+            if verdict in ("NEW", "CHANGED") or not p.exists():
                 p.parent.mkdir(parents=True, exist_ok=True)
                 p.write_text(text, encoding="utf-8")
             return report_path
@@ -992,7 +1012,7 @@ def check_manual_list(entry: dict, base: dict, fetch: Fetcher, snaps: SnapshotSt
             frag[cid] = {**prev, "checked_at": ts,
                          "revision_date": d["revision_date"] or rev_prev,
                          "file_id": d.get("file_id", "") or prev.get("file_id", "")}
-        elif status == "200":
+        elif status == "200" and verdict != "UNREACHABLE":
             frag[cid] = {"url": d["url"], "title": d["title"],
                          "revision_date": d["revision_date"],
                          "file_id": d.get("file_id", ""),
@@ -1720,7 +1740,7 @@ def run(watchlist: Path, out_dir: Path, only, update: bool,
                                            entry.get("url", ""))
                 if resp["status"] == "304":
                     new_base[eid] = {**prev, "checked_at": ts}
-                elif resp["status"] == "200":
+                elif resp["status"] == "200" and verdict != "UNREACHABLE":
                     new_base[eid] = {"url": entry["url"], **{k: sig[k] for k in
                                      ("text_sha", "byte_sha", "page_updated",
                                       "links", "shell")},
@@ -1777,7 +1797,11 @@ def run(watchlist: Path, out_dir: Path, only, update: bool,
 
     print(f"\nneeds review: {len(review)}  ->  {out_dir}/check_{stamp}.csv")
     if update:
-        baseline_path.write_text(json.dumps(new_base, indent=2, sort_keys=True))
+        # Subset runs (--programs) merge into the existing baseline like the
+        # Vercel venue does ("partial runs merge, not clobber"); a full run
+        # still overwrites, so entries removed from the watchlist age out.
+        saved = {**base, **new_base} if only else new_base
+        baseline_path.write_text(json.dumps(saved, indent=2, sort_keys=True))
         print(f"baseline updated -> {baseline_path}")
     report["new_baseline"] = new_base
     return report

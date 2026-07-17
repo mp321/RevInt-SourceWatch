@@ -1,0 +1,3488 @@
+[[page 1]]
+lab
+1
+Family PACT – Laboratory Services
+Laboratory Services
+Page updated: September 2020
+This section includes the “Family PACT Laboratory Services Grid,” which is provided as a
+quick reference to assist laboratory personnel with claims submission.
+Laboratory Benefits
+Only the clinical laboratory tests performed to detect the specific pathogens listed in this
+manual, including cytopathology (Pap smears) and histopathology evaluations (biopsy
+specimens), are included in the “Family PACT Laboratory Services Grid.”
+Laboratory tests that require a Treatment Authorization Request (TAR) are indicated in the
+laboratory services grid. Providers generally should request authorization before rendering
+service. For more information, see the Treatment Authorization Request (TAR) section in
+this manual.
+Laboratory Claims
+Claims for laboratory services must include an ICD-10-CM code that identifies the
+contraceptive method for which the client is being seen. These codes are found in the
+“ICD-10-CM Diagnosis Code” column of the laboratory services grid. For a number of
+laboratory tests, this is the only diagnosis required for reimbursement. If no additional
+diagnosis code is required, an “N/A” is listed in the column “Additional ICD-10-CM Diagnosis
+Code.”
+The majority of laboratory tests require an additional diagnosis for reimbursement, which
+provides the medical necessity for performing the tests. Additional diagnosis codes are
+required when billing for covered family planning-related services, such as management of
+specified sexually transmitted infections, urinary tract infection and cervical abnormalities.
+For these claims, the contraceptive method diagnosis code may be entered in either the first
+or second diagnosis field on the claim form, depending on the focus of the encounter.
+When a laboratory test is for the management of a complication resulting from the use of a
+particular contraceptive method or from the treatment of family planning-related services
+identified in this manual, an ICD-10-CM code for the complication is required on the claim.
+This code must be billed with the diagnosis code that identifies the contraceptive method for
+which the client is being seen.
+Some laboratory tests have additional documentation requirements and other restrictions for
+reimbursement as noted in this section. For more information, refer to the Benefits: Family
+Planning and Benefits: Family Planning-Related Services sections in this manual.
+[[page 2]]
+lab
+2
+Family PACT – Laboratory Services
+Page updated: December 2025
+‹‹Note: Only a provider with a Clinical Laboratory Improvement Amendments (CLIA)
+certificate and state license or registration appropriate to the level of tests performed
+may be reimbursed for clinical laboratory tests or examinations. For additional
+information, including links to websites regarding licensing requirements and the use
+of QW modifier when billing for CLIA-waived tests, refer to the Pathology: Billing and
+Modifiers section of the Part 2 manual.››
+Family PACT Laboratory Services Grid
+HCPCS Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+‹‹Q0111∞››
+Wet mount, including
+prep of vaginal,
+cervical or skin
+specimens (including
+urethral)
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+A59.01,
+A59.03,
+B37.31, B37.32
+N34.1, N34.2,
+N34.3, N76.0,
+Z20.2
+No Female
+‹‹Q0111∞››
+Wet mount, including
+prep of vaginal,
+cervical or skin
+specimens (including
+urethral)
+Z30.018, Z30.02,
+Z30.49, Z98.52
+A59.03, N34.1,
+N34.2, N34.3,
+Z20.2
+No Male
+[[page 3]]
+lab
+3
+Family PACT – Laboratory Services
+Page updated: December 2025
+Family PACT Laboratory Services Grid (continued)
+CPT® Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+‹‹81000∞››
+Urinalysis, by dip
+stick or tablet reagent
+for bilirubin, glucose,
+hemoglobin, ketones,
+leukocytes, nitrite,
+pH, protein, specific
+gravity, urobilinogen,
+any number of these
+constituents;
+non-automated, with
+microscopy
+Z01.812 Z30.09 No Female
+Sterilization
+(Asymptomatic)
+Preoperative testing
+only
+‹‹81000∞››
+Urinalysis, by dip
+stick or tablet reagent
+for bilirubin, glucose,
+hemoglobin, ketones,
+leukocytes, nitrite,
+pH, protein, specific
+gravity, urobilinogen,
+any number of these
+constituents;
+non-automated, with
+microscopy
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+N30.00,
+N30.01,
+R10.30, R30.0,
+R30.9, R31.0,
+R35.0
+No Female
+Limited to
+evaluation of
+documented
+symptom(s)
+suggestive of
+Urinary Tract
+Infection (UTI)
+[[page 4]]
+lab
+4
+Family PACT – Laboratory Services
+Page updated: December 2025
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+‹‹81000∞››
+Urinalysis, by dip
+stick or tablet reagent
+for bilirubin, glucose,
+hemoglobin, ketones,
+leukocytes, nitrite,
+pH, protein, specific
+gravity, urobilinogen,
+any number of these
+constituents;
+non-automated, with
+microscopy
+Z01.812 Z30.09 No Male Sterilization
+Preoperative testing
+only
+‹‹81000∞››
+Urinalysis, by dip
+stick or tablet reagent
+for bilirubin, glucose,
+hemoglobin, ketones,
+leukocytes, nitrite,
+pH, protein, specific
+gravity, urobilinogen,
+any number of these
+constituents;
+non-automated, with
+microscopy
+Z30.018, Z30.02,
+Z30.49, Z98.52
+N34.1, N45.1,
+N45.3,
+N50.811,
+N50.812,
+N50.819
+No Male
+‹‹81001∞››
+Urinalysis, by dip
+stick or tablet reagent
+for bilirubin, glucose,
+hemoglobin, ketones,
+leukocytes, nitrite,
+pH, protein, specific
+gravity, urobilinogen,
+any number of these
+constituents;
+automated, with
+microscopy
+Z01.812 Z30.09 No Female
+Sterilization
+(Asymptomatic)
+Preoperative testing
+only
+[[page 5]]
+lab
+5
+Family PACT – Laboratory Services
+Page updated: December 2025
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+‹‹81001∞››
+Urinalysis, by dip
+stick or tablet reagent
+for bilirubin, glucose,
+hemoglobin, ketones,
+leukocytes, nitrite,
+pH, protein, specific
+gravity, urobilinogen,
+any number of these
+constituents;
+automated, with
+microscopy
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+N30.00,
+N30.01,
+R10.30, R30.0,
+R30.9, R31.0,
+R35.0
+No Female
+Limited to
+evaluation of
+documented
+symptom(s)
+suggestive of UTI
+‹‹81001∞››
+Urinalysis, by dip
+stick or tablet reagent
+for bilirubin, glucose,
+hemoglobin, ketones,
+leukocytes, nitrite,
+pH, protein, specific
+gravity, urobilinogen,
+any number of these
+constituents;
+automated, with
+microscopy
+Z01.812 Z30.09 No Male Sterilization
+Preoperative testing
+only
+‹‹81001∞››
+Urinalysis, by dip
+stick or tablet reagent
+for bilirubin, glucose,
+hemoglobin, ketones,
+leukocytes, nitrite,
+pH, protein, specific
+gravity, urobilinogen,
+any number of these
+constituents;
+automated, with
+microscopy
+Z30.018, Z30.02,
+Z30.49, Z98.52
+N34.1 No Male
+[[page 6]]
+lab
+6
+Family PACT – Laboratory Services
+Page updated: December 2025
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+‹‹81002§››
+Urinalysis, by dip
+stick or tablet reagent
+for bilirubin, glucose,
+hemoglobin, ketones,
+leukocytes, nitrite,
+pH, protein, specific
+gravity, urobilinogen,
+any number of these
+constituents;
+non-automated,
+without microscopy
+Z01.812 Z30.09 No Female
+Sterilization
+(Asymptomatic)
+Preoperative testing
+only
+‹‹81002§››
+Urinalysis, by dip
+stick or tablet reagent
+for bilirubin, glucose,
+hemoglobin, ketones,
+leukocytes, nitrite,
+pH, protein, specific
+gravity, urobilinogen,
+any number of these
+constituents;
+non-automated,
+without microscopy
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+N30.00,
+N30.01,
+R10.30, R30.0,
+R30.9, R31.0,
+R35.0
+No Female
+(Asymptomatic)
+Preoperative testing
+only
+[[page 7]]
+lab
+7
+Family PACT – Laboratory Services
+Page updated: December 2025
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+‹‹81002§››
+Urinalysis, by dip
+stick or tablet reagent
+for bilirubin, glucose,
+hemoglobin, ketones,
+leukocytes, nitrite,
+pH, protein, specific
+gravity, urobilinogen,
+any number of these
+constituents;
+non-automated,
+without microscopy
+Z01.812 Z30.09 No Male Sterilization
+Preoperative testing
+only
+‹‹81002§››
+Urinalysis, by dip
+stick or tablet reagent
+for bilirubin, glucose,
+hemoglobin, ketones,
+leukocytes, nitrite,
+pH, protein, specific
+gravity, urobilinogen,
+any number of these
+constituents;
+non-automated,
+without microscopy
+Z30.018, Z30.02,
+Z30.49, Z98.52
+N34.1 No Male
+‹‹81003§››
+Urinalysis, by dip
+stick or tablet reagent
+for bilirubin, glucose,
+hemoglobin, ketones,
+leukocytes, nitrite,
+pH, protein, specific
+gravity, urobilinogen,
+any number of these
+constituents;
+automated, without
+microscopy
+Z01.812 Z30.09 No Female
+Sterilization
+(Asymptomatic)
+Preoperative testing
+only
+[[page 8]]
+lab
+8
+Family PACT – Laboratory Services
+Page updated: December 2025
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+‹‹81003§››
+Urinalysis, by dip
+stick or tablet reagent
+for bilirubin, glucose,
+hemoglobin, ketones,
+leukocytes, nitrite,
+pH, protein, specific
+gravity, urobilinogen,
+any number of these
+constituents;
+automated, without
+microscopy
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+N30.00,
+N30.01,
+R10.30, R30.0,
+R30.9, R31.0,
+R35.0
+No Female
+Limited to
+evaluation of
+documented
+symptom(s)
+suggestive of UTI
+‹‹81003§››
+Urinalysis, by dip
+stick or tablet reagent
+for bilirubin, glucose,
+hemoglobin, ketones,
+leukocytes, nitrite,
+pH, protein, specific
+gravity, urobilinogen,
+any number of these
+constituents;
+automated, without
+microscopy
+Z01.812 Z30.09 No Male Sterilization
+Preoperative testing
+only
+‹‹81003§››
+Urinalysis, by dip
+stick or tablet reagent
+for bilirubin, glucose,
+hemoglobin, ketones,
+leukocytes, nitrite,
+pH, protein, specific
+gravity, urobilinogen,
+any number of these
+constituents;
+automated, without
+microscopy
+Z30.018, Z30.02,
+Z30.49, Z98.52
+N34.1 No Male
+[[page 9]]
+lab
+9
+Family PACT – Laboratory Services
+Page updated: April 2022
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+81005
+Urinalysis;
+Urinalysis, by dip
+stick or tablet reagent
+for bilirubin, glucose,
+hemoglobin, ketones,
+leukocytes, nitrite,
+pH, protein, specific
+gravity, urobilinogen,
+any number of these
+constituents;
+qualitative or
+semiquantitative,
+except
+immunoassays
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+N30.00,
+N30.01,
+R10.30, R30.0,
+R30.9, R31.0,
+R35.0
+No Female
+Limited to
+evaluation of
+documented
+symptom(s)
+suggestive of UTI
+‹‹81005
+Urinalysis;
+Urinalysis, by dip
+stick or tablet reagent
+for bilirubin, glucose,
+hemoglobin, ketones,
+leukocytes, nitrite,
+pH, protein, specific
+gravity, urobilinogen,
+any number of these
+constituents
+qualitative or
+semiquantitative,
+except
+immunoassays
+Z30.018, Z30.02,
+Z30.49, Z98.52
+N34.1 No Male››
+[[page 10]]
+lab
+10
+Family PACT – Laboratory Services
+Page updated: December 2025
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+‹‹81015∞››
+Urinalysis;
+Urinalysis, by dip
+stick or tablet reagent
+for bilirubin, glucose,
+hemoglobin, ketones,
+leukocytes, nitrite,
+pH, protein, specific
+gravity, urobilinogen,
+any number of these
+constituents;
+microscopic only
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+N30.00,
+N30.01,
+R10.30, R30.0,
+R30.9, R31.0,
+R35.0
+No Female
+Limited to
+evaluation of
+documented
+symptom(s)
+suggestive of UTI
+‹‹81015∞››
+Urinalysis;
+Urinalysis, by dip
+stick or tablet reagent
+for bilirubin, glucose,
+hemoglobin, ketones,
+leukocytes, nitrite,
+pH, protein, specific
+gravity, urobilinogen,
+any number of these
+constituents;
+microscopic only
+Z30.018, Z30.02,
+Z30.49, Z98.52
+N34.1, N45.1,
+N45.3,
+N50.811,
+N50.812,
+N50.819
+No Male
+[[page 11]]
+lab
+11
+Family PACT – Laboratory Services
+Page updated: December 2025
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+‹‹81025§››
+Urine pregnancy test,
+by visual color
+comparison methods
+Z30.011 thru
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z31.61, Z98.51
+Not Applicable No Female
+Limited to
+evaluation of
+documented
+symptom(s) or other
+history suggestive
+of pregnancy
+‹‹81025§››
+Urine pregnancy test,
+by visual color
+comparison methods
+Z30.09 Not Applicable No When clinically
+indicated to rule out
+pregnancy prior to
+initiation of
+contraceptive
+method, but no
+contraceptive
+method is initiated
+during the visit
+‹‹81025§››
+Urine pregnancy test,
+by visual color
+comparison methods
+Z01.812 Z30.09 No Female
+Sterilization
+Preoperative testing
+[[page 12]]
+lab
+12
+Family PACT – Laboratory Services
+Page updated: April 2022
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+82803
+Gases, blood any
+combination of pH,
+pCO2, pO2, CO2,
+HCO3 (including
+calculated O2
+saturation);
+(Use 82803 for two
+or more of the above
+listed analytes)
+I26.99, I82.401
+thru I82.403,
+I82.409, I82.411
+thru I82.413,
+I82.419, I82.421
+thru I82.423,
+I82.429, I82.431
+thru I82.433,
+I82.439, I82.441
+thru I82.443,
+I82.449, I82.491
+thru I82.493,
+I82.499, I82.4Y1
+thru I82.4Y3,
+I82.4Y9, I82.4Z1
+thru I82.4Z3,
+I82.4Z9
+Z30.41, Z30.44,
+Z30.45
+Yes Female
+82805
+Gases, blood any
+combination of pH,
+pCO2, pO2, CO2,
+HCO3 (including
+calculated O2
+saturation);
+with O2 saturation, by
+direct measurement,
+except pulse
+oximetry
+I26.99, I82.401
+thru I82.403,
+I82.409, I82.411
+thru I82.413,
+I82.419, I82.421
+thru I82.423,
+I82.429, I82.431
+thru I82.433,
+I82.439, I82.441
+thru I82.443,
+I82.449, I82.491
+thru I82.493,
+I82.499, I82.4Y1
+thru I82.4Y3,
+I82.4Y9, I82.4Z1
+thru I82.4Z3,
+I82.4Z9
+Z30.41, Z30.44,
+Z30.45
+Yes Female
+[[page 13]]
+lab
+13
+Family PACT – Laboratory Services
+Page updated: December 2025
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+82810
+Gases, blood, O2
+saturation only, by
+direct measurement,
+except pulse
+oximetry analytes)
+I26.99, I82.401
+thru I82.403,
+I82.409, I82.411
+thru I82.413,
+I82.419, I82.421
+thru I82.423,
+I82.429, I82.431
+thru I82.433,
+I82.439, I82.441
+thru I82.443,
+I82.449, I82.491
+thru I82.493,
+I82.499, I82.4Y1
+thru I82.4Y3,
+I82.4Y9, I82.4Z1
+thru I82.4Z3,
+I82.4Z9
+Z30.41 Yes Female
+‹‹83986§››
+pH, body fluid, not
+otherwise specified
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+A59.01,
+A59.03,
+B37.31,
+B37.32, N76.0,
+Z20.2
+No Female
+85002
+Bleeding time
+Z01.812 Z30.09 Yes Female
+Sterilization
+Preoperative testing
+only
+[[page 14]]
+lab
+14
+Family PACT – Laboratory Services
+Page updated: December 2025
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+‹‹85013§››
+Blood count;
+spun microhematocrit
+Z30.430 thru
+Z30.433
+Not Applicable No Female
+‹‹85013§››
+Blood count;
+spun microhematocrit
+Z01.812 Z30.09 No Female
+Sterilization
+Preoperative testing
+‹‹85013§››
+Blood count;
+spun microhematocrit
+Z98.51 Not Applicable No Female
+Sterilization
+Postoperative
+testing
+‹‹85013§››
+Blood count;
+spun microhematocrit
+Z01.812 Z30.09 No Male Sterilization
+Preoperative testing
+only
+‹‹85014§››
+Blood count;
+hematocrit (Hct)
+Z30.430 thru
+Z30.433
+N/A No Female
+‹‹85014§››
+Blood count;
+hematocrit (Hct)
+Z01.812 Z30.09 No Female
+Sterilization
+Preoperative testing
+‹‹85014§››
+Blood count;
+hematocrit (Hct)
+Z98.51 Not Applicable No Female
+Sterilization
+Postoperative
+testing
+‹‹85014§››
+Blood count;
+hematocrit (Hct)
+Z01.812 Z30.09 No Male
+Sterilization
+Preoperative testing
+[[page 15]]
+lab
+15
+Family PACT – Laboratory Services
+Page updated: December 2025
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+‹‹85014§››
+Blood count;
+hematocrit (Hct)
+N92.0 Z30.42 Yes Female,
+Complication
+When clinically
+indicated for
+management of
+complications of
+heavy vaginal
+bleeding
+‹‹85014§››
+Blood count;
+hematocrit (Hct)
+N99.820 Z30.2 Yes Male,
+Complication
+When clinically
+indicated for
+postprocedural
+hemorrhage of a
+genitourinary
+system organ or
+structure following a
+genitourinary
+system procedure,
+within 30 days
+postoperative
+‹‹85018§››
+Blood count;
+hemoglobin (Hgb)
+Z30.430 thru
+Z30.433
+N/A No Female
+‹‹85018§››
+Blood count;
+hemoglobin (Hgb)
+Z01.812 Z30.09 No Female
+Sterilization
+Preoperative testing
+‹‹85018§››
+Blood count;
+hemoglobin (Hgb)
+Z98.51 Not applicable No Female
+Sterilization
+Preoperative testing
+‹‹85018§››
+Blood count;
+hemoglobin (Hgb)
+Z01.812 Z30.09 No Male Sterilization
+Preoperative testing
+only
+[[page 16]]
+lab
+16
+Family PACT – Laboratory Services
+Page updated: December 2025
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+‹‹85018§››
+Blood count;
+hemoglobin (Hgb)
+N92.0 Z30.42, Z30.46 Yes Female,
+Complication
+When clinically
+indicated for
+management of
+heavy vaginal
+bleeding
+‹‹85018§››
+Blood count;
+hemoglobin (Hgb)
+N99.820 Z30.2 Yes Male,
+Complication
+When clinically
+indicated for
+postprocedural
+hemorrhage of a
+genitourinary
+system organ or
+structure following a
+genitourinary
+system procedure,
+within 30 days
+postoperative
+‹‹85018§››
+Blood count;
+hemoglobin (Hgb)
+N99.840 Z30.2 No Male,
+Complication
+When clinically
+indicated for
+management of
+postprocedural
+hematoma of a
+genitourinary
+system organ or
+structure following a
+genitourinary
+system procedure
+[[page 17]]
+lab
+17
+Family PACT – Laboratory Services
+Page updated: December 2025
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+‹‹85025§››
+Blood count;
+complete (CBC),
+automated (Hgb, Hct,
+RBC, WBC and
+platelet count) and
+automated
+differential WBC
+count
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+N70.03,
+N70.93, N94.10
+thru N94.12,
+N94.19, N94.89
+No Female
+When clinically
+indicated for
+management of
+Pelvic Inflammatory
+Disease (PID)
+(uncomplicated
+outpatient only)
+‹‹85025§››
+Blood count;
+complete (CBC),
+automated (Hgb, Hct,
+RBC, WBC and
+platelet count) and
+automated
+differential WBC
+count
+Z01.812 Z30.09 No Female
+Sterilization
+Preoperative testing
+‹‹85025§››
+Blood count;
+complete (CBC),
+automated (Hgb, Hct,
+RBC, WBC and
+platelet count) and
+automated
+differential WBC
+count
+Z98.51 Not applicable No Female
+Sterilization
+Postoperative
+testing
+[[page 18]]
+lab
+18
+Family PACT – Laboratory Services
+Page updated: December 2025
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+‹‹85025§››
+Blood count;
+complete (CBC),
+automated (Hgb, Hct,
+RBC, WBC and
+platelet count) and
+automated
+differential WBC
+count
+Z01.812 Z30.09 No Male Sterilization
+Preoperative testing
+only
+‹‹85025§››
+Blood count;
+complete (CBC),
+automated (Hgb, Hct,
+RBC, WBC and
+platelet count) and
+automated
+differential WBC
+count
+Z98.52 Not applicable No Male Sterilization
+Evaluation for
+postoperative
+infection
+[[page 19]]
+lab
+19
+Family PACT – Laboratory Services
+Page updated: December 2025
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+‹‹85025§››
+Blood count;
+complete (CBC),
+automated (Hgb, Hct,
+RBC, WBC and
+platelet count) and
+automated
+differential WBC
+count
+N92.0, T85.79XA,
+T85.79XD,
+T85.79XS
+Z30.42, Z30.46 Yes Female,
+Complication
+When clinically
+indicated for
+management of
+heavy vaginal
+bleeding or infection
+at insertion site
+‹‹85025§››
+Blood count;
+complete (CBC),
+automated (Hgb, Hct,
+RBC, WBC and
+platelet count) and
+automated
+differential WBC
+count
+N99.820 Z30.2 Yes Male,
+Complication
+When clinically
+indicated for
+postprocedural
+hemorrhage of a
+genitourinary
+system organ or
+structure following a
+genitourinary
+system procedure,
+within 30 days
+postoperative
+‹‹85025§››
+Blood count;
+complete (CBC),
+automated (Hgb, Hct,
+RBC, WBC and
+platelet count) and
+automated
+differential WBC
+count
+N99.840 Z30.2 No Male
+When clinically
+indicated for
+management of
+postprocedural
+hematoma of a
+genitourinary
+system organ or
+structure following a
+genitourinary
+system procedure
+[[page 20]]
+lab
+20
+Family PACT – Laboratory Services
+Page updated: December 2025
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+85027
+Blood count;
+complete (CBC),
+automated (Hgb, Hct,
+RBC, WBC and
+platelet count)
+Z01.812 Z30.09 No Female
+Sterilization
+Preoperative testing
+85027
+Blood count;
+complete (CBC),
+automated (Hgb, Hct,
+RBC, WBC and
+platelet count)
+Z98.51 N/A No Female
+Sterilization
+Postoperative
+testing
+85027
+Blood count;
+complete (CBC),
+automated (Hgb, Hct,
+RBC, WBC and
+platelet count)
+Z01.812 Z30.09 No Male Sterilization
+Preoperative testing
+only
+85027
+Blood count;
+complete (CBC),
+automated (Hgb, Hct,
+RBC, WBC and
+platelet count)
+N92.0 Z30.42, Z30.46 Yes Female,
+Complication
+When clinically
+indicated for
+management of
+heavy vaginal
+bleeding
+‹‹85610§››
+Prothrombin time
+Z01.812 Z30.09 Yes Female
+Sterilization
+Preoperative
+evaluation only
+[[page 21]]
+lab
+21
+Family PACT – Laboratory Services
+Page updated: December 2025
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+‹‹85651§››
+Sedimentation rate,
+erythrocyte;
+non-automated
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+N70.03,
+N70.93, N94.10
+thru N94.12,
+N94.19, N94.89
+No Female
+‹‹85651§››
+Sedimentation rate,
+erythrocyte;
+non-automated
+T85.79XA,
+T85.79XD,
+T85.79XS
+Z30.46 Yes Female,
+Complication
+When clinically
+indicated for
+management of
+infection at insertion
+site
+85652
+Sedimentation rate,
+erythrocyte
+automated
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+N70.03,
+N70.93, N94.10
+thru N94.12,
+N94.19, N94.89
+No Female
+85652
+Sedimentation rate,
+erythrocyte
+automated
+T85.79XA,
+T85.79XD,
+T85.79XS
+Z30.42, Z30.46 Yes Female
+When clinically
+indicated for
+management of
+infection at insertion
+site
+[[page 22]]
+lab
+22
+Family PACT – Laboratory Services
+Page updated: December 2021
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+85730
+Thromboplastin time,
+partial (PTT); plasma
+or whole blood
+Z01.812 Z30.09 Yes Female
+Sterilization
+Preoperative
+evaluation only
+86592
+Syphilis test, non-
+treponemal antibody;
+qualitative
+(eg, VDRL, RPR and
+ART)
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+Not applicable No Female
+86592
+Syphilis test, non-
+treponemal antibody;
+qualitative
+(eg, VDRL, RPR and
+ART)
+Z30.018, Z30.02,
+Z30.49, Z98.52
+Not applicable No Male
+86593
+Syphilis test,
+non-treponemal
+antibody; quantitative
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+A51.0, A51.31,
+A51.39, A51.5,
+A52.8, A53.0
+No Female
+Reflex from positive
+86592, 86780. Use
+secondary
+diagnosis code
+when ordered
+separately to
+assess response to
+syphilis treatment.
+[[page 23]]
+lab
+23
+Family PACT – Laboratory Services
+Page updated: December 2021
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+86593
+Syphilis test,
+non-treponemal
+antibody; quantitative
+Z30.018, Z30.02,
+Z30.49, Z98.52
+A51.0, A51.31,
+A51.39, A51.5,
+A52.8, A53.0
+No Male
+Reflex from positive
+86592, 86780. Use
+secondary
+diagnosis code
+when ordered
+separately to
+assess response to
+syphilis treatment
+86689
+HTLV or HIV
+antibody,
+confirmatory test (eg,
+Western Blot
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+Not applicable No Female
+Reflex from positive
+86701, 86702 or
+86703 or as a
+confirmatory test
+following a
+preliminary positive
+result with a
+point-of-care kit test.
+Limited to HIV
+86689
+HTLV or HIV
+antibody,
+confirmatory test (eg,
+Western Blot
+Z30.018, Z30.02,
+Z30.49, Z98.52
+Not applicable No Male
+Reflex from positive
+86701, 86702 or
+86703 or as a
+confirmatory test
+following a
+preliminary positive
+result with a
+point-of-care kit test.
+Limited to HIV
+[[page 24]]
+lab
+24
+Family PACT – Laboratory Services
+Page updated: December 2025
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+‹‹86701§››
+HIV-1
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+Not applicable No Female
+‹‹86701§››
+HIV-1
+Z30.018, Z30.02,
+Z30.49, Z98.52
+Not applicable No Male
+86702
+HIV-2
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+Not applicable No Female
+86702
+HIV-2
+Z30.018, Z30.02,
+Z30.49, Z98.52
+Not applicable No Male
+‹‹86703§››
+HIV-1 and HIV-2,
+single result
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+N/A No Female
+[[page 25]]
+lab
+25
+Family PACT – Laboratory Services
+Page updated: December 2025
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+‹‹86703§››
+HIV-1 and HIV-2,
+single result
+Z30.018, Z30.02,
+Z30.49, Z98.52
+Not applicable No Male
+‹‹86780§››
+Antibody; Treponema
+pallidum (syphilis)
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+Not applicable No Female
+‹‹86780§››
+Antibody; Treponema
+pallidum (syphilis)
+Z30.018, Z30.02,
+Z30.49, Z98.52
+Not applicable No Male
+[[page 26]]
+lab
+26
+Family PACT – Laboratory Services
+Page updated: October 2022
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+87081
+Culture, presumptive,
+pathogenic
+organisms, screening
+only
+T81.40XA,
+T81.40XD,
+T81.40XS,
+T81.41XA,
+T81.41XD,
+T81.41XS,
+T81.42XA,
+T81.42XD,
+T81.42XS,
+T81.43XA,
+T81.43XD,
+T81.43XS,
+T81.49XA,
+T81.49XD,
+T81.49XS,
+T85.79XA,
+T85.79XD,
+T85.79XS
+Z30.2, Z30.46 Yes ‹‹Female,
+Complication››
+When clinically
+indicated for
+management of
+implant
+insertion/removal or
+surgical site
+infection
+87081
+Culture, presumptive,
+pathogenic
+organisms, screening
+only
+T81.40XA,
+T81.40XD,
+T81.40XS,
+T81.41XA,
+T81.41XD,
+T81.41XS,
+T81.42XA,
+T81.42XD,
+T81.42XS,
+T81.43XA,
+T81.43XD,
+T81.43XS,
+T81.49XA,
+T81.49XD,
+T81.49XS
+Z30.2 Yes ‹‹Male,
+Complication››
+When clinically
+indicated for
+management of
+surgical site
+infection (less than
+30 days
+postoperative)
+[[page 27]]
+lab
+27
+Family PACT – Laboratory Services
+Page updated: October 2022
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+87181
+Susceptibility studies,
+antimicrobial agent;
+agar dilution method,
+per agent (e.g.
+antibiotic gradient
+strip)
+T81.40XA,
+T81.40XD,
+T81.40XS,
+T81.41XA,
+T81.41XD,
+T81.41XS,
+T81.42XA,
+T81.42XD,
+T81.42XS,
+T81.43XA,
+T81.43XD,
+T81.43XS,
+T81.49XA,
+T81.49XD,
+T81.49XS,
+T85.79XA,
+T85.79XD,
+T85.79XS
+Z30.2, Z30.46 Yes ‹‹Female,
+Complication››
+Reflex from positive
+87081 when
+clinically indicated
+for management of
+implant
+insertion/removal or
+surgical site
+infection
+87181
+Susceptibility studies,
+antimicrobial agent;
+agar dilution method,
+per agent (e.g.
+antibiotic gradient
+strip)
+T81.40XA,
+T81.40XD,
+T81.40XS,
+T81.41XA,
+T81.41XD,
+T81.41XS,
+T81.42XA,
+T81.42XD,
+T81.42XS,
+T81.43XA,
+T81.43XD,
+T81.43XS,
+T81.49XA,
+T81.49XD,
+T81.49XS
+Z30.2 Yes ‹‹Male,
+Complication››
+Reflex from positive
+87081 when
+clinically indicated
+for management of
+surgical site
+infection (less than
+30 days
+postoperative)
+[[page 28]]
+lab
+28
+Family PACT – Laboratory Services
+Page updated: October 2022
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+87184
+Susceptibility studies,
+antimicrobial agent;
+disc method, per
+plate (12 or fewer
+agents)
+T81.40XA,
+T81.40XD,
+T81.40XS,
+T81.41XA,
+T81.41XD,
+T81.41XS,
+T81.42XA,
+T81.42XD,
+T81.42XS,
+T81.43XA,
+T81.43XD,
+T81.43XS,
+T81.49XA,
+T81.49XD,
+T81.49XS,
+T85.79XA,
+T857.9XD,
+T857.9XS
+Z30.2, Z30.46 Yes ‹‹Female,
+Complication››
+Reflex from positive
+87081 when
+clinically indicated
+for management of
+implant
+insertion/removal
+site infection,
+operative site or PID
+(within 30 days
+postoperative).
+87184
+Susceptibility studies,
+antimicrobial agent;
+disc method, per
+plate (12 or fewer
+agents)
+T81.40XA,
+T81.40XD,
+T81.40XS,
+T81.41XA,
+T81.41XD,
+T81.41XS,
+T81.42XA,
+T81.42XD,
+T81.42XS,
+T81.43XA,
+T81.43XD,
+T81.43XS,
+T81.49XA,
+T81.49XD,
+T81.49XS
+Z30.2 Yes ‹‹Male,
+Complication››
+Reflex from positive
+87081 when
+clinically indicated
+for management of
+surgical site
+infection (less than
+30 days
+postoperative).
+[[page 29]]
+lab
+29
+Family PACT – Laboratory Services
+Page updated: October 2022
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+87186
+Susceptibility studies,
+antimicrobial agent;
+microdilution or agar
+dilution (minimum
+inhibitory
+concentration (MIC)
+or breakpoint), each
+multi-antimicrobial,
+per plate
+T81.40XA,
+T81.40XD,
+T81.40XS,
+T81.41XA,
+T81.41XD,
+T81.41XS,
+T81.42XA,
+T81.42XD,
+T81.42XS,
+T81.43XA,
+T81.43XD,
+T81.43XS,
+T81.49XA,
+T81.49XD,
+T81.49XS,
+T85.79XA,
+T857.9XD,
+T857.9XS
+Z30.2, Z30.46 Yes ‹‹Female,
+Complication››
+Reflex from positive
+87081 when
+clinically indicated
+for management of
+implant
+insertion/removal or
+surgical site
+infection.
+87186
+Susceptibility studies,
+antimicrobial agent;
+microdilution or agar
+dilution (minimum
+inhibitory
+concentration (MIC)
+or breakpoint), each
+multi-antimicrobial,
+per plate
+T81.40XA,
+T81.40XD,
+T81.40XS,
+T81.41XA,
+T81.41XD,
+T81.41XS,
+T81.42XA,
+T81.42XD,
+T81.42XS,
+T81.43XA,
+T81.43XD,
+T81.43XS,
+T81.49XA,
+T81.49XD,
+T81.49XS
+Z30.2 Yes ‹‹Male,
+Complication››
+Reflex from positive
+87081 when
+clinically indicated
+for management of
+surgical site
+infection (less than
+30 days
+postoperative).
+[[page 30]]
+lab
+30
+Family PACT – Laboratory Services
+Page updated: February 2023
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+87205
+Smear, primary
+source with
+interpretation;
+Gram or Giemsa
+stain for bacteria,
+fungi, or cell types
+Z30.018, Z30.02,
+Z30.49, Z98.52
+‹‹A54.01,
+A54.22, A54.5,
+A54.6, A56.01,
+A56.3, N34.1,
+N34.2, N45.1,
+N45.3,
+N50.811,
+N50.812,
+N50.819››
+No Male
+‹‹CT, GC, NGU and
+Epididymitis,
+symptomatic››
+[[page 31]]
+lab
+31
+Family PACT – Laboratory Services
+Page updated: December 2025
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+87210
+Smear, primary
+source with
+interpretation;
+wet mount for
+infectious agents (eg,
+saline, India ink,
+KOH preps)
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+A54.01,
+A54.22, A54.5,
+A54.6, A56.01,
+A56.3, B37.31,
+B37.32, N34.1,
+N34.2, N34.3,
+N45.3, N76.0
+No Female
+87210
+Smear, primary
+source with
+interpretation;
+wet mount for
+infectious agents
+(e.g., saline, India
+ink, KOH preps)
+Z30.018, Z30.02,
+Z30.49, Z98.52
+A59.03, N34.1,
+N34.2, N34.3,
+Z20.2
+No Male
+[[page 32]]
+lab
+32
+Family PACT – Laboratory Services
+Page updated: December 2021
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+87255
+Smear, primary
+source with
+interpretation;
+including
+identification by
+non-immunologic
+method, other than
+by cytopathic effect
+(eg, virus specific
+enzymatic activity)
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+N76.6 No Female
+Only as necessary
+to evaluate genital
+ulcers of
+unconfirmed
+etiology. Reflex
+typing is not
+covered; limited to
+Herpes
+87255
+Smear, primary
+source with
+interpretation;
+including
+identification by
+non-immunologic
+method, other than
+by cytopathic effect
+(eg, virus specific
+enzymatic activity)
+Z30.018, Z30.02,
+Z30.49, Z98.52
+N48.5 No Male
+Only as necessary
+to evaluate genital
+ulcers of
+unconfirmed
+etiology. Reflex
+typing is not
+covered; limited to
+Herpes
+[[page 33]]
+lab
+33
+Family PACT – Laboratory Services
+Page updated: December 2025
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+87389
+HIV-1 antigen(s),
+with HIV-2 and HIV-2
+antibodies, single
+result
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+Not applicable No Female
+87389
+HIV-1 antigen(s),
+with HIV-2 and HIV-2
+antibodies, single
+result
+Z30.018, Z30.02,
+Z30.49, Z98.52
+Not applicable No Male
+‹‹87491§››
+Chlamydia
+trachomatis,
+amplified probe
+technique
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+Screening:
+Z11.3, Z11.8,
+Z20.2, Z22.4,
+Z72.51 thru
+Z72.53, Z86.19
+No Female
+Less than 25 years:
+Routine annual
+screening, any
+provider. No
+additional
+ICD-10-CM code
+required
+Less than 25 years:
+Screening more
+than 1x per year,
+same provider,
+additional
+ICD-10-CM code
+required
+Greater than or
+equal to 25 years:
+Additional
+ICD-10-CM code
+required
+[[page 34]]
+lab
+34
+Family PACT – Laboratory Services
+Page updated: December 2025
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+‹‹87491§››
+Chlamydia
+trachomatis,
+amplified probe
+technique
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+Diagnostic:
+A56.01,
+A56.09, A56.3,
+A56.4, N34.1,
+N34.2, N34.3,
+N70.03,
+N70.93, N72,
+N89.8, N94.10
+thru N94.12,
+N94.19,
+N94.89, R30.0,
+R30.9
+Not
+appli
+cable
+Female
+Any age: Additional
+ICD-10-CM code
+required
+‹‹87491§››
+Chlamydia
+trachomatis,
+amplified probe
+technique
+Z30.018, Z30.02,
+Z30.49, Z98.52
+Screening:
+Z11.3, Z11.8,
+Z20.2, Z22.4,
+Z72.51 thru
+Z72.53, Z86.19
+Diagnostic:
+A56.01, A56.3,
+A56.4, N34.1,
+N34.2, N34.3,
+N45.1, N45.3,
+R30.0, R30.9,
+N50.811,
+N50.812,
+N50.819
+No Male
+Any age:
+Additional
+ICD-10-CM code
+required
+[[page 35]]
+lab
+35
+Family PACT – Laboratory Services
+Page updated: April 2025
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+87529
+Infectious agent
+detection by nucleic
+acid (DNA or RNA);
+Herpes simplex virus,
+amplified probe
+technique
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+N76.6 No Female
+‹‹Only as necessary
+to evaluate genital
+ulcers of
+unconfirmed
+etiology. Limited to
+Herpes››
+87529
+Infectious agent
+detection by nucleic
+acid (DNA or RNA);
+Herpes simplex virus,
+amplified probe
+technique
+Z30.018, Z30.02,
+Z30.49, Z98.52
+N48.5 No Male
+‹‹Only as necessary
+to evaluate genital
+ulcers of
+unconfirmed
+etiology. Limited to
+Herpes››
+87535
+Infectious agent
+detection by nucleic
+acid [DNA or RNA];
+HIV-1, amplified
+probe technique,
+includes reverse
+transcription when
+performed
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42,
+Z30.430 thru
+Z30.433, Z30.44
+thru Z30.46,
+Z30.49, Z98.51
+Not applicable No Female
+Only when
+HIV-1/HIV-2
+differentiation assay
+results are negative
+or indeterminate
+[[page 36]]
+lab
+36
+Family PACT – Laboratory Services
+Page updated: December 2025
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+87535
+Infectious agent
+detection by nucleic
+acid [DNA or RNA];
+HIV-1, amplified
+probe technique,
+includes reverse
+transcription when
+performed
+Z30.018, Z30.02,
+Z30.49, Z98.52
+Not applicable No Male
+Only when
+HIV-1/HIV-2
+differentiation assay
+results are negative
+or indeterminate
+‹‹87563§››
+Infectious agent
+detection by nucleic
+acid (DNA or RNA);
+Mycoplasma
+genitalium, amplified
+probe technique
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+N34.1, N34.2,
+N34.3, N70.03,
+N70.93, N72
+No Female
+This test is intended
+for use as a
+diagnostic test for
+recurrent urethritis,
+cervicitis, and in
+some cases of PID.
+It is not a covered
+benefit when used
+and billed as a
+screening test in
+asymptomatic
+persons
+‹‹87563§››
+Infectious agent
+detection by nucleic
+acid (DNA or RNA);
+Mycoplasma
+genitalium, amplified
+probe technique
+Z30.018, Z30.02,
+Z30.49, Z98.52
+N34.1, N34.2,
+N34.3, N45.1,
+N45.3, N50.811,
+N50.812,
+N50.819
+No Male
+This test is intended
+for use as a
+diagnostic test for
+recurrent urethritis
+and cervicitis, and
+epididymitis. It is not
+a covered benefit
+when used and
+billed as a
+screening test in
+asymptomatic
+persons
+[[page 37]]
+lab
+37
+Family PACT – Laboratory Services
+Page updated: December 2025
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+‹‹87591§››
+Neisseria
+gonorrhoeae,
+amplified probe
+technique
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+Screening:
+Z11.3, Z11.8,
+Z20.2, Z22.4,
+Z72.51 thru
+Z72.53, Z86.19
+No Female
+Less than 25 years:
+Routine annual
+screening, any
+provider. No
+additional
+ICD-10-CM code
+required
+Less than 25 years:
+Screening more
+than 1x per year,
+same provider,
+additional
+ICD-10-CM code
+required
+Greater than or
+equal to 25 years:
+Additional
+ICD-10-CM code
+required
+‹‹87591§››
+Neisseria
+gonorrhoeae,
+amplified probe
+technique
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+Diagnostic:
+A54.01,
+A54.03, A54.5,
+A54.6, N34.1,
+N34.2, N34.3,
+N70.03,
+N70.93, N72,
+N89.8,
+N94.10 thru
+N94.12,
+N94.19,
+N94.89, R30.0,
+R30.9
+Not
+appli
+cable
+Female
+Any age: Additional
+ICD-10-CM code
+required
+[[page 38]]
+lab
+38
+Family PACT – Laboratory Services
+Page updated: January 2026
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+87591§
+Neisseria
+gonorrhoeae,
+amplified probe
+technique
+Z30.018, Z30.02,
+Z30.49, Z98.52
+Screening:
+Z11.3, Z11.8,
+Z20.2, Z22.4,
+Z72.51 thru
+Z72.53, Z86.19
+Diagnostic:
+A54.01,
+A54.22, A54.5,
+A54.6, N34.1,
+N34.2, N34.3,
+N45.1, N45.3,
+R30.0, R30.9,
+N50.811,
+N50.812,
+N50.819
+No Male
+Any age:
+Additional
+ICD-10-CM code
+required
+87624
+Human
+papillomavirus
+(HPV), high-risk
+types (e.g., 16, 18,
+31, 33, 35, 39, 45,
+51, 52, 56, 58, 59,
+68)
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+Not applicable No Females
+30 thru 65 years of
+age, for HPV-based
+cervical cancer
+screening, once
+every five years,
+any provider. See
+the Benefits: Family
+Planning-Related
+Services section in
+this manual.
+[[page 39]]
+lab
+39
+Family PACT – Laboratory Services
+Page updated: January 2026
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+87624
+Human
+papillomavirus
+(HPV), high-risk
+types (e.g., 16, 18,
+31, 33, 35, 39, 45,
+51, 52, 56, 58, 59,
+68)
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+D06.0, D06.1,
+D06.9, N87.0,
+N87.1, R87.610
+thru R87.613,
+R87.615,
+R87.616,
+R87.619,
+R87.810,
+Z01.42,
+Z87.410
+No Females
+21 thru 65 years of
+age, once per 365
+days, any provider.
+See the Benefits:
+Family Planning-
+Related Services
+section in this
+manual.
+87625
+Human
+papillomavirus
+(HPV), types 16 and
+18 only, includes
+type 45, if performed
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+R87.810 No Females
+30 thru 65 years of
+age, for
+management of
+positive hrHPV
+result. See the
+Benefits: Family
+Planning-Related
+Services section in
+this manual.
+‹‹87626
+Detection test by
+nucleic acid for
+Human
+Papillomavirus
+(HPV), separately
+reported high-risk
+types
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+Not applicable No Females
+30 thru 65 years of
+age, for HPV-based
+cervical cancer
+screening, once
+every five years,
+any provider. See
+the Benefits: Family
+Planning-Related
+Services section in
+this manual.››
+[[page 40]]
+lab
+40
+Family PACT – Laboratory Services
+Page updated: January 2026
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+‹‹87626
+Detection test by
+nucleic acid for
+Human
+Papillomavirus
+(HPV), separately
+reported high-risk
+types
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+D06.0, D06.1,
+D06.9, N87.0,
+N87.1,
+R87.610 thru
+R87.613,
+R87.615,
+R87.616,
+R87.619,
+R87.810,
+Z01.42,
+Z87.410
+No Females
+21 thru 65 years of
+age, once per 365
+days, any provider.
+See the Benefits:
+Family Planning-
+Related Services
+section in this
+manual.››
+87661
+Infectious agent
+detection by nucleic
+acid (DNA or RNA);
+trichomonas
+vaginalis, amplified
+probe technique
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+Diagnostic:
+A59.01,
+A59.03, N34.1,
+N34.2, N34.3,
+N76.0, Z20.2
+Screening:
+Z11.6, Z20.2,
+Z22.4, Z72.51
+thru Z72.53,
+Z86.19
+No Female
+For screening
+guidelines, see the
+Benefits: Family
+Planning section in
+this manual.
+87661
+Infectious agent
+detection by nucleic
+acid (DNA or RNA);
+trichomonas
+vaginalis, amplified
+probe technique
+Z30.018, Z30.02,
+Z30.49, Z98.52
+Diagnostic:
+N34.1, N34.2,
+N34.3
+No Male
+For the evaluation
+of persistent or
+recurrent NGU
+[[page 41]]
+lab
+41
+Family PACT – Laboratory Services
+Page updated: December 2025
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+‹‹87806§››
+Infectious agent
+antigen detection by
+immunoassay with
+direct optical
+observation; HIV-1
+antigen(s), with
+HIV-1 and HIV-2
+antibodies
+Z30.011, Z30.013,
+Z30.015 thru
+Z30.018, Z30.02,
+Z30.41, Z30.42,
+Z30.430 thru
+Z30.433, Z30.44
+thru Z30.46,
+Z30.49, Z98.51
+Not applicable No Female
+‹‹87806§››
+Infectious agent
+antigen detection by
+immunoassay with
+direct optical
+observation; HIV-1
+antigen(s), with
+HIV-1 and HIV-2
+antibodies
+Z30.02, Z30.018,
+Z98.52
+Not applicable No Male
+‹‹87808§››
+Infectious agent
+antigen detection by
+immunoassay with
+direct optical
+observation;
+trichomonas vaginalis
+Z30.011, Z30.013,
+Z30.015 thru
+Z30.018, Z30.02
+Z30.41, Z30.42,
+Z30.430 thru
+Z30.433, Z30.44
+thru Z30.46,
+Z30.49, Z98.51
+Diagnostic:
+A59.01,
+A59.03, N34.1,
+N34.2, N34.3,
+N76.0, Z20.2
+Screening:
+Z11.6, Z20.2,
+Z22.4, Z72.51
+thru Z72.53,
+Z86.19
+No Female
+For screening
+guidelines, see the
+Benefits: Family
+Planning section in
+this manual.
+[[page 42]]
+lab
+42
+Family PACT – Laboratory Services
+Page updated: December 2025
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+‹‹87808§››
+Infectious agent
+antigen detection by
+immunoassay with
+direct optical
+observation;
+trichomonas
+vaginalis
+Z30.018, Z30.02,
+Z30.49, Z98.52
+Diagnostic:
+N34.1, N34.2,
+N34.3
+No Male
+For the evaluation
+of persistent or
+recurrent NGU
+88141
+Cytopathology,
+cervical or vaginal
+(any reporting
+system), requiring
+interpretation by
+physician
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+R87.610 thru
+R87.619,
+R87.810
+No Female
+88142
+Cytopathology,
+cervical or vaginal
+(any reporting
+system), collected in
+preservative fluid,
+automated thin layer
+preparation; manual
+screening under
+physician supervision
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+Not applicable No Female
+Restricted to
+women ages 21
+through 65
+regardless of sexual
+history *
+[[page 43]]
+lab
+43
+Family PACT – Laboratory Services
+Page updated: October 2023
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+88143
+Cytopathology,
+cervical or vaginal
+(any reporting
+system), collected in
+preservative fluid,
+automated thin layer
+preparation; with
+manual screening
+and rescreening
+under physician
+supervision
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+Not applicable No Female
+Restricted to
+women ages 21
+through 65
+regardless of sexual
+history *
+88147
+Cytopathology
+smears, cervical or
+vaginal; screening by
+automated system
+under physician
+supervision
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+Not applicable No Female
+Restricted to
+women ages 21
+through 65
+regardless of sexual
+history *
+88148
+Cytopathology
+smears, cervical or
+vaginal;
+screening by
+automated system
+with manual
+rescreening under
+physician supervision
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+Not applicable No Female
+Restricted to
+women ages 21
+through 65
+regardless of sexual
+history *
+[[page 44]]
+lab
+44
+Family PACT – Laboratory Services
+Page updated: October 2023
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+88164
+Cytopathology,
+slides, cervical or
+vaginal (the
+Bethesda System);
+manual screening
+under physician
+supervision
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+Not applicable No Female
+Restricted to
+women ages 21
+through 65
+regardless of sexual
+history *
+88165
+Cytopathology,
+slides, cervical or
+vaginal (the
+Bethesda System);
+with manual
+screening and
+rescreening under
+physician supervision
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+Not applicable No Female
+Restricted to
+women ages 21
+through 65
+regardless of sexual
+history *
+88167
+Cytopathology,
+slides, cervical or
+vaginal (the
+Bethesda System);
+with manual
+screening and
+computer-assisted
+rescreening using
+cell selection and
+review under
+physician supervision
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+Not applicable No Female
+Restricted to
+women ages 21
+through 65
+regardless of sexual
+history *
+[[page 45]]
+lab
+45
+Family PACT – Laboratory Services
+Page updated: December 2022
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+88174
+Cytopathology,
+cervical or vaginal
+(any reporting
+system), collected in
+preservative fluid,
+automated thin layer
+preparation;
+screening by
+automated system,
+under physician
+supervision
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+Not applicable No Female
+Restricted to
+women ages 21
+through 65
+regardless of sexual
+history *
+88175
+Cytopathology,
+cervical or vaginal
+(any reporting
+system), collected in
+preservative fluid,
+automated thin layer
+preparation;
+with screening by
+automated system
+and manual
+rescreening or
+review, under
+physician supervision
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+Not applicable No Female
+Restricted to
+women ages 21
+through 65
+regardless of sexual
+history *
+[[page 46]]
+lab
+46
+Family PACT – Laboratory Services
+Page updated: December 2022
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+88300
+Level I – Surgical
+pathology, gross
+examination only
+Z30.46 T85.628A
+T85.628D
+T85.628S
+Yes Female,
+Complication
+When clinically
+indicated for
+procedures with
+collection of
+specimen for
+complication due to
+displacement of
+contraceptive
+implant
+88302
+Level II - Surgical
+pathology, gross and
+microscopic
+examination
+Z30.2, Z98.51 Not applicable No Female
+Two specimens only
+88302
+Level II - Surgical
+pathology, gross and
+microscopic
+examination
+Z30.2, Z98.52 Not applicable No Female
+Two specimens only
+[[page 47]]
+lab
+47
+Family PACT – Laboratory Services
+Page updated: December 2022
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+88305
+Level IV - Surgical
+pathology, gross and
+microscopic
+examination
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+D06.9, N87.0,
+N87.1, N88.0,
+R87.610 thru
+R87.613,
+R87.616,
+R87.618,
+R87.619,
+R87.810
+No Female
+Specify on the
+UB-04 claim in the
+Remarks field
+(Box 80) the CPT
+procedure(s) used
+to obtain specimen
+for cervical biopsy
+only, limited to the
+following:
+colposcopy with
+biopsy (57454,
+57455 and 57456);
+LEEP (57460 and
+57461); and
+endometrial biopsy
+(58100 and 58110).
+88305
+Level IV - Surgical
+pathology, gross and
+microscopic
+examination
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+A63.0, B07.9,
+B08.1
+No Female
+When clinically
+indicated to confirm
+genital warts in a
+wart treatment
+candidate, the CPT
+procedure is not
+required.
+88305
+Level IV - Surgical
+pathology, gross and
+microscopic
+examination
+Z30.018, Z30.02,
+Z30.49, Z98.52
+A63.0, B07.9,
+B08.1
+No Male
+When clinically
+indicated to confirm
+genital warts in a
+wart treatment
+candidate, the CPT
+procedure is not
+required.
+[[page 48]]
+lab
+48
+Family PACT – Laboratory Services
+Page updated: December 2022
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+88305
+Level IV - Surgical
+pathology, gross and
+microscopic
+examination
+N92.0 Z30.42, Z30.46 Yes Female,
+Complication
+When clinically
+indicated for
+management of
+heavy vaginal
+bleeding due to
+depot
+medroxyprogestero
+ne acetate (DMPA)
+or contraceptive
+implant
+88305
+Level IV - Surgical
+pathology, gross and
+microscopic
+examination
+K91.72, N99.61,
+N99.71, N99.820,
+N99.840
+Z30.2 Yes Female,
+Complication
+When clinically
+indicated for
+procedures with
+collection of
+specimens for:
+injury to other
+intra-abdominal
+organs
+88305
+Level IV - Surgical
+pathology, gross and
+microscopic
+examination
+T83.39XA,
+T83.39XD,
+T83.39XS
+Not applicable Yes Female,
+Complication
+When clinically
+indicated for
+procedures with
+collection of
+specimens for:
+mechanical
+complication due to
+intrauterine device
+(IUD)/intrauterine
+system (IUS)
+[[page 49]]
+lab
+49
+Family PACT – Laboratory Services
+Page updated: December 2022
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+88305
+Level IV - Surgical
+pathology, gross and
+microscopic
+examination
+T81.40XA,
+T81.40XD,
+T81.40XS,
+T81.41XA,
+T81.41XD,
+T81.41XS,
+T81.42XA,
+T81.42XD,
+T81.42XS,
+T81.43XA,
+T81.43XD,
+T81.43XS,
+T81.49XA,
+T81.49XD,
+T81.49XS
+Z30.2 Yes Female,
+Complication
+When clinically
+indicated for
+procedures with
+collection of
+specimens for:
+other postoperative
+infection
+88307
+Level V - Surgical
+pathology, gross and
+microscopic
+examination
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+D06.9, N87.0,
+N87.1
+No Female
+Specify on the
+UB-04 claim in
+Remarks field
+(Box 80) that biopsy
+specimens collected
+by LEEP procedure
+(CPT code 57460 or
+57461).
+[[page 50]]
+lab
+50
+Family PACT – Laboratory Services
+Page updated: December 2022
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+88342
+Immunohistochemistry
+or
+immunocytochemistry,
+per specimen; initial
+single antibody stain
+procedure
+Z30.011,
+Z30.013,
+Z30.015 thru
+Z30.018
+Z30.02, Z30.41,
+Z30.42,
+Z30.430 thru
+Z30.433,
+Z30.44 thru
+Z30.46,
+Z30.49, Z98.51
+D06.0, D06.1,
+D06.9, N87.0,
+N87.1,
+R87.611,
+R87.613,
+R87.619
+No Female
+Restricted to ages
+equal to or greater
+than 15, when
+clinically indicated.
+CPT code 88342 is covered for women ages ≥15 years, based on The Lower Anogenital
+Squamous Terminology (LAST) Standardization Project for HPV- Associated Lesions:
+Background and Consensus Recommendations from the College of American Pathologists
+and the American Society for Colposcopy and Cervical Pathology 2012, under the following
+circumstances:
+• To aid in differential diagnosis between CIN 2 and CIN 3 and a mimic of precancer
+(e.g. immature metaplasia, reparative epithelial changes, atrophy or tangential cutting)
+• Anytime a morphologic CIN 2 diagnosis is considered
+• As an adjudication tool for cases with professional disagreement
+• As an adjunct to morphologic assessment for biopsy specimens interpreted as ≤ CIN 1
+that are high risk for missed high-grade disease.
+[[page 51]]
+lab
+51
+Family PACT – Laboratory Services
+Page updated: December 2025
+Legend
+Symbols used in the document above are explained in the following table.
+Symbol Description
+‹‹ This is a change mark symbol. It is used to indicate where on the page the
+most recent change begins.
+›› This is a change mark symbol. It is used to indicate where on the page the
+most recent change ends.
+* Reimbursement may be made for services provided to women younger than
+21 years or over the age of 65 who have a medical necessity for family
+planning services. However, the ordering provider must document on the
+laboratory order, and the laboratory provider must document in the Remarks
+field (Box 80)/Additional Claim Information field (Box 19) of the claim (or
+attached to the claim) that the woman meets one or more of the following:
+• Received a diagnosis of a high-grade precancerous cervical lesion
+(cervical intraepithelial neoplasia [CIN] 2, CIN 3, or adenocarcinoma in
+situ [AIS]) within the past 25 years and requires screening after the
+initial post-treatment surveillance per the 2019 ASCCP Guidelines or
+any prior diagnosis of cervical cancer.
+• In utero exposure to diethylstilbestrol (DES).
+• Immunocompromised status (such as HIV positive or immune
+suppressed such as a transplant patient using steroids).
+• Requires repeat cervical cytology to reevaluate prior atypical squamous
+cells of undetermined significance (ASC-US), low-grade squamous
+intraepithelial lesion (LSIL), or CIN 1 test result.
+• Over the age of 65 who did not have adequate negative prior screening.
+Adequate negative prior screening is defined as three consecutive
+negative cytology results or two consecutive negative co-tests within the
+10 years before cessation of screening, with the most recent test
+occurring within the past five years.
+‹‹∞ Provider-Performed Microscopy Procedure››
+‹‹§ Includes CLIA-waived tests. Refer to the Pathology: Billing and Modifiers
+section of the Part 2 manual for information on billing, including the use of QW
+modifier for CLIA waived tests.››

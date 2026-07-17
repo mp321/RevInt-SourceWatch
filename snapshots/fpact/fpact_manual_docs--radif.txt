@@ -1,0 +1,40 @@
+[[page 1]]
+radi
+1
+Family PACT – Radiology Services
+Radiology Services
+Page updated: August 2020
+Radiology services are covered by the Family PACT (Planning, Access, Care and
+Treatment) Program when the services are ordered during a family planning visit and are
+medically appropriate for preoperative evaluation, method surveillance and complication
+management. For a list of covered radiology services and restrictions that may apply, refer
+to the Benefits: Family Planning and Benefits: Family Planning-Related Services sections
+in this manual.
+Referral Required
+Providers may bill for radiology procedures if the procedures are ordered by a Family PACT
+provider, a Medi-Cal provider or their associated practitioners.
+ICD-10-CM Code Required on Claims
+Claims for radiology services must include an ICD-10-CM code for family planning services.
+A second diagnosis code is required when billing for a complication of a covered family
+planning method and follow-up testing for hysteroscopic sterilization. For additional
+information, refer to the Benefits: Family Planning section in this manual. Ordering
+clinicians are instructed to include applicable ICD-10-CM codes on the radiology requisition
+form. Radiologists should contact the referring clinician if this information is missing.
+Claim Form Completion
+Family PACT is a state program, separate from Medi-Cal; however, Family PACT providers
+submit claims using the Medi-Cal claims processing system. The same claim types used to
+submit Medi-Cal claims, such as the CMS-1500, UB-04 or electronic transactions are used
+to bill Family PACT claims. For more information, refer to the Claim Completion: CMS-1500
+or Claim Completion: UB-04 sections in this manual.
+[[page 2]]
+radi
+2
+Family PACT – Radiology Services
+Page updated: August 2020
+‹‹Legend››
+‹‹Symbols used in the document above are explained in the following table.››
+Symbol Description
+‹‹ This is a change mark symbol. It is used to indicate where on the page the
+most recent change begins.
+›› This is a change mark symbol. It is used to indicate where on the page the
+most recent change ends.

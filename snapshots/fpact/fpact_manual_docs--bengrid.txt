@@ -1,0 +1,2568 @@
+[[page 1]]
+ben grid
+1
+Family PACT – Benefits Grid
+Benefits Grid
+Page updated: August 2020
+This Benefits Grid section includes the codes for procedures, medications and contraceptive supplies that are reimbursable
+under the Family Planning, Access, Care and Treatment (Family PACT) Program. For codes for the management of
+complications (1) that may arise from the use of a contraceptive method, refer to the Benefits: Family Planning section in this
+manual.
+Family Planning Services
+ICD-10-CM Codes
+and Description
+Procedures Laboratory ¿ Supplies Medications
+Z30.012 (Encounter
+for prescription of
+emergency
+contraception)
+‹‹None›› 81025: Urine
+pregnancy test
+‹‹None›› J3490U5: Ulipristal acetate
+(emergency contraceptive pill
+[ECP])
+J3490U6: Levonorgestrel
+(ECP)
+Z30.09 (Encounter
+for general
+counseling and
+advice on
+contraception) (33)
+‹‹None›› 81025: Urine
+pregnancy test (32)
+‹‹None›› ‹‹None››
+[[page 2]]
+ben grid
+2
+Family PACT – Benefits Grid
+Page updated: October 2021
+Family Planning Services (continued)
+ICD-10-CM Codes
+and Description
+Procedures Laboratory ¿ Supplies Medications
+Z30.011 (Initial
+prescription,
+contraceptive pills)
+Z30.41 (Surveillance,
+contraceptive pills)
+99000: Handling
+and/or conveyance
+of blood specimen
+to unaffiliated lab
+81025: Urine
+pregnancy test
+A4267: Male
+condom
+A4268: Internal
+condom
+Spermicides:
+• A4269U1: Gel,
+jelly, cream, or
+foam
+• A4269U2:
+Suppository
+• A4269U3:
+Vaginal film
+• A4269U4:
+Sponge
+‹‹A4269U5: Vaginal
+gel››
+S5199: Lubricant
+S4993: Oral Contraceptives
+S5000/S5001: Estradiol
+(requires additional
+ICD-10-CM code N92.1)
+J3490U5: Ulipristal acetate
+(ECP)
+J3490U6: Levonorgestrel
+(ECP)
+[[page 3]]
+ben grid
+3
+Family PACT – Benefits Grid
+Page updated: October 2021
+Family Planning Services (continued)
+ICD-10-CM Codes
+and Description
+Procedures Laboratory ¿ Supplies Medications
+Z30.015 (Initial
+prescription, vaginal
+ring)
+Z30.44 (Surveillance,
+vaginal ring)
+Z30.016 (Initial
+prescription,
+transdermal patch)
+Z30.45 (Surveillance,
+transdermal patch)
+99000: Handling
+and/or conveyance
+of blood specimen
+to unaffiliated lab
+81025: Urine
+pregnancy test
+A4267: Male
+condom
+A4268: Internal
+condom
+Spermicides:
+• A4269U1: Gel,
+jelly, cream, or
+foam
+• A4269U2:
+Suppository
+• A4269U3:
+Vaginal film
+• A4269U4:
+Sponge
+‹‹A4269U5: Vaginal
+gel››
+S5199: Lubricant
+J7294: Segesterone acetate
+and ethinyl
+estradiol 0.15 mg,
+0.013 mg per 24 hours;
+yearly vaginal system,
+each
+J7295: Ethinyl estradiol
+and etonogestrel
+0.015 mg, 0.12 mg per 24
+hours; monthly vaginal
+ring, each
+‹‹J7304U1: Norelgestromin
+and ethinyl estradiol (hormone
+containing transdermal patch)
+J7304U2: Levonorgestrel and
+ethinyl estradiol (hormone
+containing transdermal
+patch)››
+(continued on next page)
+[[page 4]]
+ben grid
+4
+Family PACT – Benefits Grid
+Page updated: October 2021
+Family Planning Services (continued)
+ICD-10-CM Codes
+and Description
+Procedures Laboratory ¿ Supplies Medications
+Z30.015 (Initial
+prescription, vaginal
+ring)
+Z30.44 (Surveillance,
+vaginal ring)
+Z30.016 (Initial
+prescription,
+transdermal patch)
+Z30.45 (Surveillance,
+transdermal patch)
+99000: Handling
+and/or conveyance
+of blood specimen
+to unaffiliated lab
+81025: Urine
+pregnancy test
+A4267: Male
+condom
+A4268: Internal
+condom
+Spermicides:
+• A4269U1: Gel,
+jelly, cream, or
+foam
+• A4269U2:
+Suppository
+• A4269U3:
+Vaginal film
+• A4269U4:
+Sponge
+‹‹A4269U5: Vaginal
+gel››
+S5199: Lubricant
+J3490U5: Ulipristal
+acetate (ECP)
+J3490U6: Levonorgestrel
+(ECP)
+S5000/S5001: Estradiol
+(requires additional
+ICD-10-CM code N92.1)
+[[page 5]]
+ben grid
+5
+Family PACT – Benefits Grid
+Page updated: September 2025
+Family Planning Services (continued)
+ICD-10-CM Codes
+and Description
+Procedures Laboratory ¿ Supplies Medications
+Z30.013 (Initial
+prescription,
+injectable
+contraceptive)
+Z30.42 (Surveillance,
+injectable
+contraceptive)
+99000: Handling
+and/or conveyance
+of blood specimen
+to unaffiliated lab
+81025: Urine
+pregnancy test
+A4267: Male
+condom
+A4268: Internal
+condom
+Spermicides:
+• A4269U1: Gel,
+jelly, cream, or
+foam
+• A4269U2:
+Suppository
+• A4269U3:
+Vaginal film
+• A4269U4:
+Sponge
+A4269U5: Vaginal
+gel
+S5199: Lubricant
+‹‹J3490
+Medroxyprogesterone acetate
+104 mg, SQ››
+J3490U5: Ulipristal acetate
+(ECP)
+J3490U6: Levonorgestrel
+(ECP)
+‹‹J3490U8:
+Medroxyprogesterone acetate
+150 mg IM, for contraception››
+S5000/S5001: Estradiol
+(requires additional
+ICD-10-CM code N92.1)
+[[page 6]]
+ben grid
+6
+Family PACT – Benefits Grid
+Page updated: October 2021
+Family Planning Services (continued)
+ICD-10-CM Codes Procedures Laboratory ¿ Supplies Medications
+Z30.017 (Initial
+prescription,
+subdermal implant)
+Z30.46 (Surveillance,
+subdermal implant)
+11976: Removal
+11981: Insertion
+99000: Handling
+and/or conveyance
+of blood specimen
+to unaffiliated lab
+73060: X-ray
+humerus (34)
+76882: Ultrasound,
+limited, joint or other
+nonvascular
+extremity
+structure(s) (34)
+81025: Urine
+pregnancy test
+11976UA: Removal
+A4267: Male
+condom
+A4268: Internal
+condom
+Spermicides:
+• A4269U1: Gel,
+jelly, cream, or
+foam
+• A4269U2:
+Suppository
+• A4269U3:
+Vaginal film
+• A4269U4:
+Sponge
+‹‹A4269U5: Vaginal
+gel››
+S5199: Lubricant
+J7307:
+Etonogestrel implant
+S5000/S5001: Estradiol
+(requires ICD-10-CM code
+N92.1)
+J3490U5: Ulipristal acetate
+(ECP)
+J3490U6: Levonorgestrel
+(ECP)
+[[page 7]]
+ben grid
+7
+Family PACT – Benefits Grid
+Page updated: March 2026
+Family Planning Services (continued)
+ICD-10-CM Codes Procedures Laboratory ¿ Supplies Medications
+Z30.430 (Insertion,
+intrauterine
+contraceptive device)
+Z30.431 (Routine
+checking, intrauterine
+contraceptive device)
+Z30.432 (Removal of
+intrauterine
+contraceptive device)
+Z30.433 (Removal
+and reinsertion of
+intrauterine
+contraceptive device)
+58300: Insertion
+58301: Removal
+74018: X-ray
+abdomen, 1 view
+(6)
+76830: Transvag
+US (6)
+76857: US pelvic
+limited or follow-up
+(6)
+99000: Handling
+and/or conveyance
+of blood specimen
+to unaffiliated lab
+81025: Urine
+pregnancy test
+85013, 85014:
+Hematocrit (Hct)
+85018: Hemoglobin
+(Hgb)
+58300UA: Insertion
+58301UA: Removal
+A4267: Male
+condom
+A4268: Internal
+condom
+Spermicides:
+• A4269U1: Gel,
+jelly, cream, or
+foam
+• A4269U2:
+Suppository
+• A4269U3:
+Vaginal film
+• A4269U4:
+Sponge
+A4269U5: Vaginal
+gel
+S5199: Lubricant
+J7296: Levonorgestrel IU
+(Kyleena) 19.5 mg
+J7297: Levonorgestrel IU
+(Liletta), 52 mg
+J7298: Levonorgestrel IU
+(Mirena), 52 mg
+‹‹J7299 Intrauterine copper
+contraceptive (Miudella)››
+‹‹J7300: Intrauterine copper
+contraceptive (Paragard)››
+J7301: Levonorgestrel IU
+(Skyla),13.5 mg
+J3490U5: Ulipristal acetate
+(ECP)
+J3490U6: Levonorgestrel (ECP)
+S5000/S5001: Estradiol
+(requires ICD-10-CM code
+N92.1)
+[[page 8]]
+ben grid
+8
+Family PACT – Benefits Grid
+Page updated: October 2021
+Family Planning Services (continued)
+ICD-10-CM Codes Procedures Laboratory ¿ Supplies Medications
+Z30.018 (Initial
+prescription of other
+contraceptives [male
+or female barrier
+and/or spermicide])
+Z30.49 (Surveillance
+of other
+contraceptives [male
+or female barriers
+and/or spermicide])
+57170: Diaphragm/
+cervical cap fitting
+99000: Handling
+and/or conveyance
+of blood specimen
+to unaffiliated lab
+81025: Urine
+pregnancy test
+A4261: Cervical cap
+A4266: Diaphragm
+A4267: Male
+condom
+A4268: Internal
+condom
+Spermicides:
+• A4269U1: Gel,
+jelly, cream, or
+foam
+• A4269U2:
+Suppository
+• A4269U3:
+Vaginal film
+• A4269U4:
+Sponge
+‹‹A4269U5: Vaginal
+gel››
+S5199: Lubricant
+J3490U5: Ulipristal acetate
+(ECP)
+J3490U6: Levonorgestrel
+(ECP)
+[[page 9]]
+ben grid
+9
+Family PACT – Benefits Grid
+Page updated: October 2021
+Family Planning Services (continued)
+ICD-10-CM Codes Procedures Laboratory ¿ Supplies Medications
+Z30.02 (Counseling
+and instruction in
+natural family
+planning to avoid
+pregnancy)
+None 81025: Urine
+pregnancy test
+BBT (26) J3490U5: Ulipristal acetate
+(ECP)
+J3490U6: Levonorgestrel
+(ECP)
+Z31.61 (Procreative
+counseling and
+advice using natural
+family planning) (34)
+None 81025: Urine
+pregnancy test
+BBT (26) None
+[[page 10]]
+ben grid
+10
+Family PACT – Benefits Grid
+Page updated: October 2021
+Family Planning Services (continued)
+ICD-10-CM Codes Procedures Laboratory ¿ Supplies Medications
+Z30.09 (35)
+(Encounter general
+counseling and
+advice on
+contraception
+[sterilization])
+Z01.812 (28)
+(Encounter for pre-
+procedural lab exam
+[female sterilization])
+99000: Handling
+and/or conveyance
+of blood specimen
+to unaffiliated lab
+81025: Urine
+pregnancy test
+Preoperative tests:
+81000: UA dipstick
+with microscopy
+81001: UA automated
+with microscopy
+81002: UA dipstick
+without microscopy
+81003: UA automated
+without microscopy
+85013: Spun Hct
+85014: Hct
+85018: Hgb
+85025: Auto complete
+blood count (CBC)
+with auto diff. white
+blood count (WBC)
+None None
+[[page 11]]
+ben grid
+11
+Family PACT – Benefits Grid
+Page updated: October 2021
+Family Planning Services (continued)
+ICD-10-CM Codes Procedures Laboratory ¿ Supplies Medications
+Z30.09 (35)
+(Encounter general
+counseling and
+advice on
+contraception
+[sterilization])
+Z01.812 (28)
+(Encounter for
+pre-procedural lab
+exam [female
+sterilization])
+99000: Handling
+and/or conveyance
+of blood specimen
+to unaffiliated lab
+85027: Auto CBC
+without differential
+85002: Bleeding time
+(27)
+85610: Prothrombin
+time (27)
+85730:
+Thromboplastin time
+(27)
+None None
+[[page 12]]
+ben grid
+12
+Family PACT – Benefits Grid
+Page updated: August 2022
+Family Planning Services (continued)
+ICD-10-CM Codes Procedures Laboratory ¿ Supplies Medications
+Z01.818 (Encounter
+for other pre-
+procedural exam
+[female sterilization])
+(28)
+71046: Chest X-
+ray (7)
+93000: ECG (7)
+93307:
+Echocardiography
+(7) (27)
+None None None
+Z30.2 (Encounter for
+sterilization [female])
+58600: Mini lap TL
+58615: Mini lap TL
+with clip
+58661:
+Laparoscopy with
+removal of adnexal
+structures
+(Continued on next
+page)
+88302: Surgical path.
+(two specimens)
+58600UA/UB:
+Mini-Lap TL
+58615UA/UB:
+Mini-Lap with clip
+(Continued on next
+page)
+None
+[[page 13]]
+ben grid
+13
+Family PACT – Benefits Grid
+Page updated: August 2022
+Family Planning Services (continued)
+ICD-10-CM Codes Procedures Laboratory ¿ Supplies Medications
+Z30.2 (Encounter for
+sterilization [female])
+58670:
+Laparoscopic
+fulguration
+58671:
+Laparoscopic
+sterilization with
+ring or clip
+58700:
+Salpingectomy,
+complete or partial
+‹‹58555:
+Hysteroscopy,
+diagnostic››
+88302: Surgical path.
+(two specimens)
+58661UA/UB:
+Laparoscopy with
+removal of adnexal
+structures
+58670UA/UB:
+Laparoscopic
+fulguration
+58700UA/UB:
+Salpingectomy,
+complete or partial
+58671UA/UB:
+Laparoscopic
+sterilization with
+ring or clip
+None
+[[page 14]]
+ben grid
+14
+Family PACT – Benefits Grid
+Page updated: August 2022
+Family Planning Services (continued)
+ICD-10-CM Codes Procedures Laboratory ¿ Supplies Medications
+Z98.51 (Tubal ligation
+status)
+None None A4267: Male
+condom
+A4268: Internal
+condom
+Spermicides:
+• A4269U1: Gel,
+jelly, cream, or
+foam
+• A4269U2:
+Suppository
+• A4269U3:
+Vaginal film
+• A4269U4:
+Sponge
+A4269U5: Vaginal
+gel
+S5199: Lubricant
+J3490U5: Ulipristal acetate
+(ECP)
+J3490U6: Levonorgestrel
+(ECP)
+[[page 15]]
+ben grid
+15
+Family PACT – Benefits Grid
+Page updated: October 2021
+Family Planning Services (continued)
+ICD-10-CM Codes Procedures Laboratory ¿ Supplies Medications
+Z01.812 (Encounter
+for pre-procedural lab
+exam [male
+sterilization]) (28)
+99000: Handling
+and/or conveyance
+of blood specimen
+to unaffiliated lab
+Preoperative tests:
+81000: UA dipstick
+with microscopy
+81001: UA
+automated with
+microscopy
+81002: UA dipstick
+without microscopy
+81003: UA
+automated without
+microscopy
+85013: Spun Hct
+85014: Hct
+85018: Hgb
+85025: Auto CBC
+with auto diff. WBC
+85027: Auto CBC
+without differential
+None None
+[[page 16]]
+ben grid
+16
+Family PACT – Benefits Grid
+Page updated: October 2021
+Family Planning Services (continued)
+ICD-10-CM Codes Procedures Laboratory ¿ Supplies Medications
+Z30.2 (Encounter for
+sterilization [male])
+55250: Vasectomy 88302: Surgical path
+(two specimens)
+55250UA/UB:
+Vasectomy
+None
+Z98.52 (Vasectomy
+status)
+None None A4267: Male
+condom
+A4268: Internal
+condom
+Spermicides:
+• A4269U1: Gel,
+jelly, cream, or
+foam
+• A4269U2:
+Suppository
+• A4269U3:
+Vaginal film
+• A4269U4:
+Sponge
+‹‹A4269U5: Vaginal
+gel››
+S5199: Lubricant
+None
+Post vasectomy semen analysis is included in the global fee for vasectomy.
+[[page 17]]
+ben grid
+17
+Family PACT – Benefits Grid
+Page updated: October 2021
+Reproductive Health Screening Tests
+These services may be provided as clinically indicated. These services are not reimbursable for Z30.012, Z30.09 and Z31.61.
+For more information, refer to the Benefits: Family Planning section in this manual.
+Reproductive Health Screening Tests
+CPT® Codes Reflex Testing (based on a positive screening test
+result)
+Restrictions
+86592 ¥ (VDRL, RPR) 86780 ¥ TP-confirmatory test; if positive, 86593 is
+required
+86593 ¥ Syphilis test,
+non-treponemal antibody; quantitative
+None
+86701 ± (HIV-1 antibody)
+86702 ¥ (HIV-2 antibody)
+86703 ± (HIV-1 and HIV-2
+antibodies, single result)
+87389 ± (HIV-1 antigen[s],
+with HIV-1 and HIV-2
+antibodies, single result)
+87806 ± (HIV-1 antigen[s],
+with HIV-1 and HIV-2
+antibodies)
+86689 ¥ HIV confirmatory test
+(e.g. Western Blot)
+or
+86701 and 86702 differentiation assay
+and
+87535 ± HIV – NAAT
+(if differentiation assay results are negative or
+indeterminate)
+86689 limited to HIV antibody
+[[page 18]]
+ben grid
+18
+Family PACT – Benefits Grid
+Page updated: July 2022
+Reproductive Health Screening Tests (continued)
+CPT Codes Reflex Testing (based on a positive screening test
+result)
+Restrictions
+87491 § (NAAT – Chlamydia)
+87591 § (NAAT – Gonorrhea)
+None Refer to the Chlamydia
+Trachomatis (CT) and
+Neisseria gonorrhoeae (GC)
+screening guidelines
+‹‹87661 (NAAT –
+Trichomonas)
+87808 (T. vaginalis
+immunoassay)
+None Females only
+Refer to the trichomoniasis
+screening guidelines››
+CT and GC screening tests for females 25 years of age and older and males of all ages require an additional ICD-10-CM
+code. Females under 25 years of age may require an additional ICD-10-CM code. For additional information, refer to the
+Benefits: Family Planning section in this manual.
+‹‹Trichomoniasis screening tests require an additional ICD-10-CM code. For additional information, refer to the Benefits:
+Family Planning section in this manual.››
+[[page 19]]
+ben grid
+19
+Family PACT – Benefits Grid
+Page updated: July 2022
+‹‹Family Planning-Related Services: Human Papillomavirus 9-valent Vaccine,
+Recombinant (9vHPV)
+The Centers for Disease Control and Prevention (CDC) Advisory Committee on Immunization Practices (ACIP) recommends
+“catch-up” vaccination for individuals through age 26 who are not fully vaccinated, and vaccination based on shared clinical
+decision-making for individuals 27 to 45 years of age who are not fully vaccinated. Refer to the Benefits: Family
+Planning-Related Services section in this manual for additional information.
+The HPV vaccine is not reimbursable with ICD-10-CM codes Z30.012, Z30.09 or Z31.61.
+CPT Code Description Restrictions
+90651 Human Papillomavirus vaccine types 6, 11, 16, 18, 31,
+33, 45, 52, 58, nonavalent (9vHPV), 2 or 3 dose
+schedule, for intramuscular use
+Limited to females and males
+19 to 45 years of age.
+Reimbursable with vaccine
+immunization administration
+code 90471.››
+[[page 20]]
+ben grid
+20
+Family PACT – Benefits Grid
+Page updated: May 2023
+Family Planning-Related Services: Cervical Cancer Screening
+The following laboratory tests are covered when clinically indicated and provided as part of, or as a follow-up to, a family
+planning visit. These tests must be ordered in conjunction with a family planning visit. These tests are billed with the
+appropriate family planning ICD-10-CM diagnosis code and may require an additional diagnosis code. Providers may refer to
+the Laboratory Services section in this manual.
+Cervical Cytology
+CPT Code Description
+88142 LBC, manual screen
+88143 LBC, manual screen and rescreen
+88147 Smear, automated screen
+88148 Smear, automated screen, manual re-screen
+88164 Smear, Bethesda, manual screen
+88165 Smear, Bethesda, manual screen, re-screen
+88167 Smear, Bethesda, manual screen, computer re-screen
+88174 LBC, automated screen
+88175 LBC, automated screen, manual re-screen
+Additional Information: Refer to the Benefits: Family Planning-Related Services section in this manual for additional
+information and claim requirements.
+[[page 21]]
+ben grid
+21
+Family PACT – Benefits Grid
+Page updated: January 2026
+Human Papillomavirus (HPV) Testing
+CPT Code Description
+87624 HPV. high-risk types
+87625 HPV, 16/18 genotype
+‹‹87626 HPV, separately reported high-risk types››
+Additional Information: Refer to the Benefits: Family Planning-Related Services section in this manual for additional
+information and claim requirements.
+[[page 22]]
+ben grid
+22
+Family PACT – Benefits Grid
+Page updated: May 2023
+Family Planning-Related Services: Management of Sexually Transmitted Infections
+(STIs)
+Treatment or diagnostic testing of specified sexually transmitted infections (STIs) may be provided as clinically indicated. For
+services to manage a complication of family planning-related treatment, refer to the Benefits: Family Planning-Related
+Services section in this manual. (11)
+Family Planning-Related Services (9)
+ICD-10-CM Code and Description Procedures Laboratory Supplies Medications (8)
+Z20.2 (Use Z20.2 for diagnosis and
+treatment of an asymptomatic partner
+exposed to active case of chlamydia,
+gonorrhea, syphilis, or trichomoniasis)
+(M/F)
+None None None None
+Chlamydia
+A56.01 (CT cystitis and urethritis) (M/F)
+A56.09 (Other chlamydial infection lower
+of genitourinary tract) (F)
+A56.3 (CT anus/rectum) (M/F)
+A56.4 (CT pharynx) (M/F)
+Presumptive Dx
+N34.2 (Other urethritis) (M)
+N45.3 (Epididymo-orchitis) (M)
+None 87205: Gram stain −
+symptomatic males only
+87491: CT, amplified
+probe technique
+None R: Doxycycline
+A: Azithromycin
+A: Levofloxacin
+[[page 23]]
+ben grid
+23
+Family PACT – Benefits Grid
+Page updated: May 2023
+Family Planning-Related Services (9)
+ICD-10-CM Code and Description Procedures Laboratory Supplies Medications (8)
+N72 (Inflammatory disease of cervix
+uteri) (F)
+N89.8 (Other specified non-inflammatory
+disorders of vagina) (F)
+N94.10 (Unspecified dyspareunia) (F)
+N94.11 (Superficial [introital]
+dyspareunia) (F)
+N94.12 (Deep dyspareunia) (F)
+N94.19 (Other specified dyspareunia)
+(F)
+N94.89 (Other conditions associated
+with female genital organs) (F)
+R30.0 (Dysuria) (M/F)
+R30.9 (Painful micturition, unspecified)
+(M/F)
+Z20.2 (STI[CT]-exposed partner) (M/F)
+None 87205: Gram stain −
+symptomatic males only
+87491: CT, amplified
+probe technique
+None R: Doxycycline
+A: Azithromycin
+[[page 24]]
+ben grid
+24
+Family PACT – Benefits Grid
+Page updated: May 2023
+Family Planning-Related Services (9) (continued)
+ICD-10-CM Code and Description Procedures Laboratory Supplies Medications (8)
+Gonorrhea
+A54.01 (GC cystitis and urethritis,
+unspecified) (M/F)
+A54.5 (GC pharyngitis) (M/F)
+A54.6 (GC anus/rectum) (M/F)
+A54.22 (GC prostatitis) (M)
+A54.03 (GC cervicitis, unspecified) (F)
+Presumptive Dx
+N34.2 (Other urethritis) (M)
+N45.3 (Epididymo-orchitis) (M)
+N72 (Inflammatory disease of cervix uteri)
+(F)
+N89.8 (Other specified non-inflammatory
+disorders of vagina) (F)
+N94.10 (Unspecified dyspareunia) (F)
+N94.11 (Superficial (introital) dyspareunia)
+(F)
+N94.12 (Deep dyspareunia) (F)
+N94.19 (Other specified dyspareunia) (F)
+N94.89 (Other conditions associated with
+female genital organs) (F)
+R30.0 (Dysuria) (M/F)
+R30.9 (Painful micturition, unspecified)
+(M/F)
+Z20.2 (STI[GC]-exposed partner) (M/F)
+None 87205: Gram stain –
+symptomatic males only
+87591: GC, amplified
+probe technique
+None R: Ceftriaxone
+A: Cefixime
+A: If cephalosporin
+allergy: Gentamicin
+Azithromycin
+[[page 25]]
+ben grid
+25
+Family PACT – Benefits Grid
+Page updated: May 2023
+Family Planning-Related Services (9) (continued)
+ICD-10-CM Code and Description Procedures Laboratory Supplies Medications (8)
+Epididymitis
+N45.1 (Epididymitis) (M)
+N45.3 (Epididymo-orchitis) (M)
+Presumptive DX
+N50.811 (Right testicular pain) (M)
+N50.812 (Left testicular pain) (M)
+N50.819 (Testicular pain unspecified) (M)
+None 81000: UA dipstick with
+microscopy
+81015: Urine microscopy
+87205: Gram stain −
+symptomatic males only
+87491: CT, amplified
+probe technique
+87591: GC, amplified
+probe technique
+87563: M genitalium,
+amplified probe technique
+None R: Ceftriaxone plus
+Doxycycline
+(see Note 2)
+OR
+R: Ceftriaxone plus
+Levofloxacin
+(see Note 2)
+[[page 26]]
+ben grid
+26
+Family PACT – Benefits Grid
+Page updated: October 2023
+Family Planning-Related Services (9) (continued)
+ICD-10-CM Code and Description Procedures Laboratory Supplies Medications (8)
+Herpes (genital only)
+A60.01 (Herpes penis)
+A60.04 (HSV Vulvovaginitis)
+Presumptive Dx
+N48.5 (Ulcer of penis)
+N76.6 (Ulceration of vulva)
+None Additional restrictions
+apply (12)
+87255: HSV culture
+87529: HSV NAAT
+None Acyclovir
+[[page 27]]
+ben grid
+27
+Family PACT – Benefits Grid
+Page updated: October 2023
+Family Planning-Related Services (9) (continued)
+ICD-10-CM Code and Description Procedures Laboratory Supplies Medications (8)
+‹‹Acute Nongonococcal Urethritis
+(NGU)
+N34.1 (Nonspecific urethritis)››
+None 81000: UA dipstick with
+microscopy
+81001: UA automated
+with microscopy
+81002: UA dipstick
+without microscopy
+81003: UA automated
+without microscopy
+81005: UA (qualitative)
+81015: Urine microscopy
+87205: Gram stain –
+symptomatic males only
+None R: Doxycycline
+A: Azithromycin
+[[page 28]]
+ben grid
+28
+Family PACT – Benefits Grid
+Page updated: October 2023
+Family Planning-Related Services (9) (continued)
+ICD-10-CM Code and Description Procedures Laboratory Supplies Medications (8)
+‹‹Acute Nongonococcal Urethritis
+(NGU) (continued)››
+N34.1 (Nonspecific urethritis)
+None 87210: Wet mount
+87491: CT, amplified
+probe technique
+87591: GC, amplified
+probe technique
+Q0111: Wet mount
+None R: Doxycycline
+A: Azithromycin
+[[page 29]]
+ben grid
+29
+Family PACT – Benefits Grid
+Page updated: October 2023
+Family Planning-Related Services (9) (continued)
+ICD-10-CM Code and Description Procedures Laboratory Supplies Medications (8)
+‹‹Recurrent/persistent NGU
+N34.1 (Nonspecific urethritis)
+N34.2 (Other urethritis)
+N34.3 (Urethral syndrome, unspecified)
+None 87210: Wet mount
+87491: CT, amplified
+probe technique
+87563: M genitalium,
+amplified probe
+technique
+87591: GC, amplified
+probe technique
+87661: NAAT – T.
+vaginalis
+87808: T. vaginalis
+Q0111: Wet mount
+None R: Doxycycline
+followed by
+Moxifloxacin
+A: Doxycycline
+followed by
+Azithromycin››
+[[page 30]]
+ben grid
+30
+Family PACT – Benefits Grid
+Page updated: October 2023
+Family Planning-Related Services (9) (continued)
+ICD-10-CM Code and Description Procedures Laboratory Supplies Medications (8)
+PID (Uncomplicated outpatient only)
+N70.03 (Acute salpingitis and oophoritis)
+N70.93 (Salpingitis and oophoritis,
+unspecified)
+N94.10 (Unspecified dyspareunia) (F)
+N94.11 (Superficial [introital] dyspareunia)
+(F)
+N94.12 (Deep dyspareunia) (F)
+N94.19 (Other specified dyspareunia) (F)
+N94.89 (Other conditions associated with
+female genital organs) (F)
+99000: Handling
+and/or
+conveyance of
+blood specimen
+for transfer to lab
+85025: CBC/diff
+85651: ESR
+85652: ESR
+87491: CT, amplified
+probe technique
+87591: GC, amplified
+probe technique
+None R: Ceftriaxone injection
+plus
+Doxycycline with
+Metronidazole
+A: Cefoxitin injection
+and Probenecid, plus
+Doxycycline with
+Metronidazole
+A: Levofloxacin with
+Metronoidazole (See
+Note 10)
+Syphilis
+A51.0 (Primary genital) (M/F)
+A51.31 (Condyloma latum) (M/F)
+A51.39 (Other, secondary) (M/F)
+A51.5 (Early, latent) (M/F)
+A52.8 (Late, latent) (M/F)
+A53.0 (Latent, unspecified) (M/F)
+Presumptive Dx
+N48.5 (Ulcer of penis)
+N76.6 (Ulceration of vulva)
+Z20.2 (STI [Syphilis] – exposed partner)
+99000: Handling
+and/or
+conveyance of
+blood specimen
+for transfer to lab
+86593: Syphilis test, non-
+treponemal antibody;
+quantitative (15)
+None Penicillin G benzathine
+long acting – injection
+(Note 3)
+[[page 31]]
+ben grid
+31
+Family PACT – Benefits Grid
+Page updated: May 2026
+Family Planning-Related Services (9) (continued)
+ICD-10-CM Code and Description Procedures Laboratory Supplies Medications (8)
+Trichomoniasis
+A59.01 (Trichomonal vulvo-vaginitis)
+A59.03 (Trich. cystitis and urethritis)
+N76.0 (Acute vaginitis)
+Presumptive Dx
+N34.2 (Other urethritis) (M)
+Z20.2 (STI [Trichomoniasis] – exposed
+partner) (M/F)
+None 83986: pH (females only)
+87210: Wet mount
+87661: NAAT – T.
+vaginalis (females only)
+87808: T. vaginalis
+immunoassay (females
+only)
+Q0111: Wet mount
+None R:Metronidazole
+A: Tinidazole (16)
+‹‹Vulvovaginal Candidiasis››
+B37.31 (Acute candidiasis of vulva and
+vagina)
+B37.32 (Chronic candidiasis of vulva
+and vagina)
+None 83986: pH (females only)
+87210: Wet mount
+Q0111 Wet mount
+None Clotrimazole
+Fluconazole
+Miconazole
+Terconazole (27)
+[[page 32]]
+ben grid
+32
+Family PACT – Benefits Grid
+Page updated: May 2026
+Family Planning-Related Services (9) (continued)
+ICD-10-CM Code and Description Procedures Laboratory Supplies Medications (8)
+Bacterial Vaginosis (BV)
+N76.0 (Acute vaginitis)
+‹‹Presumptive Dx
+Z20.2 (BV –exposed partner),
+males only (37)››
+None 83986: pH (females only)
+‹‹87210: Wet mount
+(females only)
+Q0111 Wet mount
+(females only)››
+None R: Metronidazole
+R: Clindamycin cream
+A: Clindamycin
+capsules or ovules
+A: Secnidazole
+Note 6)
+A: Tinidazole
+Warts (genital only)
+A63.0 (Anogenital [venereal] warts)
+(M/F)
+B08.1 (Molluscum) (M/F)
+B07.9 (Viral wart, unspecified) (M/F)
+54050: Destruction
+of penile lesion;
+chemical (14)
+54056: Destruction
+of penile lesion;
+cryo (14)
+54100: Biopsy of
+penis (17)
+88305: Surgical path for
+males (17)
+88305: Surgical path for
+females (17)
+54050UA
+54056UA
+54100UA
+56501UA
+57061UA
+56605UA
+Imiquimod
+Podofilox
+[[page 33]]
+ben grid
+33
+Family PACT – Benefits Grid
+Page updated: October 2023
+Family Planning-Related Services (9) (continued)
+ICD-10-CM Code and Description Procedures Laboratory Supplies Medications (8)
+Warts (genital only)
+A63.0 (Anogenital [venereal] warts) (M/F)
+B08.1 (Molluscum) (M/F)
+B07.9 (Viral wart, unspecified) (M/F)
+56501:
+Destruction
+vulvar lesion
+(14)
+57061:
+Destruction
+vaginal lesion
+(14)
+56605: Biopsy,
+vulva (17)
+88305: Surgical path for
+males (17)
+88305: Surgical path for
+females (17)
+54050UA
+54056UA
+54100UA
+56501UA
+57061UA
+56605UA
+Imiquimod
+Podofilox
+[[page 34]]
+ben grid
+34
+Family PACT – Benefits Grid
+Page updated: October 2023
+Family Planning-Related Services: Management of Urinary Tract Infection (UTI)
+Treatment or diagnostic tests for the management of urinary tract infection (UTI) are covered when provided as part of, or as
+a follow-up to, a family planning visit where the UTI was identified or diagnosed. An additional ICD-10-CM code is required as
+noted below.
+These benefits are for female clients only.
+Family Planning-Related Services
+ICD-10-CM Code and Description Procedures Laboratory Supplies Medications
+UTI
+N30.00 (Acute cystitis without hematuria)
+N30.01 (Acute cystitis with hematuria)
+R31.0 (Gross hematuria)
+R30.0 (Dysuria)
+R30.9 (Painful micturition, unspecified)
+R35.0 (Frequency of micturition)
+R10.30 (Lower abdominal pain,
+unspecified)
+None 81000: UA dipstick with
+microscopy
+81001: UA automated
+with microscopy
+81002: UA dipstick
+without microscopy
+81003: UA automated
+without microscopy
+81005: UA (qualitative)
+81015: Urine microscopy
+None Cephalexin
+Ciprofloxacin
+Nitrofurantoin
+TMP/SMX
+[[page 35]]
+ben grid
+35
+Family PACT – Benefits Grid
+Page updated: January 2026
+Family Planning-Related Services: Management of Cervical Abnormalities
+Treatment and management of specified cervical abnormalities are covered when provided as part of, or as a follow-up to, a
+family planning visit, where the cervical abnormality was identified or diagnosed. An additional ICD-10-CM code is required
+for treatment and diagnostic services for the management of women with cervical abnormalities. Colposcopy is limited to
+women more than 15 of age. For services to manage a complication of family planning-related treatment, refer to the
+Benefits: Family Planning-Related Services section in this manual.
+Family Planning-Related Services
+ICD-10-CM Code and Description Procedures Laboratory Supplies Medications
+R87.610 thru R87.619 (Abnormal result,
+cytologic smear of cervix)
+None 88141: Pap requiring
+physician interpretation
+88342: p16
+immunohistochemistry
+(IHC) (36)
+None None
+[[page 36]]
+ben grid
+36
+Family PACT – Benefits Grid
+Page updated: January 2026
+Family Planning-Related Services (continued)
+ICD-10-CM Code and Description Procedures Laboratory Supplies Medications
+R87.610 (ASC-US)
+R87.611 (ASC-H)
+R87.612 (LGSIL)
+R87.613 (HGSIL)
+R87.810 (Cervical high risk HPV DNA test
+positive)
+Presumptive Dx.
+N88.0 (Leukoplakia, cervix)
+57452:
+Colposcopy
+57454: Colpo
+with biopsy &
+endocervical
+curettage (ECC)
+57455: Colpo
+with biopsy
+57456: Colpo
+with ECC
+87624: HPV, high-risk
+types (e.g., 16, 18, 31,
+33, 35, 39, 45, 51, 52, 56,
+58, 59, 68) (18)
+‹‹87625: HPV, types 16
+and 18 only, includes
+type 45, if performed
+(additional ICD-10-CM
+diagnosis code R87.810
+required)
+87626: HPV, separately
+reported high-risk types››
+88305: Surgical
+pathology
+88342: p16 IHC (36)
+57452UA
+57454U
+57455UA
+57456UA
+None
+[[page 37]]
+ben grid
+37
+Family PACT – Benefits Grid
+Page updated: January 2026
+Family Planning-Related Services (continued)
+ICD-10-CM Code and Description Procedures Laboratory Supplies Medications
+R87.619 (Unspecified abnormal
+cytological findings in specimen from
+cervix uteri)
+57452:
+Colposcopy
+57454: Colpo
+with biopsy &
+ECC
+57455: Colpo
+with biopsy
+57456: Colpo
+with ECC
+58110:
+Endometrial
+biopsy with
+colpo (19)
+87624: HPV, high-risk
+types (e.g., 16, 18, 31,
+33, 35, 39, 45, 51, 52, 56,
+58, 59, 68) (18)
+‹‹87626: HPV, separately
+reported high-risk types››
+88305: Surgical
+pathology
+88342: p16 IHC (36)
+57452UA
+57454UA
+57455UA
+57456UA
+58110UA
+None
+[[page 38]]
+ben grid
+38
+Family PACT – Benefits Grid
+Page updated: January 2026
+Family Planning-Related Services (continued)
+ICD-10-CM Code and Description Procedures Laboratory Supplies Medications
+N87.0 CIN 1 (biopsy)
+N87.1 CIN 2 (biopsy)
+D06.0 CIN 3 (biopsy)
+D06.1 CIN 3 (biopsy)
+D06.9 CIN 3 (biopsy)
+57452:
+Colposcopy
+57454: Colpo with
+biopsy & ECC
+57455: Colpo with
+biopsy
+57456: Colpo with
+ECC
+57511:
+Cryocautery of
+cervix (22)
+57460: Loop
+electrosurgical
+excision procedure
+(LEEP) (22)
+57461: LEEP (22)
+87624: HPV, high-risk
+types (e.g., 16, 18, 31,
+33, 35, 39, 45, 51, 52, 56,
+58, 59, 68) (18)
+‹‹87626: HPV, separately
+reported high-risk types››
+88305: Surgical
+pathology
+88307: Surgical
+pathology (21)
+88342: p16 IHC (36)
+57452UA
+57454UA
+57455UA
+57456UA
+57511UA
+57460UA
+None
+R87.618 Other abnormal cytological
+findings
+58100:
+Endometrial
+biopsy (20)
+88305: Surgical
+pathology
+58100UA None
+[[page 39]]
+ben grid
+39
+Family PACT – Benefits Grid
+Page updated: May 2026
+Treatment and Dispensing Guidelines for Clinicians
+Family Planning-Related Conditions Drug Regimens
+Condition Medication Dosage Size Regimens * Fill Frequency
+(days)
+Notes Clinic Code
+Bacterial
+Vaginosis
+Metronidazole 250 mg/500
+mg tabs
+500 mg PO
+BID X 7 days
+2 per rolling 30
+days
+Recommended
+regimen
+S5000/
+S5001
+Bacterial
+Vaginosis
+Metronidazole 0.75% vaginal
+gel
+5 g PV QHS X
+5 days
+30 Recommended
+regimen
+S5000/
+S5001
+Bacterial
+Vaginosis
+Clindamycin 2% cream 5 g PV X 7
+days
+30 Recommended
+regimen
+S5000/
+S5001
+‹‹Bacterial
+Vaginosis
+Clindamycin 2% cream Apply to penile
+skin BID X 7
+days
+30 Recommended
+regimen
+S5000/
+S5001››
+Bacterial
+Vaginosis
+Clindamycin 150 mg
+capsules
+300 mg PO
+BID X 7 days
+2 per rolling 30
+days
+Alternative
+regimen
+S5000/
+S5001
+Bacterial
+Vaginosis
+Clindamycin 100 mg ovules 100 mg PV
+QHS X 3 days
+30 Alternative
+regimen
+S5000/
+S5001
+Bacterial
+Vaginosis
+Tinidazole 250mg/500mg
+tabs
+2 gm PO QD x
+2 days
+or
+1 gm PO QD x
+5 days
+2 per rolling
+days
+Alternative
+regimen
+S5000/
+S5001
+Chlamydia Doxycycline 100 mg tabs 100 mg PO
+BID X 7 days
+2 per rolling 30
+days
+Recommended
+regimen
+S5000/
+S5001
+[[page 40]]
+ben grid
+40
+Family PACT – Benefits Grid
+Page updated: May 2026
+Family Planning-Related Conditions Drug Regimens (continued)
+Condition Medication Dosage Size Regimens * Fill Frequency
+(days)
+Notes Clinic Code
+Chlamydia Azithromycin 500 mg tabs/1
+gm pkt
+1 gm PO X 1 2 per rolling 30
+days
+Alternative
+regimen
+Q0144
+Chlamydia Levofloxacin 250mg/500mg
+tabs
+500 gm PO QD
+x 7 days
+2 per rolling 30
+days
+Alternative
+regimen
+S5000/
+S5001
+Acute
+Epididymitis
+(most likely
+caused by GC,
+CT)
+Ceftriaxone
+plus
+Doxycycline
+Ceftriaxone
+500 mg
+injection
+500 mg IM X 1 2 per rolling 30
+days
+Recommended
+regimen
+(See Note 2)
+J0696
+Acute
+Epididymitis
+(most likely
+caused by GC,
+CT)
+Ceftriaxone
+plus
+Doxycycline
+Doxycycline
+100 mg tabs
+100 mg PO
+BID X 10 days
+2 per rolling 30
+days
+Recommended
+regimen
+S5000/
+S5001
+Acute
+Epididymitis
+(most likely
+caused by GC,
+CT, Enteric
+Organisms)
+Ceftriaxone
+plus
+Levofloxacin
+Ceftriaxone
+500 mg
+injection
+500 mg IM X 1 2 per rolling 30
+days
+Recommended
+regimen
+J0696
+[[page 41]]
+ben grid
+41
+Family PACT – Benefits Grid
+Page updated: May 2026
+Family Planning-Related Conditions Drug Regimens (continued)
+Condition Medication Dosage Size Regimens * Fill Frequency
+(days)
+Notes Clinic Code
+Acute
+Epididymitis
+(most likely
+caused by GC,
+CT, Enteric
+Organisms)
+Ceftriaxone
+plus
+Levofloxacin
+Levofloxacin
+250 mg/500
+mg tabs
+500 mg PO QD
+X 10 days
+2 per rolling 30
+days
+Recommended
+regimen
+S5000/
+S5001
+External
+Genital Warts
+Imiquimod 5% cream QHS 3/week
+up to 16 weeks
+30 Recommended
+regimen
+S5000/
+S5001
+External
+Genital Warts
+Podofilox 0.5%
+solution/gel
+BID 3
+days/week
+followed by 4
+days no
+treatment, up
+to 4 weeks
+30 Recommended
+regimen
+S5000/
+S5001
+Genital
+Herpes,
+Primary
+Acyclovir 400mg tabs 400 mg PO
+TID X 7 to 10
+days
+None Recommended
+regimen
+S5000/
+S5001
+Genital
+Herpes,
+Recurrent
+Acyclovir 400 mg tabs
+800 mg tabs
+800 mg PO
+BID X 5 days
+or
+800 mg PO
+TID x 2 days
+30 Recommended
+regimen
+S5000/
+S5001
+[[page 42]]
+ben grid
+42
+Family PACT – Benefits Grid
+Page updated: May 2026
+Family Planning-Related Conditions Drug Regimens (continued)
+Condition Medication Dosage Size Regimens * Fill Frequency
+(days) Notes Clinic Code
+Genital Herpes,
+Suppressive
+Therapy
+Acyclovir 400 mg tabs 400 mg PO
+BID
+22 Recommended
+regimen
+S5000/
+S5001
+Gonorrhea Ceftriaxone 500 mg
+injection
+500 mg IM X 1 15 Recommended
+regimen
+(see Note 1)
+J0696
+Gonorrhea Cefixime 400 mg
+tabs/caps
+800 mg PO X 1 2 per rolling 30
+days
+Alternative
+regime
+(see Note 1)
+S5000/
+S5001
+Nongonococcal
+Urethritis
+(NGU)
+Doxycycline 100 mg tabs 100 mg PO
+BID X 7 days
+None Recommended
+regimen
+S5000/
+S5001
+NGU Azithromycin 500 mg tabs/ 1
+gm packet
+1 gm PO X 1 None Alternative
+regimen
+Q0144
+Recurrent/
+Persistent
+NGU due to
+Mycoplasma
+genitalium
+Doxycycline
+followed by
+Moxifloxacin
+Doxycycline
+100 mg tabs
+100 mg PO
+BID X 7 days
+None Recommended
+regimen
+(Note 4)
+S5000/
+S5001
+[[page 43]]
+ben grid
+43
+Family PACT – Benefits Grid
+Page updated: May 2026
+Family Planning-Related Conditions Drug Regimens (continued)
+Condition Medication Dosage Size Regimens * Fill Frequency
+(days) Notes Clinic Code
+Recurrent/
+Persistent
+NGU due to
+Mycoplasma
+genitalium
+Doxycycline
+followed by
+Moxifloxacin
+Moxifloxacin
+400 mg tabs
+400 mg PO
+QD X 7 days
+None Recommended
+regimen
+(Note 4)
+N/A
+Recurrent/
+Persistent
+NGU due to
+Mycoplasma
+genitalium
+Doxycycline
+followed by
+Azithromycin
+Doxycycline
+100 mg tabs
+100 mg PO
+BID X 7 days
+None Alternative
+regimen
+S5000/
+S5001
+Recurrent/
+Persistent
+NGU due to
+Mycoplasma
+genitalium
+Doxycycline
+followed by
+Azithromycin
+Azithromycin
+500 mg tabs/
+1 gm packet
+1 gm PO on
+day 1, then
+500 mg PO
+QD X 3 days
+None Alternative
+regimen
+Q0144
+PID Ceftriaxone
+plus
+Doxycycline
+with
+Metronidazole
+Ceftriaxone 500
+mg injection
+500 mg IM X
+1
+2 per rolling 30
+days
+Recommended
+regimen
+(see Note 2)
+J0696
+PID Ceftriaxone
+plus
+Doxycycline
+with
+Metronidazole
+Doxycycline
+100 mg tabs
+100 mg PO
+BID X 14
+days
+2 per rolling 30
+days
+Recommended
+regimen
+S5000/
+S5001
+[[page 44]]
+ben grid
+44
+Family PACT – Benefits Grid
+Page updated: May 2026
+Family Planning-Related Conditions Drug Regimens (continued)
+Condition Medication Dosage Size Regimens * Fill Frequency
+(days) Notes Clinic Code
+PID Ceftriaxone
+plus
+Doxycycline
+with
+Metronidazole
+Metronidazole
+250/500 mg tabs
+500 mg PO
+BID X 14 days
+2 per rolling 30
+days
+Recommended
+regimen
+S5000/
+S5001
+PID Cefoxitin and
+Probenecid
+plus Doxycyline
+with
+Metronidazole
+Cefoxitin
+1 gm injection
+2 gm IM X 1 2 per rolling 30
+days
+Recommended
+regimen
+J0694
+PID Cefoxitin and
+Probenecid
+plus Doxycyline
+with
+Metronidazole
+Probenecid
+500 mg tabs
+1 gm PO X 1 2 per rolling 30
+days
+Recommended
+regimen
+S5000/
+S5001
+PID Cefoxitin and
+Probenecid
+plus Doxycyline
+with
+Metronidazole
+Doxycycline 100
+mg tabs
+100 mg tabs 2 per rolling 30
+days
+Recommended
+regimen
+S5000/
+S5001
+[[page 45]]
+ben grid
+45
+Family PACT – Benefits Grid
+Page updated: May 2026
+Family Planning-Related Conditions Drug Regimens (continued)
+Condition Medication Dosage Size Regimens * Fill Frequency
+(days) Notes Clinic Code
+PID Cefoxitin and
+Probenecid
+plus
+Doxycyline
+with
+Metronidazole
+Metronidazole
+250/500 mg
+tabs
+500 mg PO
+BID X 14 days
+2 per rolling 30
+days
+Recommended
+regimen
+S5000/
+S5001
+PID Levofloxacin
+with
+Metronidazole
+Levofloxacin
+250 mg/500
+mg tabs
+500 gm PO QD
+X 14 days
+2 per rolling 30
+days
+Alternative
+regimen (See
+Note 10)
+S5000/
+S5001
+PID Levofloxacin
+with
+Metronidazole
+Metronidazole
+250/500 mg
+tabs
+500 mg PO
+BID X 14 days
+2 per rolling 30
+days
+Alternative
+regimen (See
+Note 10)
+S5000/
+S5001
+Syphilis,
+primary,
+secondary,
+early latent
+Penicillin G
+benzathine
+1.2 mil units/2
+ml
+2.4 mil units/4
+ml
+2.4 mil units IM
+X 1
+None Recommended
+regimen
+(Note 3)
+J0561
+Syphilis, late
+latent,
+unknown
+duration
+Penicillin G
+benzathine
+1.2 mil units/2
+ml
+2.4 mil units/4
+ml
+2.4 mil units IM
+q wk X 3 doses
+None Recommended
+regimen
+(Note 3)
+J0561
+[[page 46]]
+ben grid
+46
+Family PACT – Benefits Grid
+Page updated: May 2026
+Family Planning-Related Conditions Drug Regimens (continued)
+Condition Medication Dosage Size Regimens * Fill Frequency
+(days) Notes Clinic Code
+Tricho-
+moniasis
+Metronidazole 500 mg tabs 2 gm PO X 1 2 per rolling 30
+days
+Recommended
+regimen
+(males)
+S5000/
+S5001
+Tricho-
+moniasis
+Metronidazole 500 mg tabs 500 mg PO
+BID X 7 days
+2 per rolling 30
+days
+Recommended
+regimen
+(females)
+S5000/
+S5001
+Tricho-
+moniasis
+Tinidazole 250/500 mg
+tabs
+2 gm PO X 1 2 per rolling 30
+days
+Alternative
+regimen
+(males and
+females
+S5000/
+S5001
+Urinary Tract
+Infection †
+SMX/TMP DS 800/160 mg
+tabs
+800/160 mg
+PO BID X 3
+days
+2 per rolling 30
+days
+Recommended
+regimen
+S5000/
+S5001
+Urinary Tract
+Infection †
+SMX/TMP 400/80 mg
+tabs
+400/80 mg 2
+PO BID X 3
+days
+2 per rolling 30
+days
+Alternative
+regimen
+S5000/
+S5001
+Urinary Tract
+Infection †
+Ciprofloxacin 250/500 mg
+tabs
+250 mg PO
+BID X 3 days
+500 mg PO
+QD X 3 days
+2 per rolling 30
+days
+Alternative
+regimen
+S5000/
+S5001
+Urinary Tract
+Infection †
+Cephalexin 500 mg caps 500 mg PO
+BID X 7-10
+days
+2 per rolling 30
+days
+Recommended
+regimen
+S5000/
+S5001
+[[page 47]]
+ben grid
+47
+Family PACT – Benefits Grid
+Page updated: May 2026
+Family Planning-Related Conditions Drug Regimens (continued)
+Condition Medication Dosage Size Regimens * Fill Frequency
+(days) Notes Clinic Code
+Urinary Tract
+Infection †
+Cephalexin 250 mg caps 250 mg PO
+QID X 7-10
+days
+2 per rolling 30
+days
+Alternative
+regimen
+S5000/
+S5001
+Urinary Tract
+Infection †
+Nitrofurantoin 50/100 mg
+caps
+100 mg PO
+BID x 5 days
+2 per rolling 30
+days
+Recommended
+regimen
+S5000/
+S5001
+Vaginal
+Candidiasis
+Clotrimazole 2% cream ‡ QD for 3 days 30 None S5000/
+S5001
+Vaginal
+Candidiasis
+Clotrimazole 1% cream ‡ QD for 7 days 30 None S5000/
+S5001
+Vaginal
+Candidiasis
+Fluconazole 150mg tablet Single dose
+PO
+30 None S5000/
+S5001
+Vaginal
+Candidiasis
+Miconazole 4% cream ‡ QD for 3 days 30 None S5000/
+S5001
+Vaginal
+Candidiasis
+Miconazole 2% cream ‡ QD for 7 days 30 None S5000/
+S5001
+Vaginal
+Candidiasis
+Miconazole 200mg vaginal
+suppository ‡
+QD for 3 days 30 None S5000/
+S5001
+Vaginal
+Candidiasis
+Miconazole 100mg vaginal
+suppository ‡
+QD for 7 days 30 None S5000/
+S5001
+[[page 48]]
+ben grid
+48
+Family PACT – Benefits Grid
+Page updated: October 2023
+Family Planning-Related Conditions Drug Regimens (continued)
+Condition Medication Dosage Size Regimens * Fill Frequency
+(days) Notes Clinic Code
+Vaginal
+Candidiasis
+Terconazole + 80 mg
+suppository ‡
+QD for 3 days 30 Reserve for use in
+complicated
+cases of Vaginal
+Candidiasis.
+Restricted to
+Pharmacy
+dispensing only;
+for use after
+treatment failure
+with other anti-
+fungals, TAR
+required.
+N/A
+Vaginal
+Candidiasis
+Terconazole + 0.8% cream ‡ QD for 3 days 30 Reserve for use in
+complicated
+cases of Vaginal
+Candidiasis.
+Restricted to
+Pharmacy
+dispensing only;
+for use after
+treatment failure
+with other anti-
+fungals, TAR
+required.
+N/A
+[[page 49]]
+ben grid
+49
+Family PACT – Benefits Grid
+Page updated: October 2023
+Family Planning-Related Conditions Drug Regimens (continued)
+Condition Medication Dosage Size Regimens * Fill Frequency
+(days) Notes Clinic Code
+Vaginal
+Candidiasis
+Terconazole + 0.4%cream ‡ QD for 7 days 30 Reserve for
+use in
+complicated
+cases of
+Vaginal
+Candidiasis.
+Restricted to
+Pharmacy
+dispensing
+only; for use
+after treatment
+failure with
+other anti-
+fungals, TAR
+required.
+N/A
+[[page 50]]
+ben grid
+50
+Family PACT – Benefits Grid
+Page updated: October 2023
+Family PACT Contraceptives Supplies
+Contraceptive
+Supplies Billing Unit Maximum
+Quantity onsite
+Earliest Refill
+Onsite
+Refill Frequency
+Limit Pharmacy Clinic Code
+Condoms, male each (see Note 7) 15 days Up to 36 units per
+27 days
+A4267
+Spermicidal
+Gel/Jelly/Foam/Cream
+gram (see Note 7) 15 days 3 refills in any
+75-day period
+A4269U1
+Spermicidal
+Suppository
+each (see Note 7) 15 days 3 refills in any
+75-day period
+A4269U2
+Spermicidal Vaginal
+Film
+each (see Note 7) 15 days 3 refills in any
+75-day period
+A4269U3
+Spermicidal
+Contraceptive Sponge
+each (see Note 7) 15 days 3 refills in any
+75-day period
+A4269U4
+Lubricant gram (see Note 7) 15 days 3 refills in any
+75-day period
+S5199
+[[page 51]]
+ben grid
+51
+Family PACT – Benefits Grid
+Page updated: October 2023
+Family PACT Contraceptives Supplies (continued)
+Contraceptive
+Supplies Billing Unit Maximum
+Quantity onsite
+Earliest Refill
+Onsite
+Refill Frequency
+Limit Pharmacy Clinic Code
+Vaginal gel box 1 box (12 single-
+use applicators)
+per dispensing
+3 dispensings per
+any 75-day period
+1 box (12 single-
+use applicators)
+per dispensing,
+and limited to 3
+dispensings per
+any 75-day period
+A4269U5
+Condoms, internal each Up to 12 units per
+claim
+Up to 24 units in a
+90-day period
+No more than 12
+units per claim
+and no more than
+two claims in a
+90-day period
+A4268
+Basal Body
+Thermometer
+each N/A N/A 1 per year N/A
+Contraceptive
+Diaphragm
+each 1 1 year 1 diaphragm per
+year
+A4266
+Contraceptive
+Cervical Cap
+(Fem Cap)
+each 2 1 year 2 cervical caps
+per year
+A4261
+[[page 52]]
+ben grid
+52
+Family PACT – Benefits Grid
+Page updated: August 2024
+Family PACT Contraceptives
+Contraceptive Dosage Size
+Maximum
+Quantity
+onsite
+Earliest
+Refill
+Onsite
+Maximum
+Quantity
+Pharmacy
+Earliest Refill
+Pharmacy Clinic Code
+Oral Contraceptives 1 cycle 18 cycles (see Note 8) 18 cycles (see Note 8) S4993
+Segesterone acetate
+and ethinyl estradiol
+0.15mg, 0.013mg per
+24 hours; yearly
+vaginal system, each
+1 ring 1 ring (see Note 8) 1 ring (see Note 8) J7294
+Ethinyl estradiol and
+etonogestrel 0.015mg,
+0.12mg per 24 hours;
+monthly vaginal ring,
+each
+1 ring ‹‹18 rings›› (see Note 8) ‹‹18 rings›› (see Note 8) J7295
+Norelgestromin/EE 1 patch ‹‹54 patches›› (see Note 8) ‹‹54
+patches››
+(see Note 8) J7304U1
+Levonorgestrel/EE 1 patch ‹‹54 patches›› (see Note 8) ‹‹54
+patches››
+(see Note 8) J7304U2
+[[page 53]]
+ben grid
+53
+Family PACT – Benefits Grid
+Page updated: March 2026
+Family PACT Contraceptives (continued)
+Contraceptive Dosage Size
+Maximum
+Quantity
+onsite
+Earliest
+Refill
+Onsite
+Maximum
+Quantity
+Pharmacy
+Earliest Refill
+Pharmacy Clinic Code
+Medroxyprogesterone
+Acetate 104 mg 1 injection 1 injection N/A 1 injection 80 days J3490
+Medroxyprogesterone
+Acetate 150 mg 1 injection 1 injection 80 days 1 injection 80 days J3490U8
+‹‹Intrauterine copper
+contraceptive
+(Miudella) 1 IUC 1 IUC (see Note 9) 1 IUC Blank J2799››
+‹‹Intrauterine copper
+contraceptive
+(Paragard)›› 1 IUC 1 IUC (see Note 9) 1 IUC Blank J7300
+Etonogestrel
+Contraceptive Implant 1 implant 1 implant (see Note 9) N/A N/A J7307
+Levonorgestrel IU
+(Liletta), 52 mg 1 IUC 1 IUC (see Note 9) N/A N/A J7297
+Levonorgestrel IU
+(Mirena), 52 mg 1 IUC 1 IUC (see Note 9) N/A N/A J7298
+Levonorgestrel IU
+(Skyla),
+13.5 mg 1 IUC 1 IUC (see Note 9) N/A N/A J7301
+[[page 54]]
+ben grid
+54
+Family PACT – Benefits Grid
+Page updated: March 2026
+Family PACT Contraceptives (continued)
+Contraceptive Dosage
+Size
+Maximum
+Quantity
+onsite
+Earliest
+Refill
+Onsite
+Maximum
+Quantity
+Pharmacy
+Earliest Refill
+Pharmacy Clinic Code
+Levonorgestrel IU
+(Kyleena)
+19.5 mg 1 IUC 1 IUC (see Note 9) 1 IUC Blank J7296
+Emergency
+contraception
+Levonorgestrel 1.5 mg
+1 pack
+(1 tablet)
+1 packet/ event
+combined
+maximum of
+6 packs/year
+As
+medically
+indicated up
+to limit
+1 pack/ event
+combined
+maximum of
+6 packs/year
+As medically
+indicated up to
+limit J3490U6
+Emergency
+contraception
+Ulipristal Acetate 30 mg
+1 pack
+(1 tablet)
+1 packet/ event
+combined
+maximum of
+6 packs/year
+As
+medically
+indicated up
+to limit
+1 pack/ event
+combined
+maximum of
+6 packs/year
+As medically
+indicated up to
+limit J3490U5
+[[page 55]]
+ben grid
+55
+Family PACT – Benefits Grid
+Page updated: October 2023
+Legend
+Symbols used in the document above are explained in the following table.
+Symbol Description
+‹‹ This is a change mark symbol. It is used to indicate where on the page the most recent change begins.
+›› This is a change mark symbol. It is used to indicate where on the page the most recent change ends.
+¿ These tests may be indicated on a case-by-case basis to determine whether a client can safely use a particular
+contraceptive method and are not intended to be routinely ordered for all clients.
+† American Academy of Family Physicians, American Family Physician 2005; 72:451-6,458.
+‡ Oil-based products may weaken latex condoms and diaphragms.
+* CDC, Sexually Transmitted Infections Treatment Guidelines, 2021. MMWR July 2021, 70(4): 1-192.
++ Only available for pharmacy dispensing with approved TAR.
+± One (1) test per recipient per day.
+¥ Two (2) tests per recipient per day.
+§ Three (3) tests per recipient per day.
+(1) Complication services require a Treatment Authorization Request (TAR), unless stated otherwise. Refer to the
+Benefits: Family Planning section in this manual.
+(6) Restricted to use for evaluating missing IUC strings only. Refer to the Benefits: Family Planning section in this
+manual for more information.
+(7) As medically indicated for preoperative evaluation of a pre-existing medical condition or required by outpatient
+facility.
+[[page 56]]
+ben grid
+56
+Family PACT – Benefits Grid
+Page updated: October 2023
+Legend
+Symbol Description
+(8) Only dosage regimens included in current CDC STD Treatment Guidelines or California STD Treatment
+Guidelines may be used. See to the CDC website and CDPH website for more information. Refer to the Family
+PACT Pharmacy Formulary on the Medi-Cal Rx website
+(https://medi-calrx.dhcs.ca.gov), as well as the Clinic Formulary section in this manual for additional
+information about regimen, formulation and coverage limits.
+R: Recommended regimen
+A: Alternative regimen
+(9) An additional ICD-10-CM code is required for any treatment or diagnostic testing beyond screening tests.
+(11) Services to evaluate and manage a complication of treating a family planning-related service require an
+additional ICD-10-CM code. A TAR is required, unless stated otherwise. Refer to the Benefits: Family
+Planning-Related Services section in this manual.
+(12) Only as necessary to evaluate genital ulcers of unconfirmed etiology; payable for ICD-10-CM diagnosis codes
+N76.6 (F) or N48.5 (M) only. Viral culture limited to Herpes simplex only. Reflex typing is not covered.
+(14) Supply charges for these procedures include the TCA/BCA, liquid nitrogen or podophyllin used.
+(15) Only as necessary to confirm response to syphilis treatment; should not be ordered with presumptive diagnosis
+codes.
+(16) Only as a treatment for vaginal trichomoniasis if treatment failure or adverse effects (but not allergy) with prior
+use of Metronidazole
+(17) Only as necessary to confirm vulvar, vaginal or genital warts in a wart treatment candidate.
+[[page 57]]
+ben grid
+57
+Family PACT – Benefits Grid
+Page updated: January 2026
+Legend
+Symbol Description
+(18) ‹‹Coverage for HPV testing and co-testing are based on the 2019 ASCCP Risk-Management Consensus
+Guidelines for Abnormal Cervical Cancer Screening Test and Cancer Precursors and the USPSTF 2018 Final
+Recommendation Statement for Cervical Cancer Screening. For additional information, refer to the Benefits:
+Family Planning-Related Services section in this manual.››
+(19) Endometrial biopsy is covered only with AGC (atypical glandular cells) cytology result and any of the following:
+• “Atypical endometrial cells” on AGC cytology result; or
+• Complaints of abnormal vaginal bleeding pattern suspicious for endometrial hyperplasia or cancer; or
+• Recipient is ≥36 years of age.
+(20) Endometrial biopsy restricted to ages ≥40 years with a finding of endometrial cells on Pap and a recent history
+of menstrual irregularity.
+(21) Restricted to biopsy specimens collected by LEEP procedure.
+(22) Restricted to biopsy proven CIN 2 and CIN 3, or persistent CIN 1 lesions of greater than 12 months,
+ages ≥21 years. See 2019 ASCCP Guidelines.
+(26) Available for pharmacy dispensing only.
+(27) TAR required. Refer to the Benefits: Family Planning section in this manual for more information.
+(28) Use with ICD-10-CM code Z30.09. Refer to the Benefits: Family Planning section in this manual for more
+information
+[[page 58]]
+ben grid
+58
+Family PACT – Benefits Grid
+Page updated: October 2023
+Legend
+Symbol Description
+(32) When clinically indicated to rule out pregnancy prior to initiation of a contraceptive method, but no
+contraceptive method is initiated during the visit or currently used by the client. Pregnancy confirmation for
+women not seeking family planning services is not reimbursable under Z30.09. Refer to the Benefits: Family
+Planning section in this manual for more information.
+(33) Z30.09, for this encounter, is used for counseling on contraceptive methods (other than sterilization) but no
+contraceptive method is initiated during the visit or currently used by the client. Refer to the Benefits: Family
+Planning section in this manual for more information.
+(34) Restricted to use for evaluating impalpable subdermal contraceptive implant only. Refer to Benefits: Family
+Planning section in this manual for more information.
+[[page 59]]
+ben grid
+59
+Family PACT – Benefits Grid
+Page updated: May 2026
+Legend
+Symbol Description
+(35) Z30.09, for this encounter, is for sterilization counseling and advice, including consent and pre-operative
+evaluation, if indicated. Refer to “Permanent Contraception” in the Benefits: Family Planning section in this
+manual for more information.
+(36) CPT code 88342 is covered for women ages ≥15 years and reimbursable with ICD-10-CM codes D06.9,
+N87.0, N87.1, R87.611, R87.613 and R87.619 under the following circumstances, based on The Lower
+Anogenital Squamous Terminology (LAST) Standardization Project for HPV- Associated Lesions: Background
+and Consensus Recommendations from the College of American Pathologists and the American Society for
+Colposcopy and Cervical Pathology 2012:
+• To aid in differential diagnosis between CIN 2 and CIN 3 and a mimic of precancer (e.g. immature
+metaplasia, reparative epithelial changes, atrophy or tangential cutting)
+• Anytime a morphologic CIN 2 diagnosis is considered
+• As an adjudication tool for cases with professional disagreement
+• As an adjunct to morphologic assessment for biopsy specimens interpreted as ≤ CIN 1 that are high risk
+for missed high-grade disease.
+For additional information, refer to the Benefits: Family Planning-Related Services section in this manual.
+‹‹(37) For indications, recommendations, and considerations for concurrent male partner treatment, see the
+California Department of Public Health (CDPH) Dear Colleague Letter Clinical Recommendations for Male
+Partner Treatment to Prevent Recurrent Bacterial Vaginosis available on the CDPH website.››
+[[page 60]]
+ben grid
+60
+Family PACT – Benefits Grid
+Page updated: October 2023
+Legend
+Symbol Description
+Note 1 The CDC Sexually Transmitted Infections Treatment Guidelines, 2021 recommendations for uncomplicated
+gonococcal infections of the cervix, urethra or rectum are as follows: treat with a single dose of ceftriaxone
+500 mg IM for persons weighing less than 150 kg (330 lbs). For persons weighing 150 kg (330 lbs) or more,
+ceftriaxone 1 gm IM should be administered. If chlamydial infection has not been excluded, providers should
+treat for chlamydia with doxycycline 100 mg orally twice daily for 7 days.
+If treating with cefixime, and chlamydial infection has not been excluded, providers should treat for chlamydia
+with doxycycline 100 mg orally twice daily for 7 days.
+For patients with significant anaphylaxis-type allergies to penicillin or cephalosporins, treat with gentamicin
+240 mg IM (onsite dispensing only with HCPCS code J1580; requires a TAR) with azithromycin 2 gm PO X 1
+(refer to the Family PACT Pharmacy Formulary on the Medi-Cal Rx website [https://medi-calrx.dhcs.ca.gov],
+as well as the Benefits: Family Planning-Related Services and Clinic Formulary sections of this manual).
+For uncomplicated gonococcal infections of the pharynx: treat with ceftriaxone, as noted above. If chlamydia
+coinfection is identified when pharyngeal gonorrhea testing is performed, providers should treat for chlamydia
+with doxycycline 100 mg orally twice a day for 7 days.
+Note 2 For persons weighing 150 kg (330 lbs) or more, ceftriaxone 1 gm IM should be administered.
+Note 3 For nonpregnant persons with penicillin allergy who have primary or secondary syphilis, may treat with
+doxycycline 100 mg orally 2 times per day for 14 days. For those with late latent or syphilis of unknown
+duration, may treat with 100 mg orally 2 times per day for 28 days.
+[[page 61]]
+ben grid
+61
+Family PACT – Benefits Grid
+Page updated: October 2023
+Legend
+Symbol Description
+Note 4 Moxifloxacin (pharmacy dispensing only). See Benefits: Family Planning-Related Services and Pharmacy
+Formulary sections of this manual. See the Benefits: Family Planning-Related Services section in this manual
+and the Family PACT Pharmacy Formulary on the Medi-Cal Rx website (https://medi-calrx.dhcs.ca.gov/).
+Note 6 For pharmacy dispensing only.
+Note 7 There is a $14.99 claim limit for contraceptive supplies dispensed onsite on a single date of service. Refer to
+the Drugs: Onsite Dispensing Price Guide section for the “Family PACT rate per unit.”
+Note 8 The dispensing of up to the maximum quantity is intended for clients on continuous cycle. A 12-month supply
+of the same product of oral contraceptives, contraceptive patches or contraceptive vaginal rings may be
+dispensed twice in one year. A TAR is required for the third supply of up to 12 months of the same product
+requested within a year.
+Note 9 Providers must document the medical necessity for billing repeat implant or IUC/IUD placement of the same
+device within the device’s duration of use, as noted by the label, in the Remarks field (Box 80)/Additional Claim
+Information field (Box 19) of the claim.
+Note 10 If the patient has cephalosporin allergy or is unable to receive an injectable cephalosporin regimen, the
+community prevalence and individual risk for gonorrhea are low, and follow-up is likely, the alternative oral
+regimen can be considered. If this regimen is used, a GC test must be done, and if positive, either the patient
+must be treated with ceftriaxone IM or consultation with an infectious disease specialist is recommended.

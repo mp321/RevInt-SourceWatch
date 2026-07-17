@@ -1,0 +1,292 @@
+[[page 1]]
+drug
+1
+Family PACT – Drugs: Onsite Dispensing Billing Instructions
+Drugs: Onsite Dispensing Billing Instructions
+Page updated: August 2020
+This section includes Family Planning, Access, Care and Treatment (Family PACT) Program
+billing instructions for drugs (both injectable and non-injectable) and contraceptive supplies
+dispensed onsite, also known as physician-administered drugs. For a complete list of
+reimbursable drugs and contraceptive supplies dispensed onsite, refer to the Clinic
+Formulary section and the “Treatment and Dispensing Guidelines for Clinicians” in the
+Benefit Grid section in this manual.
+Reimbursement Rates for Onsite Dispensing
+The maximum reimbursement rates for many of the items dispensed onsite are set by the
+Medi-Cal program and are contained in the Medi-Cal rate table, which may be accessed
+from the Medi-Cal website (www.medi-cal.ca.gov) by clicking the “Medi-Cal Rates” link.
+When a Medi-Cal maximum reimbursement rate is not specified, Family PACT sets the
+reimbursement rates for the drugs in the Drugs: Onsite Dispensing Price Guide section in
+this manual.
+For injections, the price listed on the “Medi-Cal Rates” includes the one-time administration
+fee of $4.46 for the first billed unit. Since the administration fee is paid only once for each
+drug administered, subsequent units claimed must have the administration fee subtracted
+from the published rate.
+Providers participating as Public Health Service (PHS) entities, and purchasing drugs
+through the PHS 340B program, must not bill more than the actual acquisition cost of the
+drug, as charged by the manufacturer at a price consistent with the PHS program for
+covered outpatient drugs. Drugs subject to the PHS program must be billed with modifier UD
+in accordance with Medi-Cal policy.
+Eligible entities, pursuant to Section 14132.01 of California Welfare and Institutions Code,
+may also bill a clinic dispensing fee and an administration fee, if applicable, as defined
+below.
+Eligible entities will be reimbursed the lesser of the acquisition cost of the drug plus the
+maximum dispensing fee or the Medi-Cal maximum rate on file.
+[[page 2]]
+drug
+2
+Family PACT – Drugs: Onsite Dispensing Billing Instructions
+Page updated: March 2026
+Pursuant to Section 14132.01 of California Welfare and Institutions Code, eligible entities
+may bill for a dispensing fee of $12 per unit for:
+Intrauterine Contraception/Intrauterine Devices
+Table of Intrauterine Contraception/Intrauterine Devices
+HCPCS Code Description
+J7296 Levonorgestrel-releasing intrauterine contraceptive system (Kyleena),
+19.5 mg
+J7297 Levonorgestrel-releasing intrauterine contraceptive system (Liletta),
+52 mg
+J7298 Levonorgestrel-releasing intrauterine contraceptive system (Mirena),
+52 mg
+‹‹J7299 Intrauterine copper contraceptive (Miudella)››
+J7300 ‹‹Intrauterine copper contraceptive (Paragard)››
+J7301 Levonorgestrel-releasing intrauterine contraceptive system (Skyla),
+13.5 mg
+The clinic dispensing fee unit for J7296, J7297, J7298, J7300, and J7301 is a calendar
+month, with a maximum allowable of 36 units per device.
+Subdermal Contraceptive Implant
+Table of Subdermal Contraceptive Implants
+HCPCS Code Description
+J7307 Etonogestrel (contraceptive) implant system, including implant supplies
+The clinic dispensing fee unit for J7307 is a calendar month, with a maximum allowable of
+36 units per device.
+Medroxyprogesterone Acetate
+Table of Medroxyprogesterone Acetate
+HCPCS Code Description
+J3490 Medroxyprogesterone acetate SQ, 104mg/0.65ml SQ
+J3490 U8 Medroxyprogesterone acetate, 150 mg/ml IM
+The clinic dispensing fee unit for J3490 U8 and J3490 is a calendar month, with a maximum
+allowable of 3 units per injection.
+[[page 3]]
+drug
+3
+Family PACT – Drugs: Onsite Dispensing Billing Instructions
+Page updated: October 2022
+Oral Contraceptives, Vaginal Ring and Transdermal Patch
+Table of Oral Contraceptives, Vaginal Rings and Transdermal Patches
+HCPCS Code Description
+S4993 Contraceptive pills for birth control
+J7294 Segesterone acetate and ethinyl estradiol 0.15 mg, 0.013 mg per 24
+hours; yearly vaginal system, each
+J7295 Ethinyl estradiol and etonogestrel 0.015 mg, 0.13 mg per 24 hours;
+monthly vaginal ring, each
+J7304U1 Contraceptive supply, hormone containing patch, each (norelgestromin
+and ethinyl estradiol transdermal system)
+J7304U2 Contraceptive supply, hormone containing patch, each (levonorgestrel
+and ethinyl estradiol transdermal system)
+The clinic dispensing fee unit for S4993 is a calendar month, with a maximum allowable of
+13 units. The clinic dispensing fee unit for J7294 and J7295 is a calendar month with a
+maximum allowable of 12 units. The clinic dispensing fee unit for J7304U1 and J7304U2 is a
+calendar month, for three patches dispensed with a maximum allowable of 12 units.
+Emergency Contraception
+Pursuant to Section 14132.01 of California Welfare and Institutions Code, eligible entities
+may bill for a dispensing fee of $17 per unit for emergency contraception:
+Table of Emergency Contraception
+HCPCS Code Description
+J3490 U5 Ulipristal acetate, 30 mg
+J3490 U6 ‹‹Levonorgestrel one tablet of 1.5 mg››
+The clinic dispensing fee unit for J3490 U5 and J3490 U6 is one pack per recipient per
+month with a maximum allowable of 1 unit.
+Other Contraceptive Supplies
+For other contraceptive supplies or medications, billed with HCPCS codes (A4261, A4266,
+A4267, A4268, A4269U1, A4269U2, A4269U3, A4269U4, A4269U5 and S5199), the clinic
+dispensing fee is 10 percent of the subtotal.
+Miscellaneous Drugs
+For drugs billed with HCPCS codes S5000 and S5001, the Family PACT Program
+designates clinic dispensing fees by two levels:
+• Level A: Pharmacist pre-packaged containers of tablets or capsules (flat rate = $3.00)
+• Level B: Manufacturer pre-packaged tubes or other containers (flat rate = $2.00)
+[[page 4]]
+drug
+4
+Family PACT – Drugs: Onsite Dispensing Billing Instructions
+Page updated: October 2021
+HCPCS Codes for Drugs and Supplies Dispensed Onsite
+The HCPCS codes for drugs and supplies dispensed in clinics are as follows.
+‹‹Table of Drugs and Supplies Dispensed Onsite››
+HCPCS Code Description
+A4261 Cervical cap for contraceptive use
+A4266 Diaphragm for contraceptive use
+A4267 Condom, male
+A4268 Condom, internal
+A4269 Contraceptive supply, spermicide
+A4269U1 Gel/jelly/foam/cream
+A4269U2 Spermicidal suppositories
+A4269U3 Spermicidal vaginal film
+A4269U4 Contraceptive sponge
+‹‹A4269U5 Vaginal gel››
+S5000 Prescription, generic
+S5001 Prescription, brand name
+S5199 Lubricant
+Basal temperature thermometers are dispensed at Medi-Cal participating pharmacies with a
+prescription.
+Note: ‹‹A4269 is billed with modifiers U1, U2, U3, U4 or U5 to indicate the type of
+contraceptive spermicide or non-spermicidal vaginal gel.››
+Claims for HCPCS codes A4267, A4269U1, A4269U2, A4269U3, A4269U4, ‹‹A4269U5››
+and S5199 must document the following in the Remarks field (Box 80) or Additional Claim
+Information field (Box 19):
+• Description of items
+• Actual quantity
+• “At cost” expense
+• Clinic dispensing fee, if applicable
+HCPCS codes A4267, A4268, A4269U1, A4269U2, A4269U3, A4269U4, ‹‹A4269U5›› and
+S5199 must be listed on separate claim lines.
+‹‹If any of the following codes: A4267, A4269U1, A4269U2, A4269U3, A4269U4 or S5199,
+or any combination of the codes is present on a claim, the total maximum allowable amount
+for any or all is $14.99. When billing for contraceptive supplies (A4267, A4269U1, A4269U2,
+A4269U3, A4269U4 or S5199) dispensed for the same patient by the same provider, the
+minimum interval between dispensing events is 15 days.››
+[[page 5]]
+drug
+5
+Family PACT – Drugs: Onsite Dispensing Billing Instructions
+Page updated: October 2021
+HCPCS code A4268 may be dispensed up to 12 units per claim and up to 24 units in a
+90-day period.
+‹‹HCPCS code A4269U5 is restricted to one box (12 single-use applicators) per dispensing
+and limited to three dispensings per any 75-day period.››
+For HCPCS codes A4261 and A4266, on the claim’s Remarks field (Box 80) or Additional
+Claim Information field (Box 19), document the following:
+• Description of items and type of diaphragm
+• “At cost” expense
+• Clinic dispensing fee, if applicable
+For claim form examples, refer to the Claim Completion: CMS-1500 and Claim Completion:
+UB-04 sections in this manual.
+Contraceptive Supplies
+Contraceptive supplies may be billed by all Family PACT providers. Covered supplies
+include cervical cap (A4261), diaphragm (A4266), FDA-approved male condoms (A4267),
+internal condoms (A4268), spermicides (A4269U1, A4269U2, A4269U3 or A4269U4),
+‹‹vaginal gel (A4269U5)›› and lubricants (S5199).
+Physician-Administered Drugs: Inclusion of NDC on Claim
+For physician-administered drugs, providers must include the National Drug Codes (NDCs)
+on the claim, according to the policy in the Physician-Administered Drugs – NDC section in
+this manual. This is in addition to the HCPCS code, which remains the basis of pricing. For
+claim form completion instructions, refer to the Physician-Administered Drugs – NDC:
+CMS-1500 Billing Instructions, or Physician-Administered Drugs – NDC: UB-04 Billing
+Instructions sections in the appropriate Part 2 manual.
+The following items identify whether or not a product is a drug:
+• NDC: The vial or box that held the drug has a NDC printed on it.
+• Lot and Expiration Date: All drugs have both a lot number and an expiration date on
+the vial or box.
+• Legend: This refers to statements such as, “Caution: Federal law prohibits dispensing
+without prescription,” “Rx only” or similar wording. All prescription drugs have these
+types of statements.
+[[page 6]]
+drug
+6
+Family PACT – Drugs: Onsite Dispensing Billing Instructions
+Page updated: September 2025
+For information on the billing policy and claim completion instructions, refer to the following
+Part 2 Medi-Cal manual sections:
+• Physician-Administered Drugs – NDC
+• Physician-Administered Drugs – NDC: CMS-1500 Billing Instructions
+• Physician-Administered Drugs – NDC: UB-04 Billing Instructions
+• CMS-1500 Claim Completion
+• UB-04 Claim Completion
+Onsite Dispensed Drugs Billed with NDC
+Table of Onsite Dispensed Drugs Billed with NDC
+HCPCS Code Medication Dosage Size
+J0561 Penicillin G benzathine 100,000 units
+J0694 Cefoxitin 1 gm injection
+J0696 Ceftriaxone 250 mg injection
+Q0144 Azithromycin dihydrate 1 gm oral
+S5000 Miscellaneous drugs, prescription, generic NA
+S5001 Miscellaneous drugs, prescription, brand
+name
+NA
+Onsite Dispensed Contraceptives Billed with NDC
+Table of Onsite Dispensed Contraceptives Billed with NDC
+HCPCS Code Contraceptives Dosage Size
+‹‹J3490 Medroxyprogesterone acetate 104 mg››
+J3490U5 Emergency contraception: Ulipristal acetate
+30 mg
+1 pack
+J3490U6 Emergency contraception: Levonorgestrel
+1.5 mg (1 tablet pack)
+1 pack
+J3490U8 Medroxyprogesterone acetate 150 mg
+J7294 Segesterone acetate and ethinyl
+estradiol 0.15 mg, 0.013 mg per 24 hours;
+yearly vaginal system, each
+1 ring
+J7295 Ethinyl estradiol and etonogestrel
+0.015 mg, 0.12 mg per 24 hours; monthly
+vaginal ring, each
+1 ring
+J7296 Levonorgestrel IU (kyleena) 19.5 mg 1 IUC
+[[page 7]]
+drug
+7
+Family PACT – Drugs: Onsite Dispensing Billing Instructions
+Page updated: March 2026
+Table of Onsite Dispensed Contraceptives Billed with NDC (continued)
+HCPCS Code Contraceptives Dosage Size
+J7297 Levonorgestrel IU (Liletta), 52 mg 1 IUC
+J7298 Levonorgestrel IU (Mirena), 52 mg 1 IUC
+‹‹J7299 Intrauterine copper contraceptive (Miudella) 1 IUC››
+J7300 ‹‹Intrauterine copper contraceptive
+(Paragard)››
+1 IUC
+J7301 Levonorgestrel IU (Skyla), 13.5 mg 1 IUC
+J7304U1 Contraceptive patch (norelgestromin and
+ethinyl estradiol transdermal system)
+1 patch
+J7304U2 Contraceptive patch (levonorgestrel and
+ethinyl estradiol transdermal system)
+1 patch
+J7307 Etonogestrel contraceptive implant
+(Implanon)
+1 implant
+S4993 Oral contraceptives 1 cycle
+Onsite Dispensing Price Guide
+The Drugs: Onsite Dispensing Price Guide section contains the following information for
+calculating the reimbursement rates for drugs (S5000 and S5001) dispensed onsite.
+• Billing unit definitions
+• Family PACT rate per unit
+• Maximum units per claim
+• Clinic dispensing fees
+• Upper payment limit (drug cost + clinic dispensing fee)
+• Fill frequency limit (minimum interval between refills)
+Note: A clinic dispensing fee is not reimbursable for antibiotic injections.
+[[page 8]]
+drug
+8
+Family PACT – Drugs: Onsite Dispensing Billing Instructions
+Page updated: December 2021
+Drug and Supplies List Restrictions
+Refer to the Clinic Formulary section in this manual for clinical restrictions for the use of
+certain drugs and supplies.
+The dosage regimens included as Family PACT benefits are based on the current Centers
+for Disease Control and Prevention (CDC) Sexually Transmitted Diseases Treatment
+Guidelines or the treatment recommendations of the California Department of Public Health
+(CDPH) Sexually Transmitted Disease Control (STDC) Branch. Covered regimens are listed
+in the “Treatment and Dispensing Guidelines for Clinicians” in the Benefits Grid section of
+this manual.
+Treatment Authorization Request
+‹‹Clinic dispensed drugs needed to treat complications are limited to drugs and supplies
+identified in the Family PACT Pharmacy Formulary on the Medi-Cal Rx website
+(https://medi-calrx.dhcs.ca.gov) as well as the Clinic Formulary section in this manual, and
+require authorization using a Treatment Authorization Request (TAR).››
+For more TAR information, refer to the Treatment Authorization Request (TAR) section in
+this manual.
+[[page 9]]
+drug
+9
+Family PACT – Drugs: Onsite Dispensing Billing Instructions
+Page updated: April 2021
+Legend
+Symbols used in the document above are explained in the following table.
+Symbol Description
+‹‹ This is a change mark symbol. It is used to indicate where on the page the
+most recent change begins.
+›› This is a change mark symbol. It is used to indicate where on the page the
+most recent change ends.

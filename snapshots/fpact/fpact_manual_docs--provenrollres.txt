@@ -1,0 +1,844 @@
+[[page 1]]
+prov enroll res
+1
+Family PACT – Provider Enrollment and Responsibilities
+Provider Enrollment and Responsibilities
+Page updated: August 2022
+This section outlines the requirements of enrollment and responsibilities as a Family
+Planning, Access, Care and Treatment (Family PACT) Program provider, including, but not
+limited to, administrative responsibilities, referring clients to Medi-Cal providers and other
+programs, compliance reviews, and record keeping. The statutes and regulations noted in
+this section are binding for all Family PACT providers, their designated agents, all public and
+private agencies and/or individuals that are engaged in providing or securing Family PACT
+services for, or on behalf of, eligible Family PACT clients. Providers should carefully review
+the full text of California's Welfare and Institutions Code (W&I Code), Section 24005.
+Eligible Providers
+Per W&I Code, Section 24005(b) and (c), only licensed medical personnel with family
+planning skills, competency and knowledge, may provide the full range of services covered
+by the program. Medi-Cal enrolled providers, as determined by the Department of Health
+Care Services (DHCS) shall be eligible to provide family planning services under the
+program when the services are within their scope of practice and licensure. Eligible
+providers shall provide the full scope of family planning, education, counseling and medical
+services specified by Family PACT, either directly or by referral, consistent with the
+standards of care issued by the Department per W&I Code, Section 24005(c). For more
+information about the Family PACT Program Standards, refer to the Program Standards
+section in this manual. Family PACT providers are required to offer and provide Long Acting
+Reversible Contraception onsite. See Long Acting Reversible Contraception (LARC) in this
+section for additional information.
+Clinical providers electing to participate in the Family PACT Program must be enrolled
+Medi-Cal providers in good standing prior to submitting a Family PACT application. A Family
+PACT application submitted by a provider in which the service location and/or the
+participating providers identified on the application for enrollment are not enrolled in Medi-Cal
+or not in good standing with Medi-Cal shall be denied.
+[[page 2]]
+prov enroll res
+2
+Family PACT – Provider Enrollment and Responsibilities
+Page updated: August 2023
+Eligible Provider Types
+Solo providers, group providers, Primary Care Clinics (PCCs), Affiliate Primary Care Clinics
+(APCCs), Federally Qualified Health Centers (FQHCs), Tribal FQHCs, community clinics,
+intermittent clinics, mobile clinics, Rural Health Centers (RHCs), Indian Health Services
+Memorandum of Agreement (IHS-MOA) 638 clinics, certain specialty clinics, and outpatient
+hospitals are eligible to apply for enrollment in the Family PACT Program if they currently
+have a National Provider Identifier (NPI) and are enrolled in Medi-Cal in good standing. See
+Primary Care and Affiliate Primary Care Clinics in this section for additional information.
+Intermittent clinics, as defined by Health and Safety (H&S) Code, Section 1206(h) and
+mobile clinics, as defined by H&S Code, Sections 1765.120, 1765.150 and 1765.155, must
+apply for enrollment in the Family PACT Program. Intermittent clinics and mobile clinics may
+apply using their own NPI or their organizational NPI and must be enrolled in Medi-Cal in
+good standing.
+Ineligible Providers
+Per W&I Code, Section 24005(g), providers and participating practitioners who, in the last
+10 years, have been convicted of any felony or misdemeanor that involves fraud or abuse in
+any government program, or have been found liable for fraud or abuse in any civil
+proceeding, or entered into a settlement in lieu of conviction for fraud or abuse in any
+government program will not be eligible to enroll in the Family PACT program.
+Per W&I Code, Section 24005(h), providers and participating practitioners will not be eligible
+to enroll in the Family PACT Program if they are under investigation by the department or
+any local, state, or federal government law enforcement agency for fraud, abuse or has an
+open department audit.
+Enrollment
+A provider’s enrollment is location specific. A (physical) service location is certified for
+enrollment in the Family PACT Program when all the Family PACT provider enrollment
+requirements set forth in this section have been met. A Family PACT site may only be
+enrolled under one provider’s NPI, and no other organizational NPI may enroll at the same
+service location. All Family PACT services shall be rendered by, or at, an enrolled service
+location(s) only. ‹‹A telehealth only facility is not eligible to enroll in the Family PACT
+Program.››
+[[page 3]]
+prov enroll res
+3
+Family PACT – Provider Enrollment and Responsibilities
+Page updated: August 2022
+Provider Groups
+The California Code of Regulation (CCR), Title 22, Chapter 3, Article 1, Section 51000.16,
+defines a “Provider Group” as two or more rendering providers. When enrolling as a group
+provider, failure to properly report at least two (2) rendering providers at the time of
+application may result in the denial of the application. Rendering providers are individual
+providers who render healthcare services, or provide goods, supplies, or merchandise, as a
+member of a provider group and use the group provider number to bill the Family PACT
+Program.
+Primary Care and Affiliate Primary Care Clinics
+Pursuant to Health and Safety Code (H&S Code) 1222, an applicant for licensure as a
+Primary Care Clinic (PCC), as defined in subdivision (a) of H&S Code, Section 1204 may
+submit an application for review of the clinic’s qualifications for participation in the Family
+PACT Program simultaneously with the clinic’s application for enrollment and certification as
+a provider in the Medi-Cal Program.
+An Affiliate Primary Care Clinic (APCC) enrollment in the Family PACT Program is dictated by
+W&I Code, Section 24005(t) (1) and (2).
+Within 30 calendar days of receiving a complete application for enrollment into the Family
+PACT Program from an APCC licensed under H&S Code, Section 1218.1, the department
+will do one of the following:
+• Approve the APCC’s Family PACT application, provided the applicant meets the Family
+PACT provider enrollment requirements set forth in this section; or
+• If the APCC is enrolled in Medi-Cal in good standing, notify the applicant in writing of
+any discrepancies identified in the Family PACT enrollment application. The applicant
+shall then have 30 calendar days from the date of the written notice to correct any
+identified discrepancies. Upon receipt of all requested corrections, the department shall
+approve the application within 30 calendar days. The APCC’s Family PACT enrollment
+effective date will then be made retroactive to the date the department received the
+Family PACT enrollment application; or
+• If the APCC is not enrolled in Medi-Cal at the time the provider’s Family PACT
+enrollment application is submitted, DHCS shall not proceed with the actions until it
+receives confirmation that the APCC is enrolled in Medi-Cal. After DHCS receives
+confirmation of Medi-Cal enrollment, and the APCC’s
+• Family PACT application is approved, the APCC’s Family PACT enrollment date will be
+made retroactive to the date the APCC was enrolled in Medi-Cal
+All APCCs are subject to the provider orientation requirements set forth in this section.
+[[page 4]]
+prov enroll res
+4
+Family PACT – Provider Enrollment and Responsibilities
+Page updated: July 2026
+Non-Physician Medical Practitioners
+Non-Physician Medical Practitioners (NMPs) employed by a Medi-Cal provider who will be
+delivering Family PACT services must be identified on the Family PACT Supplemental
+Application in the Provider Application and Validations for Enrollment (PAVE) Provider Portal
+and complete a Family PACT Program Practitioner Participation Agreement (DHCS 4470).
+NMPs eligible to participate in the Family PACT Program include Certified Nurse
+Practitioners (CNPs), Physician Assistants (PAs) and Certified Nurse Midwives (CNMs).
+Definitions for NMPs are located in the Non-Physician Medical Practitioners (NMP) section
+in the appropriate Part 2 Medi-Cal provider manual. Unless otherwise stated, the Family
+PACT Program defers to Medi-Cal policies, billing instructions and reimbursement for NMPs
+who deliver Family PACT services.
+NMPs are authorized to deliver the full scope of Family PACT family planning and family
+planning-related services within their scope of practice and to the extent permitted by
+applicable professional licensing statutes and regulations as set forth in the
+physician/practitioner interface document.
+Providers Not Required to Enroll
+Anesthesiologists, laboratories, pharmacies and radiologists are not required to enroll in the
+Family PACT Program, but must be enrolled in Medi-Cal. Anesthesiologists, laboratories,
+pharmacies and radiologists cannot enroll or recertify clients in the Family PACT Program.
+Ordering, Referring, or Prescribing (ORP) Providers
+W&I Code, Section 14043.1(b) and (o) require the enrollment of ORP providers as
+participating providers in the Medi-Cal program. W&I Code, Section 14043.15(b)(3) provides
+that the NPI of the ORP provider must be listed on all claims for reimbursement.
+There are three basic requirements for ORP providers:
+• The ORP provider must be enrolled in Medi-Cal as a billing provider, rendering provider
+or as an ORP only (non-billing) provider.
+• The ORP provider’s enrolled NPI (Type 1) must be for an individual, not an
+organizational NPI.
+• The ORP provider must be eligible to order, refer and/or prescribe in accordance with
+law and the health care practitioner’s practice act.
+[[page 5]]
+prov enroll res
+5
+Family PACT – Provider Enrollment and Responsibilities
+Page updated: July 2026
+If an ORP provider identified on a Family PACT claim is not enrolled in Medi-Cal, the claim
+for reimbursement of the goods or services they provided in filling a client’s order, referral or
+prescription will be denied.
+Additional information on ORP providers is available on the DHCS website.
+Long-Acting Reversible Contraception (LARC)
+‹‹Family PACT providers are required to offer long-acting reversible contraceptive (LARC)
+services onsite at the service location. LARCs include intrauterine devices (IUDs) and the
+contraceptive implant. Family PACT providers are required to offer, at minimum, the
+contraceptive implant and at least one type of hormonal IUD and non-hormonal IUD onsite.
+LARC services include both insertion and removal of the devices.
+Each service location enrolling into the Family PACT Program must identify, at a minimum,
+one clinician trained to provide LARC services onsite. Per W&I Code 24005(k), providers
+who offer LARC services shall have received prior clinical training specific to these
+procedures. The trained clinician(s) must be indicated on the application for enrollment. ››
+All providers performing Nexplanon insertions or removals must complete the FDA-required
+Risk Evaluation and Mitigation Strategy (REMS) certification. For more information, visit the
+Nexplanon REMS website. Potential insertion- and removal-related events must be reported
+immediately to the Nexplanon REMS using the Insertion and Removal-Related Events
+Documentation Form, which is available on the Nexplanon REMS website, or by calling
+1-833-697-7367.
+Applying for Enrollment
+Per W&I Code, Section 24005(e), DHCS may screen applicants at the initial application and
+at any reapplication pursuant to the requirements developed by DHCS to determine provider
+suitability for the program.
+Provider applicants interested in applying for enrollment into the Family PACT Program shall
+follow the application instructions listed on the Family PACT and DHCS websites. The
+Family PACT Program Provider Agreement (DHCS 4469) and the Family PACT Program
+Practitioner Participation Agreement (DHCS 4470) are located on the Family PACT website
+and must be completed, signed and submitted to the program using the PAVE Provider
+Portal.
+Each practitioner, Medical Doctor (MD) and NMP serving Family PACT clients shall agree to
+comply with Family PACT Program Standards by signing the DHCS 4470. The DHCS 4470
+is not required to be completed by providers listed in Medi-Cal’s Provider Master File as an
+APCC, nonprofit community clinic or PCC, or Indian Health Services, or Memorandum of
+Agreement (IHS-MOA) 638 Clinics.
+[[page 6]]
+prov enroll res
+6
+Family PACT – Provider Enrollment and Responsibilities
+Page updated: January 2025
+Enrollment Forms and Agreements
+Enrollment forms and agreements shall be:
+• Signed under penalty of perjury under the laws of the State of California. Background
+checks and data searches are performed to verify the information provided on the
+enrollment forms.
+• Completed by the provider applicant only.
+• Submitted by the provider. Any enrollment forms received by a third party (for example:
+consultants, attorneys, or enrollment brokers) will not be accepted. Additionally, third
+parties (for example: consultants, attorneys, or enrollment brokers) must not be the
+contact person listed on the application.
+Providers must maintain legible copies of all initial and updated provider enrollment
+applications, initial and updated provider and practitioner agreements, and all related
+required training documents at the provider site. A site certifier’s orientation certificate of
+attendance must be displayed at all times.
+Additional Documentation
+Copies of the following supporting documentation may be requested during the application
+process:
+• All clinic policies and procedures for Family PACT client eligibility and enrollment (for
+example: policies and procedures and/or staff training plan for enrolling clients, record
+retention of CEC forms and client appointment process, etc.).
+• All clinic policies and procedures for referrals and follow-ups for all services provided at
+the location (i.e., policies and procedures and/or staff training plan for referring clients
+for services covered by Family PACT, but not offered by the provider, clinician
+visit/back office documentation procedures, documentation procedures for the
+education and counseling provided, and the patient outcome/treatment plan, etc.).
+Additional information regarding referrals can be found in the Program Standards
+section in this provider manual.
+• Clinic organizational chart (for example: staff list and roles for each, etc.)
+• Any additional documentation requested by DHCS.
+[[page 7]]
+prov enroll res
+7
+Family PACT – Provider Enrollment and Responsibilities
+Page updated: July 2026
+Application Deficiencies
+Applicants are allowed 60 calendar days from the notification date to resubmit a corrected
+application when the application is returned deficient.
+If a Family PACT provider applicant and/or new provider location fails to resubmit the
+corrected application with all deficiencies remediated to the DHCS’ Office of Family Planning
+(OFP) within 60 calendar days, the application will be denied.
+Applicants denied for failure to resubmit or remediate deficiencies in a timely manner may
+reapply at any time.
+Additional Provider Locations
+To enroll additional provider locations under the organizational NPI, each additional provider
+location must be enrolled in Medi-Cal in good standing. Provider applicants applying to enroll
+additional locations shall follow the application instructions listed on the Family PACT and
+DHCS websites.
+Provider Orientation and Required Trainings
+‹‹The Provider Orientation and required trainings provide an overview on comprehensive
+family planning, program benefits and services, client eligibility, provider responsibilities and
+program compliance.
+All required trainings are posted on the Family PACT Online Training Center website.››
+Site Certifier Training Requirements
+‹‹Medi-Cal enrolled providers attempting to enroll into the Family PACT Program must
+complete the legislatively mandated Provider Orientation per W&I Code, Section 24005(k).
+The provider must designate a site certifier on the application for enrollment to complete the
+Provider Orientation. The Provider Orientation must be completed prior to rendering Family
+PACT services. Site Certifiers are required to complete the Provider Orientation every two
+(2) years.
+Prior to registering for the Provider Orientation, the site certifier must complete all required
+online trainings, which must be completed every two (2) years.››
+Family PACT enrolled providers attempting to recertify a service location must complete the
+required online trainings prior to submitting an application for recertification and must
+complete the Provider Orientation within 120 calendar days of receiving the recertification
+notification letter unless the site certifier has attended a Provider Orientation within the last
+two (2) years.
+[[page 8]]
+prov enroll res
+8
+Family PACT – Provider Enrollment and Responsibilities
+Page updated: July 2026
+All Other Clinic Staff Training Requirements
+‹‹Clinicians and all other clinic staff administering the Family PACT Program must also
+complete all required online trainings prior to submitting an enrollment application.
+The trainings are based on the primary functional role of a provider’s staff and must be
+completed every five (5) years, or as directed by DHCS. For more information and the
+complete list of the required trainings visit the Family PACT Online Training Center.››
+Site Certifier
+Each provider applicant must designate an eligible representative who works at the service
+location to be the location’s site certifier. A Medical Director, MD, CNP, PA or CNM who is
+enrolled in Medi-Cal is eligible to certify the service location. The designated site certifier
+must be identified on the application for enrollment.
+The site certifier may only be designated as the site certifier at one service location, with the
+exception of certain clinic types. The following clinic types may enroll multiple, but no more
+than 10, service location addresses under one site certifier:
+• A PCC that serves as a parent clinic as described in H&S Code, Section 1218.1, and
+one or more of its affiliate primary care clinics, or
+• Community clinics licensed under H&S Code, Section 1204(a), and rural health clinics
+as defined in Title 42 of the United States Code, Section 1396d(l)(1), that operate
+multiple service locations, such as intermittent clinics exempt from licensure under
+H&S Code, Section 1206(h).
+The designated site certifier is responsible for overseeing the family planning services
+rendered at the identified service location and will have the following responsibilities:
+• Ensure the service location is adhering to all current Family PACT program standards,
+policies and administrative practices through regular provider staff trainings and
+communications, updating clinical policies and procedures as applicable, regular
+self-audits and chart reviews.
+• ‹‹Ensure that all clinicians and other clinic staff providing services on behalf of the
+Family PACT Program (e.g., clinical services, client certification and enrollment, billing,
+etc.) complete and track all required trainings every five (5) years.››
+• Use the results of the Department or other local, state or federal agency’s compliance
+review(s) or audits to identify areas that shall be the subject of ongoing monitoring and
+self-audits.
+‹‹The site certifier may delegate responsibilities, as appropriate, and according to the scope
+of the clinic staff’s certification, licensure and/or job duties.›› Responsibilities pertaining to
+clinical standards and practices must be delegated to a Medical Director, MD, CNP, PA or
+CNM.
+[[page 9]]
+prov enroll res
+9
+Family PACT – Provider Enrollment and Responsibilities
+Page updated: October 2025
+Enrolled service locations electing a new site certifier are required to have the site certifier:
+• Submit a DHCS 4470 to DHCS (APCCs, nonprofit community clinics or PCCs, and
+IHS-MOA 638 clinics are exempt from the DHCS 4470 requirement);
+• Complete all required online trainings;
+• Attend a Provider Orientation within 120 calendar days of site certifier designation,
+unless the site certifier has attended a Provider Orientation within the last two (2)
+years; and
+• Provide any additional documentation as requested by DHCS.
+Site certifier guidelines for entities with multiple service locations enrolling under a single site
+certifier require the providers to:
+• Agree to and sign, and ensure the site certifier agrees to and signs, the section of the
+Family PACT Program Provider Agreement (DHCS 4469) pertaining to a single site
+certifier overseeing multiple locations. This ensures all responsibilities related to
+overseeing family planning services and maintaining program compliance will be met.
+• Complete Site Certifier for Multiple Service Locations Declaration (DHCS 4475). All
+required documents identified on the form will be subject to review by DHCS, and the
+provider will be notified upon approval.
+A Medical Director, MD, CNP, PA or CNM will not be eligible to serve as a site certifier if
+they are under investigation by any local, state or federal government agency, including
+DHCS, for fraud or abuse; have an open department audit; or have previous sanctions. This
+includes any previous disciplinary action, probation, and/or limits on practice by the Medical
+Board of California. PAs are approved by the Physician Assistants Board of California to
+perform direct patient care services under the supervision of a licensed physician.
+Enrollment Confirmation
+Once all provider enrollment requirements set forth in this section have been met and the
+Family PACT application is approved, the Family PACT enrollment effective date will be
+retroactive to the date DHCS’ OFP received the Family PACT application.
+Providers will receive written confirmation of enrollment, including the Family PACT
+enrollment effective date.
+[[page 10]]
+prov enroll res
+10
+Family PACT – Provider Enrollment and Responsibilities
+Page updated: July 2026
+Recertification for Continued Participation
+Family PACT providers must recertify their enrollment as a Family PACT provider every five
+(5) years or as directed by DHCS.
+The recertification process includes reapplication for enrollment in the Family PACT
+Program, which requires that:
+• ‹‹A complete application, with uploaded required documents, be submitted to DHCS
+OFP using the PAVE Provider Portal within 60 calendar days of the notification by
+DHCS OFP.›› Refer to Applying for Enrollment outlined in this section for a description
+of the required documents. If corrections are needed, 60 calendar days are allowed
+from the notification date to resubmit a corrected application.
+• The information on the application and agreement(s) must match the information on file
+with DHCS PED.
+• ‹‹The site certifier complete all required online trainings within 60 calendar days of the
+notification of recertification by DHCS.›› The site certifier will have 120 calendar days
+from the date of notification to complete the Provider Orientation unless the site
+certifier has attended a Provider Orientation within the last two (2) years.
+• ‹‹All clinicians listed on the application complete all required online trainings prior to
+submitting an application.››
+The provider will be disenrolled from the Family PACT program if they fail to do any of the
+following:
+• Submit a complete application within 60 calendar days of receiving written notification
+by DHCS OFP, or, if applicable:
+• Remediate a deficient application within 60 calendar days, or
+• Complete the Provider Orientation within 120 calendar days.
+Reporting a Change of Information
+Providers shall report to both DHCS’ PED and DHCS’ OFP within 35 calendar days of any
+addition or change in information previously submitted in the application package. Failure to
+notify DHCS’ PED and DHCS’ OFP of any changes to previously submitted information may
+result in disenrollment from the Family PACT Program.
+[[page 11]]
+prov enroll res
+11
+Family PACT – Provider Enrollment and Responsibilities
+Page updated: October 2025
+A provider must submit a new application to DHCS’ OFP within 35 calendar days when
+reporting the following changes to a Medi-Cal record and the new information in the
+application must already be on file on file with DHCS’ PED:
+• Service, mailing and/or pay-to addresses.
+• National Provider Identifier (NPI).
+• Taxpay Identification Number (TIN).
+• Legal name or business name.
+These changes do not require a provider to attend a Provider Orientation to certify the
+service location unless the service location is designating a new site certifier. For more
+information related to site certifier requirements, refer to site certifier in this section.
+If the changes are to provider type or ownership, a provider must reapply for enrollment in
+the Family PACT Program within 35 days of the action taken, e.g., an individual provider
+changes their provider type from a solo provider to a group provider. The new information in
+the application must already be on file with DHCS’ PED. The site certifier must complete all
+required trainings to certify the service location including attending Provider Orientation,
+unless the site certifier has attended a Provider Orientation within the last two (2) years.
+Program Integrity and Compliance
+The Family PACT Standards define the scope, type, and quality of care required under the
+Family PACT Program, and the terms and conditions under which the providers will be
+reimbursed.
+Family PACT providers shall establish policies and procedures to comply with the Family
+PACT Standards and administrative policies contained in this manual, including applicable
+regulations and laws and program policies and administrative practices. The Department
+may conduct or arrange for compliance reviews and/or audits to be conducted to ensure
+compliance with Family PACT Standards, regulations and laws and program policies and
+administrative practices. In addition, desk reviews or provider self-audits may be performed
+and/or requested by DHCS. Follow-up compliance reviews, audits or site reviews may occur
+as deemed necessary. Failure to comply with Family PACT Standards, regulations and laws
+and program policies and administrative practices will result in suspension and/or
+disenrollment from the Family PACT Program.
+[[page 12]]
+prov enroll res
+12
+Family PACT – Provider Enrollment and Responsibilities
+Page updated: October 2025
+Compliance reviews shall cover a period of time as determined by DHCS, and include but
+are not limited to, a review of medical records, staff employment files, detailed job
+descriptions, appropriate licensing and certification for all personnel, business related
+contracts and documents outlining budgets and fiscal integrity. If a compliance review results
+in a corrective action plan (CAP) or temporary suspension, the provider must agree to
+comply with all aspects of the program’s directed CAP or suspension before the provider is
+reinstated. The site certifier shall use the results of the compliance review to identify the
+areas that shall be the subject of ongoing monitoring and periodic self-audits.
+Self-monitoring is required and shall include documentation of completed trainings signed by
+staff; ensuring client files are reviewed and re-certified annually, ensuring all Family PACT
+forms are accurately completed and medical record documentation meets the Family PACT
+Program Standards.
+Additional Screening Requirements for Enrolling and
+Maintaining Enrollment
+DHCS reserves the right to limit the enrollment of new providers in designated service areas,
+if DHCS, at its sole discretion, determines that the service area is adequately covered.
+Provider enrollment screening to determine provider suitability into the program is necessary
+to safeguard the fiscal and programmatic integrity of the Family PACT Program.
+Per W&I Code, Section 24005(f), DHCS may conduct a background check for the purpose of
+verifying the accuracy of the information provided on the application package. The
+background check may include, but is not limited to, the following: one (1) on-site inspection
+before, during, or after enrollment, for the purpose of determining whether enrollment or
+continued enrollment is warranted; two (2) review of business records and
+three (3) data searches.
+DHCS may prohibit a provider from enrolling in the Family PACT Program for up to three (3)
+years if its enrollment application is denied as the result of a provider submitting false or
+misleading information (or omitted information from) on or with its application in order to gain
+enrollment in the Family PACT Program.
+[[page 13]]
+prov enroll res
+13
+Family PACT – Provider Enrollment and Responsibilities
+Page updated: October 2025
+Provider Disenrollment
+Providers, including all of the provider’s site locations, are subject to disenrollment for failure
+to adhere to program standards, policies and administrative practices. DHCS shall
+immediately disenroll the provider from the Family PACT Program when:
+• Documents mailed to a provider’s mailing address, pay-to address or business
+address, are returned by the United States Postal Service as not deliverable.
+• A provider has not submitted a claim for reimbursement to the Family PACT Program,
+for a period of one (1) year.
+• The provider, any individual who, or any entity that has a license, certificate or other
+approval to provide healthcare, which is revoked or suspended by a federal, California
+or another state’s licensing, certification or other approval authority, has otherwise lost
+that license, certificate or approval while a disciplinary hearing on that license,
+certificate or approval or has surrendered that license, certificate, or approval while a
+disciplinary hearing on the license, certificate, or approval was pending.
+• The provider’s license is currently revoked under a different name, NPI, or business
+identity, and the applicable reenrollment bar period has not expired.
+• The provider submits claims for services performed at, or items furnished from, a
+location that it knew or should reasonably have known did not comply with Family
+PACT enrollment requirements.
+• A provider receives recertification for continued participation notification and fails to
+respond to the Department within the designated timeframes.
+• Pursuant to W&I Code, Section 24005(h), if it is discovered that a provider is under
+investigation by the department or any local, state, or federal government law
+enforcement agency for fraud or abuse or has an open department audit.
+Disenrollment from the Family PACT Program by DHCS is not subject to an administrative
+appeal. Disenrolled providers may reapply to become a Family PACT provider. Approval will
+be considered on a case-by-case basis. Disenrollment from the Family PACT Program may
+affect eligibility to participate in other programs and/or result in additional sanctions or
+penalties.
+DHCS’ OFP shall make referrals to the Medi-Cal Program for those providers who are
+suspected of fraud, waste, and abuse. If a provider is suspended from the Medi-Cal
+Program, enrollment in the Family PACT Program is terminated effective the date of the
+Medi-Cal suspension and Family PACT services are no longer reimbursable. Providers and
+provider staff who are disenrolled from the Family PACT Program for fraud, waste, and
+abuse may not reapply for a minimum period of three (3) years from the date of
+disenrollment.
+[[page 14]]
+prov enroll res
+14
+Family PACT – Provider Enrollment and Responsibilities
+Page updated: October 2025
+Provider Suspension
+DHCS has the discretion to suspend and/or take corrective action against a provider in lieu of
+disenrollment. DHCS may terminate or constitute grounds for issuing a reprimand; place the
+provider on probationary status; or suspend the provider from participation in the Family
+PACT Program, in accordance with the regulations contained in W&I Code Section 14123
+and CCR, Title 22, Chapter 3, Article 6, Section 51452(a).
+Voluntary Disenrollment
+Providers may terminate their participation in the Family PACT Program at any time by
+following the instructions listed on the Family PACT website.
+Reinstatement
+If a provider was determined ineligible to participate in the Medi-Cal program, and is
+reinstated, the provider’s Family PACT status is not automatically reinstated. The provider
+must reapply to become a Family PACT provider. Approval as an enrolled Family PACT
+provider will be considered on a case-by-case basis.
+Provider Responsibilities
+Nondiscrimination and Language Assistance
+Medi-Cal providers may not discriminate against beneficiaries and must provide language
+assistance services, as described below.
+Nondiscrimination
+Medi-Cal providers must allow full and equal access to the benefits of the Medi-Cal program
+and may not discriminate on the basis of:
+• Race*
+• Color*
+• Sex*
+• Age*
+• National origin*
+• Ancestry
+• Ethnic group identification
+• Religion
+• Disability*
+• Mental disability
+• Physical disability
+• Medical condition
+• Genetic information
+• Marital status
+• Gender
+• Gender identity
+• Sexual orientation
+[[page 15]]
+prov enroll res
+15
+Family PACT – Provider Enrollment and Responsibilities
+Page updated: July 2024
+Language Assistance Under Federal Law
+Under the regulations implementing Section 1557, of the Patient Protection and Affordable
+Care Act (ACA), Medi-Cal providers must take reasonable steps to ensure limited English
+proficient (LEP) individuals have meaningful access to the health program or activity they
+provide. Language assistance services must be accurate, timely, provided free of charge
+and protect the privacy and independence of the LEP individual. These language assistance
+services may include interpretation (oral language assistance) and written translation of
+content in paper or electronic form per the Code of Federal Regulations (45 CFR
+Sec. 92.101).
+Language Assistance Under State Law for Managed Care Plans
+In addition to federal requirements, under W&I Code Section 14029.91, a managed care
+plan contracted with DHCS to provide Medi-Cal services must provide language assistance
+services to LEP beneficiaries who are mandatorily enrolled in managed care as follows:
+• Oral interpretation services must be provided in any language on a 24-hour basis at
+key points of contact.
+• Translation services must be provided to the language groups identified by DHCS
+(See DHCS All Plan Letter [APL 20-015, 17-011] and any subsequent APLs).
+A managed care plan must notify beneficiaries of the availability of language assistance
+services, including oral interpretation and translated written materials, free of charge and in a
+timely manner, when those services are necessary to provide meaningful access to health
+care programs or activities to LEP beneficiaries. (W&I Code Sections 14029.91, 14727).
+Requirement Resources
+For more information about the application and requirements of W&I Code 14029.91 and the
+rule implementing Section 1557 of the ACA, providers should contact their representative
+professional organizations. Visit the HHS Section 1557 web page for find more information
+on Section 1557 of the ACA.
+Contact Information for Claims of Discrimination
+In the event that a Family PACT client makes a claim that a health care provider has failed to
+provide covered Family PACT services or unlawfully discriminated in another way on the
+basis of sex, race, color, religion, ancestry, national origin, ethnic group identification, age,
+mental disability, physical disability, medical condition, genetic information, marital status,
+gender, gender identity, or sexual orientation, the health care provider must refer the Family
+PACT client to its representative designated to coordinate compliance with nondiscrimination
+requirements, or to handle grievances generally, and to DHCS’ Office of Civil Rights (OCR)
+by phone, in writing or electronically.
+[[page 16]]
+prov enroll res
+16
+Family PACT – Provider Enrollment and Responsibilities
+Page updated: October 2025
+By phone: Call (916) 440-7370. If clients cannot speak or hear well, call 711
+(Telecommunications Relay Service).
+In writing: fill out a complaint form or send a letter to:
+Department of Health Care Services
+Office of Civil Rights, MS 0009
+P.O. Box 997413, Sacramento, CA 95899- 7413
+Email: CivilRights@dhcs.ca.gov
+Complaint forms are available on the DHCS website (www.dhcs.ca.gov).
+The health care provider must also refer the Family PACT client to the U.S. Department of
+Health and Human Services, OCR by phone, in writing or electronical.
+By phone: call (800) 368-1019. If clients cannot speak or hear well, call TTY/TDD at
+(800) 537-7697.
+In writing: fill out a complaint form or send a letter to:
+U.S. Department of Health and Human Services
+200 Independence Avenue, SW
+Room 509F, HHH Building
+Washington D.C., 20201-0004
+Complaint forms are available on the HHS website.
+Electronically: Visit the OCR Complaint Portal on the HHS website.
+Access to Care
+The Family PACT provider is responsible for client access to Family PACT Program services
+in accordance with the requirements of the Family PACT Standards. Enrolled Family PACT
+providers agree to make available to eligible clients the scope of comprehensive family
+planning and family planning-related services, consistent with the Family PACT Standards,
+either directly or by referral. ‹‹These services must be made available to clients on the same
+day that their eligibility is determined. Providers must also inform enrolled clients that their
+HAP Identification Numbers are valid at any Family PACT provider site. Clients must only be
+referred to enrolled Family PACT providers or Medi-Cal enrolled providers.››
+Collaboration Encouraged
+Enrolled Family PACT providers have the responsibility to ensure client access to services
+and are encouraged to collaborate with other providers, such as laboratory, pharmacy and
+primary care providers. Ensuring that other providers participating in client care have
+information about the Family PACT Program will facilitate clients’ access and care.
+[[page 17]]
+prov enroll res
+17
+Family PACT – Provider Enrollment and Responsibilities
+Page updated: January 2025
+Family PACT Referrals
+Medi-Cal providers who are not enrolled in the Family PACT Program may render Family
+PACT services only when the client is referred by an enrolled Family PACT provider. Family
+PACT providers may refer clients to Medi-Cal laboratory, pharmacy, radiology and
+anesthesiology providers for covered services. Referrals may be made to a Medi-Cal or
+other Family PACT provider when a covered procedure is outside the technical skill of the
+Family PACT provider or when there is insufficient volume to ensure and maintain a high
+skill level of the Family PACT provider.
+Referring Providers
+The referring Family PACT provider is responsible for informing all rendering providers
+(including clinicians, laboratories, anesthesiologists, radiologists and facilities) of Family
+PACT Program policies and scope of services, so that clients do not receive services that
+are not program benefits and are not charged for services. A Medi-Cal provider who is not
+enrolled in the Family PACT Program must know the following information to bill for services:
+• Client name
+• ‹‹HAP Identification Number››
+• Family planning ICD-10-CM diagnosis code and any additional ICD-10-CM diagnosis
+code(s) needed and reimbursed by Family PACT and
+• Referring enrolled Family PACT provider’s name and NPI
+Client Records Transfer
+Family PACT clients must not be charged for exchange or transfer of medical record
+information.
+Primary Care and Local Resource Referral
+Family PACT Standards include a provision that providers shall make referrals to
+appropriate resources for needed medical, psychosocial and more intensive counseling
+services that are not covered by this Program, including primary care not offered in enrolled
+provider practices. Information about other sources of funding for these services and options
+for a sliding-fee-scale is particularly helpful for clients who have no other health care or
+mental health care coverage.
+[[page 18]]
+prov enroll res
+18
+Family PACT – Provider Enrollment and Responsibilities
+Page updated: November 2024
+Other Programs by Referral
+Family PACT providers may refer clients to other programs, such as Every Woman Counts
+(EWC), Breast and Cervical Cancer Treatment Program (BCCTP) and Presumptive
+Eligibility for Pregnant People (PE4PP).
+Every Woman Counts
+Clients who meet the EWC eligibility requirements, with a finding such as a positive
+mammogram, breast nodule or bloody nipple discharge, and require diagnostic testing to
+evaluate the possibility of breast cancer diagnosis may be referred to EWC at
+1-800-511-2300. For eligibility requirements, refer to the Every Woman Counts section in
+the appropriate Part 2 Medi-Cal manual. ‹‹After a cancer diagnosis is confirmed, either the
+Family PACT provider or the EWC primary care provider may enroll the client into BCCTP
+for treatment using the Breast and Cervical Cancer Treatment Program application in the
+Medi-Cal Provider Portal.››
+Breast and Cervical Cancer Treatment Program
+Family PACT providers have the opportunity to enroll clients directly into BCCTP for services
+beyond the scope of Family PACT. ‹‹The BCCTP provides Medi-Cal benefits for the
+treatment of breast and cervical cancer. Family PACT providers may enroll clients with a
+breast or cervical cancer diagnosis (including CIN 2 and CIN 3) into BCCTP using the Breast
+and Cervical Cancer Treatment Program application in the Medi-Cal Provider Portal.››
+Clients must meet the Family PACT income guidelines in order to be referred to, or enrolled
+in, BCCTP. For more information about BCCTP, call 1 (800) 824-0088. To find out how to
+participate as a referring provider, call the Telephone Service Center (TSC) at
+1 (800) 541-5555.
+[[page 19]]
+prov enroll res
+19
+Family PACT – Provider Enrollment and Responsibilities
+Page updated: October 2025
+Presumptive Eligibility for Pregnant People
+PE4PP is a Medi-Cal program designed to provide immediate, temporary coverage for
+prenatal care to low-income, pregnant recipients pending a formal Medi-Cal application. Any
+individual who thinks they are pregnant and whose family income is below a determined
+amount is eligible for PE. However, this care must be through a participating provider to
+determine eligibility for this program. For more information, and to find out how to become a
+PE4PP provider, refer to the Presumptive Eligibility for Pregnant People Provider Enrollment
+Instructions section in the appropriate Part 2 Medi-Cal Provider Manual.
+Recordkeeping
+Medical Record Documentation
+In accordance with W&I Code, Section 24005(p), each provider of health care services
+rendered to any program beneficiary shall keep and maintain records of each service
+rendered, the beneficiary to whom the service was rendered, the date and any additional
+information that the department may by regulation require. The clinical rationale for
+providing, ordering or deferring services for client assessment, diagnosis, treatment and
+follow-up is required. Documentation must reflect the scope of education and counseling
+services, including individual client assessment. All medical record entries must be legible
+and the clinician must be clearly identifiable.
+Documentation for benefits or services delivered via telehealth should be the same as for a
+comparable in-person service. The distant site provider can bill for Family PACT covered
+benefits or services delivered via telehealth using the appropriate CPT® or HCPCS codes
+with the corresponding modifier and is responsible for maintaining appropriate supporting
+documentation. This documentation must be maintained in the client’s medical record.
+Recordkeeping
+The Family PACT Program defers to Medi-Cal regulations for keeping and maintaining
+medical records. For a summary of Medi-Cal regulations, refer to the Provider Regulations
+section in the Part 1 Medi-Cal manual. The Family PACT Program has additional guidelines
+for recordkeeping that include, but are not limited to:
+• Client Eligibility Certification (CEC) form (DHCS 4461)
+• Consent For Sterilization (DHCS 8649)
+• Signature requirement for drugs and devices
+• A log of devices and implants
+[[page 20]]
+prov enroll res
+20
+Family PACT – Provider Enrollment and Responsibilities
+Page updated: July 2024
+Client Eligibility Certification (CEC) Form
+The provider must maintain the Client Eligibility Certification (CEC) form in the medical
+record for each applicant/client, including those found ineligible, for at least three (3) years.
+The CEC form may be maintained electronically, in compliance with all aspects of H&S
+Code, Section 123149.
+Signature for Drugs or Devices Billed to Family PACT
+W&I Code, Section 14043.341 requires providers to obtain and keep a record of Family
+PACT client signatures, acknowledging the dispensing of a drug, device or supplies, or when
+obtaining a laboratory specimen. Providers who dispense a drug, device or supplies
+requiring a written order or prescription to be covered under the program, and providers who
+obtain a specimen for performance of a clinical laboratory test or examination, must maintain
+the following items in their files to qualify for Family PACT reimbursement:
+• Signature of the person receiving the drug or device, or from whom a specimen was
+obtained.
+• Client’s printed name.
+• Date signed.
+• Prescription number or item description for drugs or devices.
+• Relationship of the client to the person receiving a prescription, if the client is not
+picking up the medication.
+As an alternative, a provider obtaining a specimen for a clinical laboratory test or
+examination may satisfy this requirement by doing both of the following:
+• Keep the requisition document provided to the clinical laboratory on file, and
+• Obtain the signature and printed name of the client on the requisition document.
+Several exceptions apply to the signature requirement. A provider does not need to obtain a
+signature and related information when:
+• A biological specimen is obtained for the purpose of anatomical pathology
+examinations performed during inpatient or outpatient surgery, if a notation of the
+performance of the anatomical pathology examination appears in the medical record.
+• Dispensing a complimentary sample of a dangerous drug, provided no charge is made
+to the patient and an appropriate record is entered in the client's chart.
+[[page 21]]
+prov enroll res
+21
+Family PACT – Provider Enrollment and Responsibilities
+Page updated: July 2024
+• Dispensing a drug or device occurs on a periodic basis within an established
+provider/patient relationship. The signature shall only be required with the initial
+dispensing or furnishing of the drug, so long as an appropriate record of each
+dispensing or furnishing is entered in the patient’s chart.
+• Obtaining a biological specimen is required in order that a test or examination occurs
+on a periodic basis within an established provider/patient relationship. The signature
+shall only be required upon obtaining the biological specimen necessary for the initial
+test or examination, so long as an appropriate record of each test or examination is
+entered in the patient’s chart.
+• The provider is a licensed pharmacy or clinical laboratory, owned and operated by a
+non-profit health care service plan with at least 3,500,000 enrollees, or is owned and
+operated by a non-profit hospital corporation that has a mutually exclusive contract
+with a non-profit health care service plan with at least 3,500,000 enrollees.
+The provider is a licensed provider who practices within a physician organization that meets
+either of the requirements set forth in paragraph two (2) of subdivision (g) of H&S Code,
+Section 1375.4; that is, a risk-bearing organization such as a professional medical
+corporation, medical partnership, medical foundation or other lawfully organized group of
+physicians that deliver, furnish, arrange for or provide health care services.
+Providers who bill Family PACT but do not comply with the requirements and do not qualify
+for an exception, will be subject to civil money penalties.
+Signature Requirement for Medication Delivery
+In accordance with W&I Code, Section 14043.341, providers must obtain either a
+handwritten or electronic signature for prescription medications sent to a client. Providers
+may obtain the signature of a client or the recipient either before the medication is sent, or
+upon receipt when delivered to the client.
+Signature Prior to Delivery
+Providers have two options to obtain a client’s signature when the client is not in person,
+such as during a telehealth visit:
+• Recorded oral signature: Providers must ensure that they are able to collect an audio
+or video recording that can be stored in the provider’s case record and retrieved upon
+request. Providers may use either of the following two options for audio or
+video- recorded signatures.
+[[page 22]]
+prov enroll res
+22
+Family PACT – Provider Enrollment and Responsibilities
+Page updated: January 2025
+– Recording only the signature portion of the telehealth visit. When recording only the
+signature portion of the visit, providers must record the portion of the visit where the
+client acknowledges and confirms the medications they will be receiving and
+provides their understanding that the oral signature holds the same weight as a
+written signature; or
+– Recording the entire visit with the oral signature included
+• Electronic signature: Providers may obtain an electronic signature. Consistent with the
+Uniform Electronic Transactions Act, California Civil Code Section 1633.2, an
+“electronic signature” is an electronic sound, symbol, or process attached to or logically
+associated with an electronic record and executed or adopted by a person with the
+intent to sign the electronic record. An electronic signature includes a “digital signature”
+defined in subdivision (d) of Section 16.5 of the Government Code to mean an
+electronic identifier, created by a computer, intended by the party using it to have the
+same force and effect as a manual signature. Regardless of the type of electronic
+signature collected, providers must ensure that they are able to store and/or easily
+access documentation of the electronic signature in the client’s medical record.
+Signature upon Receipt of Delivery
+Providers may obtain a client’s handwritten or electric signature upon receipt of delivery if the
+delivery service offers physical or electronic return receipts, such as those offered through
+the United States Postal Service. Providers must retain documentation of the signature in
+the client’s medical record.
+Log of Intrauterine Contraceptive Devices and Contraceptive Implants
+For at least three (3) years from the date of insertion, providers should keep a written log or
+electronic record of all intrauterine contraceptive devices (IUC) and contraceptive implants
+provided, including the following:
+• Client’s name
+• ‹‹Medical record and HAP Identification Numbers››
+• Date of insertion
+• Type of IUC or implant
+• Lot number of the device or product
+[[page 23]]
+prov enroll res
+23
+Family PACT – Provider Enrollment and Responsibilities
+Page updated: July 2024
+All IUCs and implants inserted through the Family PACT Program must be FDA-approved
+devices, labeled for use in the United States, and obtained from FDA-approved distributors.
+Providers must maintain invoices for insertion kits billed to Family PACT for at least three (3)
+years from the date of the invoice (W&I Code, section 24005 [7][p]).
+Electronic Claims Submission and Recordkeeping
+Providers or their agents who electronically submit claims via Computer Media Claims
+(CMC) must retain sufficient data to meet all recordkeeping requirements, including every
+document, record and/or printed representation of information on which the provider relies to
+submit a claim.
+Family PACT Accuracy and Correction of Claims or Payments
+Family PACT providers are responsible for all claims submitted regardless of who completes
+the claim on behalf of the provider. Family PACT providers are responsible for the review
+and verification of the accuracy of claims payment information promptly upon the receipt of
+any payment. The Family PACT provider agrees to seek correction of any claim errors
+through the appropriate processes as designated by the DHCS or its fiscal intermediary. For
+more information, refer to Part I Medi-Cal manual.
+Non-Medi-Cal Clinics
+As defined in the California Code of Regulations (CCR), Title 22, Section 51115(b),
+community clinics, free clinics, county operated organized outpatient clinics, Rural Health
+Clinics (RHC) and other clinics that are not enrolled in the Medi-Cal Program as an
+“organized outpatient clinic with surgical facilities” may not bill Family PACT for emergency,
+examining and treatment rooms. This includes HCPCS codes Z7500, Z7506, Z7508, Z7510
+and Z7512, as defined by CCR, Title 22, Section 51509.1. A Family PACT provider must
+have the appropriate provider type on file with Medi-Cal PED to bill for facility use.
+[[page 24]]
+prov enroll res
+24
+Family PACT – Provider Enrollment and Responsibilities
+Page updated: July 2024
+Legend
+Symbols used in the document above are explained in the following table
+Symbol Description
+‹‹ This is a change mark symbol. It is used to indicate where on the page the
+most recent change begins.
+›› This is a change mark symbol. It is used to indicate where on the page the
+most recent change ends.
+* Section 1557 of the Patient Protection and Affordable Care Act (ACA)
+prohibits discrimination on the above categories marked with an asterisk.
+Discrimination on the basis of the other categories is prohibited by
+Government Code section 11135.

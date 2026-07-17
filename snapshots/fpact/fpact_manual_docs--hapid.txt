@@ -1,0 +1,141 @@
+[[page 1]]
+hap id
+1
+Family PACT – Health Access Programs (HAP) Identification Number
+‹‹Health Access Programs (HAP) Identification Number
+Page updated: January 2025
+The following section contains information about the requirements pertaining to Health
+Access Programs (HAP) Identification Number. Additionally, this section includes information
+with regards to the requirements for using the Family Planning, Access, Care and Treatment
+Program (Family PACT) Portal activation system, recertification, eligibility deactivation and
+provider responsibilities.
+Family PACT Portal Eligibility System
+The Family PACT Portal is a unique California Healthcare Eligibility, Enrollment, and
+Retention System (CalHEERS) project that is a part of the CalHEERS ecosystem. Providers
+use the Family PACT Portal client enrollment system for certifying clients as eligible and for
+activating the client’s HAP Identification Number. The Family PACT Portal allows providers
+to activate, inquire, update, recertify, and deactivate client eligibility.
+The Family PACT Portal consists of the Client portal, the Provider portal, and the Admin
+portal. The portals are designed to streamline Family PACT account, application, and
+eligibility processes for impacted system end-users.
+• The Client portal will facilitate efficient management for applicants/clients by allowing
+them to create an account, apply for, and oversee their Family PACT enrollment easily
+online.
+• The Provider portal will allow Family PACT providers to enroll and recertify
+applicants/clients into Family PACT.
+• The Admin portal will allow the Office of Family Planning staff to assist providers and
+clients with account, application, and eligibility and will allow Covered California
+Service Center Representatives to assist with some specific account support items.
+Provider Access to Family PACT Portal
+Upon enrollment into the Family PACT Program, the site certifier identified on the PAVE
+application will be emailed access to the Family PACT Portal.
+HAP Identification Number
+The following list details the HAP Identification Number data elements collected from the
+CEC form (DHCS 4461):
+• Medi-Cal card number
+• Medi-Cal card number issue date (optional)››
+[[page 2]]
+hap id
+2
+Family PACT – Health Access Programs (HAP) Identification Number
+Page updated: January 2025
+• ‹‹Barrier to access indicator (optional)
+• Client name (first, middle, last and suffix)
+• Client address (home or mailing, street, city, state, ZIP code)
+• Client date of birth
+• Gender and sexual orientation
+• Birth certificate sex
+• Social Security Number
+• Marital status
+• Other health coverage
+• Client contact information and contact type
+• County of residence
+• Race/Ethnicity
+• Primary language
+• Certification date
+• Family size
+• Total taxable monthly family income
+The provider’s claim, as well as claims from any other providers, including other rendering
+providers, pharmacies or laboratories, will be denied if the HAP Identification Number is not
+activated. Each Family PACT client should have only one HAP Identification Number. HAP
+Identification Numbers should not be reissued to another client. A provider issuing a
+deactivated or previously issued HAP Identification Number to another client will be
+disenrolled from the program.
+A copy of the client's HAP Identification Number can be viewed, saved as a PDF, and/or
+printed via the Client Information page of the Family PACT Portal.››
+Failure to adhere to program policies will result in the provider being disenrolled from the
+program.
+[[page 3]]
+hap id
+3
+Family PACT – Health Access Programs (HAP) Identification Number
+Page updated: June 2025
+The following is an example of the front and back sides of a HAP Identification Number:
+Figure 1: Front and back sides of a HAP Identification Number
+HAP Identification Number Activation
+‹‹The Family PACT provider (or his/her designee) must activate the HAP Identification
+Number via the Family PACT Portal. Activation for new clients must be on the day they are
+determined eligible for Family PACT service.››
+The HAP Identification Number must be activated to obtain reimbursement for Family PACT
+services. Providers who neglect to activate a HAP Identification Number upon certification of
+a client are responsible for covered services rendered. Pharmacy, laboratory or clinical
+providers to whom the client is referred will not be able to receive reimbursement until the
+HAP Identification Number is activated. Clients must not be charged for Family PACT
+services after certification is complete.
+‹‹At the time of enrollment, providers must inform clients that their HAP Identification
+Number may be used immediately to access Family PACT covered services. Clients must
+also be advised that they may obtain services from any enrolled Family PACT provider
+statewide regardless of where they enrolled. This requirement supports client awareness
+and promotes timely access to reproductive health care services.››
+Confirming Eligibility
+When confirming via the Family PACT Portal that a client is currently eligible for Family PACT
+Program benefits, the provider will receive the message that the client is eligible for Family
+PACT services with aid code 8H, unless the client has been deactivated. Any changes
+affecting eligibility must be addressed at each visit. Providers are required to inquire if there
+have been any changes that may affect eligibility such as income, family size or the
+acquisition of other health coverage.
+[[page 4]]
+hap id
+4
+Family PACT – Health Access Programs (HAP) Identification Number
+Page updated: June 2025
+Provider Service Site
+‹‹Activation of the HAP Identification Number must occur exclusively at the service location
+(enrolled address) represented by the enrolled Family PACT provider NPI. A HAP
+Identification Number may not be issued or activated at health fairs, outreach events or
+anywhere other than the enrolled service location. Failure to adhere to this policy will result
+in disenrollment from the Family PACT Program››.
+HAP Identification Number Deactivation
+Any changes affecting eligibility must be addressed at each visit. If the provider determines
+that the client is no longer eligible for Family PACT services, the provider must deactivate
+the client’s Family PACT certification. Select the “discontinue” option to deactivate a client’s
+Identification Number in the Family PACT Portal, indicate the reason for deactivation and
+refrain from billing Family PACT for services. A previously deactivated HAP Identification
+Number shall not be reactivated under another client. A provider issuing a deactivated HAP
+Identification Number to another client will be disenrolled from the program.
+For information about client deactivation codes, refer to “Client Eligibility Certification Codes”
+in the Client Eligibility section in this manual. The deactivation codes are listed at the end of
+the CEC codes chart
+Deactivation For Pregnancy
+If the client is determined to be pregnant, the client is no longer eligible for Family PACT
+services. The client should be referred to Medi-Cal, Covered California and/or any other
+public health insurance program for which they might be eligible. The HAP Identification
+Number must be deactivated using deactivation code “05” on the day following the visit the
+diagnosis of pregnancy was determined. The HAP Identification Number may be retained in
+the client’s file for possible future use by the client. Clients who become ineligible due to
+pregnancy may be recertified when they are no longer pregnant.
+Deactivation After Sterilization Services
+Clients who undergo permanent sterilization are no longer eligible for Family PACT services
+and the HAP Identification Number must be deactivated using deactivation code “03.”
+[[page 5]]
+hap id
+5
+Family PACT – Health Access Programs (HAP) Identification Number
+Page updated: January 2025
+Legend
+Symbols used in the document above are explained in the following table.
+Symbol Description
+‹‹ This is a change mark symbol. It is used to indicate where on the page the
+most recent change begins.
+›› This is a change mark symbol. It is used to indicate where on the page the
+most recent change ends.

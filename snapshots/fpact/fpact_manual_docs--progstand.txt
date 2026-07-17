@@ -1,0 +1,821 @@
+[[page 1]]
+prog stand
+1
+Family PACT – Program Standards
+Program Standards
+Page updated: August 2020
+This section includes information about the Family Planning, Access, Care and Treatment
+(Family PACT) Standards that are the program framework and parameters for expected
+provider performance, service delivery and quality improvement. The standards define the
+scope, type and quality of care required for the Family PACT Program, and the terms and
+conditions under which providers will be reimbursed. Adherence to these standards is
+required for clinicians enrolled as Family PACT providers. These standards are implemented
+through program policies and procedures. Any provider who does not render services
+consistent with the standards of care may be disenrolled from the Program.
+The Family PACT Standards are designed as minimum quality improvement requirements
+for providers and provider organizations, serving as the basic framework of the program.
+The items designated as “shall” are required, while those designated as “should” or “may”
+are encouraged, but optional. The seven standards address:
+A. Informed consent
+B. Confidentiality
+C. Cultural and linguistic competency
+D. Access to care
+E. Availability of covered services
+F. Clinical and preventive services
+G. Education and counseling services
+Section 2303(a)(3) of the Patient Protection and Affordable Care Act (ACA) specifies that the
+benefits of federally-supported state family planning programs are limited to “family planning
+services and supplies” as well as family planning-related services such as “medical
+diagnosis and treatment services that are provided pursuant to a family planning service in a
+family planning setting.”
+[[page 2]]
+prog stand
+2
+Family PACT – Program Standards
+Page updated: August 2020
+Effective April 16, 2014, diagnosis and treatment of sexually transmitted infections (STIs) are
+always provided pursuant to a family planning service. These STI services are covered,
+regardless of the initial purpose of the visit.
+In section E-G, the standards are subdivided by the following service areas of the
+Program including:
+Family Planning Services
+• Contraceptive services
+• Limited fertility services
+• Specified reproductive health screening tests
+Family Planning-Related Services
+• Family planning health screening
+• Management of sexually transmitted infections (STIs)
+• Management of urinary tract infections (UTIs)
+• Management of cervical abnormalities and pre-invasive cervical lesions
+[[page 3]]
+prog stand
+3
+Family PACT – Program Standards
+Page updated: July 2023
+Table of Family PACT Standards and Descriptions
+Standard Description
+A. Informed
+Consent
+• Informed consent shall include client participation in the process
+of eligibility determination and onsite enrollment in the Family
+PACT Program.
+– ‹‹The enrolled Family PACT provider shall ensure completion
+of the Health Access Programs Family PACT Program Client
+Eligibility Certification (CEC) form (DHCS 4461) by the client
+according to program specifications.››
+– All practitioners shall be knowledgeable about the Family
+PACT Standards and discuss the Family PACT scope of
+services with clients.
+• ‹‹Client participation in the Family PACT Program and consent for
+services shall be voluntary and without coercion to enroll, to
+accept particular contraceptive methods or procedures or to
+otherwise participate in family planning and family planning-
+related services.››
+– Providers are prohibited from exchanging and/or offering to
+exchange anything of value, in an effort to induce (or reward)
+the referral of an application to the Family PACT Program.
+• ‹‹A copy of the Department of Health Care Services (DHCS)
+Family Planning Patient Rights statement shall be provided to all
+clients or posted in a prominent place at the site of clinical
+services (see Figures 1 and 2).››
+• Clients shall be informed of their freedom to withdraw consent at
+any time.
+• Consent is required only from the individual client receiving family
+planning services, including minors who have the legal right to
+self-consent for pregnancy-related services (California Family
+Code Section 6925, subd.[a], Welfare and Institutions Code (W&I
+Code), Section 24003, subd.[b]), except as otherwise provided by
+law.
+[[page 4]]
+prog stand
+4
+Family PACT – Program Standards
+Page updated: October 2025
+Table of Family PACT Standards and Descriptions (continued)
+Standard Description
+A. Informed
+Consent
+(continued)
+• The informed consent process shall be provided to clients verbally
+in a language the client understands and supplemented with
+written materials (information can be found in Standard C-Cultural
+and Linguistic Competency).
+• All clients shall sign a consent form for any invasive procedures
+performed by the practitioner and be informed of their freedom to
+withdraw consent at any time,
+• ‹‹All clients requesting sterilization shall sign the Consent For
+Sterilization Form (DHCS 8649). The procedure shall take place
+within the required time frame based on the date of the client’s
+signature.››
+B. Confidentiality • All Family PACT providers shall comply with the Health Insurance
+Portability and Accountability Act (HIPAA) with regard to client
+confidentiality.
+– The Notice of Privacy Practices shall be provided to clients
+annually, by practitioners, at the time of service. The notice
+may be downloaded from the “Privacy Office” web page of the
+DHCS website (www.dhcs.ca.gov).
+• All services including the eligibility determination process shall be
+provided in a manner that respects the privacy and dignity of the
+individual client.
+• Clients shall be informed of the confidentiality of services and be
+assured that their identity will not be disclosed without their written
+permission, except as provided by law.
+• All personal client information shall be treated as privileged
+communication and held confidential; it shall not be divulged
+without the client’s written consent, except as required by law.
+• Unless otherwise provided by law, client information that does not
+identify the individual receiving the services may be disclosed in
+summary, statistical or other form to DHCS or its designee and to
+public health officials.
+[[page 5]]
+prog stand
+5
+Family PACT – Program Standards
+Page updated: July 2023
+Table of Family PACT Standards and Descriptions (continued)
+Standard Description
+C. Cultural and
+Linguistic
+Competency
+• All services shall be provided in a culturally sensitive manner and
+communicated in a language understood by the client.
+• All print and audiovisual materials shall be appropriate for the
+client’s language and literacy level.
+D. Access to
+Care
+All Family PACT services shall be rendered at the enrolled service
+location (s) only.
+‹‹All services shall be provided to eligible clients without bias based
+upon gender, including gender identity or gender expression, sexual
+orientation, age (except for sterilization), race, marital status, parity or
+disability.››
+• Regardless of the gender stated, family planning and family
+planning-related services apply to individuals of all gender
+identities as long as the procedure/benefit is medically necessary
+and meets all other requirements.
+• Family planning services and family planning-related services
+shall be at no cost to eligible clients.
+• Appointments for clients shall be available within a reasonable
+time period.
+• Clients who cannot be given timely appointments shall be
+referred to other Family PACT or Medi-Cal providers in the area.
+Contraceptive methods and supplies, medications and laboratory
+tests shall be available at the site of clinical services or by referral
+to Medi-Cal laboratory and pharmacy providers.
+‹‹Family PACT providers are responsible for referrals using the
+following:
+• All enrolled providers must have documented and established
+arrangements with other Family PACT and Medi-Cal provider(s)
+to support the facilitation of referrals for Family PACT covered
+services when a covered procedure is outside the technical skill
+of the Family PACT provider or when there is insufficient volume
+to ensure and maintain a high skill level of the Family PACT
+provider.››
+[[page 6]]
+prog stand
+6
+Family PACT – Program Standards
+Page updated: January 2025
+Table of Family PACT Standards and Descriptions (continued)
+Standard Description
+D. Access to
+Care
+(continued)
+• Referrals to Family PACT or Medi-Cal providers for Family PACT
+covered services shall be documented in the client’s medical
+record and include information on the referral provider and a
+scheduled appointment for the client.
+• Client referrals shall be made within a reasonable time-period.
+The referral shall be within a reasonable time and distance from
+the client’s location.
+• ‹‹Providers shall follow-up with the client or referral provider to
+ensure the client received the referred service(s) and, for those
+who have been referred to out for permanent sterilization
+services, to ensure proper deactivation of the client’s Health
+Access Programs (HAP) Identification Number. Documentation of
+the follow-up shall be placed in the client’s medical record.››
+• Referrals to local resources shall be made available to clients and
+documented in the client medical records when needed for
+medical and psychosocial services beyond the scope of the
+provider’s organization. These services include but are not limited
+to primary care, behavioral health, domestic violence and
+substance abuse related services. (Services beyond the scope of
+Family PACT are not reimbursable by the program).
+Additional information on referrals can be found in the Provider
+Enrollment and Responsibilities section of this manual.
+[[page 7]]
+prog stand
+7
+Family PACT – Program Standards
+Page updated: July 2026
+Table of Family PACT Standards and Descriptions (continued)
+Standard Description
+E. Availability of
+Covered
+Services
+Family Planning Services
+Only licensed personnel with family planning skills, knowledge and
+competency may provide the full range of family planning medical
+services covered under Family PACT in accordance with W&I Code,
+Section 24005(b). Clinical providers electing to participate in the
+Family PACT Program shall provide the full scope of family planning,
+education, counseling and medical services specified by Family
+PACT, either directly or by referral. A client’s selection of
+contraceptive method(s) shall take into account client preference in
+conjunction with medical findings.
+• Contraceptive Services
+– Family PACT covers all FDA-approved contraceptive
+methods, fertility awareness methods and sterilization
+procedures.
+– ‹‹For requirements for availability of covered contraceptive
+services, refer to the Table of Availability of Covered Services:
+Contraceptives in this manual section.››
+• Limited Fertility Services
+– History and physical examination related to fertility (as
+clinically indicated) may be performed onsite.
+– Fertility awareness counseling should be available onsite or by
+referral.
+[[page 8]]
+prog stand
+8
+Family PACT – Program Standards
+Page updated: July 2023
+Table of Family PACT Standards and Descriptions (continued)
+Standard Description
+E. Availability of
+Covered
+Services
+(continued)
+• Specified Reproductive Health Screening Tests
+Screening for STIs onsite. The reproductive health screening
+tests for women and men, when clinically indicated, include
+chlamydia, gonorrhea, HIV and syphilis.
+Family Planning-Related Services
+• Management of STIs
+– Diagnostic evaluation for chlamydia, gonorrhea, genital herpes,
+syphilis, trichomoniasis and genital warts shall be available to
+females and males.
+– Diagnostic evaluation for vulvovaginitis (including candida
+vaginitis and bacterial vaginosis) and uncomplicated pelvic
+inflammatory disease (PID) shall be available to females.
+– Clients with uncomplicated STIs shall be treated onsite or by
+prescription.
+– Clients with complicated STIs may be treated onsite or by
+referral to a Family PACT or Medi-Cal provider. Services
+beyond the scope of Family PACT are not reimbursable by
+the program.
+The following services shall be offered as clinically indicated when the
+care is provided coincident to a visit for the management of a family
+planning method:
+• Cervical Cancer Screening
+Cervical cancer screening visits should be offered at least every
+three years, unless otherwise indicated by the client’s health
+status.
+• Management of Urinary Tract Infections (UTIs)
+History, physical examination related to UTI (as clinically
+indicated) and urinalysis by dipstick for the diagnosis of UTIs
+shall be performed for females (onsite). Medications to treat UTIs
+shall be available onsite or by prescription.
+[[page 9]]
+prog stand
+9
+Family PACT – Program Standards
+Page updated: July 2023
+Table of Family PACT Standards and Descriptions (continued)
+Standard Description
+E. Clinical and
+Preventive
+Services
+(continued)
+• Management of Cervical Abnormalities and Pre-invasive Cervical
+Lesions
+Colposcopy, cervical biopsy and treatment by loop electrosurgical
+excision procedure (LEEP) or cryotherapy shall be provided either
+onsite or by referral to a Family PACT or Medi-Cal provider.
+F. Clinical and
+Preventive
+Services
+Clinicians providing care to Family PACT clients shall practice
+evidence-based medicine using nationally recognized clinical practice
+guidelines (see Figure 3).
+Family Planning Services
+• ‹‹Contraceptive services for Family PACT clients shall include:››
+– A comprehensive health history with updates at least every 24
+months, including personal medical, sexual and contraceptive
+history; plans for having children; a complete family history;
+health risk factors; and obstetrical and gynecological history.
+– A physical examination as clinically indicated, for
+contraceptive services.
+❖ Client(s) prescribed hormonal contraceptives shall have a
+blood pressure evaluation at the initiation of the method and
+at least every two years thereafter.
+❖ A bimanual pelvic examination shall be performed before
+the placement of an intrauterine contraceptive and for the
+fitting of a diaphragm.
+❖ With the exceptions noted above, a routine physical exam is
+not necessary for the provision of contraceptive services to
+women or men.
+[[page 10]]
+prog stand
+10
+Family PACT – Program Standards
+Page updated: July 2023
+Table of Family PACT Standards and Descriptions (continued)
+Standard Description
+F. Clinical and
+Preventive
+Services
+(continued)
+– Laboratory tests, including urine pregnancy test, shall be
+obtained as clinically indicated in order to evaluate the safety
+of a contraceptive method(s) in the context of an individual
+client’s medical history, medical conditions and risk factors.
+– Follow-up care, including management of complications
+associated with a client’s contraceptive method(s) or
+procedures, shall be provided.
+• Limited Fertility Services
+– Health history shall be focused on potential causes of infertility
+including health risk factors; personal medical, sexual and
+contraceptive history; and a family history.
+– A physical examination related to fertility may be performed as
+clinically indicated.
+– Instruction in the use of supplies (for example, basal body
+temperature thermometer) may be provided as requested.
+• Specified reproductive health screening tests
+– The reproductive health screening tests for women and men,
+when clinically indicated include chlamydia, gonorrhea, HIV
+and syphilis. Prevention and control services shall be
+consistent with the Centers for Disease Control and
+Prevention (CDC) and recognized medical practice standards.
+Services shall include:
+❖ Chlamydia screening annually for females 25 years of age
+and younger
+❖ Confidential HIV risk screening, testing or referral to source
+of anonymous testing, client-centered counseling and
+referral for treatment
+❖ Reporting of STI/HIV, as required by California law, to
+appropriate local public health jurisdictions for contact
+management, prevention and control
+[[page 11]]
+prog stand
+11
+Family PACT – Program Standards
+Page updated: July 2023
+Table of Family PACT Standards and Descriptions (continued)
+Standard Description
+F. Clinical and
+Preventive
+Services
+(continued)
+Family Planning-Related Services
+• Cervical Cancer Screening
+– Screening for cervical cancer when the care is provided
+coincident to a visit for the management of a family planning
+method.
+– Each client shall be informed of the cervical cancer screening
+interval that applies to the client’s individual circumstances as
+recommended in the adopted guideline.
+– Providers shall have a follow up mechanism for all cervical
+cytology specimens to insure that all results are evaluated and
+clients with cytological abnormalities are notified
+• Management of STIs
+– Clients treated for gonorrhea, chlamydia, trichomonas and
+syphilis shall have arrangements made for repeat testing in
+accordance with CDC guidelines.
+– For clients treated for gonorrhea, chlamydia or trichomoniasis,
+the need for partner therapy shall be addressed.
+• Management of UTIs
+– Care is provided coincident to a visit for the management of a
+family planning method.
+– A detailed history, and physical examination as clinically
+indicated, shall be performed in order to differentiate
+uncomplicated lower UTIs (acute bacterial cystitis or “bladder
+infection”) from complicated urinary tract infections.
+• Management of Cervical Abnormalities and Pre-invasive Cervical
+Lesions
+– Care is provided coincident to a visit for the management of a
+family planning method.
+– Providers shall have an office-based tracking system for all
+pathology results to insure that all results are evaluated,
+women with abnormalities are promptly notified and those
+who are under surveillance are reminded of their need for
+follow-up.
+[[page 12]]
+prog stand
+12
+Family PACT – Program Standards
+Page updated: July 2023
+Table of Family PACT Standards and Descriptions (continued)
+Standard Description
+F. Clinical and
+Preventive
+Services
+(continued)
+Medical Record Documentation
+• Medical record documentation shall reflect the clinical rationale for
+providing, ordering or deferring services provided to clients
+according to Family PACT Standards, including, but not limited to,
+client assessment, diagnosis, treatment and follow-up.
+Documentation, including a client’s signature when dispensed a
+device, product or prescription, or when a laboratory specimen is
+obtained, shall support services claimed for reimbursement (W&I
+Code, Section 14043.341).
+G. Education and
+Counseling
+Services
+‹‹Client-centered health education counseling is considered integral to
+Family PACT and must be incorporated throughout the family
+planning visit. Regardless of the type of visit, provision of
+reproductive health education and counseling is required for all Family
+PACT clients, including the following:
+• A practice setting that is appropriate for discussion of
+sensitive topics
+• Ongoing individualized client assessments and focused
+communication; and
+• Topics and behaviors that promote personal choice, risk
+reduction and optimal reproductive health practices
+• Family planning and reproductive health education and counseling
+services shall include:
+– A description of Family PACT covered services and
+procedures
+– All Family PACT covered contraceptive methods
+– Reproductive life plan and preconception health
+– STI/HIV transmission and prevention››
+[[page 13]]
+prog stand
+13
+Family PACT – Program Standards
+Page updated: July 2023
+Table of Family PACT Standards and Descriptions (continued)
+Standard Description
+G. Education
+and
+Counseling
+Services
+(continued)
+• ‹‹Client-centered health education and counseling sessions shall be
+provided in a culturally and linguistically appropriate manner way
+that is understandable to the client and conducted in a manner that
+facilitates the client’s integration of information for the development
+of positive reproductive health behaviors.
+• Health education and counseling services shall be supplemented
+with written materials, as needed››
+• Information shall be provided in a manner of communication that is
+sensitive to diverse cultural and socioeconomic factors and the
+psychosocial aspects of reproductive health, including partner
+relationship and communication, risk reduction and decision
+making.
+• Written information about the scope of program services, how to
+obtain needed referrals, services for family planning related
+complications and where to obtain 24-hour emergency care
+services shall be provided.
+• ‹‹Providers shall offer clients the option of including their partner
+during health education and counseling sessions.
+– Other services shall be at the client’s discretion››
+Family Planning Services
+Education and counseling about contraceptive methods or limited
+fertility services and referral resources, whether a pregnancy test is
+positive or negative, shall be provided in an unbiased manner that
+allows the client full freedom of choice.
+• Contraceptive Services
+Each client shall be provided with adequate information to make an
+informed choice about contraceptive methods, including:
+– A verbal dialogue and written description of the full range of
+FDA-approved contraceptive methods, including effectiveness,
+duration, side effects, complications, medical indications and
+contraindications, social and physical advantages and
+disadvantages
+[[page 14]]
+prog stand
+14
+Family PACT – Program Standards
+Page updated: July 2023
+Table of Family PACT Standards and Descriptions (continued)
+Standard Description
+G. Education
+and
+Counseling
+Services
+(continued)
+– A description of the implications and consequences of
+sterilization procedures, when client desires no future
+childbearing
+– The opportunity for questions or concerns related to
+contraceptive methods.
+• Limited Fertility Services
+Each client should be counseled in the use of fertility awareness
+techniques in order to achieve pregnancy and in the use of supplies to
+evaluate the fertile period. Clients who are seeking pregnancy should
+be provided preconception health counseling particularly in regard to
+folic acid intake.
+• Specified Reproductive Health Screening Tests
+Each client shall be counseled regarding a recommended interval
+for periodic reproductive health screening tests based on national
+guidelines.
+Family Planning-Related Services
+• Cervical Cancer Screening
+– Each client shall be counseled regarding a recommended
+interval for periodic cervical cancer screening visits based on
+national guidelines
+• Management of STIs
+– Clients shall be advised of their diagnosis, the need for partner
+testing and/or treatment and methods to prevent recurrent
+infection
+– Clients treated for gonorrhea, trichomonas or chlamydia shall be
+counseled regarding the importance of repeat testing in three
+months
+– Clients shall be counseled regarding the importance of
+completing prescribed therapy
+[[page 15]]
+prog stand
+15
+Family PACT – Program Standards
+Page updated: July 2023
+Table of Family PACT Standards and Descriptions (continued)
+Standard Description
+G. Education
+and
+Counseling
+Services
+(continued)
+• Management of UTIs
+Clients treated for UTI shall be counseled regarding the importance
+of completing treatment and the prevention of reinfection.
+• Management of Cervical Abnormalities and Pre-invasive Cervical
+Lesions
+Clients found to have cervical pre-invasive lesions shall be
+counseled on the importance of adhering to follow-up
+recommendations.
+Medical Record Documentation
+Medical record documentation shall reflect the scope of education and
+counseling services provided to clients according to Family PACT
+Standards, including, but not limited to, individual client assessment,
+topics discussed and name and title of counselor. Documentation shall
+support services claimed for reimbursement
+[[page 16]]
+prog stand
+16
+Family PACT – Program Standards
+Page updated: July 2026
+‹‹Table of Availability of Covered Services: Contraceptives
+Contraceptive
+Method
+Available Onsite‹‹± Available by
+Prescription
+Available by
+Referral to Another
+Provider
+IUD non-hormonal At least one type is
+required to be
+available onsite
+Not applicable For complex
+procedures‹‹§
+IUD hormonal At least one type is
+required to be
+available onsite
+Not applicable For complex
+procedures‹‹§
+Implant Required to be
+available onsite
+Not applicable For complex
+procedures‹‹§
+Injection – DMPA
+Intramuscular (IM)
+Required to be
+available onsite
+Not applicable Not applicable
+Injection – DMPA
+Subcutaneous (SQ)
+Can be available
+onsite‹‹†
+Yes No
+Oral contraceptive
+pills (OCPs),
+combined
+Can be available
+onsite
+Yes No
+OCPs,
+progestin-only
+Can be available
+onsite
+Yes‹‹◊ No
+Emergency
+contraceptive pills
+Can be available
+onsite
+Yes‹‹◊ No
+Patch Can be available
+onsite
+Yes No
+Vaginal Ring Can be available
+onsite
+Yes No
+Condoms‹‹¥ Can be available
+onsite
+Yes‹‹◊ No
+Diaphragm Can be available
+onsite
+Yes No
+Cervical Cap Can be available
+onsite
+Yes No
+Spermicide‹‹¥ Can be available
+onsite
+Yes‹‹◊ No››
+[[page 17]]
+prog stand
+17
+Family PACT – Program Standards
+Page updated: July 2026
+‹‹Table of Availability of Covered Services: Contraceptives (continued)
+Contraceptive
+Method
+Available Onsite‹‹± Available by
+Prescription
+Available by
+Referral to Another
+Provider
+Vaginal
+Contraceptive Gel
+Can be available
+onsite
+Yes No
+Sterilization – Tubal Can be available
+onsite
+Not applicable Yes
+Sterilization –
+Vasectomy
+Can be available
+onsite
+Not applicable Yes
+Fertility Awareness
+Methods (FAM)
+Can be available
+onsite
+Not applicable Yes
+FAM – Basal Body
+Thermometer
+No (Pharmacy
+benefit only)
+Yes‹‹◊ No
+Lactational
+Amenorrhea Method
+(LAM)
+Can be available
+onsite
+Not applicable Yes››
+[[page 18]]
+prog stand
+18
+Family PACT – Program Standards
+Page updated: July 2026
+Family Planning Patient Rights
+Men and women, regardless of race, religion, age, sex, sexual orientation, ethnic and
+religious background or economic standing have the right to:
+• Decide whether or not to have children and, if so, to determine their timing and
+spacing
+• Be treated with dignity and respect
+• Privacy and confidentiality in all aspects of services
+• An adequate and objective education and counseling
+• All procedures explained and questions answered in a language that can be
+understood
+• Know effectiveness, possible side effects, and complications of all contraceptives
+• Participate in selecting the contraceptive method(s) to be used
+• Know the results and meanings (diagnosis, treatment and prognosis) of all tests and
+examinations
+• See their records and have them explained
+• Know the meaning and implications of all forms they are asked to sign
+• Consent to, or refuse, any contraceptive method, test, examination or treatment
+Participation of any individual in the Family PACT (Planning Access, Care and Treatment)
+Program is voluntary and free of compulsion or coercion of any kind. If you feel your rights
+have been violated, speak to the director of the clinic/health office or contact DHCS’ Office
+of Family Planning at (916) 650-0414 or via email at FamilyPact@dhcs.ca.gov
+Department of Health Care Services (DHCS), 2024
+Figure 1. Family Planning Patient Rights
+[[page 19]]
+prog stand
+19
+Family PACT – Program Standards
+Page updated: July 2026
+Derechos de Los Pacientes de Placificaión Familiar
+Hombres y mujeres, sin importar la raza, religión, edad, sexo, orientación sexual, grupo
+étnico, o posición económica, tienen derecho a:
+• Decidir si quieren tener hijos o nó y si deciden tenerlos determinar cuántos y cuando
+tenerlos
+• Ser tratados con dignidad y respeto
+• Recibir todos los servicios con privacidad y de una manera confidencial
+• Recibir educación y consejería en una manera adecuada y objetiva
+• Recibir una explicación de todos los procedimientos y que les contesten todas sus
+preguntas en un idioma que puedan entender
+• Informados sobre la efectividad, las complicaciones, y los posibles efectos
+secundarios de todos los métodos anticonceptivos
+• Participar en la selección del método anticonceptivo que desea usar
+• Ser informados sobre los resultados y significado (diagnóstico, tratamiento, y
+pronóstico) de todos los exámenes médicos
+• Tener acceso y explicación sobre sus expedientes
+• Ser informados sobre el significado y las implicaciones de firmar los formularios que
+sean presentados;
+• Aaceptar o rechazar cualquier método anticonceptivo, prueba, examen, o
+tratamiento
+La participación de cualquier individuo en el Programa de Family PACT, es voluntaria y
+libre de coerción de cualquier clase. Si usted cree que sus derechos han sido violados,
+por favor, hable con el director de la clínica o centro de salud o puede comunicarse con la
+Oficina de Planificación Familiar del DHCS al (916) 650-0414 o por correo electrónico al
+FamilyPact@dhcs.ca.gov.
+Departamento de Servicios de Atención de la Salud, 2024
+Figure 2. Family Planning Patient Rights (Spanish)
+[[page 20]]
+prog stand
+20
+Family PACT – Program Standards
+Page updated: July 2026
+Services National Guidelines Reference
+Contraceptive
+Services
+US Medical Eligibility Criteria
+(MEC) Centers for Disease
+Control and Prevention
+(CDC) 2024
+US Selected Practice
+Recommendations (SPR)
+CDC 2024
+• Nguyen AT, Curtis KM, et.al. United
+States Medical Eligibility Criteria (US
+MEC) for Contraceptive Use, 2024.
+MMWR 2024; 73(4): 1-12
+• CDC, U.S. Selected Practice
+Recommendations for Contraceptive
+Use (US SPR), 2024. MMWR 2024,
+73(3): 1-77
+Screening for
+Cervical Cancer
+Cervical Cancer Screening,
+USPSTF, 2018
+• Screening for Cervical Cancer: US
+Preventive Services Task Force
+Recommendation Statement. JAMA
+2018, 320(7): 674-686
+Management of
+STIs
+STI Treatment Guidelines,
+CDC 2021
+• Sexually Transmitted Infections
+Treatment Guidelines, 2021. MMWR
+July 2021, 70(4): 1-192
+Taking a Sexual
+History
+STI Treatment Guidelines,
+CDC 2021
+• A Guide to Taking a Sexual History
+Management of
+UTIs
+The American Congress of
+Obstetricians and
+Gynecologists (ACOG)
+Practice Bulletin 91
+• ACOG − Treatment of Urinary Tract
+Infections in Nonpregnant Women.
+ACOG Practice Bulletin No. 91.
+Obstet Gynecol 2008; 111: 785-94
+Management of
+Cervical
+Abnormalities
+and Pre-invasive
+Cervical Lesions
+Management of abnormal
+results, ASCCP, 2020
+• Perkins RB, et. al. 2019 ASCCP
+Risk-Based Management Consensus
+Guidelines for Abnormal Cervical
+Cancer Screening Tests and Cancer
+Precursors. Low Genit Tract Dis.
+2020 April; 24(2):102-131
+Figure 3. National Guidelines
+[[page 21]]
+prog stand
+21
+Family PACT – Program Standards
+Page updated: July 2026
+Legend
+Symbols used in the document above are explained in the following table.
+Symbol Description
+‹‹ This is a change mark symbol. It is used to indicate where on the page the
+most recent change begins.
+›› This is a change mark symbol. It is used to indicate where on the page the
+most recent change ends.
+‹‹± See Clinic Formulary section of this manual for coverage details.››
+‹‹§ Family PACT providers may refer clients to other Family PACT or Medi-Cal
+providers as outlined in the Access to Care Standard in this manual. Family
+PACT Providers are required to offer IUD and implant services onsite;
+however, there may be circumstances when a Family PACT provider may
+want to refer a specific client to a provider who specializes in difficult or
+complex procedures (for example, non-palpable implant removals, IUD
+removal without strings or IUD placement with distorted uterine cavity).››
+‹‹† See the Clinic Formulary section of this manual for clinic benefit coverage for
+DMPA-SQ.››
+‹‹◊ For over-the-counter methods, a prescription is required for Family PACT
+coverage. See Medi-Cal Rx Contract Drugs List – Over-the-Counter Drugs
+and Cough/Cold Preparations.››
+‹‹¥ Condoms, Spermicide (nonoxynol 9) and lubricant are considered
+Contraceptive Supplies. See Clinic Formulary for coverage details.››

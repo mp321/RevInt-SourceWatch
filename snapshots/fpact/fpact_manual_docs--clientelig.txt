@@ -1,0 +1,765 @@
+[[page 1]]
+client elig
+1
+Family PACT – Client Eligibility
+Client Eligibility
+Page updated: April 2023
+‹‹The following section contains the administrative practices of the enrolled Family Planning,
+Access, Care and Treatment (Family PACT) provider for determining client eligibility and
+certifying clients for the Family PACT Program.
+Provider Responsibility for Eligibility Determination
+A Family PACT Program provider, through the Family PACT provider enrollment process,
+accepts the responsibility for appropriate onsite, synchronous video, or audio-only
+synchronous determination of eligible clients according to program guidelines and
+administrative practices. Eligibility determination via any asynchronous modality is not
+allowed. Only enrolled Family PACT providers may determine client eligibility and enroll
+Family PACT clients. Eligibility determination is a provider administrative function that is not
+reimbursable under the Family PACT Program. Time spent enrolling or recertifying clients
+into the Family PACT Program is not a billable service, regardless of the modality used. Any
+provider who includes time spent on eligibility determination in the CPT® and HCPCS codes
+billed to Family PACT for Evaluation and Management (E&M) and Education and
+Counseling (E&C) office visits will be subject to disenrollment. Medi-Cal pharmacies and
+laboratories may not perform eligibility determination or enroll clients. Information reported
+by the client about health care coverage, family size and income are used by the provider to
+determine eligibility. The client must meet all of the eligibility criteria outlined in this section.
+A Family PACT provider is prohibited from exchanging, and/or offering to exchange,
+anything of value in an effort to induce or reward the referral of, or application to, the Family
+PACT Program. Failure to adhere to this policy will result in disenrollment from Family
+PACT.
+Remote Eligibility Determination
+A Family PACT provider may enroll and recertify clients through synchronous video or
+audio-only synchronous telehealth modalities. For purposes of this section, “synchronous”
+means a real-time interaction between the client and a provider located at a distant site, in
+accordance with Section 2290.5(a)(5) of the Business and Professions Code.
+The following apply when utilizing synchronous modalities:
+• A provider may complete the Client Eligibility Certification (CEC) form (DHCS 4461)
+and Retroactive Eligibility Certification (REC) form (DHCS 4001), if applicable, on
+behalf of the applicant/client.
+• The provider is required to complete each field on the CEC form (DHCS 4461) and
+REC form (DHCS 4001) on behalf of the client based on the applicant/client’s
+responses. The CEC form (DHCS 4461) or REC form (DHCS 4001) must not be
+prepopulated.››
+[[page 2]]
+client elig
+2
+Family PACT – Client Eligibility
+Page updated: April 2023
+• ‹‹Providers have the following options to obtain an applicant/client’s signature when
+the individual is not in-person:
+1. Recorded oral signature: Providers must ensure that they are able to collect an
+audio or video recording that can be stored in the client’s medical record and
+retrieved upon request. Providers may use either of the following two options for
+audio or video-recorded signatures.
+a. Recording only the signature portion of the audio or video synchronous
+interaction. When recording only the signature portion of the interaction, providers
+must record the portion of the interaction where the applicant/client acknowledges
+and confirms that all information provided is true and correct under penalty of
+perjury, where the applicant/client providers their understanding that the oral
+signature holds the same weight as a written signature, and where the
+applicant/client provides their oral signature; or
+b. Recording the entire audio or video synchronous interaction with the oral signature
+included.
+Regardless of the option providers choose, providers must obtain consent and inform the
+applicant/client which portion of the audio/video synchronous interaction is being recorded,
+and ensure they are able to store and easily access audio or video-recorded signatures in
+the client’s medical record or securely store a recorded oral signature and document its
+location in the client’s medical record.
+2. Electronic signature: Providers may obtain an electronic signature. Consistent with
+the Uniform Electronic Transactions Act, California Civil Code Section 1633.2, an
+“electronic signature” is an electronic sound, symbol, or process attached to or
+logically associated with an electronic record and executed or adopted by a person
+with the intent to sign the electronic record. An electronic signature includes a
+“digital signature,” defined in subdivision (d) of Section 16.5 of the Government
+Code, to mean an electronic identifier, created by computer, intended by the party
+using it to have the same force and effect as the use of a manual signature.
+Regardless of the type of electronic signature collected, providers must ensure that they are
+able to store and/or easily access documentation of the electronic signature in the client’s
+medical record.››
+[[page 3]]
+client elig
+3
+Family PACT – Client Eligibility
+Page updated: January 2025
+• Regardless of the method used to obtain the signature on the CEC form (DHCS 4461)
+or REC form (DHCS 4001), providers must recite the Privacy Statement and ensure
+the applicant/client was:
+1. Informed of the California health insurance affordability programs through Covered
+California.
+2. Offered a copy of the Notice of Privacy Practices. Providers must document the date
+the Notice was received or declined in the client’s medical record.
+3. Offered a copy of the Nondiscrimination Policy. Providers must document the date
+the Policy was received or declined in the client’s medical record.
+4. If applicable, provide the original REC form (DHCS 4001).
+Family PACT providers must arrange for the client to receive the Notice of Privacy Practices,
+Nondiscrimination Policy, and REC form (DHCS 4001), if applicable. Options include, but
+are not limited to, in-person pick up, sending via electronic mail, mailing to the client’s home
+or mailing address, or any other HIPAA-compliant manner (e.g., patient portal). If a client
+elects to receive the Notice of Privacy Practices, Nondiscrimination Policy, or REC form
+(DHCS 4001) through the mail, the provider must receive and document the express
+consent of the client to mail it and must ensure that the address is verified as a valid
+address.
+• The provider or designee must sign the CEC form (DHCS 4461) or REC form (DHCS
+4001).
+• The original CEC form (DHCS 4461) and a copy of the REC form (DHCS 4001) must
+be maintained in the client’s medical record.
+• ‹‹Family PACT providers must provide the client with their Health Access Programs
+(HAP) Identification Number and arrange for the client to receive their HAP
+Identification Number to ensure a client has continued access to pharmacy, laboratory
+services, and other Family PACT covered benefits. Options include, but are not limited
+to, in-person pick up or mailing to the client’s home or mailing address. If the HAP
+Identification Number is mailed, the provider must receive and document the express
+consent of the client to mail it and must ensure that the address is verified as a valid
+address.››
+• If the applicant/client is deemed ineligible for Family PACT, the applicant/client must
+receive a copy of the CEC form (DHCS 4461), which includes the Fair Hearing Rights.
+Options include, but are not limited to, in-person pick up, sending via electronic mail, or
+mailing to the client’s home or mailing address. If mailed, the provider must receive
+and document the express consent of the client to mail it and must ensure that the
+address is verified as a valid address.
+[[page 4]]
+client elig
+4
+Family PACT – Client Eligibility
+Page updated: January 2025
+All administrative practices for determining client eligibility as noted in this section, including
+how to certify clients as eligible for the Family PACT Program, also apply to remote eligibility
+determination unless otherwise stated.
+Eligible Clients
+To be eligible for Family PACT benefits, clients must meet all of the following criteria:
+• The client must be a resident of California.
+• The client must have a total taxable family income at or below 200 percent of the
+federal poverty guidelines.
+• The client must have no other source of health care coverage for family planning
+services, or meet the criteria specified for eligibility with Other Health Coverage (OHC).
+For more information, refer to “Eligible Clients with Other Health Coverage” on a
+following page.
+• The client must have a medical necessity for family planning services.
+Ineligible Individuals
+An individual is not eligible for Family PACT benefits for any of the following reasons:
+• The individual is not a California resident.
+• The individual has a total taxable family income that is more than 200 percent of the
+federal poverty guidelines.
+• The individual has full-scope Medi-Cal.
+• The individual has Medi-Cal with a Share of Cost (SOC) that is met on the date of
+services.
+• The individual is enrolled in a Medi-Cal managed care health plan.
+• The individual has OHC, including Medi-Cal for family planning services and a barrier
+to access their OHC does not exist. For more information, refer to “Eligible Clients with
+Other Health Coverage (OHC),” outlined in this section.
+• The individual does not have a medical necessity for family planning services.
+• The individual is an inmate of public institution, including prison, jail or juvenile
+detention center. For more information, refer to the Eligibility: Special Groups section in
+the Part 1 Medi-Cal manual.
+• The individual does not meet the condition in “Affirming Eligibility Each Visit” stated on
+a following page.
+[[page 5]]
+client elig
+5
+Family PACT – Client Eligibility
+Page updated: January 2025
+A provider or designee must affirm the individual’s eligibility at each visit (this does not
+require a new Health Access Programs Family PACT Program Client Eligibility Certification
+(CEC) form (DHCS 4461). If an individual previously determined ineligible returns to a
+Family PACT provider, a new Health Access Programs Family PACT Program Client
+Eligibility Certification (CEC) form (DHCS 4461) must be completed to determine eligibility.
+Eligibility Period
+‹‹The period of eligibility begins on the day the client is certified by the Family PACT provider
+as meeting the eligibility requirements and the Health Access Programs (HAP) Identification
+Number is activated for the Family PACT Program››. Family PACT clients are certified for
+the program for a maximum of 12 months or until the client’s eligibility status changes,
+whichever comes first. Twelve months represents 365 days (for example, February 4, 2007,
+through February 3, 2008). A new Health Access Programs Family PACT Program Client
+Eligibility Certification (CEC) form (DHCS 4461) must be completed on an annual basis for
+the client to continue to be enrolled if the client continues to meet all eligibility criteria. Family
+PACT must not be billed for services provided prior to the date of a client’s certification for
+program enrollment.
+Retroactive Eligibility
+Once a new client is certified eligible for Family PACT, the provider asks the client if he or
+she received Family PACT covered family planning and/or reproductive health services
+during the three-month period prior to the month that the client was enrolled in the Family
+PACT Program. If the client responds affirmatively, the Family PACT provider will give the
+client retroactive eligibility information and a Health Access Programs Family PACT Program
+Retroactive Eligibility Certification (REC) form (DHCS 4001) for completion.
+Note: Only the client is responsible for claim submission.
+Retroactive eligibility is determined separately for each of the three calendar months
+preceding the month of certification. Eligibility is for the entire month. For example, if
+retroactive eligibility is determined for a client on April 15, 2011, the client may be eligible
+back to January 1, 2011.
+Notice of Eligibility Determination
+All applicants for Family PACT services must be verbally informed of their eligibility or
+ineligibility at the time of the certification or recertification. Clients who are ineligible must be
+offered a copy of the completed CEC form (DHCS 4461) and the original REC form (DHCS
+4001), if applicable, which includes a “Fair Hearing Rights” notification. The client must be
+informed of the fair hearing request process both verbally as well as in writing.
+[[page 6]]
+client elig
+6
+Family PACT – Client Eligibility
+Page updated: January 2025
+Client Notification
+At the time the client presents for family planning services, the provider must verbally advise
+the client of the following:
+• The Family PACT eligibility requirements.
+• The Family PACT scope of benefits: The Family PACT Program is limited to family
+planning and family planning-related reproductive health services. It is not a primary
+care program.
+• The confidential nature of the information received, including the fact that parents,
+spouse or partner will not be contacted without the client’s consent, if requested.
+• The right to request a fair hearing. Refer to the “Fair Hearing Rights” on the Health
+Access Programs Family PACT Program Client Eligibility Certification (CEC) form
+(DHCS 4461), and
+• California health insurance affordability programs through Covered California: Per
+Welfare and Institutions Code (W&I Code), Section 24005(u), providers or the enrolling
+entity shall make available to all applicants, prior to or concurrent with enrollment,
+information on the manner in which to apply for insurance affordability programs. This
+includes, but is not limited to, the Family PACT provider providing a paper copy of the
+single application for Covered California or Medi-Cal coverage upon the client’s
+request. Family PACT providers are not required to provide applicants with assistance
+in completing the single form application. If the applicant requests assistance,
+providers may direct them to:
+– Online: (www.coveredca.com)
+– Phone: 1-800-300-1506 (TTY 1-888-889-4500)
+– Covered California Customer Service Center
+– In person: A listing of trained Certified Enrollment Counselors, Certified Insurance
+Agents and local county social services offices can be found at www.coveredca.com
+or by calling 1-800-300-1506
+Affirming Eligibility Each Visit
+A provider or designee must affirm client eligibility at each visit. A client’s income, family size
+and health insurance status must be reaffirmed. The client must be asked to present
+evidence of OHC, such as health program ID cards.‹‹If there is a change in any information
+contained on the CEC form (DHCS 4461), the provider must update the Family PACT Portal.
+If a client is determined to be no longer eligible for Family PACT, providers must deactivate
+the HAP Identification Number in the Family PACT Portal and verbally notify the client of the
+change in eligibility and HAP Identification Number deactivation.››
+[[page 7]]
+client elig
+7
+Family PACT – Client Eligibility
+Page updated: January 2025
+Confidentiality Requirements
+Names and all information concerning the condition or circumstance of any person(s) from
+whom or about whom information is obtained are to be kept confidential. All information
+about personal facts and circumstances obtained by the provider shall be treated as
+privileged communications, shall be held confidential and shall not be divulged without the
+individual’s written consent, except as required by law or as may be necessary to provide
+emergency services to the individual, or as required by the Department of Health Care
+Services (DHCS) to administer the Family PACT Program.
+Information may be disclosed in summary, statistical or other forms that do not identify
+particular individuals. The applicant, client, their attorney or other authorized representative
+may inspect the client’s certification records maintained by the provider.
+Consent of Parents or Others Not Required
+Notwithstanding any other provision of law, the provision of family planning services does
+not require the consent of anyone other than the person who is to receive services. In
+determining eligibility for minors, the State will exclude parental income. Minors may apply
+for family planning services on the basis of their need for these services, without parental
+consent, according to California Family Code Section 6925, subd. (a), Welfare and
+Institutions Code (W&I Code), Section 24003, subd. (b). If a client is 17 years of age or
+younger, the client is considered a minor. A minor who is 12 years of age or older may
+consent to medical care related to the diagnosis, treatment and/or prevention of sexually
+transmitted infections (STIs) according to California Family Code Section 6926, et seq.
+Client Eligibility Forms
+Providers must use the CEC form (DHCS 4461) and REC form (DHCS 4001), if applicable,
+to certify a client as eligible for Family PACT benefits. The CEC form (DHCS 4461) and REC
+form (DHCS 4001) are legal documents of eligibility determination and must be completed
+correctly, as described in this section, in order for Family PACT to reimburse benefits.
+‹‹English and Spanish versions of the CEC form (DHCS 4461) and REC form (DHCS 4001)
+are available from the California MMIS Fiscal Intermediary››. These are official state forms
+and must be reproduced without alteration. No other forms are acceptable in substitution for
+CEC form (DHCS 4461) and REC form (DHCS 4001). It is the responsibility of the provider
+to make copies of these forms for subsequent use. The current forms may be obtained in
+these ways:
+• The Department of Health Care Services (DHCS) website at www.dhcs.ca.gov –
+“Forms” (by Program) link on the “Forms and Publications” web page.
+• The Family PACT website at www.familypact.org – “Forms” link under “the Providers
+tab.
+[[page 8]]
+client elig
+8
+Family PACT – Client Eligibility
+Page updated: January 2025
+Clients must independently complete the CEC form (DHCS 4461) and REC form (DHCS
+4001), if applicable. Providers may not complete the forms on behalf of the client unless
+eligibility is being determined through an audio or video synchronous modality (refer to
+Remote Eligibility Determination in this section). The CEC form (DHCS 4461) or REC form
+(DHCS 4001) must not be prepopulated by the provider. However, providers are permitted to
+provide assistance or accommodations for clients who need help completing the forms,
+either due to language barriers or mental, developmental or physical disabilities. This
+includes difficulty of any kind reading or understanding what is being asked of them. Clients
+may ask questions for clarification purposes only. Providers must proactively assess if the
+client understands the form and that all questions have been answered appropriately.
+Clients must complete all fields of CEC form (DHCS 4461) and REC form (DHCS 4001). If
+the client does not have an income, it should be noted as a “zero” or “0” on the CEC form
+(DHCS 4461) and REC form (DHCS 4001).
+‹‹Automated Eligibility Systems
+Providers who requested to utilize an automated eligibility system to determine eligibility for
+multiple recipient programs will no longer be able to utilize this process as of
+February 3, 2025. All Family PACT client enrollment, changes and deactivations must be
+completed exclusively through the Family PACT Portal.››
+Signatures Required
+For in-person client eligibility determination, the client must complete and sign the CEC form
+(DHCS 4461) and the REC form (DHCS 4001), if applicable, and the provider or designee
+must sign the form. California Government Code Section 16.5 allows for signatures to be
+captured electronically. Providers opting to capture signatures electronically when the
+individual is not in-person (refer to Remote Eligibility Determination in this section) should
+assure that they are in full compliance with GC Section 16.5 and with California Code of
+Regulations (CCR) Title 2, Division 7, Chapter 10.
+[[page 9]]
+client elig
+9
+Family PACT – Client Eligibility
+Page updated: April 2023
+Social Security Number
+Family PACT providers are required to ask for a client’s Social Security Number (SSN). If
+the client does not provide the SSN, the client’s stated reason why it is not available must be
+documented on the CEC form (DHCS 4461) in the Social Security Number box. Providers
+shall not deny access to family planning services if the client is unable or unwilling to provide
+an SSN.
+Client Responsibilities
+Each person seeking family planning services from Family PACT must:
+• ‹‹Complete a CEC form (DHCS 4461). Eligibility is based on the client’s
+self-declaration of total taxable monthly income, family size, other source of health
+care coverage and California residency, signed under penalty of perjury. CEC form
+(DHCS 4461) completion is required during the initial eligibility session and annually
+thereafter.››
+• Sign the CEC form (DHCS 4461), certifying the accuracy of information provided.
+• Report on the CEC form (DHCS 4461) all of the facts that are pertinent to the
+determination of eligibility and certification for services.
+• Report at each family planning visit any changes in the facts pertinent to their eligibility
+determination (family size, total taxable family income, California residence, and
+medical necessity for family planning services) and any changes in the client’s
+demographic information.
+• Report any entitlement to other health care coverage for family planning benefits to the
+provider at the time of application, recertification or at any time the health care
+coverage changes.
+• Complete and sign a REC form (DHCS 4001), if applicable.
+• Submit REC form (DHCS 4001) within one year of receipt of services or within 90 days
+after certification of retroactive eligibility, whichever is longer. To file the claim, the
+client must call or write Medi-Cal at:
+Department of Health Care Services
+Beneficiary Services Center
+P.O. Box 138008
+Sacramento, CA 95813-8008
+(916) 403-2007
+TDD: (916) 635-6491
+[[page 10]]
+client elig
+10
+Family PACT – Client Eligibility
+Page updated: April 2023
+Determination of Client Eligibility
+The steps for determining client eligibility are as follows:
+• Determine if the client is a Medi-Cal recipient with full-scope family planning coverage,
+or if the client has OHC for family planning services. At each visit, a client with a
+Medi-Cal Benefits Identification Card (BIC) must be screened for eligibility and the
+provider must bill the Medi-Cal program if the client is Medi-Cal eligible for family
+planning benefits and has met all SOC on the date of service. Medi-Cal payment
+sources should always be billed, if applicable.
+• Determine the age of the client. If the client is 17 years of age or younger, the client is
+considered a minor. If the client is 18 years of age or older, the client is considered an
+adult. In determining eligibility for minors, the State will exclude parental income.
+• Determine the family size. The “basic family unit” must be taken into account when
+determining family size. The “basic family unit” consists of the applicant, spouse
+(including common-law) and minor children, if any, related by blood, marriage, or
+adoption, and residing in the same household.
+• If an applicant intends to file taxes and is not claimed as a tax dependent, the
+applicant’s basic family unit includes the applicant, spouse if living together and the
+applicant’s tax dependents. When adults, other than spouses, reside together, each
+person shall be considered a separate family. This also applies to adults living with
+their parents, unless the parents claim the adult child as a tax dependent. If an
+applicant is claimed as a tax dependent by the applicant’s spouse or parents, the
+applicant’s basic family unit include the applicant, spouse if living together, the tax filer
+and the tax filer’s other tax dependents.
+Note: California recognizes “common-law” marriages established in other states
+(where common-law marriages are legally recognized); it does not recognize
+common-law marriages occurring in California.
+• Determine the client’s total taxable family income. The client’s self-declaration must be
+accepted without further verification.
+• Find the client’s declared family size and total taxable income in “Income Eligibility
+Guidelines” in this section. If the client’s income is at or below the maximum for their
+declared family size, the client is eligible for Family PACT benefits when all the other
+criteria are met.
+[[page 11]]
+client elig
+11
+Family PACT – Client Eligibility
+Page updated: April 2026
+• Once a new client has been certified eligible for Family PACT, the provider asks the
+client if he or she has received Family PACT-covered family planning and/or
+reproductive health services during the three-month period prior to the month that the
+client was enrolled in the Family PACT Program. If the client has received services, the
+Family PACT provider will give the client the retroactive eligibility information and the
+REC form (DHCS 4001) for completion.
+• The provider accepts responsibility for determination of retroactive eligibility. A copy of
+the retroactive eligibility information and the completed REC form must be given to the
+client for client claim processing.
+Income Eligibility Guidelines
+The federal poverty guidelines are updated annually by the federal government. Providers
+are notified in the Family PACT Update bulletin. ‹‹The income eligibility guidelines for the
+Family PACT Program reflect the federal poverty guidelines as published, effective
+April 1, 2026.››
+Family PACT Income Eligibility Guidelines
+‹‹200 Percent of the 2026 Federal Poverty Guidelines ››
+Number of Persons in
+Family/Household
+Monthly Income
+(in dollars)
+Annual Income
+(in dollars)
+1 ‹‹$2,660›› ‹‹$31,920››
+2 ‹‹$3,608›› ‹‹$43,280››
+3 ‹‹$4,554›› ‹‹$54,640››
+4 ‹‹$5,500›› ‹‹$66,000››
+5 ‹‹$6,448›› ‹‹$77,360››
+6 ‹‹$7,394›› ‹‹$88,720››
+7 ‹‹$8,340›› ‹‹$100,080››
+8 ‹‹$9,288›› ‹‹$111,440››
+For each additional member,
+add
+‹‹$948›› ‹‹$11,360››
+[[page 12]]
+client elig
+12
+Family PACT – Client Eligibility
+Page updated: April 2023
+Family Size and Income
+The following are instructions for completing the family size and income Eligibility
+Determination component on the CEC form (DHCS 4461) and/or REC form (DHCS 4001), if
+applicable.
+• The client designates himself/herself as “self” and lists all “basic family unit” members
+who live with him/her and are supported by the family income. For the definition of
+“basic family unit,” refer to “Determination of Client Eligibility” on a previous page.
+• The client fills in the source of income for each family member with earned or
+unearned income. If the client does not work for one easily identifiable employer (that
+is, a company), a general descriptive phrase will suffice as a response. For example, if
+the client is a migrant farm worker, the place of employment could be “local farms.”
+• The client determines the total family size and the total gross monthly income. For
+minors, the State will exclude parental income.
+Total Taxable Family Income
+“Total Taxable Family Income” means the monthly sum of taxable income received by an
+individual and the individual’s basic family unit identified by the Internal Revenue Service
+(IRS) as taxable. Monthly taxable income for migrant farm workers and other seasonally
+employed persons may be computed by averaging total taxable income received during the
+previous 12 months.
+The following are types of taxable income identified by the IRS:
+• Wages or salary
+• Net income (profit) from farm and non-farm self-employment
+• Social Security (even if not taxable)
+• Dividends, interest (on savings or bonds), income from estates or trusts, net rental
+income or royalties
+• Pension and annuities
+• Unemployment compensation/disability insurance
+• Veterans’ pension (if taxable)
+• Alimony received
+[[page 13]]
+client elig
+13
+Family PACT – Client Eligibility
+Page updated: April 2023
+Exclusions From Computation of Monthly Taxable Income
+The following are not considered sources of monthly taxable income according to the IRS:
+• Public Assistance or welfare payments
+• Workers’ compensation
+• Child support
+• Alimony paid
+• Money received from sale of property, such as stocks, bonds, a house or a car (unless
+the person was engaged in the business of selling such property, in which case the net
+proceeds would be counted as income from self-employment)
+• Withdrawals of bank deposits, money borrowed, tax refunds, gifts or capital gains
+• Lump-sum inheritances or insurance payment
+• Loans and grants, such as scholarships, obtained and used under conditions that
+preclude their use for current living costs
+• Any grant or loan to any undergraduate student for educational purposes made or
+insured under any program administered by the Commissioner of Education under the
+Higher Education Act
+• The value of the food stamp coupon allotment in excess of the amount paid for the
+coupons
+• The value of USDA-donated foods
+• The value of supplemental food assistance under the Child Nutrition Act of 1966 and
+the special food program under the National School Lunch Act
+• Earnings of a child if less than the threshold for being required to file taxes
+• Per capita payments to or funds held in trust for any individual in satisfaction of a
+judgment of the Indian Claims Commission or Court of Claims
+• Payments made pursuant to the Alaska Native Claims Settlement Act to the extent
+such payments are exempt from taxation under Section 21(a) of the Act
+• Any payment received under the Uniform Relocation Assistance and Real Property
+Acquisition Policies Act of 1970
+• Home produce utilized for household consumption
+• Payments received under the Energy Crisis Assistance Program or the Low Income
+Energy Assistance Program
+[[page 14]]
+client elig
+14
+Family PACT – Client Eligibility
+Page updated: January 2025
+Certification of Client Eligibility
+‹‹Providers shall use the Family PACT Portal for certifying clients as eligible and for
+activating the client’s HAP Identification Number. The Family PACT Portal also allows
+providers to inquire, update, recertify and deactivate client eligibility. For more information,
+refer to the Health Access Programs (HAP) section of this manual.››
+Providers or their designees certify clients as eligible for the Family PACT Program by
+checking the Eligible for Family PACT Program box and signing and dating the Health
+Access Programs Family PACT Program Client Eligibility Certification (CEC) form (DHCS
+4461) and Health Access Programs Family PACT Program Retroactive Eligibility
+Certification (REC) form (DHCS 4001), if applicable, affirming that:
+• The CEC form (DHCS 4461) and REC form (DHCS 4001), if applicable, are complete.
+• The client’s county of residence is within California.
+• The client’s eligibility is based upon medical necessity for family planning services.
+• The client’s family size and income place them at or below 200 percent of federal
+poverty guidelines.
+• The client has no other source of health care coverage for family planning services.
+• The client has signed and dated the CEC form (DHCS 4461) and REC form (DHCS
+4001), if applicable or the provider has obtained an applicant/client’s signature when
+the individual is not in-person (refer to Remote Eligibility Determination in this section).
+When clients do not meet these requirements, providers or their designees certify ineligibility
+by checking the Ineligible for Family PACT Program box, dating and signing the CEC form
+(DHCS 4461) and/or the REC form (DHCS 4001), if applicable. Failure to adequately certify
+the client or to sign and date the CEC form (DHCS 4461) may result in the disenrollment of
+the provider from the Family PACT Program.
+Note: Clinic staff who are eligible and wish to enroll in the Family PACT Program may not
+certify their own eligibility or enroll themselves as clients in the program.
+Providers must maintain the completed CEC form (DHCS 4461), whether the client is
+eligible or ineligible, and a copy of the REC form (DHCS 4001) if applicable, in the client’s
+medical record for a period of at least three years in accordance with Welfare and
+Institutions Code (W&I Code), Section 14124.1. The CEC form (DHCS 4461), and REC form
+(DHCS 4001), if applicable, may be maintained electronically, in compliance with all aspects
+of Health & Safety Code, Section 123149.
+[[page 15]]
+client elig
+15
+Family PACT – Client Eligibility
+Page updated: April 2023
+Client Eligibility Certification Codes
+The Family PACT Program Client Eligibility Certification Codes table is used to complete
+specific items on the CEC form (DHCS 4461). Accurately entering the corresponding code is
+necessary when activating eligibility, updating HAP records or recertifying client eligibility.
+Family PACT Program
+Client Eligibility Certification Codes Table
+County of Residence
+County Code
+Alameda 01
+Alpine 02
+Amador 03
+Butte 04
+Calaveras 05
+Colusa 06
+Contra Costa 07
+Del Norte 08
+El Dorado 09
+Fresno 10
+Glenn 11
+Humboldt 12
+Imperial 13
+Inyo 14
+Kern 15
+Kings 16
+Lake 17
+Lassen 18
+Los Angeles 19
+Madera 20
+Marin 21
+Mariposa 22
+Mendocino 23
+Merced 24
+Modoc 25
+Mono 26
+Monterey 27
+Napa 28
+Nevada 29
+Orange 30
+County of Residence
+County Code
+Placer 31
+Plumas 32
+Riverside 33
+Sacramento 34
+San Benito 35
+San Bernardino 36
+San Diego 37
+San Francisco 38
+San Joaquin 39
+San Luis Obispo 40
+San Mateo 41
+Santa Barbara 42
+Santa Clara 43
+Santa Cruz 44
+Shasta 45
+Sierra 46
+Siskiyou 47
+Solano 48
+Sonoma 49
+Stanislaus 50
+Sutter 51
+Tehama 52
+Trinity 53
+Tulare 54
+Tuolumne 55
+Ventura 56
+Yolo 57
+Yuba 58
+Unknown 99
+Social Security Number
+Not Provided
+Definition Code
+Client does not
+know SSN
+01
+Client does not
+have SSN
+02
+Client declined
+to answer
+03
+Other Health Coverage
+Codes
+Definition Code
+Yes 01
+No 02
+[[page 16]]
+client elig
+16
+Family PACT – Client Eligibility
+Page updated: January 2025
+Family PACT Program
+Client Eligibility Certification Codes Table (continued):
+Deactivation Codes
+Code Definition
+01 Not resident of California
+02 Over 200 percent of the federal poverty level
+03 Sterilized, no longer contracepting
+04 Health insurance coverage for family planning services
+05 Full-scope Medi-Cal (does not have an unmet Share of Cost)
+06 ‹‹Deactivation of HAP Identification Number››
+Third-Party Payment Sources
+Clients with third-party payment sources are those who present with coverage from other
+sources of payment for family planning services, including Medi-Cal, prepaid health plans,
+military or private health insurance. If coverage is intermittent, status at the time of
+certification determines eligibility. The status of the client’s enrollment in a third-party
+payment source must be updated at each visit to determine continued eligibility in Family
+PACT.
+Chart Documentation Requirements
+Providers must document in the client’s record if the person requesting family planning
+services has financial coverage for such services under any third-party payment source. If
+so, that source of funding must be billed for the family planning services and the billing must
+be documented in the client’s file.
+[[page 17]]
+client elig
+17
+Family PACT – Client Eligibility
+Page updated: April 2025
+Clients with Benefits Identification Cards
+If the client has a Benefits Identification Card (BIC), the provider must determine if the client
+is eligible for Medi-Cal family planning benefits on the date of service and if the recipient has
+met any required Share of Cost (SOC). For more information, refer to “Ineligible Clients” on
+a previous page. See the following sample BICs. ‹‹Any of the four card types are valid.
+Providers should accept all four BIC designs and must continue to verify eligibility
+accordingly.››
+Figure 1: Front of BIC printed in blue with sex indicator
+Figure 2: Front of BIC printed in full color with sex indicator
+[[page 18]]
+client elig
+18
+Family PACT – Client Eligibility
+Page updated: July 2025
+Figure 3: Front of BIC printed in full color without sex indicator
+‹‹Figure 4: Front of BIC printed in full color with Medi-Cal
+logo on the header››
+Eligible Clients with Other Health Coverage (OHC)
+Clients who have Other Health Coverage (OHC), including Medi-Cal fee-for-service and
+managed care, can be eligible for Family PACT benefits. Clients must meet all Family PACT
+eligibility criteria described under “Eligible Clients” on a previous page, including any of the
+following:
+• The OHC does not cover any contraceptive methods. Seeking a specific method or
+brand of birth control not offered by OHC is not a criterion for Family PACT eligibility.
+• The client is a student who has no health care coverage for any contraceptive
+methods. Seeking a specific method or brand of birth control not offered by OHC is not
+a criterion for Family PACT eligibility.
+[[page 19]]
+client elig
+19
+Family PACT – Client Eligibility
+Page updated: August 2025
+• The OHC requires an annual deductible that the client is unable to meet on the date of
+service.
+Note: If the OHC is health insurance with an insurance copayment per visit, the client is not
+eligible for Family PACT benefits. The provider should collect the copayment, render
+services and bill the third party insurance.
+• A barrier to access exists. A barrier to access is when a client’s OHC does not ensure
+provision of family planning services to a client without his or her spouse, partner or
+parents being notified or informed. For clients who indicate on the CEC form (DHCS
+4461) that their concern of a partner, spouse, or parent learning about their family
+planning appointment may keep them from using their OHC, there is a barrier to
+access, and the clients are eligible for Family PACT benefits if they meet all other
+eligibility criteria. This applies to all clients regardless of age or marital status.
+• The client has a Medi-Cal unmet SOC on the date of service.
+• The client has limited-scope Medi-Cal that does not cover family planning.
+Clients Enrolled in Medi-Cal Managed Care
+When Medi-Cal managed care enrolled members seek family planning care outside of a
+designated health plan, the health plans are required to reimburse qualified out-of-plan
+family planning providers for family planning services as well as laboratory and pharmacy
+services related to family planning. Family PACT providers should serve Medi-Cal managed
+care clients and then bill the managed care health plan rather than enrolling clients into
+Family PACT. Seeking a specific method of birth control not covered by their health plan of
+enrollment is not a criterion for eligibility in Family PACT. Providers may obtain more
+detailed plan enrollment information for Medi-Cal managed care clients through Medi-Cal
+online eligibility verification systems. Information about managed care plans and copies of
+the policy letters cited in this section are available on the DHCS Medi-Cal Managed Care
+Letters website.
+[[page 20]]
+client elig
+20
+Family PACT – Client Eligibility
+Page updated: April 2025
+Client Eligibility Determination Table
+The following table assists providers in determining client eligibility
+Client Information Family
+PACT
+Eligibility
+Action Taken
+Client has full-scope Medi-Cal with no Share of
+Cost (SOC)
+No No activation. Bill to
+Medi-Cal
+Client has Medi-Cal with an unmet SOC Yes Issue and activate HAP
+Identification Number
+Client has Medi-Cal with no SOC but client
+indicates a barrier to access exists*
+Yes Issue and activate HAP
+Identification Number
+Client has restricted services Medi-Cal (no
+coverage of contraceptive methods).
+Yes Issue and activate HAP
+Identification Number
+Client has OHC (covers contraceptive methods)
+with no deductible.
+No No activation. Bill
+insurance
+Client has OHC (Medi-Cal managed care with no
+deductible and OHC covers contraceptive
+methods, but client indicates a barrier to access
+exists.*
+Yes Issue and activate HAP
+Identification Number
+Client has OHC (covers contraceptive methods)
+with an unmet deductible.
+Yes Issue and activate HAP
+Identification Number
+Client has no health care coverage. Yes Issue and activate HAP
+Identification Number
+Client is enrolled in Medi-Cal managed care but
+requests out-of-plan family planning services.
+No No activation. Provide
+services, bill for service to
+plan
+[[page 21]]
+client elig
+21
+Family PACT – Client Eligibility
+Page updated: April 2025
+Legend
+Symbols used in the document above are explained in the following table.
+Symbol Description
+‹‹ This is a change mark symbol. It is used to indicate where on the page the
+most recent change begins.
+›› This is a change mark symbol. It is used to indicate where on the page the
+most recent change ends.
+* See “Eligible Clients with Other Health Coverage” on a previous page.

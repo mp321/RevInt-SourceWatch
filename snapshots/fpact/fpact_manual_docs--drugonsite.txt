@@ -1,0 +1,489 @@
+[[page 1]]
+drug onsite
+1
+Family PACT – Drugs: Onsite Dispensing Price Guide
+Drugs: Onsite Dispensing Price Guide
+Page updated: June 2026
+This section includes billing instructions and reimbursement rates for drugs covered by the
+Family Planning, Access, Care and Treatment (Family PACT) Program when dispensed
+onsite. For drug regimens reimbursable by the program, refer to the “Treatment and
+Dispensing Guidelines for Clinicians” in the Benefits Grid section in this manual. Additional
+billing instructions for dispensing drugs and supplies onsite are contained in the Drugs:
+Onsite Dispensing Billing Instructions section in this manual.
+Table of Reimbursement Rates for Contraceptive Supplies Dispensed Onsite
+HCPCS Code Contraceptive Supplies Unit Family PACT
+A4261 Cervical cap Each $71.34
+A4266 Diaphragm, contoured Each $87.15
+A4266 Diaphragm, wide seal Each $43.05
+A4267 Male condoms Each $0.28
+A4268 Internal condoms Each $10.83
+A4269-U1 Spermicidal gel/jelly/cream/foam Gram $0.21
+A4269-U2 Spermicidal suppositories Each $0.53
+A4269-U3 Spermicidal vaginal film Each $0.69
+A4269-U4 Contraceptive sponge Each $2.35
+A4269-U5 ‹‹Contraceptive Vaginal gel›› Box $364.24
+J3490 Injection, medroxyprogesterone
+acetate
+104mg/0.65
+ml
+$50.53
+J3490-U5 Oral, Ulipristal acetate 30 mg ‹‹$37.11››
+J3490-U6 Oral, levonorgestrel 1.5 mg ‹‹$6.45››
+J3490-U8 Injection, medroxyprogesterone
+acetate
+150 mg/ml ‹‹$33.11››
+‹‹J7294 Segesterone acetate and ethinyl
+estradiol 0.15 mg, 0.013 mg per 24
+hours; yearly vaginal system, each
+Each $2313.05››
+‹‹J7295 Ethinyl estradiol and etonogestrel
+0.015 mg, 0.12 mg per 24 hours;
+monthly vaginal ring, each
+Each $135.11››
+J7304-U1 Patch, contraceptive, hormone-
+containing
+Each ‹‹$36.82››
+J7304-U2 Patch, contraceptive, hormone-
+containing
+Each $67.21
+‹‹S4993 Contraceptive pills for birth control 1 cycle $12.00››
+S5199 Lubricant (non-spermicidal) Gram $0.03
+[[page 2]]
+drug onsite
+2
+Family PACT – Drugs: Onsite Dispensing Price Guide
+Page updated: September 2025
+Miscellaneous Drugs
+Miscellaneous drugs for non-surgical procedures are billed with HCPCS code S5000
+(prescription drug, generic) or S5001 (prescription drug, brand name). These codes may be
+used only by hospital outpatient departments, emergency rooms, surgical clinics and
+community clinics, in accordance with Medi-Cal guidelines. The tables in this section include
+the reimbursable drugs, size and/or strength, maximum billing units per claim, Family PACT
+rate per unit, maximum drug cost, clinic dispensing fee, upper payment limit and fill
+frequency (days). The table entries are based on the drug regimens listed in the “Treatment
+and Dispensing Guidelines for Clinicians” in the Benefits Grid section in this manual. For
+additional information regarding covered Family PACT formulary drugs dispensed onsite,
+refer to the Clinic Formulary section in this manual.
+Calculating Total Charges
+For drugs billed with code S5000 or S5001, the Family PACT rate per unit of medication is
+listed in this section of the manual. The following information must be entered in the
+Remarks field (Box 80) of the UB-04 or an attachment: Enter the name of the drug or supply
+(from the Drugs: Onsite Dispensing Price Guide) and the size and/or strength, if applicable
+(for example, 300 mg tablets). Multiply the number of units dispensed by the Family PACT
+rate per unit to obtain the drug cost, add the clinic dispensing fee (if applicable), then enter
+the total for the claim line. Each listed regimen is considered to be one (service) unit,
+regardless of the number of tablets contained in the regimen. For claim form examples, refer
+to the Claim Completion: UB-04 section in this manual.
+If multiple drugs are billed using code S5000 or S5001, the billing code can be repeated on
+additional claim lines with the appropriate National Drug Code (NDC).
+For the drugs billed with code S5000 or S5001 for the treatment of gonorrhea, chlamydia
+and/or trichomoniasis, the maximum billing units per claim, maximum drug cost and upper
+payment limits reflect services for up to six units for drug regimens for Expedited Partner
+Therapy (EPT). For additional information about EPT, providers may refer to the Benefits:
+Family Planning-Related Services section in this manual.
+[[page 3]]
+drug onsite
+3
+Family PACT – Drugs: Onsite Dispensing Price Guide
+Page updated: September 2025
+ICD-10-CM Code
+Claims billed with HCPCS code S5000 or S5001 must include two ICD-10-CM codes: the
+covered family planning-related ICD-10-CM code along with the family planning diagnosis
+for which the client is being seen. Only one family planning-related ICD-10-CM code must be
+entered per claim.
+If a combination of drug regimens is billed with a single family planning-related ICD-10-CM
+code, the drug regimens should be entered on separate claim lines.
+If two or more drugs are dispensed with different family planning-related ICD-10-CM codes,
+then a separate claim must be submitted for each ICD-10-CM code and corresponding
+drug(s).
+The family planning-related ICD-10-CM codes and corresponding drugs that are
+reimbursable by the Family PACT Program are listed in the Benefits Grid and Benefits:
+Family Planning-Related sections in this manual.
+[[page 4]]
+drug onsite
+4
+Family PACT – Drugs: Onsite Dispensing Price Guide
+Page updated: September 2025
+Table of Reimbursement Rates for Drugs that are Dispensed Onsite
+Medication Size
+and/or
+Strength
+Condition Max.
+Billing
+Units
+Per
+Claim
+Rate
+Per
+Unit
+Max.
+Drug
+Cost
+Clinic
+Dispensing
+Fee
+Upper
+Payment
+Limit
+Fill
+Frequency
+(Days)
+Acyclovir 400 mg
+tabs
+Genital Herpes 30 $ 0.23 $ 6.90 $ 3.00 $ 9.90 N/A
+Acyclovir 400 mg
+tabs
+Genital Herpes 60 $ 0.23 $ 13.80 $ 3.00 $ 16.80 22
+Acyclovir 800 mg
+tabs
+Genital Herpes 10 $ 0.47 $ 4.70 $ 3.00 $ 7.70 30
+Cefixime 400 mg
+tabs/caps
+Gonorrhea 12 $ 8.11 $ 97.32 $ 3.00 $ 100.32 2 per rolling
+30 days
+Cephalexin 250 mg
+caps
+UTI 40 $ 0.18 $ 7.20 $ 3.00 $ 10.20 2 per rolling
+30 days
+Cephalexin 500 mg
+caps
+UTI 20 $ 0.36 $ 7.20 $ 3.00 $ 10.20 2 per rolling
+30 days
+Ciprofloxacin 250 mg
+tabs
+UTI 6 $0.05 $0.30 $3.00 $ 3.30 2 per rolling
+30 days
+Ciprofloxacin 500 mg
+tabs
+UTI 3 $ 0.11 $ 0.33 $ 3.00 $ 3.33 2 per rolling
+30 days
+Clindamycin 150 mg
+caps
+BV 28 $ 0.92 $ 25.76 $ 3.00 $ 28.76 2 per rolling
+30 days
+[[page 5]]
+drug onsite
+5
+Family PACT – Drugs: Onsite Dispensing Price Guide
+Page updated: September 2025
+Table of Reimbursement Rates for Drugs that are Dispensed Onsite (continued)
+Medication Size
+and/or
+Strength
+Condition Max.
+Billing
+Units
+Per
+Claim
+Rate
+Per
+Unit
+Max.
+Drug
+Cost
+Clinic
+Dispensing
+Fee
+Upper
+Payment
+Limit
+Fill
+Frequency
+Clindamycin 100 mg
+ovules/3
+pack
+BV 1 $ 29.70 $ 29.70 $ 2.00 $ 31.70 30
+Clindamycin 2% tube BV 1 $ 35.86 $ 35.86 $ 2.00 $ 37.86 30
+Clotrimazole 1% tube Vaginal
+Candidiasis 1 $ 6.82 $ 6.82 $ 2.00 $ 8.82 30
+Clotrimazole 2% tube Vaginal
+Candidiasis 1 $ 7.16 $ 7.16 $ 2.00 $ 9.16 30
+Doxycycline 100 mg
+caps/tabs
+PID 28 $ 0.14 $ 3.92 $ 3.00 $ 6.92 2 per
+rolling 30
+days
+Doxycycline 100 mg
+caps/tabs
+Epididymitis 20 $ 0.14 $2.80 $3.00 $5.80 2 per
+rolling 30
+days
+Doxycycline 100 mg
+caps/tabs
+Syphilis 56 $ 0.14 $ 7.84 $ 3.00 $ 10.84 30
+Doxycycline 100 mg
+caps/tabs
+Chlamydia 84 $ 0.14 $ 11.76 $ 3.00 $ 14.76 2 per
+rolling 30
+days
+Doxycycline 100 mg
+caps/tabs
+NGU, Recurrent
+NGU
+14 $ 0.14 $ 1.96 $ 3.00 $ 4.96 None
+Estradiol 0.5 mg
+tabs
+Abnormal Vaginal
+Bleed
+56 $ 0.18 $ 10.80 $ 3.00 $ 13.80 30
+Estradiol 1 mg tabs Abnormal Vaginal
+Bleed
+28 $ 0.22 $ 6.16 $ 3.00 $ 9.16 30
+[[page 6]]
+drug onsite
+6
+Family PACT – Drugs: Onsite Dispensing Price Guide
+Page updated: September 2025
+Table of Reimbursement Rates for Drugs that are Dispensed Onsite (continued)
+Medication Size
+and/or
+Strength
+Condition Max.
+Billing
+Units
+Per
+Claim
+Rate
+Per
+Unit
+Max.
+Drug
+Cost
+Clinic
+Dispensing
+Fee
+Upper
+Payment
+Limit
+Fill
+Frequency
+Estradiol 2 mg tabs Abnormal Vaginal
+Bleed
+14 $ 0.31 $ 4.34 $ 3.00 $ 7.34 30
+Fluconazole 150 mg tab Vaginal
+Candidiasis
+1 $ 9.65 $ 9.65 $ 2.00 $ 11.65 30
+Imiquimod 5 percent
+packets
+Genital Warts 12 $ 10.39 $ 124.68 $ 2.00 $ 126.68 30
+Levofloxacin 250 mg
+tabs
+Chlamydia 84 $ 0.16 $ 13.44 $ 3.00 $ 16.44 2 per rolling
+30 days
+Levofloxacin 500 mg
+tabs
+Chlamydia 42 $ 0.20 $ 8.40 $ 3.00 $ 11.40 2 per rolling
+30 days
+Levofloxacin 250 mg
+tabs
+PID 28 $ 0.16 $ 4.48 $ 3.00 $ 7.48 2 per rolling
+30 days
+Levofloxacin 500 mg
+tabs
+PID 14 $ 0.20 $ 2.80 $ 3.00 $ 5.80 2 per rolling
+30 days
+Levofloxacin 250 mg
+tabs
+Epididymitis 20 $ 0.16 $ 3.20 $ 3.00 $ 6.20 2 per rolling
+30 days
+Levofloxacin 500 mg
+tabs
+Epididymitis 10 $ 0.20 $ 2.00 $ 3.00 $ 5.00 2 per rolling
+30 days
+[[page 7]]
+drug onsite
+7
+Family PACT – Drugs: Onsite Dispensing Price Guide
+Page updated: September 2025
+Table of Reimbursement Rates for Drugs that are Dispensed Onsite (continued)
+Medication Size
+and/or
+Strength
+Condition Max.
+Billing
+Units
+Per
+Claim
+Rate
+Per
+Unit
+Max.
+Drug
+Cost
+Clinic
+Dispensing
+Fee
+Upper
+Payment
+Limit
+Fill
+Frequency
+Metronidazole 250 mg
+tabs
+PID 56 $ 0.08 $ 4.48 $ 3.00 $ 7.48 2 per rolling
+30 days
+Metronidazole 250 mg
+tabs
+BV 28 $ 0.08 $ 2.24 $ 3.00 $ 5.24 2 per rolling
+30 days
+Metronidazole 500 mg
+tabs
+PID 28 $ 0.22 $ 6.16 $ 3.00 $ 9.16 2 per rolling
+30 days
+Metronidazole 500 mg
+tabs
+Trichomoniasis 84 $ 0.22 $ 18.48 $ 3.00 $ 21.48 2 per rolling
+30 days
+Metronidazole 500 mg
+tabs
+BV 14 $ 0.22 $ 3.08 $ 3.00 $ 6.08 2 per rolling
+30 days
+Metronidazole
+Gel
+0.75
+percent
+tube
+BV 1 $ 5.04 $ 35.04 $ 2.00 $ 37.04 30
+Miconazole 100 mg
+pack
+Vaginal
+Candidiasis
+1 $ 6.75 $ 6.75 $ 2.00 $ 8.75 30
+[[page 8]]
+drug onsite
+8
+Family PACT – Drugs: Onsite Dispensing Price Guide
+Page updated: September 2025
+Table of Reimbursement Rates for Drugs that are Dispensed Onsite (continued)
+Medication Size
+and/or
+Strength
+Condition Max.
+Billing
+Units
+Per
+Claim
+Rate
+Per
+Unit
+Max.
+Drug
+Cost
+Clinic
+Dispensing
+Fee
+Upper
+Payment
+Limit
+Fill
+Frequency
+Miconazole 200 mg
+pack
+Vaginal
+Candidiasis
+1 $ 13.77 $ 13.77 $ 2.00 $ 15.77 30
+Miconazole 2 percent
+tube
+Vaginal
+Candidiasis
+1 $ 7.17 $ 7.17 $ 2.00 $ 9.17 30
+Miconazole 4 percent
+tube
+Vaginal
+Candidiasis
+1 $ 7.30 $ 7.30 $ 2.00 $ 9.30 30
+Nitrofurantoin
+(macrocrystals
+only)
+50 mg
+caps
+UTI 20 $ 0.30 $ 6.00 $ 3.00 $ 9.00 2 per rolling
+30 days
+Nitrofurantoin
+(macrocrystals
+only)
+100 mg
+caps
+UTI 10 $ 0.34 $ 3.40 $ 3.00 $ 6.40 2 per rolling
+30 days
+Nitrofurantoin
+(monohydrate
+macrocrystals
+only)
+100 mg
+caps
+UTI 10 $ 0.41 $ 4.10 $ 3.00 $ 7.10 2 per rolling
+30 days
+[[page 9]]
+drug onsite
+9
+Family PACT – Drugs: Onsite Dispensing Price Guide
+Page updated: September 2025
+Table of Reimbursement Rates for Drugs that are Dispensed Onsite (continued)
+Medication Size
+and/or
+Strength
+Condition Max.
+Billing
+Units
+Per
+Claim
+Rate
+Per
+Unit
+Max.
+Drug
+Cost
+Clinic
+Dispensing
+Fee
+Upper
+Payment
+Limit
+Fill
+Frequency
+Podofilox 0.50%
+pack
+External Genital
+Warts
+1 $ 76.88 $ 76.88 $ 2.00 $ 78.88 30
+Probenecid 500 mg
+tabs
+PID 2 $ 0.71 $ 1.42 $ 3.00 $ 4.42 2 per rolling
+30 days
+SMX/TMP 400/80 mg
+tabs
+UTI 12 $ 0.12 $ 1.44 $ 3.00 $ 4.44 2 per rolling
+30 days
+SMX/TMP 800/160
+mg tabs
+UTI 6 $ 0.15 $ 0.90 $ 3.00 $ 3.90 2 per rolling
+30 days
+Tinidazole 250 mg
+tabs
+Trichomoniasis 48 $ 1.38 $ 66.24 $ 3.00 $ 69.24 2 per rolling
+30 days
+Tinidazole 500 mg
+tabs
+Trichomoniasis 24 $ 2.76 $ 66.24 $ 3.00 $ 69.24 2 per rolling
+30 days
+Tinidazole 250 mg
+tabs
+BV 20 $ 2.76 $ 55.20 $ 3.00 $ 58.20 2 per rolling
+30 days
+Tinidazole 500 mg
+tabs
+BV 10 $ 2.76 $ 27.60 $ 3.00 $ 30.60 2 per rolling
+30 days
+[[page 10]]
+drug onsite
+10
+Family PACT – Drugs: Onsite Dispensing Price Guide
+Page updated: September 2025
+Legend
+Symbols used in the document above are explained in the following table.
+Symbol Description
+‹‹ This is a change mark symbol. It is used to indicate where on the page the
+most recent change begins.
+›› This is a change mark symbol. It is used to indicate where on the page the
+most recent change ends.

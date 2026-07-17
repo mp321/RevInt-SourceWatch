@@ -1,0 +1,305 @@
+[[page 1]]
+claim ub
+1
+Family PACT – Claim Completion: UB-04
+Claim Completion: UB-04
+Page updated: September 2020
+The examples in this section assist providers billing for Family Planning, Access, Care and
+Treatment (Family PACT) Program services on the UB-04 claim form. While Family PACT
+claims are generally billed with the same method as Medi-Cal claims, there are some unique
+differences for Family PACT. Providers should carefully read information in this manual
+concerning Family PACT ICD-10-CM diagnosis codes and additional ICD-10-CM
+documentation requirements. Refer to Benefits: Family Planning and Benefits: Family
+Planning-Related Services sections of this manual for detailed policy information.
+Claim Completion Instructions Overview
+For general claim completion instructions, refer to the following sections in the Part 2 Medi-
+Cal manual:
+• Correct Coding Initiative: National
+• UB-04 Completion: Outpatient Services
+• UB-04 Special Billing Instructions for Outpatient Services
+• UB-04 Submission and Timeliness Instructions
+• UB-04 Tips for Billing: Outpatient Services
+• Physician-Administered Drugs – NDC: UB-04 Billing Instructions
+Claim Examples
+This section includes examples of family planning and family planning-related services that
+require appropriate ICD-10-CM coding for reimbursement. It also includes an example of
+when two claim forms are required for the same date of service because different additional
+ICD-10-CM diagnosis codes are required for treatment services provided in a single visit.
+Because these claims are submitted with a diagnosis code, an ICD indicator is required in
+the white space below the DX field (Box 66). An indicator is required only when an ICD-10-
+CM/PCS code is entered on the claim.
+Note: These are examples only. National Drug Code (NDC) numbers and charges used for
+the examples may be fictitious or outdated and are not intended for use on the actual
+claim form. Adapt to your billing situation.
+Billing Tips When completing claims, do not enter the decimal points in any codes or dollar
+amounts. If requested information does not fit neatly in the Remarks field (Box 80) of
+the claim, type it on an 8½ x 11-inch sheet of paper and attach it to the claim.
+[[page 2]]
+claim ub
+2
+Family PACT – Claim Completion: UB-04
+Page updated: September 2021
+Office visit, pregnancy test, symptomatic urinary tract infection (UTI)
+diagnostic test and onsite dispensing
+‹‹In this example, a client has an initial family planning visit at a community clinic including a
+pregnancy test which was negative. The client complains of dysuria, so a point-of-care urine
+dipstick (without microscopy) is done. The client receives counseling about all contraceptive
+methods. The clinician dispenses 13 cycles of oral contraceptives as her primary method of
+family planning, with condoms as a back-up method and 3 days of ciprofloxin tablets for a
+presumptive UTI. The total time of the clinician visit is 32 minutes, including time for charting
+in the medical record.
+The health educator, under direct supervision of the clinician, provides individual orientation
+to Family PACT, which includes information on the scope of the program, family planning
+methods, and select family planning-related conditions.››
+Both the product ID qualifier (N4) and National Drug Code (NDC) are required on the claim
+because the oral contraceptive dispensed (claim line 4) is a “physician-administered” drug.
+Providers enter the product ID qualifier/NDC number immediately followed by the unit of
+measure/numeric quantity for the contraceptive in the Description field (Box 43). HCPCS
+codes for contraceptive supplies are exempt from being billed in connection with an NDC.
+Notes:
+• Unit of measure and numeric quantity are optional. Absence of these two elements will
+not result in claim denial.
+• Section 340B drugs may be billed on the same claim as non-340B drugs, but the 340B
+drugs must include modifier UD with the applicable HCPCS and NDC codes. Refer to
+the appropriate Part 2 manual section Physician-Administered Drugs – NDC: UB-04
+Billing Instructions for details on NDC and 340B billing requirements.
+[[page 3]]
+claim ub
+3
+Family PACT – Claim Completion: UB-04
+Page updated: September 2021
+Figure 1: Example form for office visit, pregnancy test, symptomatic urinary tract infection
+(UTI) diagnostic test and onsite dispensing
+‹‹ ››
+As indicated in the Remarks field (Box 80) above, on an 8½ x 11-inch sheet of paper,
+document the following and attach to the claim:
+• L4: norgestimate and ethinyl estradiol 13 packs at $12.00 equals $156.00
+• L5: ciprofloxin number 6 250 mg at $.38 equal $2.28 plus cdf at $3.00 equals $5.28
+• L6: male condoms number 35 at $.28 equals $9.80 plus cdf at $.98 equals $10.78
+[[page 4]]
+claim ub
+4
+Family PACT – Claim Completion: UB-04
+Page updated: October 2025
+Facility claim for a bilateral tubal ligation performed at a surgery center
+In this example, a pregnancy test is performed onsite, followed by a tubal ligation. The
+outpatient surgery center bills for supplies and the necessary treatment and recovery rooms
+required for the surgery on a UB-04 claim form. (The surgeon submits a CMS-1500 claim
+form.)
+‹‹The referring provider must be an enrolled Family PACT provider and must ensure that the
+Medi-Cal non-Family PACT rendering provider and the facility have received a copy of the
+client’s Consent For Sterilization Form (DHCS 8649). A DHCS 8649 form must be attached
+to the hard copy claim form by the rendering provider. Enter the referring provider’s NPI in
+Box 76, and the rendering provider’s NPI in Box 77.››
+Figure 2: Example of facility claim for a bilateral tubal ligation performed at a surgery center
+[[page 5]]
+claim ub
+5
+Family PACT – Claim Completion: UB-04
+Page updated: September 2021
+Dispensing supplies, collection and handling of blood specimen, and
+in-house lab work (an additional ICD-10-CM diagnosis code is required)
+‹‹In this example, the services performed in a hospital outpatient department include an
+initial visit for contraception with a complete client history, a blood pressure check and
+contraceptive and sexually transmitted infection (STI) counseling. Total clinician time is 35
+minutes. Point-of-care laboratory work includes a pregnancy test and dipstick urinalysis for
+vague symptoms suspicious for a UTI.
+To screen for HIV and syphilis a blood specimen is collected in the office and sent to an
+outside laboratory. Foam, condoms and a sample pack of oral contraceptives (at no charge)
+are dispensed. The client also receives a written prescription for an antibiotic for the UTI.››
+The Remarks field (Box 80) must include a required statement that lists dispensed supplies
+and indicates the blood specimen was sent to an unaffiliated lab.
+[[page 6]]
+claim ub
+6
+Family PACT – Claim Completion: UB-04
+Page updated: September 2021
+Figure 3: Example form for dispensing supplies, collection and handling of blood specimen,
+and in-house lab work
+‹‹ ››
+As indicated in the Remarks field (Box 80) above, on an 8½ by 11-inch sheet of paper,
+document the following and attach to the claim:
+• L5: foam at .21 times 30 gm equal 6.30 plus CDF .63 equals $6.93
+• L4: male condoms at .28 times 20 equal $5.60 plus CDF .56 equals $6.16
+[[page 7]]
+claim ub
+7
+Family PACT – Claim Completion: UB-04
+Page updated: September 2020
+Outpatient facility for removal and insertion of an intrauterine device
+(IUD) (client referred by a Family PACT provider)
+In this example, the established client is referred by her Family PACT provider to a nearby
+Medi-Cal Nurse Practitioner (NP). The NP, who works under the supervision of a physician,
+removed the client’s intrauterine copper contraceptive that has been in place for 10 years.
+The client has no plans for childbearing and wants a new IUD. Enter the referring provider’s
+NPI in Box 76, the supervising physician’s NPI in Box 77, and enter the name of the NP,
+title, and the individual NPI number in Box 80.
+Both the product ID qualifier (N4) and National Drug Code (NDC) are required on the claim
+because the intrauterine copper contraceptive dispensed (claim line 3) is a “physician-
+administered” drug. Providers enter the product qualifier/NDC number immediately followed
+by the unit of measure/numeric quantity for the contraceptive in the Description field (Box
+43). (Refer to Part 2, Medi-Cal manual section Physician-Administered Drugs – NDC: UB-04
+Billing Instructions for help.)
+Note: Unit of measure and numeric quantity are optional. Absence of these two elements
+will not result in claim denial.
+‹‹Figure 4: Example form for outpatient facility for removal and insertion of an
+intrauterine device (IUD) ››
+[[page 8]]
+claim ub
+8
+Family PACT – Claim Completion: UB-04
+Page updated: September 2021
+Contraceptive patch user with symptoms of burning upon urination, and
+partner reports exposure to a sexually transmitted infection (STI) (two
+claim forms required)
+‹‹In this example, an established client, who is seen for a refill of contraceptive patches,
+reports that she has burning upon urination and that her partner has been exposed to
+chlamydia. The clinician performs a urine microscopy which shows numerous white blood
+cell count (WBC) and the clinician dispenses ciprofloxin tablets to treat acute cystitis and
+azithromycin 1 gram orally for presumptive treatment of a chlamydia infection. A screening
+nucleic acid amplification test (NAAT) for chlamydia is sent to an outside laboratory. Blood
+was drawn for syphilis and HIV screening tests and sent to the same outside laboratory››.
+Two claim forms are required for the same date of service, because there are two different
+family planning-related conditions requiring two ICD-10-CM diagnosis codes for the two
+treatments dispensed. Each claim has the same family planning ICD-10-CM diagnosis code.
+Refer to the following page for the required second claim form. The office visit may not be
+billed twice. The community clinic has opted to include the clinic dispensing fee in computing
+costs for drugs dispensed onsite.
+Figure 5: Example first form for a contraceptive patch user with symptoms of burning upon
+urination, and partner reports exposure to a Sexually Transmitted Infection (STI)
+‹‹ ››
+[[page 9]]
+claim ub
+9
+Family PACT – Claim Completion: UB-04
+Page updated: September 2020
+Contraceptive patch user with symptoms of burning upon urination, and the partner reporting
+exposure to a Sexually Transmitted Infection (STI) (second claim form) (continued)
+The second claim form includes the drug to treat STI exposure onsite (refer to the first claim
+form on the preceding page). Both the product ID qualifier (N4) and NDC are required on the
+claims.
+Note: Unit of measure and numeric quantity are optional. Absence of these two elements
+will not result in claim denial.
+‹‹Figure 6: Example second form for a contraceptive patch user with symptoms of burning
+upon urination, and partner reports exposure to a Sexually Transmitted Infection (STI)››
+[[page 10]]
+claim ub
+10
+Family PACT – Claim Completion: UB-04
+Page updated: September 2021
+Education and counseling visit with a Physician’s Assistant (PA)
+‹‹In this example a female client who is an established depo medroxyprogesterone acetate
+(DMPA) user is seen for concerns with irregular vaginal bleeding. She receives counseling
+from a PA regarding the side effects of DMPA and wants to continue with the method. The
+total time of the visit is 20 minutes››. This example shows how the rendering provider bills for
+the procedure. The PA works under the supervision of a physician. Enter the supervising
+physician’s individual NPI in Box 76, the billing Family PACT provider’s NPI in Box 77 and
+the name of the PA, title and the PA’s individual NPI in Box 80.
+Figure 7: Example form for education and counseling visit with a Physician’s Assistant (PA)
+‹‹ ››
+[[page 11]]
+claim ub
+11
+Family PACT – Claim Completion: UB-04
+Page updated: September 2021
+Intrauterine contraceptive (IUC) removal and the start of oral
+contraceptives on the same date of service (two claim forms required)
+In this example an established client has an expired IUC for removal and would like to start
+using an oral contraceptive. ‹‹After uncomplicated removal of the IUC, the clinician provided
+contraceptive counseling and prescribed and dispensed 13 cycles of oral contraceptives.
+The total time of the visit (excluding the IUD removal) was 23 minutes.››
+The clinician provided 15 minutes of contraceptive counseling
+Two claim forms are required for the same date of service because there are two
+contraceptive management ICD-10-CM diagnosis codes
+Refer to the following page for the second claim form
+The first claim form should include the information below. Do not bill for an Evaluation and
+Management (E&M) visit with IUC removal on the same date of service
+Figure 8: Example first form for Intrauterine contraceptive (IUC) removal and the start of oral
+contraceptives on the same date of service
+[[page 12]]
+claim ub
+12
+Family PACT – Claim Completion: UB-04
+Page updated: September 2021
+Intrauterine contraceptive (IUC) removal and the start of oral contraceptives on the same
+date of service (second claim form) (continued)
+The second claim form includes the oral contraceptives dispensed onsite (refer to the first
+claim form on the preceding page).
+Both the product ID qualifier (N4) and National Drug Code (NDC) are required on the claim
+because the oral contraceptive dispensed (claim line 1) is a “physician-administered” drug.
+Providers enter the product ID qualifier/NDC number immediately followed by the unit of
+measure/numeric quantity for the contraceptive in the Description field (Box 43). Refer to
+Part 2, Medi-Cal Manual section Physician-Administered Drugs – NDC: UB-04 Billing
+Instructions for help.
+Note: Unit of measure and numeric quantity are optional. Absence of these two elements
+will not result in claim denial.
+Figure 9: Example second form for Intrauterine contraceptive (IUC) removal and the start of
+oral contraceptives on the same date of service
+‹‹
+››
+[[page 13]]
+claim ub
+13
+Family PACT – Claim Completion: UB-04
+Page updated: September 2021
+Office visit, positive sexually transmitted infections (STI) test results and
+drug onsite administration
+‹‹In this example, an established client who uses oral contraceptives tested positive for
+syphilis (with a positive confirmatory test) at her previous family planning visit››. She
+receives an intramuscular injection of penicillin G benzathine, 2,400,000 units.
+Both the product ID qualifier N4 and National Drug Code (NDC) are required on the claim
+because the drug dispensed (claim line 2) is a “physician-administered” drug (PAD).
+Providers enter the product ID qualifier/NDC number immediately followed by the unit of
+measure/numeric quantity for the drug in the Description field (Box 43). Refer to Part 2,
+Medi-Cal Manual section Physician-Administered Drugs – NDC: UB-04 Billing Instructions
+for help.
+To calculate the charges for penicillin G benzathine, the cost of the injection and the
+administration fee must be determined. The price listed on the Medi-Cal Rates page of the
+Medi-Cal website for penicillin G benzathine includes a one-time administration fee. Since
+the administration fee is paid only once for each drug administered, subsequent units
+claimed must have the administration fee subtracted from the published rate. This difference
+is the cost of the injection. Multiply this cost with the number of units. For penicillin G
+benzathine, this would include the cost per unit multiplied by 23 units. To calculate the total
+charge, the cost for 23 units is added to the rate of the drug on file (which includes the one-
+time administration fee). Refer to the Drugs: Onsite Dispensing Billing Instructions section of
+this manual for specific instructions on the one-time administration fee.
+Note: Unit of measure and numeric quantity are optional. Absence of these two elements
+will not result in claim denial.
+[[page 14]]
+claim ub
+14
+Family PACT – Claim Completion: UB-04
+Page updated: September 2021
+Figure 10: Example form for office visit, positive STI test results and drug onsite
+administration
+‹‹ ››
+[[page 15]]
+claim ub
+15
+Family PACT – Claim Completion: UB-04
+Page updated: September 2021
+Initial visit with on-site dispensing of diaphragm (wide seal)
+‹‹In this example, the services of a hospital outpatient department include an initial visit for
+contraception with a complete client history and counseling. The point-of-care pregnancy
+test is clinically indicated and is negative. Contraceptive diaphragm (wide seal), condoms
+and jelly were dispensed on-site. Total clinician time is 35 minutes.››
+The Remarks field (Box 80) must include a required statement that lists dispensed supplies.
+Figure 11: Example form for Initial visit with on-site dispensing of diaphragm (wide seal)
+In the Remarks field (box 80) above, or on an 8.5 by 11-inch sheet of paper, document the
+following and attach to the claim:
+• L3: Diaphragm Wide Seal at 43.05 times 1 equals $43.05 plus CDF 4.30 equals
+$47.35
+• L4: Male Condoms at .28 times 20 equals $5.60 plus CDF .56 equals $6.16
+• L5: ‹‹Jelly›› at .21 times 30 gm equals $6.30 plus CDF .63 equals $6.93
+[[page 16]]
+claim ub
+16
+Family PACT – Claim Completion: UB-04
+Page last updated: September 2020
+‹‹Legend››
+‹‹Symbols used in the document above are explained in the following table.››
+Symbol Description
+‹‹ This is a change mark symbol. It is used to indicate where on the page the
+most recent change begins.
+›› This is a change mark symbol. It is used to indicate where on the page the
+most recent change ends.

@@ -1,0 +1,1197 @@
+[[page 1]]
+ben fam rel
+1
+Family PACT – Benefits: Family Planning-Related Services
+Benefits: Family Planning-Related Services
+Page updated: May 2024
+This section identifies Family PACT (Planning, Access, Care and Treatment) Program
+benefits for family planning-related services for the maintenance and protection of optimal
+reproductive health.
+‹‹Federal Regulations
+Section 2303(a)(3) of the Affordable Care Act (ACA), specifies that the benefits of
+federally-supported state family planning programs are limited to “family planning services
+and supplies” as well as family planning-related services such as “medical diagnosis and
+treatment services that are provided pursuant to a family planning service in a family
+planning setting.”
+Effective April 16, 2014, diagnosis and treatment of sexually transmitted infections (STIs) are
+always provided pursuant to a family planning service. These STI services are covered,
+regardless of the initial purpose of the visit.››
+Family Planning-Related Service and Supplies
+Family planning-related services include the diagnosis and treatment of specified sexually
+transmitted infections (STIs). In addition, the program covers urinary tract infections (UTIs),
+and screening for cervical cancer and treatment of pre-invasive cervical lesions for women
+when the care is provided coincident to a visit for the management of a family planning
+method.
+ICD-10-CM Codes for Family Planning-Related Services
+An ICD-10-CM code for the family planning-related condition being treated is required on the
+claim form. This code must be billed with the ICD-10-CM code that identifies the
+contraceptive method for which the client is being seen.
+[[page 2]]
+ben fam rel
+2
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: May 2024
+Modifiers
+Modifiers are required for some tests and procedures. Family PACT defers to Medi-Cal
+policy and billing procedures for use of modifiers. For further information, refer to the
+following sections in the Part 2 Medi-Cal manual:
+• Modifiers
+• Modifiers: Approved List
+• Modifiers Used With Procedure Codes
+• Non-Physician Medical Practitioners (NMP)
+• Pathology: Billing and Modifiers
+• Pathology: Cytopathology
+• Surgery: Billing With Modifiers
+Laboratory Tests
+Specific laboratory tests for family planning-related services are identified in this section.
+For a comprehensive listing of covered laboratory test codes, descriptions and restrictions,
+refer to the Laboratory Services section in this manual.
+Drugs and Supplies
+Drugs and supplies for treatment of family planning-related services are identified in this
+section. Onsite dispensing of “miscellaneous drugs” for non-surgical procedures
+S5000/S5001 (prescription drugs generic/brand name) is limited to hospital outpatient
+departments, emergency rooms, surgical clinics and community clinics.
+Pharmacy
+For a list of reimbursable drugs and dispensing guidelines, including restrictions and
+authorization requirements refer to the Family PACT Pharmacy Formulary on the Medi-Cal
+Rx website (https://www.medi-calrx.dhcs.ca.gov), as well as the Clinic Formulary section
+and “Treatment and Dispensing Guidelines for Clinicians” in the Benefits Grid section in this
+manual.
+[[page 3]]
+ben fam rel
+3
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: August 2020
+Management of Complications
+Benefits for evaluating and managing complications that may arise from the treatment of
+family planning-related services are identified in this section. An ICD-10-CM code is used to
+identify the complication being evaluated or managed. This code must be billed with an
+ICD-10-CM code indicating the client’s contraceptive method. A third ICD-10-CM code may
+be required to identify from where the complication arose. Enter this in
+Remarks field (Box 80)/ Additional Claim Information field (Box 19) of the claim.
+Treatment Authorization Request (TAR)
+Authorization is required for all complication services, unless stated otherwise, using a TAR.
+TARs are required for provision of complication services by Family PACT providers as well
+as non-Family PACT Medi-Cal providers who deliver services upon referral from a Family
+PACT provider. TAR requirements apply to medical, anesthesia, laboratory, pharmacy,
+radiology and hospital providers. Providers generally should request authorization before
+rendering a service. For more information, refer to the Treatment Authorization Request
+(TAR) section in this manual. For information about completing a TAR, refer to the
+TAR Completion section in the Part 2 Medi-Cal manual.
+Complication Restrictions
+Only those complications that can be reasonably managed on an outpatient basis are
+reimbursable for each condition. Services are limited to the appropriate gender and are
+identified in this section.
+[[page 4]]
+ben fam rel
+4
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: January 2026
+Family Planning-Related Tests
+Laboratory Tests
+Laboratory tests are available for clients, as clinically indicated and gender appropriate.
+Cervical Cancer Screening
+Cervical cancer screening is covered when provided as part of a family planning visit. It is
+not a stand-alone service. Family PACT has adopted the U.S. Preventive Services Task
+Force (USPSTF) 2018 Final Recommendation Statement for Cervical Cancer Screening.
+This guideline contains age-based screen strategies and screening intervals. Follow-up
+visits and services related to abnormal results from screening can be found under the
+“Management of Cervical Abnormalities and Pre-invasive Cervical Lesions” heading in this
+section.
+‹‹For cervical cancer screening, the USPSTF recommends screening for cervical cancer
+every three years with cervical cytology alone in women 21 to 29 years of age. For women
+30 to 65 years of age, the USPSTF recommends screening every three years with cervical
+cytology alone, every five years with high-risk human papillomavirus (hrHPV) testing alone
+or every five years with hrHPV testing in combination with cytology (co-testing). Use of
+modifier 33 indicates the service was provided in accordance with USPSTF A or B
+recommendation.››
+The following cervical cancer screening codes are restricted to women ages 21 through 65
+regardless of sexual history.
+Reimbursement may be made for services provided to women younger than 21 years or
+over the age of 65 who have, or do not have, a cervix. However, the ordering provider must
+document on the laboratory order, and the laboratory provider must document in the
+Remarks field (Box 80)/Additional Claim Information field (Box 19) of the claim (or attached
+to the claim) that the woman meets one or more of the following:
+• Received a diagnosis of a high-grade precancerous cervical lesion (cervical
+intraepithelial neoplasia [CIN] 2, CIN 3, or adenocarcinoma in situ [AIS]) within the past
+25 years and requires screening after the initial post-treatment surveillance period per
+current American Society for Colposcopy and Cervical Pathology (ASCCP) guidelines,
+or any prior diagnosis of cervical cancer
+• In utero exposure to diethylstilbestrol (DES)
+• Immunocompromised status (such as HIV positive or immune suppressed such as a
+transplant patient using steroids)
+• Requires repeat cervical cytology to reevaluate prior atypical squamous cells of
+undetermined significance (ASC-US), low-grade squamous intraepithelial lesion
+(LSIL), or CIN 1 test result
+[[page 5]]
+ben fam rel
+5
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: January 2026
+• Over the age of 65 who did not have adequate negative prior screening. Adequate
+negative prior screening is defined as three consecutive negative cytology results or
+two consecutive negative co-tests within the 10 years before cessation of screening,
+with the most recent test occurring within the past five years.
+Cervical Screening Codes Table
+CPT® Code Description
+88142 Cytopathology, cervical or vaginal (any reporting system), collected in
+preservative fluid, automated thin layer preparation; manual screening
+under physician supervision
+88143 Cytopathology, cervical or vaginal (any reporting system), collected in
+preservative fluid, automated thin layer preparation; with manual
+screening and rescreening under physician supervision
+88147 Cytopathology smears, cervical or vaginal; screening by automated
+system under physician supervision
+88148 Cytopathology smears, cervical or vaginal; screening by automated
+system with manual rescreening under physician supervision
+88164 Cytopathology, slides, cervical or vaginal (the Bethesda System); manual
+screening under physician supervision
+88165 Cytopathology, slides, cervical or vaginal (the Bethesda System); with
+manual screening and rescreening under physician supervision
+88167 Cytopathology, slides, cervical or vaginal (the Bethesda System); with
+manual screening and computer-assisted rescreening using cell selection
+and review under physician supervision
+88174 Cytopathology, cervical or vaginal (any reporting system), collected in
+preservative fluid, automated thin layer preparation; screening by
+automated system, under physician supervision
+88175 Cytopathology, cervical or vaginal (any reporting system), collected in
+preservative fluid, automated thin layer preparation; with screening by
+automated system and manual rescreening or review under physician
+supervision
+[[page 6]]
+ben fam rel
+6
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: January 2026
+Primary Cervical Cancer Screening with High Risk Human
+Papillomavirus (HPV) Testing
+‹‹The following CPT codes are reimbursable for recipients 21 years of age and older:
+• 87624: Infectious agent detection by nucleic acid (DNA or RNA); Human
+Papillomavirus (HPV), high-risk types (eg, 16, 18, 31, 33, 35, 39, 45, 51, 52, 56, 58,
+59, 68), pooled result
+• 87625: Infectious agent detection by nucleic acid (DNA or RNA); Human
+Papillomavirus (HPV), types 16 and 18 only, includes type 45, if performed
+• 87626: Infectious agent detection by nucleic acid (DNA or RNA); Human
+Papillomavirus (HPV), separately reported high-risk types (eg, 16, 18, 31, 45, 51, 52)
+and high-risk pooled result(s)
+This service must be billed with the ICD-10-CM diagnosis code that identifies the
+contraceptive method for which the client is being seen. See the Laboratory Services section
+of this manual for additional diagnosis code requirements when testing is performed outside
+of USPSTF screening recommendations.››
+Human Papillomavirus 9-valent Vaccine, Recombinant (9vHPV)
+Coverage for HPV vaccination is restricted to individuals 19 to 45 years of age. The Centers
+for Disease Control and Prevention (CDC) Advisory Committee on Immunization Practices
+(ACIP) recommends “catch-up” vaccination for individuals through age 26 who are not fully
+vaccinated. The CDC ACIP recommends either a two-dose or three-dose series, depending
+on the age of initial vaccination. For individuals 27 to 45 years of age who are not fully
+vaccinated, the CDC ACIP recommends vaccination based on shared clinical
+decision-making. The shared decision-making discussion, in which the client opts-in to
+receive the vaccine must be documented in the client’s medical record.
+This service must be billed with the ICD-10-CM diagnosis code that identifies the
+contraceptive method for which the client is being seen.
+The HPV vaccine is not reimbursable with ICD-10-CM diagnosis codes Z30.012, Z30.09, or
+Z31.61. Use the following CPT codes for HPV vaccine and administration.
+Human Papillomavirus 9-valent Vaccine Codes
+CPT Code Description
+90651 Human Papillomavirus vaccine types 6, 11, 16, 18, 31, 33, 45, 52, 58,
+nonavalent (9vHPV), 2 or 3 dose schedule, for intramuscular use
+90471 Immunization administration (includes percutaneous, intradermal,
+subcutaneous, or intramuscular injections); 1 vaccine (single or
+combination vaccine/toxoid)
+[[page 7]]
+ben fam rel
+7
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: May 2023
+Management of Sexually Transmitted Infections (STIs)
+Sexually Transmitted Infections (STIs)
+This section lists the reimbursable additional ICD-10-CM diagnosis codes, services,
+laboratory tests and treatment of STIs as appropriate to the gender and presenting
+symptoms of the client. Services for the diagnosis and treatment of specified STIs must be
+billed with the diagnosis code for these conditions, together with the diagnosis code that
+identifies the contraceptive method for which the client is being seen.
+When applicable, only the treatment regimens included in the current Centers for Disease
+Control and Prevention (CDC) Sexually Transmitted Infections Treatment Guidelines, 2021
+may be used. The regimens reimbursed by Family PACT are found in the “Treatment and
+Dispensing Guidelines for Clinicians” in the Benefits Grid section in this manual.
+Chlamydia
+Chlamydia Diagnosis Codes Table
+ICD-10-CM Code Description
+A56.01 Chlamydial cystitis and urethritis (M and F)
+A56.09 Other chlamydial infection of lower genitourinary tract (F)
+A56.3 Chlamydial infection of anus and rectum (M and F)
+A56.4 Chlamydial infection of pharynx (M and F)
+N34.2 Other urethritis (M)
+[[page 8]]
+ben fam rel
+8
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: May 2023
+Presumptive Diagnosis
+Chlamydia Presumptive Diagnosis Codes Table
+ICD-10-CM Code Description
+N45.3 Epididymo-orchitis (M)
+N72 Inflammatory disease of cervix uteri (F)
+N89.8 Other specified noninflammatory disorders of vagina
+Indication: Leukorrhea NOS (F)
+N94.10 Unspecified dyspareunia (F)
+N94.11 Superficial (introital) dyspareunia (F)
+N94.12 Deep dyspareunia (F)
+N94.19 Other specified dyspareunia (F)
+N94.89 Other specified conditions associated with female genital organs and
+menstrual cycle (F)
+R30.0 Dysuria (M and F)
+R30.9 Painful micturition, unspecified
+Z20.2 Contact with and (suspected) exposure to infections with a
+predominantly sexual mode of transmission (M and F)
+Indication: Use for an asymptomatic partner exposed to chlamydia
+Procedures
+None
+Supplies
+None
+Drugs
+Chlamydia Drugs Codes Table
+HCPCS Code Description
+Q0144 Azithromycin dihydrate
+S5000/S5001 Prescription drugs generic/brand (Doxycycline, Levofloxacin)
+[[page 9]]
+ben fam rel
+9
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: December 2025
+Pharmacy
+For a complete list of drugs reimbursed by the Family PACT Program, including restrictions
+and authorization requirements, refer to the Family PACT Pharmacy Formulary on the
+Medi-Cal Rx website (https://medi-calrx.dhcs.ca.gov), as well as the Clinic Formulary section
+and “Treatment and Dispensing Guidelines for Clinicians” in the Benefits Grid section in this
+manual.
+Additional Lab Tests
+Chlamydia Additional Lab Test Codes Table
+CPT Code Description Restrictions
+87205 Smear, primary source with
+interpretation; Gram or Giemsa
+stain for bacteria, fungi or cell types
+Symptomatic males only; not
+payable for Z20.2
+‹‹87491*›› Chlamydia trachomatis, amplified
+probe technique
+None
+Epididymitis
+Epididymitis Diagnosis Codes Table
+ICD-10-CM Code Description
+N45.1 Epididymitis (M)
+N45.3 Epididymo-orchitis (M)
+Presumptive Diagnosis
+Epididymitis Presumptive Diagnosis Codes Table
+ICD-10-CM Code Description
+N50.811 Right testicular pain (M)
+N50.812 Left testicular pain (M)
+N50.819 Testicular pain unspecified (M)
+Procedures
+None
+Supplies
+None
+[[page 10]]
+ben fam rel
+10
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: December 2025
+Drugs
+Epididymitis Drugs Codes Table
+HCPCS Code Description
+J0696 Ceftriaxone
+S5000/S5001 Prescription drugs generic/brand (Doxycycline, Levofloxacin)
+Pharmacy
+For a complete list of drugs reimbursed by the Family PACT program, including restrictions
+and authorization requirements, refer to the Family Pact Pharmacy Formulary on the
+Medi-Cal Rx website, as well as the Clinic Formulary section and “Treatment and
+Dispensing Guidelines for Clinicians” in the Benefits Grid section in the manual.
+Additional Lab Tests
+Epididymitis Additional Lab Tests Codes Table
+CPT Code Description Restrictions
+‹‹81000∞›› Urinalysis, by dip stick or tablet reagent for
+bilirubin, glucose, hemoglobin, ketones,
+leukocytes, nitrite, pH, protein, specific gravity,
+urobilinogen, any number of these constituents;
+non-automated, with microscopy
+None
+‹‹81015∞›› Urinalysis; microscopic only None
+87205 Smear, primary source with interpretation;
+Gram or Giemsa stain for bacteria, fungi, or cell
+types
+Symptomatic males
+‹‹87491*›› Infectious agent detection by nucleic acid (DNA
+or RNA); Chlamydia trachomatis, amplified
+probe technique
+None
+‹‹87591*›› Infectious agent detection by nucleic acid (DNA
+or RNA); Neisseria gonorrhoeae, amplified
+probe technique
+None
+‹‹87563*›› Infectious agent detection by nucleic acid (DNA
+or RNA); Mycoplasma genitalium, amplified
+probe technique
+For use as a diagnostic test;
+not covered when used and
+billed as a screening test.
+[[page 11]]
+ben fam rel
+11
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: May 2023
+Gonorrhea
+Gonorrhea Diagnosis Codes Table
+ICD-10-CM Code Description
+A54.01 Gonococcal cystitis and urethritis, unspecified (M and F)
+A54.03 Gonococcal cervicitis, unspecified (F)
+A54.22 Gonococcal prostatitis (M)
+A54.5 Gonococcal pharyngitis (M and F)
+A54.6 Gonococcal infection of anus and rectum (M and F)
+Presumptive Diagnosis
+Gonorrhea Presumptive Diagnosis Codes Table
+ICD-10-CM Code Description
+N45.3 Epididymo-orchitis (M)
+N34.2 Other urethritis (M)
+N72 Inflammatory disease of cervix uteri (F)
+N89.8 Other specified noninflammatory disorders of vagina
+Indication: Leukorrhea NOS (F)
+N94.10 Unspecified dyspareunia (F)
+N94.11 Superficial (introital) dyspareunia (F)
+N94.12 Deep dyspareunia (F)
+N94.19 Other specified dyspareunia (F)
+N94.89 Other specified conditions associated with female genital organs and
+menstrual cycle (F)
+R30.0 Dysuria (M and F)
+R30.9 Painful micturition, unspecified
+Z20.2 Contact with and (suspected) exposure to infections with a
+predominantly sexual mode of transmission (M and F)
+Indications: Use for an asymptomatic partner exposed to gonorrhea
+Procedures
+None
+Supplies
+None
+[[page 12]]
+ben fam rel
+12
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: December 2025
+Drugs
+Gonorrhea Drug Codes Table
+HCPCS Code Description
+J0696 Ceftriaxone IM
+J1580 Gentamicin IM
+Q0144 Azithromycin dihydrate
+S5000/S5001 Prescription drugs, generic/brand (Cefixime)
+Cephalosporin Allergy
+Clients with significant anaphylaxis-type allergies to penicillin or allergies to cephalosporin
+may be treated with gentamicin IM 240 mg single dose with oral azithromycin 2 gm. A TAR
+is required.
+Pharmacy
+For a complete list of drugs reimbursed by the Family PACT Program, including restrictions
+and authorization requirements, refer to the Family PACT Pharmacy Formulary on the
+Medi-Cal Rx website (https://medi-calrx.dhcs.ca.gov), as well as the Clinic Formulary section
+and “Treatment and Dispensing Guidelines for Clinicians” in the Benefits Grid section in this
+manual.
+Additional Laboratory Tests
+Gonorrhea Additional Laboratory Test Codes Table
+CPT Code Description Restrictions
+87205 Smear, primary source with
+interpretation; Gram or Giemsa
+stain for bacteria, fungi or cell types
+Symptomatic males only; not
+payable for Z20.2
+‹‹87591*›› Neisseria gonorrhoeae,
+amplified probe technique
+None
+[[page 13]]
+ben fam rel
+13
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: December 2025
+Nongonococcal Urethritis (NGU)
+NGU Diagnosis Code Table
+ICD-10-CM Code Description
+N34.1 Nonspecific urethritis
+Procedures
+None
+Supplies
+None
+Drugs
+NGU Drugs Codes Table
+HCPCS Code Description
+S5000/S5001 Prescription drugs, generic/brand (Doxycycline)
+Q0144 Azithromycin
+Pharmacy
+For a complete list of drugs reimbursed by the Family PACT Program, including restrictions
+and TAR requirements, refer to the Family PACT Pharmacy Formulary on the Medi-Cal Rx
+website (https://medi-calrx.dhcs.ca.gov), as well as the Clinic Formulary section and the
+“Treatment and Dispensing Guidelines for Clinicians” in the Benefits Grid section in this
+manual.
+Additional Laboratory Tests
+NGU Additional Laboratory Test Codes Table
+HCPCS/CPT
+Code Description
+‹‹81000∞›› Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin,
+ketones, leukocytes, nitrite, pH, protein, specific gravity, urobilinogen, any
+number of these constituents; non-automated, with microscopy
+‹‹81001∞›› Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin,
+ketones, leukocytes, nitrite, pH, protein, specific gravity, urobilinogen, any
+number of these constituents; automated, with microscopy
+‹‹81002*›› Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin,
+ketones, leukocytes, nitrite, pH, protein, specific gravity, urobilinogen, any
+number of these constituents; non-automated, without microscopy
+[[page 14]]
+ben fam rel
+14
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: December 2025
+NGU Additional Laboratory Test Codes Table (continued)
+HCPCS/CPT
+Code
+Description
+‹‹81003*›› Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin,
+ketones, leukocytes, nitrite, pH, protein, specific gravity, urobilinogen, any
+number of these constituents; automated, without microscopy
+81005 Urinalysis; qualitative or semiquantitative, except immunoassays
+‹‹81015∞›› Urinalysis; microscopic only
+87205 Smear, primary source with interpretation; Gram or Giemsa stain for
+bacteria, fungi, or cell types
+87210 Smear, primary source with interpretation; wet mount for infectious agents
+(eg, saline, India ink, KOH preps)
+‹‹87491*›› Infectious agent detection by nucleic acid (DNA or RNA); Chlamydia
+trachomatis, amplified probe technique
+‹‹87591*›› Infectious agent detection by nucleic acid (DNA or RNA); Neisseria
+gonorrhoeae, amplified probe technique
+‹‹Q0111∞›› Wet mounts, including preparations of vaginal, cervical or skin specimens
+Recurrent or Persistent Nongonococcal Urethritis or Cervicitis
+For recurrent or persistent nongonococcal urethritis or cervicitis: either test for Mycoplasma
+genitalium or presumptively treat Mycoplasma genitalium with oral doxycycline 100 mg twice
+daily for seven days, followed by oral moxifloxacin 400 mg one tablet daily for seven days.
+Moxifloxacin is for pharmacy dispensing only.
+For a complete list of drugs reimbursed by the Family PACT Program, refer to the Family
+PACT Pharmacy Formulary on the Medi-Cal Rx website as well as the Clinic Formulary
+section and the “Treatment and Dispensing Guidelines for Clinicians” in the Benefits Grid
+section in this manual.
+Mycoplasma genitalium
+CPT code 87563 (infectious agent detection by nucleic acid [DNA or RNA]; Mycoplasma
+genitalium, amplified probe technique) must be billed with one of the following ICD-10-CM
+diagnosis codes: N34.1, N34.2, N34.3, N45.1, N45.3, N50.811, N50.812, N50.819, N70.03,
+N70.93 and N72. CPT code 87563 is not split-billable and cannot be billed with modifier 26,
+TC or 99. This test is intended for use as a diagnostic test for recurrent urethritis, cervicitis,
+and in some cases of pelvic inflammatory disease (PID). CPT code 87563 is not a covered
+benefit when used and billed as a screening test in asymptomatic persons.
+[[page 15]]
+ben fam rel
+15
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: May 2023
+Genital Herpes
+Genital Herpes Diagnosis Codes Table
+ICD-10-CM Code Description
+A60.01 Herpesviral infection of penis
+A60.04 Herpesviral vulvovaginitis
+Presumptive Diagnosis
+Genital Herpes Presumptive Diagnosis Codes Table
+ICD-10-CM Code Description
+N48.5 Ulcer of penis
+N76.6 Ulceration of vulva
+Procedures
+None
+Supplies
+None
+Drugs
+Genital Herpes Drugs Codes Table
+HCPCS Code Description
+S5000/S5001 Prescription drugs, generic/brand (Acyclovir)
+Pharmacy
+For a complete list of drugs reimbursed by the Family PACT Program, including restrictions
+and authorization requirements, refer to the Family PACT Pharmacy Formulary on the
+Medi-Cal Rx website (https://medi-calrx.dhcs.ca.gov), as well as the Clinic Formulary section
+and “Treatment and Dispensing Guidelines for Clinicians” in the Benefits Grid section in this
+manual.
+[[page 16]]
+ben fam rel
+16
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: April 2025
+Additional Laboratory Tests
+Genital Herpes Additional Laboratory Test Codes Table
+CPT Code Description Restrictions
+87255 Virus isolation; including identification by
+non-immunologic method, other than by
+cytopathic effect (eg, virus specific
+enzymatic activity)
+Limited to: N48.5 (M) and
+N76.6 (F)
+87529 Infectious agent detection by nucleic
+acid (DNA or RNA); Herpes simplex
+virus, amplified probe technique
+Limited to: N48.5 (M) and
+N76.6 (F)
+‹‹Benefits are limited to evaluation of ulcers of unconfirmed etiology.››
+Pelvic Inflammatory Disease (PID)
+Limited to outpatient services only; intravenous therapies are not covered.
+PID Diagnosis Codes Table
+ICD-10-CM Code Description
+N70.03 Acute salpingitis and oophoritis (F)
+N70.93 Salpingitis and oophoritis, unspecified (F)
+N94.10 Unspecified dyspareunia (F)
+N94.11 Superficial (introital) dyspareunia (F)
+N94.12 Deep dyspareunia (F)
+N94.19 Other specified dyspareunia (F)
+N94.89 Other specified conditions associated with female genital organs and
+menstrual cycle (F)
+[[page 17]]
+ben fam rel
+17
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: December 2025
+Supplies
+None
+Drugs
+PID Codes Table
+HCPCS Code Description
+J0694 Cefoxitin IM 1 gm
+J0696 Ceftriaxone IM 250 mg
+S5000/S5001 Prescription drugs, generic/brand (Doxycycline, Levofloxacin,
+Metronidazole, Probenecid)
+Pharmacy
+For a complete list of drugs reimbursed by the Family PACT Program, including restrictions
+and authorization requirements, refer to the Family PACT Pharmacy Formulary on the
+Medi-Cal Rx website (https://medi-calrx.dhcs.ca.gov), as well as the Clinic Formulary section
+and “Treatment and Dispensing Guidelines for Clinicians” in the Benefits Grid section in this
+manual.
+Additional Laboratory Tests
+PID Additional Laboratory Test Codes Table
+CPT Code Description
+‹‹85025*›› Blood count; complete (CBC), automated (Hgb, Hct, RBC, WBC and
+platelet count) and automated differential WBC count
+‹‹85651*›› Sedimentation rate, erythrocyte; non-automated
+85652 Sedimentation rate, erythrocyte; automated
+‹‹87491*›› Chlamydia trachomatis, amplified probe technique
+‹‹87591*›› Neisseria gonorrhoeae, amplified probe technique
+[[page 18]]
+ben fam rel
+18
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: May 2023
+Procedures
+PID Procedure Codes Table
+CPT Code Description
+99000 Handling and/or conveyance of specimen for transfer from the
+physician’s office to the laboratory. For Family PACT policy, this
+pertains to blood specimens sent to an unaffiliated laboratory only.
+Syphilis
+Syphilis Diagnosis Codes Table
+ICD-10-CM Code Description
+A51.0 Primary genital syphilis (M and F)
+A51.31 Condyloma latum
+A51.39 Other secondary syphilis of skin (M and F)
+A51.5 Early syphilis, latent unspecified (M and F)
+A52.8 Late syphilis, latent (M and F)
+A53.0 Latent syphilis, unspecified as early or late (M and F)
+Presumptive Diagnosis
+Syphilis Presumptive Diagnosis Codes Table
+ICD-10-CM Code Description
+N48.5 Ulcer of penis
+N76.6 Ulceration of vulva, unspecified
+Z20.2 Contact with and (suspected) exposure to infections with a
+predominantly sexual mode of transmission (M and F)
+Indications: Use for an asymptomatic partner exposed to syphilis
+[[page 19]]
+ben fam rel
+19
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: May 2023
+Procedures
+Syphilis Procedure Code Table
+CPT Code Description
+99000 Handling and/or conveyance of specimen for transfer from the
+physician’s office to a laboratory. For Family PACT policy, this pertains
+to blood specimens sent to an unaffiliated laboratory only.
+Supplies
+None
+Drugs
+Syphilis Drug Codes Table
+HCPCS Code Description
+J0561 Injection, penicillin G benzathine 100,000 units
+S5000/S5001 Prescription drugs, generic/brand (Doxycycline)
+For nonpregnant persons with a penicillin allergy who have primary or secondary syphilis,
+may treat with doxycycline 100 mg orally two times per day for 14 days. For those with late
+latent or syphilis of unknown duration, may treat with 100 mg orally two times per day for
+28 days.
+Pharmacy
+For a complete list of drugs reimbursed by the Family PACT Program, including restrictions
+and authorization requirements, refer to the Family PACT Pharmacy Formulary on the
+Medi-Cal Rx website (https://medi-calrx.dhcs.ca.gov), as well as the Clinic Formulary section
+and “Treatment and Dispensing Guidelines for Clinicians” in the Benefits Grid section in this
+manual.
+Additional Laboratory Tests
+Syphilis Additional Laboratory Test Code Table
+CPT Code Description Restrictions
+86593 Syphilis test,
+non-treponemal antibody;
+quantitative
+Only as necessary to confirm
+response to treatment. Should not
+be separately ordered with
+presumptive diagnosis codes N48.5,
+N76.6 or Z20.2
+[[page 20]]
+ben fam rel
+20
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: May 2023
+Trichomoniasis
+Trichomoniasis Diagnosis Codes Table
+ICD-10-CM Code Description
+A59.01 Trichomonal vulvovaginitis (F)
+A59.03 Trichomonal cystitis and urethritis (M and F)
+N76.0 Acute vaginitis (F)
+Presumptive Diagnosis
+Trichomoniasis Presumptive Diagnosis Codes Table
+ICD-10-CM Code Description
+N34.2 Other urethritis (M)
+Z20.2 Contact with and (suspected) exposure to infections with a
+predominantly sexual mode of transmission (M and F)
+Indications: Use for an asymptomatic partner exposed to
+trichomoniasis
+Procedures
+None
+Supplies
+None
+Drugs
+Trichomoniasis Drug Codes Table
+HCPCS Code Description
+S5000/S5001 Prescription drugs, generic/brand (Metronidazole, Tinidazole)
+Pharmacy
+For a complete list of drugs reimbursed by the Family PACT Program, including restrictions
+and authorization requirements, refer to the Family PACT Pharmacy Formulary on the
+Medi-Cal Rx website (https://medi-calrx.dhcs.ca.gov), as well as the Clinic Formulary section
+and “Treatment and Dispensing Guidelines for Clinicians” in the Benefits Grid section in this
+manual.
+[[page 21]]
+ben fam rel
+21
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: May 2026
+Additional Laboratory Tests
+Trichomoniasis Additional Laboratory Test Codes Table
+HCPCS/CPT Code Description Restrictions
+83986* pH, body fluid, not otherwise specified Females Only
+87210 Smear, primary source with
+interpretation; wet mount for infectious
+agents (eg, saline, India ink, KOH
+preps)
+Females and males.
+87661 Infectious agent antigen detection by
+nucleic acid (DNA or RNA);
+trichomonas vaginalis, amplified probe
+technique
+Females only.
+87808* Infectious agent antigen detection by
+immunoassay with direct optical
+observation; trichomonas vaginalis
+Females only.
+Q0111∞ Wet mounts, including preparations of
+vaginal, cervical or skin specimens
+(including urethral specimens)
+Females and males.
+Vulvovaginitis
+Vulvovaginitis Diagnosis Codes Table
+Condition ICD-10-CM Code Description
+‹‹Vulvovaginal Candidiasis›› B37.31 Acute candidiasis of vulva and vagina
+‹‹Vulvovaginal Candidiasis›› B37.32 Chronic candidiasis of vulva and
+vagina
+Bacterial Vaginosis N76.0 Acute vaginitis
+‹‹Male Partner Therapy
+Bacterial Vaginosis (BV) Male Partner Therapy Codes Table
+ICD-10-CM Code Description
+Z20.2 Contact with and (suspected) exposure to infections with a
+predominantly sexual mode of transmission.
+Indication: Use for BV-exposed partner (M).››
+Procedures
+None
+Supplies
+None
+[[page 22]]
+ben fam rel
+22
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: May 2026
+Drugs
+Vulvovaginitis Drug Codes Table
+Condition HCPCS Code Description
+‹‹Vulvovaginal
+Candidiasis››
+S5000/S5001 Prescription drugs, generic/brand
+(Clotrimazole, Fluconazole,
+Miconazole)
+Bacterial Vaginosis S5000/S5001 Prescription drugs, generic/brand
+(Clindamycin, Metronidazole,
+Tinidazole)
+Pharmacy
+For a complete list of drugs reimbursed by the Family PACT Program, including restrictions
+and authorization requirements, refer to the Family PACT Pharmacy Formulary on the
+Medi-Cal Rx website (https://medi-calrx.dhcs.ca.gov), as well as the Clinic Formulary section
+and “Treatment and Dispensing Guidelines for Clinicians” in the Benefits Grid section in this
+manual.
+Additional Laboratory Tests
+Vulvovaginitis Additional Laboratory Test Codes Table
+HCPCS/CPT Code Description Restrictions
+83986* pH, body fluid, not otherwise specified Females only
+87210 Smear, primary source with
+interpretation; wet mount for infectious
+agents (eg, saline, India ink, KOH
+preps)
+‹‹Females only for diagnosis
+of BV››
+Q0111∞ Wet mounts, including preparations of
+vaginal, cervical or skin specimens
+(including urethral specimens)
+‹‹Females only for diagnosis
+of BV.››
+Genital Warts
+Genital Warts Diagnosis Codes Table
+ICD-10-CM Code Description
+A63.0 Anogenital (venereal) warts (M and F)
+B07.9 Viral warts, unspecified (M and F)
+B08.1 Molluscom contagiosum (M and F)
+[[page 23]]
+ben fam rel
+23
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: May 2023
+Procedures
+A modifier is required for the following procedures.
+Genital Warts Procedure Codes Table
+CPT Code Description
+54050 Destruction of lesion(s), penis (eg, condyloma, papilloma, molluscum
+contagiosum, herpetic vesicle), simple; chemical
+54056 Destruction of lesion(s), penis (eg, condyloma, papilloma, molluscum
+contagiosum, herpetic vesicle), simple; cryosurgery
+54100 Biopsy of penis
+56501 Destruction of lesion(s), vulva; simple (eg, laser surgery, electrosurgery,
+cryosurgery, chemosurgery)
+56605 Biopsy of vulva or perineum (separate procedure);
+one lesion
+57061 Destruction of vaginal lesion(s); simple (eg, laser surgery, electrosurgery,
+cryosurgery, chemosurgery)
+Supplies
+Modified UA is required for the following supplies.
+Genital Warts Supply Codes Table
+CPT Code Description
+54050 Penile supplies
+54056 Penile supplies
+54100 Biopsy supplies
+56501 Vulvar supplies
+56605 Biopsy supplies
+57061 Vulvar supplies
+TCA/BCA, liquid nitrogen and Podophyllin are included in the supply charge for the
+procedure and cannot be billed separately.
+[[page 24]]
+ben fam rel
+24
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: May 2023
+Drugs
+Genital Warts Drug Codes Table
+HCPCS Code Description
+S5000/S5001 Prescription drugs, generic/brand (Imiquimod, Podofilox)
+Pharmacy
+For a complete list of drugs reimbursed by the Family PACT Program, including restrictions
+and authorization requirements, refer to the Family PACT Pharmacy Formulary on the
+Medi-Cal Rx website (https://medi-calrx.dhcs.ca.gov), as well as the Clinic Formulary section
+and “Treatment and Dispensing Guidelines for Clinicians” in the Benefits Grid section in this
+manual.
+Additional Laboratory Tests
+Genital Warts Additional Laboratory Test Codes Table
+CPT Code Description Restrictions
+88305 Level IV - Surgical pathology, gross
+and microscopic examination
+Only as necessary to confirm vulvar,
+vaginal or genital warts in a wart
+treatment candidate; females and
+males
+Expedited Partner Therapy for the Prevention of Sexually
+Transmitted Infection Reinfections
+Sexually transmitted infections (STIs) can be a serious risk to an individual’s health and can
+create a preventable threat to fertility. One factor that contributes to high rates of STIs is
+reinfection from an untreated sexual partner. The medical necessity for both treatment of the
+client with an STI and prevention of reinfection is determined by the medical professional
+evaluating the clinical needs of the Family PACT client.
+Expedited Partner Therapy (EPT) is the clinical practice of treating sex partners of patients
+diagnosed with a treatable STI without the health care provider first examining the partner.
+EPT usually involves the implementation of patient-delivered partner therapy, an evidenced
+based practice to reduce reinfection, in which the patient delivers medication or a
+prescription to his or her partner(s). Since repeat infections are often due to untreated
+partners, ensuring that all recent partners have been treated is a core aspect of the clinical
+management of patients diagnosed with chlamydia, gonorrhea and/or trichomoniasis.
+[[page 25]]
+ben fam rel
+25
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: May 2026
+Family PACT covers medically necessary services for the treatment of STIs. If a Family
+PACT provider diagnoses a Family PACT client with gonorrhea, chlamydia and/or
+trichomoniasis and determines that offering the client EPT is medically necessary to prevent
+reinfection of the client, then the provider may either dispense medication directly to the
+Family PACT client to provide to his/her partner(s) or may provide the Family PACT client
+with a prescription, written in the name of the client, for medications with a quantity and
+duration of therapy sufficient to treat the acute infection in the client and to prevent
+reinfection of the client by treating the client’s partner(s).
+For additional prescribing and clinical guidelines on the treatment of partners of patients
+diagnosed with STIs, providers may review guidance from the Centers for Disease Control
+and Prevention (CDC) and the California Department of Public Health (CDPH).
+For a list of medically necessary services for the treatment of gonorrhea, chlamydia, and/or
+trichomoniasis, providers may refer to the preceding pages of this manual section.
+‹‹Male Partner Therapy for Bacterial Vaginosis (BV)
+BV is often a recurrent infection and the concurrent treatment of a male sexual partner has
+been shown to reduce the risk of reinfection.
+Providers should refer to clinical guidelines on male partner therapy for recurrent BV from
+CDPH and the American College of Obstetricians and Gynecologists for the treatment
+regimen, recommended patient populations and additional considerations.
+Male partner therapy for BV is not an EPT benefit. The male partner must be a Family PACT
+client to receive treatment as a Family PACT covered benefit.››
+Urinary Tract Infection (UTI)
+Urinary Tract Infection (UTI) Females Only
+These services are restricted to female clients who present with symptoms of infection.
+UTI Diagnosis Codes Table
+ICD-10-CM Code Description
+N30.00 Acute cystitis without hematuria
+N30.01 Acute cystitis with hematuria
+R10.30 Lower abdominal pain, unspecified
+R30.0 Dysuria
+R30.9 Painful micturition, unspecified
+R31.0 Gross hematuria
+R35.0 Frequency of micturition
+[[page 26]]
+ben fam rel
+26
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: May 2026
+Procedures
+None
+Supplies
+None
+Drugs
+UTI Drug Codes Table
+HCPCS Code Description
+S5000/S5001 Prescription drugs, generic/brand
+(Cephalexin, Ciprofloxacin, Nitrofurantoin, TMP/SMX)
+Pharmacy
+For a complete list of drugs reimbursed by the Family PACT Program, including restrictions
+and authorization requirements, refer to the Family PACT Pharmacy Formulary on the
+Medi-Cal Rx website (https://medi-calrx.dhcs.ca.gov), as well as the Clinic Formulary section
+and “Treatment and Dispensing Guidelines for Clinicians” in the Benefits Grid section in this
+manual.
+Additional Laboratory Tests
+UTI Additional Laboratory Test Codes Table
+CPT Code Description
+81000∞ Urinalysis, by dipstick or tablet reagent for bilirubin, glucose,
+hemoglobin, ketones, leukocytes, nitrite, pH, protein, specific gravity,
+urobilinogen, any number of these constituents; non-automated, with
+microscopy
+81001∞ Automated, with microscopy
+81002* Non-automated, without microscopy
+81003* Automated, with microscopy
+81005 Urinalysis; qualitative or semi-quantitative, except immunoassays
+81015∞ Microscopic only
+[[page 27]]
+ben fam rel
+27
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: May 2023
+Management of Cervical Abnormalities and Preinvasive Cervical
+Lesions
+Cervical Abnormalities and Preinvasive Cervical Lesions Females
+15 Years of Age or Older
+Family PACT has adopted The American Society of Colposcopy and Cervical Pathology
+(ASCCP) 2019 ASCCP Risk-Based Management Consensus Guidelines for Management of
+Abnormal Cervical Cancer Screening Tests and Cancer Precursors to guide clinicians in the
+management of abnormal screening and diagnostic tests. Personalized risk-based
+management requires the use of the tool at the ASCCP website (https://www.asccp.org), or
+the 2019 ASCCP Guidelines APP (https://www.asccp.org/mobile-app).
+The following services and supplies are reimbursable when performed on an outpatient
+basis for the diagnosis and treatment of cervical abnormalities found on cervical cancer
+screening physical exam, and management of preinvasive cervical lesions. An
+ICD-10-CM code for the cervical abnormalities being treated is required on the claim form.
+This code must be billed with the ICD-10-CM code that identifies the contraceptive method
+for which the client is being seen. Additional age and frequency restrictions apply to some
+procedures.
+Outpatient Services
+Outpatient “surgi-centers” may not be used for these services, except when it is the only
+resource in the local area with equipment and providers that deliver the following scope of
+services. The facility and loop electrocautery excision procedure (LEEP) provider must be
+participating Medi-Cal providers.
+[[page 28]]
+ben fam rel
+28
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: May 2023
+Cervical Abnormalities
+Cervical Abnormalities Diagnosis Codes Table
+ICD-10-CM Code Description
+D06.0 Carcinoma in situ of endocervix (CIN 3)
+D06.1 Carcinoma in situ of exocervix (CIN 3)
+D06.9 Carcinoma in situ of cervix, unspecified (CIN 3)
+N87.0 Mild cervical dysplasia (CIN 1)
+N87.1 Moderate cervical dysplasia (CIN 2)
+R87.610 Atypical squamous cells of undetermined significance on cytologic
+smear of cervix [ASC-US]
+R87.611 Atypical squamous cells cannot exclude high grade squamous
+intraepithelial lesion on cytologic smear [ASC-H]
+R87.612 Low grade squamous intraepithelial lesion on cytologic smear of cervix
+[LGSIL]
+R87.613 High grade squamous intraepithelial lesion on cytologic smear of cervix
+[HGSIL]
+R87.614 Cytologic evidence of malignancy on smear of cervix
+R87.615 Unsatisfactory cytologic smear of cervix
+R87.616 Satisfactory cervical smear but lacking transformation zone
+R87.618 Other abnormal cytological findings on specimens from cervix uteri
+Note: This includes benign endometrial cells
+R87.619 Unspecified abnormal cytological findings in specimen from cervix uteri
+Note: This includes atypical glandular cells (AGC), atypical
+endocervical cells, or atypical endometrial cells on cytology.
+R87.810 Cervical high-risk HPV DNA test positive
+[[page 29]]
+ben fam rel
+29
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: May 2023
+Other Conditions
+Cervical Abnormalities Other Conditions Codes Table
+ICD-10-CM Code Description
+Z01.42 Encounter for cervical smear to confirm findings of recent normal smear
+following initial abnormal smear
+Z87.410 Personal history of cervical dysplasia
+Presumptive Diagnosis
+The following code is used for a presumptive diagnosis made prior to the result of a
+screening Pap test.
+Cervical Abnormalities Presumptive Diagnosis Codes Table
+ICD-10-CM Code Description
+N88.0 Leukoplakia of cervix uteri
+[[page 30]]
+ben fam rel
+30
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: May 2023
+Procedures
+A modifier is required for the following procedures.
+Cervical Abnormalities Procedure Codes Table
+CPT Code Description Restrictions
+57452 Colposcopy of the cervix including
+upper/adjacent vagina
+Not covered for R87.618
+57454 Colposcopy with biopsy and
+endocervical curettage (ECC)
+Not covered for R87.618
+57455 Colposcopy with biopsy of the
+cervix
+Not covered for R87.618
+57456 Colposcopy with endocervical
+curettage (ECC)
+Not covered for R87.618
+57460 Colposcopy with loop electrode
+biopsy(s) of the cervix (LEEP)
+Restricted to biopsy proven CIN 2 and
+CIN 3, or persistent CIN 1 lesions of
+greater than 24 months, and “expedited
+treatment” **
+57461 Colposcopy with loop electrode
+conization of the cervix
+Restricted to biopsy proven CIN 2 and
+CIN 3, persistent CIN 1 lesions of greater
+than 24 months, and “expedited
+treatment” **
+57511 Cautery of cervix; cryocautery,
+initial or repeat
+Restricted to biopsy proven CIN 2 and
+CIN 3, or persistent CIN 1 lesions of
+greater than 24 months
+[[page 31]]
+ben fam rel
+31
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: May 2023
+Cervical Abnormalities Procedure Codes Table (continued)
+CPT Code Description Restrictions
+58100 Endometrial sampling (biopsy),
+with or without endocervical
+sampling, without cervical dilation,
+any method (separate procedure)
+Limited to R87.618; Age ≥40 years with a
+finding of endometrial cells on cytology
+and a recent history of menstrual
+irregularity
+58110 Endometrial sampling (biopsy),
+performed in conjunction with
+colposcopy
+Limited to R87.619. Only if AGC cytology
+result and any of:
+• “Atypical endometrial cells”; or
+• Abnormal vaginal bleeding pattern
+suspicious for endometrial
+hyperplasia or cancer; or
+• Age ≥36 years
+Supplies
+Modifier UA is required for the following supplies.
+Cervical Abnormalities Supplies Codes Table (continued)
+CPT Code Description
+57452 Colposcopy supplies
+57454 Colposcopy, biopsy and ECC supplies
+57455 Colposcopy with biopsy supplies
+57456 Colposcopy with ECC supplies
+57460 LEEP supplies
+57461 LEEP supplies
+57511 Cryocautery, cervix supplies
+58100 Endometrial biopsy supplies
+58110 Endometrial biopsy w/colposcopy supplies
+Drugs
+None
+[[page 32]]
+ben fam rel
+32
+Family PACT – Benefits: Family Planning-Related Services
+Page updated January 2026
+Additional Laboratory Tests
+Cervical Abnormalities Additional Laboratory Test Codes Table
+CPT Code Description Restrictions
+87624 Human papillomavirus (HPV), high-risk
+types (e.g., 16, 18, 31, 33, 35, 39, 45,
+51, 52, 56, 58, 59, 68)
+‹‹Additional ICD-10-CM code is
+required when applicable. Refer to
+Laboratory (lab) section of the Family
+PACT Policies, Procedures and
+Billing Instructions (PPBI) Manual.‡››
+87625 Human papillomavirus (HPV), types 16
+and 18 only, includes type 45, if
+performed.
+‹‹Additional ICD-10-CM code is
+required when applicable. Refer to
+Laboratory (lab) section of PPBI.‡››
+‹‹87626 Detection test by nucleic acid for
+Human Papillomavirus (HPV),
+separately reported high-risk types
+Additional ICD-10-CM code is
+required when applicable. Refer to
+Laboratory (lab) section of PPBI.‡››
+88141 Cytopathology, cervical or vaginal
+(any reporting system), requiring
+interpretation by physician
+Additional ICD-10-CM code required
+88305 Level IV - Surgical pathology, gross
+and microscopic examination
+Additional ICD-10-CM code required
+88307 Level V - Surgical pathology, gross
+and microscopic examination
+Limited to specimen collected by
+LEEP procedure 57460 or 57461.
+(Document specimen source on the
+UB-04 claim in the Remarks field
+[Box 80])
+88432 Immunohistochemistry or
+immunocytochemistry, per specimen;
+initial single antibody stain procedure
+Limited to D06.0, D06.1, D06.9,
+N87.0, N87.1, R87.611, R87.613 and
+R87.619
+CPT code 88342 is covered for women ages 15 years of age or older, based on The Lower
+Anogenital Squamous Terminology (LAST) Standardization Project for HPV- Associated
+Lesions: Background and Consensus Recommendations from the College of American
+Pathologists and the American Society for Colposcopy and Cervical Pathology 2012, under
+the following circumstances.
+• To aid in differential diagnosis between CIN 2 and CIN 3 and a mimic of precancer (for
+example, immature metaplasia, reparative epithelial changes, atrophy or tangential
+cutting)
+• Anytime a morphologic CIN 2 diagnosis is considered
+• As an adjudication tool for cases with professional disagreement
+• As an adjunct to morphologic for biopsy specimens interpreted as less than or equal to
+CIN 1 that are high risk for missed high-grade disease.
+[[page 33]]
+ben fam rel
+33
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: May 2023
+Complications of Family Planning-Related Services
+Management of Complications for Family Planning-Related Services
+Complications that arise from the management of family planning-related services and were
+identified or diagnosed during a family planning visit are included in this section. A
+Treatment Authorization Request (TAR) is required for complication services, unless stated
+otherwise in this manual. For additional information, refer to the Benefits: Clinical Services
+Overview and Treatment Authorization Request (TAR) sections in this manual.
+An additional ICD-10-CM code is required on the claim form.
+The following services are reimbursable for male and female clients.
+Evaluation and Management
+Evaluation and Management Codes Table
+CPT Code Description
+99242 thru 99245 Office consultation, new or established patient
+99252 thru 99255 Inpatient consultation, new or established patient
+Pharmacy
+Only drugs listed in the Family PACT Pharmacy Formulary on the Medi-Cal Rx website
+(https://medi-calrx.dhcs.ca.gov) and in the Clinic Formulary section in this manual, which are
+needed for treatment of complications arising from a family planning-related reproductive
+health condition, may be reimbursed.
+Additional Complications
+The following additional complications relate to the treatment of cervical abnormalities or
+preinvasive lesions identified in this section:
+Additional Complications Diagnosis Codes Table
+ICD-10-CM Code Description
+N70.03 Acute salpingitis and oophoritis
+N70.93 Salpingitis and oophoritis, unspecified
+N99.61 Intraoperative hemorrhage or hematoma of a genitourinary system organ
+or structure complicating a genitourinary system procedure
+[[page 34]]
+ben fam rel
+34
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: May 2023
+The following procedures are reimbursable only for the management of complications from
+treatment of cervical abnormalities and preinvasive lesions:
+Anesthesia
+Anesthesia Code Table
+CPT Code Description
+00940 Anesthesia for vaginal procedures (including biopsy of labia, vagina,
+cervix or endometrium); not otherwise specified
+Surgery
+Surgery Codes Table
+CPT Code Description
+57510 Cautery of cervix; electro or thermal
+57511 Cautery of cervix; cryocautery initial or repeat
+Supplies
+Supplies for procedures related to the management of complications due to the treatment of
+cervical abnormalities or preinvasive lesions may be reimbursed with an appropriate
+modifier.
+Pharmacy
+Antibiotic regimens are the same as for treatment of uncomplicated PID, as listed in the
+“Treatment and Dispensing Guidelines for Clinicians” in the Benefits Grid section. Providers
+may also refer to the Family PACT Pharmacy Formulary on the Medi-Cal Rx website
+(https://medi-calrx.dhcs.ca.gov) as well as the Clinic Formulary section in this manual.
+[[page 35]]
+ben fam rel
+35
+Family PACT – Benefits: Family Planning-Related Services
+Page updated: January 2026
+Legend
+Symbols used in the document above are explained in the following table.
+Symbol Description
+‹‹ This is a change mark symbol. It is used to indicate where on the page the
+most recent change begins.
+›› This is a change mark symbol. It is used to indicate where on the page the
+most recent change ends.
+* Appropriate CLIA certification required. Refer to the Part 2 manual, Pathology:
+An Overview of Enrollment and Proficiency Testing Requirements section.
+‡ ‹‹Coverage for HPV testing and co-testing are based on the 2019 ASCCP
+Risk-Based Management Consensus Guidelines for Abnormal Cervical
+Cancer Screening Test and Cancer Precursors and the USPSTF 2018 Final
+Recommendation Statement for Cervical Cancer Screening.››
+** Per ASCCP, expedited treatment (excisional treatment without prior
+confirmatory biopsy, e.g., “see and treat” LEEP) is preferred for non-pregnant
+patients 25 years or older with high-grade squamous intraepithelial lesion
+(HSIL) cytology and concurrent positive testing for HPV genotype 16
+(HPV 16) and for never or rarely screened patients with HPV-positive HSIL
+cytology regardless of HPV genotype. Shared decision-making should be
+used when considering expedited treatment, especially for patients with
+concerns about the potential impact of treatment on pregnancy outcomes.
+∞ Provider-Performed Microscopy Procedure

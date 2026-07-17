@@ -1,0 +1,358 @@
+[[page 1]]
+ben clinic
+1
+Family PACT – Benefits: Clinical Services Overview
+Benefits: Clinical Services Overview
+Page updated: August 2023
+‹‹This section is an overview of the clinical services available to clients in the Family
+Planning, Access, Care and Treatment (Family PACT) Program. Family PACT services are
+designed to support contraceptive methods for women and men, as gender appropriate, by
+assisting individuals who have a medical necessity for family planning services. For
+purposes of Family PACT, medical necessity for family planning services means the ability
+to become pregnant or cause a pregnancy.››
+Secondarily, Family PACT includes assistance with family planning-related services to
+achieve and maintain optimal reproductive health.
+There are two categories of services available in the program: Family planning services and
+family planning-related services for specified reproductive health conditions.
+Family Planning Services
+Family planning services are those relevant to the use of contraceptive methods and include
+specified reproductive health screening tests. These include the Food and Drug
+Administration (FDA)-approved contraceptive methods, emergency contraceptives, office
+visits and interventions for the management of complications that arise from the use of
+covered contraceptive methods. Some services have restrictions associated with gender
+and age. Refer to the Benefits: Family Planning section in this manual for a complete listing
+of services and associated restrictions.
+ICD-10-CM Diagnosis Codes
+An ICD-10-CM diagnosis code related to the items in the preceding paragraph is required for
+billing. ICD-10-CM codes that relate to family planning services are listed in the Benefits:
+Family Planning section of this manual.
+[[page 2]]
+ben clinic
+2
+Family PACT – Benefits: Clinical Services Overview
+Page updated: June 2022
+Laboratory
+Family planning services include laboratory tests specific to each contraceptive method.
+These tests may be indicated on a case-by-case basis to determine whether a client can
+safely use a particular contraceptive method and are not intended to be routinely ordered for
+all clients. Certain restrictions may apply and are noted. In accordance with program
+standards, tests performed when “medically indicated in the context of provision of
+contraceptive services or required by an outpatient facility” require justification for ordering to
+be documented in the client’s medical record. For more information, refer to the Benefits:
+Family Planning section in this manual.
+Laboratory tests performed in a provider’s office or clinical laboratory for Family PACT
+clients are billed using standard CPT® codes and modifiers. For more information, refer to
+the Modifiers: Approved List and Pathology: Billing and Modifiers sections in the appropriate
+Part 2 Medi-Cal manual.
+While the definition of certain CPT codes includes testing for multiple pathogens, only the
+laboratory tests to detect the specific pathogens listed in this manual are considered Family
+PACT benefits.
+For a comprehensive listing of reimbursable laboratory tests, descriptions and restrictions,
+refer to the Laboratory Services section in this manual.
+Providers must have the appropriate Clinical Laboratory Improvement Amendment (CLIA)
+certification on file with the Department of Health Care Services Provider Enrollment Division
+for the tests performed in the office. For more information, refer to the Pathology: An
+Overview of Enrollment and Proficiency Testing Requirements section in the appropriate
+Part 2 Medi-Cal manual.
+[[page 3]]
+ben clinic
+3
+Family PACT – Benefits: Clinical Services Overview
+Page updated: April 2023
+Family Planning-Related Services
+The Family PACT Program covers the diagnosis and treatment of specified sexually
+transmitted infections (STIs). In addition, the program covers urinary tract infections (UTIs)
+and screening for cervical cancer and treatment of pre-invasive cervical lesions for women
+when the care is provided coincident to a visit for the management of a family planning
+method.
+‹‹Family planning-related services for male and female clients are listed in the Benefits:
+Family Planning-Related Services section in this manual, including associated restrictions.››
+ICD-10-CM Codes for Family Planning-Related Services
+An ICD-10-CM code for the family planning-related condition being treated is required on the
+claim form. Services for the diagnosis and treatment of specified STIs, management of UTIs
+and pre-invasive cervical lesions must be billed with the diagnosis code for these conditions,
+together with the diagnosis code that identifies the contraceptive method for which the client
+is being seen.
+For more information, refer to the Benefits: Family Planning-Related Services and Drugs:
+Onsite Dispensing Billing Instructions sections in this manual.
+Laboratory Tests, Procedures and Drugs
+‹‹Family planning-related services include tests for UTIs in women and specified STI
+diagnostic laboratory tests. Office and outpatient procedures to treat specific STIs and
+cervical abnormalities are also covered. Prescription drugs are reimbursed when they are an
+appropriate treatment regimen and are listed in the Family PACT Pharmacy Formulary on
+the Medi-Cal Rx website (https://medi-calrx.dhcs.ca.gov) and the Clinic Formulary section in
+this manual. For a listing of covered services, refer to the Benefits: Family Planning-Related
+Services and Drugs: Onsite Dispensing Billing Instructions sections in this manual.››
+[[page 4]]
+ben clinic
+4
+Family PACT – Benefits: Clinical Services Overview
+Page updated: April 2023
+Complications
+Complications may arise as a result of the use of a contraceptive method as well as from the
+treatment of a family planning-related condition. Management of complications requires a
+Treatment Authorization Request (TAR).
+Complication Restrictions for Family Planning Services
+Services are available for management of complications that arise from the use of a
+particular contraceptive method. Only those complications that can be reasonably managed
+on an outpatient basis are reimbursable.
+ICD-10-CM Codes for Complications of Family Planning Services
+When a procedure, laboratory test or drug is for the management of a complication resulting
+from the use of a particular contraceptive method, an ICD-10-CM code for the complication
+is required on the claim. This code must be billed with the diagnosis code that identifies the
+contraceptive method for which the client is being seen. For more information, see the
+Benefits: Family Planning section in this manual.
+Complications for Family Planning-Related Services
+Complications that may arise from the treatment of an STI or UTI include severe skin
+ulcerations/infections and allergic reactions to drugs or topical applications prescribed.
+Complications from procedures to treat cervical abnormalities and pre-invasive lesions
+include hemorrhage and pelvic infection secondary to surgical intervention.
+Complication Restrictions for Family Planning-Related Services
+‹‹Services for management of complications from the treatment of family planning-related
+services are identified in this manual. Only those complications that can be reasonably
+managed on an outpatient basis are reimbursable. Services are limited to the appropriate
+gender.››
+[[page 5]]
+ben clinic
+5
+Family PACT – Benefits: Clinical Services Overview
+Page updated: November 2025
+ICD-10-CM Codes for Complications of Family Planning Related Services
+When a procedure, lab test or prescription drug is for the management of a complication
+from the treatment of a family planning-related service, an ICD-10-CM diagnosis code is
+required on the claim form. This code must be billed with the diagnosis code that identifies
+the contraceptive method for which the client is being seen. For additional information, see
+the Benefits: Family Planning-Related Services and Drugs: Onsite Dispensing Billing
+Instructions sections in this manual.
+Treatment Authorization Request (TAR)
+A TAR is required for complication services for both enrolled Family PACT providers and
+Medi-Cal providers who deliver services upon referral from an enrolled Family PACT
+provider. TAR requirements apply to medical, anesthesia, laboratory, pharmacy, radiology
+and hospital providers. Authorization requirements for pharmacy providers submitting
+pharmacy claims are found in the Family PACT Formulary on the Medi-Cal Rx website
+(https://medi-calrx.dhcs.ca.gov). Authorization requirements for services billed on non-
+pharmacy claims are in the Treatment Authorization Request (TAR) section in this manual.
+For information about completing a TAR, refer to the TAR Completion section in the Part 2
+Medi-Cal manual.
+Comparable Services for Males and Females
+Family PACT clinical services are comparable for both male and female clients, except for
+appropriate gender differences, which are noted. Services shall be provided to eligible
+clients in accordance with the Program Standards section in this manual.
+‹‹Gender Affirming Care Services››
+In all sections of this manual, regardless of the gender stated, the benefit or policy applies to
+individuals of all gender identities as long as the procedure/benefit is medically necessary
+and meets all other requirements.
+Gender Override
+‹‹For instructions on overriding gender differences for procedures, refer to the Gender
+Affirming Care Services section in the appropriate Part 2 Medi-Cal manual.››
+[[page 6]]
+ben clinic
+6
+Family PACT – Benefits: Clinical Services Overview
+Page updated: May 2024
+Medical Justification
+Medical record documentation must reflect the clinical rationale for providing, ordering or
+deferring services rendered to clients according to the Program Standards section, including,
+but not limited to, client assessment, diagnosis, treatment and follow-up. Medical record
+documentation must include justification to support claims for reimbursement. For more
+information, refer to the Program Standards section in this manual.
+Excluded Services
+Procedures, lab tests, drugs and/or contraceptive supplies used for purposes other than
+family planning or family planning-related services, as defined by the Family PACT Program,
+are not reimbursable by the program. Family PACT has a limited scope of benefits and is not
+a primary care program.
+Drugs and/or supplies ordered by a provider who is not enrolled in the Family PACT
+Program, without a referral by an enrolled Family PACT provider, are not reimbursable. For
+more information, refer to “Family PACT Referrals” in the Provider Enrollment and
+Responsibilities section in this manual.
+If a non-covered service is recommended for a Family PACT client, the client must be
+informed of the medical necessity of the service and that it is not reimbursed by the program.
+The provider should inform the client that services can be rendered, but it may be an
+out-of-pocket expense.
+[[page 7]]
+ben clinic
+7
+Family PACT – Benefits: Clinical Services Overview
+Page updated: May 2024
+Telehealth
+Family PACT providers must ensure that the covered Family PACT service or benefit being
+delivered via telehealth meets the procedural definition and components of the CPT or
+HCPCS code(s) associated with the Family PACT covered service or benefit, as well as any
+other requirements described in this manual. In addition, Family PACT services rendered by
+the use of a telehealth modality must follow ICD-10-CM diagnosis code billing policy as
+noted in this manual.
+All healthcare practitioners rendering Family PACT covered benefits or services under this
+policy must comply with all applicable state and federal laws.
+Telehealth Definitions
+For purposes of the telehealth policy outlined in this manual, the following definitions shall
+apply:
+Telehealth
+“Telehealth” means the mode of delivering health care services and public health via
+information and communication technologies to facilitate the diagnosis, consultation,
+treatment, education, care management and self-management of a patient’s health care.
+Telehealth facilitates patient self-management and caregiver support for patients and
+includes synchronous interactions and asynchronous store and forward transfers.
+Asynchronous Store and Forward
+“Asynchronous store and forward” means the transmission of a patient’s medical information
+from an originating site to the health care provider at a distant site. Consultations via
+asynchronous electronic transmission initiated directly by patients, including through mobile
+phone applications, are not covered under this policy.
+E-Consults
+“E-consults” fall under the auspice of store and forward. E-consults are asynchronous health
+record consultation services that provide an assessment and management service in which
+the patient’s treating health care practitioner (attending or primary) requests the opinion
+and/or treatment advice of another health care practitioner (consultant) with specific
+specialty expertise to assist in the diagnosis and/or management of the patient’s health care
+needs without patient face-to-face contact with the consultant. E-consults between health
+care providers are designed to offer coordinated multidisciplinary case reviews, advisory
+opinions and recommendations of care. E-consults are permissible only between health care
+providers.
+[[page 8]]
+ben clinic
+8
+Family PACT – Benefits: Clinical Services Overview
+Page updated: May 2024
+E-Visits
+“E-visits” are communications between a patient and their provider through an online patient
+portal.
+Synchronous Interaction
+“Synchronous interaction” means a real-time interaction between a patient and a health care
+provider located at a distant site.
+Distant Site
+“Distant site” means a site where a health care provider who provides health care services is
+located while providing these services via a telecommunications system. The distant site can
+be different from the enrolled Family PACT service site for telehealth purposes only.
+Originating Site
+“Originating site” means a site where a patient is located at the time health care services are
+provided via a telecommunications system or where the asynchronous store and forward
+service originates. For purposes of reimbursement for Family PACT covered services
+provided through telehealth, the type of setting where services are provided for the client or
+by the health care provider is not limited. The type of setting may include, but is not limited
+to, an enrolled Family PACT site such as a FQHC, medical office, community clinic, or the
+client’s home.
+Establishing New Patients via Telehealth
+Family PACT providers may establish a relationship with new patients via synchronous
+video telehealth visits.
+Family PACT providers may also establish a relationship with new patients via audio-only
+synchronous interaction only if one or more of the following applies:
+• The visit is related to the provision of family planning services in accordance with
+California Family Code Section 6925, subd. (a), Welfare and Institutions Code (W&I
+Code), Section 24003, subd. (b), or medical care related to the diagnosis, treatment
+and/or prevention of sexually transmitted infections (STIs) according to California
+Family Code Section 6926, et seq. obtained by a patient at or above the minimum age
+specified for consenting to these services.
+• The patient requests an audio-only modality.
+• The patient attests they do not have access to video.
+[[page 9]]
+ben clinic
+9
+Family PACT – Benefits: Clinical Services Overview
+Page updated: May 2024
+Consent for Services Provided via Telehealth
+Family PACT providers must inform the client prior to the initial delivery of telehealth
+services about the use of telehealth and obtain verbal or written consent from the client for
+the use of telehealth as an acceptable mode of delivering health care services.
+If a provider, whether at the originating site or distant site, maintains a general consent
+agreement that specifically mentions use of telehealth as an acceptable modality for delivery
+of services and includes the required information, as explained below, then this is sufficient
+for documentation of client consent, and should be kept in the client’s medical record.
+Providers must also document when a client consents to receive services via audio-only
+prior to initial delivery of services. The consent shall be documented in the client’s medical
+record and be available to DHCS upon request.
+Providers are required to share additional information with clients regarding:
+• Right to in-person services
+• Voluntary nature of consent
+• Limitations/risks of receiving services via telehealth, if applicable
+• Availability of translation services
+Consent requirements may be found in Business and Professions Code, Section 2290.5 [b].
+Model patient consent language may be found on the DHCS website.
+Family PACT providers who bill using the CMS-1500 Health Insurance Claim Form are
+required to report the most applicable Place of Service (POS) code on the claim.
+[[page 10]]
+ben clinic
+10
+Family PACT – Benefits: Clinical Services Overview
+Page updated: May 2024
+‹‹Patient Choice of Telehealth Modality
+Family PACT providers can offer a variety of telehealth modalities for covered services to
+the extent that the service can be appropriately rendered via the allowable telehealth
+modalities. For providers who do offer telehealth modalities, they are required to offer clients
+the ability to choose whether they want to receive covered Family PACT services via:
+• Synchronous, interactive audio/visual telecommunication systems (for example, video)
+or
+• Synchronous, telephone or other interactive audio-only telecommunications systems.
+While Family PACT providers are required to offer both video and telephone telehealth
+modalities, clients may freely choose, and change at any time, their desired telehealth
+modalities, which includes the ability to decline video modalities and select audio-only
+(telephone) modalities if preferred and/or necessary given the client’s needs.
+For example, if the visit is related to sensitive services as defined in subsection (s) of
+Section 56.05 of the Civil Code, then the client may prefer to utilize an audio-only
+(telephone) modality.
+Family PACT clients shall be given the choice of how they receive their covered Family
+PACT services.
+Right to In-Person Services
+Family PACT providers furnishing services to clients through telehealth modalities must also
+either offer services in-person or have a documented process in place to link Family PACT
+clients to in-person care within a reasonable time if in-person services are unavailable from
+the provider.
+If the provider chooses to link the client to in-person care to satisfy this requirement, then
+they must provide a referral to and facilitation of in-person care that does not require a client
+to independently contact a different Family PACT provider to arrange for such care. The
+Family PACT provider may initiate a process by which a different Family PACT provider in
+their office or an affiliated in-person care site contacts the client directly to schedule an
+in-person visit.
+The referring Family PACT provider or a member of their staff must confirm the referred
+Family PACT provider has at least attempted to contact the client to schedule an in-person
+appointment. However, the Family PACT referring provider is not required to schedule an
+appointment with a different provider on behalf of the Family PACT client. The Family PACT
+provider must offer referral and facilitation support that is minimally burdensome to the
+Family PACT client.
+Family PACT providers must maintain documentation of their process to link Family PACT
+clients to in-person care, which should be made available to DHCS upon request.››
+[[page 11]]
+ben clinic
+11
+Family PACT – Benefits: Clinical Services Overview
+Page updated: November 2025
+Reimbursable Telehealth Services
+Family PACT covered benefits or services, identified by CPT or HCPCS codes and subject
+to all existing Family PACT coverage and reimbursement policies, including any Treatment
+Authorization Request (TAR) requirements, may be provided via a telehealth modality, as
+outlined in this section, only if all of the following are satisfied:
+• The provider at the distant site believes that the benefits or services being provided are
+clinically appropriate based upon evidence-based medicine and/or best practices to be
+delivered via telehealth.
+• ‹‹The benefits or services delivered via telehealth meet the procedural definition and
+components of the CPT or HCPCS code(s), as defined by the American Medical
+Association (AMA), associated with the Family PACT covered service or benefit, as
+well as any extended guidelines as described in this section and the Telehealth
+Modalities section in the appropriate Part 2 Medi-Cal manual.››
+• The benefits or services provided via telehealth meet all laws regarding confidentiality
+of health care information and a client’s right to his or her medical information.
+Payment Parity
+The amount paid by DHCS and Medi-Cal managed care plans for a service rendered via
+telehealth is the same as the amount paid for the applicable service when rendered
+in-person.
+Examples of Services Not Appropriate for Telehealth
+Family PACT covered benefits or services that would not be expected to be appropriately
+delivered via telehealth include, but are not limited to, benefits or services that are performed
+in an operating room or while the patient is under anesthesia, require direct visualization or
+instrumentation of bodily structures, involve sampling of tissue or insertion/removal of
+medical devices, and/or otherwise require the in-person presence of the client for any
+reason.
+Billing Requirements
+‹‹Refer to the Telehealth Modalities section, Billing Requirements subsection, in the
+appropriate Part 2 Medi-Cal manual for billing requirements for specific telehealth services,
+including the use of modifiers.››
+[[page 12]]
+ben clinic
+12
+Family PACT – Benefits: Clinical Services Overview
+Page updated: May 2024
+Legend
+Symbols used in the document above are explained in the following table.
+Symbol Description
+‹‹ This is a change mark symbol. It is used to indicate where on the page the
+most recent change begins.
+›› This is a change mark symbol. It is used to indicate where on the page the
+most recent change ends.

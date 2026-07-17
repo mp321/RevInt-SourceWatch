@@ -1,0 +1,117 @@
+[[page 1]]
+tar
+1
+Family PACT – Treatment Authorization Request (TAR)
+Treatment Authorization Request (TAR)
+Page updated: April 2023
+This section includes authorization requirements for the Family PACT (Planning, Access,
+Care and Treatment) Program. Family PACT providers request authorization using a
+Treatment Authorization Request (TAR) form. ‹‹TARs, with documentation of medical
+necessity, are used to obtain authorization for complication services, and for services that
+exceed the limitations noted, including drugs.››
+TAR Overview
+For general TAR information and form completion instructions, refer to the following sections
+in the Medi-Cal manuals.
+• For general TAR information, refer to the TAR Overview section in the Part 1 manual.
+• For TAR form completion instructions, refer to the TAR Completion section in the
+Part 2 manual.
+• For pharmacy authorization requirements, refer to the Medi-Cal Rx website
+(https://medi-calrx.dhcs.ca.gov/).
+Electronic Treatment Authorization Request (eTAR) Submission
+Guidelines
+The TAR processing system will accept electronic treatment authorization transactions via
+the current electronic TAR (eTAR) system for Family PACT. Using the eTAR submission
+process, providers can create, update, inquire and view responses for TARs online. In
+addition, providers have access to the Code Search tool for code inquiries. Using eTAR
+eliminates mail and paper processing time.
+Note: Attachments for eTARs submitted via the attachment fax line (1-877-270-8779) must
+have a completed TAR 3 Attachment form as the cover sheet or first page for
+attachments.
+[[page 2]]
+tar
+2
+Family PACT – Treatment Authorization Request (TAR)
+Page updated: April 2023
+Providers submitting eTARs for Family PACT must enter the ICD-10-CM diagnosis code
+without a decimal. For more information about eTAR submission, a tutorial is available on
+the Medi-Cal Learning Portal (MLP) page of the Medi-Cal Providers website.
+Paper TAR Submission
+All paper TARs must be submitted to the TAR Processing Center at one of the following
+addresses. ‹‹The TAR should be clearly marked “Family PACT” in the Medical Justification
+field (Box 8c) of the TAR form.››
+TAR Processing Center
+820 Stillwater Road
+West Sacramento, CA 95605-1630
+TAR Processing Center
+P.O. Box 13029
+Sacramento, CA 95813-4029
+Authorization for Complication Services
+Treatment authorization is required for services needed to evaluate and manage a
+complication, including office visits, procedures, facility use, laboratory, pharmacy and
+radiology. Treatment authorization must be obtained by enrolled Family PACT providers and
+all Medi-Cal providers who render Family PACT services by referral, including clinicians,
+radiologists, laboratories, pharmacies, facilities and hospitals. Providers generally should
+request authorization before rendering a service. For additional information about referring
+clients to Medi-Cal providers for services, refer to the Provider Enrollment and
+Responsibilities manual section.
+Authorizations for drug substitutions are not allowed. Requests for drugs that are unrelated
+to the services of the Family PACT Program will be denied.
+[[page 3]]
+tar
+3
+Family PACT – Treatment Authorization Request (TAR)
+Page updated: August 2023
+Outpatient Complication Services
+Treatment authorization is required for outpatient services when:
+• Complications are suspected or diagnosed that exceed the limitations noted for the
+family planning (FP) and/or family planning-related services (FPRS). Complication
+services, including pharmacy, are listed in the Benefits: Family Planning, Benefits:
+Family Planning-Related Services and Clinic Formulary sections in this manual, and in
+the Family PACT Pharmacy Formulary on the Medi-Cal Rx website
+(https://medi-calrx.dhcs.ca.gov).
+• A Family PACT provider refers the client to a non-Family PACT provider specialist or
+consultant for evaluation and management of complications
+Note: The consultant must be a Medi-Cal provider. Claims and TARs by a non-Family
+PACT provider must include the referring provider’s NPI so the system can confirm
+that the referring provider is enrolled in Family PACT.
+• Laboratory services are needed for the evaluation and management of complications
+as listed in the Benefits: Family Planning and Benefits: Family
+Planning-Related Services sections in this manual.
+• Radiology services are needed for the evaluation and management of complications
+as listed in the Benefits: Family Planning Services and Benefits: Family Planning-
+Related Services sections in this manual.
+• Drugs and supplies listed in the Family PACT Pharmacy Formulary on the Medi-Cal Rx
+website (https://medi-calrx.dhcs.ca.gov/) and the Clinic Formulary section in this
+manual are needed for treatment of complications arising from a family planning or a
+family planning-related visit.
+‹‹Inpatient Services››
+Emergency and inpatient care requires an authorized TAR for hospital days and medical
+services. ‹‹Placement or insertion of a contraceptive device requiring emergency or inpatient
+care, services for complications of contraceptive methods and/or complications of secondary
+related reproductive health conditions, as defined by the Family PACT Program, are covered
+services with an authorized TAR››.
+[[page 4]]
+tar
+4
+Family PACT – Treatment Authorization Request (TAR)
+Page updated: December 2021
+Code(s) and Modifier(s) on TAR and Claim Form Must Match
+The procedure code(s) and modifier(s) on the claim must match the code(s) and modifier(s)
+authorized on the TAR. Failure to do so may result in denial of the claim.
+Diagnosis Coding and Other TAR Requirements
+An ICD-10-CM code is required on all Family PACT TARs. A second ICD-10-CM code may
+also be required. For additional information about coding for services to manage
+complications, refer to the Benefits: Family Planning and Benefits: Family Planning-Related
+Services sections in this manual.
+[[page 5]]
+tar
+5
+Family PACT – Treatment Authorization Request (TAR)
+Page updated: December 2021
+Legend
+Symbols used in the document above are explained in the following table.
+Symbol Description
+‹‹ This is a change mark symbol. It is used to indicate where on the page the
+most recent change begins.
+›› This is a change mark symbol. It is used to indicate where on the page the
+most recent change ends.

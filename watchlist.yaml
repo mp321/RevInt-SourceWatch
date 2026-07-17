@@ -161,7 +161,10 @@ programs:
         url: https://www.dhcs.ca.gov/services/Documents/DirectedPymts/CY-2024-TRI-FAQ-20250312.pdf
         note: Hard-dated versioned filename (20250312) - a revision likely
           ships under a new URL; ffs_tri_page link-set diffing is the
-          catcher for replacements.
+          catcher for replacements. 2026-07-17 - this URL intermittently
+          answers 200 with a small HTML bot-check page instead of the PDF;
+          the checker reports that honestly as UNREACHABLE and keeps the
+          last good baseline.
 
   fqhc:
     enabled: true
