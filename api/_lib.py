@@ -74,10 +74,12 @@ def send_alert(report: dict, heartbeat: bool = False) -> str:
         lines += [f"[{r['program']}] {r['id']} - {r['verdict']}",
                   f"  {r['url']}",
                   f"  detail: {r['detail']}"]
-        if r.get("master_keys"):
-            lines.append(f"  Master rows: {r['master_keys']}")
-        if r.get("master_note"):
-            lines.append(f"  Master scope: {r['master_note']}")
+        keys = r.get("registry_keys") or r.get("master_keys") or ""
+        scope = r.get("registry_note") or r.get("master_note") or ""
+        if keys:
+            lines.append(f"  Registry rows: {keys}")
+        if scope:
+            lines.append(f"  Registry scope: {scope}")
         lines.append("")
     lines.append("Decision support only - verify against the live official "
                  "source before acting.")

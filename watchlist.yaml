@@ -1,4 +1,4 @@
-# SF DPH Revenue Integrity - source watchlist (all programs, modular). v1.4
+# SF DPH Revenue Integrity - source watchlist (all programs, modular). v1.5
 # Toggle a whole program with `enabled:`; run a subset with --programs.
 # Entry types: pdf | html | binary | linkpage | bulletin_probe | manual_list
 #   expect_shell: true = known client-rendered page; monitored for shell
@@ -6,20 +6,16 @@
 #   manual: true       = cannot be checked automatically (robots.txt, bot
 #                        wall, or broken redirect); reported MANUAL_REVIEW
 #                        so a human checks it on a cadence.
-#   master_keys / master_note = which Master-sheet rows to re-verify on change.
-# v1.4 (2026-07-17): pruned to sources with real detection value. Dropped
-#   entries (git history keeps their config): fpact_superbill_current,
-#   fpact_dhcs_telephonic_guidance, fpact_enrollment, fpact_ofp_page,
-#   fpact_manual_page_mcweb, ffs_tri_fee_schedule, ffs_supplement_39,
-#   ffs_rates_page_mcweb, fqhc_chw_faq, mcp_sfhp_providers, rx_cdl_page
-#   (whole medi_cal_rx program - the CDL page is a blind client-rendered
-#   shell; the Medi-Cal Rx subscription service is the detector).
-#   The DHCS focus is now the mcweb per-document manual monitoring
-#   (fpact_manual_docs): the portal Manuals list with its Revision Date
+#   registry_keys / registry_note = which registry rows to re-verify on
+#                        change (v1.5 rename of master_keys / master_note;
+#                        the code reads both).
+# v1.4 (2026-07-17): pruned 11 low-value entries and the medi_cal_rx
+#   program (git history has the configs). Focus is the mcweb per-document
+#   manual monitoring: the portal Manuals list with its Revision Date
 #   column, each PDF hashed individually with per-page "Page updated"
-#   stamps captured. Family PACT first; other manual communities
-#   (inpatient/outpatient, clinics, hospitals, rural/FQHC) follow the same
-#   pattern once their communityId is captured (see notes/CONTEXT-mcweb.md).
+#   stamps captured. Family PACT first; other manual communities follow
+#   the same pattern (see notes/CONTEXT-mcweb.md).
+# v1.5 (2026-07-17): master_* keys renamed registry_*.
 
 programs:
 
@@ -34,7 +30,7 @@ programs:
           manual-query page, which timed out on 2026-07-02; current PPBI
           sections live on the client-rendered mcweb portal. Detection is
           MCSS + fpact_news_archive; open the PPBI manually when flagged.
-        master_note: ppbi_source_section rows for any changed section
+        registry_note: ppbi_source_section rows for any changed section
 
       - id: fpact_news_archive
         type: linkpage
@@ -43,7 +39,7 @@ programs:
         note: Program news archive; new post or PDF links = policy updates to
           read. Pattern excludes feed/json noise. Also catches re-versioned
           artifacts (e.g. a new Superbill filename).
-        master_note: triage per announcement
+        registry_note: triage per announcement
 
       - id: fpact_wic_24005
         type: html
@@ -52,7 +48,7 @@ programs:
         manual_note: leginfo robots.txt disallows automated fetch - review
           quarterly by hand. Statute changes arrive via bills, so MCSS and
           program news normally give advance notice.
-        master_note: eligibility / payer-of-last-resort denial rows
+        registry_note: eligibility / payer-of-last-resort denial rows
 
       - id: fpact_manual_docs
         type: manual_list
@@ -98,7 +94,7 @@ programs:
           that can change shape or auth without notice; MCSS email remains the
           backstop detector and must not be retired on the strength of this
           integration. Decision support, not a source of record.
-        master_note: ppbi_source_section rows for any changed section
+        registry_note: ppbi_source_section rows for any changed section
 
       - id: fpact_bulletin_probe
         type: bulletin_probe
@@ -119,7 +115,7 @@ programs:
           filenames and new APL redlines. Heads-up for readers - the fee
           schedule links on this page are direct .xlsx downloads (clicking
           one downloads an Excel file rather than opening a page).
-        master_note: reimbursement_basis rows citing TRI / SB 94
+        registry_note: reimbursement_basis rows citing TRI / SB 94
 
       - id: ffs_sb94_fp_fee_schedule
         type: binary
@@ -128,7 +124,7 @@ programs:
           for FP codes with Z30.x). Versioned filename - a replacement
           appears via ffs_tri_page. The URL is a direct .xlsx download;
           prefer opening the TRI landing page and downloading from there.
-        master_note: FPACT rows priced on the SB 94 schedule
+        registry_note: FPACT rows priced on the SB 94 schedule
 
       - id: ffs_wic_14105_201
         type: html
@@ -176,7 +172,7 @@ programs:
         manual_note: leginfo robots.txt disallows automated fetch. ACTION -
           AB 116 amendment took effect 2026-07-01; manually verify the
           amended provider list and update the fqhc-billing reference.
-        master_note: PPS-billable provider list in fqhc-billing reference
+        registry_note: PPS-billable provider list in fqhc-billing reference
 
       - id: fqhc_cms_center
         type: html
@@ -198,13 +194,92 @@ programs:
         url: https://www.dhcs.ca.gov/forms-laws-publications/forms/cost-report-forms-and-documents/
         note: Wrap reconciliation forms and due-date extensions.
 
-      - id: fqhc_manual_page_mcweb
-        type: html
-        url: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=rural
-        expect_shell: true
-        note: Blind Angular shell today. Planned conversion - a second
-          manual_list GraphQL entry like fpact_manual_docs (community=rural;
-          communityId to capture from DevTools, see notes/CONTEXT-mcweb.md).
+      - id: fqhc_rural_manual_docs
+        type: manual_list
+        method: POST
+        url: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/graphql
+        asset_base: "https://mcweb.apps.prd.cammis.medi-cal.ca.gov"
+        portal_page: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=clinics-and-hospitals
+        seed_csv: data/seeds/fqhc_rural_manuals_seed_2026-07-17.csv
+        # Filtered manual_list (2026-07-17): the RHC/FQHC manual is not its
+        # own community on mcweb - the rural* sections live inside Clinics
+        # and Hospitals (communityId 11, 246 docs - far too many to watch
+        # whole). This filters to filenames starting "rural": rural.pdf
+        # (overview), ruralcd.pdf (BILLING CODES), ruralex.pdf (billing
+        # examples), ruralhosp.pdf (swing bed). Same endpoint, token
+        # self-heal, and truncation tripwire as fpact_manual_docs. The old
+        # ?community=rural page this replaced was never a valid slug (the
+        # SPA slugifies community names; verified against the full
+        # communities list, notes/CONTEXT-mcweb.md).
+        graphql_body:
+          operationName: RuralManuals
+          query: >-
+            query RuralManuals { manuals(filter: {file: {filename_download:
+            {_starts_with: "rural"}}}, sort: ["file.filename_download"],
+            limit: -1) { id title file { id filename_download modified_on } }
+            manuals_aggregated(filter: {file: {filename_download:
+            {_starts_with: "rural"}}}) { count { id } } }
+        auth_header_env: MCWEB_TOKEN
+        token_bundle_url: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/environment.js
+        token_bundle_re: 'window\.DIRECTUS_TOKEN\s*=\s*"([^"]+)"'
+        note: Per-document monitor for the four RHC/FQHC manual sections
+          (rural, ruralcd billing codes, ruralex billing examples, ruralhosp
+          swing bed) - full PDF text hash, per-page "Page updated" stamps,
+          portal Revision Date, diffs on change. rural.pdf was revised
+          2026-07-16, the day before this entry was added. MCSS RHC/FQHC
+          email remains the backstop detector.
+        registry_note: fqhc-billing reference rows; PPS / wrap / per-visit
+          code rows on change
+
+  # Lower-priority date-only watch (type revision_watch): queries each
+  # community's manual list metadata (no PDF downloads - light even at
+  # 246 sections) and raises a REVISION_NOTICE naming the sections whose
+  # portal Revision Date moved. Full text monitoring for these stays a
+  # deliberate non-goal until a community earns it (convert to a filtered
+  # manual_list like fqhc_rural_manual_docs). Community ids come from the
+  # catalog in notes/CONTEXT-mcweb.md.
+  revision_notices:
+    enabled: true
+    entries:
+      - id: rev_inpatient_manuals
+        type: revision_watch
+        url: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/graphql
+        portal_page: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=inpatient-services
+        community_id: "9"
+        auth_header_env: MCWEB_TOKEN
+        token_bundle_url: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/environment.js
+        token_bundle_re: 'window\.DIRECTUS_TOKEN\s*=\s*"([^"]+)"'
+        note: Inpatient Services manual, ~115 sections. Date-only signal
+          for inpatient billing / revenue integrity awareness.
+        registry_note: inpatient billing rows on related section changes
+
+      - id: rev_clinics_hospitals_manuals
+        type: revision_watch
+        url: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/graphql
+        portal_page: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=clinics-and-hospitals
+        community_id: "11"
+        auth_header_env: MCWEB_TOKEN
+        token_bundle_url: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/environment.js
+        token_bundle_re: 'window\.DIRECTUS_TOKEN\s*=\s*"([^"]+)"'
+        note: Clinics and Hospitals manual, ~246 sections (includes the
+          rural* RHC/FQHC sections that fqhc_rural_manual_docs monitors in
+          full - a notice here plus a quiet fqhc row means the movement was
+          outside the rural sections).
+        registry_note: outpatient clinic / hospital billing rows on related
+          section changes
+
+      - id: rev_general_medicine_manuals
+        type: revision_watch
+        url: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/graphql
+        portal_page: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=general-medicine
+        community_id: "21"
+        auth_header_env: MCWEB_TOKEN
+        token_bundle_url: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/environment.js
+        token_bundle_re: 'window\.DIRECTUS_TOKEN\s*=\s*"([^"]+)"'
+        note: General Medicine manual, ~229 sections - E&M, telehealth,
+          preventive services and other chargemaster-relevant policy.
+        registry_note: professional-services billing rows on related
+          section changes
 
   ncci:
     enabled: true

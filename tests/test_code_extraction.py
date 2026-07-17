@@ -23,6 +23,7 @@ sys.path.insert(0, str(REPO))
 from source_check import (  # noqa: E402
     SnapshotStore, extract_code_entries, snapshot_page_map,
     parse_page_stamps, stamp_change_detail, stamps_display,
+    revision_changes,
 )
 
 REAL_SNAPSHOT = REPO / "snapshots" / "fqhc" / "fqhc_cms_center.txt"
@@ -148,3 +149,24 @@ def test_page_stamp_roundtrip_and_diff():
     assert "page 1" not in detail                           # unchanged page
     # legacy fallback keeps the raw before/after
     assert stamp_change_detail("May 2026", s) == f"'May 2026' -> '{s}'"
+
+
+def test_revision_changes_names_moved_sections():
+    prev = {"rural": {"title": "RHC/FQHC (rural)",
+                      "revision_date": "2026-06-16T15:00:00"},
+            "tarf": {"title": "TAR Form (tarf)",
+                     "revision_date": "2023-08-06T01:58:46"},
+            "gone": {"title": "Retired Section",
+                     "revision_date": "2022-01-01T00:00:00"}}
+    cur = {"rural": {"title": "RHC/FQHC (rural)",
+                     "revision_date": "2026-07-16T16:54:22"},
+           "tarf": {"title": "TAR Form (tarf)",
+                    "revision_date": "2023-08-06T01:58:46"},
+           "fresh": {"title": "Brand New Section",
+                     "revision_date": "2026-07-01T09:00:00"}}
+    out = revision_changes(prev, cur)
+    assert "'RHC/FQHC (rural)' revised 2026-06-16 -> 2026-07-16" in out
+    assert "new section 'Brand New Section' (2026-07-01)" in out
+    assert "section removed: 'Retired Section'" in out
+    assert len(out) == 3                    # unchanged tarf not mentioned
+    assert revision_changes(cur, cur) == []

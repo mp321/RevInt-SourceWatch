@@ -1,0 +1,674 @@
+[[page 1]]
+rural cd
+1
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs):
+Billing Codes
+Rural Health Clinics (RHCs) and Federally Qualified
+Health Centers (FQHCs): Billing Codes
+Page updated: June 2026
+This section contains Rural Health Clinic (RHC) and Federally Qualified Health Center
+(FQHC) per visit billing codes and rules for reimbursement requirements. These codes sets
+apply to claims reimbursed at the all-inclusive Medi-Cal Prospective Payment System (PPS)
+rate on file with the Department of Health Care Services (DHCS) Medi-Cal Program, unless
+indicated otherwise.
+RHC and FQHC providers must use these per-visit billing codes when submitting
+reimbursement claims to the Medi-Cal Fiscal Intermediary (FI).
+For more information on RHC and FQHC policy and billing instructions, refer to the Rural
+Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs) section of this
+manual.
+Note: Medi-Cal policy material is updated periodically by DHCS. All providers are
+responsible for ensuring that the policy they are following the most current versions of
+Medi-Cal coverage and reimbursement policy.
+General Information
+Medi-Cal reimburses RHC and FQHC providers in accordance with California’s Medicaid
+State Plan as approved by the federal Centers for Medicare & Medicaid Services (CMS)
+under Title XIX of the Social Security Act.
+Section 702 of the Medicare, Medicaid, and the State Children’s Health Insurance Program
+(SCHIP) Benefits Improvement and Protection Act of 2000 (BIPA) established the Medicaid
+PPS rate for FQHCs and RHCs. This reimbursement structure is a fixed, all-inclusive per-
+visit rate. DHCS sets and maintains PPS rates.
+When RHCs or FQHCs provide services to Medi-Cal managed care members, the member’s
+Medi-Cal managed care plan (MCP) pays the RHC or FQHC provider a negotiated
+contracted rate. Pursuant to Welfare and Institutions Code (WIC) section 14087.325(d), and
+Social Security Act § 1903(m)(2)(A)(ix) Medi-Cal MCPs must reimburse contracted RHCs or
+FQHCs in a manner that is no less than the level and amount of payment that the Medi-Cal
+MCP would make for the same scope of services if the services were furnished by another
+provider type that is not an RHC or FQHC.
+[[page 2]]
+rural cd
+2
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs):
+Billing Codes
+Page updated: June 2026
+Additionally, under 42 United States Code (U.S.C.) section 1396a(bb)(5)(A), if this
+negotiated contracted rate is less than the RHC’s or FQHC’s PPS rate, the state must make
+a supplemental “wrap” payment equal to the difference. This ensures that RHCs and FQHCs
+are fully reimbursed at their federally mandated PPS rate, regardless of whether services
+are delivered through the fee-for-service or managed care delivery system.
+Note: The supplemental payment is also referred to as the MCP differential rate (wrap).
+RHC and FQHC providers must adhere to DHCS policy requirements when submitting
+reimbursement claims to the Medi-Cal FI for services rendered to Medi-Cal fee-for-service
+members. Similarly, RHC and FQHC providers must adhere to both DHCS policy
+requirements as well as any additional Medi-Cal MCP guidance when submitting
+reimbursement claims for services rendered to Medi-Cal members in managed care.
+Note: In addition to DHCS policies, Medi-Cal MCPs may establish their own specific billing
+and reimbursement procedures, documentation standards, and submission protocols
+that providers must follow. These can include verifying member eligibility, electronic
+claim or other submission requirements, claim formatting, coding standards, utilization
+management (UM) controls, including prior authorization (PA) requirements, out-of-
+network coordination, and more. Medi-Cal MCP requirements should align with DHCS
+policies and may include additional operational or documentation requirements. RHC
+and FQHC providers are encouraged to consult the respective Medi-Cal MCP’s
+guidance and policies for detailed guidance and requirements, as these may vary by
+plan.
+Member Eligibility
+To prevent billing denials, RHC and FQHC providers must check the member's Medi-Cal
+eligibility prior to scheduling services and at the time of the service.
+Note: Refer to the Eligibility: Recipient Identification or AEVS: General Instructions section
+of the Part 1 manual for instructions on how to verify a members eligibility.
+Qualifying Visits
+Qualifying visits occur when an RHC or FQHC provides medically necessary primary or
+preventive outpatient services to eligible members, either face-to-face or via an approved
+telehealth modality, which are delivered by providers authorized under the Medi-Cal State
+Plan and acting within their scope of practice.
+Under the existing Medi-Cal reimbursement policy, RHC and FQHC providers may bill one (1)
+medical or mental health visit and one (1) dental visit at the Medi-Cal PPS rate per member
+per day when RHC and FQHC covered services are rendered by authorized providers acting
+within their scope of practice.
+[[page 3]]
+rural cd
+3
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs):
+Billing Codes
+Page updated: June 2026
+Multiple services and supplies furnished “incidents to” a billable practitioner’s service may be
+provided during a single visit. However, a visit consisting solely of “incident to” service(s)
+does not constitute a qualifying visit eligible for PPS reimbursement.
+Consistent with 42 Code of Federal Regulations (CFR) sections 405.2413 and 405.2415,
+and Section 1395x(s)(2)(A) of Title 42 of the United States Code, “incident to” services are
+those furnished as an integral, though incidental part of a billable practitioner’s services and
+are included with the PPS rate rather than billed as a separate encounter. Examples can
+include the administration of injections (such as vaccines), routine clinical services furnished
+by clinic staff (such as laboratory services, x-rays, etc.). These services must be furnished
+under appropriate supervision and within applicable scope of practice requirements.
+Exceptions: Two visits can be billed on the same day (which may be at a different location)
+only in the following situations:
+• When a member, after the first visit, suffers illness or injury that requires another health
+diagnosis or treatment, two visits may be counted. Medical justification is required in
+the Remarks field (Box 80) or on an attachment to the claim. Refer to Figure 1 in the
+Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs) Billing
+Example section in this manual. For example, a member sees their provide in the
+morning for a medical condition and later in the day falls and returns to the clinic);
+• When a member is seen by a provider or a Comprehensive Perinatal Services
+Program (CPSP) practitioner and also receives dental services on the same day.
+Note: A second visit can only be counted under the exceptions noted above.
+For more information on the definition of an RHC and FQHC visit, refer to the Rural Health
+Clinics (RHCs) and Federally Qualified Health Centers (FQHCs) section in this manual.
+Documentation Requirements
+Under Title 22 of the California Code of Regulations (CCR) section 51476 and existing
+DHCS policy, Medi-Cal providers must maintain complete, accurate, and timely
+documentation that fully discloses the type and extent of services rendered to Medi-Cal
+members. Records should be created at or near the time of service and include patient
+identification, date of service, provider credentials and signature, clinical details (such as
+history, diagnosis or treatment plan), progress notes, and any prescribed medications or
+devices. Documentation must also capture consent forms, interpreter use, advance
+directives, and coordination of care activities, such as referrals and follow-ups.
+[[page 4]]
+rural cd
+4
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs):
+Billing Codes
+Page updated: June 2026
+In addition, providers are required to keep copies of billing records, including supporting
+documents (for example, authorization approvals, lab orders and results, and invoices for
+drugs or supplies). All documentation must be legible, dated, timed, and authenticated by
+the rendering provider, with supervising signatures when required. Pursuant to WIC section
+14124.1 records must be readily retrievable and retained for at least 10 years or longer if
+mandated by DHCS and/or applicable state or federal requirements. Failure to meet these
+standards can result in claim denials or audit findings, as DHCS considers proper
+documentation of Medi-Cal services essential for verifying medical necessity and
+compliance with Medi-Cal policies.
+For additional information, refer to the Rural Health Clinics (RHCs) and Federally Qualified
+Health Centers (FQHCs) section of this manual.
+Billing Forms
+When submitting claims directly to DHCS, RHC and FQHC providers should submit the ASC
+X12N 837I standard electronic form through the Computer Media Claims (CMC) system or
+use the CMS Form 1450 (UB-04) paper claim form, unless otherwise instructed.›› For more
+information on how to complete the forms, refer to the UB-04 Completion: Outpatient
+Services and UB-04 Submission and Timeliness Instructions section of this manual or
+Special Billing Instructions: Federally Qualified Health Centers Rural Health Clinics and
+Indian Health Services Memorandum of Agreement.
+Note: Services billed to Medi-Cal MCPs must use the billing forms required by the individual
+Medi-Cal MCP.
+National Provider Identifier (NPI)
+RHC and FQHC providers must submit all claims under the enrolled NPI (UB-04 Box 56)
+and must include the physical address of the location where services were rendered (UB-04
+Box 1). This requirement is mandated to ensure compliance with Medi-Cal billing standards
+and to accurately attribute the service to the appropriate location for crossover, Medi-Cal
+MCP, and Medi-Cal fee-for-service claims.
+Informational Lines
+An informational line is an associated line item(s) listed immediately following the Health
+Insurance Portability and Accountability Act (HIPAA)-compliant RHC or FQHC per-visit
+billing code set used to bill the visit with the Medi-Cal member.›› Informational lines contain
+all CPT-4 Level I or HCPCS Level II code(s) that identify the actual service(s) provided.
+When billing for RHC or FQHC covered services, informational lines should be included in
+addition to the RHC or FQHC per visit billing code sets included in this manual.
+Note: Informational lines are not separately reimbursed.
+[[page 5]]
+rural cd
+5
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs):
+Billing Codes
+Page updated: June 2026
+When submitting informational lines, RHC and FQHC providers should remember the
+following:
+• The Revenue Code field on the information claim detail line must be a four-digit
+revenue code. Blank spaces and zeros are accepted for CMC.
+• The Service Date field is optional but recommended.
+• The Service Units field on the informational line may contain the number of service
+units provided for the procedure code.
+• The Total Charges field for each informational line must always be zero.
+Telehealth Modalities and Required Modifiers
+RHC and FQHC covered services may be provided via allowable telehealth modalities
+including synchronous audio-only (modifier 93), synchronous audio-visual (video) (modifier
+95), or Asynchronous Store and Forward (modifier GQ), consistent with all of the
+requirements outlined in the Rural Health Clinics (RHCs) and Federally Qualified Health
+Centers (FQHCs) section in this manual. RHC and FQHC providers will submit claims for
+telehealth services with the applicable telehealth modifiers and the specific CPT-4 Level I or
+HCPCS Level II code(s) that identify the actual service(s) on the informational line of the
+claim.
+The modifiers shall be used with the appropriate billing codes when submitting claims to the
+Medi-Cal MCP. For RHC and FQHC telehealth policy, including non-covered telehealth
+modalities, and billing scenarios, refer to the Rural Health Clinics (RHCs) and Federally
+Qualified Health Centers (FQHCs)(rural) sections of this manual.
+Out-of-Network (OON) Medi-Cal MCP Services
+In accordance with 42 CFR section § 438.206 (b)(5), OON providers (for example, RHC or
+FQHC providers not assigned as the member’s primary care physician or clinic) are required
+to coordinate with the Medi-Cal member’s MCP for authorization and payment. The clinic
+must obtain prior authorization to act as an OON provider and redirect the member to their
+in-network provider or request reassignment from MCP to their clinic.
+Members enrolled in a Medi-Cal MCP or Medi-Cal Dental Managed Care (DMC) plan must
+receive services from in-network MCP providers, except in urgent or other isolated
+circumstances. If the member is not enrolled in a Medi-Cal Dental managed care plan, a
+straight Medi-Cal dental visit may be billed, per-visit code 03.
+[[page 6]]
+rural cd
+6
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs):
+Billing Codes
+Page updated: June 2026
+If an RHC or FQHC delivers an urgent or isolated medical, mental health, or dental service
+to a member not assigned to them, the RHC or FQHC must:
+• Document and retain records of all efforts to obtain OON authorization from the
+member’s assigned MCP.
+• Redirect the member back to their in-network MCP provider or request reassignment
+from the MCP to their clinic.
+• Document these actions in the member’s medical or dental record.
+Other Health Care (OHC) Coverage/Payer of Last Resort
+In accordance with applicable federal Medicaid requirements and state statute (WIC section
+14124.90), Medi-Cal is designated as the payer of last resort. All providers including RHCs
+and FQHCs must make reasonable efforts to identify and bill OHC coverage including but
+not limited to commercial health insurance and Medicare before submitting reimbursement
+or differential rate wrap claims directly to DHCS. Note the following:
+• DHCS will assume financial responsibility for covered services only after OHC and
+coverage by the Medi-Cal MCP has been fully exhausted, or if services are listed on
+the exclusions list (for example, the Medicare Non-Covered Provider Manual).
+• Reimbursement will be limited to the lesser of the Medi-Cal allowable amount or the
+remaining balance after third-party payment, up to the PPS per-visit rate.
+• Providers must also generally submit supporting documentation (for example, receipt
+of OHC reimbursement or a denial for coverage) when submitting claims to DHCS,
+unless the service is listed on the exclusions list.
+• Providers must make reasonable efforts to identify and bill the OHC. All OHC
+reimbursement must be reported on the annual reconciliation report.
+Note: Failure to comply with these requirements may result in claim denials, recoupment
+actions, or other enforcement measures as permitted under state and federal law.
+For more information on OHC and related policies, refer to the following sections in the
+provider manual:
+• Other Health Coverage (OHC)
+• Other Health Coverage (OHC) Guidelines for Billing
+• Provider Regulations
+• Provider Guidelines
+[[page 7]]
+rural cd
+7
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs):
+Billing Codes
+Page updated: June 2026
+Annual Reconciliation
+An annual reconciliation request is submitted to DHCS Audits and Investigations (A&I)
+Financial Review – Outpatient and Behavioral Health Division (FROBHD). The purpose of
+the annual reconciliation request is to reconcile the difference between reimbursements from
+Medicare, Medi-Cal MCPs, OHC payments, and the Medi-Cal PPS rates of the RHC and
+FQHC providers. Medi-Cal MCP differential rates and Medicare differential rates are
+adjusted upon request to A&I FROBHD by RHC or FQHC providers.
+Note: Only adjudicated RHC or FQHC visits will be reconciled through the annual
+Reconciliation Request.
+RHCs and FQHCs should regularly consult the DHCS Audits & Investigations (A&I) forms
+webpage for updated instructions, forms, and documents related to:
+• Annual reconciliation submissions
+• Differential payment adjustments
+• Medicare Advantage (MA) Plan Code 529
+• Other A&I Forms and Documents
+All questions and correspondence should be directed to DHCS’ A&I Division, FROBHD, via
+email at: clinics@dhcs.ca.gov.
+Medical or Mental Health Services for Medi-Cal Fee-For-Service
+Members
+Table of Per-Visit Billing Code Set: Medical or Mental Health Services for Fee-
+For-Service Members
+Revenue
+Code
+Procedure Code
+and Modifier
+Description Explanation
+0521 T1015 Medical or Mental Health
+per visit
+Requires medical justification
+for more than one visit per
+member per day
+RHC and FQHC providers must use this per-visit billingcode set when a covered service is
+rendered by a billable health care professional to Medi-Cal fee-for-service members. The
+per-visit billing code set rate is based on the Medi-Cal PPS rate currently on file for the RHC
+or FQHC provider. Therefore, the services are not eligible for the Medi-Cal MCP differential
+rate (wrap) payment. The Informational line(s) should contain the specific CPT-4 Level I or
+HCPCS Level II code(s) that identify the actual service(s) provided.
+[[page 8]]
+rural cd
+8
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs):
+Billing Codes
+Page updated: June 2026
+Table of Per-Visit Billing Code Sets: Optometry services for Fee-For-Service
+Members
+Revenue
+Code
+Procedure Code and
+Modifier
+Description
+0521 92004 Clinic visit optometry – Facility-specific Medi-Cal PPS
+rate. New patient
+0521 92014 Clinic visit optometry – Facility-specific Medi-Cal PPS
+rate. Established patient
+RHC and FQHC providers must use the appropriate per-visit billing code set as shown in the
+above table when a licensed optometrist acting within their scope of practice renders a
+covered service to Medi-Cal fee-for-service members. Optometry service is considered a
+medical visit for billing purposes.
+A second eye examination with refraction within twenty-four months is covered only when a
+sign or symptom indicates a need for this service, per 22 CCR Section 51306.
+The per-visit billing code set rate is based on the Medi-Cal PPS rate currently on file for the
+RHC or FQHC provider. Therefore, this service is not eligible for the MCP differential rate
+(wrap) payment. Refer to the Reimbursement for Optometry Services section of the Vision
+Care provider manual for additional information.
+Dental Services for Medi-Cal Fee-For-Service or Dental Managed
+Care (DMC) Members
+RHC and FQHC providers may render dental services through a face-to-face encounter or
+via an approved telehealth modality. Services must be delivered by dental providers
+authorized under the Medi-Cal State Plan and acting within the scope of practice. All
+services must comply with the Medi-Cal Dental Manual of Criteria and Schedule of
+Maximum Allowances and be determined to be medically necessary pursuant to WIC
+Section 14059.5. Each provider must develop a treatment plan that optimizes preventative
+and therapeutic care and that is in the members best interest, taking into consideration their
+overall health status. All phases of the treatment plan shall be rendered in a safe, effective,
+equitable, member-centered, timely, and efficient manner.
+[[page 9]]
+rural cd
+9
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs):
+Billing Codes
+Page updated: June 2026
+Table of Per Visit Billing Code Set: Dental Services for Fee-For-Service
+Members or MCP Members Not Enrolled in a DMC Plan
+Per Visit Code Procedure Description
+03 Dental
+Services
+This code is for fee-for service members or MCP
+members NOT enrolled in a DMC plan
+RHC and FQHC providers must use this per-visit local code for dental services rendered to a
+fee-for service member who is not enrolled in a DMC plan.
+RHC and FQHC providers must include the ICD-10 diagnosis code Z29.3 (encounter for
+prophylactic fluoride administration) as a secondary diagnosis code (not the principal
+diagnosis) when submitting claims for dental services that include fluoride varnish
+applications during an eligible dental visit for Medi-Cal members. This requirement applies to
+UB-04 claim forms to improve documentation and reporting of preventive dental services.
+The RHC or FQHC would also include the applicable Current Dental Terminology (CDT)
+code(s) on the claim’s information line(s) of the UB-04 claim form to ensure accurate
+utilization tracking.
+The per-visit local code rate is based on the Medi-Cal PPS rate currently on file for the RHC
+or FQHC provider.
+Table of Per Visit Billing Code Set: Dental Services for MCP Members Enrolled
+in a DMC Plan
+Revenue
+Code
+Procedure
+Code and
+Modifier
+Description
+0521 T1015 SE Dental services that are delivered to members enrolled in
+a Medi-Cal DMC plan
+RHC and FQHC providers must use this MCP differential rate (wrap) per-visit billing code set
+(revenue and procedure codes with modifier) for dental services rendered to an MCP
+member enrolled in a DMC Plan.
+RHC and FQHC providers must include the ICD-10 diagnosis code Z29.3 (encounter for
+prophylactic fluoride administration) as a secondary diagnosis code (not the principal
+diagnosis) when submitting claims for dental services that include fluoride varnish
+applications during an eligible dental visit for Medi-Cal members. This requirement applies to
+UB-04 claim forms to improve documentation and reporting of preventive dental services.
+The RHC or FQHC providers would also include the applicable Current Dental Terminology
+(CDT) code(s) on the claim’s information line(s) of the UB-04 claim form to ensure accurate
+utilization tracking.››
+[[page 10]]
+rural cd
+10
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs):
+Billing Codes
+Page updated: June 2026
+RHC and FQHC providers are eligible for a differential rate(wrap) payment when submitting
+claims for services rendered to members enrolled in a DMC plan. These payments are
+intended to cover the difference between the amount paid by the DMC plan and the RHC or
+FQHC’s Medi-Cal PPS per-visit rate for eligible visits. The per-visit billing code set is based
+on the Medi-Cal PPS differential rate currently on file for RHC or FQHC providers.
+The RHC or FQHC provider would bill the DMC plan and separately submit a reimbursement
+claim to the Medi-Cal FI using the per-visit billing code set above. The RHC or FQHC would
+also include the applicable CDT code(s) on the claim's informational line(s) of the UB-04
+claim form accurate utilization tracking.
+Documentation for dental services should be consistent with the standards set forth in the
+Manual of Criteria and Schedule of Maximum Allowances of the Medi-Cal Dental Provider
+Handbook and all state laws. Also refer to the Safety Net Clinic (SNC) Dental Frequently
+Asked Questions on the Medi-Cal Dental Service Division webpage.
+Note: Providers must submit claims to the Medi-Cal FI using the MCP differential per visit
+billing code set for members enrolled in DMC plans in Sacramento County, Los
+Angeles County or Health Plan of San Mateo County (see the above table).
+Medical or Mental Health Services for Managed Care Members
+The majority of members are enrolled in a Medi-Cal MCP, and RHCs and FQHCs typically
+serve as contracted network providers within Medi-Cal MCPs to deliver covered health care
+services.
+Table of Per-Visit Billing Code Set: Medi-Cal MCP Differential Rate (Wrap) Payment for
+Medical Services for MCP Members
+Revenue
+Code
+Procedure
+Code and
+Modifier
+Description Explanation
+0521 T1015 SE Services rendered to
+members enrolled in a
+Medi-Cal MCP
+Requires medical
+justification for more
+than one visit per
+member per day
+[[page 11]]
+rural cd
+11
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs):
+Billing Codes
+Page updated: June 2026
+RHC and FQHC providers must use this MCP differential rate (wrap) per-visit billing code set
+for services rendered to Medi-Cal members enrolled in a Medi-Cal MCP. This differential
+rate (wrap) is intended to approximate the difference between the weighted average
+payments received from the MCPs and the provider’s established Medi-Cal PPS rate. The
+reimbursement for this per-visit billing code set is based on the Medi-Cal PPS differential
+rate currently on file for the RHC or FQHC provider.
+To complete the MCP differential rate (wrap) payment process for the eligible visit, the RHC
+or FQHC provider must submit a claim to the MCP for payment or adjudication even if the
+service is rendered to an OON member, there is no contract in place, or other circumstances
+such as OHC. A separate reimbursement claim must then be submitted to the Medi-Cal FI
+for the differential rate (wrap) payment using the per-visit billing code set above. The RHC or
+FQHC would also include the applicable CPT® or HCPCS code(s) on the claim's
+informational line(s), of the UB-04 claim form for accurate utilization tracking.
+Note: Incident-to services must be billed to the MCP if they are covered under the MCP’s
+contract. However, incident-to services are not eligible for differential rate (wrap)
+payments because the PPS differential rate (wrap) is intended only for qualifying
+visits. Since incident-to services do not meet this definition and are already
+reimbursed through the MCP, there is no additional differential payment owed. MCP
+payments for incident-to services are subject to reconciliation regardless of whether
+or not a billable RHC or FQHC visit is rendered.
+Billing for Medi-Cal Covered Services Provided to Dually Eligible
+Members
+A member who is enrolled in both federal Medicare and Medi-Cal who qualifies for benefits
+under both programs is known as a “dually eligible”/dual-eligible member.
+Billing for dually eligible members involves coordination of benefits and billing through
+Medicare, Medi-Cal, and Medi-Cal MCPs for managed care members.
+When billing for services provided to dually eligible members, claims may either
+automatically crossover from Medicare to Medi-Cal or Medi-Cal MCP or need to be billed
+directly to Medi-Cal. Refer to the following manuals for additional information:
+• Medicare/Medi-Cal Crossover Claims Overview
+• Medicare Non-Covered Services: CPT Codes
+• Medicare Non-Covered Services: HCPCS Codes
+• Medicare/Medi-Cal Crossover Claims: Outpatient Services
+[[page 12]]
+rural cd
+12
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs):
+Billing Codes
+Page updated: June 2026
+Crossover Claims for Dually Eligible Members
+Table of Per-Visit Billing Code Sets: Crossover Claims for Fee-For-Service Members
+Enrolled in Original Medicare or Medicare Advantage Plan (MA) (Non-Capitated
+Arrangement)
+Revenue
+Code
+Procedure Code
+and Modifier
+Description
+0521 G0466 Crossover claims, clinic visit, new patient
+0521 G0467 Crossover claims, clinic visit, established patient
+0521 G0468 Crossover claims, clinic visit Initial Preventive Physical
+Exam (IPPE) or Annual Wellness Visit (AWV)
+0522 G0466 Crossover claims, home visit, new patient
+0522 G0467 Crossover claims, home visit, established patient
+0522 G0468 Crossover claims, home visit Initial Preventive Physical
+Exam (IPPE) or Annual Wellness Visit (AWV)
+0524 G0466 Crossover claims, visit covered Part A stay at a Skilled
+Nursing facility, new patient
+0524 G0467 Crossover claims, visit covered Part A stay at a Skilled
+Nursing facility, established patient
+0524 G0468 Crossover claims, visit covered Part A stay at a Skilled
+Nursing facility, Initial Preventive Physical Exam (IPPE)
+or Annual Wellness Visit (AWV)
+0525 G0466 Crossover claims, visit (not covered Part A stay) at a
+Skilled Nursing facility, new patient
+0525 G0467 Crossover claims, visit (not covered Part A stay) at a
+Skilled Nursing facility, established patient
+0525 G0468 Crossover claims, visit (not covered Part A stay) at a
+Skilled Nursing facility, Initial Preventive Physical Exam
+(IPPE) or Annual Wellness Visit (AWV)
+0527 G0466 Crossover claims, visiting nurse to home, new patient
+(as defined in Code of Federal Regulations (CFR), Title
+42, Section 405.2416)
+0527 G0467 Crossover claims, visiting nurse to home, established
+patient (as defined in Code of Federal Regulations
+(CFR), Title 42, Section 405.2416)
+0527 G0468 Crossover claims, FQHC visiting nurse to home
+IPPE or AWV
+0900 G0469 Crossover claims, mental health visit, new patient
+0900 G0470 Crossover claims, mental health visit, established
+patient
+[[page 13]]
+rural cd
+13
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs):
+Billing Codes
+Page updated: June 2026
+RHC or FQHC providers, when submitting a crossover claim, must use the appropriate
+per-visit billing code set, shown in the table above, that most accurately describes the
+service rendered to a fee-for-service member who is dually enrolled in Original Medicare or
+in a Medicare Advantage Plan (Non-Capitated Arrangement). In this circumstance, Original
+Medicare or in a Medicare Advantage Plan (Non-Capitated Arrangement) is the primary
+coverage and Medi-Cal fee-for-service is secondary coverage.
+The reimbursement rate for crossover claim codes are set at an amount that is intended to
+cover the difference between the Medicare payment and the Medi-Cal PPS rate currently on
+file for the RHC and FQHC provider.
+The above codes require the Medicare Explanation of Medical Benefits (EOMB), Medicare
+Remittance Advice Notice (MRN), or Remittance Advice (RA) to be attached to the claim.
+When the Medi-Cal eligibility verification system indicates a member has original Medicare
+coverage, Medicare must be billed first to the appropriate Medicare Administrative
+Contractor (MAC) for processing.
+For members enrolled in a Medicare Advantage non-capitated arrangement, the clinic must
+bill the Medicare Advantage plan first, then the MAC, for the Medicare Advantage Wrap-
+Around Payment (Revenue Code 519) before billing Medi-Cal.
+Note (For UB-04 claim forms): Do not enter Medicare status information in Condition Codes
+(boxes 24-30) fields. The following statement must be included in the Remarks (Box
+80) field of the claim or submit it as an 8 1/2" x 11" attachment: “For a fee-for-service
+Medi-Cal member enrolled in a fee-for-service Medicare Advantage Plan.”
+Table of Per Visit Billing Code Sets: Cross Over Claims Payment for Fee-For-Service
+Members Enrolled in Medicare Advantage Plan (Capitated Arrangement)
+Revenue
+Code
+Procedure Code
+and Modifier
+Description
+0529 G0466 Capitated Medicare Advantage Plans clinic visit, new
+patient
+0529 G0467 Capitated Medicare Advantage Plans clinic visit,
+established patient
+0529 G0468 Capitated Medicare Advantage Plans clinic visit
+Initial Preventive Physical Exam (IPPE) or Annual
+Wellness Visit (AWV)
+0529 G0469 Capitated Medicare Advantage Plans Mental Health visit,
+new patient
+0529 G0470 Capitated Medicare Advantage Plans Mental Health visit
+established patient
+[[page 14]]
+rural cd
+14
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs):
+Billing Codes
+Page updated: June 2026
+RHC or FQHC providers, when submitting a crossover claim, must us the appropriate
+per-visit billing code set, shown in the table above, that most accurately describes the
+service rendered to a fee-for-service member who is dually enrolled in a Medicare
+Advantage Plan (Capitated Arrangement). In this circumstance the Medicare Advantage
+Plan (Capitated Arrangement) is the primary coverage and Medi-Cal fee-for-service is
+secondary coverage.››
+The reimbursement rate for crossover claim codes are set at an amount that is intended to
+cover the difference between the Medicare payment and the Medi-Cal PPS rate currently on
+file for the RHC or FQHC provider.
+For claims submitted using Capitated MA plans per visit billing code sets where no EOB,
+MRN or RA are provided, and where the service is not reflected on the current Medicare
+Non-Covered Services list, the RHC or FQHC provider must include documentation of
+Medicare denial or attempts to bill Medicare and receive a denial. The RHC or FQHC
+provider should keep the documentation of Medicare non-payment on file, which must be
+made available upon DHCS request, for the Annual Reconciliation, or in the event of a state
+or federal audit.
+Table of Per-Visit Billing Code Set for MCP Differential Rate Payment for MCP
+Members Enrolled in Original Medicare or MA Plan (Fee-For Service or Capitated
+Arrangements)
+Revenue
+Code
+Procedure Code
+and Modifier
+Description
+0521 T1015 SE Services rendered to members enrolled in a Medi-Cal
+MCP
+RHC and FQHC providers must use this MCP differential rate (wrap) per-visit billing code set
+after billing Original Medicare MA Plan or Medicare Advantage Wrap-Around Payments
+(Revenue Code 519) and Medicare Part D as applicable. This applies when services are
+rendered to Medi-Cal MCP enrollees who are dually enrolled in original Medicare or a MA an
+MA Plan (fee-for-service or Capitated Arrangement) and the service qualifies as a covered
+RHC or FQHC visit.
+The reimbursement for the billing code set is based on the Medi-Cal PPS rate currently on
+file for the RHC or FQHC provider.
+[[page 15]]
+rural cd
+15
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs):
+Billing Codes
+Page updated: June 2026
+Billing Example
+When a member has Medicare as primary insurance and a Medi-Cal MCP as secondary
+insurance, the RHC and FQHC provider would bill as follows:
+• Medicare
+– Medicare is billed first. Medicare payments include Original Medicare, Medicare
+Advantage Plan, Medicare Advantage Wrap-Around Payments (Revenue Code 519)
+and Medicare Part D (where applicable)
+• Medi-Cal MCP
+– After Medicare pays its portion, the claim is sent to the Medi-Cal MCP for secondary
+coverage
+• MCP Differential Rate Payment: Submit claim to the Medi-Cal FI
+• RHC and FQHC providers are entitled to the Medi-Cal PPS rate for a qualifying visit.
+Medi-Cal is the payer of last resort. All third-party payers must be billed
+Dual Special Needs Plans (D-SNPs)
+D-SNPs are MA plans that provide specialized care to dually eligible members who have
+Medicare and offer care coordination and wrap-around services. For more information, visit
+the Dual Eligible Special Needs Plans in California webpage on the DHCS website.
+For information on the Senior Care Action Network (SCAN) Health Plan, a Medicare
+Advantage Special Needs Plan with a comprehensive risk-managed care contract to serve
+the Medicare-Medi-Cal dual eligible population, refer to the MCP: Special Projects section in
+the Part 1 manual.
+Billing for Primary Care Services Rendered by a Medical Resident
+Teaching Health Center Graduate Medical Education (THCGME) programs sponsored by
+the Health Resources and Services Administration (HRSA) or state-sponsored programs
+(Primary Care Residency Programs) may seek reimbursement for primary care services
+furnished by a medical resident when billed by a teaching physician. Refer to the Teaching
+Health Center Graduate Medical Education (THCGME) section of the Rural Health Clinics
+(RHCs) and Federally Qualified Health Centers (FQHCs) manual for specific reimbursement
+requirements.
+[[page 16]]
+rural cd
+16
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs):
+Billing Codes
+Page updated: June 2026
+Special Billing Circumstances Requirements for Other Health Medi-Cal
+Covered Services
+This subsection provides guidance for providers on other Medi-Cal covered services that are
+subject to special billing requirements and/or may have different reimbursement rates.
+Dyadic Services
+For billing for dyadic services, refer to the Dyadic Services and the Dyadic Services Billing
+Examples for Federally Qualified Health Center and Rural Health Clinic Providers sections of
+the Part 2 manual.
+Justice-Involved (JI) Reentry Initiative
+For billing JI services, refer to the JI Pre-Release Services, Federally Qualified Health
+Centers, and Rural Health Clinic Services section of the Part 2 manual.
+Specialty Mental Health Services (SMHS)
+Pursuant to WIC section 14132.100 (m) if the costs associated with providing SMHS are
+within the RHC’s or FQHC’s per-visit PPS rate, as determined by DHCS and the RHC or
+FQHC contracts with a county Mental Health Plan (MHP) for SMHS services, the SMHS
+costs shall be adjusted out of the RHC’s or FQHC’s per-visit PPS rate as a change in scope
+of service.
+When Contracted with a County Mental Health Plan (MHP)
+RHCs and FQHCs that have an active contract with a county MHP are authorized to provide
+SMHS to members within that county. In these cases:
+• The provider is reimbursed at the contracted rate negotiated with the county MHP. This
+rate is specific to the county and may differ from standard Medi-Cal reimbursement
+rates.
+• Claims for SMHS are submitted through the Short-Doyle system, which is managed by
+the county. Providers shall not submit claims through either the Medi Cal FI or the
+Short Doyle system using RHC and FQHC specific billing code sets, including HCPCS
+code T1015, legacy local codes (11, 12, 13), or any other legacy crosswalk codes or
+modifiers.
+[[page 17]]
+rural cd
+17
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs):
+Billing Codes
+Page updated: June 2026
+When Not Contracted with a County MHP
+If an RHC or FQHC or RHC does not have a contract with the county MHP, they may still
+provide emergency or isolated SMHS to Medi-Cal members under limited circumstances:
+• These are one-time or urgent services provided when a member presents with a
+mental health need and no immediate access to county services is available.
+• The provider may submit a claim to Medi-Cal using Revenue Code 0521, and HCPCS
+code T1015 with modifier SE (and should indicate an isolated or emergency visit).
+• The claim is processed through the standard Medi-Cal FI and any necessary
+reimbursement adjustments are made during the reconciliation process.
+• After an initial emergency or isolated service, the provider is required to refer the
+member back to the county MHP for ongoing or follow-up care.
+• The referral must be clearly documented in the member’s medical record to ensure
+compliance with all applicable Medi-Cal policy and continuity of care.
+Community- Based Adult Services
+For billing for Community-Based Adult Services, refer to the Community-Based Adult
+Services (CBAS) (community) section of the Part 2 manual.
+[[page 18]]
+rural cd
+18
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs):
+Billing Codes
+Page updated: June 2026
+Legend
+Symbols used in the document above are explained in the following table.
+Symbol Description
+‹‹ This is a change mark symbol. It is used to indicate where on the page the
+most recent change begins.
+›› This is a change mark symbol. It is used to indicate where on the page the
+most recent change ends.

@@ -1,0 +1,92 @@
+[[page 1]]
+rural ex
+1
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs) Billing
+Examples
+Rural Health Clinics (RHCs) and Federally Qualified
+Health Centers (FQHCs) Billing Examples
+Page updated: December 2020
+The example in this section is to help providers bill Rural Health Clinic (RHC) and Federally
+Qualified Health Centers (FQHCs) services on the UB-04 Claim Form. Refer to the Rural
+Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs) section in this
+manual for general billing information. Refer to the UB-04 Completion: Outpatient Services
+section of this manual for instructions to complete claim fields not explained in the following
+example. For additional claim preparation information, refer to the
+Forms: Legibility and Completion Standards section of this manual.
+Billing Tips: When completing claims, do not enter the decimal points in ICD-10-CM codes
+or dollar amounts. If requested information does not fit neatly in the Remarks
+field (Box 80) of the claim, type it on an 8½ x 11-inch sheet of paper and attach
+it to the claim ‹‹form››.
+[[page 2]]
+rural ex
+2
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs) Billing
+Examples
+Page updated: December 2020
+Managed Care Differential Rate
+Figure 1. Managed Care differential rate billing code set.
+This is a sample only. Please adapt to your billing situation.
+John Doe visited a ‹‹RHC›› for evaluation of his recent chest pain. He is enrolled in a
+Medi-Cal managed care plan ‹‹(MCP)›› and the service is covered under the plan. The RHC
+bills the ‹‹MCP›› for the encounter. The clinic may submit a ‹‹managed care differential rate
+claim (also known as the “wrap”)›› to Medi-Cal with revenue code 0521, procedure code with
+modifier T1015SE and an informational line specific to his visit, which in this case is
+procedure code 99214.
+On claim line 1, enter the revenue code 0521 in the Revenue Code field (Box 42), the
+description of the code (Managed Care Differential Rate) in the Description field (Box 43)
+and the corresponding procedure code with modifier (T1015SE) in the HCPCS/Rate field
+(Box 44). Enter the date of service in the Service Date field (Box 45) in six-digit format.
+A “1” is entered in the Service Units field (Box 46) for Managed Care Differential Rate billing
+code set to indicate the billing is for the differential for one visit (more than one visit can be
+billed with medical justification). Enter the usual and customary charges in the
+Total Charges field (Box 47).
+On claim line 2, enter the revenue code and procedure code specific to the visit in Revenue
+Code field (Box 42) and HCPCS/Rate field (Box 44) respectively, followed by the date of
+service in the Service Date field (Box 45). A “1” is entered in the Service Units field (Box 46)
+for the number of service units provided for the procedure code. When filling out an
+informational line, Box 47 must be zeros because this line is not payable. Enter Code 001 in
+the Revenue Code column (Box 42, line 23) to designate that this is the total charge line and
+enter the totals of all charges in the Total Charges field (Box 47, line 23).
+Note: When billing for the managed care differential rate, Box 39 and Box 54 on the UB-04
+claim must be left blank, as these fields are reserved respectively for Share of Cost
+(SOC) and Other Health Care Coverage (OHC) only.
+If billing the Managed Care Differential Rate for both a medical and dental visit, or for
+a third visit (allowable only in special circumstances) on the same dates of service,
+billers should refer to the Rural Health Clinics (RHCs) and Federally Qualified Health
+Centers (FQHCs): Billing Codes section for billing instruction.
+[[page 3]]
+rural ex
+3
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs) Billing
+Examples
+Page updated: December 2020
+Enter “O/P Medi-Cal” to indicate the type of claim and payer in the Payer Name field
+(Box 50). The NPI is placed in the NPI field (Box 56).
+Enter an appropriate ICD-10-CM diagnosis code. Because this claim is submitted with a
+diagnosis code, an ICD indicator is required in the white space below the DX field (Box 66).
+An indicator is required when an ICD-10-CM/PCS code is entered on the claim.
+Enter the rendering physician’s NPI in the Operating field (Box 77). ‹‹or the Ordering
+Referring or Prescribing (ORP) provider’s individual (Type 1) NPI in Attending field (Box
+76).››
+Refer to the UB-04 Completion: Outpatient Services section of this manual for instructions
+to complete the remaining fields.
+[[page 4]]
+rural ex
+4
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs) Billing
+Examples
+Page updated: December 2020
+Figure 1: Managed Care Differential Rate Billing Code Set
+[[page 5]]
+rural ex
+5
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs) Billing
+Examples
+Page updated: August 2020
+Legend
+Symbols used in the document above are explained in the following table.
+Symbol Description
+‹‹ This is a change mark symbol. It is used to indicate where on the page the
+most recent change begins.
+›› This is a change mark symbol. It is used to indicate where on the page the
+most recent change ends.

@@ -21,8 +21,8 @@ of record, and nothing may be sent or applied automatically.
      level from the report.
    - Cite the diff by line number (e.g. "diff lines 12-18 of
      reports/diffs/<file>.md") for every claim about what changed.
-4. Propose Master-sheet actions per change: which `master_keys` /
-   `master_note` scopes to re-verify, and what kind of downstream update
+4. Propose registry actions per change: which `registry_keys` /
+   `registry_note` scopes to re-verify, and what kind of downstream update
    (superbill, tipsheet, Epic review) the change suggests. Frame every
    proposal as "verify, then update if confirmed" - never as fact.
 
@@ -37,5 +37,5 @@ of record, and nothing may be sent or applied automatically.
 - All output is a DRAFT requiring human verification against the live
   official source before anyone acts on it. Say this at the top of your
   summary.
-- Do not modify the Master sheet, watchlist, baselines, or reports; your
+- Do not modify the registry, watchlist, baselines, or reports; your
   output is analysis text only.

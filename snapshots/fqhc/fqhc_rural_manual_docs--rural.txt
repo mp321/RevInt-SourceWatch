@@ -1,0 +1,823 @@
+[[page 1]]
+rural
+1
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs)
+Rural Health Clinics (RHCs) and
+Federally Qualified Health Centers (FQHCs)
+Page updated: July 2026
+This section includes information for billing services rendered by Rural Health Clinics
+(RHCs) and Federally Qualified Health Centers (FQHCs). RHCs and FQHCs provide
+ambulatory health care services to recipients in rural and non-rural areas.
+Rural Health Clinics
+RHCs extend Medicare and Medi-Cal benefits to cover health care services provided by
+clinics operating in rural areas. Specifically trained primary care practitioners administer the
+health care services needed by the community when access to traditional physician care is
+difficult.
+Federally Qualified Health Centers
+FQHCs were added as a Medi-Cal provider type in response to the Federal Omnibus Budget
+Reconciliation Act (OBRA) of 1989.
+RHC and FQHC: Enrollment
+‹‹Providers should enroll in the RHC and FQHC programs through the Department of Health
+Care Services (DHCS) Provider Enrollment Division. However, Audits and Investigations
+(A&I) Division is responsible for setting the Prospective Payment System (PPS) rate.››
+[[page 2]]
+rural
+2
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs)
+Page updated: December 2020
+Physician Defined
+The inclusion of a professional category within the term “physician” is for the purpose of
+defining the professionals and not for the purpose of defining the types of services that these
+professionals may render during a visit for RHC and FQHC services.
+The following providers are defined as “physicians.”
+• A doctor of medicine or osteopathy authorized to practice medicine and surgery by the
+State and who is acting within the scope of his/her license
+• A medical resident in a federally or state sponsored Teaching Health Center Graduate
+Medical Education (THCGME) Program, under the supervision of a designated
+teaching physician, who is acting within his/her ‹‹Postgraduate›› Training License
+(PTL) ‹‹issued by the Medical Board of California››. The THCGME Program is required
+to be accredited by the Accreditation Council for Graduate Medical Education.
+Note: Subject to limitations as described in the Teaching Health Center Graduate
+Medical Education (THCGME) subheading on a following page.
+• A doctor of podiatry authorized to practice podiatric medicine by the State and who is
+acting within the scope of his/her license
+• A doctor of optometry authorized to practice optometry by the State and who is acting
+within the scope of his/her license
+• A doctor of chiropractic authorized to practice chiropractic by the State and who is
+acting within the scope of his/her license
+• A doctor of dental surgery (dentist) authorized to practice dentistry by the State and
+who is acting within the scope of his/her license
+CPSP Practitioner Defined
+A Comprehensive Perinatal Services Program (CPSP) practitioner is defined in Welfare and
+Institutions Code, Section 14134.5, and California Code of Regulations (CCR), Title 22,
+Section 51179.7.
+[[page 3]]
+rural
+3
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs)
+Page updated: July 2026
+RHC and FQHC Covered Services
+RHCs and FQHCs may bill for the following:
+• Physician services
+• Physician assistant services
+• Nurse practitioner services
+• Certified nurse midwife services
+• Visiting nurse services (as defined in Code of Federal Regulations [CFR], Title 42,
+Section 405.2416)
+• Comprehensive Perinatal Services Program (CPSP) practitioner services, if the clinic
+has an approved application on file with the California Department of Public Health,
+Maternal, Child and Adolescent Health Division
+• Licensed clinical social worker services
+• Associate clinical social worker (ASW) services (when supervised by a licensed
+billable behavioral health practitioner
+• Marriage and family therapist services
+• Associate marriage and family therapist (AMFT) services (when supervised by a
+licensed billable behavioral health practitioner)
+• ‹‹Licensed Professional Clinical Counselor (LPCC) services
+• Associate Professional Clinical Counselor (APCC) services (when supervised by a
+licensed billable behavioral health practitioner)
+• Psychological Associate services (when supervised by a licensed clinical psychologist)
+• Licensed clinical psychologist services
+• Optometry services [for billing limitations, refer to the Rural Health Clinics (RHCs) and
+Federally Qualified Health Centers (FQHCs): Billing Codes section of the appropriate
+Part 2 manual.]››
+• Chiropractic services (see Medi-Service limitation)
+• Acupuncture services (see Medi-Service limitation)
+• Registered dental hygienist services
+‹‹Note: For more detailed information about ASW, AMFT, APCC and Psychological
+Associate services, refer to the “Associate Level Mental Services Standards”
+section below.››
+[[page 4]]
+rural
+4
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs)
+Page updated: March 2024
+Dental Services Defined
+‹‹RHCs and FQHCs may render any dental service during a face-to-face encounter between
+a billable treating dental provider and an eligible patient that is within the scope of the
+treating provider's practice, complies with the Medi-Cal Dental Manual of Criteria and
+Schedule of Maximum Allowances
+(https://www.dental.dhcs.ca.gov/Dental_Providers/Medi-Cal_Dental/MOC_SMA_Versions/),
+and determined to be medically necessary pursuant to California Welfare and Institutions
+Code (W&I code), Section 14059.5.›› Each provider shall develop a treatment plan that
+optimizes preventative and therapeutic care and that is in the patient’s best interest, taking
+into consideration their overall health status. All phases of the treatment plan shall be
+rendered in a safe, effective, equitable, patient-centered, timely, and efficient manner.
+For dental services, documentation should be consistent with the standards set forth in the
+Manual of Criteria for Medi-Cal Authorization of the Medi-Cal Dental Provider Handbook and
+all state laws.
+Authorization and Documentation Requirements
+‹‹RHC and FQHC services do not require a Treatment Authorization Request (TAR), but
+providers are required to maintain in the patient’s medical record the same level of
+documentation that would be needed for authorization approval.››
+Documentation for all RHC and FQHC encounters must be sufficiently detailed as to clearly
+indicate the medical reason for the visit.
+Required documentation includes:
+• A complete description of the medical services provided
+• The full name professional title of the person providing the service
+• The pertinent diagnosis(es) at the conclusion of the visit
+• Any recommendations for diagnostic studies, follow up or treatments, including
+prescriptions
+Note: The documentation must be kept in writing for a minimum of three years from the date
+of service.
+DHCS A&I Division may recover payments that do not meet the requirements under CCR,
+Title 22, Section 51458.1 “Cause for Recovery for Provider Overpayments” and Section
+51476, “Keeping and Availability of Records.”
+[[page 5]]
+rural
+5
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs)
+Page updated: March 2024
+‹‹CPSP Requirements
+All RHCs and FQHCs are required to enroll with the California Department of Public Health
+(CDPH) to become fee-for-service CPSP providers. Refer to the CDPH enrollment website
+and Provider Handbook for additional information.
+Note: RHCs and FQHCs shall adhere to requirements established by managed care plans
+related to pregnancy related services and/or CPSP like services provided to Medi-Cal
+managed care members. Billing requirements for RHC or FQHC providers may be
+different than those requirements under the Pregnancy: Comprehensive Perinatal
+Services Program (CPSP) section in the appropriate Part 2 manual for fee-for-service
+billing, due to the difference in payment methodology and RHC or FQHC Program
+requirements.››
+CPSP Services: TAR and Reporting Requirements
+Claims for Comprehensive Perinatal Service Program (CPSP) services in excess of the
+basic allowances will not be denied for the absence of a TAR. RHCs and FQHCs, however,
+must maintain in the patient’s medical record the same level of documentation that would be
+needed for authorization approval. DHCS A&I Division may recover payments that do not
+meet the requirements under CCR, Title 22, Section 51458.1 “Cause for Recovery for
+Provider Overpayments” and Section 51476, “Keeping and Availability of Records.”
+Required documentation includes:
+• Expected date of delivery
+• Clinical findings of the high-risk factors involved in the pregnancy
+• Explanation of why basic CPSP services are not sufficient
+• Description of the services being requested
+• Length of visits and frequency with which the requested services are provided, and
+• Anticipated benefit of outcome of additional services
+RHC and FQHC: Medi-Services
+Medi-Service limitations (two services per month) apply when rendered in an RHC or FQHC.
+[[page 6]]
+rural
+6
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs)
+Page updated: July 2026
+“Visit” Defined
+A visit is a face-to-face encounter or an interaction using a telehealth modality (synchronous
+video, synchronous audio-only or asynchronous store and forward) between an RHC or
+FQHC recipient and a physician (refer to “Physician Defined” on a previous page in this
+section), physician assistant, nurse practitioner, certified nurse midwife, clinical psychologist,
+licensed clinical social worker, marriage and family therapist, licensed acupuncturist,
+registered dental hygienist or visiting nurse (as defined in Code of Federal Regulations, Title
+42, Section 405.2416), hereafter referred to as a “health professional,” to the extent the
+services are reimbursable under the State Plan and the interactions meet the applicable
+standards of care.
+A face-to-face encounter or an interaction using a telehealth modality with a Comprehensive
+Perinatal Services Program (CPSP) practitioner also qualifies as a visit. Refer to “CPSP
+Practitioner Defined” on a previous page in this section.
+Qualifying Visits
+Encounters with more than one health care professional and multiple encounters with the
+same health care professional that take place on the same day and at a single location
+constitute a single visit. More than one visit may be counted on the same day (which may be
+at a different location) in either of the following situations:
+• When a patient, after the first visit, suffers illness or injury that requires another health
+diagnosis or treatment
+• When a patient is seen by a health care professional or CPSP practitioner and also
+receives dental services on the same day
+Note: ‹‹RHCs and FQHCs in the counties of Sacramento and Los Angeles will be able to bill
+for differential payments for one medical and one dental visit for the same recipient on
+the same day of service.››
+Clinic visits at which the patient receives services “incident to” physician services
+(for example, a laboratory or X-ray appointment) do not qualify as reimbursable visits.
+Billing Medi-Cal or Dental Services for Managed Care Plan
+Members
+RHCs and FQHCs must bill the appropriate Managed Care Plan (MCP) when rendering
+services to MCP members. The California MMIS Fiscal Intermediary does not accept these
+claims unless the billed services are contractually excluded from the plan or are attached to
+an approved Alternative Payment Method. Providers should contact the plan for
+plan-specific prior authorization and billing requirement information.
+[[page 7]]
+rural
+7
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs)
+Page updated July 2026
+Services for Out of Network Members Enrolled in a Managed
+Care Plan
+If a Medi-Cal member not assigned to a clinic presents themselves to the clinic for treatment
+and the clinic finds the member is enrolled in a Medi-Cal Managed Care Plan, or the patient
+is enrolled in a Medi-Cal Dental managed care plan*, the clinic can render emergency or
+isolated service and submit a claim to Medi-Cal. ‹‹However, the RHC and FQHC is required
+to redirect the unassigned member to their “in-network” managed care provider and
+document this referral in the member’s medical/dental records. While Medi-Cal members
+enrolled in both Medi-Cal and Medi-Cal Dental managed care plans are required to be
+treated by in-network providers, except in emergencies or other isolated instances, RHC and
+FQHC facilities that provide services in these circumstances must maintain proof of payment
+or denial from the managed care plan.››
+Refer to the Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs):
+Billing Codes section in this manual for codes to use when billing for services rendered to
+recipients of Medi-Cal and Medi-Cal Dental managed care plans.
+Riverbend Government Benefits Administrator
+The Riverbend Government Benefits Administrator (RGBA) is the Part A Medicare
+Intermediary for free-standing RHCs. Questions may be directed to RGBA at
+(423) 763-3400 or (423) 752-6518 (fax). Correspondence may be sent to:
+Riverbend Government Benefits Administrator
+Medicare
+730 Chestnut Street
+Chattanooga, TN 37402-1790
+Reimbursement
+Effective January 1, 2001, Federal legislation repealed the reasonable cost-based
+reimbursement requirements for services to Medicaid RHC and FQHC patients and is now
+requiring a payment for these services under a Prospective Payment System (PPS).
+[[page 8]]
+rural
+8
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs)
+Page updated: July 2026
+Los Angeles Demonstration Waiver Project
+Cost-based reimbursement clinics that are participating in the Section 1115 Medicaid Waiver
+Demonstration Extension project are not affected by PPS rate determinations.
+IHS-MOA 638 Clinics
+Indian Health Services (IHS), Memorandum of Agreement (MOA) 638, clinics that are
+participating under the IHS-MOA are not affected by PPS rate determination. Refer to the
+Indian Health Services (IHS), Memorandum of Agreement (MOA) 638, Clinics section in this
+manual for billing details.
+Crossover Claims
+In the past, RHC and FQHC crossover claims were reimbursed at a rate of 20 percent of the
+provider’s interim rate. Reimbursement adjustments, due either to the provider or DHCS,
+were determined through cost reports submitted by providers to the A&I Division staff at the
+end of the provider’s fiscal year.
+‹‹Under PPS, RHCs and FQHCs are not required to file annual cost reports.›› Therefore, to
+ensure full reimbursement for crossover claims, A&I Division will set the reimbursement rate
+for crossover claim codes at an amount that equals the difference between the Federal
+Medicare payments and the provider’s PPS rate. This can only be accomplished if the
+provider is an RHC or FQHC for Federal Medicare as well as for DHCS Medi-Cal. Providers
+electing to remain fee-for-service for Federal straight Medicare will not receive their PPS rate
+for crossover claims.
+[[page 9]]
+rural
+9
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs)
+Page updated: July 2026
+Teaching Health Center Graduate Medical Education (THCGME)
+RHC and FQHC THCGME programs sponsored by Health Resources and Services
+Administration (HRSA) or state sponsored THCGME programs (Primary Care Residency
+Programs) may seek reimbursement for primary care services furnished by a medical
+resident when billed by a teaching physician, if all of the following conditions are met:
+• THCGME programs must have an existing GME accreditation from the Accreditation
+Council for Graduate Medical Education (ACGME).
+• Types of services furnished by residents include:
+– Primary care services
+– Acute care for undifferentiated problems or chronic care for ongoing conditions,
+including chronic mental illness
+– Coordination of care furnished by other physicians and providers
+– Comprehensive care not limited by organ system or diagnosis
+• The teaching physician must have the primary medical responsibility for patients cared
+for by residents, and ensure the care provided is reasonable and necessary.
+• The teaching physician must not supervise more than four residents at any given time.
+• Residents with less than six months experience in a THCGME program must have the
+teaching physician physically present for critical or key portions of services.
+• Teaching physicians must review the patient health record and document the teaching
+physician’s participation in direction of services.
+‹‹Associate Level Mental Health Services Standards
+RHCs and FQHCs may seek reimbursement for registered Associate Clinical Social Worker
+(ASW), Associate Marriage and Family Therapist (AMFT), Associate Professional Clinical
+Counselor (APCC) or Psychological Associate services subject to the conditions outlined in
+this section.››
+[[page 10]]
+rural
+10
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs)
+Page updated: July 2026
+‹‹Administrative Requirements
+• RHCs and FQHCs must ensure compliance with supervision standards, including but
+not limited to enforcing regulations on written oversight agreements, verifying approved
+supervisors, ensuring the appropriate type and amount of supervision hours are
+provided, and maintaining all documentation required by the California Board of
+Behavioral Sciences (BBS) or California Board of Psychiatry, including final approval of
+licensed practitioners.
+• RHCs and FQHCs must ensure compliance with supervision requirements when
+services are billed under an RHC or FQHC licensed billable provider who is also an
+approved supervisor by the California BBS or the California Board of Psychiatry.
+• RHCs and FQHCs must ensure that the supervisor signs all clinical notes for services
+conducted by the associate, including assessments and treatment recommendations.
+The supervising licensed provider is the RHC and FQHC billable provider, who is also
+approved by the California BBS or the California Board of Psychiatry, for any associate
+visit and must review and approve the associate’s clinical notes or documentation to
+support claims billing.
+• Services are billed under the NPI of the supervising licensed billable provider who is
+approved by the California BBS or the California Board of Psychiatry. When submitting
+a UB-04 claim, the NPI must be entered in the designated rendering provider field.
+• These services are billed utilizing existing claiming processes that include billing
+managed care plans first, followed by billing DHCS for the differential “wrap” payment,
+if applicable.
+ASW, AMFT, APCC
+The registered ASW, AMFT, and APCC provided services require supervision by a licensed
+marriage and family therapist, licensed clinical social worker, licensed psychologist, or a
+licensed psychiatrist. The supervisor must also comply with supervision requirements
+established by the BBS.
+Psychological Associate
+Registered Psychological Associates must deliver services under the direction and
+supervision of a licensed clinical psychologist who is certified by the California Board of
+Psychology. Supervision must occur within the same setting where services are provided,
+this includes physical locations where Medi-Cal members are served as required by 16 CCR
+Section 1391.5. The supervisor must also comply with supervision requirements established
+by the California Board of Psychiatry.››
+[[page 11]]
+rural
+11
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs)
+Page updated: July 2026
+End of Life Services
+Refer to the End of Life Option Act Services section of the appropriate Part 2 manual for
+additional information.
+Telehealth
+Overview
+Policy related to telehealth is established pursuant to Assembly Bill 415 (Logue, Chapter
+547, Statutes of 2011), known as the Telehealth Advancement Act of 2011 Welfare and
+Institutions Code 14132.100. ‹‹Providers should refer to the Telehealth Modalities section in
+the appropriate Part 2 manual for additional information.
+Definitions
+For purposes of this policy, the following definitions shall apply:
+Telehealth and Other Terms
+For definitions of “telehealth,” “audio-only,” “asynchronous store and forward,” “synchronous
+interaction,” “distant site” and “originating site,” providers may refer to the Telehealth
+Modalities section in the appropriate Part 2 manual.
+Visit
+Providers should refer to “‘Visit’ Defined” in this manual section.
+Note: Telehealth services must meet all billing requirements that would have applied if the
+applicable services were delivered via a face-to-face encounter with a billable
+provider and meet the applicable standard of care.
+‹‹A RHC or FQHC patient who receives telehealth services shall otherwise be eligible
+to receive in-person services from that RHC or FQHC pursuant to Health Resources
+Services Administration requirements.››
+Billable Provider
+Providers may refer to “RHC and FQHC Covered Services” in this manual section.
+[[page 12]]
+rural
+12
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs)
+Page updated: July 2026
+New Patient
+RHCs and FQHCs are not precluded from establishing a new patient relationship through a
+synchronous video interaction or asynchronous store and forward if all the following
+conditions are met:
+• The patient is physically present at an originating site that is a licensed or intermittent
+site of the RHC or FQHC at the time the service is performed.
+• The individual who creates the patient records at the originating site is an employee or
+contractor of the RHC or FQHC, or other person lawfully authorized by the FQHC or
+RHC to create a patient record.
+• The RHC or FQHC determines that the billing provider is able to meet the applicable
+standard of care.
+• A RHC or FQHC patient who receives telehealth services shall otherwise be eligible to
+receive in-person services.
+Established Patient
+A Medi-Cal eligible recipient who meets one or more of the following conditions:
+• The patient has a health record with the RHC or FQHC that was created or updated
+during a visit that occurred in the clinic or during a synchronous telehealth visit in a
+patient’s residence or home with a clinic provider and a billable provider at the clinic.
+The patient’s health record must have been created or updated within the previous
+three years.
+• The patient is homeless, homebound or a migratory or seasonal worker (HHMS) and
+has an established health record that was created from a visit occurring within the last
+three years that was provided outside the originating site clinic, but within the RHC’s or
+FQHC’s service area. All consent for telehealth services for these patients must be
+documented.
+• The patient is assigned to the RHC or FQHC by their managed care plan (MCP)
+pursuant to a written agreement between the plan and the RHC or FQHC.
+Originating Site and Transmission Fee
+RHCs and FQHCs are not eligible to bill an originating site fee or transmission charges. The
+costs of these services should be included in the PPS or AIR rate, as applicable.
+[[page 13]]
+rural
+13
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs)
+Page updated: July 2026
+Documentation Requirements
+Providers should refer to the Telehealth Modalities section in the appropriate Part 2 manual.
+Documentation of telehealth visits follows the same documentation practices in place for
+in-person visits. The billable provider must satisfy all of the procedural and technical
+components of the Medi-Cal covered service or benefit being provided, except for the
+face-to-face component, which would include, but not be limited to:
+• A detailed patient history
+• A complete description of what Medi-Cal covered benefit or service was provided
+• An assessment/examination of the following:
+– issues being raised by the patient,
+– medical decision-making by the health care practitioner of low, moderate, or high
+complexity, as applicable, which should include items such as pertinent
+diagnosis(es) at the conclusion of the visit, and
+– any recommendations for diagnostic studies, follow-up, or treatments, including
+prescriptions.
+Documentation for any type of non-face to face service should also include the method of
+telehealth, provider and patient locations, clinical participants, and patient consent.
+Consent
+Providers should refer to the Telehealth Modalities section in the appropriate Part 2 manual.
+[[page 14]]
+rural
+14
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs)
+Page updated: July 2026
+Patient Choice of Telehealth Modality
+Medi-Cal providers can offer a variety of telehealth modalities for covered Medi-Cal services
+to the extent that the service can be appropriately rendered via the allowable telehealth
+modalities.
+Providers shall refer to the DHCS Patient Choice of Telehealth policy in the Telehealth
+Modalities section in the appropriate Part 2 manual.
+Exception to Telehealth Modalities Provider Requirement
+Since broadband is necessary to ensure quality and effective communication between
+Medi-Cal providers and recipients, Medi-Cal providers are exempt from the requirement to
+offer both telehealth modalities if the Medi-Cal providers does not have access to
+broadband.
+Providers shall refer to the DHCS Exception to Telehealth Modalities Provider Requirement
+policy in the Telehealth Modalities section in the appropriate Part 2 manual.
+Right to In-person Services
+Medi-Cal providers furnishing services to Medi-Cal recipients through telehealth modalities
+must also either offer services in-person or have a documented process in place to link
+Medi-Cal recipients to in-person care within a reasonable time if in-person services are
+unavailable from the provider.
+Providers shall refer to the DHCS Right to In-Person Services policy in the Telehealth
+Modalities section in the appropriate Part 2 manual.
+Covered Services
+Services rendered via telehealth must be RHC or FQHC covered services.
+Non-Covered Services
+An e-consult, e-visit, or remote patient monitoring is not a reimbursable telehealth service for
+RHCs or FQHCs.
+Providers should also refer to “Examples of Services Not Appropriate for Telehealth” in the
+Telehealth Modalities section in the appropriate Part 2 manual.
+[[page 15]]
+rural
+15
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs)
+Page updated: July 2026
+Synchronous Telehealth Reimbursement Requirements
+Synchronous interaction means a real-time audio-visual, two-way interaction between a new
+or established patient and a RHC or FQHC billable provider at a distant site.
+Medi-Cal benefits or services being provided are clinically appropriate and meet the
+procedural and billing requirements that would have applied if the applicable services were
+delivered via a face-to-face encounter.
+‹‹A RHC or FQHC patient who receives telehealth services shall otherwise be eligible to
+receive in-person services from the RHC or FQHC pursuant to the federal Health Resources
+Services Administration requirements.››
+A patient may be “established” via synchronous interaction if all of the conditions of the “New
+Patient” requirements in this manual section are met.
+Asynchronous Store and Forward Reimbursement Requirements
+Asynchronous store and forward means the transmission of a patient’s medical information
+from an originating site to the billable provider at a distant site.
+Medi-Cal benefits or services being provided are clinically appropriate and meet the
+procedural and billing requirements that would have applied if the applicable services were
+delivered via a face-to-face encounter.
+A patient may be “established” on an asynchronous store and forward service, if all of the
+conditions of the “New Patient” requirements in this manual section are met.
+Note: Providers should note “Non-Covered Services” in this manual section.
+Audio Only Reimbursement Requirements
+An audio-only synchronous interaction is eligible for reimbursement if provided by a billable
+provider and RHC or FQHC patient.
+Medi-Cal benefits or services being provided are clinically appropriate and meet the
+procedural and billing requirements that would have applied if the applicable services were
+delivered via a face-to-face encounter.
+A patient may not be “established” using an audio-only synchronous interaction unless the
+visit is related to a “sensitive service”, as defined in the California Civil Code, section 56.05,
+subdivision (n), or if the patient requests “audio only” or does not have access to video.
+[[page 16]]
+rural
+16
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs)
+Page updated: July 2026
+Additional Billing and Reimbursement Policy
+Services provided through telehealth are subject to the same program restrictions,
+limitations, and coverage that exist when the service is provided in-person.
+Telehealth services are billed utilizing existing claiming processes that include billing the
+appropriate managed care plan first. If applicable, once the managed care plan payment is
+received, submit the claim to the Med-Cal Fiscal Intermediary for the Prospective Payment
+System (PPS) rate wrap.
+Only one visit or store and forward service may be billed at the PPS rate when there is a
+service payment contract with a non-RHC or FQHC, contractor, or another RHC or FQHC.
+Conversely, the non-RHC or FQHC or contractor may request fee-for-service reimbursement
+for a visit or store and forward service directly from the appropriate managed care plan or
+the Medi-Cal Fiscal Intermediary if no service payment contract exists with the RHC or
+FQHC.
+RHCs and FQHCs must use the appropriate telehealth modifier when billing for the covered
+service.
+Note: RHCs and FQHCs cannot use billing codes G2010 and G2017, which are for fee-for-
+service providers.
+For more information on appropriate modifiers, providers should refer to the Rural Health
+Clinics (RHCs) and Federally Qualified Health Centers (FQHCs): Billing Codes manual
+section and “Billing Requirements” in the Telehealth Modalities manual section in the
+appropriate Part 2 manual. Providers should also refer to “Reimbursable Telehealth
+Services”, and “Examples of Services Not Appropriate for Telehealth” in the Telehealth
+Modalities manual section in the appropriate Part 2 manual, as well as the telehealth billing
+scenarios in this section of the manual and Rural Health Clinics (RHCs) and Federally
+Qualified Health Centers (FQHCs): Billing Codes manual section.
+Location of Provider or Patient
+The billable provider, employed or under direct contract with a RHC or FQHC can respond
+from any location, including their home, during a time that they are scheduled to work for the
+RHC or FQHC.
+For the purposes of payment for covered treatment or services provided through telehealth,
+the department shall not limit the type of setting where services are provided for the patient
+or by the health care provider.
+[[page 17]]
+rural
+17
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs)
+Page updated: July 2026
+Synchronous Telehealth
+Originating Site Location
+of Patient
+Distant Site Location of
+Telehealth Provider
+Billing and
+Reimbursement Policy
+RHC or FQHC Corporation
+(Corp) A – Site 1
+New or established patient
+with non-billable provider
+RHC or FQHC Corp A – Site
+2
+Billable provider
+RHC or FQHC Corp A – Site
+2 can bill one visit at the
+PPS rate.
+RHC or FQHC Corp A – Site
+1
+New or established patient
+with billable provider
+RHC or FQHC Corp A – Site
+2
+Billable provider
+Only one site can bill one
+visit at the PPS rate.
+RHC or FQHC Corp A
+New or established patient
+with non-billable provider
+RHC or FQHC Corp B
+Billable provider
+RHC or FQH Corp B can bill
+one visit at the PPS rate.
+No PPS rate reimbursement
+is permitted for FQHC/RHC
+Corp A.
+RHC or FQHC Corp A
+New or established patient
+with billable provider
+RHC or FQHC Corp B
+Billable provider
+RHC or FQHC Corp A can
+bill one visit at the PPS rate
+if it is medically necessary
+for a billable provider to be
+present.
+RHC or FQHC Corp B can
+bill one visit at the PPS rate.
+RHC or FQHC Corp A
+New or established patient
+with non-billable provider
+Non-RHC or FQHC Medi-
+Cal Provider
+Billable provider
+(no service payment
+contract)
+The provider at the
+non-RHC or FQHC can bill
+the MCP or fee-for-service
+directly if no service
+payment contract exists
+between RHC or FQHC
+Corp A and the non-
+FQHC/RHC billable
+provider.
+No PPS rate reimbursement
+is permitted for RHC or
+FQHC Corp A.
+[[page 18]]
+rural
+18
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs)
+Page updated: July 2026
+Synchronous Telehealth (continued)
+Originating Site Location
+of Patient
+Distant Site Location of
+Telehealth Provider
+Billing and
+Reimbursement Policy
+RHC or FQHC Corp A
+New or established patient
+with billable provider
+Non-RHC or FQHC
+Medi-Cal Provider
+Billable provider
+(no service payment
+contract)
+RHC or FQHC Corp A can
+bill one visit at the PPS rate
+if it is medically necessary
+for a billable provider to be
+present.
+The provider at the
+non-RHC or FQHC can bill
+the MCP or fee-for-service
+directly if no service
+payment contract exists
+between RHC or FQHC
+Corp A and the non-RHC or
+FQHC billable provider.
+Non-RHC or FQHC
+Medi-Cal Provider
+New or established patient
+with non-billable provider
+RHC or FQHC Corp A
+Billable provider
+RHC or FQHC Corp A can
+bill one visit at the PPS rate.
+No PPS rate reimbursement
+is permitted for the
+non-RHC or FQHC.
+Non-RHC or FQHC
+Medi-Cal Provider
+New or established patient
+with billable provider (no
+service payment contract)
+RHC or FQHC Corp A
+Billable provider
+The non-RHC or FQHC can
+bill the MCP or fee-for-
+service directly if no service
+payment contract exists
+between RHC or FQHC
+Corp A and the non-RHC or
+FQHC billable provider.
+RHC or FQHC Corp A can
+bill one visit at the PPS rate.
+[[page 19]]
+rural
+19
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs)
+Page updated: July 2026
+Asynchronous Store and Forward Telehealth
+Originating Site Location
+of Patient
+Distant Site Location of
+Telehealth Provider
+Billing and
+Reimbursement Policy
+RHC or FQHC Corp A – Site
+1
+New or established patient
+with non-billable provider
+RHC or FQHC Corp A – Site
+2
+Billable provider
+RHC or FQHC Corp A – Site
+2 can bill one visit at PPS
+rate.
+RHC or FQHC Corp A – Site
+1
+New or established patient
+with billable provider
+RHC or FQHC Corp A – Site
+2
+Billable provider
+Only one site can bill one
+visit at the PPS rate.
+RHC or FQHC Corp A – Site
+1
+New or established patient
+with non-billable provider
+RHC or FQHC Corp B
+Billable provider
+RHC or FQHC Corp B can
+bill one visit at the PPS rate.
+No PPS rate reimbursement
+is permitted for RHC or
+FQHC Corp A.
+RHC or FQHC Corp A
+New or established patient
+with billable provider
+RHC or FQHC Corp B
+Billable provider
+(with or without service
+payment contract)
+Only one site can bill one
+visit at the PPS rate.
+RHC or FQHC Corp A
+New or established patient
+with non-billable provider
+Non-RHC or FQHC Medi-
+Cal Provider
+Billable provider
+(no service payment
+contract)
+The provider at the
+non-RHC or FQHC can bill
+the MCP or fee-for-service
+directly if no service
+payment contract exists
+between RHC or FQHC
+Corp A and the non-RHC or
+FQHC billable provider.
+No PPS rate reimbursement
+is permitted for RHC or
+FQHC Corp A.
+RHC or FQHC Corp A
+New or established patient
+with non-billable provider
+Non-RHC or FQHC Medi-
+Cal Provider
+Billable provider
+(with service payment
+contract)
+RHC or FQHC Corp A can
+bill PPS rate on behalf of the
+non-RHC or FQHC Medi-Cal
+provider since the distant
+site’s billable provider has a
+payment contract.
+Note: The non-RHC or
+FQHC provider cannot bill
+the MCP or fee-for-service
+directly.
+[[page 20]]
+rural
+20
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs)
+Page updated: July 2026
+Asynchronous Store and Forward Telehealth (continued)
+Originating Site Location
+of Patient
+Distant Site Location of
+Telehealth Provider
+Billing and
+Reimbursement Policy
+RHC or FQHC Corp A
+New or established patient
+with billable provider
+Non-RHC or FQHC
+Medi-Cal Provider
+Billable provider
+(no service payment
+contract)
+RHC or FQHC Corp A can
+bill one visit at the PPS rate
+if it is medically necessary
+for a billable provider to be
+present.
+The provider at the
+non-RHC or FQHC can bill
+the MCP or fee-for-service
+directly if no service
+payment contract exists
+between RHC or FQHC
+Corp A and the non-RHC or
+FQHC billable provider.
+Non-RHC or FQHC
+Medi-Cal Provider
+New or established patient
+with non-billable provider
+RHC or FQHC Corp A
+Billable provider
+(service payment contract)
+RHC Corp A can bill one
+visit at the PPS rate.
+No PPS rate reimbursement
+is permitted for the
+non-RHC or FQHC.
+Non-RHC or FQHC
+Medi-Cal Provider
+New or established patient
+with billable provider
+(no service payment
+contract)
+RHC or FQHC Corp A
+Billable provider
+The non-RHC or FQHC can
+bill the MCP or fee-for-
+service directly if a Medi-Cal
+covered service is
+performed and if no service
+payment contract exists
+between RHC or FQHC
+Corp A and the non-RHC or
+FQHC billable provider.
+RHC or FQHC Corp A can
+bill one visit at the PPS rate.
+[[page 21]]
+rural
+21
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs)
+Page updated: July 2026
+Justice-Involved (JI) Services
+RHC and FQHC providers may receive fee-for-service for Care Management bundles 1
+through 5 and Behavioral Health Warm Handoff codes. For details related to JI-covered
+services, documentation requirements, eligibility criteria, and claim submission, refer to the
+Justice-Involved (JI) Pre-Release Services manual section.
+[[page 22]]
+rural
+22
+Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs)
+Page updated: July 2026
+Legend
+Symbols used in the document above are explained in the following table.
+Symbol Description
+‹‹ This is a change mark symbol. It is used to indicate where on the page the
+most recent change begins.
+›› This is a change mark symbol. It is used to indicate where on the page the
+most recent change ends.
+* If the patient is not enrolled in a Medi-Cal Dental managed care plan, a
+straight Medi-Cal dental visit may be billed, per visit code 03.

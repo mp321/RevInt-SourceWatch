@@ -32,7 +32,7 @@ Heads-up: some watched sources (the DHCS fee schedules, NCCI quarterly files) ar
 
 ## Reading an alert
 
-Each alert lists the flagged sources with status, link, a "Codes touched" section (added / removed, with `url#page=N` deep links for PDFs), and a link to the exact before/after diff when text changed. In the diff, `-` lines were removed and `+` lines added. Always verify against the live official source before acting, then route: provider communication, superbill or tipsheet update, Epic review (charge master, preference lists, claim edits, ICD-10 mappings). Keep Epic build details out of this public repo.
+Each alert lists the flagged sources with status, link, a "Codes touched" section (added / removed, with `url#page=N` deep links for PDFs), and a link to the exact before/after diff when text changed. In the diff, `-` lines were removed and `+` lines added. Always verify against the live official source before acting, then route: provider communication, superbill or tipsheet update, Epic review (chargemaster, preference lists, claim edits, ICD-10 mappings). Keep Epic build details out of this public repo.
 
 ## Code extraction heuristic
 
@@ -64,7 +64,7 @@ Exit code 1 when anything needs review.
 
 ## Add a source or program
 
-Edit `watchlist.yaml`. Toggle a program with `enabled:`. Entry types: `pdf`, `html`, `binary`, `linkpage` (set `link_pattern`), `bulletin_probe`, `manual_list` (portal JSON endpoint, per-document monitoring). `manual: true` marks sources that cannot be fetched automatically (robots.txt, bot walls); they report MANUAL_REVIEW on a cadence. `master_keys` and `master_note` tie a flag to the registry rows to re-verify. Versioned artifacts (fee schedules, NCCI quarterly files): watch the linking page, not just the file.
+Edit `watchlist.yaml`. Toggle a program with `enabled:`. Entry types: `pdf`, `html`, `binary`, `linkpage` (set `link_pattern`), `bulletin_probe`, `manual_list` (portal JSON endpoint, per-document monitoring). `manual: true` marks sources that cannot be fetched automatically (robots.txt, bot walls); they report MANUAL_REVIEW on a cadence. `registry_keys` and `registry_note` tie a flag to the registry rows to re-verify. Versioned artifacts (fee schedules, NCCI quarterly files): watch the linking page, not just the file.
 
 ## Statuses
 

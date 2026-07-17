@@ -13,9 +13,24 @@ sessions should read this file plus README.md before touching code.
   Telltales: `__typename: directus_files`, `_eq` filter syntax,
   `GraphQLStringOrFloat` scalar, `filename_download`, `modified_on`.
 - The manual page fires operation `CommunityManuals` with variables
-  `{"communityId": "25"}`. communityId 25 = Family PACT (group
-  `group_part_identifier: "Specialty Program"`). The FQHC manual page
-  (`?community=rural`) will use a different numeric id, not yet captured.
+  `{"communityId": "25"}`. communityId 25 = Family PACT.
+- FULL COMMUNITY CATALOG (captured 2026-07-17 via the public token - the
+  `communities` collection IS readable with it, no DevTools needed):
+  1 Acupuncture, 2 Audiology/Hearing Aids, 3 Chiropractic, 4 DME,
+  5 Medical Transportation, 6 Orthotics/Prosthetics, 7 Psychological,
+  8 Therapies, 9 Inpatient Services (115 docs), 10 Medi-Cal Waiver,
+  11 Clinics and Hospitals (246 docs), 12 Chronic Dialysis, 13 CBAS,
+  14 Heroin Detox, 15 Home Health/HCBS, 16 Hospice, 17 LEA, 18 MSSP,
+  19 Rehabilitation Clinics, 20 Long Term Care, 21 General Medicine
+  (229 docs), 22 Obstetrics, 23 Pharmacy, 24 Vision Care,
+  25 Family PACT (24 docs), 26 Medi-Cal Program & Eligibility.
+- Portal slugs are slugified community_name ("family-pact",
+  "clinics-and-hospitals"). `?community=rural` is NOT a valid slug (zero
+  hits in the SPA bundle); there is no RHC/FQHC community. The RHC/FQHC
+  manual is the rural* filename family inside Clinics and Hospitals -
+  watched via a filename-filtered manuals query (fqhc_rural_manual_docs,
+  filter `file.filename_download _starts_with "rural"`). For big
+  communities, filter by filename; do not watch 200+ docs wholesale.
 
 ## Auth: the decisive finding
 
@@ -54,8 +69,9 @@ sessions should read this file plus README.md before touching code.
 - `fpact_manual_docs` cannot run anonymously at all; the list itself is
   blocked, not just the PDFs. It needs the browser's credential or it stays
   CONFIG_TODO with honest fine print.
-- `medical_rates_page` IS readable anonymously today, so
-  `ffs_rates_page_mcweb` can become a real detector with no auth work.
+- `medical_rates_page` IS readable anonymously today. (The blind-shell
+  rates entry was dropped from the watchlist in v1.4; this collection is
+  the way back in if rate detection is ever wanted - no auth work needed.)
 - If a token grants the list but not `directus_files`, degrade to
   metadata-only detection: compare `file.modified_on` and `file.id` churn
   per document. No content hash, no text diff; verdict should say so
@@ -80,8 +96,9 @@ sessions should read this file plus README.md before touching code.
 - Changed on 2026-07-16 around 16:28-16:29 (flagged for immediate human
   review): progstand.pdf (Program Standards, manuals.id 424) and
   provenrollres.pdf (Provider Enrollment and Responsibilities,
-  manuals.id 594). Provider enrollment maps to the master rows under the
-  fpact_enrollment entry.
+  manuals.id 594). Provider enrollment maps to the provider-enrollment /
+  site-certifier registry rows (the standalone fpact_enrollment entry was
+  dropped in watchlist v1.4).
 
 ## Working query (trimmed)
 

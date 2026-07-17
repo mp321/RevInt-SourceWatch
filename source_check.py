@@ -2,9 +2,9 @@
 """
 source_check.py - SF DPH Revenue Integrity multi-program source change-checker.
 
-v1.4. Keeps the v1.2 engine (conditional GETs, robots.txt, redirect guard,
+v1.5. Keeps the v1.2 engine (conditional GETs, robots.txt, redirect guard,
 entry types pdf/html/binary/linkpage/bulletin_probe, BLIND_SHELL honesty,
-manual entries, master_keys mapping) and adds four things:
+manual entries, registry_keys mapping) and adds four things:
 
   1. Snapshots + diffs. The extracted text of every pdf/html source is stored
      under snapshots/. On CHANGED, a unified before/after diff is written to
@@ -24,7 +24,7 @@ manual entries, master_keys mapping) and adds four things:
      for alerting (GitHub Issue body).
 
 A change verdict means one thing only: a human re-reads that source and, if
-needed, updates the Master sheet. Nothing is written to any system of record.
+needed, updates the registry. Nothing is written to any system of record.
 Decision support, not a source of truth.
 
 Run:
@@ -66,7 +66,10 @@ DATE_RE = re.compile(r"Page updated:\s*([A-Za-z]+\s+\d{4})")
 DEFAULT_LINK_RE = r'href="([^"]+\.pdf[^"]*)"'
 NEEDS_REVIEW = {"NEW", "CHANGED", "DATE_CHANGED", "LINKS_CHANGED",
                 "NEW_ISSUE", "URL_CHANGED_IN_CONFIG", "REMOVED",
-                "CHANGED_METADATA_ONLY", "LIST_TRUNCATED"}
+                "CHANGED_METADATA_ONLY", "LIST_TRUNCATED",
+                "REVISION_NOTICE"}
+# REVISION_NOTICE alerts like the rest (exit code, change log, issue) but
+# the dashboard renders it in its own lower-priority section.
 DIFF_MAX_LINES = 3000
 
 # Self-heal: a read-only Directus SPA bakes a static public token into its
@@ -215,6 +218,20 @@ def extract_code_entries(diff_lines: list[str], old_text: str = "",
     return sorted(entries.values(),
                   key=lambda e: (conf_order[e["confidence"]],
                                  e["system"], e["code"]))
+
+
+def entry_registry(entry: dict) -> tuple[list, str]:
+    """(keys, note) from a watchlist entry; reads the v1.5 registry_* keys
+    with fallback to the pre-rename master_* keys."""
+    return (entry.get("registry_keys", entry.get("master_keys", [])) or [],
+            entry.get("registry_note", entry.get("master_note", "")) or "")
+
+
+def registry_of(r: dict) -> tuple[str, str]:
+    """(keys, scope) from a result row; older stored reports carry the
+    pre-v1.5 master_* row keys, so read both."""
+    return (r.get("registry_keys") or r.get("master_keys") or "",
+            r.get("registry_note") or r.get("master_note") or "")
 
 
 def download_note(url: str) -> str:
@@ -839,12 +856,13 @@ def check_manual_list(entry: dict, base: dict, fetch: Fetcher, snaps: SnapshotSt
     frag: dict = {}
 
     def row(rid, verdict, detail, url="", page_updated="", report=""):
+        rkeys, rnote = entry_registry(entry)
         return {"program": program, "id": rid, "checked_at": ts,
                 "type": "manual_list", "verdict": verdict, "detail": detail,
                 "page_updated": page_updated, "shell": "", "http": "",
                 "url": url or entry.get("url", ""),
-                "master_keys": ";".join(entry.get("master_keys", [])),
-                "master_note": entry.get("master_note", ""),
+                "registry_keys": ";".join(rkeys),
+                "registry_note": rnote,
                 "note": entry.get("note", ""), "diff_report": report}
 
     if not entry.get("url"):
@@ -1034,6 +1052,137 @@ def check_manual_list(entry: dict, base: dict, fetch: Fetcher, snaps: SnapshotSt
     return rows, frag
 
 
+# ---------------------------------------------------- revision_watch entry --
+# Same CommunityManuals query the portal fires, but used metadata-only: no
+# asset downloads, so it is light enough for 200+ section communities.
+REVISION_QUERY = (
+    "query CommunityManuals($communityId: GraphQLStringOrFloat) { "
+    "manuals(filter: {community: {communities_id: {id: {_eq: $communityId}}}}, "
+    'sort: ["file.filename_download"], limit: -1) { id title file { id '
+    "filename_download modified_on } } "
+    "manuals_aggregated(filter: {community: {communities_id: {id: {_eq: "
+    "$communityId}}}}) { count { id } } }")
+
+
+def revision_changes(prev_docs: dict, cur_docs: dict) -> list[str]:
+    """Human-readable per-section revision-date movements between two
+    {doc_id: {title, revision_date}} maps. Pure, for the pytest."""
+    def t(d):
+        title = (d.get("title") or "").strip()
+        return title[:70] + ("..." if len(title) > 70 else "")
+
+    out = []
+    for did in sorted(cur_docs):
+        d, p = cur_docs[did], prev_docs.get(did)
+        if p is None:
+            out.append(f"new section '{t(d)}' "
+                       f"({(d.get('revision_date') or '?')[:10]})")
+        elif (d.get("revision_date") or "") != (p.get("revision_date") or ""):
+            out.append(f"'{t(d)}' revised "
+                       f"{(p.get('revision_date') or '?')[:10]} -> "
+                       f"{(d.get('revision_date') or '?')[:10]}")
+    for did in sorted(prev_docs):
+        if did not in cur_docs:
+            out.append(f"section removed: '{t(prev_docs[did])}'")
+    return out
+
+
+def check_revision_watch(entry: dict, base: dict, fetch: Fetcher,
+                         ts: str) -> tuple[list[dict], dict]:
+    """Metadata-only watch of one community's manual list. Compares each
+    section's portal Revision Date with the previous run and emits a single
+    lower-priority REVISION_NOTICE row naming the moved sections. Never
+    downloads a PDF; the full-monitoring path for that is manual_list."""
+    eid, program = entry["id"], entry["program"]
+    portal = entry.get("portal_page") or entry.get("url", "")
+    rkeys, rnote = entry_registry(entry)
+
+    def row(verdict, detail):
+        return {"program": program, "id": eid, "checked_at": ts,
+                "type": "revision_watch", "verdict": verdict, "detail": detail,
+                "page_updated": "", "shell": "", "http": "",
+                "url": portal, "registry_keys": ";".join(rkeys),
+                "registry_note": rnote, "note": entry.get("note", ""),
+                "diff_report": ""}
+
+    prev = base.get(eid, {})
+    env_name = entry.get("auth_header_env")
+    token = (os.environ.get(env_name) or "").strip() if env_name else ""
+    used_bundle = False
+    if not token and entry.get("token_bundle_url"):
+        token = read_bundle_token(fetch, entry["token_bundle_url"],
+                                  entry.get("token_bundle_re"))
+        used_bundle = bool(token)
+    hdrs = auth_headers(token)
+    body = {"operationName": "CommunityManuals",
+            "variables": {"communityId": str(entry.get("community_id", ""))},
+            "query": REVISION_QUERY}
+
+    def fetch_list(h):
+        for attempt in range(2):
+            try:
+                return fetch.post_json(entry["url"], body, h)
+            except requests.RequestException:
+                if attempt == 1:
+                    raise
+                time.sleep(3)
+
+    try:
+        resp = fetch_list(hdrs)
+    except requests.RequestException as exc:
+        return [row("UNREACHABLE", f"list endpoint error: {exc}")], {eid: prev}
+    time.sleep(SLEEP)
+    # Same self-heal as manual_list: an auth failure with the env token
+    # means it rotated; re-read the public bundle token and retry once.
+    if (resp["status"] in ("400", "401", "403") and not used_bundle
+            and entry.get("token_bundle_url")):
+        token = read_bundle_token(fetch, entry["token_bundle_url"],
+                                  entry.get("token_bundle_re"))
+        if token:
+            hdrs, used_bundle = auth_headers(token), True
+            try:
+                resp = fetch_list(hdrs)
+            except requests.RequestException as exc:
+                return [row("UNREACHABLE",
+                            f"list endpoint error: {exc}")], {eid: prev}
+            time.sleep(SLEEP)
+    if resp["status"] != "200":
+        return [row("UNREACHABLE",
+                    f"list endpoint http {resp['status']}")], {eid: prev}
+    try:
+        docs, expected = parse_manual_list(resp["content"], "")
+    except Exception as exc:
+        return [row("UNREACHABLE",
+                    f"list endpoint parse error: {exc}")], {eid: prev}
+    if not docs:
+        return [row("UNREACHABLE", "endpoint returned no documents")], {eid: prev}
+
+    rows = []
+    if expected is not None and expected != len(docs):
+        rows.append(row("LIST_TRUNCATED",
+                        f"aggregate count {expected} != {len(docs)} parsed "
+                        "docs; list may be truncated - verify the portal"))
+    cur = {d["doc_id"]: {"title": d["title"],
+                         "revision_date": d["revision_date"]} for d in docs}
+    frag = {eid: {"url": portal, "docs": cur, "checked_at": ts}}
+    prev_docs = prev.get("docs", {})
+    if not prev_docs:
+        rows.append(row("NEW", f"baseline recorded for {len(cur)} manual "
+                               "sections (revision dates only)"))
+        return rows, frag
+    changes = revision_changes(prev_docs, cur)
+    if changes:
+        shown = "; ".join(changes[:5])
+        more = f"; and {len(changes) - 5} more" if len(changes) > 5 else ""
+        rows.append(row("REVISION_NOTICE",
+                        f"{len(changes)} of {len(cur)} manual sections moved: "
+                        f"{shown}{more}"))
+    else:
+        rows.append(row("unchanged",
+                        f"{len(cur)} sections, no revision-date movement"))
+    return rows, frag
+
+
 # --------------------------------------------------------------- dashboard --
 # GitHub Pages serves the /docs folder only, so a repo-relative link like
 # reports/diffs/x.md 404s on the published site, and viewed on github.com it
@@ -1095,7 +1244,26 @@ PROGRAM_NAMES = {
     "managed_medi_cal": "Managed Medi-Cal",
     "fqhc": "FQHC",
     "ncci": "NCCI",
+    "revision_notices": "Manual Revision Notices",
 }
+
+# Host -> text color for the source-URL list: one bold dark color per
+# website so rows from the same site are easy to group by eye. Muted darks
+# only - distinguishable, not loud. Unknown hosts fall back to slate gray.
+HOST_COLORS = {
+    "www.dhcs.ca.gov": "#1f4e79",                        # dark blue
+    "familypact.org": "#14632e",                         # dark green
+    "mcweb.apps.prd.cammis.medi-cal.ca.gov": "#5b2d86",  # dark purple
+    "www.cms.gov": "#8b1a1a",                            # dark red
+    "leginfo.legislature.ca.gov": "#6b4e00",             # dark amber
+    "www.ecfr.gov": "#0e5f5f",                           # dark teal
+    "medi-calrx.dhcs.ca.gov": "#7a3d63",                 # dark plum
+}
+
+
+def host_color(url: str) -> str:
+    return HOST_COLORS.get(urlparse(url or "").hostname or "", "#374151")
+
 
 TYPE_HOW = {
     "pdf": "The PDF is downloaded (conditional GET - the server may answer "
@@ -1116,6 +1284,11 @@ TYPE_HOW = {
                    "it lists is watched individually (PDF text hash plus the "
                    "portal's revision date). New documents are auto-discovered "
                    "and removals are flagged.",
+    "revision_watch": "The portal's manual list for this community is queried "
+                      "for metadata only - no PDFs are downloaded. Each "
+                      "section's Revision Date is compared with the previous "
+                      "run; movement produces a lower-priority revision "
+                      "notice naming the sections.",
 }
 
 # badge kind -> (label, text color, background). Plain inline-styled spans,
@@ -1123,6 +1296,7 @@ TYPE_HOW = {
 # HTML, need no font support, and read fine to a screen reader.
 BADGE_STYLE = {
     "review": ("Needs review", "#7a271a", "#ffebe9"),
+    "notice": ("Revision notice", "#1e4a7a", "#e8f1fb"),
     "gap":    ("Can't verify", "#7a4a00", "#fff6e0"),
     "ok":     ("Clear",        "#0f5132", "#e6f4ea"),
     "unknown": ("Unknown",     "#374151", "#f1f3f5"),
@@ -1141,7 +1315,7 @@ VERDICT_LEGEND: list[tuple[str, str, str, str]] = [
     ("CHANGED", "review",
      "The extracted text of this source differs from the last run.",
      "Open the diff to see the exact lines, re-read that part of the live "
-     "source, then verify the listed Master rows (superbill, tipsheet, Epic "
+     "source, then verify the listed registry rows (superbill, tipsheet, Epic "
      "review as applicable)."),
     ("NEW", "review",
      "First run for this source; its current state became the baseline.",
@@ -1157,10 +1331,10 @@ VERDICT_LEGEND: list[tuple[str, str, str, str]] = [
      "watched file was re-versioned, point watchlist.yaml at the new URL."),
     ("NEW_ISSUE", "review",
      "A probed bulletin issue number returned real content.",
-     "Read the new bulletin and triage anything affecting the Master sheet."),
+     "Read the new bulletin and triage anything affecting the registry."),
     ("REMOVED", "review",
      "A document disappeared from the portal's list.",
-     "Check the portal: retired, renamed, or moved? Update the Master sheet "
+     "Check the portal: retired, renamed, or moved? Update the registry "
      "reference if the section is gone."),
     ("URL_CHANGED_IN_CONFIG", "review",
      "The URL in watchlist.yaml differs from the URL the baseline was built "
@@ -1171,11 +1345,18 @@ VERDICT_LEGEND: list[tuple[str, str, str, str]] = [
      "The portal says this section was revised (new revision date or file id) "
      "but the PDF itself could not be downloaded, so there is no text diff.",
      "Open the section on the portal, re-read it, and verify the listed "
-     "Master rows."),
+     "registry rows."),
     ("LIST_TRUNCATED", "review",
      "The portal returned fewer documents than its own count claims.",
      "Open the portal list and compare; some sections may be silently "
      "unmonitored until this clears."),
+    ("REVISION_NOTICE", "notice",
+     "The Medi-Cal portal moved the Revision Date on one or more manual "
+     "sections in this community. Date-only signal - the section text is "
+     "not monitored here, so there is no diff.",
+     "When time allows, open the community's manual page, skim the sections "
+     "named in the notice, and route anything touching billing codes or the "
+     "chargemaster."),
     ("UNREACHABLE", "gap",
      "The fetch failed this run (HTTP error, network error, robots.txt, or an "
      "off-site redirect) - the Why line says which.",
@@ -1250,10 +1431,11 @@ def plain_why(r: dict) -> str:
     return d
 
 
-def last_change_map(log_path: Path | None) -> dict[str, tuple[str, str]]:
-    """id -> (generated, verdict) of the latest change-log event. The log is
-    append-only chronological, so the last row per id wins."""
-    out: dict[str, tuple[str, str]] = {}
+def last_change_map(log_path: Path | None) -> dict[str, tuple[str, str, str]]:
+    """id -> (generated, verdict, diff_report) of the latest change-log
+    event. The log is append-only chronological, so the last row per id
+    wins."""
+    out: dict[str, tuple[str, str, str]] = {}
     if not log_path or not Path(log_path).exists():
         return out
     try:
@@ -1261,10 +1443,33 @@ def last_change_map(log_path: Path | None) -> dict[str, tuple[str, str]]:
             for row in csv.DictReader(f):
                 if row.get("id"):
                     out[row["id"]] = (row.get("generated", ""),
-                                      row.get("verdict", ""))
+                                      row.get("verdict", ""),
+                                      row.get("diff_report", ""))
     except OSError:
         pass
     return out
+
+
+RECENT_DAYS = 60
+
+
+def recent_cutoff() -> str:
+    """ISO date RECENT_DAYS ago - the 'recently changed' window. Using the
+    date (not a moving 'N days ago' label) keeps same-day rebuilds
+    byte-identical; output only shifts when an event ages out of the
+    window."""
+    from datetime import timedelta
+    return (datetime.now(timezone.utc) - timedelta(days=RECENT_DAYS)
+            ).date().isoformat()
+
+
+def recent_pill(date_iso: str) -> str:
+    """Small inline marker for a source whose last recorded change is
+    inside the recent window."""
+    return (f'<span style="display:inline-block;padding:.05em .5em;'
+            f'border-radius:1em;font-size:.72em;font-weight:600;'
+            f'background:#fff3cd;color:#6b4e00;white-space:nowrap">'
+            f'changed {esc(date_iso)}</span>')
 
 
 def fine_print(r: dict, last_change: dict[str, tuple[str, str]]) -> list[str]:
@@ -1311,15 +1516,15 @@ def fine_print(r: dict, last_change: dict[str, tuple[str, str]]) -> list[str]:
                  else "none since the change log began") + "</li>")
     if r.get("note"):
         li.append(f"<li><b>Watchlist note:</b> {esc(r['note'])}</li>")
-    keys, scope = r.get("master_keys", ""), r.get("master_note", "")
+    keys, scope = registry_of(r)
     if keys or scope:
-        li.append("<li><b>Master rows to verify on change:</b> "
+        li.append("<li><b>Registry rows to verify on change:</b> "
                   + " - ".join(x for x in
                                (f"<code>{esc(keys)}</code>" if keys else "",
                                 esc(scope) if scope else "") if x) + "</li>")
     else:
-        li.append("<li><b>Master rows to verify on change:</b> none mapped in "
-                  "the watchlist; triage by judgment.</li>")
+        li.append("<li><b>Registry rows to verify on change:</b> none mapped "
+                  "in the watchlist; triage by judgment.</li>")
     if r.get("diff_report"):
         rel = repo_rel(r["diff_report"])
         li.append(f'<li><b>Latest diff report:</b> <a href="{blob_url(rel)}">'
@@ -1370,15 +1575,12 @@ def needs_review_item(r: dict) -> list[str]:
     if r.get("page_updated"):
         out.append(f"  - **Revision stamp:** "
                    f"{md_cell(stamps_display(r['page_updated']))}")
-    keys, scope = r.get("master_keys", ""), r.get("master_note", "")
+    keys, scope = registry_of(r)
     if keys or scope:
-        out.append("  - **Master rows to verify:** "
+        out.append("  - **Registry rows to verify:** "
                    + " - ".join(x for x in
                                 (f"`{md_cell(keys)}`" if keys else "",
                                  md_cell(scope) if scope else "") if x))
-    else:
-        out.append("  - **Master rows to verify:** none mapped in the "
-                   "watchlist; triage by judgment.")
     return out
 
 
@@ -1394,39 +1596,39 @@ def write_dashboard(path: Path, report: dict,
     """
     last_change = last_change_map(log_path)
     results = sorted(report["results"], key=lambda r: (r["program"], r["id"]))
-    flagged = [r for r in results if r["verdict"] in NEEDS_REVIEW]
+    flagged = [r for r in results if r["verdict"] in NEEDS_REVIEW
+               and r["verdict"] != "REVISION_NOTICE"]
+    notices = [r for r in results if r["verdict"] == "REVISION_NOTICE"]
     gaps = [r for r in results if r["verdict"] in GAPS]
+    cutoff = recent_cutoff()
 
     lines = [
         "# Revenue Integrity Source Watch", "",
-        "Automated monitor for the official billing sources behind the",
-        "Revenue Integrity registry. **Alert tool only, not a source of",
-        "record.** Verify every flagged item against the live official source",
-        "before acting on it.", "",
-        "Each week an automated run fetches every source listed below, compares "
-        "it against the copy from the previous run, and flags anything that "
-        "changed, disappeared, or could not be checked. A flag here does not "
-        "mean the Master sheet is wrong - it means a human should re-read that "
-        "source and confirm whether anything downstream needs to change. For "
-        f"source definitions, run history, and the full codebase, see the "
-        f"[GitHub repository](https://github.com/{repo_slug()}).", "",
-        f"**Last run:** {report['generated']} - **Needs review: "
-        f"{len(flagged)}**", "",
-        "Where to click: "
-        f"[change review page]({pages_home_url()}changes.html) · "
-        f"[change log (CSV)]({blob_url('reports/changes_log.csv')}) · "
-        f"[reports folder]({tree_url('reports')}) (diff reports land in "
-        "`reports/diffs/`) · "
-        f"[latest raw report (JSON)]({blob_url('reports/latest_report.json')}) · "
-        f"[watchlist definition]({blob_url('watchlist.yaml')})", "",
-        "Statuses like `CHANGED` or `BLIND_SHELL` are explained in the "
-        "[status legend](#status-legend) at the bottom of this page.", "",
+        "Watches the official billing sources behind the Revenue Integrity "
+        "registry and flags whatever changed since the previous weekly run. "
+        "**Alert tool only, not a source of record** - always verify against "
+        "the live official source before acting.", "",
+        f"**Last run:** {report['generated'][:10]} - **needs review: "
+        f"{len(flagged)}**"
+        + (f" - revision notices: {len(notices)}" if notices else ""), "",
+        "**How to read this page:** the short list just below is what needs "
+        "a human right now, followed by lower-priority revision notices and "
+        "everything that changed in the last 60 days. The current status of "
+        "every watched source - including those same items - is further "
+        "down under \"All sources by program\". Status words like `CHANGED` "
+        "are explained in plain terms in the [status legend](#status-legend) "
+        "at the bottom.", "",
+        f"More detail: [change review page]({pages_home_url()}changes.html) "
+        "(one block per change) · "
+        f"[change history (CSV)]({blob_url('reports/changes_log.csv')}) · "
+        f"[watchlist]({blob_url('watchlist.yaml')}) · "
+        f"[all reports]({tree_url('reports')})", "",
     ]
 
-    lines += [f"## Needs review since last run ({len(flagged)})", ""]
+    lines += [f"## Needs review ({len(flagged)})", ""]
     if flagged:
-        lines.append("Work this list top to bottom; every item links straight "
-                     "to the source and, when text changed, to the exact diff.")
+        lines.append("Every item links to the source and, when text changed, "
+                     "to the exact before/after diff.")
         lines.append("")
         for r in flagged:
             lines += needs_review_item(r)
@@ -1436,19 +1638,51 @@ def write_dashboard(path: Path, report: dict,
 
     if gaps:
         lines += [f"### Could not be checked automatically ({len(gaps)})", "",
-                  "Monitoring gaps, not confirmed source changes - these "
-                  "sources are effectively unwatched until fixed. "
-                  "(Permanently manual or blind entries - MANUAL_REVIEW, "
-                  "BLIND_SHELL, PROBE_INCONCLUSIVE - are by design and listed "
-                  "in their program sections with the reason in the fine "
-                  "print.)", ""]
+                  "Monitoring gaps, not source changes - these stay unwatched "
+                  "until fixed. What to do about each status is in the "
+                  "[status legend](#status-legend).", ""]
         for r in gaps:
             title = (f"[{r['id']}]({r['url']})" if r.get("url")
                      else f"`{r['id']}`")
-            lines += [f"- {badge_for(r['verdict'])} `{r['verdict']}` - {title} "
-                      f"_({PROGRAM_NAMES.get(r['program'], r['program'])})_",
-                      f"  - **Why:** {md_cell(plain_why(r))}",
-                      f"  - **What to do:** {md_cell(action_for(r['verdict']))}"]
+            lines.append(f"- {badge_for(r['verdict'])} {title} "
+                         f"_({PROGRAM_NAMES.get(r['program'], r['program'])})_"
+                         f" - {md_cell(plain_why(r))}")
+        lines.append("")
+
+    if notices:
+        lines += [f"### Manual revision notices - lower priority "
+                  f"({len(notices)})", "",
+                  "The Medi-Cal portal moved the Revision Date on manual "
+                  "sections in these communities. Date-only signal, no text "
+                  "diff - when time allows, skim the named sections on the "
+                  "portal and route anything touching billing codes or the "
+                  "chargemaster.", ""]
+        for r in notices:
+            title = (f"[{r['id']}]({r['url']})" if r.get("url")
+                     else f"`{r['id']}`")
+            lines.append(f"- {badge_for(r['verdict'])} {title} - "
+                         f"{md_cell(r.get('detail') or '')}")
+        lines.append("")
+
+    recent = sorted(((g, v, i, df) for i, (g, v, df) in last_change.items()
+                     if g[:10] >= cutoff), reverse=True)
+    if recent:
+        url_by_id = {r["id"]: r.get("url", "") for r in results}
+        lines += [f"## Changed in the last {RECENT_DAYS} days "
+                  f"({len(recent)})", "",
+                  "The recent trail, newest first - use it to confirm what "
+                  "has been communicated downstream. Always verify against "
+                  "the live source before acting.", ""]
+        for g, v, i, df in recent[:30]:
+            link = (f"[{i}]({url_by_id[i]})" if url_by_id.get(i)
+                    else f"`{i}`")
+            extra = (f" - [what changed]({blob_url(repo_rel(df))})"
+                     if df else "")
+            lines.append(f"- {g[:10]} - {link} - `{md_cell(v)}`{extra}")
+        if len(recent) > 30:
+            lines.append(f"- ... and {len(recent) - 30} more in the "
+                         f"[change history (CSV)]"
+                         f"({blob_url('reports/changes_log.csv')})")
         lines.append("")
 
     def anchor(name: str, prog: str) -> str:
@@ -1461,8 +1695,8 @@ def write_dashboard(path: Path, report: dict,
 
     progs = sorted({r["program"] for r in results})
     lines += ["## All sources by program", "",
-              "Programs on this page (every watched source, including the "
-              "quiet ones):", ""]
+              "Every watched source and its current status, including the "
+              "items flagged above. Jump to a program:", ""]
     for prog in progs:
         rs = [r for r in results if r["program"] == prog]
         name = PROGRAM_NAMES.get(prog, prog)
@@ -1471,16 +1705,18 @@ def write_dashboard(path: Path, report: dict,
                      f"{'s' if len(rs) != 1 else ''}"
                      + (f", {n_flag} needs review" if n_flag else ""))
     lines += ["",
-              "Each block: the status line first, then (indented) the source "
-              "link and a Details fold-out with exactly what is checked and "
-              "its caveats.", ""]
+              "Each source: status first, then its links, then a Details "
+              "fold-out with exactly what is checked and the caveats.", ""]
     for prog in progs:
         rs = [r for r in results if r["program"] == prog]
         name = PROGRAM_NAMES.get(prog, prog)
-        lines += [f"### {name} (`{prog}`)", ""]
+        lines += [f"### {name} (`{prog.upper()}`)", ""]
         for r in rs:
+            lc = last_change.get(r["id"])
+            pill = (f" {recent_pill(lc[0][:10])}"
+                    if lc and lc[0][:10] >= cutoff else "")
             lines.append(f"#### {badge_for(r['verdict'])} {r['id']} - "
-                         f"`{r['verdict']}`")
+                         f"`{r['verdict']}`{pill}")
             lines.append("")
             bits = []
             if r.get("url"):
@@ -1505,13 +1741,19 @@ def write_dashboard(path: Path, report: dict,
             lines.append("")
 
     lines += ["### Source URLs at a glance", "",
-              "Plain list of every URL this page's data comes from.", "",
-              "```text"]
+              "One row per watched URL, **colored by website** so sources "
+              "from the same site are easy to spot together.", "",
+              '<ul style="list-style:none;padding-left:0;font-size:.85em;'
+              'line-height:1.7">']
     for prog in progs:
         for r in (r for r in results if r["program"] == prog):
             if r.get("url"):
-                lines.append(f"{r['id']}: {r['url']}")
-    lines += ["```", ""]
+                c = host_color(r["url"])
+                lines.append(
+                    f'<li style="color:{c};font-weight:600">{esc(r["id"])} - '
+                    f'<a href="{esc(r["url"])}" style="color:{c}">'
+                    f'{esc(r["url"])}</a></li>')
+    lines += ["</ul>", ""]
 
     lines += ["## Status legend", ""]
     lines.append('<table style="font-size:.85em;line-height:1.45">')
@@ -1589,9 +1831,9 @@ def write_changes_page(path: Path, report: dict,
             lines.append(f"**Full before/after diff:** [{md_cell(rel)}]"
                          f"({blob_url(rel)})")
             lines.append("")
-        keys, scope = r.get("master_keys", ""), r.get("master_note", "")
+        keys, scope = registry_of(r)
         if keys or scope:
-            lines.append("**Master rows to verify:** "
+            lines.append("**Registry rows to verify:** "
                          + " - ".join(x for x in
                                       (f"`{md_cell(keys)}`" if keys else "",
                                        md_cell(scope) if scope else "") if x))
@@ -1629,12 +1871,12 @@ def append_changes_log(out_dir: Path, report: dict) -> None:
             w = csv.writer(f)
             if new:
                 w.writerow(["generated", "program", "id", "verdict", "detail",
-                            "page_updated", "url", "master_keys", "diff_report"])
+                            "page_updated", "url", "registry_keys", "diff_report"])
             for r in report["results"]:
                 if r["id"] in report["needs_review"]:
                     w.writerow([report["generated"], r["program"], r["id"],
                                 r["verdict"], r["detail"], r.get("page_updated", ""),
-                                r.get("url", ""), r.get("master_keys", ""),
+                                r.get("url", ""), registry_of(r)[0],
                                 r.get("diff_report", "")])
     except OSError:
         pass
@@ -1651,6 +1893,37 @@ def _code_ref(e: dict, url: str, is_pdf: bool) -> str:
     return f"{e['code']} ({', '.join(bits)})"
 
 
+def write_sources_csv(watchlist: Path, out_dir: Path) -> None:
+    """reports/sources.csv: one row per watched source - the dimension table
+    for reporting tools (Power BI joins changes_log.csv on id; manual_list
+    child ids are '<parent>--<doc>', so derive the parent id by splitting on
+    '--'). Regenerated from watchlist.yaml on every run; never hand-edit."""
+    try:
+        rows = []
+        for e in load_watchlist(watchlist, None):
+            keys, rnote = entry_registry(e)
+            url = e.get("url", e.get("url_template", ""))
+            rows.append({
+                "program": e["program"],
+                "program_name": PROGRAM_NAMES.get(e["program"], e["program"]),
+                "id": e["id"], "type": e.get("type", "html"),
+                "url": url, "host": urlparse(url).hostname or "",
+                "manual": bool(e.get("manual")),
+                "registry_keys": ";".join(keys), "registry_note": rnote,
+                "note": e.get("note", e.get("manual_note", "")),
+            })
+        if not rows:
+            return
+        out_dir.mkdir(parents=True, exist_ok=True)
+        with (out_dir / "sources.csv").open("w", newline="",
+                                            encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+            w.writeheader()
+            w.writerows(rows)
+    except OSError:
+        pass
+
+
 def write_run_summary(root: Path, report: dict) -> None:
     try:
         lines = [f"Source watch run {report['generated']} - "
@@ -1665,10 +1938,11 @@ def write_run_summary(root: Path, report: dict) -> None:
             lines.append(f"  detail: {r['detail']}")
             if r.get("diff_report"):
                 lines.append(f"  diff: {blob_url(repo_rel(r['diff_report']))}")
-            if r.get("master_keys"):
-                lines.append(f"  Master rows: {r['master_keys']}")
-            if r.get("master_note"):
-                lines.append(f"  Master scope: {r['master_note']}")
+            keys, scope = registry_of(r)
+            if keys:
+                lines.append(f"  Registry rows: {keys}")
+            if scope:
+                lines.append(f"  Registry scope: {scope}")
             codes = r.get("codes_touched") or []
             if codes:
                 url = r.get("url", "")
@@ -1684,7 +1958,7 @@ def write_run_summary(root: Path, report: dict) -> None:
                         _code_ref(e, url, is_pdf) for e in removed))
             lines.append("")
         lines.append("Decision support only - verify against the live official "
-                     "source before updating the Master sheet.")
+                     "source before updating the registry.")
         (root / "run_summary.md").write_text("\n".join(lines), encoding="utf-8")
     except OSError:
         pass
@@ -1731,6 +2005,15 @@ def run(watchlist: Path, out_dir: Path, only, update: bool,
                     rows.append(r)
                     print(f"{r['verdict']:22} {r['program']:16} {r['id']}")
                 continue
+            elif entry.get("type") == "revision_watch":
+                vrows, frag = check_revision_watch(entry, base, fetch, ts)
+                new_base.update(frag)
+                for r in vrows:
+                    if r["verdict"] in NEEDS_REVIEW:
+                        review.append(r["id"])
+                    rows.append(r)
+                    print(f"{r['verdict']:22} {r['program']:16} {r['id']}")
+                continue
             else:
                 resp = get_with_retry(fetch, entry["url"], prev)
                 time.sleep(SLEEP)
@@ -1755,6 +2038,7 @@ def run(watchlist: Path, out_dir: Path, only, update: bool,
 
         if verdict in NEEDS_REVIEW:
             review.append(eid)
+        rkeys, rnote = entry_registry(entry)
         rows.append({
             "program": entry["program"], "id": eid,
             "checked_at": new_base.get(eid, {}).get("checked_at", ""),
@@ -1762,8 +2046,8 @@ def run(watchlist: Path, out_dir: Path, only, update: bool,
             "detail": detail, "page_updated": sig.get("page_updated", ""),
             "shell": sig.get("shell", ""), "http": resp.get("status", ""),
             "url": entry.get("url", entry.get("url_template", "")),
-            "master_keys": ";".join(entry.get("master_keys", [])),
-            "master_note": entry.get("master_note", ""),
+            "registry_keys": ";".join(rkeys),
+            "registry_note": rnote,
             "note": entry.get("note", ""), "diff_report": diff_report,
         })
         print(f"{verdict:22} {entry['program']:16} {eid}")
@@ -1782,6 +2066,7 @@ def run(watchlist: Path, out_dir: Path, only, update: bool,
         w.writerows({**r, "codes_touched": codes_brief(r["codes_touched"])}
                     for r in rows)
     append_changes_log(out_dir, report)
+    write_sources_csv(watchlist, out_dir)
     rs = root / "run_summary.md"
     if rs.exists():
         try:
@@ -1895,6 +2180,7 @@ def main() -> int:
         write_dashboard(dash, report, log_path=args.out / "changes_log.csv")
         write_changes_page(dash.parent / "changes.md", report,
                            log_path=args.out / "changes_log.csv")
+        write_sources_csv(args.watchlist, args.out)
         print(f"dashboard + changes page regenerated from {report_path} "
               f"-> {dash}, {dash.parent / 'changes.md'}")
         return 0

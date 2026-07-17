@@ -1,0 +1,67 @@
+[[page 1]]
+rural hosp
+1
+Part 2 – Rural Hospital Swing Bed Program
+Rural Hospital Swing Bed Program
+Page updated: January 2024
+The rural hospital swing bed program offers Long Term Care (LTC) services in areas where
+there is a shortage of Nursing Facility Level B (NF-B) beds.
+Eligibility Criteria
+To be eligible for the rural hospital swing bed program, hospitals must:
+• Meet the standards for hospitals specified in California Code of Regulations (CCR),
+Title 22, Section 51207.
+• Be certified as a special hospital provider of long term care services under Title XVIII
+of the federal Social Security Act.
+• Be approved by the Department of Health Care Services (DHCS) as a primary health
+services hospital in accordance with Division 2, Article 10, of the Health and Safety
+Code commencing with Section 1339.
+Bed Designation
+Under the program, rural hospitals may designate some beds for use interchangeably as
+acute beds or nursing facility beds.
+Administrative Days
+Administrative days may be authorized for swing bed facility patients who meet all the
+following appropriate criteria:
+• Patient needs NF-B care.
+• Patient is occupying a bed designated as an acute care bed.
+• Hospital has established that no NF-B bed is available.
+• Occupancy rate for all designated swing beds is 100 percent.
+‹‹Administrative days will be billed using the facility’s acute care provider number with the
+appropriate combination of revenue code 0199, value code 24, and value code amount 98 or
+Los Angeles County Waiver administrative day code 52.››
+[[page 2]]
+rural hosp
+2
+Part 2 – Rural Hospital Swing Bed Program
+Page updated: January 2024
+Enrollment
+Providers wishing to participate in the swing bed program should contact their licensing and
+certification district office. Certified providers will be issued LTC provider numbers and
+manuals containing instructions for billing swing bed services.
+Reimbursement
+‹‹NF-B services provided to patients in swing beds will be reimbursed pursuant to CCR, Title
+22, Section 51511 (a) (3). Participating hospitals should follow the billing instructions in the
+UB-04 Completion: Long Term Care Services section of this manual and use revenue code
+0101, value code 24 and value code amount 04 for inpatient services and revenue code
+0180, value code 24 and value code amount 05 for leave days. Refer to the Revenue and
+Value Codes for Long Term Care and Rates: Facility Per Diem sections in this manual.››
+Providers participating in the swing bed program should be aware that the reimbursement
+received for NF-B services may impact acute care reimbursement rates.
+Providers billing for LTC services in swing beds may receive reimbursement for:
+• NF-B services at the appropriate swing bed rate
+• Patients on approved leave of absence
+• Bed hold days
+Outpatient services for NF-B patients, on the other hand, will be reimbursed at the hospital’s
+fee-for-service outpatient rates and will be billed using the facility’s Outpatient provider
+number.
+[[page 3]]
+rural hosp
+3
+Part 2 – Rural Hospital Swing Bed Program
+Page updated: August 2020
+‹‹Legend››
+‹‹Symbols used in the document above are explained in the following table.››
+Symbol Description
+‹‹ This is a change mark symbol. It is used to indicate where on the page the
+most recent change begins.
+›› This is a change mark symbol. It is used to indicate where on the page the
+most recent change ends.

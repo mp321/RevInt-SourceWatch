@@ -12,7 +12,7 @@ Each block below is one flagged source: what happened, which billing codes moved
 
 **Source of truth:** [https://familypact.org/news-and-updates-archive/](https://familypact.org/news-and-updates-archive/)
 
-**Master rows to verify:** triage per announcement
+**Registry rows to verify:** triage per announcement
 
 ## mcp_apl_index - Managed Medi-Cal
 
@@ -30,7 +30,7 @@ Each block below is one flagged source: what happened, which billing codes moved
 
 **Source of truth:** [https://www.dhcs.ca.gov/medi-cal-targeted-provider-rate-increases-and-investments/](https://www.dhcs.ca.gov/medi-cal-targeted-provider-rate-increases-and-investments/)
 
-**Master rows to verify:** reimbursement_basis rows citing TRI / SB 94
+**Registry rows to verify:** reimbursement_basis rows citing TRI / SB 94
 
 ## Recent change history (last 20 events)
 
