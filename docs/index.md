@@ -47,8 +47,8 @@ Programs on this page (every watched source, including the quiet ones):
 
 - [Family PACT](#family-pact-fpact) - 5 sources
 - [FQHC](#fqhc-fqhc) - 5 sources, 1 needs review
-- [Managed Medi-Cal](#managed-medi-cal-managed-medi-cal) - 3 sources, 1 needs review
-- [Medi-Cal FFS](#medi-cal-ffs-medi-cal-ffs) - 3 sources
+- [Managed Medi-Cal](#managed-medi-cal-managed_medi_cal) - 3 sources, 1 needs review
+- [Medi-Cal FFS](#medi-cal-ffs-medi_cal_ffs) - 3 sources
 - [NCCI](#ncci-ncci) - 1 source, 1 needs review
 
 Each block: the status line first, then (indented) the source link and a Details fold-out with exactly what is checked and its caveats.

@@ -1432,7 +1432,12 @@ def write_dashboard(path: Path, report: dict,
         lines.append("")
 
     def anchor(name: str, prog: str) -> str:
-        return re.sub(r"[^a-z0-9]+", "-", f"{name} {prog}".lower()).strip("-")
+        """Mirror kramdown's heading auto-id: drop chars outside
+        [a-z0-9 _-] (underscores SURVIVE - 'managed_medi_cal' keeps its
+        underscores in the id), then spaces become hyphens. Verified
+        against the live Pages build 2026-07-17."""
+        s = re.sub(r"[^a-z0-9 _-]", "", f"{name} {prog}".lower())
+        return re.sub(r"\s+", "-", s).strip("-")
 
     progs = sorted({r["program"] for r in results})
     lines += ["## All sources by program", "",
