@@ -15,15 +15,16 @@ Asserts the heuristic's contract:
   - the per-page 'Page updated' stamp capture serializes and diffs by page.
 """
 from pathlib import Path
+import difflib
 import sys
 
 REPO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO))
 
 from source_check import (  # noqa: E402
-    SnapshotStore, extract_code_entries, snapshot_page_map,
-    parse_page_stamps, stamp_change_detail, stamps_display,
-    revision_changes,
+    SnapshotStore, changed_pages_summary, extract_code_entries,
+    snapshot_page_map, parse_page_stamps, stamp_change_detail,
+    stamps_display, revision_changes,
 )
 
 REAL_SNAPSHOT = REPO / "snapshots" / "fqhc" / "fqhc_cms_center.txt"
@@ -149,6 +150,39 @@ def test_page_stamp_roundtrip_and_diff():
     assert "page 1" not in detail                           # unchanged page
     # legacy fallback keeps the raw before/after
     assert stamp_change_detail("May 2026", s) == f"'May 2026' -> '{s}'"
+
+
+def test_changed_pages_summary_groups_lines_and_codes_by_page():
+    old_text, new_text = make_old_and_new()
+    dl = list(difflib.unified_diff(
+        old_text.splitlines(), new_text.splitlines(),
+        fromfile="previous", tofile="current", lineterm="", n=2))
+    codes = extract_code_entries(dl, old_text, new_text)
+    out = changed_pages_summary(dl, old_text, new_text, codes)
+    pages = {s["page"]: s for s in out}
+
+    # page 1: the single removed G2012 line; page 2: four added lines,
+    # three surviving codes (zip-code bait 94110 stays excluded)
+    assert pages[1]["lines"] == 1 and pages[1]["codes"] == ["G2012"]
+    assert pages[2]["lines"] == 4
+    assert pages[2]["codes"] == ["25", "99213", "Z30.011"]
+    assert [s["page"] for s in out] == sorted(pages)
+
+
+def test_changed_pages_summary_edge_cases():
+    # non-PDF snapshots (no [[page N]] markers) -> no summary at all
+    diff = ["--- previous", "+++ current",
+            "+Procedure code 93000 electrocardiogram added"]
+    assert changed_pages_summary(diff, "plain text", "plain text more") == []
+
+    # lines that cannot be located in the page map land in a page=None
+    # bucket at the end, after the real pages
+    old = "[[page 1]]\nalpha"
+    new = "[[page 1]]\nalpha\nbeta"
+    diff = ["--- previous", "+++ current", "+beta", "+garbled ocr line"]
+    out = changed_pages_summary(diff, old, new)
+    assert out[0] == {"page": 1, "lines": 1, "codes": []}
+    assert out[-1]["page"] is None and out[-1]["lines"] == 1
 
 
 def test_revision_changes_names_moved_sections():

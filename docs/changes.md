@@ -1,6 +1,8 @@
 # Change review
 
-[Back to the dashboard](https://mp321.github.io/RevInt-SourceWatch/) - **run 2026-07-17T19:52:00+00:00** - 3 item(s) to review.
+**TL;DR:** 3 source(s) changed, no billing codes detected in the changes.
+
+[Back to the dashboard](https://mp321.github.io/RevInt-SourceWatch/) - run 2026-07-17T19:52:00+00:00.
 
 Each block below is one flagged source: what happened, which billing codes moved (heuristic - **verify each against the linked source before acting**), and a working link to the exact spot in the official document.
 
@@ -32,16 +34,20 @@ Each block below is one flagged source: what happened, which billing codes moved
 
 **Registry rows to verify:** reimbursement_basis rows citing TRI / SB 94
 
-## Recent change history (last 20 events)
+## Change history
 
-| Date | Source | Status | Diff |
-|---|---|---|---|
-| 2026-07-17 | `mcp_apl_index` | `LINKS_CHANGED` |  |
-| 2026-07-17 | `ffs_tri_page` | `LINKS_CHANGED` |  |
-| 2026-07-17 | `fpact_news_archive` | `LINKS_CHANGED` |  |
-| 2026-07-16 | `ncci_medicaid_files` | `CHANGED` |  |
-| 2026-07-16 | `fqhc_cms_center` | `CHANGED` |  |
-| 2026-07-16 | `mcp_apl_index` | `CHANGED` |  |
+<details style="margin:.3em 0 1.1em 0">
+<summary>Last 6 recorded change event(s) (newest first)</summary>
+<table style="font-size:.9em;line-height:1.5">
+<tr><th>Date</th><th>Source</th><th>Status</th><th>Diff</th></tr>
+<tr><td>2026-07-17</td><td><code>mcp_apl_index</code></td><td><code>LINKS_CHANGED</code></td><td></td></tr>
+<tr><td>2026-07-17</td><td><code>ffs_tri_page</code></td><td><code>LINKS_CHANGED</code></td><td></td></tr>
+<tr><td>2026-07-17</td><td><code>fpact_news_archive</code></td><td><code>LINKS_CHANGED</code></td><td></td></tr>
+<tr><td>2026-07-16</td><td><code>ncci_medicaid_files</code></td><td><code>CHANGED</code></td><td></td></tr>
+<tr><td>2026-07-16</td><td><code>fqhc_cms_center</code></td><td><code>CHANGED</code></td><td></td></tr>
+<tr><td>2026-07-16</td><td><code>mcp_apl_index</code></td><td><code>CHANGED</code></td><td></td></tr>
+</table>
+</details>
 
 ---
 

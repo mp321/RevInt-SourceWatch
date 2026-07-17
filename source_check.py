@@ -220,6 +220,45 @@ def extract_code_entries(diff_lines: list[str], old_text: str = "",
                                  e["system"], e["code"]))
 
 
+def changed_pages_summary(diff_lines: list[str], old_text: str = "",
+                          new_text: str = "",
+                          codes: list[dict] | None = None) -> list[dict]:
+    """Per-page rollup of a unified diff against paged (PDF) snapshots.
+
+    Returns one dict per touched page - {"page": int, "lines": <changed
+    line count>, "codes": [code, ...]} - sorted by page number. Changed
+    lines whose text cannot be located in the relevant snapshot's page map
+    (garbled extraction, duplicate lines) collect in a final page=None
+    bucket. Returns [] when neither snapshot carries [[page N]] markers
+    (non-PDF sources), so callers can skip the section entirely.
+
+    Not rendered in any report yet: the user-facing "Changed pages" format
+    gets tuned against real diffs first, not speculation.
+    """
+    old_pages = snapshot_page_map(old_text)
+    new_pages = snapshot_page_map(new_text)
+    if not old_pages and not new_pages:
+        return []
+    counts: dict = {}
+    for line in diff_lines:
+        if not line or line.startswith(("+++", "---", "@@")):
+            continue
+        sign = line[0]
+        if sign not in "+-":
+            continue
+        # Same lookup as extract_code_entries: removed lines resolve against
+        # the old snapshot's pages, added lines against the new one.
+        page = (new_pages if sign == "+" else old_pages).get(line[1:].strip())
+        counts[page] = counts.get(page, 0) + 1
+    by_page: dict = {}
+    for e in codes or []:
+        by_page.setdefault(e["page"], []).append(e["code"])
+    return [{"page": p, "lines": counts.get(p, 0),
+             "codes": sorted(by_page.get(p, []))}
+            for p in sorted(set(counts) | set(by_page),
+                            key=lambda p: (p is None, p or 0))]
+
+
 def entry_registry(entry: dict) -> tuple[list, str]:
     """(keys, note) from a watchlist entry; reads the v1.5 registry_* keys
     with fallback to the pre-rename master_* keys."""
@@ -1789,10 +1828,19 @@ def write_changes_page(path: Path, report: dict,
     at a working URL for the source of truth."""
     results = sorted(report["results"], key=lambda r: (r["program"], r["id"]))
     flagged = [r for r in results if r["verdict"] in NEEDS_REVIEW]
+    n_codes = len({e["code"] for r in flagged
+                   for e in (r.get("codes_touched") or [])})
+    if not flagged:
+        tldr = "nothing changed on the last run."
+    else:
+        tldr = (f"{len(flagged)} source(s) changed, "
+                + (f"{n_codes} billing code(s) touched." if n_codes
+                   else "no billing codes detected in the changes."))
     lines = [
         "# Change review", "",
-        f"[Back to the dashboard]({pages_home_url()}) - **run "
-        f"{report['generated']}** - {len(flagged)} item(s) to review.", "",
+        f"**TL;DR:** {tldr}", "",
+        f"[Back to the dashboard]({pages_home_url()}) - run "
+        f"{report['generated']}.", "",
         "Each block below is one flagged source: what happened, which billing "
         "codes moved (heuristic - **verify each against the linked source "
         "before acting**), and a working link to the exact spot in the "
@@ -1846,15 +1894,27 @@ def write_changes_page(path: Path, report: dict,
         except OSError:
             hist = []
     if hist:
-        lines += ["## Recent change history (last 20 events)", "",
-                  "| Date | Source | Status | Diff |", "|---|---|---|---|"]
+        # History is background reading, so it folds shut: today's flags are
+        # the page. Raw HTML because kramdown will not render a markdown
+        # table inside <details>; no blank lines inside the block.
+        rows = []
         for h in reversed(hist):
             diff = h.get("diff_report", "")
-            cell = (f"[diff]({blob_url(repo_rel(diff))})" if diff else "")
-            lines.append(f"| {md_cell((h.get('generated') or '')[:10])} "
-                         f"| `{md_cell(h.get('id', ''))}` "
-                         f"| `{md_cell(h.get('verdict', ''))}` | {cell} |")
-        lines.append("")
+            cell = (f'<a href="{blob_url(repo_rel(diff))}">diff</a>'
+                    if diff else "")
+            rows.append(f"<tr><td>{esc((h.get('generated') or '')[:10])}</td>"
+                        f"<td><code>{esc(h.get('id', ''))}</code></td>"
+                        f"<td><code>{esc(h.get('verdict', ''))}</code></td>"
+                        f"<td>{cell}</td></tr>")
+        lines += ["## Change history", "",
+                  '<details style="margin:.3em 0 1.1em 0">',
+                  f"<summary>Last {len(hist)} recorded change event(s) "
+                  "(newest first)</summary>",
+                  '<table style="font-size:.9em;line-height:1.5">',
+                  "<tr><th>Date</th><th>Source</th><th>Status</th>"
+                  "<th>Diff</th></tr>"]
+        lines += rows
+        lines += ["</table>", "</details>", ""]
     lines += ["---", "",
               "Machine-generated review aid; not a source of record. Built "
               "and maintained by [Michael Phipps](https://github.com/mp321).",
