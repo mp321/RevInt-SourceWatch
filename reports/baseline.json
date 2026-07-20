@@ -1,7 +1,7 @@
 {
   "ffs_sb94_fp_fee_schedule": {
     "byte_sha": "80e17ecbc8dc0126eb63bf5692ea53624bca8f793f35eba72f43cfaecf350cdf",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "\"7a7df96a5a77c614\"",
     "last_modified": "Fri, 10 Oct 2025 04:12:50 GMT",
     "links": [],
@@ -11,24 +11,28 @@
     "url": "https://www.dhcs.ca.gov/wp-content/uploads/2025/10/SB94-Family-Planning-Services-Fee-Schedule.xlsx"
   },
   "ffs_tri_page": {
-    "byte_sha": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "byte_sha": "60e8e78204b6c742799a85a2777e4381a4f69b60f3d6ccabc24fd9bd8e56eeaa",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "last_modified": "",
-    "links": [],
+    "links": [
+      "/wp-content/uploads/2025/10/Web-Accessibility-Cert.pdf",
+      "https://www.dhcs.ca.gov/wp-content/uploads/2025/10/CY-2024-TRI-Fee-Schedule-Feb.xlsx",
+      "https://www.dhcs.ca.gov/wp-content/uploads/2025/10/SB94-Family-Planning-Services-Fee-Schedule.xlsx"
+    ],
     "page_updated": "",
-    "shell": true,
-    "text_sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "shell": false,
+    "text_sha": "f22816c6fbbef43ce83617fdf9b97f19f7d30a84153ea2b170d240693f50d3d7",
     "url": "https://www.dhcs.ca.gov/medi-cal-targeted-provider-rate-increases-and-investments/"
   },
   "ffs_wic_14105_201": {},
   "fpact_bulletin_probe": {
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "last_seen_issue": 223,
     "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/bulletin?community=family-pact&issueNumber={issue}"
   },
   "fpact_manual_docs": {
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "docs": [
       "00letter",
       "0bhwtouse",
@@ -59,7 +63,7 @@
   },
   "fpact_manual_docs--00letter": {
     "byte_sha": "7a500fd54e87a18395090bac044ae8c11d39ab9715728483209de466d143939e",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "file_id": "B84C9830-1762-442B-BB11-268B9BB1008B",
     "last_modified": "Fri, 23 May 2025 00:02:23 GMT",
@@ -73,7 +77,7 @@
   },
   "fpact_manual_docs--0bhwtouse": {
     "byte_sha": "61b47f4ccbcaa8688d7ea78f10360a5688f49df586eb5ea6167cd8d0a94f000f",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "file_id": "D5B367D8-ED60-4A57-A0F1-71B9626E038A",
     "last_modified": "Mon, 16 Jun 2025 16:12:25 GMT",
@@ -87,7 +91,7 @@
   },
   "fpact_manual_docs--1tocfpact": {
     "byte_sha": "68bb9bb5834517377816e3ef5343d2e9b87c00df921ba8d453b2a3d86f2b0f6b",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "file_id": "5416438C-154C-4523-B1C8-8C3888870C71",
     "last_modified": "Fri, 23 May 2025 00:02:48 GMT",
@@ -101,7 +105,7 @@
   },
   "fpact_manual_docs--benclinic": {
     "byte_sha": "10e00d6a912c657140ad7245a5c491dbcd8e4d28795fe23f417805a80d881586",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "file_id": "88BE8827-BF04-44FF-86AF-FF16018A7E43",
     "last_modified": "Fri, 21 Nov 2025 18:51:48 GMT",
@@ -115,7 +119,7 @@
   },
   "fpact_manual_docs--benfam": {
     "byte_sha": "c9026234cdd20a3c550cd31e42c8dde0637d73f8c4cfb13cad2c54b5f40b114c",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "file_id": "BCA0E984-8DF3-4AD4-9499-7DFCA25DCAED",
     "last_modified": "Fri, 15 May 2026 16:52:05 GMT",
@@ -129,7 +133,7 @@
   },
   "fpact_manual_docs--benfamrel": {
     "byte_sha": "5067f37109c93f392199914993880fdddd0dc2412120074dc90ae350e2f810e5",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "file_id": "B32916F9-83E4-4C1A-B089-BF8E6C601FA8",
     "last_modified": "Fri, 15 May 2026 16:52:25 GMT",
@@ -143,7 +147,7 @@
   },
   "fpact_manual_docs--bengrid": {
     "byte_sha": "ca7997e2742439828f5cf8dab559bbf8ef88fdba9101a63381fbc9c027c78e60",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "file_id": "59A4DC78-0B85-42B8-90A1-29DF9A757683",
     "last_modified": "Mon, 18 May 2026 17:42:58 GMT",
@@ -157,7 +161,7 @@
   },
   "fpact_manual_docs--claimcms": {
     "byte_sha": "8030c8cd281cba8125d04f8b0f2de2e6d43c33dcb4d63ea1be0cd0b5a382410b",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "file_id": "EBC8AE98-3518-404D-92E3-2FB7CFEB234D",
     "last_modified": "Thu, 16 Oct 2025 16:11:54 GMT",
@@ -171,7 +175,7 @@
   },
   "fpact_manual_docs--claimub": {
     "byte_sha": "c4d62c48bdb439b668be578d3b7eb910d0f7870e2e2782e78c65df79db211b2a",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "file_id": "99A15B51-5AE1-45B4-BEB3-300F9FA3974F",
     "last_modified": "Thu, 16 Oct 2025 16:12:21 GMT",
@@ -185,7 +189,7 @@
   },
   "fpact_manual_docs--clientelig": {
     "byte_sha": "80d709ac7192567524a32122d4e5881caadd6e75ab0034cb64c1ee896c15f80e",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "file_id": "907504BF-B611-4569-AA2F-AD19852DC99A",
     "last_modified": "Thu, 16 Apr 2026 16:43:52 GMT",
@@ -199,7 +203,7 @@
   },
   "fpact_manual_docs--clinic": {
     "byte_sha": "109b9015c71d2ccf45f0aa5cf5e3723621a55379cb4a4ba9df30343d34e36400",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "file_id": "235F5DF8-9BF2-4851-839C-9C857C757B10",
     "last_modified": "Fri, 15 May 2026 16:53:48 GMT",
@@ -213,7 +217,7 @@
   },
   "fpact_manual_docs--drug": {
     "byte_sha": "3bd030937441f773ad6ab22a6b2147bd8771711c749a825e74cefaa7f43d4535",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "file_id": "7C45AD4C-2A15-41B5-98E1-93F2C94370D5",
     "last_modified": "Mon, 16 Mar 2026 16:27:32 GMT",
@@ -227,7 +231,7 @@
   },
   "fpact_manual_docs--drugonsite": {
     "byte_sha": "91a232597bd0d565bbcaefcd4960ea22c3c9de9b96b7038a877e2229b4bfb5ac",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "file_id": "796C137C-F4E2-44CF-BE51-CCC0D94D7EAC",
     "last_modified": "Tue, 16 Jun 2026 15:30:42 GMT",
@@ -241,7 +245,7 @@
   },
   "fpact_manual_docs--fam": {
     "byte_sha": "61b330d5eec9b4313f092f0f6bb049d13b5d0ce25296f16e98c1d1d9ee2212b9",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "file_id": "A3EA3460-4D92-45A3-9F1C-BF9B8A2DC528",
     "last_modified": "Thu, 16 Jan 2025 17:32:57 GMT",
@@ -255,7 +259,7 @@
   },
   "fpact_manual_docs--hapid": {
     "byte_sha": "2a989afff1c113e9a7f513d5e84b4d4ae53328298613906e84d812e8418b7ecc",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "file_id": "4DD29A09-8E9C-4E33-A06C-4F2EFC196326",
     "last_modified": "Mon, 16 Jun 2025 16:11:43 GMT",
@@ -269,7 +273,7 @@
   },
   "fpact_manual_docs--lab": {
     "byte_sha": "f610814a177eb884a9f6eeae2f452f926f06ef77e574570c7e4675d75c6cd553",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "file_id": "C9BE0AAF-EEFB-433A-88AF-43D59741B72B",
     "last_modified": "Tue, 20 Jan 2026 17:54:24 GMT",
@@ -283,7 +287,7 @@
   },
   "fpact_manual_docs--office": {
     "byte_sha": "42b7b120d6ee5f1c5888b4377e58999c19f2c25a8b88238f0ce9eb4d7a8594d6",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "file_id": "7CD4E2BB-3DF5-4FEC-9B68-9D8841D0A55F",
     "last_modified": "Tue, 16 Jul 2024 16:09:38 GMT",
@@ -297,7 +301,7 @@
   },
   "fpact_manual_docs--pharm": {
     "byte_sha": "2f7cb264820eb71eab3c713fe052f7f1d37594712f43998f610e4574d690c223",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "file_id": "B4632038-8414-4115-BE87-3AF4C0B42E00",
     "last_modified": "Sun, 06 Aug 2023 02:00:31 GMT",
@@ -311,7 +315,7 @@
   },
   "fpact_manual_docs--pharmacy": {
     "byte_sha": "056fa6a6710a769059ad0a11e9f477023b60accf479296a18ec4cbb4ec1caca9",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "file_id": "5D034DCC-2326-4204-A490-63334447067F",
     "last_modified": "Thu, 16 Oct 2025 16:12:48 GMT",
@@ -325,7 +329,7 @@
   },
   "fpact_manual_docs--progstand": {
     "byte_sha": "9463274b67162a9d5f831425d7747b7d3cabfa377ec6da79ef1cb9d25f2c8699",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "file_id": "AC89DF41-778B-49CD-ACF4-EAF9C4644904",
     "last_modified": "Thu, 16 Jul 2026 16:28:52 GMT",
@@ -339,7 +343,7 @@
   },
   "fpact_manual_docs--provenrollres": {
     "byte_sha": "1cc2e3188a5c8c3c4188c90e4447994e6be5bde0f29183b91cd7962d2267d5b3",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "file_id": "1FC58406-1722-4888-80A5-7B1DBBEB9F29",
     "last_modified": "Thu, 16 Jul 2026 16:29:22 GMT",
@@ -353,7 +357,7 @@
   },
   "fpact_manual_docs--provrel": {
     "byte_sha": "0636f69575b332562ee4b85173f2c425e384743298bfd8fc1ad1e3eb8a06f4ff",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "file_id": "AAB9378C-D021-4208-AB7A-B6A7A7549643",
     "last_modified": "Fri, 14 Feb 2025 17:38:10 GMT",
@@ -367,7 +371,7 @@
   },
   "fpact_manual_docs--radif": {
     "byte_sha": "f14cd7994e916f9ff5f14de60f7ce1cdff95be0d840d1979874faf4ce5fc5692",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "file_id": "A8A04AB0-8C04-4653-9A48-0C765462A3A0",
     "last_modified": "Sun, 06 Aug 2023 02:02:15 GMT",
@@ -381,7 +385,7 @@
   },
   "fpact_manual_docs--tarf": {
     "byte_sha": "5d4a34fa617105e63e9beeb14fe5489d65b049676bd3d767a86b3b0ea2b74069",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "file_id": "0CEE81EC-C0E9-4B4A-89FD-AE96C95FA705",
     "last_modified": "Mon, 21 Aug 2023 21:13:15 GMT",
@@ -394,8 +398,8 @@
     "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/0CEE81EC-C0E9-4B4A-89FD-AE96C95FA705"
   },
   "fpact_news_archive": {
-    "byte_sha": "86ed6705d0ea80e29cbf644a5f97fc5484a700efa7d18451906932b4ff2c619a",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "byte_sha": "a635db892b14d92e43cd15c6df129e016e8767dd1197f1035f7f156e3a78d688",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "last_modified": "",
     "links": [
@@ -443,9 +447,9 @@
   "fpact_wic_24005": {},
   "fqhc_cms_center": {
     "byte_sha": "f41feb86a3a79795e73d7a1631e3c5a0fc153383939ad3d28cf2d4eb9a355e2f",
-    "checked_at": "2026-07-17T19:50:58+00:00",
-    "etag": "\"1784315517-gzip\"",
-    "last_modified": "Fri, 17 Jul 2026 19:11:57 GMT",
+    "checked_at": "2026-07-20T15:47:48+00:00",
+    "etag": "\"1784561510-gzip\"",
+    "last_modified": "Mon, 20 Jul 2026 15:31:50 GMT",
     "links": [],
     "page_updated": "",
     "shell": false,
@@ -453,8 +457,8 @@
     "url": "https://www.cms.gov/medicare/payment/prospective-payment-systems/federally-qualified-health-centers-fqhc-center"
   },
   "fqhc_dhcs_3097_page": {
-    "byte_sha": "358b7956c33e4def23e1289c4194dd34dd1c6ae46f59a0c2c7d41e5b3ba5c67f",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "byte_sha": "b58901ed9d5c86cdeed7cbf4bbf707eb26eb8d0098944d0e837d0a9d4b7bf6ee",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "last_modified": "",
     "links": [],
@@ -465,7 +469,7 @@
   },
   "fqhc_ecfr_405_subpart_x": {},
   "fqhc_rural_manual_docs": {
-    "checked_at": "2026-07-17T21:37:00+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "docs": [
       "rural",
       "ruralcd",
@@ -475,80 +479,79 @@
     "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/graphql"
   },
   "fqhc_rural_manual_docs--rural": {
-    "byte_sha": "",
-    "checked_at": "2026-07-17T21:37:00+00:00",
+    "byte_sha": "a75b6be8251d7935847315228e5060186c3c504d857fbeebbc19b326ad69153c",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "file_id": "C983B7D9-42B3-4543-BF93-D272AB764BDD",
-    "last_modified": "",
+    "last_modified": "Thu, 16 Jul 2026 16:54:22 GMT",
     "links": [],
-    "page_updated": "",
+    "page_updated": "p1: July 2026|p2: December 2020|p3: July 2026|p4: March 2024|p5: March 2024|p6: July 2026|p8: July 2026|p9: July 2026|p10: July 2026|p11: July 2026|p12: July 2026|p13: July 2026|p14: July 2026|p15: July 2026|p16: July 2026|p17: July 2026|p18: July 2026|p19: July 2026|p20: July 2026|p21: July 2026|p22: July 2026",
     "revision_date": "2026-07-16T16:54:22",
-    "seeded": true,
     "shell": false,
-    "text_sha": "",
+    "text_sha": "5967a13bee545fdfdd0dea074861929c9d59aee9e4ac7fb9468a5bd55a9bee0c",
     "title": "Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs) (rural)",
     "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C983B7D9-42B3-4543-BF93-D272AB764BDD"
   },
   "fqhc_rural_manual_docs--ruralcd": {
-    "byte_sha": "",
-    "checked_at": "2026-07-17T21:37:00+00:00",
+    "byte_sha": "abc57c527eac0cce1b45fc9993b563ea8d4786558b5cbadb8ace520a24a0ad1b",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "file_id": "2D80A3B6-A32B-4131-BE63-12EE7243A849",
-    "last_modified": "",
+    "last_modified": "Tue, 16 Jun 2026 15:46:44 GMT",
     "links": [],
-    "page_updated": "",
+    "page_updated": "p1: June 2026|p2: June 2026|p3: June 2026|p4: June 2026|p5: June 2026|p6: June 2026|p7: June 2026|p8: June 2026|p9: June 2026|p10: June 2026|p11: June 2026|p12: June 2026|p13: June 2026|p14: June 2026|p15: June 2026|p16: June 2026|p17: June 2026|p18: June 2026",
     "revision_date": "2026-06-16T15:46:44",
-    "seeded": true,
     "shell": false,
-    "text_sha": "",
+    "text_sha": "399616c66a5adc260c417fbb1e68181fbd08bf825b5a754bec886a611fcdce62",
     "title": "Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs):  Billing Codes (rural cd)",
     "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/2D80A3B6-A32B-4131-BE63-12EE7243A849"
   },
   "fqhc_rural_manual_docs--ruralex": {
-    "byte_sha": "",
-    "checked_at": "2026-07-17T21:37:00+00:00",
+    "byte_sha": "14c79e2b900deedc6831b1493855a32f8176381570572ed2f0b5a00d8c08c290",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "file_id": "08EC7DD1-AABE-4187-9D9E-F155C3DAF1CA",
-    "last_modified": "",
+    "last_modified": "Sun, 06 Aug 2023 01:58:46 GMT",
     "links": [],
-    "page_updated": "",
+    "page_updated": "p1: December 2020|p2: December 2020|p3: December 2020|p4: December 2020|p5: August 2020",
     "revision_date": "2023-08-06T01:58:46",
-    "seeded": true,
     "shell": false,
-    "text_sha": "",
+    "text_sha": "dd9a3926e75735a8aa15ee293c4328633c009d9a4e35d7beab14e10e94f63329",
     "title": "Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs) Billing Examples (rural ex)",
     "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/08EC7DD1-AABE-4187-9D9E-F155C3DAF1CA"
   },
   "fqhc_rural_manual_docs--ruralhosp": {
-    "byte_sha": "",
-    "checked_at": "2026-07-17T21:37:00+00:00",
+    "byte_sha": "5ce88309e13465aa036cd51e157c21d5c2a741f959a69122b6fe35c9233bb31f",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "file_id": "3E8C0259-6D59-4F20-BFA3-E5AE5754F39D",
-    "last_modified": "",
+    "last_modified": "Tue, 16 Jan 2024 18:04:36 GMT",
     "links": [],
-    "page_updated": "",
+    "page_updated": "p1: January 2024|p2: January 2024|p3: August 2020",
     "revision_date": "2024-01-16T18:04:36",
-    "seeded": true,
     "shell": false,
-    "text_sha": "",
+    "text_sha": "7efc1ed8fb2342b722a214939db197186473a122aa5351233556339045e1a287",
     "title": "Rural Hospital Swing Bed Program (rural hosp)",
     "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/3E8C0259-6D59-4F20-BFA3-E5AE5754F39D"
   },
   "fqhc_wic_14132_100": {},
   "mcp_apl_index": {
-    "byte_sha": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "byte_sha": "4793c57859a5d41a05336d6ad7c2167b998fccaad7edd20ee76bbf717787ae21",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "last_modified": "",
-    "links": [],
+    "links": [
+      "/wp-content/uploads/2025/10/Web-Accessibility-Cert.pdf",
+      "https://www.dhcs.ca.gov/wp-content/uploads/2025/10/MOU-FAQs.pdf"
+    ],
     "page_updated": "",
-    "shell": true,
-    "text_sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "shell": false,
+    "text_sha": "4547469abff3bd09d52147a84a5a67a2e43c8189216e0b3b65128052db535b5b",
     "url": "https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx"
   },
   "mcp_boilerplate_contract": {
     "byte_sha": "dd188064463d4d7b3fd7496bdf388fe2c16461ddf2372a4c45745c66d936d2ca",
-    "checked_at": "2026-07-17T19:50:58+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "\"599cbbdeb621ec96\"",
     "last_modified": "Fri, 10 Oct 2025 07:12:09 GMT",
     "links": [],
@@ -559,7 +562,7 @@
   },
   "mcp_tri_faq": {
     "byte_sha": "eb4a4b4b59ca87a3cad5690cae9f23295d0001fa0ae414387d46138defc3c705",
-    "checked_at": "2026-07-16T22:03:46+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "\"7e0bf12553e51cee\"",
     "last_modified": "Thu, 09 Oct 2025 22:51:52 GMT",
     "links": [],
@@ -570,9 +573,9 @@
   },
   "ncci_medicaid_files": {
     "byte_sha": "b60e2ecd8acec1f544a366ce9fc97a963dcc4db7309eb383da29668b3d8d2340",
-    "checked_at": "2026-07-17T19:50:58+00:00",
-    "etag": "\"1784313731-gzip\"",
-    "last_modified": "Fri, 17 Jul 2026 18:42:11 GMT",
+    "checked_at": "2026-07-20T15:47:48+00:00",
+    "etag": "\"1784559126-gzip\"",
+    "last_modified": "Mon, 20 Jul 2026 14:52:06 GMT",
     "links": [
       "/files/zip/medicaid-ncci-2026-q3-change-report-effective-07012026.zip",
       "/files/zip/medicaid-ncci-2026-q3-mue-edits-durable-medical-equipment-services.zip",
@@ -595,7 +598,7 @@
     "url": "https://www.cms.gov/medicare/coding-billing/ncci-medicaid/medicaid-ncci-edit-files"
   },
   "rev_clinics_hospitals_manuals": {
-    "checked_at": "2026-07-17T22:38:37+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "docs": {
       "00medi-cal": {
         "revision_date": "2023-08-06T02:02:14",
@@ -1585,7 +1588,7 @@
     "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=clinics-and-hospitals"
   },
   "rev_general_medicine_manuals": {
-    "checked_at": "2026-07-17T22:38:37+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "docs": {
       "00medi-cal": {
         "revision_date": "2023-08-06T02:02:14",
@@ -2507,7 +2510,7 @@
     "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=general-medicine"
   },
   "rev_inpatient_manuals": {
-    "checked_at": "2026-07-17T22:38:37+00:00",
+    "checked_at": "2026-07-20T15:47:48+00:00",
     "docs": {
       "00medi-cal": {
         "revision_date": "2023-08-06T02:02:14",
