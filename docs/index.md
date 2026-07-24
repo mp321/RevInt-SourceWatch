@@ -2,43 +2,35 @@
 
 This page keeps track of the official sources behind Revenue Integrity work - Medi-Cal and Family PACT provider manuals, bulletins, fee schedule pages and policy letters - and shows what has changed on them. A script re-reads each source on a schedule and lists anything that moved since the previous check, so updates can be caught and routed (provider communication, superbill or tipsheet, Epic review) instead of being noticed by accident. **Always review and validate anything here against the live official source before using it or acting on it.**
 
-**Last check:** script ran 2026-07-20 · **items needing review: 2**
+**Last check:** script ran 2026-07-20 · **items needing review: 1**
 
 **How to read this page**
 
-Start at "Needs review" - that is what a person needs to look at now. After it come lower-priority revision notices, everything that changed in the last 60 days, and then the current status of every watched source under "All sources by program". Status words like `CHANGED` are explained in the [status legend](#status-legend) at the bottom.
+Start at "Needs review" section, then move to: revision notices, changes in the last 60 days, and then the current status of each source under "All sources by program". Status words like `CHANGED` are explained at the bottom in the [status legend](#status-legend).
 
 More detail: [change review page](https://mp321.github.io/RevInt-SourceWatch/changes.html) (one block per change) · [change history (CSV)](https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/changes_log.csv) · [watchlist](https://github.com/mp321/RevInt-SourceWatch/blob/main/watchlist.yaml) · [all reports](https://github.com/mp321/RevInt-SourceWatch/tree/main/reports)
 
-## Needs review (2)
+## Needs review (1)
 
 <div style="height:3px;background:#1f4e79;border-radius:2px;margin:.15em 0 1.2em"></div>
 
-Every item links to the source and, when text changed, to the exact before/after diff.
+Every item links to the source and, when text changed, to the exact before/after diff. If you open a source and cannot find anything that actually changed, that is a normal outcome: agencies re-publish files, re-shuffle links and move pages without changing policy, and the script cannot tell that apart from a real edit. Note it and move on - and if the same item keeps coming back with nothing behind it, its watchlist entry should be tightened or removed rather than re-read every week.
 
-- <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> `LINKS_CHANGED` - [mcp_apl_index](https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx) _(Managed Medi-Cal)_
-  - **What happened:** The list of files this page links to changed: +2 added, -0 removed. The page's own wording did not have to change for this to flag.
-    - added: [https://www.dhcs.ca.gov/wp-content/uploads/2025/10/Web-Accessibility-Cert.pdf](https://www.dhcs.ca.gov/wp-content/uploads/2025/10/Web-Accessibility-Cert.pdf)
-    - added: [https://www.dhcs.ca.gov/wp-content/uploads/2025/10/MOU-FAQs.pdf](https://www.dhcs.ca.gov/wp-content/uploads/2025/10/MOU-FAQs.pdf)
-  - **What to do:** Open the page, check each added or removed file listed with the item, and if a watched file was re-versioned, point watchlist.yaml at the new URL so the script keeps monitoring it.
-- <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> `LINKS_CHANGED` - [ffs_tri_page](https://www.dhcs.ca.gov/medi-cal-targeted-provider-rate-increases-and-investments/) _(Medi-Cal FFS)_
-  - **What happened:** The list of files this page links to changed: +3 added, -0 removed. The page's own wording did not have to change for this to flag.
-    - added: [https://www.dhcs.ca.gov/wp-content/uploads/2025/10/Web-Accessibility-Cert.pdf](https://www.dhcs.ca.gov/wp-content/uploads/2025/10/Web-Accessibility-Cert.pdf)
-    - added: [https://www.dhcs.ca.gov/wp-content/uploads/2025/10/CY-2024-TRI-Fee-Schedule-Feb.xlsx](https://www.dhcs.ca.gov/wp-content/uploads/2025/10/CY-2024-TRI-Fee-Schedule-Feb.xlsx) (clicking downloads an Excel file)
-    - added: [https://www.dhcs.ca.gov/wp-content/uploads/2025/10/SB94-Family-Planning-Services-Fee-Schedule.xlsx](https://www.dhcs.ca.gov/wp-content/uploads/2025/10/SB94-Family-Planning-Services-Fee-Schedule.xlsx) (clicking downloads an Excel file)
-  - **What to do:** Open the page, check each added or removed file listed with the item, and if a watched file was re-versioned, point watchlist.yaml at the new URL so the script keeps monitoring it.
-  - **Registry rows to verify:** reimbursement_basis rows citing TRI / SB 94
+- <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> `CHANGED` - [mcp_apl_index](https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx) _(Managed Medi-Cal)_
+  - **What happened:** The text of this document is not the same as the copy stored at the last check.
+  - **What to do:** Open the diff to see the exact lines (if available), re-read that part of the live source, then verify the listed registry rows (superbill, tipsheet, Epic review as applicable).
+  - **Seen before:** flagged 2 times in the last 60 days. If the source reads the same as last time, the page most likely re-published or re-shuffled its own files rather than changing policy - disregard if so. If it keeps repeating, update or retire the watchlist entry.
+  - **Exact change:** no before/after diff was recorded for this check - compare the live source against the stored copy in `snapshots/` (or your own last known state).
 
 <div style="height:1.6em"></div>
 
-## Changed in the last 60 days (5)
+## Changed in the last 60 days (4)
 
 <div style="height:3px;background:#1f4e79;border-radius:2px;margin:.15em 0 1.2em"></div>
 
 The recent trail, newest first - use it to confirm what has been communicated downstream. Always verify against the live source before acting.
 
-- 2026-07-20 - [mcp_apl_index](https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx) - `LINKS_CHANGED`
-- 2026-07-20 - [ffs_tri_page](https://www.dhcs.ca.gov/medi-cal-targeted-provider-rate-increases-and-investments/) - `LINKS_CHANGED`
+- 2026-07-20 - [mcp_apl_index](https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx) - `CHANGED`
 - 2026-07-17 - [fpact_news_archive](https://familypact.org/news-and-updates-archive/) - `LINKS_CHANGED`
 - 2026-07-16 - [ncci_medicaid_files](https://www.cms.gov/medicare/coding-billing/ncci-medicaid/medicaid-ncci-edit-files) - `CHANGED`
 - 2026-07-16 - [fqhc_cms_center](https://www.cms.gov/medicare/payment/prospective-payment-systems/federally-qualified-health-centers-fqhc-center) - `CHANGED`
@@ -51,35 +43,16 @@ The recent trail, newest first - use it to confirm what has been communicated do
 
 Every watched source and its current status, including the items flagged above. Jump to a program:
 
-- [Family PACT](#family-pact-fpact) - 28 sources
-- [FQHC](#fqhc-fqhc) - 8 sources
+- [Family PACT](#family-pact-fpact) - 25 sources
+- [FQHC](#fqhc-fqhc) - 6 sources
 - [Managed Medi-Cal](#managed-medi-cal-managed_medi_cal) - 3 sources, 1 needs review
-- [Medi-Cal FFS](#medi-cal-ffs-medi_cal_ffs) - 3 sources, 1 needs review
+- [Medi-Cal FFS](#medi-cal-ffs-medi_cal_ffs) - 1 source
 - [NCCI](#ncci-ncci) - 1 source
 - [Manual Revision Notices](#manual-revision-notices-revision_notices) - 3 sources
 
 Each source: status first, then its links, then a Details fold-out with exactly what is checked and the caveats.
 
 ### Family PACT (`FPACT`)
-
-#### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#fff6e0;color:#7a4a00;white-space:nowrap">Can't verify</span> fpact_bulletin_probe - `PROBE_INCONCLUSIVE`
-
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/bulletin?community=family-pact&amp;issueNumber={issue}">Open the source</a> - checked 2026-07-20</p>
-
-<p style="margin:.2em 0 .2em 2em"><b>Why:</b> #224:shell(0ch); #225:shell(0ch); #226:shell(0ch) - portal is client-rendered; MCSS email is the reliable detector</p>
-
-<details style="margin:.3em 0 1.1em 2em">
-<summary>Details: exactly what is checked here, how, and its caveats</summary>
-<ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/bulletin?community=family-pact&amp;issueNumber={issue}">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/bulletin?community=family-pact&amp;issueNumber={issue}</a> (template; {issue} is the probed issue number)</li>
-<li><b>How:</b> The checker requests the next few issue numbers of the bulletin URL to see whether a new issue returns real content. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
-<li><b>This run:</b> PROBE_INCONCLUSIVE - #224:shell(0ch); #225:shell(0ch); #226:shell(0ch) - portal is client-rendered; MCSS email is the reliable detector</li>
-<li><b>Last checked:</b> 2026-07-20</li>
-<li><b>Last recorded change:</b> none since the change log began</li>
-<li><b>Watchlist note:</b> Best-effort probe; portal is client-rendered so expect PROBE_INCONCLUSIVE - MCSS email is the reliable detector.</li>
-<li><b>Registry rows to verify on change:</b> none mapped in the watchlist; triage by judgment.</li>
-</ul>
-</details>
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fpact_manual_docs--00letter - `unchanged`
 
@@ -506,44 +479,6 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 </ul>
 </details>
 
-#### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#fff6e0;color:#7a4a00;white-space:nowrap">Can't verify</span> fpact_ppbi_landing - `MANUAL_REVIEW`
-
-<p style="margin:.2em 0 .2em 2em"><a href="https://familypact.org/providers/policies-procedures-and-billing-instructions/">Open the source</a> - not fetched automatically</p>
-
-<p style="margin:.2em 0 .2em 2em"><b>Why:</b> Redirects off-site to the legacy files.medi-cal.ca.gov manual-query page, which timed out on 2026-07-02; current PPBI sections live on the client-rendered mcweb portal. Detection is MCSS + fpact_news_archive; open the PPBI manually when flagged.</p>
-
-<details style="margin:.3em 0 1.1em 2em">
-<summary>Details: exactly what is checked here, how, and its caveats</summary>
-<ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://familypact.org/providers/policies-procedures-and-billing-instructions/">https://familypact.org/providers/policies-procedures-and-billing-instructions/</a></li>
-<li><b>How:</b> Not fetched automatically. The weekly script run lists it every time as a standing reminder.</li>
-<li><b>Why it cannot be auto-checked:</b> Redirects off-site to the legacy files.medi-cal.ca.gov manual-query page, which timed out on 2026-07-02; current PPBI sections live on the client-rendered mcweb portal. Detection is MCSS + fpact_news_archive; open the PPBI manually when flagged.</li>
-<li><b>What to do instead:</b> Open it yourself: <a href="https://familypact.org/providers/policies-procedures-and-billing-instructions/">https://familypact.org/providers/policies-procedures-and-billing-instructions/</a>. Follow the cadence in the reason above; if none is stated, re-read it when program news suggests a change.</li>
-<li><b>Last checked:</b> never fetched automatically</li>
-<li><b>Last recorded change:</b> none since the change log began</li>
-<li><b>Registry rows to verify on change:</b> ppbi_source_section rows for any changed section</li>
-</ul>
-</details>
-
-#### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#fff6e0;color:#7a4a00;white-space:nowrap">Can't verify</span> fpact_wic_24005 - `MANUAL_REVIEW`
-
-<p style="margin:.2em 0 .2em 2em"><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=24005.&amp;lawCode=WIC">Open the source</a> - not fetched automatically</p>
-
-<p style="margin:.2em 0 .2em 2em"><b>Why:</b> leginfo robots.txt disallows automated fetch - review quarterly by hand. Statute changes arrive via bills, so MCSS and program news normally give advance notice.</p>
-
-<details style="margin:.3em 0 1.1em 2em">
-<summary>Details: exactly what is checked here, how, and its caveats</summary>
-<ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=24005.&amp;lawCode=WIC">https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=24005.&amp;lawCode=WIC</a></li>
-<li><b>How:</b> Not fetched automatically. The weekly script run lists it every time as a standing reminder.</li>
-<li><b>Why it cannot be auto-checked:</b> leginfo robots.txt disallows automated fetch - review quarterly by hand. Statute changes arrive via bills, so MCSS and program news normally give advance notice.</li>
-<li><b>What to do instead:</b> Open it yourself: <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=24005.&amp;lawCode=WIC">https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=24005.&amp;lawCode=WIC</a>. Follow the cadence in the reason above; if none is stated, re-read it when program news suggests a change.</li>
-<li><b>Last checked:</b> never fetched automatically</li>
-<li><b>Last recorded change:</b> none since the change log began</li>
-<li><b>Registry rows to verify on change:</b> eligibility / payer-of-last-resort denial rows</li>
-</ul>
-</details>
-
 ### FQHC (`FQHC`)
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fqhc_cms_center - `unchanged` <span style="display:inline-block;padding:.05em .5em;border-radius:1em;font-size:.72em;font-weight:600;background:#fff3cd;color:#6b4e00;white-space:nowrap">changed 2026-07-16</span>
@@ -576,25 +511,6 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 <li><b>Last checked:</b> 2026-07-20</li>
 <li><b>Last recorded change:</b> none since the change log began</li>
 <li><b>Watchlist note:</b> Wrap reconciliation forms and due-date extensions.</li>
-<li><b>Registry rows to verify on change:</b> none mapped in the watchlist; triage by judgment.</li>
-</ul>
-</details>
-
-#### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#fff6e0;color:#7a4a00;white-space:nowrap">Can't verify</span> fqhc_ecfr_405_subpart_x - `MANUAL_REVIEW`
-
-<p style="margin:.2em 0 .2em 2em"><a href="https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-405/subpart-X">Open the source</a> - not fetched automatically</p>
-
-<p style="margin:.2em 0 .2em 2em"><b>Why:</b> eCFR bot wall redirects automated fetches off-host. eCFR publishes an official public API for exactly this use (see ecfr.gov developer documentation) - switching this entry to the API endpoint for Title 42 Part 405 is the planned fix; until then review by hand when CMS guidance changes.</p>
-
-<details style="margin:.3em 0 1.1em 2em">
-<summary>Details: exactly what is checked here, how, and its caveats</summary>
-<ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-405/subpart-X">https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-405/subpart-X</a></li>
-<li><b>How:</b> Not fetched automatically. The weekly script run lists it every time as a standing reminder.</li>
-<li><b>Why it cannot be auto-checked:</b> eCFR bot wall redirects automated fetches off-host. eCFR publishes an official public API for exactly this use (see ecfr.gov developer documentation) - switching this entry to the API endpoint for Title 42 Part 405 is the planned fix; until then review by hand when CMS guidance changes.</li>
-<li><b>What to do instead:</b> Open it yourself: <a href="https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-405/subpart-X">https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-405/subpart-X</a>. Follow the cadence in the reason above; if none is stated, re-read it when program news suggests a change.</li>
-<li><b>Last checked:</b> never fetched automatically</li>
-<li><b>Last recorded change:</b> none since the change log began</li>
 <li><b>Registry rows to verify on change:</b> none mapped in the watchlist; triage by judgment.</li>
 </ul>
 </details>
@@ -667,42 +583,23 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 </ul>
 </details>
 
-#### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#fff6e0;color:#7a4a00;white-space:nowrap">Can't verify</span> fqhc_wic_14132_100 - `MANUAL_REVIEW`
-
-<p style="margin:.2em 0 .2em 2em"><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14132.100.&amp;lawCode=WIC">Open the source</a> - not fetched automatically</p>
-
-<p style="margin:.2em 0 .2em 2em"><b>Why:</b> leginfo robots.txt disallows automated fetch. ACTION - AB 116 amendment took effect 2026-07-01; manually verify the amended provider list and update the fqhc-billing reference.</p>
-
-<details style="margin:.3em 0 1.1em 2em">
-<summary>Details: exactly what is checked here, how, and its caveats</summary>
-<ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14132.100.&amp;lawCode=WIC">https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14132.100.&amp;lawCode=WIC</a></li>
-<li><b>How:</b> Not fetched automatically. The weekly script run lists it every time as a standing reminder.</li>
-<li><b>Why it cannot be auto-checked:</b> leginfo robots.txt disallows automated fetch. ACTION - AB 116 amendment took effect 2026-07-01; manually verify the amended provider list and update the fqhc-billing reference.</li>
-<li><b>What to do instead:</b> Open it yourself: <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14132.100.&amp;lawCode=WIC">https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14132.100.&amp;lawCode=WIC</a>. Follow the cadence in the reason above; if none is stated, re-read it when program news suggests a change.</li>
-<li><b>Last checked:</b> never fetched automatically</li>
-<li><b>Last recorded change:</b> none since the change log began</li>
-<li><b>Registry rows to verify on change:</b> PPS-billable provider list in fqhc-billing reference</li>
-</ul>
-</details>
-
 ### Managed Medi-Cal (`MANAGED_MEDI_CAL`)
 
-#### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> mcp_apl_index - `LINKS_CHANGED` <span style="display:inline-block;padding:.05em .5em;border-radius:1em;font-size:.72em;font-weight:600;background:#fff3cd;color:#6b4e00;white-space:nowrap">changed 2026-07-20</span>
+#### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> mcp_apl_index - `CHANGED` <span style="display:inline-block;padding:.05em .5em;border-radius:1em;font-size:.72em;font-weight:600;background:#fff3cd;color:#6b4e00;white-space:nowrap">changed 2026-07-20</span>
 
 <p style="margin:.2em 0 .2em 2em"><a href="https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx">Open the source</a> - checked 2026-07-20</p>
 
-<p style="margin:.2em 0 .2em 2em"><b>Why:</b> The list of files this page links to changed: +2 added, -0 removed. The page&#x27;s own wording did not have to change for this to flag.</p>
+<p style="margin:.2em 0 .2em 2em"><b>Why:</b> The text of this document is not the same as the copy stored at the last check.</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx">https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx</a></li>
-<li><b>How:</b> The page's visible text is hashed AND every file link matching the entry's pattern is collected; a new or removed link is flagged even when the page text is unchanged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
-<li><b>This run:</b> LINKS_CHANGED - +2 [&#x27;/wp-content/uploads/2025/10/Web-Accessibility-Cert.pdf&#x27;, &#x27;https://www.dhcs.ca.gov/wp-content/uploads/2025/10/MOU-FAQs.pdf&#x27;] / -0 []</li>
+<li><b>How:</b> The page is downloaded (conditional GET), scripts and styles are stripped, and the visible text is hashed and compared with the copy stored at the previous check. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
+<li><b>This run:</b> CHANGED - content text hash differs</li>
 <li><b>Last checked:</b> 2026-07-20</li>
-<li><b>Last recorded change:</b> 2026-07-20 (LINKS_CHANGED)</li>
-<li><b>Watchlist note:</b> Kept provisionally (2026-07-17 review). First run matched zero links with the APL-specific pattern - broadened to all PDFs; text hash still covers page changes. If the link list stays empty, capture the real APL listing URL from the browser and repoint.</li>
+<li><b>Last recorded change:</b> 2026-07-20 (CHANGED)</li>
+<li><b>Watchlist note:</b> All Plan Letters index, watched by page text only. Link diffing was removed 2026-07-24 - the pattern never matched an actual APL (they are served through /file/&lt;slug&gt;-pdf/ redirects, not direct .pdf hrefs), so it only ever flagged the site-wide accessibility certificate and an MOU FAQ in the page footer, and those flapped in and out between runs. If a text change here proves equally noisy, capture the real APL listing URL from the browser and repoint the entry; MCSS Managed Care is the backstop.</li>
 <li><b>Registry rows to verify on change:</b> none mapped in the watchlist; triage by judgment.</li>
 </ul>
 </details>
@@ -736,7 +633,7 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 <li><b>This run:</b> unchanged - 304 not modified</li>
 <li><b>Last checked:</b> 2026-07-20</li>
 <li><b>Last recorded change:</b> none since the change log began</li>
-<li><b>Watchlist note:</b> Hard-dated versioned filename (20250312) - a revision likely ships under a new URL; ffs_tri_page link-set diffing is the catcher for replacements. 2026-07-17 - this URL intermittently answers 200 with a small HTML bot-check page instead of the PDF; the checker reports that honestly as UNREACHABLE and keeps the last good baseline.</li>
+<li><b>Watchlist note:</b> Hard-dated filename (20250312) - unlike the fee schedules, the date is in the file name itself, so a revision ships under a new URL and this entry goes UNREACHABLE rather than CHANGED. Treat a 404 here as &quot;the FAQ was reissued, find the new one on the TRI landing page&quot;. 2026-07-17 - this URL also intermittently answers 200 with a small HTML bot-check page instead of the PDF; the checker reports that honestly as UNREACHABLE and keeps the last good baseline.</li>
 <li><b>Registry rows to verify on change:</b> none mapped in the watchlist; triage by judgment.</li>
 </ul>
 </details>
@@ -745,56 +642,19 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> ffs_sb94_fp_fee_schedule - `unchanged`
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://www.dhcs.ca.gov/wp-content/uploads/2025/10/SB94-Family-Planning-Services-Fee-Schedule.xlsx">Open the source</a> (clicking downloads an Excel file) - checked 2026-07-20</p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://www.dhcs.ca.gov/medi-cal-targeted-provider-rate-increases-and-investments/">Open the source</a> - <a href="https://www.dhcs.ca.gov/wp-content/uploads/2025/10/SB94-Family-Planning-Services-Fee-Schedule.xlsx">watched file</a> (clicking downloads an Excel file) - checked 2026-07-20</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
 <li><b>URL checked:</b> <a href="https://www.dhcs.ca.gov/wp-content/uploads/2025/10/SB94-Family-Planning-Services-Fee-Schedule.xlsx">https://www.dhcs.ca.gov/wp-content/uploads/2025/10/SB94-Family-Planning-Services-Fee-Schedule.xlsx</a> (clicking downloads an Excel file)</li>
+<li><b>Where to open it:</b> <a href="https://www.dhcs.ca.gov/medi-cal-targeted-provider-rate-increases-and-investments/">https://www.dhcs.ca.gov/medi-cal-targeted-provider-rate-increases-and-investments/</a> - the page this file is published on. The script checks the file itself; a person should start here.</li>
 <li><b>How:</b> The raw file bytes are hashed and compared; no text is extracted, so this entry can never produce a text diff. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> unchanged - 304 not modified</li>
 <li><b>Last checked:</b> 2026-07-20</li>
 <li><b>Last recorded change:</b> none since the change log began</li>
-<li><b>Watchlist note:</b> SB 94 family-planning augmented fee schedule (supersedes TRI for FP codes with Z30.x). Versioned filename - a replacement appears via ffs_tri_page. The URL is a direct .xlsx download; prefer opening the TRI landing page and downloading from there.</li>
+<li><b>Watchlist note:</b> SB 94 comprehensive family-planning fee schedule (supersedes TRI for FP codes with Z30.x). Binary watch - a spreadsheet has no extractable text, so this entry reports that the file changed, not which rows changed; open it from the landing page to compare.</li>
 <li><b>Registry rows to verify on change:</b> FPACT rows priced on the SB 94 schedule</li>
-</ul>
-</details>
-
-#### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> ffs_tri_page - `LINKS_CHANGED` <span style="display:inline-block;padding:.05em .5em;border-radius:1em;font-size:.72em;font-weight:600;background:#fff3cd;color:#6b4e00;white-space:nowrap">changed 2026-07-20</span>
-
-<p style="margin:.2em 0 .2em 2em"><a href="https://www.dhcs.ca.gov/medi-cal-targeted-provider-rate-increases-and-investments/">Open the source</a> - checked 2026-07-20</p>
-
-<p style="margin:.2em 0 .2em 2em"><b>Why:</b> The list of files this page links to changed: +3 added, -0 removed. The page&#x27;s own wording did not have to change for this to flag.</p>
-
-<details style="margin:.3em 0 1.1em 2em">
-<summary>Details: exactly what is checked here, how, and its caveats</summary>
-<ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://www.dhcs.ca.gov/medi-cal-targeted-provider-rate-increases-and-investments/">https://www.dhcs.ca.gov/medi-cal-targeted-provider-rate-increases-and-investments/</a></li>
-<li><b>How:</b> The page's visible text is hashed AND every file link matching the entry's pattern is collected; a new or removed link is flagged even when the page text is unchanged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
-<li><b>This run:</b> LINKS_CHANGED - +3 [&#x27;/wp-content/uploads/2025/10/Web-Accessibility-Cert.pdf&#x27;, &#x27;https://www.dhcs.ca.gov/wp-content/uploads/2025/10/CY-2024-TRI-Fee-Schedule-Feb.xlsx&#x27;, &#x27;https://www.dhcs.ca.gov/wp-content/uploads/2025/10/SB94-Family-Planning-Services-Fee-Schedule.xlsx&#x27;] / -0 []</li>
-<li><b>Last checked:</b> 2026-07-20</li>
-<li><b>Last recorded change:</b> 2026-07-20 (LINKS_CHANGED)</li>
-<li><b>Watchlist note:</b> TRI landing; link-set diff catches re-versioned fee schedule filenames and new APL redlines. Heads-up for readers - the fee schedule links on this page are direct .xlsx downloads (clicking one downloads an Excel file rather than opening a page).</li>
-<li><b>Registry rows to verify on change:</b> reimbursement_basis rows citing TRI / SB 94</li>
-</ul>
-</details>
-
-#### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#fff6e0;color:#7a4a00;white-space:nowrap">Can't verify</span> ffs_wic_14105_201 - `MANUAL_REVIEW`
-
-<p style="margin:.2em 0 .2em 2em"><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14105.201.&amp;lawCode=WIC">Open the source</a> - not fetched automatically</p>
-
-<p style="margin:.2em 0 .2em 2em"><b>Why:</b> leginfo robots.txt disallows automated fetch - review quarterly by hand.</p>
-
-<details style="margin:.3em 0 1.1em 2em">
-<summary>Details: exactly what is checked here, how, and its caveats</summary>
-<ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14105.201.&amp;lawCode=WIC">https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14105.201.&amp;lawCode=WIC</a></li>
-<li><b>How:</b> Not fetched automatically. The weekly script run lists it every time as a standing reminder.</li>
-<li><b>Why it cannot be auto-checked:</b> leginfo robots.txt disallows automated fetch - review quarterly by hand.</li>
-<li><b>What to do instead:</b> Open it yourself: <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14105.201.&amp;lawCode=WIC">https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14105.201.&amp;lawCode=WIC</a>. Follow the cadence in the reason above; if none is stated, re-read it when program news suggests a change.</li>
-<li><b>Last checked:</b> never fetched automatically</li>
-<li><b>Last recorded change:</b> none since the change log began</li>
-<li><b>Registry rows to verify on change:</b> none mapped in the watchlist; triage by judgment.</li>
 </ul>
 </details>
 
@@ -875,7 +735,6 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 One row per watched URL, **colored by website** so sources from the same site are easy to spot together.
 
 <ul style="list-style:none;padding-left:0;font-size:.85em;line-height:1.7">
-<li style="color:#5b2d86;font-weight:600">fpact_bulletin_probe - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/bulletin?community=family-pact&amp;issueNumber={issue}" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/bulletin?community=family-pact&amp;issueNumber={issue}</a></li>
 <li style="color:#5b2d86;font-weight:600">fpact_manual_docs--00letter - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B84C9830-1762-442B-BB11-268B9BB1008B" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B84C9830-1762-442B-BB11-268B9BB1008B</a></li>
 <li style="color:#5b2d86;font-weight:600">fpact_manual_docs--0bhwtouse - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/D5B367D8-ED60-4A57-A0F1-71B9626E038A" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/D5B367D8-ED60-4A57-A0F1-71B9626E038A</a></li>
 <li style="color:#5b2d86;font-weight:600">fpact_manual_docs--1tocfpact - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/5416438C-154C-4523-B1C8-8C3888870C71" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/5416438C-154C-4523-B1C8-8C3888870C71</a></li>
@@ -901,22 +760,16 @@ One row per watched URL, **colored by website** so sources from the same site ar
 <li style="color:#5b2d86;font-weight:600">fpact_manual_docs--radif - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/A8A04AB0-8C04-4653-9A48-0C765462A3A0" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/A8A04AB0-8C04-4653-9A48-0C765462A3A0</a></li>
 <li style="color:#5b2d86;font-weight:600">fpact_manual_docs--tarf - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/0CEE81EC-C0E9-4B4A-89FD-AE96C95FA705" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/0CEE81EC-C0E9-4B4A-89FD-AE96C95FA705</a></li>
 <li style="color:#14632e;font-weight:600">fpact_news_archive - <a href="https://familypact.org/news-and-updates-archive/" style="color:#14632e">https://familypact.org/news-and-updates-archive/</a></li>
-<li style="color:#14632e;font-weight:600">fpact_ppbi_landing - <a href="https://familypact.org/providers/policies-procedures-and-billing-instructions/" style="color:#14632e">https://familypact.org/providers/policies-procedures-and-billing-instructions/</a></li>
-<li style="color:#6b4e00;font-weight:600">fpact_wic_24005 - <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=24005.&amp;lawCode=WIC" style="color:#6b4e00">https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=24005.&amp;lawCode=WIC</a></li>
 <li style="color:#8b1a1a;font-weight:600">fqhc_cms_center - <a href="https://www.cms.gov/medicare/payment/prospective-payment-systems/federally-qualified-health-centers-fqhc-center" style="color:#8b1a1a">https://www.cms.gov/medicare/payment/prospective-payment-systems/federally-qualified-health-centers-fqhc-center</a></li>
 <li style="color:#1f4e79;font-weight:600">fqhc_dhcs_3097_page - <a href="https://www.dhcs.ca.gov/forms-laws-publications/forms/cost-report-forms-and-documents/" style="color:#1f4e79">https://www.dhcs.ca.gov/forms-laws-publications/forms/cost-report-forms-and-documents/</a></li>
-<li style="color:#0e5f5f;font-weight:600">fqhc_ecfr_405_subpart_x - <a href="https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-405/subpart-X" style="color:#0e5f5f">https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-405/subpart-X</a></li>
 <li style="color:#5b2d86;font-weight:600">fqhc_rural_manual_docs--rural - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C983B7D9-42B3-4543-BF93-D272AB764BDD" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C983B7D9-42B3-4543-BF93-D272AB764BDD</a></li>
 <li style="color:#5b2d86;font-weight:600">fqhc_rural_manual_docs--ruralcd - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/2D80A3B6-A32B-4131-BE63-12EE7243A849" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/2D80A3B6-A32B-4131-BE63-12EE7243A849</a></li>
 <li style="color:#5b2d86;font-weight:600">fqhc_rural_manual_docs--ruralex - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/08EC7DD1-AABE-4187-9D9E-F155C3DAF1CA" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/08EC7DD1-AABE-4187-9D9E-F155C3DAF1CA</a></li>
 <li style="color:#5b2d86;font-weight:600">fqhc_rural_manual_docs--ruralhosp - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/3E8C0259-6D59-4F20-BFA3-E5AE5754F39D" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/3E8C0259-6D59-4F20-BFA3-E5AE5754F39D</a></li>
-<li style="color:#6b4e00;font-weight:600">fqhc_wic_14132_100 - <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14132.100.&amp;lawCode=WIC" style="color:#6b4e00">https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14132.100.&amp;lawCode=WIC</a></li>
 <li style="color:#1f4e79;font-weight:600">mcp_apl_index - <a href="https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx" style="color:#1f4e79">https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx</a></li>
 <li style="color:#1f4e79;font-weight:600">mcp_boilerplate_contract - <a href="https://www.dhcs.ca.gov/hi/wp-content/uploads/2025/10/2024-Managed-Care-Boilerplate-Contract.pdf" style="color:#1f4e79">https://www.dhcs.ca.gov/hi/wp-content/uploads/2025/10/2024-Managed-Care-Boilerplate-Contract.pdf</a></li>
 <li style="color:#1f4e79;font-weight:600">mcp_tri_faq - <a href="https://www.dhcs.ca.gov/services/Documents/DirectedPymts/CY-2024-TRI-FAQ-20250312.pdf" style="color:#1f4e79">https://www.dhcs.ca.gov/services/Documents/DirectedPymts/CY-2024-TRI-FAQ-20250312.pdf</a></li>
 <li style="color:#1f4e79;font-weight:600">ffs_sb94_fp_fee_schedule - <a href="https://www.dhcs.ca.gov/wp-content/uploads/2025/10/SB94-Family-Planning-Services-Fee-Schedule.xlsx" style="color:#1f4e79">https://www.dhcs.ca.gov/wp-content/uploads/2025/10/SB94-Family-Planning-Services-Fee-Schedule.xlsx</a></li>
-<li style="color:#1f4e79;font-weight:600">ffs_tri_page - <a href="https://www.dhcs.ca.gov/medi-cal-targeted-provider-rate-increases-and-investments/" style="color:#1f4e79">https://www.dhcs.ca.gov/medi-cal-targeted-provider-rate-increases-and-investments/</a></li>
-<li style="color:#6b4e00;font-weight:600">ffs_wic_14105_201 - <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14105.201.&amp;lawCode=WIC" style="color:#6b4e00">https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14105.201.&amp;lawCode=WIC</a></li>
 <li style="color:#8b1a1a;font-weight:600">ncci_medicaid_files - <a href="https://www.cms.gov/medicare/coding-billing/ncci-medicaid/medicaid-ncci-edit-files" style="color:#8b1a1a">https://www.cms.gov/medicare/coding-billing/ncci-medicaid/medicaid-ncci-edit-files</a></li>
 <li style="color:#5b2d86;font-weight:600">rev_clinics_hospitals_manuals - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=clinics-and-hospitals" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=clinics-and-hospitals</a></li>
 <li style="color:#5b2d86;font-weight:600">rev_general_medicine_manuals - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=general-medicine" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=general-medicine</a></li>

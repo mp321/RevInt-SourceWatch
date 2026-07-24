@@ -24,7 +24,8 @@ sys.path.insert(0, str(REPO))
 from source_check import (  # noqa: E402
     SnapshotStore, changed_pages_summary, extract_code_entries,
     snapshot_page_map, parse_page_stamps, stamp_change_detail,
-    stamps_display, revision_changes,
+    stamps_display, revision_changes, signature, verdict_for,
+    parse_link_detail, link_change_detail, link_change_bullets,
 )
 
 REAL_SNAPSHOT = REPO / "snapshots" / "fqhc" / "fqhc_cms_center.txt"
@@ -204,3 +205,57 @@ def test_revision_changes_names_moved_sections():
     assert "section removed: 'Retired Section'" in out
     assert len(out) == 3                    # unchanged tarf not mentioned
     assert revision_changes(cur, cur) == []
+
+
+def test_empty_200_is_unreachable_not_a_change():
+    """Live regression, 2026-07-17: dhcs.ca.gov answered 200 with an empty
+    body for two linkpage sources. Before the guard, the empty text and the
+    now-empty link list were treated as content: LINKS_CHANGED that run,
+    the mirror-image LINKS_CHANGED when the real page returned, and a
+    poisoned baseline in between. An empty 200 must be UNREACHABLE so the
+    previous baseline survives."""
+    entry = {"type": "linkpage", "url": "https://example.gov/page"}
+    prev = {"url": "https://example.gov/page", "text_sha": "abc123",
+            "links": ["/a.pdf", "/b.pdf", "/c.pdf"]}
+    resp = {"status": "200"}
+    empty = signature(entry,
+                      {**resp, "content": b"<html><body></body></html>"})
+    assert empty["empty_body"] is True
+    verdict, detail = verdict_for(entry, prev, resp, empty)
+    assert verdict == "UNREACHABLE"
+    assert "empty page" in detail
+
+    # a first-ever check that comes back empty still baselines quietly as
+    # NEW (there is no good previous state to protect)
+    assert verdict_for(entry, {}, resp, empty)[0] == "NEW"
+
+    # and a real page with real text still diffs its links normally
+    body = (b"<html><body><p>" + b"policy text " * 60
+            + b'</p><a href="/a.pdf">a</a><a href="/new.pdf">n</a>'
+              b'<a href="/c.pdf">c</a></body></html>')
+    real = signature(entry, {**resp, "content": body})
+    assert real["empty_body"] is False
+    verdict, detail = verdict_for(entry, prev, resp, real)
+    assert verdict == "LINKS_CHANGED"
+    n_add, n_del, added, removed = parse_link_detail(detail)
+    assert (n_add, n_del) == (1, 1)
+    assert added == ["/new.pdf"] and removed == ["/b.pdf"]
+
+
+def test_link_detail_reads_the_legacy_format_too():
+    """Rows written before the readable format exist in changes_log.csv and
+    in old reports; the dashboard must still render them as URL rows."""
+    legacy = "+2 ['/wp-content/x.pdf', 'https://a.gov/b.pdf'] / -0 []"
+    assert parse_link_detail(legacy) == (
+        2, 0, ["/wp-content/x.pdf", "https://a.gov/b.pdf"], [])
+    row = {"verdict": "LINKS_CHANGED", "detail": legacy,
+           "url": "https://www.dhcs.ca.gov/page/"}
+    bullets = link_change_bullets(row, indent="")
+    assert bullets[0] == ("- added: [https://www.dhcs.ca.gov/wp-content/x.pdf]"
+                          "(https://www.dhcs.ca.gov/wp-content/x.pdf)")
+    assert parse_link_detail("content text hash differs") is None
+    # the cap tail survives the round trip as text, not as a bogus link
+    capped = link_change_detail([f"/f{i}.pdf" for i in range(12)], [])
+    assert capped.endswith("+4 more")
+    assert "more not listed here" in link_change_bullets(
+        {"verdict": "LINKS_CHANGED", "detail": capped, "url": ""})[-1]

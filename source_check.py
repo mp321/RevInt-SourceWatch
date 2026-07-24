@@ -2,7 +2,7 @@
 """
 source_check.py - SF DPH Revenue Integrity multi-program source change-checker.
 
-v1.5. Keeps the v1.2 engine (conditional GETs, robots.txt, redirect guard,
+v1.6. Keeps the v1.2 engine (conditional GETs, robots.txt, redirect guard,
 entry types pdf/html/binary/linkpage/bulletin_probe, BLIND_SHELL honesty,
 manual entries, registry_keys mapping) and adds four things:
 
@@ -26,6 +26,13 @@ manual entries, registry_keys mapping) and adds four things:
 A change verdict means one thing only: a human re-reads that source and, if
 needed, updates the registry. Nothing is written to any system of record.
 Decision support, not a source of truth.
+
+Two guards exist because a bad response is not a change, and both were
+written after live incidents (2026-07-17): a 200 that is not a parseable PDF
+(pdf_parse_failed) and a 200 with no readable text at all (empty_body) both
+report UNREACHABLE and keep the previous baseline. An entry that can only
+ever report the same status is removed rather than left to cry wolf - the
+reasoning for each removal lives in the version notes in watchlist.yaml.
 
 Run:
   python source_check.py                       # all enabled programs
@@ -63,6 +70,7 @@ UA = "SFHN-RevInt-source-checker/1.3"
 TIMEOUT = 30
 SLEEP = 1.0
 SHELL_MIN_CHARS = 400          # visible text below this => JS app shell
+EMPTY_SHA = hashlib.sha256(b"").hexdigest()   # hash of an empty fetch
 DATE_RE = re.compile(r"Page updated:\s*([A-Za-z]+\s+\d{4})")
 DEFAULT_LINK_RE = r'href="([^"]+\.pdf[^"]*)"'
 NEEDS_REVIEW = {"NEW", "CHANGED", "DATE_CHANGED", "LINKS_CHANGED",
@@ -577,6 +585,14 @@ def signature(entry: dict, resp: dict) -> dict:
     else:                                            # html / linkpage
         text = html_text(raw)
         sig["shell"] = len(text) < SHELL_MIN_CHARS
+        # A 200 carrying no readable text at all is a failed fetch wearing a
+        # success code (bot check, truncated response, dropped connection
+        # mid-body). Observed live 2026-07-17: dhcs.ca.gov returned empty
+        # bodies for two pages, which baselined the empty hash and produced
+        # a false LINKS_CHANGED that weekend and its mirror image the next
+        # run when the real page came back. verdict_for turns this into an
+        # honest UNREACHABLE that keeps the previous baseline.
+        sig["empty_body"] = not text.strip()
         sig["text_sha"] = sha(text)
         sig["snapshot_text"] = "\n".join(textwrap.wrap(text, 100))
         if etype == "linkpage":
@@ -653,6 +669,11 @@ def verdict_for(entry: dict, prev: dict, resp: dict, sig: dict) -> tuple[str, st
         return "UNREACHABLE", (f"expected a PDF but the server returned {kind} "
                                "- the document may have moved or sit behind a "
                                "bot check; the previous baseline is kept")
+    if sig.get("empty_body") and prev.get("text_sha") not in (None, "", EMPTY_SHA):
+        return "UNREACHABLE", ("the server answered 200 with an empty page - "
+                               "no readable text at all, which is a bot check "
+                               "or a truncated response rather than a real "
+                               "edit; the previous baseline is kept")
     if not prev:
         return "NEW", "no baseline yet"
     if entry.get("url") != prev.get("url"):
@@ -1583,6 +1604,31 @@ def link_change_bullets(r: dict, indent: str = "    ") -> list[str]:
     return out
 
 
+def open_url(r: dict) -> str:
+    """The URL a person should open. Falls back to the watched URL, but when
+    the watched URL is a direct file download the entry can name a landing
+    page (human_url) so nobody has to download a spreadsheet to look at a
+    source."""
+    return r.get("human_url") or r.get("url", "")
+
+
+def change_count_map(log_path: Path | None, since: str) -> dict[str, int]:
+    """id -> number of recorded flag events on or after `since`. Used to say
+    out loud when a source keeps flagging, which is usually a sign the entry
+    needs tightening rather than the source needing reading."""
+    out: dict[str, int] = {}
+    if not log_path or not Path(log_path).exists():
+        return out
+    try:
+        with Path(log_path).open(encoding="utf-8", newline="") as f:
+            for row in csv.DictReader(f):
+                if row.get("id") and (row.get("generated") or "")[:10] >= since:
+                    out[row["id"]] = out.get(row["id"], 0) + 1
+    except OSError:
+        pass
+    return out
+
+
 def last_change_map(log_path: Path | None) -> dict[str, tuple[str, str, str]]:
     """id -> (generated, verdict, diff_report) of the latest change-log
     event. The log is append-only chronological, so the last row per id
@@ -1636,6 +1682,11 @@ def fine_print(r: dict, last_change: dict[str, tuple[str, str]]) -> list[str]:
                   + (f" {esc(dn.strip())}" if dn else "")
                   + (" (template; {issue} is the probed issue number)"
                      if r.get("type") == "bulletin_probe" else "") + "</li>")
+        if r.get("human_url"):
+            li.append('<li><b>Where to open it:</b> '
+                      f'<a href="{esc(r["human_url"])}">{esc(r["human_url"])}'
+                      "</a> - the page this file is published on. The script "
+                      "checks the file itself; a person should start here.</li>")
     else:
         li.append("<li><b>URL checked:</b> none configured yet.</li>")
     if is_manual:
@@ -1692,21 +1743,34 @@ def fine_print(r: dict, last_change: dict[str, tuple[str, str]]) -> list[str]:
             + li + ["</ul>", "</details>"])
 
 
-def needs_review_item(r: dict) -> list[str]:
-    title = (f"[{r['id']}]({r['url']}){download_note(r['url'])}"
-             if r.get("url") else f"`{r['id']}`")
+def needs_review_item(r: dict, repeats: int = 0) -> list[str]:
+    opened = open_url(r)
+    title = (f"[{r['id']}]({opened}){download_note(opened)}"
+             if opened else f"`{r['id']}`")
     out = [f"- {badge_for(r['verdict'])} `{r['verdict']}` - {title} "
            f"_({PROGRAM_NAMES.get(r['program'], r['program'])})_",
            f"  - **What happened:** {md_cell(plain_why(r)) or 'no detail recorded.'}"]
     out += link_change_bullets(r, indent="    ")
+    if r.get("human_url") and r.get("url"):
+        out.append(f"  - **Watched file:** [{md_cell(r['url'])}]({r['url']})"
+                   f"{download_note(r['url'])} - the link above opens the "
+                   f"page it is published on.")
     out.append(f"  - **What to do:** {md_cell(action_for(r['verdict']))}")
+    if repeats > 1:
+        out.append(f"  - **Seen before:** flagged {repeats} times in the last "
+                   f"{RECENT_DAYS} days. If the source reads the same as "
+                   f"last time, the page most likely re-published or "
+                   f"re-shuffled its own files rather than changing policy - "
+                   f"note that and move on, and if it keeps repeating, "
+                   f"tighten or retire the watchlist entry.")
     if r.get("diff_report"):
         rel = repo_rel(r["diff_report"])
         out.append(f"  - **Exact change:** [{md_cell(rel)}]({blob_url(rel)})")
     elif r["verdict"] == "CHANGED":
-        out.append("  - **Exact change:** no diff was written this run (no "
-                   "prior text snapshot to compare against) - compare the "
-                   "live source with your last known state.")
+        out.append("  - **Exact change:** no before/after diff was recorded "
+                   "for this check - compare the live source against the "
+                   "stored copy in `snapshots/` (or your own last known "
+                   "state).")
     codes = r.get("codes_touched") or []
     if codes:
         url = r.get("url", "")
@@ -1766,6 +1830,7 @@ def write_dashboard(path: Path, report: dict,
     default (primer) theme renders it with no client-side build step.
     """
     last_change = last_change_map(log_path)
+    repeat_counts = change_count_map(log_path, recent_cutoff())
     results = sorted(report["results"], key=lambda r: (r["program"], r["id"]))
     flagged = [r for r in results if r["verdict"] in NEEDS_REVIEW
                and r["verdict"] != "REVISION_NOTICE"]
@@ -1804,10 +1869,18 @@ def write_dashboard(path: Path, report: dict,
     lines += section(f"Needs review ({len(flagged)})", spacer=False)
     if flagged:
         lines.append("Every item links to the source and, when text changed, "
-                     "to the exact before/after diff.")
+                     "to the exact before/after diff. If you open a source "
+                     "and cannot find anything that actually changed, that "
+                     "is a normal outcome: agencies re-publish files, "
+                     "re-shuffle links and move pages without changing "
+                     "policy, and the script cannot tell that apart from a "
+                     "real edit. Note it and move on - and if the same item "
+                     "keeps coming back with nothing behind it, its "
+                     "watchlist entry should be tightened or removed rather "
+                     "than re-read every week.")
         lines.append("")
         for r in flagged:
-            lines += needs_review_item(r)
+            lines += needs_review_item(r, repeats=repeat_counts.get(r["id"], 0))
         lines.append("")
     else:
         lines += [f"{badge('ok')} Nothing needs review from the last run.", ""]
@@ -1818,7 +1891,7 @@ def write_dashboard(path: Path, report: dict,
                   "until fixed. What to do about each status is in the "
                   "[status legend](#status-legend).", ""]
         for r in gaps:
-            title = (f"[{r['id']}]({r['url']})" if r.get("url")
+            title = (f"[{r['id']}]({open_url(r)})" if open_url(r)
                      else f"`{r['id']}`")
             lines.append(f"- {badge_for(r['verdict'])} {title} "
                          f"_({PROGRAM_NAMES.get(r['program'], r['program'])})_"
@@ -1834,7 +1907,7 @@ def write_dashboard(path: Path, report: dict,
                   "portal and route anything touching billing codes or the "
                   "chargemaster.", ""]
         for r in notices:
-            title = (f"[{r['id']}]({r['url']})" if r.get("url")
+            title = (f"[{r['id']}]({open_url(r)})" if open_url(r)
                      else f"`{r['id']}`")
             lines.append(f"- {badge_for(r['verdict'])} {title} - "
                          f"{md_cell(r.get('detail') or '')}")
@@ -1843,7 +1916,7 @@ def write_dashboard(path: Path, report: dict,
     recent = sorted(((g, v, i, df) for i, (g, v, df) in last_change.items()
                      if g[:10] >= cutoff), reverse=True)
     if recent:
-        url_by_id = {r["id"]: r.get("url", "") for r in results}
+        url_by_id = {r["id"]: open_url(r) for r in results}
         lines += section(f"Changed in the last {RECENT_DAYS} days "
                          f"({len(recent)})")
         lines += ["The recent trail, newest first - use it to confirm what "
@@ -1895,10 +1968,14 @@ def write_dashboard(path: Path, report: dict,
                          f"`{r['verdict']}`{pill}")
             lines.append("")
             bits = []
-            if r.get("url"):
-                dn = download_note(r["url"])
-                bits.append(f'<a href="{esc(r["url"])}">Open the source</a>'
+            if open_url(r):
+                opened = open_url(r)
+                dn = download_note(opened)
+                bits.append(f'<a href="{esc(opened)}">Open the source</a>'
                             + (f" {esc(dn.strip())}" if dn else ""))
+                if r.get("human_url") and r.get("url"):
+                    bits.append(f'<a href="{esc(r["url"])}">watched file</a>'
+                                + f" {esc(download_note(r['url']).strip())}")
             if r.get("page_updated"):
                 bits.append(f"revision {esc(stamps_display(r['page_updated']))}")
             checked = (r.get("checked_at") or "")[:10]
@@ -2003,9 +2080,14 @@ def write_changes_page(path: Path, report: dict,
         bullets = link_change_bullets(r, indent="")
         if bullets:
             lines += bullets + [""]
-        if r.get("url"):
-            lines.append(f"**Source of truth:** [{md_cell(r['url'])}]"
-                         f"({r['url']}){download_note(r['url'])}")
+        if open_url(r):
+            opened = open_url(r)
+            lines.append(f"**Source of truth:** [{md_cell(opened)}]"
+                         f"({opened}){download_note(opened)}")
+            if r.get("human_url") and r.get("url"):
+                lines.append("")
+                lines.append(f"**Watched file:** [{md_cell(r['url'])}]"
+                             f"({r['url']}){download_note(r['url'])}")
             lines.append("")
         codes = r.get("codes_touched") or []
         if codes:
@@ -2119,7 +2201,8 @@ def write_sources_csv(watchlist: Path, out_dir: Path) -> None:
                 "program": e["program"],
                 "program_name": PROGRAM_NAMES.get(e["program"], e["program"]),
                 "id": e["id"], "type": e.get("type", "html"),
-                "url": url, "host": urlparse(url).hostname or "",
+                "url": url, "human_url": e.get("human_url", ""),
+                "host": urlparse(url).hostname or "",
                 "manual": bool(e.get("manual")),
                 "registry_keys": ";".join(keys), "registry_note": rnote,
                 "note": e.get("note", e.get("manual_note", "")),
@@ -2267,6 +2350,7 @@ def run(watchlist: Path, out_dir: Path, only, update: bool,
             "detail": detail, "page_updated": sig.get("page_updated", ""),
             "shell": sig.get("shell", ""), "http": resp.get("status", ""),
             "url": entry.get("url", entry.get("url_template", "")),
+            "human_url": entry.get("human_url", ""),
             "registry_keys": ";".join(rkeys),
             "registry_note": rnote,
             "note": entry.get("note", ""), "diff_report": diff_report,

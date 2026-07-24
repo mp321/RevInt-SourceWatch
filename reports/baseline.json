@@ -10,27 +10,6 @@
     "text_sha": "80e17ecbc8dc0126eb63bf5692ea53624bca8f793f35eba72f43cfaecf350cdf",
     "url": "https://www.dhcs.ca.gov/wp-content/uploads/2025/10/SB94-Family-Planning-Services-Fee-Schedule.xlsx"
   },
-  "ffs_tri_page": {
-    "byte_sha": "60e8e78204b6c742799a85a2777e4381a4f69b60f3d6ccabc24fd9bd8e56eeaa",
-    "checked_at": "2026-07-20T15:47:48+00:00",
-    "etag": "",
-    "last_modified": "",
-    "links": [
-      "/wp-content/uploads/2025/10/Web-Accessibility-Cert.pdf",
-      "https://www.dhcs.ca.gov/wp-content/uploads/2025/10/CY-2024-TRI-Fee-Schedule-Feb.xlsx",
-      "https://www.dhcs.ca.gov/wp-content/uploads/2025/10/SB94-Family-Planning-Services-Fee-Schedule.xlsx"
-    ],
-    "page_updated": "",
-    "shell": false,
-    "text_sha": "f22816c6fbbef43ce83617fdf9b97f19f7d30a84153ea2b170d240693f50d3d7",
-    "url": "https://www.dhcs.ca.gov/medi-cal-targeted-provider-rate-increases-and-investments/"
-  },
-  "ffs_wic_14105_201": {},
-  "fpact_bulletin_probe": {
-    "checked_at": "2026-07-20T15:47:48+00:00",
-    "last_seen_issue": 223,
-    "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/bulletin?community=family-pact&issueNumber={issue}"
-  },
   "fpact_manual_docs": {
     "checked_at": "2026-07-20T15:47:48+00:00",
     "docs": [
@@ -443,8 +422,6 @@
     "text_sha": "51fc98475f4e8d124276baeda2da8984b7982e77baaa98f7dcf97d6fe24fcd35",
     "url": "https://familypact.org/news-and-updates-archive/"
   },
-  "fpact_ppbi_landing": {},
-  "fpact_wic_24005": {},
   "fqhc_cms_center": {
     "byte_sha": "f41feb86a3a79795e73d7a1631e3c5a0fc153383939ad3d28cf2d4eb9a355e2f",
     "checked_at": "2026-07-20T15:47:48+00:00",
@@ -467,7 +444,6 @@
     "text_sha": "a29013512cebb044fa2b81ed98f37c3a1674a7665778c537d3ddc343420ac0c5",
     "url": "https://www.dhcs.ca.gov/forms-laws-publications/forms/cost-report-forms-and-documents/"
   },
-  "fqhc_ecfr_405_subpart_x": {},
   "fqhc_rural_manual_docs": {
     "checked_at": "2026-07-20T15:47:48+00:00",
     "docs": [
@@ -534,16 +510,11 @@
     "title": "Rural Hospital Swing Bed Program (rural hosp)",
     "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/3E8C0259-6D59-4F20-BFA3-E5AE5754F39D"
   },
-  "fqhc_wic_14132_100": {},
   "mcp_apl_index": {
     "byte_sha": "4793c57859a5d41a05336d6ad7c2167b998fccaad7edd20ee76bbf717787ae21",
     "checked_at": "2026-07-20T15:47:48+00:00",
     "etag": "",
     "last_modified": "",
-    "links": [
-      "/wp-content/uploads/2025/10/Web-Accessibility-Cert.pdf",
-      "https://www.dhcs.ca.gov/wp-content/uploads/2025/10/MOU-FAQs.pdf"
-    ],
     "page_updated": "",
     "shell": false,
     "text_sha": "4547469abff3bd09d52147a84a5a67a2e43c8189216e0b3b65128052db535b5b",

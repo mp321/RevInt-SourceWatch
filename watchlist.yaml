@@ -1,11 +1,17 @@
-# SF DPH Revenue Integrity - source watchlist (all programs, modular). v1.5
+# SF DPH Revenue Integrity - source watchlist (all programs, modular). v1.6
 # Toggle a whole program with `enabled:`; run a subset with --programs.
-# Entry types: pdf | html | binary | linkpage | bulletin_probe | manual_list
+# Entry types: pdf | html | binary | linkpage | bulletin_probe |
+#              manual_list | revision_watch
 #   expect_shell: true = known client-rendered page; monitored for shell
 #                        changes but honestly labeled blind to content.
 #   manual: true       = cannot be checked automatically (robots.txt, bot
 #                        wall, or broken redirect); reported MANUAL_REVIEW
 #                        so a human checks it on a cadence.
+#   human_url          = the page a person should open when the watched URL
+#                        is a direct file download (.xlsx/.zip/.pdf). The
+#                        checker still fetches `url`; the dashboard links
+#                        human_url first so nobody has to download a file
+#                        just to look at the source.
 #   registry_keys / registry_note = which registry rows to re-verify on
 #                        change (v1.5 rename of master_keys / master_note;
 #                        the code reads both).
@@ -16,22 +22,54 @@
 #   stamps captured. Family PACT first; other manual communities follow
 #   the same pattern (see notes/CONTEXT-mcweb.md).
 # v1.5 (2026-07-17): master_* keys renamed registry_*.
+#
+# v1.6 (2026-07-24) - NOISE PRUNE. Rule applied, and worth keeping: an
+#   entry earns its place only if it can report something a person would
+#   act on. An entry that returns the identical status every run trains
+#   people to ignore the dashboard, which costs more than the coverage it
+#   pretends to give. Seven entries removed (git history has the configs):
+#
+#   fpact_ppbi_landing, fpact_wic_24005, ffs_wic_14105_201,
+#   fqhc_wic_14132_100, fqhc_ecfr_405_subpart_x
+#     -> permanent MANUAL_REVIEW. leginfo robots.txt and the eCFR bot wall
+#        block automated fetches by design, and the PPBI landing page
+#        redirects off-site, so each one printed the same standing
+#        reminder every single week and never once reported a change.
+#        Statute and CFR changes arrive with advance notice through MCSS,
+#        program news and bill tracking. STILL OPEN, carried here because
+#        the entry that held it is gone: WIC 14132.100 was amended by
+#        AB 116 effective 2026-07-01 - verify the PPS-billable provider
+#        list by hand and update the fqhc-billing reference. eCFR
+#        publishes a real public API for Title 42 Part 405; wiring that up
+#        is the way to bring the CFR text back under automated watch
+#        (parking lot in dev-prompt.md).
+#   fpact_bulletin_probe
+#     -> permanent PROBE_INCONCLUSIVE. The bulletin portal is client-
+#        rendered, so probing issue N+1 returns an empty app shell whether
+#        or not the issue exists. It cannot answer its own question. MCSS
+#        is the detector for bulletins.
+#   ffs_tri_page
+#     -> brittle link diffing. The regex only ever matched three URLs on
+#        that page (the two fee-schedule .xlsx files and the site-wide
+#        accessibility-certificate PDF in the footer) because every other
+#        document on the page uses the /file/<slug>-pdf/ redirect form.
+#        Those same three links vanished on 2026-07-17 and came back
+#        identical on 2026-07-20 - a flapping fetch, not a change, which
+#        is exactly the false alarm that erodes trust. Replaced by
+#        watching the two fee schedules directly as file hashes below;
+#        DHCS keeps the filenames stable and bumps the version in the link
+#        text, so an in-place replacement shows up as a content change and
+#        a re-upload elsewhere shows up as UNREACHABLE.
+#
+#   Also changed: mcp_apl_index dropped its link_pattern (same footer-PDF
+#   noise, and the pattern never matched an actual All Plan Letter) and is
+#   now a plain text-hash watch.
 
 programs:
 
   fpact:
     enabled: true
     entries:
-      - id: fpact_ppbi_landing
-        type: linkpage
-        manual: true
-        url: https://familypact.org/providers/policies-procedures-and-billing-instructions/
-        manual_note: Redirects off-site to the legacy files.medi-cal.ca.gov
-          manual-query page, which timed out on 2026-07-02; current PPBI
-          sections live on the client-rendered mcweb portal. Detection is
-          MCSS + fpact_news_archive; open the PPBI manually when flagged.
-        registry_note: ppbi_source_section rows for any changed section
-
       - id: fpact_news_archive
         type: linkpage
         url: https://familypact.org/news-and-updates-archive/
@@ -40,15 +78,6 @@ programs:
           read. Pattern excludes feed/json noise. Also catches re-versioned
           artifacts (e.g. a new Superbill filename).
         registry_note: triage per announcement
-
-      - id: fpact_wic_24005
-        type: html
-        manual: true
-        url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=24005.&lawCode=WIC
-        manual_note: leginfo robots.txt disallows automated fetch - review
-          quarterly by hand. Statute changes arrive via bills, so MCSS and
-          program news normally give advance notice.
-        registry_note: eligibility / payer-of-last-resort denial rows
 
       - id: fpact_manual_docs
         type: manual_list
@@ -96,54 +125,52 @@ programs:
           integration. Decision support, not a source of record.
         registry_note: ppbi_source_section rows for any changed section
 
-      - id: fpact_bulletin_probe
-        type: bulletin_probe
-        url_template: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/bulletin?community=family-pact&issueNumber={issue}
-        seed_issue: 223
-        probe_count: 3
-        note: Best-effort probe; portal is client-rendered so expect
-          PROBE_INCONCLUSIVE - MCSS email is the reliable detector.
-
   medi_cal_ffs:
     enabled: true
     entries:
-      - id: ffs_tri_page
-        type: linkpage
-        url: https://www.dhcs.ca.gov/medi-cal-targeted-provider-rate-increases-and-investments/
-        link_pattern: 'href="([^"]+\.(?:pdf|xlsx)[^"]*)"'
-        note: TRI landing; link-set diff catches re-versioned fee schedule
-          filenames and new APL redlines. Heads-up for readers - the fee
-          schedule links on this page are direct .xlsx downloads (clicking
-          one downloads an Excel file rather than opening a page).
-        registry_note: reimbursement_basis rows citing TRI / SB 94
+      # Both fee schedules are watched as file hashes rather than through
+      # the TRI landing page (see the v1.6 note at the top of this file).
+      # Verified on the live page 2026-07-24: the URLs carry no version -
+      # the WordPress upload folder "2025/10" is just when the site was
+      # migrated - and DHCS puts the version in the link text instead
+      # ("CY 2024 TRI Fee Schedule v1.07.02072025"). So a re-issue either
+      # overwrites the same URL, which the byte hash catches, or lands on a
+      # new URL, which shows up here as UNREACHABLE - the signal to open
+      # the landing page and repoint the entry.
+      - id: ffs_tri_fee_schedule
+        type: binary
+        url: https://www.dhcs.ca.gov/wp-content/uploads/2025/10/CY-2024-TRI-Fee-Schedule-Feb.xlsx
+        human_url: https://www.dhcs.ca.gov/medi-cal-targeted-provider-rate-increases-and-investments/
+        note: CY 2024 Targeted Rate Increase fee schedule - the code list and
+          rates for primary care, obstetric and non-specialty mental health
+          services. Rates stay in effect until further notice (Prop 35), so
+          a content change here is a real rate or code-list change.
+        registry_note: reimbursement_basis rows citing TRI
 
       - id: ffs_sb94_fp_fee_schedule
         type: binary
         url: https://www.dhcs.ca.gov/wp-content/uploads/2025/10/SB94-Family-Planning-Services-Fee-Schedule.xlsx
-        note: SB 94 family-planning augmented fee schedule (supersedes TRI
-          for FP codes with Z30.x). Versioned filename - a replacement
-          appears via ffs_tri_page. The URL is a direct .xlsx download;
-          prefer opening the TRI landing page and downloading from there.
+        human_url: https://www.dhcs.ca.gov/medi-cal-targeted-provider-rate-increases-and-investments/
+        note: SB 94 comprehensive family-planning fee schedule (supersedes
+          TRI for FP codes with Z30.x). Binary watch - a spreadsheet has no
+          extractable text, so this entry reports that the file changed, not
+          which rows changed; open it from the landing page to compare.
         registry_note: FPACT rows priced on the SB 94 schedule
-
-      - id: ffs_wic_14105_201
-        type: html
-        manual: true
-        url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14105.201.&lawCode=WIC
-        manual_note: leginfo robots.txt disallows automated fetch - review
-          quarterly by hand.
 
   managed_medi_cal:
     enabled: true
     entries:
       - id: mcp_apl_index
-        type: linkpage
+        type: html
         url: https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx
-        link_pattern: 'href="([^"]+\.pdf[^"]*)"'
-        note: Kept provisionally (2026-07-17 review). First run matched zero
-          links with the APL-specific pattern - broadened to all PDFs; text
-          hash still covers page changes. If the link list stays empty,
-          capture the real APL listing URL from the browser and repoint.
+        note: All Plan Letters index, watched by page text only. Link diffing
+          was removed 2026-07-24 - the pattern never matched an actual APL
+          (they are served through /file/<slug>-pdf/ redirects, not direct
+          .pdf hrefs), so it only ever flagged the site-wide accessibility
+          certificate and an MOU FAQ in the page footer, and those flapped
+          in and out between runs. If a text change here proves equally
+          noisy, capture the real APL listing URL from the browser and
+          repoint the entry; MCSS Managed Care is the backstop.
 
       - id: mcp_boilerplate_contract
         type: pdf
@@ -155,39 +182,22 @@ programs:
       - id: mcp_tri_faq
         type: pdf
         url: https://www.dhcs.ca.gov/services/Documents/DirectedPymts/CY-2024-TRI-FAQ-20250312.pdf
-        note: Hard-dated versioned filename (20250312) - a revision likely
-          ships under a new URL; ffs_tri_page link-set diffing is the
-          catcher for replacements. 2026-07-17 - this URL intermittently
-          answers 200 with a small HTML bot-check page instead of the PDF;
-          the checker reports that honestly as UNREACHABLE and keeps the
-          last good baseline.
+        note: Hard-dated filename (20250312) - unlike the fee schedules, the
+          date is in the file name itself, so a revision ships under a new
+          URL and this entry goes UNREACHABLE rather than CHANGED. Treat a
+          404 here as "the FAQ was reissued, find the new one on the TRI
+          landing page". 2026-07-17 - this URL also intermittently answers
+          200 with a small HTML bot-check page instead of the PDF; the
+          checker reports that honestly as UNREACHABLE and keeps the last
+          good baseline.
 
   fqhc:
     enabled: true
     entries:
-      - id: fqhc_wic_14132_100
-        type: html
-        manual: true
-        url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14132.100.&lawCode=WIC
-        manual_note: leginfo robots.txt disallows automated fetch. ACTION -
-          AB 116 amendment took effect 2026-07-01; manually verify the
-          amended provider list and update the fqhc-billing reference.
-        registry_note: PPS-billable provider list in fqhc-billing reference
-
       - id: fqhc_cms_center
         type: html
         url: https://www.cms.gov/medicare/payment/prospective-payment-systems/federally-qualified-health-centers-fqhc-center
         note: G2025 rate, care-management code set, telehealth expiries.
-
-      - id: fqhc_ecfr_405_subpart_x
-        type: html
-        manual: true
-        url: https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-405/subpart-X
-        manual_note: eCFR bot wall redirects automated fetches off-host.
-          eCFR publishes an official public API for exactly this use (see
-          ecfr.gov developer documentation) - switching this entry to the
-          API endpoint for Title 42 Part 405 is the planned fix; until then
-          review by hand when CMS guidance changes.
 
       - id: fqhc_dhcs_3097_page
         type: html
