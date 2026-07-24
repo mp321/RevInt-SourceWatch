@@ -38,6 +38,7 @@ Exit code: 1 if anything needs review (usable by cron/CI), else 0.
 from __future__ import annotations
 
 import argparse
+import ast
 import csv
 import difflib
 import hashlib
@@ -52,7 +53,7 @@ import time
 from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urljoin, urlparse
 from urllib.robotparser import RobotFileParser
 
 import requests
@@ -585,6 +586,59 @@ def signature(entry: dict, resp: dict) -> dict:
     return sig
 
 
+# A LINKS_CHANGED detail has to survive two very different readers: a person
+# skimming the dashboard and changes_log.csv (one line, no newlines allowed).
+# The stored form is therefore a flat, greppable sentence; the renderers call
+# parse_link_detail() to split it back into per-URL bullets.
+LINK_DETAIL_CAP = 8
+
+
+def link_change_detail(added: list[str], gone: list[str],
+                       cap: int = LINK_DETAIL_CAP) -> str:
+    bits = [f"+{len(added)} link(s) added, -{len(gone)} removed"]
+    for label, items in (("added", added), ("removed", gone)):
+        if items:
+            more = f"; +{len(items) - cap} more" if len(items) > cap else ""
+            bits.append(f"{label}: {'; '.join(items[:cap])}{more}")
+    return " | ".join(bits)
+
+
+# Old detail form, still sitting in baselines and in changes_log.csv rows
+# written before this format existed: "+2 ['a', 'b'] / -0 []".
+LINK_DETAIL_LEGACY = re.compile(r"^\+(\d+)\s*(\[.*?\])\s*/\s*-(\d+)\s*(\[.*?\])$")
+LINK_DETAIL_CURRENT = re.compile(r"^\+(\d+) link\(s\) added, -(\d+) removed(.*)$")
+
+
+def _literal_list(s: str) -> list[str]:
+    try:
+        return [str(x) for x in ast.literal_eval(s)]
+    except (ValueError, SyntaxError):
+        return []
+
+
+def parse_link_detail(detail) -> tuple[int, int, list[str], list[str]] | None:
+    """(n_added, n_removed, added_urls, removed_urls) for a LINKS_CHANGED
+    detail in either the current or the legacy format; None if the text is
+    not a link-change detail (then the caller renders it verbatim)."""
+    d = re.sub(r"\s+", " ", str(detail or "")).strip()
+    if not d.startswith("+"):
+        return None
+    m = LINK_DETAIL_LEGACY.match(d)
+    if m:
+        return (int(m.group(1)), int(m.group(3)),
+                _literal_list(m.group(2)), _literal_list(m.group(4)))
+    m = LINK_DETAIL_CURRENT.match(d)
+    if m:
+        lists: dict[str, list[str]] = {"added": [], "removed": []}
+        for part in m.group(3).split(" | "):
+            label, sep, rest = part.strip().partition(": ")
+            if sep and label in lists:
+                lists[label] = [u.strip() for u in rest.split(";") if u.strip()]
+        return (int(m.group(1)), int(m.group(2)),
+                lists["added"], lists["removed"])
+    return None
+
+
 def verdict_for(entry: dict, prev: dict, resp: dict, sig: dict) -> tuple[str, str]:
     """Return (verdict, detail)."""
     if resp["status"].startswith(("robots", "offhost", "error")):
@@ -606,7 +660,7 @@ def verdict_for(entry: dict, prev: dict, resp: dict, sig: dict) -> tuple[str, st
     if entry.get("type") == "linkpage" and sig["links"] != prev.get("links", []):
         added = [l for l in sig["links"] if l not in prev.get("links", [])]
         gone = [l for l in prev.get("links", []) if l not in sig["links"]]
-        return "LINKS_CHANGED", f"+{len(added)} {added[:3]} / -{len(gone)} {gone[:3]}"
+        return "LINKS_CHANGED", link_change_detail(added, gone)
     if sig["text_sha"] != prev.get("text_sha"):
         return "CHANGED", "content text hash differs"
     if sig["page_updated"] != prev.get("page_updated", ""):
@@ -1275,7 +1329,8 @@ def esc(s) -> str:
 
 QUIET = {"unchanged", "metadata_only_unchanged"}
 GAPS = {"UNREACHABLE", "CONFIG_TODO"}    # fixable monitoring gaps
-CADENCE_NOTE = "Checked by the weekly Monday run (14:00 UTC GitHub Action)."
+CADENCE_NOTE = ("Checked by the weekly script run (Mondays 14:00 UTC, "
+                "GitHub Actions).")
 
 PROGRAM_NAMES = {
     "fpact": "Family PACT",
@@ -1307,10 +1362,11 @@ def host_color(url: str) -> str:
 TYPE_HOW = {
     "pdf": "The PDF is downloaded (conditional GET - the server may answer "
            "'304 not modified' and skip the download), its text is extracted "
-           "and hashed, and the hash is compared with the previous run.",
+           "and hashed, and the hash is compared with the copy stored at the "
+           "previous check.",
     "html": "The page is downloaded (conditional GET), scripts and styles are "
             "stripped, and the visible text is hashed and compared with the "
-            "previous run.",
+            "copy stored at the previous check.",
     "linkpage": "The page's visible text is hashed AND every file link "
                 "matching the entry's pattern is collected; a new or removed "
                 "link is flagged even when the page text is unchanged.",
@@ -1326,7 +1382,7 @@ TYPE_HOW = {
     "revision_watch": "The portal's manual list for this community is queried "
                       "for metadata only - no PDFs are downloaded. Each "
                       "section's Revision Date is compared with the previous "
-                      "run; movement produces a lower-priority revision "
+                      "check; movement produces a lower-priority revision "
                       "notice naming the sections.",
 }
 
@@ -1366,8 +1422,9 @@ VERDICT_LEGEND: list[tuple[str, str, str, str]] = [
     ("LINKS_CHANGED", "review",
      "The set of files this page links to changed (often a re-versioned "
      "filename, e.g. a new Superbill).",
-     "Open the page, find the added or removed file named in Why, and if a "
-     "watched file was re-versioned, point watchlist.yaml at the new URL."),
+     "Open the page, check each added or removed file listed with the item, "
+     "and if a watched file was re-versioned, point watchlist.yaml at the "
+     "new URL so the script keeps monitoring it."),
     ("NEW_ISSUE", "review",
      "A probed bulletin issue number returned real content.",
      "Read the new bulletin and triage anything affecting the registry."),
@@ -1450,10 +1507,40 @@ def action_for(verdict: str) -> str:
                                       "fine print for this source."))[2]
 
 
+# Fixed strings the checker itself emits (never user or source text), so
+# they can be swapped for plain English without touching any detail that
+# came from a document or a server.
+MACHINE_DETAIL = {
+    "content text hash differs":
+        "The text of this document is not the same as the copy stored at the "
+        "last check.",
+    "no baseline yet":
+        "First time this source was checked - its current state was saved as "
+        "the starting point.",
+    "url token rotated, content same":
+        "The portal handed out a new file link, but the document text is "
+        "identical.",
+    "seed baseline hash established":
+        "First successful download of a section that was seeded from a list; "
+        "the text is now stored for future comparisons.",
+    "document no longer in the portal list":
+        "This document is no longer listed on the portal.",
+}
+
+
 def plain_why(r: dict) -> str:
     """One plain-English sentence for the row's detail (verbatim where it is
     already prose, translated where it is a status code)."""
     d = re.sub(r"\s+", " ", str(r.get("detail") or "")).strip()
+    if d in MACHINE_DETAIL:
+        return MACHINE_DETAIL[d]
+    if r.get("verdict") == "LINKS_CHANGED":
+        parsed = parse_link_detail(d)
+        if parsed:
+            n_add, n_del, _, _ = parsed
+            return (f"The list of files this page links to changed: "
+                    f"+{n_add} added, -{n_del} removed. The page's own wording "
+                    f"did not have to change for this to flag.")
     if r.get("verdict") == "UNREACHABLE":
         if d.startswith("robots"):
             return "The site's robots.txt forbids automated fetching."
@@ -1468,6 +1555,32 @@ def plain_why(r: dict) -> str:
             hint = " - the page is missing or has moved" if code == "404" else ""
             return f"The server answered HTTP {code}{hint}."
     return d
+
+
+MORE_TAIL = re.compile(r"^\+\d+ more$")
+
+
+def link_change_bullets(r: dict, indent: str = "    ") -> list[str]:
+    """One markdown bullet per added or removed file link, so a reader sees
+    the URLs one per row instead of inside a run-on sentence. Relative hrefs
+    are joined onto the watched page's URL so every row is clickable. Empty
+    list for anything that is not a parseable LINKS_CHANGED detail."""
+    parsed = parse_link_detail(r.get("detail"))
+    if not parsed:
+        return []
+    _, _, added, gone = parsed
+    base = r.get("url", "")
+    out: list[str] = []
+    for label, items in (("added", added), ("removed", gone)):
+        for u in items:
+            if MORE_TAIL.match(u):
+                out.append(f"{indent}- {label}: {md_cell(u)} not listed here "
+                           f"- open the page to see the rest")
+                continue
+            full = urljoin(base, u) if base else u
+            out.append(f"{indent}- {label}: [{md_cell(full)}]({full})"
+                       f"{download_note(full)}")
+    return out
 
 
 def last_change_map(log_path: Path | None) -> dict[str, tuple[str, str, str]]:
@@ -1526,8 +1639,9 @@ def fine_print(r: dict, last_change: dict[str, tuple[str, str]]) -> list[str]:
     else:
         li.append("<li><b>URL checked:</b> none configured yet.</li>")
     if is_manual:
-        li.append("<li><b>How:</b> Not fetched automatically. The weekly run "
-                  "lists it every time as a standing reminder.</li>")
+        li.append("<li><b>How:</b> Not fetched automatically. The weekly "
+                  "script run lists it every time as a standing "
+                  "reminder.</li>")
         li.append(f"<li><b>Why it cannot be auto-checked:</b> "
                   f"{esc(r.get('detail') or 'no reason recorded')}</li>")
         li.append(f'<li><b>What to do instead:</b> Open it yourself: '
@@ -1583,8 +1697,9 @@ def needs_review_item(r: dict) -> list[str]:
              if r.get("url") else f"`{r['id']}`")
     out = [f"- {badge_for(r['verdict'])} `{r['verdict']}` - {title} "
            f"_({PROGRAM_NAMES.get(r['program'], r['program'])})_",
-           f"  - **What happened:** {md_cell(plain_why(r)) or 'no detail recorded.'}",
-           f"  - **What to do:** {md_cell(action_for(r['verdict']))}"]
+           f"  - **What happened:** {md_cell(plain_why(r)) or 'no detail recorded.'}"]
+    out += link_change_bullets(r, indent="    ")
+    out.append(f"  - **What to do:** {md_cell(action_for(r['verdict']))}")
     if r.get("diff_report"):
         rel = repo_rel(r["diff_report"])
         out.append(f"  - **Exact change:** [{md_cell(rel)}]({blob_url(rel)})")
@@ -1623,6 +1738,23 @@ def needs_review_item(r: dict) -> list[str]:
     return out
 
 
+# Visual break between top-level sections: a DHCS-blue bar under the heading
+# plus breathing room above it. Inline-styled raw HTML for the same reason
+# the badges are (no stylesheet is available to a themed Pages build), and
+# the theme's own thin heading underline sits behind it.
+SECTION_RULE = ('<div style="height:3px;background:#1f4e79;border-radius:2px;'
+                'margin:.15em 0 1.2em"></div>')
+SECTION_SPACER = '<div style="height:1.6em"></div>'
+
+
+def section(title: str, spacer: bool = True) -> list[str]:
+    """Markdown lines for one top-level section heading. Kept a plain `##`
+    (not raw <h2>) so kramdown keeps generating the anchor ids the in-page
+    links depend on."""
+    return ([SECTION_SPACER, ""] if spacer else []) + \
+        [f"## {title}", "", SECTION_RULE, ""]
+
+
 def write_dashboard(path: Path, report: dict,
                     log_path: Path | None = None) -> None:
     """Render the GitHub Pages status page from a run report.
@@ -1643,20 +1775,25 @@ def write_dashboard(path: Path, report: dict,
 
     lines = [
         "# Revenue Integrity Source Watch", "",
-        "Watches the official billing sources behind the Revenue Integrity "
-        "registry and flags whatever changed since the previous weekly run. "
-        "**Alert tool only, not a source of record** - always verify against "
-        "the live official source before acting.", "",
-        f"**Last run:** {report['generated'][:10]} - **needs review: "
-        f"{len(flagged)}**"
-        + (f" - revision notices: {len(notices)}" if notices else ""), "",
-        "**How to read this page:** the short list just below is what needs "
-        "a human right now, followed by lower-priority revision notices and "
-        "everything that changed in the last 60 days. The current status of "
-        "every watched source - including those same items - is further "
-        "down under \"All sources by program\". Status words like `CHANGED` "
-        "are explained in plain terms in the [status legend](#status-legend) "
-        "at the bottom.", "",
+        "This page keeps track of the official sources behind Revenue "
+        "Integrity work - Medi-Cal and Family PACT provider manuals, "
+        "bulletins, fee schedule pages and policy letters - and shows what "
+        "has changed on them. A script re-reads each source on a schedule "
+        "and lists anything that moved since the previous check, so updates "
+        "can be caught and routed (provider communication, superbill or "
+        "tipsheet, Epic review) instead of being noticed by accident. "
+        "**Always review and validate anything here against the live "
+        "official source before using it or acting on it.**", "",
+        f"**Last check:** script ran {report['generated'][:10]} · "
+        f"**items needing review: {len(flagged)}**"
+        + (f" · revision notices: {len(notices)}" if notices else ""), "",
+        "**How to read this page**", "",
+        "Start at \"Needs review\" - that is what a person needs to look at "
+        "now. After it come lower-priority revision notices, everything that "
+        "changed in the last 60 days, and then the current status of every "
+        "watched source under \"All sources by program\". Status words like "
+        "`CHANGED` are explained in the [status legend](#status-legend) at "
+        "the bottom.", "",
         f"More detail: [change review page]({pages_home_url()}changes.html) "
         "(one block per change) · "
         f"[change history (CSV)]({blob_url('reports/changes_log.csv')}) · "
@@ -1664,7 +1801,7 @@ def write_dashboard(path: Path, report: dict,
         f"[all reports]({tree_url('reports')})", "",
     ]
 
-    lines += [f"## Needs review ({len(flagged)})", ""]
+    lines += section(f"Needs review ({len(flagged)})", spacer=False)
     if flagged:
         lines.append("Every item links to the source and, when text changed, "
                      "to the exact before/after diff.")
@@ -1707,9 +1844,9 @@ def write_dashboard(path: Path, report: dict,
                      if g[:10] >= cutoff), reverse=True)
     if recent:
         url_by_id = {r["id"]: r.get("url", "") for r in results}
-        lines += [f"## Changed in the last {RECENT_DAYS} days "
-                  f"({len(recent)})", "",
-                  "The recent trail, newest first - use it to confirm what "
+        lines += section(f"Changed in the last {RECENT_DAYS} days "
+                         f"({len(recent)})")
+        lines += ["The recent trail, newest first - use it to confirm what "
                   "has been communicated downstream. Always verify against "
                   "the live source before acting.", ""]
         for g, v, i, df in recent[:30]:
@@ -1733,8 +1870,8 @@ def write_dashboard(path: Path, report: dict,
         return re.sub(r"\s+", "-", s).strip("-")
 
     progs = sorted({r["program"] for r in results})
-    lines += ["## All sources by program", "",
-              "Every watched source and its current status, including the "
+    lines += section("All sources by program")
+    lines += ["Every watched source and its current status, including the "
               "items flagged above. Jump to a program:", ""]
     for prog in progs:
         rs = [r for r in results if r["program"] == prog]
@@ -1794,7 +1931,7 @@ def write_dashboard(path: Path, report: dict,
                     f'{esc(r["url"])}</a></li>')
     lines += ["</ul>", ""]
 
-    lines += ["## Status legend", ""]
+    lines += section("Status legend")
     lines.append('<table style="font-size:.85em;line-height:1.45">')
     lines.append("<tr><th>Status</th><th>Code</th>"
                  "<th>What it means, and what to do</th></tr>")
@@ -1804,17 +1941,25 @@ def write_dashboard(path: Path, report: dict,
     lines += ["</table>", ""]
 
     lines += ["---", "",
-              "If the last run shown at the top of this page is more than 35 "
-              "days old, this monitor may not be active or may need an "
-              "update - notify the maintainer.", "",
-              "This page is regenerated on every run by `write_dashboard` in "
-              f"[source_check.py]({blob_url('source_check.py')}); edit that, "
-              "not this file. Alert tool only - verify against the live "
-              "official source.", "",
-              f"Built and maintained by "
-              f"[Michael Phipps](https://github.com/mp321). See the "
-              f"[repository]({f'https://github.com/{repo_slug()}'}) for "
-              "source, history, and license terms.", ""]
+              "**Keeping it working:** if the date of the last check at the "
+              "top of this page is more than 35 days old, the script may not "
+              "be running - notify the maintainer. Sources move: when an "
+              "agency changes a URL, retires a page or reorganizes a portal, "
+              "the watchlist entry has to be updated before that source is "
+              "monitored again, so treat a source that has been unreachable "
+              "for more than one check as unwatched until it is fixed.", "",
+              "This page is rebuilt by each script run (`write_dashboard` in "
+              f"[source_check.py]({blob_url('source_check.py')})); edit that, "
+              "not this file.", "",
+              "Provided as-is, without warranty of any kind, as general "
+              "decision support. It is not legal, coding or billing advice "
+              "and is not a source of record - the live official source "
+              "always governs. Built and maintained by "
+              "[Michael Phipps](https://github.com/mp321); released under "
+              f"the MIT license ([LICENSE]({blob_url('LICENSE')})). If you "
+              "reuse or adapt it, a credit link back to the "
+              f"[repository]({f'https://github.com/{repo_slug()}'}) is "
+              "appreciated.", ""]
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text("\n".join(lines), encoding="utf-8")
 
@@ -1831,7 +1976,7 @@ def write_changes_page(path: Path, report: dict,
     n_codes = len({e["code"] for r in flagged
                    for e in (r.get("codes_touched") or [])})
     if not flagged:
-        tldr = "nothing changed on the last run."
+        tldr = "nothing changed at the last check."
     else:
         tldr = (f"{len(flagged)} source(s) changed, "
                 + (f"{n_codes} billing code(s) touched." if n_codes
@@ -1839,7 +1984,7 @@ def write_changes_page(path: Path, report: dict,
     lines = [
         "# Change review", "",
         f"**TL;DR:** {tldr}", "",
-        f"[Back to the dashboard]({pages_home_url()}) - run "
+        f"[Back to the dashboard]({pages_home_url()}) - script last ran "
         f"{report['generated']}.", "",
         "Each block below is one flagged source: what happened, which billing "
         "codes moved (heuristic - **verify each against the linked source "
@@ -1847,14 +1992,17 @@ def write_changes_page(path: Path, report: dict,
         "official document.", "",
     ]
     if not flagged:
-        lines += [f"{badge('ok')} Nothing to review from the last run.", ""]
+        lines += [f"{badge('ok')} Nothing to review from the last check.", ""]
     for r in flagged:
         prog = PROGRAM_NAMES.get(r["program"], r["program"])
-        lines += [f"## {r['id']} - {prog}", "",
-                  f"{badge_for(r['verdict'])} `{r['verdict']}` - detected "
+        lines += section(f"{r['id']} - {prog}")
+        lines += [f"{badge_for(r['verdict'])} `{r['verdict']}` - detected "
                   f"{(r.get('checked_at') or report['generated'])[:10]}", "",
                   f"**What happened:** {md_cell(plain_why(r)) or 'no detail recorded.'}",
                   ""]
+        bullets = link_change_bullets(r, indent="")
+        if bullets:
+            lines += bullets + [""]
         if r.get("url"):
             lines.append(f"**Source of truth:** [{md_cell(r['url'])}]"
                          f"({r['url']}){download_note(r['url'])}")
@@ -1906,8 +2054,8 @@ def write_changes_page(path: Path, report: dict,
                         f"<td><code>{esc(h.get('id', ''))}</code></td>"
                         f"<td><code>{esc(h.get('verdict', ''))}</code></td>"
                         f"<td>{cell}</td></tr>")
-        lines += ["## Change history", "",
-                  '<details style="margin:.3em 0 1.1em 0">',
+        lines += section("Change history")
+        lines += ['<details style="margin:.3em 0 1.1em 0">',
                   f"<summary>Last {len(hist)} recorded change event(s) "
                   "(newest first)</summary>",
                   '<table style="font-size:.9em;line-height:1.5">',
@@ -1916,9 +2064,13 @@ def write_changes_page(path: Path, report: dict,
         lines += rows
         lines += ["</table>", "</details>", ""]
     lines += ["---", "",
-              "Machine-generated review aid; not a source of record. Built "
-              "and maintained by [Michael Phipps](https://github.com/mp321).",
-              ""]
+              "Machine-generated review aid, rebuilt by each script run. "
+              "Not a source of record and not billing advice - validate every "
+              "item against the live official source before acting. Provided "
+              "as-is, without warranty. Built and maintained by "
+              "[Michael Phipps](https://github.com/mp321); released under the "
+              f"MIT license ([LICENSE]({blob_url('LICENSE')})), credit "
+              "appreciated if you reuse it.", ""]
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text("\n".join(lines), encoding="utf-8")
 
@@ -1986,8 +2138,9 @@ def write_sources_csv(watchlist: Path, out_dir: Path) -> None:
 
 def write_run_summary(root: Path, report: dict) -> None:
     try:
-        lines = [f"Source watch run {report['generated']} - "
-                 f"{len(report['needs_review'])} item(s) need review.",
+        lines = [f"The source watch script ran {report['generated']} and "
+                 f"found {len(report['needs_review'])} item(s) needing "
+                 f"review.",
                  f"Dashboard: {pages_home_url()}", ""]
         for r in report["results"]:
             if r["id"] not in report["needs_review"]:
@@ -1995,7 +2148,15 @@ def write_run_summary(root: Path, report: dict) -> None:
             lines.append(f"[{r['program']}] {r['id']} - {r['verdict']}")
             if r.get("url"):
                 lines.append(f"  {r['url']}")
-            lines.append(f"  detail: {r['detail']}")
+            lines.append(f"  what happened: {plain_why(r) or r['detail']}")
+            parsed = parse_link_detail(r.get("detail"))
+            if parsed:
+                for label, items in (("added", parsed[2]), ("removed", parsed[3])):
+                    for u in items:
+                        lines.append(f"    {label}: "
+                                     + (urljoin(r.get('url', ''), u)
+                                        if r.get("url") and not MORE_TAIL.match(u)
+                                        else u))
             if r.get("diff_report"):
                 lines.append(f"  diff: {blob_url(repo_rel(r['diff_report']))}")
             keys, scope = registry_of(r)
