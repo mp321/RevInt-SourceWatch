@@ -1,26 +1,26 @@
 # Revenue Integrity Source Watch
 
-This repository contains an automated monitoring tool that watches official published sources for the SFDPH Revenue Integrity team. Sources currently include Medi-Cal and Family PACT provider manuals, bulletins, fee schedule pages, All Plan Letters, FQHC/RHC material and the NCCI Medicaid edit files. A script re-reads the same sources on a scheduled cadence and records what changed since the previous check, so a change is easy to spot instead of easy to miss.
+This repository contains an automated monitoring tool that watches official published sources for the SFDPH Finance | Revenue Integrity team. Sources monitored currently include Medi-Cal and Family PACT provider manuals, bulletins, fee schedule pages, All Plan Letters, FQHC/RHC material and the NCCI Medicaid edit files. A script re-reads the same sources on a scheduled cadence and records what changed since the previous check, so a change is easy to spot instead of easy to miss.
 
 When an update is flagged, a person verifies it against the live official source and, if it matters, updates the downstream references (superbill, tipsheet, Epic review). **Always review and validate anything here against the live official source before using it or acting on it.**
 
-Dashboard: `https://mp321.github.io/RevInt-SourceWatch/` (rebuilt by every script run; this repository holds the code, the reports and the full history).
+Dashboard: `https://mp321.github.io/RevInt-SourceWatch/` (rebuilt every time script is ran; this repository holds the code, the reports and the full history, and can be reproduced locally)
 
 ## How it works, in one paragraph
 
-Once a week a scheduled script run fetches the sources in `watchlist.yaml`, extracts and hashes the text, and compares it with the last stored baseline. When something changes, it writes a before/after report showing exactly what changed (with a heuristic list of possible CPT, HCPCS and ICD-10-CM codes touched), rebuilds the dashboard page, and opens a GitHub Issue for the run - which is what emails everyone watching this repo. Every prior version of every source is kept and can be referenced if needed.
+Once a week a scheduled script run fetches the sources in `watchlist.yaml`, extracts and hashes the text, and compares it with the last stored baseline. When something changes, it writes a before/after report showing exactly what changed (with a heuristic list of possible CPT, HCPCS and ICD-10-CM codes touched), rebuilds the dashboard/main page, and opens a GitHub Issue for the run - which can email anyone watching the repo.
 
-## The DHCS manuals are the centerpiece
+## The DHCS manuals (incl FPACT) are the main focus
 
-For the Family PACT payer program, the script reads the provider portal's Manuals Revision Date column per section, plus the full text of each section (PDF format), plus the "Page updated" date stamped on each page inside the PDF. A flagged section can therefore say not just "this manual section changed" but which pages changed since the last check. Family PACT manuals are all included; the same level of capture can be extended to the other Medi-Cal manual communities (inpatient/outpatient, clinics and hospitals, FQHC/rural) as they are added (some have 200+ PDF manuals, so they will likely be added on request or on proven value before implementation).
+The Family PACT (FPACT) program currently has a more granular scope than other programs. The source_check python script reads the DHCS provider portal's Manuals Revision Date column per section. This includes the full text of each section (PDF format), and the "Page updated" date printed on each page. The script will identify which pages changed since the last time the script ran. Main DHCS Family PACT program manuals are included; the same level of capture can be extended to the other DHCS Medi-Cal manual communities (inpatient/outpatient, clinics and hospitals, FQHC/rural) as they are added (some have 200+ PDF manuals, so they will likely be added as needed).
 
 ## Two detection layers
 
-1. **MCSS first, no code.** The Medi-Cal Subscription Service (MCSS) is DHCS's own free email service, and many of the updates covered here are announced through it first. Subscribe a team inbox at the MCSS site - `https://camcss.powerappsportals.com/` - and select the relevant subscriptions (Family PACT, General Medicine, and RHC/FQHC at minimum). It is the official push channel and it catches portal updates a script structurally cannot see.
+1. **MCSS email updates** Use Medi-Cal Subscription Service (MCSS) first. MCSS is DHCS's own free email service, and many updates covered here are announced through it. Subscribe via https://camcss.powerappsportals.com/` - and select the relevant subscriptions (Family PACT, General Medicine, and RHC/FQHC etc)
 
-2. **This watcher, as a supplement.** It does not replace MCSS. What it adds is tracking and archiving of specifically what changed on the sources listed in `watchlist.yaml`: text-based change detection for PDFs (so a metadata-only republish does not raise a false alarm), per-section monitoring of the Family PACT manual list, a stored snapshot of every prior version, and honest "can't see this page" statuses where automated checking is blocked.
+2. **Enhances awareness of important updates** It does not replace MCSS. What it adds is tracking and archiving of specifically what changed on the sources listed in `watchlist.yaml`: text-based change detection for PDFs (so a metadata-only republish does not raise a false alarm), per-section monitoring of the Family PACT manual list, a stored snapshot of every prior version, and honest "can't see this page" statuses where automated checking is blocked.
 
-**Maintenance.** Sources move. When an agency changes a URL, retires a page or reorganizes a portal, the matching entry in `watchlist.yaml` has to be updated before that source is monitored again - treat anything reported unreachable for more than one check as unwatched until it is fixed. Coverage is limited to what `watchlist.yaml` lists, which is why MCSS stays the primary channel.
+**Maintenance.** Sources move. When an agency changes a URL, retires a page or reorganizes a portal, the matching entry in `watchlist.yaml` likely needs to be updated. Coverage includes any sources listed in `watchlist.yaml`.
 
 ## Where to look
 
@@ -39,7 +39,7 @@ Some watched sources are direct file downloads (the DHCS fee schedules, the NCCI
 
 Each item shows the source, its status, what happened, any billing codes the text heuristic caught (with `url#page=N` deep links for PDFs), and a link to the before/after diff when text changed. In a diff, `-` lines were removed and `+` lines added. Verify against the live official source first, then route: provider communication, superbill or tipsheet update, Epic review (chargemaster, preference lists, claim edits, ICD-10 mappings). Keep Epic build details out of this public repo.
 
-**If nothing on the page looks different, that is a normal outcome.** Agencies re-publish files, re-shuffle links and migrate pages without changing a word of policy, and the script cannot tell that apart from a real edit. Note it and move on. If the same source keeps flagging with nothing behind it, the fix is to tighten or retire its `watchlist.yaml` entry, not to re-read it every week - the dashboard says how many times a source has flagged recently so that pattern is visible. Entries removed for exactly this reason are listed, with the evidence, in the v1.6 comment block at the top of `watchlist.yaml`.
+Note that sources can re-publish files, re-shuffle links and migrate pages without changing a word of policy and still be flagged. If the same source keeps flagging with nothing behind it, the fix is to tighten or retire its `watchlist.yaml` entry, not to re-read it every week - the dashboard says how many times a source has flagged recently so that pattern is visible. Entries removed for exactly this reason are listed, with the evidence, in the v1.6 comment block at the top of `watchlist.yaml`.
 
 ## Code extraction heuristic
 
