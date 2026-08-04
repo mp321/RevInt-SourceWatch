@@ -2,7 +2,7 @@
 """
 source_check.py - SF DPH Revenue Integrity multi-program source change-checker.
 
-v1.6. Keeps the v1.2 engine (conditional GETs, robots.txt, redirect guard,
+v1.6. Keeps same engine (conditional GETs, robots.txt, redirect guard,
 entry types pdf/html/binary/linkpage/bulletin_probe, BLIND_SHELL honesty,
 manual entries, registry_keys mapping) and adds four things:
 
@@ -23,16 +23,10 @@ manual entries, registry_keys mapping) and adds four things:
      (machine-readable, Power BI friendly) and a run_summary.md is written
      for alerting (GitHub Issue body).
 
-A change verdict means one thing only: a human re-reads that source and, if
-needed, updates the registry. Nothing is written to any system of record.
-Decision support, not a source of truth.
-
 Two guards exist because a bad response is not a change, and both were
-written after live incidents (2026-07-17): a 200 that is not a parseable PDF
+written after live incidents: a 200 that is not a parseable PDF
 (pdf_parse_failed) and a 200 with no readable text at all (empty_body) both
-report UNREACHABLE and keep the previous baseline. An entry that can only
-ever report the same status is removed rather than left to cry wolf - the
-reasoning for each removal lives in the version notes in watchlist.yaml.
+report UNREACHABLE and keep the previous baseline.
 
 Run:
   python source_check.py                       # all enabled programs
