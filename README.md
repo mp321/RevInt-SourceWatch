@@ -33,7 +33,7 @@ this page" statuses where automated checking is blocked.
 
 ## Scope
 
-Family PACT has the deepest coverage. The script reads the DHCS provider
+Family PACT has the most coverage. The script reads the DHCS provider
 portal's manual list, which carries a Revision Date per section, then fetches
 each section PDF and captures its full text plus the "Page updated" stamp
 printed on each page. It reports which sections and which pages moved.
