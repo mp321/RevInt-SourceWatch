@@ -1,69 +1,45 @@
-# SF DPH Revenue Integrity - source watchlist (all programs, modular). v1.6
+# SF DPH Revenue Integrity - source watchlist. v1.6
 # Toggle a whole program with `enabled:`; run a subset with --programs.
+#
 # Entry types: pdf | html | binary | linkpage | bulletin_probe |
 #              manual_list | revision_watch
-#   expect_shell: true = known client-rendered page; monitored for shell
-#                        changes but honestly labeled blind to content.
-#   manual: true       = cannot be checked automatically (robots.txt, bot
-#                        wall, or broken redirect); reported MANUAL_REVIEW
-#                        so a human checks it on a cadence.
-#   human_url          = the page a person should open when the watched URL
-#                        is a direct file download (.xlsx/.zip/.pdf). The
-#                        checker still fetches `url`; the dashboard links
-#                        human_url first so nobody has to download a file
-#                        just to look at the source.
-#   registry_keys / registry_note = which registry rows to re-verify on
-#                        change (v1.5 rename of master_keys / master_note;
-#                        the code reads both).
-# v1.4 (2026-07-17): pruned 11 low-value entries and the medi_cal_rx
-#   program (git history has the configs). Focus is the mcweb per-document
-#   manual monitoring: the portal Manuals list with its Revision Date
-#   column, each PDF hashed individually with per-page "Page updated"
-#   stamps captured. Family PACT first; other manual communities follow
-#   the same pattern (see notes/CONTEXT-mcweb.md).
-# v1.5 (2026-07-17): master_* keys renamed registry_*.
+# Fields:
+#   expect_shell: true  known client-rendered page; watched for shell change
+#                       but labeled blind to content.
+#   manual: true        cannot be fetched automatically; reports MANUAL_REVIEW
+#                       every run. Use only when the standing reminder is
+#                       worth the noise.
+#   human_url           landing page a reader should open when `url` is a
+#                       direct file download. The checker still fetches `url`.
+#   registry_keys /     registry rows to re-verify when this source changes
+#   registry_note       (v1.5 rename of master_*; the code reads both).
 #
-# v1.6 (2026-07-24) - NOISE PRUNE. Rule applied, and worth keeping: an
-#   entry earns its place only if it can report something a person would
-#   act on. An entry that returns the identical status every run trains
-#   people to ignore the dashboard, which costs more than the coverage it
-#   pretends to give. Seven entries removed (git history has the configs):
+# ADMISSION RULE: an entry earns its place only if it can report something a
+# person would act on. An entry returning the identical status every run
+# trains people to ignore the dashboard, which costs more than the coverage
+# it pretends to give.
 #
+# Removed under that rule, with the evidence (git history has the configs):
 #   fpact_ppbi_landing, fpact_wic_24005, ffs_wic_14105_201,
-#   fqhc_wic_14132_100, fqhc_ecfr_405_subpart_x
-#     -> permanent MANUAL_REVIEW. leginfo robots.txt and the eCFR bot wall
-#        block automated fetches by design, and the PPBI landing page
-#        redirects off-site, so each one printed the same standing
-#        reminder every single week and never once reported a change.
-#        Statute and CFR changes arrive with advance notice through MCSS,
-#        program news and bill tracking. STILL OPEN, carried here because
-#        the entry that held it is gone: WIC 14132.100 was amended by
-#        AB 116 effective 2026-07-01 - verify the PPS-billable provider
-#        list by hand and update the fqhc-billing reference. eCFR
-#        publishes a real public API for Title 42 Part 405; wiring that up
-#        is the way to bring the CFR text back under automated watch
-#        (parking lot in dev-prompt.md).
-#   fpact_bulletin_probe
-#     -> permanent PROBE_INCONCLUSIVE. The bulletin portal is client-
-#        rendered, so probing issue N+1 returns an empty app shell whether
-#        or not the issue exists. It cannot answer its own question. MCSS
-#        is the detector for bulletins.
-#   ffs_tri_page
-#     -> brittle link diffing. The regex only ever matched three URLs on
-#        that page (the two fee-schedule .xlsx files and the site-wide
-#        accessibility-certificate PDF in the footer) because every other
-#        document on the page uses the /file/<slug>-pdf/ redirect form.
-#        Those same three links vanished on 2026-07-17 and came back
-#        identical on 2026-07-20 - a flapping fetch, not a change, which
-#        is exactly the false alarm that erodes trust. Replaced by
-#        watching the two fee schedules directly as file hashes below;
-#        DHCS keeps the filenames stable and bumps the version in the link
-#        text, so an in-place replacement shows up as a content change and
-#        a re-upload elsewhere shows up as UNREACHABLE.
+#   fqhc_wic_14132_100, fqhc_ecfr_405_subpart_x - permanent MANUAL_REVIEW.
+#     leginfo robots.txt and the eCFR bot wall block fetches by design; the
+#     PPBI landing page redirects off-site. Statute and CFR changes arrive
+#     through MCSS, program news and bill tracking. eCFR publishes a public
+#     API for Title 42 Part 405 - that is the route back to automated watch.
+#   fpact_bulletin_probe - permanent PROBE_INCONCLUSIVE. The portal is
+#     client-rendered, so probing issue N+1 returns an empty shell whether or
+#     not the issue exists. MCSS detects bulletins.
+#   ffs_tri_page - brittle link diffing. The regex only ever matched three
+#     URLs (two fee schedules plus a footer PDF) because every other document
+#     uses the /file/<slug>-pdf/ redirect form. All three vanished 2026-07-17
+#     and returned identical 2026-07-20: a flapping fetch, not a change.
+#     Replaced by watching the two fee schedules directly as binary entries.
+#   mcp_apl_index kept, but its link_pattern was dropped - it never matched
+#     an actual All Plan Letter. Text hash only.
 #
-#   Also changed: mcp_apl_index dropped its link_pattern (same footer-PDF
-#   noise, and the pattern never matched an actual All Plan Letter) and is
-#   now a plain text-hash watch.
+# OPEN, no entry holds it: WIC 14132.100 was amended by AB 116 effective
+# 2026-07-01. Verify the PPS-billable provider list by hand against the
+# fqhc-billing reference.
 
 programs:
 
@@ -99,44 +75,33 @@ programs:
             title file { id filename_download modified_on } }
             manuals_aggregated(filter: {community: {communities_id: {id: {_eq:
             $communityId}}}}) { count { id } } }
-        # The endpoint needs a Bearer token. It is a STATIC PUBLIC read-only
-        # token that mcweb bakes into /environment.js (window.DIRECTUS_TOKEN),
-        # served anonymously - not a personal or session credential. Preferred
-        # source is the MCWEB_TOKEN secret; if unset or rotated, the watcher
-        # self-heals by re-reading token_bundle_url. Never put the literal
-        # token in this file.
+        # Bearer token required. It is a STATIC PUBLIC read-only token that
+        # mcweb serves anonymously in /environment.js, not a personal or
+        # session credential. MCWEB_TOKEN is preferred; if unset or rotated
+        # the checker re-reads token_bundle_url. Never put the token here.
         auth_header_env: MCWEB_TOKEN
         token_bundle_url: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/environment.js
         token_bundle_re: 'window\.DIRECTUS_TOKEN\s*=\s*"([^"]+)"'
-        note: Per-document monitor for the entire Family PACT manual list (the
-          portal page that shows a Revision Date per section), all 24 sections.
-          Backed by the undocumented mcweb Directus GraphQL endpoint (POST
-          /graphql, CommunityManuals, communityId 25). Each section is watched
-          individually - full PDF text hash (assets are readable with the same
-          token, verified 2026-07-16), per-page "Page updated" stamps, portal
-          Revision Date (file.modified_on, compared as a raw string), new docs
-          auto-discovered, removals flagged - and CHANGED sections get a
-          before/after text diff in reports/diffs/. If the token ever grants
-          the list but not the assets, the entry degrades to
-          CHANGED_METADATA_ONLY (revision-date + file.id churn, no text diff)
-          instead of going blind. This is an undocumented internal endpoint
-          that can change shape or auth without notice; MCSS email remains the
-          backstop detector and must not be retired on the strength of this
-          integration. Decision support, not a source of record.
+        note: Per-document monitor for all 24 Family PACT manual sections.
+          Each section is watched individually - full PDF text hash, per-page
+          "Page updated" stamps, portal Revision Date, new sections
+          auto-discovered, removals flagged - and a CHANGED section gets a
+          before/after text diff. If the token ever grants the list but not
+          the assets, the entry degrades to CHANGED_METADATA_ONLY rather than
+          going blind. The endpoint is undocumented and can change shape or
+          auth without notice, so MCSS email stays the backstop detector.
+          Decision support, not a source of record.
         registry_note: ppbi_source_section rows for any changed section
 
   medi_cal_ffs:
     enabled: true
     entries:
-      # Both fee schedules are watched as file hashes rather than through
-      # the TRI landing page (see the v1.6 note at the top of this file).
-      # Verified on the live page 2026-07-24: the URLs carry no version -
-      # the WordPress upload folder "2025/10" is just when the site was
-      # migrated - and DHCS puts the version in the link text instead
-      # ("CY 2024 TRI Fee Schedule v1.07.02072025"). So a re-issue either
-      # overwrites the same URL, which the byte hash catches, or lands on a
-      # new URL, which shows up here as UNREACHABLE - the signal to open
-      # the landing page and repoint the entry.
+      # Watched as file hashes rather than through the TRI landing page.
+      # Verified 2026-07-24: these URLs carry no version - "2025/10" is the
+      # WordPress upload folder, and DHCS puts the version in the link text
+      # ("v1.07.02072025"). A re-issue either overwrites the same URL, which
+      # the byte hash catches, or moves, which reports UNREACHABLE - the
+      # signal to open the landing page and repoint the entry.
       - id: ffs_tri_fee_schedule
         type: binary
         url: https://www.dhcs.ca.gov/wp-content/uploads/2025/10/CY-2024-TRI-Fee-Schedule-Feb.xlsx
@@ -163,14 +128,11 @@ programs:
       - id: mcp_apl_index
         type: html
         url: https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx
-        note: All Plan Letters index, watched by page text only. Link diffing
-          was removed 2026-07-24 - the pattern never matched an actual APL
-          (they are served through /file/<slug>-pdf/ redirects, not direct
-          .pdf hrefs), so it only ever flagged the site-wide accessibility
-          certificate and an MOU FAQ in the page footer, and those flapped
-          in and out between runs. If a text change here proves equally
-          noisy, capture the real APL listing URL from the browser and
-          repoint the entry; MCSS Managed Care is the backstop.
+        note: All Plan Letters index, watched by page text only. APLs are
+          served through /file/<slug>-pdf/ redirects rather than direct .pdf
+          hrefs, so link diffing was removed 2026-07-24. If the text hash
+          proves equally noisy, capture the real APL listing URL from the
+          browser and repoint the entry; MCSS Managed Care is the backstop.
 
       - id: mcp_boilerplate_contract
         type: pdf
@@ -182,14 +144,12 @@ programs:
       - id: mcp_tri_faq
         type: pdf
         url: https://www.dhcs.ca.gov/services/Documents/DirectedPymts/CY-2024-TRI-FAQ-20250312.pdf
-        note: Hard-dated filename (20250312) - unlike the fee schedules, the
-          date is in the file name itself, so a revision ships under a new
-          URL and this entry goes UNREACHABLE rather than CHANGED. Treat a
-          404 here as "the FAQ was reissued, find the new one on the TRI
-          landing page". 2026-07-17 - this URL also intermittently answers
-          200 with a small HTML bot-check page instead of the PDF; the
-          checker reports that honestly as UNREACHABLE and keeps the last
-          good baseline.
+        note: Hard-dated filename (20250312), so a revision ships under a new
+          URL and this entry goes UNREACHABLE rather than CHANGED. Read a 404
+          here as "the FAQ was reissued, find it on the TRI landing page".
+          This URL also intermittently answers 200 with an HTML bot-check page
+          instead of the PDF; that reports UNREACHABLE and keeps the last good
+          baseline.
 
   fqhc:
     enabled: true
@@ -212,15 +172,10 @@ programs:
         portal_page: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=clinics-and-hospitals
         seed_csv: data/seeds/fqhc_rural_manuals_seed_2026-07-17.csv
         # Filtered manual_list (2026-07-17): the RHC/FQHC manual is not its
-        # own community on mcweb - the rural* sections live inside Clinics
-        # and Hospitals (communityId 11, 246 docs - far too many to watch
-        # whole). This filters to filenames starting "rural": rural.pdf
-        # (overview), ruralcd.pdf (BILLING CODES), ruralex.pdf (billing
-        # examples), ruralhosp.pdf (swing bed). Same endpoint, token
-        # self-heal, and truncation tripwire as fpact_manual_docs. The old
-        # ?community=rural page this replaced was never a valid slug (the
-        # SPA slugifies community names; verified against the full
-        # communities list, notes/CONTEXT-mcweb.md).
+        # own community on mcweb - the rural* sections sit inside Clinics and
+        # Hospitals (communityId 11, 246 docs, too many to watch whole), so
+        # this filters filenames starting "rural". ?community=rural was never
+        # a valid slug; the SPA slugifies community names.
         graphql_body:
           operationName: RuralManuals
           query: >-
@@ -241,13 +196,11 @@ programs:
         registry_note: fqhc-billing reference rows; PPS / wrap / per-visit
           code rows on change
 
-  # Lower-priority date-only watch (type revision_watch): queries each
-  # community's manual list metadata (no PDF downloads - light even at
-  # 246 sections) and raises a REVISION_NOTICE naming the sections whose
-  # portal Revision Date moved. Full text monitoring for these stays a
-  # deliberate non-goal until a community earns it (convert to a filtered
-  # manual_list like fqhc_rural_manual_docs). Community ids come from the
-  # catalog in notes/CONTEXT-mcweb.md.
+  # Date-only watch (revision_watch): reads each community's manual list
+  # metadata, no PDF downloads, so it stays light even at 246 sections, and
+  # raises a REVISION_NOTICE naming the sections whose Revision Date moved.
+  # To upgrade a community to full text monitoring, convert it to a filtered
+  # manual_list like fqhc_rural_manual_docs. Community ids: CONTEXT-mcweb.md.
   revision_notices:
     enabled: true
     entries:

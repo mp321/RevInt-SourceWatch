@@ -1,32 +1,31 @@
 #!/usr/bin/env python3
 """
-source_check.py - SF DPH Revenue Integrity multi-program source change-checker.
+source_check.py - SF DPH Revenue Integrity source change-checker. v1.6
 
-v1.6. Keeps same engine (conditional GETs, robots.txt, redirect guard,
-entry types pdf/html/binary/linkpage/bulletin_probe, BLIND_SHELL honesty,
-manual entries, registry_keys mapping) and adds four things:
+Fetches every enabled entry in watchlist.yaml, compares it against the
+stored baseline, and reports what moved. Fetching honors robots.txt,
+conditional GETs and a redirect guard.
 
-  1. Snapshots + diffs. The extracted text of every pdf/html source is stored
-     under snapshots/. On CHANGED, a unified before/after diff is written to
-     reports/diffs/ with a structured table of possible CPT / HCPCS /
-     ICD-10-CM / modifier codes touched (system, direction, confidence,
-     page-anchored PDF deep links). Git history preserves every prior
-     snapshot.
-  2. manual_list entry type. Points at the JSON endpoint behind a client-
-     rendered manual page (e.g. the mcweb Family PACT manual). Every PDF it
-     lists is monitored individually: content text hash, per-page "Page
-     updated" stamps, the portal Revision Date, auto-discovery of NEW
-     documents, and REMOVED flags.
-  3. Dashboard. --dashboard PATH writes a markdown status page (for GitHub
-     Pages) grouped by program.
-  4. Change log. Review-worthy events append to reports/changes_log.csv
-     (machine-readable, Power BI friendly) and a run_summary.md is written
-     for alerting (GitHub Issue body).
+Outputs per run:
+  snapshots/<program>/<id>.txt   extracted text (git history = version log)
+  reports/diffs/*.md             unified diff on CHANGED, plus a table of
+                                 candidate CPT / HCPCS / ICD-10-CM /
+                                 modifier codes with page-anchored links
+  reports/changes_log.csv        append-only fact log (schema is a contract)
+  reports/latest_report.json     full rows including codes_touched
+  docs/index.md, docs/changes.md written when --dashboard is passed
+  run_summary.md                 GitHub Issue body, written only when review
+                                 is needed
 
-Two guards exist because a bad response is not a change, and both were
-written after live incidents: a 200 that is not a parseable PDF
-(pdf_parse_failed) and a 200 with no readable text at all (empty_body) both
-report UNREACHABLE and keep the previous baseline.
+Entry types: pdf | html | binary | linkpage | bulletin_probe | manual_list |
+revision_watch. manual_list reads the JSON endpoint behind a client-rendered
+portal page and monitors each listed PDF individually (text hash, per-page
+"Page updated" stamps, portal Revision Date, NEW and REMOVED detection).
+
+A bad response is not a change. A 200 that will not parse as a PDF
+(pdf_parse_failed) and a 200 with no readable text (empty_body) both report
+UNREACHABLE and keep the previous baseline. Both guards were added after
+live false alarms; do not relax them.
 
 Run:
   python source_check.py                       # all enabled programs
@@ -34,7 +33,7 @@ Run:
   python source_check.py --update              # save new baseline after review
   python source_check.py --dashboard docs/index.md
   python source_check.py --list                # show watchlist and exit
-Exit code: 1 if anything needs review (usable by cron/CI), else 0.
+Exit code: 1 if anything needs review (usable by CI), else 0.
 """
 from __future__ import annotations
 
@@ -75,20 +74,18 @@ NEEDS_REVIEW = {"NEW", "CHANGED", "DATE_CHANGED", "LINKS_CHANGED",
 # the dashboard renders it in its own lower-priority section.
 DIFF_MAX_LINES = 3000
 
-# Self-heal: a read-only Directus SPA bakes a static public token into its
-# runtime config bundle. If MCWEB_TOKEN is unset or has been rotated, the
-# watcher re-reads the current token from this bundle. Never a secret value
-# in the repo; the bundle is served anonymously.
+# The read-only Directus SPA bakes a static public token into its runtime
+# config bundle, served anonymously. If MCWEB_TOKEN is unset or rotated, the
+# checker re-reads the current token from that bundle, so mcweb entries need
+# no repository secret.
 DIRECTUS_TOKEN_RE = r'window\.DIRECTUS_TOKEN\s*=\s*"([^"]+)"'
 
 # Heuristic billing-code patterns, applied to changed diff lines only.
-# The five-digit CPT pattern is the noisy one (SF zip codes 941xx, fee
-# amounts, form numbers all look like CPT codes), so a bare five-digit
-# candidate only counts when code-ish vocabulary appears on the same or a
-# neighboring changed line. Letter-bearing systems (HCPCS, ICD-10-CM, CPT
-# category/PLA suffixes, "modifier NN") are format-distinctive and always
-# included, with confidence downgraded when no vocabulary is nearby.
-# Documented in README "Code extraction heuristic".
+# Bare five digits are noisy (SF zip codes 941xx, fee amounts, form numbers,
+# years), so a bare candidate counts only when CODE_VOCAB appears on the same
+# or an adjacent document line. Letter-bearing systems are format-distinctive
+# and always included, at lower confidence when no vocabulary is nearby.
+# User-facing writeup: README "Code extraction heuristic".
 RE_HCPCS = re.compile(r"\b[A-Z]\d{4}\b")                  # J7300, S5000, G2012
 RE_ICD10 = re.compile(r"\b[A-Z]\d{2}\.[0-9A-Z]{1,4}\b")   # Z30.011
 RE_CPT = re.compile(r"\b\d{5}\b")                         # 99213 (context-gated)
@@ -235,8 +232,8 @@ def changed_pages_summary(diff_lines: list[str], old_text: str = "",
     bucket. Returns [] when neither snapshot carries [[page N]] markers
     (non-PDF sources), so callers can skip the section entirely.
 
-    Not rendered in any report yet: the user-facing "Changed pages" format
-    gets tuned against real diffs first, not speculation.
+    Tested but not rendered yet: the user-facing format is tuned against real
+    diffs once reports/diffs/ holds a few.
     """
     old_pages = snapshot_page_map(old_text)
     new_pages = snapshot_page_map(new_text)
@@ -564,11 +561,10 @@ def signature(entry: dict, resp: dict) -> dict:
         sig["text_sha"] = sha(text) if text else sig["byte_sha"]
         sig["page_updated"] = stamps
         sig["snapshot_text"] = line_text
-        # A 200 that is not a parseable PDF (observed live 2026-07-17:
-        # dhcs.ca.gov served an HTML page for a .pdf URL) must not be
-        # hash-compared as content - that both cries CHANGED falsely and,
-        # after --update, baselines the garbage so the source goes silently
-        # blind. verdict_for turns this flag into an honest UNREACHABLE.
+        # Bot-wall guard. A 200 that will not parse as a PDF (2026-07-17:
+        # dhcs.ca.gov served HTML for a .pdf URL) must never be hash-compared
+        # as content: it flags CHANGED falsely and --update then baselines the
+        # garbage, blinding the source. verdict_for makes it UNREACHABLE.
         if raw and not text:
             sig["pdf_parse_failed"] = True
             head = raw.lstrip()[:300].lower()
@@ -579,13 +575,12 @@ def signature(entry: dict, resp: dict) -> dict:
     else:                                            # html / linkpage
         text = html_text(raw)
         sig["shell"] = len(text) < SHELL_MIN_CHARS
-        # A 200 carrying no readable text at all is a failed fetch wearing a
-        # success code (bot check, truncated response, dropped connection
-        # mid-body). Observed live 2026-07-17: dhcs.ca.gov returned empty
-        # bodies for two pages, which baselined the empty hash and produced
-        # a false LINKS_CHANGED that weekend and its mirror image the next
-        # run when the real page came back. verdict_for turns this into an
-        # honest UNREACHABLE that keeps the previous baseline.
+        # Empty-200 guard. A 200 with no readable text is a failed fetch
+        # wearing a success code. 2026-07-17: two dhcs.ca.gov pages returned
+        # empty bodies, baselined the empty hash and produced a false
+        # LINKS_CHANGED plus its mirror image the following run. Deliberately
+        # narrow (zero characters, not SHELL_MIN_CHARS) so a genuine
+        # client-rendered shell still reports BLIND_SHELL.
         sig["empty_body"] = not text.strip()
         sig["text_sha"] = sha(text)
         sig["snapshot_text"] = "\n".join(textwrap.wrap(text, 100))
@@ -596,10 +591,9 @@ def signature(entry: dict, resp: dict) -> dict:
     return sig
 
 
-# A LINKS_CHANGED detail has to survive two very different readers: a person
-# skimming the dashboard and changes_log.csv (one line, no newlines allowed).
-# The stored form is therefore a flat, greppable sentence; the renderers call
-# parse_link_detail() to split it back into per-URL bullets.
+# A LINKS_CHANGED detail is stored as one flat line because changes_log.csv
+# allows no newlines. Renderers call parse_link_detail() to split it back into
+# per-URL bullets.
 LINK_DETAIL_CAP = 8
 
 
@@ -809,8 +803,8 @@ def parse_manual_list(raw: bytes, asset_base: str) -> tuple[list[dict], int | No
 class SnapshotStore:
     """Stores extracted text per source and produces diff reports on change.
 
-    All writes are best-effort: on a read-only filesystem (Vercel) the layer
-    degrades to hash-only detection, which matches v1.2 behavior.
+    Writes are best-effort: on a read-only filesystem the layer degrades to
+    hash-only detection rather than failing the run.
     """
 
     def __init__(self, snap_dir: Path, diff_dir: Path):
@@ -884,11 +878,10 @@ class SnapshotStore:
                 rp.write_text("\n".join(lines), encoding="utf-8")
                 report_path = str(rp)
                 self.written.append(report_path)
-            # Also store when no snapshot exists yet regardless of verdict:
-            # seeded manual_list docs come out "unchanged" on their first
-            # live fetch (hash established quietly), and without this their
-            # first real revision would flag CHANGED with no prior text to
-            # diff against (observed on the 2026-07-17 first live run).
+            # Store whenever no snapshot exists, whatever the verdict: seeded
+            # manual_list docs come out "unchanged" on their first live fetch,
+            # so without this their first real revision would flag CHANGED
+            # with no prior text to diff against.
             if verdict in ("NEW", "CHANGED") or not p.exists():
                 p.parent.mkdir(parents=True, exist_ok=True)
                 p.write_text(text, encoding="utf-8")
@@ -982,10 +975,8 @@ def check_manual_list(entry: dict, base: dict, fetch: Fetcher, snaps: SnapshotSt
 
     portal = entry.get("portal_page") or entry.get("url", "")
 
-    # -- credential resolution: env secret preferred, static bundle token as
-    #    a self-healing fallback (read-only Directus SPAs bake a public token
-    #    into their runtime config; if MCWEB_TOKEN is unset/rotated we re-read
-    #    the current one). No token value is ever logged or stored.
+    # Credential: env secret first, public bundle token as self-healing
+    # fallback (see DIRECTUS_TOKEN_RE). No token value is logged or stored.
     env_name = entry.get("auth_header_env")
     token = (os.environ.get(env_name) or "").strip() if env_name else ""
     bundle_url = entry.get("token_bundle_url")
@@ -1076,11 +1067,10 @@ def check_manual_list(entry: dict, base: dict, fetch: Fetcher, snaps: SnapshotSt
         time.sleep(SLEEP)
         status = dresp["status"]
 
-        # Degrade path: the list is readable but the asset is not (token scoped
-        # to collections, not directus_files). Do NOT cry UNREACHABLE - the
-        # portal metadata still tells us whether the section moved. Compare the
-        # raw revision_date and file.id; this comparison runs even though the
-        # fetch failed (previously it was skipped on any non-200).
+        # Degrade path: list readable, asset not (token scoped to collections,
+        # not directus_files). Not UNREACHABLE - the portal metadata still says
+        # whether the section moved, so compare revision_date and file.id even
+        # though the fetch failed.
         if status in ("401", "403"):
             rev_prev = prev.get("revision_date", "")
             fid_prev = prev.get("file_id", "")
@@ -1118,10 +1108,9 @@ def check_manual_list(entry: dict, base: dict, fetch: Fetcher, snaps: SnapshotSt
                 verdict, detail = "CHANGED", "content text hash differs"
             else:
                 verdict, detail = "unchanged", "url token rotated, content same"
-        # A metadata-only seed carries revision_date + file.id but no text_sha.
-        # The first successful fetch establishes the hash: keep it quiet ONLY
-        # when the portal metadata still matches the seed; a metadata drift is
-        # a real change and must stay flagged.
+        # A metadata-only seed has revision_date + file.id but no text_sha.
+        # The first fetch establishes the hash quietly ONLY while the portal
+        # metadata still matches the seed; metadata drift is a real change.
         hash_pending = bool(prev) and not prev.get("text_sha") and prev.get("revision_date")
         meta_same = ((d["revision_date"] or "") == prev.get("revision_date", "")
                      and d.get("file_id", "") == prev.get("file_id", ""))
@@ -1318,8 +1307,8 @@ def pages_home_url() -> str:
 
 
 def repo_rel(p: str) -> str:
-    """Reduce a diff-report path (absolute on some venues) to the repo-relative
-    posix path git tracks, e.g. reports/diffs/x.md."""
+    """Reduce a diff-report path to the repo-relative posix path git tracks,
+    e.g. reports/diffs/x.md."""
     parts = Path(p).parts
     if "reports" in parts:
         parts = parts[parts.index("reports"):]
@@ -1356,9 +1345,8 @@ PROGRAM_NAMES = {
     "revision_notices": "Manual Revision Notices",
 }
 
-# Host -> text color for the source-URL list: one bold dark color per
-# website so rows from the same site are easy to group by eye. Muted darks
-# only - distinguishable, not loud. Unknown hosts fall back to slate gray.
+# Host -> text color for the source-URL list, so rows from the same site
+# group by eye. Unknown hosts fall back to slate gray.
 HOST_COLORS = {
     "www.dhcs.ca.gov": "#1f4e79",                        # dark blue
     "familypact.org": "#14632e",                         # dark green
@@ -1401,9 +1389,9 @@ TYPE_HOW = {
                       "notice naming the sections.",
 }
 
-# badge kind -> (label, text color, background). Plain inline-styled spans,
-# not emoji: they render identically everywhere Jekyll/kramdown outputs raw
-# HTML, need no font support, and read fine to a screen reader.
+# badge kind -> (label, text color, background). Inline-styled spans rather
+# than emoji: they render wherever kramdown passes raw HTML through and read
+# correctly to a screen reader.
 BADGE_STYLE = {
     "review": ("Needs review", "#7a271a", "#ffebe9"),
     "notice": ("Revision notice", "#1e4a7a", "#e8f1fb"),
@@ -1727,9 +1715,8 @@ def fine_print(r: dict, last_change: dict[str, tuple[str, str]]) -> list[str]:
         rel = repo_rel(r["diff_report"])
         li.append(f'<li><b>Latest diff report:</b> <a href="{blob_url(rel)}">'
                   f"{esc(rel)}</a></li>")
-    # Loose line-height and left indent so a long run of fine print doesn't
-    # read as one dense wall of text; kept inline since Pages markdown does
-    # not process a class attribute against an external stylesheet here.
+    # Styles are inline because a themed Pages build offers no stylesheet to
+    # hang a class attribute on.
     return (["<details style=\"margin:.3em 0 1.1em 2em\">",
              "<summary>Details: exactly what is checked here, how, and "
              "its caveats</summary>",
@@ -1797,9 +1784,7 @@ def needs_review_item(r: dict, repeats: int = 0) -> list[str]:
 
 
 # Visual break between top-level sections: a DHCS-blue bar under the heading
-# plus breathing room above it. Inline-styled raw HTML for the same reason
-# the badges are (no stylesheet is available to a themed Pages build), and
-# the theme's own thin heading underline sits behind it.
+# plus space above it. Inline-styled for the same reason the badges are.
 SECTION_RULE = ('<div style="height:3px;background:#1f4e79;border-radius:2px;'
                 'margin:.15em 0 1.2em"></div>')
 SECTION_SPACER = '<div style="height:1.6em"></div>'
@@ -2263,15 +2248,11 @@ def write_run_summary(root: Path, report: dict) -> None:
 
 
 def run(watchlist: Path, out_dir: Path, only, update: bool,
-        baseline_override: dict | None = None,
         snapshots_dir: Path | None = None,
         dashboard: Path | None = None) -> dict:
     out_dir.mkdir(parents=True, exist_ok=True)
     baseline_path = out_dir / "baseline.json"
-    if baseline_override is not None:
-        base = baseline_override
-    else:
-        base = json.loads(baseline_path.read_text()) if baseline_path.exists() else {}
+    base = json.loads(baseline_path.read_text()) if baseline_path.exists() else {}
 
     root = Path(watchlist).resolve().parent
     snaps = SnapshotStore(snapshots_dir or (root / "snapshots"),
@@ -2381,13 +2362,11 @@ def run(watchlist: Path, out_dir: Path, only, update: bool,
 
     print(f"\nneeds review: {len(review)}  ->  {out_dir}/check_{stamp}.csv")
     if update:
-        # Subset runs (--programs) merge into the existing baseline like the
-        # Vercel venue does ("partial runs merge, not clobber"); a full run
-        # still overwrites, so entries removed from the watchlist age out.
+        # Subset runs (--programs) merge into the existing baseline; a full
+        # run overwrites, so entries dropped from the watchlist age out.
         saved = {**base, **new_base} if only else new_base
         baseline_path.write_text(json.dumps(saved, indent=2, sort_keys=True))
         print(f"baseline updated -> {baseline_path}")
-    report["new_baseline"] = new_base
     return report
 
 

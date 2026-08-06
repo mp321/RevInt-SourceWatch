@@ -1,109 +1,68 @@
-# mcweb / Directus findings
+# mcweb / Directus reference
 
-Discovery record for `mcweb.apps.prd.cammis.medi-cal.ca.gov`, the Medi-Cal
-provider portal SPA fronting publications (manuals, bulletins) and rates.
-Established by DevTools capture and curl on 2026-07-02 and 2026-07-16.
-Suggested location in repo: `notes/CONTEXT-mcweb.md`. New Claude Code
-sessions should read this file plus README.md before touching code.
+`mcweb.apps.prd.cammis.medi-cal.ca.gov` is the Medi-Cal provider portal SPA
+that fronts publications (manuals, bulletins) and rates. Established by
+DevTools capture and curl, 2026-07-02 and 2026-07-16. Read before changing
+any `manual_list` or `revision_watch` entry.
 
 ## Platform
 
-- Backend is Directus (headless CMS). GraphQL at `POST /graphql`; REST would
-  be `/items/<collection>`; file downloads at `/assets/<file_uuid>`.
-  Telltales: `__typename: directus_files`, `_eq` filter syntax,
-  `GraphQLStringOrFloat` scalar, `filename_download`, `modified_on`.
-- The manual page fires operation `CommunityManuals` with variables
-  `{"communityId": "25"}`. communityId 25 = Family PACT.
-- FULL COMMUNITY CATALOG (captured 2026-07-17 via the public token - the
-  `communities` collection IS readable with it, no DevTools needed):
-  1 Acupuncture, 2 Audiology/Hearing Aids, 3 Chiropractic, 4 DME,
-  5 Medical Transportation, 6 Orthotics/Prosthetics, 7 Psychological,
-  8 Therapies, 9 Inpatient Services (115 docs), 10 Medi-Cal Waiver,
-  11 Clinics and Hospitals (246 docs), 12 Chronic Dialysis, 13 CBAS,
-  14 Heroin Detox, 15 Home Health/HCBS, 16 Hospice, 17 LEA, 18 MSSP,
-  19 Rehabilitation Clinics, 20 Long Term Care, 21 General Medicine
-  (229 docs), 22 Obstetrics, 23 Pharmacy, 24 Vision Care,
-  25 Family PACT (24 docs), 26 Medi-Cal Program & Eligibility.
-- Portal slugs are slugified community_name ("family-pact",
-  "clinics-and-hospitals"). `?community=rural` is NOT a valid slug (zero
-  hits in the SPA bundle); there is no RHC/FQHC community. The RHC/FQHC
-  manual is the rural* filename family inside Clinics and Hospitals -
-  watched via a filename-filtered manuals query (fqhc_rural_manual_docs,
-  filter `file.filename_download _starts_with "rural"`). For big
-  communities, filter by filename; do not watch 200+ docs wholesale.
+Backend is Directus. GraphQL at `POST /graphql`, files at
+`/assets/<file_uuid>`. The manual page fires operation `CommunityManuals`
+with `{"communityId": "<id>"}`.
 
-## Auth: the decisive finding
+Portal slugs are slugified community names ("family-pact",
+"clinics-and-hospitals"). There is no RHC/FQHC community: that manual is the
+`rural*` filename family inside Clinics and Hospitals, watched through a
+filename-filtered query. For large communities, filter by filename rather
+than watching 200+ documents wholesale.
 
-- Anonymous schema (bare curl introspection) exposes ONLY four query fields:
-  `medical_rates_page`, `medical_rates_page_by_id`,
-  `medical_rates_page_aggregated`, `medical_rates_page_by_version`.
-- `manuals` and `communities` from curl return
-  `Cannot query field "manuals" on type "Query"` (GRAPHQL_VALIDATION).
-  Directus strips collections the caller cannot read from the schema, so a
-  validation error here IS a permission denial.
-- `GET /assets/<file_id>` from curl returns 403:
-  `You don't have permission to perform "read" for collection
-  "directus_files" or it does not exist.`
-- The browser succeeds at all of the above, so the SPA carries a credential.
-- CONFIRMED 2026-07-16: DevTools "Copy as cURL" of the CommunityManuals
-  request, replayed from a terminal, returns the full response including the
-  anon-blocked `communities` field. So the credential travels in the request
-  headers of that command and is replayable outside the browser. The
-  credential is captured in `notes/mcweb_browser_curl.txt` (gitignored).
-- STILL UNKNOWN: which header carries it, and whether it is durable. Three
-  branches, best to worst:
-  1. Neither `authorization` nor a `-b` cookie is present, meaning access is
-     gated on `origin`/`referer`. Fix is two static headers in config. No
-     secret, no expiry. Plausible, since the failing curl sent no headers.
-  2. `authorization` present. Determine whether the token is static in the
-     JS bundle (fetch the SPA index, grep the main.*.js bundles for the
-     token value or for Bearer / access_token / static_token) and therefore
-     reusable in CI, or minted at runtime by an early auth/config XHR.
-  3. Only a session cookie. It will expire; do not put it in CI. Use the
-     metadata-only degrade path and document the limitation honestly.
-- Header names can be listed without exposing values:
-  `grep -oiE "\-H '[A-Za-z0-9-]+:" notes/mcweb_browser_curl.txt | sort -u`
+## Community catalog
 
-## Consequences for the watcher
+Captured 2026-07-17 with the public token; the `communities` collection is
+readable, no DevTools needed.
 
-- `fpact_manual_docs` cannot run anonymously at all; the list itself is
-  blocked, not just the PDFs. It needs the browser's credential or it stays
-  CONFIG_TODO with honest fine print.
-- `medical_rates_page` IS readable anonymously today. (The blind-shell
-  rates entry was dropped from the watchlist in v1.4; this collection is
-  the way back in if rate detection is ever wanted - no auth work needed.)
-- If a token grants the list but not `directus_files`, degrade to
-  metadata-only detection: compare `file.modified_on` and `file.id` churn
-  per document. No content hash, no text diff; verdict should say so
-  (CHANGED_METADATA_ONLY) and link the portal page for manual reading.
+1 Acupuncture, 2 Audiology/Hearing Aids, 3 Chiropractic, 4 DME,
+5 Medical Transportation, 6 Orthotics/Prosthetics, 7 Psychological,
+8 Therapies, 9 Inpatient Services (115 docs), 10 Medi-Cal Waiver,
+11 Clinics and Hospitals (246 docs), 12 Chronic Dialysis, 13 CBAS,
+14 Heroin Detox, 15 Home Health/HCBS, 16 Hospice, 17 LEA, 18 MSSP,
+19 Rehabilitation Clinics, 20 Long Term Care, 21 General Medicine (229 docs),
+22 Obstetrics, 23 Pharmacy, 24 Vision Care, 25 Family PACT (24 docs),
+26 Medi-Cal Program & Eligibility.
 
-## Data model facts (2026-07-16 capture; seed in data/seeds/)
+## Auth
 
-- 24 documents for communityId 25. `manuals_aggregated.count.id` = 24.
-  Always request the aggregate and compare to array length as a truncation
-  tripwire.
-- Stable document identity: the filename stem (`benfam`, `progstand`, ...),
-  which matches the runner's existing `doc_id = slug(stem)` convention.
-  `manuals.id` is also stable. `file.id` is a per-upload UUID; EXPECT it to
-  change on every revision. Never key on `file.id`.
-- `file.modified_on` backs the portal "Revision Date" column and is rendered
-  with no timezone conversion (2025-05-23T00:02:23 renders as May 23, 2025).
-  Store and compare the raw string; do not parse to a datetime.
+The endpoint requires a Bearer token; anonymous callers see only the
+`medical_rates_page*` query fields, and `manuals` / `communities` return a
+GraphQL validation error, which in Directus is how a permission denial
+presents. `GET /assets/<file_id>` returns 403 anonymously.
+
+The token the SPA carries is static, public and read-only, served in
+`/environment.js` as `window.DIRECTUS_TOKEN`. The checker reads it from there
+whenever `MCWEB_TOKEN` is unset or has been rotated, so mcweb entries need no
+repository secret. Never commit a token or a captured browser cURL.
+
+If a future token grants the list but not `directus_files`, the checker
+degrades to metadata-only detection (`CHANGED_METADATA_ONLY`): compare
+`file.modified_on` and `file.id` churn, no content hash, no text diff.
+
+## Data model facts
+
+- Always request `manuals_aggregated.count.id` and compare it to the array
+  length. A mismatch is the truncation tripwire (`LIST_TRUNCATED`).
+- Stable document identity is the filename stem (`benfam`, `progstand`),
+  which matches `doc_id = slug(stem)`. `manuals.id` is also stable.
+  `file.id` is a per-upload UUID and changes on every revision: never key
+  on it.
+- `file.modified_on` backs the portal Revision Date column and renders with
+  no timezone conversion. Store and compare the raw string; do not parse.
 - Publish cadence: batches on the 16th of the month, roughly 15:30 to 16:45,
-  observed across 2024-2026 stamps. Expect clustered flags mid-month.
-- 2023-08 timestamps (pharm.pdf, radif.pdf, tarf.pdf) are CMS-migration seed
-  dates, not true revision dates. Valid for forward detection only.
-- Changed on 2026-07-16 around 16:28-16:29 (flagged for immediate human
-  review): progstand.pdf (Program Standards, manuals.id 424) and
-  provenrollres.pdf (Provider Enrollment and Responsibilities,
-  manuals.id 594). Provider enrollment maps to the provider-enrollment /
-  site-certifier registry rows (the standalone fpact_enrollment entry was
-  dropped in watchlist v1.4).
+  observed 2024 through 2026. Expect clustered flags mid-month.
+- 2023-08 timestamps (pharm, radif, tarf) are CMS-migration seed dates, not
+  real revisions. Valid for forward detection only.
 
-## Working query (trimmed)
-
-Keep the aggregate; drop `__typename`, `community`, and `communities` (the
-last is anon-blocked anyway and not needed once ids are known).
+## Working query
 
 ```json
 {"operationName": "CommunityManuals",
@@ -111,26 +70,13 @@ last is anon-blocked anyway and not needed once ids are known).
  "query": "query CommunityManuals($communityId: GraphQLStringOrFloat) { manuals(filter: {community: {communities_id: {id: {_eq: $communityId}}}}, sort: [\"file.filename_download\"], limit: -1) { id title file { id filename_download modified_on } } manuals_aggregated(filter: {community: {communities_id: {id: {_eq: $communityId}}}}) { count { id } } }"}
 ```
 
-## Legacy host hypothesis (untested, try before token plumbing)
-
-The filenames match the old files.medi-cal.ca.gov pubsdoco naming
-(benfam.pdf, tarf.pdf; trailing "f" as in radif = Family PACT variants of
-shared sections). If the legacy static host still serves them, PDFs need no
-auth at all:
-
-```
-curl -sI https://files.medi-cal.ca.gov/pubsdoco/publications/masters-other/fpact/benfam.pdf
-```
-
-That host timed out on 2026-07-02 per watchlist notes; retest before ruling
-it out, and also try masters-mtp paths.
-
 ## Cautions
 
 - Undocumented internal endpoint. It can change shape or auth without
-  notice. MCSS email remains the backstop detector; never retire it on the
+  notice. MCSS email is the backstop detector and must not be retired on the
   strength of this integration.
-- Keep the UA string, SLEEP >= 1s, conditional GETs. 24 docs weekly is
-  polite; keep it that way.
-- Never commit tokens or the captured browser cURL. Gitignore
-  `notes/mcweb_browser_curl.txt` and any `.env`.
+- Keep the UA string, `SLEEP >= 1`, and conditional GETs.
+- Untested alternative: the filenames match the legacy
+  `files.medi-cal.ca.gov/pubsdoco` naming. If that host still serves them,
+  PDFs would need no auth at all. It timed out on 2026-07-02; retest before
+  investing in token plumbing.
