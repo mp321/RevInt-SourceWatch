@@ -1,7 +1,6 @@
 # Revenue Integrity Source Watch
 
-Automated change monitoring over the official published sources the SFDPH
-Finance | Revenue Integrity team relies on: Medi-Cal and Family PACT provider
+Automated change monitoring for California Medi-Cal and Family PACT payer program. This includes monitoring of provider
 manuals, program news, fee schedules, All Plan Letters, FQHC/RHC material and
 the NCCI Medicaid edit files.
 
