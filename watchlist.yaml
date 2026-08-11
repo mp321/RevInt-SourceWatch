@@ -1,4 +1,4 @@
-# SF DPH Revenue Integrity - source watchlist. v1.6
+# SF DPH Revenue Integrity - source watchlist. v1.7
 # Toggle a whole program with `enabled:`; run a subset with --programs.
 #
 # Entry types: pdf | html | binary | linkpage | bulletin_probe |
@@ -196,6 +196,60 @@ programs:
         registry_note: fqhc-billing reference rows; PPS / wrap / per-visit
           code rows on change
 
+  obstetrics:
+    enabled: true
+    entries:
+      - id: ob_cpsp_manual_docs
+        type: manual_list
+        method: POST
+        url: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/graphql
+        asset_base: "https://mcweb.apps.prd.cammis.medi-cal.ca.gov"
+        portal_page: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=obstetrics
+        seed_csv: data/seeds/ob_cpsp_manuals_seed_2026-08-11.csv
+        # Filtered manual_list (2026-08-11): Obstetrics (communityId 22) holds
+        # 172 sections, too many to watch whole, so this filters that community
+        # to filenames starting "pregcom" - exactly the three CPSP sections
+        # (pregcom, pregcomexc, pregcomlis). The community filter is load
+        # bearing: filtering on the filename alone also returns pregcomexu
+        # (CPSP billing examples, UB-04) and pregcomlos (CPSP, Los Angeles
+        # County Waiver Facilities), which sit in Clinics and Hospitals (11)
+        # and not in Obstetrics. Add them here if they are ever wanted. The
+        # aggregate is the truncation tripwire as usual.
+        # Manuals are many-to-many with communities: these three sections also
+        # belong to Clinics and Hospitals (11) and General Medicine (21), so
+        # rev_clinics_hospitals_manuals and rev_general_medicine_manuals name
+        # them too when they move. Expect one CPSP revision to surface here in
+        # full text and in up to three date-only notices; the full-text row is
+        # the one that says what changed.
+        graphql_body:
+          operationName: CpspManuals
+          variables:
+            communityId: "22"
+          query: >-
+            query CpspManuals($communityId: GraphQLStringOrFloat) { manuals(
+            filter: {_and: [{community: {communities_id: {id: {_eq:
+            $communityId}}}}, {file: {filename_download: {_starts_with:
+            "pregcom"}}}]}, sort: ["file.filename_download"], limit: -1) { id
+            title file { id filename_download modified_on } }
+            manuals_aggregated(filter: {_and: [{community: {communities_id:
+            {id: {_eq: $communityId}}}}, {file: {filename_download:
+            {_starts_with: "pregcom"}}}]}) { count { id } } }
+        auth_header_env: MCWEB_TOKEN
+        token_bundle_url: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/environment.js
+        token_bundle_re: 'window\.DIRECTUS_TOKEN\s*=\s*"([^"]+)"'
+        note: Per-document monitor for the three Comprehensive Perinatal
+          Services Program (CPSP) sections of the Obstetrics manual - the
+          policy section (preg com), the CMS-1500 billing examples (preg com
+          exc) and the list of billing codes. Each is watched individually -
+          full PDF text hash, per-page "Page updated" stamps, portal Revision
+          Date, diffs on change - so a CPSP code or rate change is reported
+          with the changed lines, not just the date. All three were last
+          revised 2025-07-16. The rest of the Obstetrics manual is covered
+          date-only by rev_obstetrics_manuals. MCSS Obstetrics email remains
+          the backstop detector.
+        registry_note: CPSP per-visit and support-service billing rows on
+          change
+
   # Date-only watch (revision_watch): reads each community's manual list
   # metadata, no PDF downloads, so it stays light even at 246 sections, and
   # raises a REVISION_NOTICE naming the sections whose Revision Date moved.
@@ -229,6 +283,25 @@ programs:
           full - a notice here plus a quiet fqhc row means the movement was
           outside the rural sections).
         registry_note: outpatient clinic / hospital billing rows on related
+          section changes
+
+      - id: rev_obstetrics_manuals
+        type: revision_watch
+        url: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/graphql
+        portal_page: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=obstetrics
+        community_id: "22"
+        auth_header_env: MCWEB_TOKEN
+        token_bundle_url: https://mcweb.apps.prd.cammis.medi-cal.ca.gov/environment.js
+        token_bundle_re: 'window\.DIRECTUS_TOKEN\s*=\s*"([^"]+)"'
+        note: Obstetrics manual, 172 sections - the whole community page,
+          including pregnancy global and per-visit billing, CPSP, doula
+          services, presumptive eligibility and the CCS sections. Date-only
+          signal - it names the sections whose Revision Date moved and
+          reports sections added or removed, with no PDF download and no text
+          diff. The three CPSP sections inside it are monitored in full text
+          by ob_cpsp_manual_docs, so a notice here with quiet
+          ob_cpsp_manual_docs rows means the movement was outside CPSP.
+        registry_note: obstetric and perinatal billing rows on related
           section changes
 
       - id: rev_general_medicine_manuals

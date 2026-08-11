@@ -1,0 +1,156 @@
+[[page 1]]
+preg com lis
+1
+Part 2 – Pregnancy: Comprehensive Perinatal Services (CPSP) List of Billing Codes
+Pregnancy: Comprehensive Perinatal Services (CPSP)
+List of Billing Codes
+Page updated: July 2025
+This section contains the codes used to bill for Comprehensive Perinatal Services Programs
+(CPSP) services.
+Office Visits
+‹‹The reimbursement for Z1032 will be based on the greater of the following two values:
+• The base rate plus the ZL modifier, or
+• The Targeted Rate Increase (TRI) rate››
+HCPCS
+Code
+Description Maximum Units
+of Service
+Z1032 ZL Initial antepartum office visit performed within 16
+weeks of LMP
+1
+Initial Comprehensive Services
+HCPCS
+Code
+Description Maximum Units
+of Service
+Z6500 Initial comprehensive nutrition, psychosocial and
+health education assessments and development of
+care plan; first 30 minutes each assessment (total
+of 90 minutes), (includes ongoing coordination of
+care); the three assessments must be completed
+within four weeks of the “initial visit” (either the first
+pregnancy related visit or any one of the three
+initial assessments)
+1
+[[page 2]]
+preg com lis
+2
+Part 2 – Pregnancy: Comprehensive Perinatal Services (CPSP) List of Billing Codes
+Page updated: August 2020
+Nutrition Services
+HCPCS
+Code
+Description Maximum Units
+of Service
+Z6200 Initial nutrition assessment and development of
+care plan; first 30 minutes
+1
+Z6202 Initial nutrition assessment and development of
+care plan; each subsequent 15 minutes (maximum
+of 1½ hours)
+6
+Z6204 Follow-up antepartum nutrition assessment,
+treatment and/or intervention; individual, each 15
+minutes (maximum of 2 hours)
+8
+Z6206 Follow-up antepartum nutrition assessment,
+treatment and/or intervention; group, per patient,
+each 15 minutes (maximum of 3 hours)
+12
+Z6208 Postpartum nutrition assessment, treatment and/or
+intervention; including development of care plan,
+individual, each 15 minutes (maximum of 1 hours)
+4
+S0197 Prenatal vitamins, 30-day supply 10
+Note: HCPCS code S0197 may be billed and reimbursed for 1 unit (30-day supply) on the
+same date of service. However, there is a 300-day maximum supply per pregnancy.
+The initial assessment must be rendered prior to billing any follow-up assessments.
+Comprehensive Psychosocial Services
+HCPCS
+Code
+Description Maximum Units
+of Service
+Z6300 Initial psychosocial assessment and development
+of care plan; first 30 minutes
+1
+Z6302 Initial psychosocial assessment and development
+of care plan; each subsequent 15 minutes
+(maximum of 1½ hours)
+6
+Z6304 Follow-up antepartum psychosocial assessment,
+treatment and/or intervention; individual, each 15
+minutes (maximum of three hours)
+12
+Z6306 Follow-up antepartum psychosocial assessment,
+treatment and/or intervention; group, per patient,
+each 15 minutes (maximum of four hours)
+16
+Z6308 Postpartum psychosocial assessment, treatment,
+and/or intervention, including development of care
+plan; individual, each 15 minutes
+6
+The initial assessment must be rendered prior to billing any follow-up assessments.
+[[page 3]]
+preg com lis
+3
+Part 2 – Pregnancy: Comprehensive Perinatal Services (CPSP) List of Billing Codes
+Page updated: March 2021
+Comprehensive Health Education Services
+HCPCS
+Code
+Description Maximum Units
+of Service
+Z6400 Client orientation (health education) each 15
+minutes (maximum of two hours)
+8
+Z6402 Initial health education assessment and
+development of care plan, first 30 minutes
+1
+Z6404 Initial health education assessment and
+development of care plan, each subsequent 15
+minutes (maximum of two hours)
+8
+Z6406 Follow-up antepartum health education
+assessment, treatment and/or intervention;
+individual, each 15 minutes (maximum of two
+hours)
+8
+Z6408 Follow-up antepartum health education
+assessment, treatment and/or intervention; group,
+per patient, each 15 minutes (maximum of two
+hours)
+8
+Z6410 Perinatal education; individual, each 15 minutes
+(maximum of four hours)
+16
+Z6412 Perinatal education; group per patient, each 15
+minutes (maximum 16 units per day – 72 units per
+pregnancy) *
+16 per day *
+‹‹Z6414›› Postpartum health education assessment,
+treatment and/or intervention, including
+development of care plan; individual, each 15
+minutes (maximum of one hour)
+4
+Note: A modifier is not required for billing any of the comprehensive perinatal procedures.
+The initial assessment must be rendered prior to billing any follow-up assessments. Client
+orientation (Z6400) and/or group perinatal education (Z6412) may be rendered prior to the
+initial health education assessment.
+See the Pregnancy: Comprehensive Perinatal Services (CPSP) section of this manual for
+Treatment Authorization Request (TAR) requirements necessary to obtain nutrition,
+psychosocial, or health education services in excess of the basic allowances.
+[[page 4]]
+preg com lis
+4
+Part 2 – Pregnancy: Comprehensive Perinatal Services (CPSP) List of Billing Codes
+Page updated: August 2020
+‹‹Legend››
+‹‹Symbols used in the document above are explained in the following table.››
+Symbol Description
+‹‹ This is a change mark symbol. It is used to indicate where on the page the
+most recent change begins.
+›› This is a change mark symbol. It is used to indicate where on the page the
+most recent change ends.
+* Medi-Cal reimburses for more than 16 units per recipient per day only if there
+is detailed documentation with the claim explaining the need for more than 16
+units. Medi-Cal reimburses a maximum of 72 units per patient per pregnancy.

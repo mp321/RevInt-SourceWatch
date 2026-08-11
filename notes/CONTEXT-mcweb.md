@@ -28,8 +28,14 @@ readable, no DevTools needed.
 11 Clinics and Hospitals (246 docs), 12 Chronic Dialysis, 13 CBAS,
 14 Heroin Detox, 15 Home Health/HCBS, 16 Hospice, 17 LEA, 18 MSSP,
 19 Rehabilitation Clinics, 20 Long Term Care, 21 General Medicine (229 docs),
-22 Obstetrics, 23 Pharmacy, 24 Vision Care, 25 Family PACT (24 docs),
-26 Medi-Cal Program & Eligibility.
+22 Obstetrics (172 docs, counted 2026-08-11), 23 Pharmacy, 24 Vision Care,
+25 Family PACT (24 docs), 26 Medi-Cal Program & Eligibility.
+
+A manual belongs to many communities. The three CPSP sections (pregcom,
+pregcomexc, pregcomlis) are each in 11, 21 and 22, so one revision raises a
+date-only notice in every watched community that carries it. Two more CPSP
+sections, pregcomexu (UB-04 examples) and pregcomlos (Los Angeles County
+Waiver Facilities), are in 11 only.
 
 ## Auth
 
@@ -69,6 +75,21 @@ degrades to metadata-only detection (`CHANGED_METADATA_ONLY`): compare
  "variables": {"communityId": "25"},
  "query": "query CommunityManuals($communityId: GraphQLStringOrFloat) { manuals(filter: {community: {communities_id: {id: {_eq: $communityId}}}}, sort: [\"file.filename_download\"], limit: -1) { id title file { id filename_download modified_on } } manuals_aggregated(filter: {community: {communities_id: {id: {_eq: $communityId}}}}) { count { id } } }"}
 ```
+
+## Filtered queries
+
+Two filter shapes are in use. Both keep a `manuals_aggregated` filter that
+matches the `manuals` filter exactly, or the truncation tripwire compares
+against the wrong total.
+
+- Filename only, for a family that is not its own community
+  (`fqhc_rural_manual_docs`):
+  `{file: {filename_download: {_starts_with: "rural"}}}`.
+- Community AND filename, for a subset of one large community
+  (`ob_cpsp_manual_docs`): `{_and: [{community: {communities_id: {id: {_eq:
+  $communityId}}}}, {file: {filename_download: {_starts_with: "pregcom"}}}]}`.
+  Verified 2026-08-11: filename alone returns 5 docs, the community clause
+  narrows it to the 3 that are actually in Obstetrics.
 
 ## Cautions
 

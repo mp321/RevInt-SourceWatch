@@ -580,6 +580,57 @@
     "text_sha": "08d75b789ec1a404e3bdc851f87e29a3230beb4fa8a02ae3819dd74fb7dd6d1e",
     "url": "https://www.cms.gov/medicare/coding-billing/ncci-medicaid/medicaid-ncci-edit-files"
   },
+  "ob_cpsp_manual_docs": {
+    "checked_at": "2026-08-11T23:04:47+00:00",
+    "docs": [
+      "pregcom",
+      "pregcomexc",
+      "pregcomlis"
+    ],
+    "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/graphql"
+  },
+  "ob_cpsp_manual_docs--pregcom": {
+    "byte_sha": "b1093532f75c807fa03dffa6088a9ba99647a0b7aad2bd91c2448f4ddf756173",
+    "checked_at": "2026-08-11T23:04:47+00:00",
+    "etag": "",
+    "file_id": "7E3FF663-2682-4A45-82A5-688A7D42FD46",
+    "last_modified": "Wed, 16 Jul 2025 16:25:15 GMT",
+    "links": [],
+    "page_updated": "p1: March 2024|p2: March 2024|p3: March 2024|p4: March 2024|p5: August 2020|p6: January 2024|p7: October 2023|p8: July 2025|p9: July 2025|p10: July 2025|p11: March 2024",
+    "revision_date": "2025-07-16T16:25:15",
+    "shell": false,
+    "text_sha": "10c70778b03c3a911daf78270662d88a91661803fa1469a19ed06388feb0293a",
+    "title": "Pregnancy: Comprehensive Perinatal Services Program (CPSP) (preg com)",
+    "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/7E3FF663-2682-4A45-82A5-688A7D42FD46"
+  },
+  "ob_cpsp_manual_docs--pregcomexc": {
+    "byte_sha": "d483d047b8ad385710b8a886a577cc9d84be126d5b3261bc0c0f76ae966bf3af",
+    "checked_at": "2026-08-11T23:04:47+00:00",
+    "etag": "",
+    "file_id": "21AA9E49-37BD-473D-BBF6-0756C8ED95C6",
+    "last_modified": "Wed, 16 Jul 2025 16:25:32 GMT",
+    "links": [],
+    "page_updated": "p1: August 2020|p2: July 2025|p3: August 2020|p4: August 2020|p5: August 2020|p6: August 2020|p7: August 2020|p8: August 2020|p9: August 2020",
+    "revision_date": "2025-07-16T16:25:32",
+    "shell": false,
+    "text_sha": "5830260a186c83113edb0f504c45ab396336f557a8a4125e75cc67224eafb124",
+    "title": "Pregnancy:  Comprehensive Perinatal Services Program (CPSP) Billing Examples - CMS-1500 (preg com exc)",
+    "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/21AA9E49-37BD-473D-BBF6-0756C8ED95C6"
+  },
+  "ob_cpsp_manual_docs--pregcomlis": {
+    "byte_sha": "a61f7dc1f13eb92feef9af46e5655903806d19289b6d7ce41fa0797262cfc5c7",
+    "checked_at": "2026-08-11T23:04:47+00:00",
+    "etag": "",
+    "file_id": "B49DC7A8-9C98-475A-AFF8-F3702FE0AB0F",
+    "last_modified": "Wed, 16 Jul 2025 16:25:54 GMT",
+    "links": [],
+    "page_updated": "p1: July 2025|p2: August 2020|p3: March 2021|p4: August 2020",
+    "revision_date": "2025-07-16T16:25:54",
+    "shell": false,
+    "text_sha": "4d34c4bfbd1b2c61a2641571ff5d39e6c50c87fd64dbaf863b4b251ac81b9b73",
+    "title": "Pregnancy: Comprehensive Perinatal Services (CPSP) List of Billing Codes",
+    "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B49DC7A8-9C98-475A-AFF8-F3702FE0AB0F"
+  },
   "rev_clinics_hospitals_manuals": {
     "checked_at": "2026-08-10T14:54:00+00:00",
     "docs": {
@@ -2957,5 +3008,699 @@
       }
     },
     "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=inpatient-services"
+  },
+  "rev_obstetrics_manuals": {
+    "checked_at": "2026-08-11T23:03:34+00:00",
+    "docs": {
+      "00medi-cal": {
+        "revision_date": "2023-08-06T02:02:14",
+        "title": "Medi-Cal Program (00medi-cal)"
+      },
+      "0bhwtouse": {
+        "revision_date": "2025-06-16T16:12:25",
+        "title": "How to Use This Manual (0B hw to use)"
+      },
+      "0cgetstart": {
+        "revision_date": "2025-12-16T17:07:46",
+        "title": "Getting Started:  Where to Find the Answers (0C get start)"
+      },
+      "abort": {
+        "revision_date": "2026-03-03T20:19:29",
+        "title": "Abortions and Directly Related Medical Services and Supplies (abort)"
+      },
+      "altern": {
+        "revision_date": "2026-06-16T15:36:46",
+        "title": "Alternative Birthing Centers (altern)"
+      },
+      "anest": {
+        "revision_date": "2025-10-16T16:15:39",
+        "title": "Anesthesia (anest)"
+      },
+      "anestcms": {
+        "revision_date": "2025-05-23T00:03:19",
+        "title": "Anesthesia Billing Examples:  CMS-1500 (anest cms)"
+      },
+      "appealform": {
+        "revision_date": "2025-10-16T16:16:03",
+        "title": "Appeal Form Completion (appeal form)"
+      },
+      "asthprev": {
+        "revision_date": "2025-04-16T15:44:53",
+        "title": "Asthma Preventive Services (APS) (asth prev)"
+      },
+      "calchild": {
+        "revision_date": "2024-02-16T19:25:16",
+        "title": "California Children\u2019s Services (CCS) Program (cal child)"
+      },
+      "calchildappr": {
+        "revision_date": "2023-08-06T02:02:07",
+        "title": "California Children\u2019s Services (CCS) Program Approved Hospitals (cal child appr)"
+      },
+      "calchildbil": {
+        "revision_date": "2025-02-14T17:42:27",
+        "title": "California Children\u2019s Services (CCS) Program Billing (cal child bil)"
+      },
+      "calchildbilcms": {
+        "revision_date": "2023-08-06T01:56:34",
+        "title": "California Children\u2019s Services (CCS) Program Billing Example:  CMS-1500 (cal child bil cms)"
+      },
+      "calchildbilguide": {
+        "revision_date": "2023-08-06T02:02:30",
+        "title": "CCS Program Billing Guidelines (cal child bil guide)"
+      },
+      "calchildcounty": {
+        "revision_date": "2023-08-06T02:00:05",
+        "title": "California Children\u2019s Services (CCS) Program County Office Directory (cal child county)"
+      },
+      "calchildelig": {
+        "revision_date": "2023-08-06T02:00:31",
+        "title": "California Children\u2019s Services (CCS) Program Eligibility (cal child elig)"
+      },
+      "calchildmed": {
+        "revision_date": "2026-03-16T16:31:45",
+        "title": "California Children\u2019s Services (CCS) Program Medical Therapy Program (cal child med)"
+      },
+      "calchildpanel": {
+        "revision_date": "2024-06-14T16:13:30",
+        "title": "California Children\u2019s Services (CCS) Program Provider Paneling (cal child panel)"
+      },
+      "calchildpanelfrm4514": {
+        "revision_date": "2023-08-06T02:02:31",
+        "title": "Form: California Children\u2019s Services (CCS) Program Individual Provider Paneling Application for Physicians and Podiatrists (DHS 4514)"
+      },
+      "calchildpanelfrm4515": {
+        "revision_date": "2023-08-06T02:02:31",
+        "title": "Form: California Children\u2019s Services (CCS) Program Individual Provider Paneling Application for Allied Health Care Professionals (DHS 4515 )"
+      },
+      "calchildref": {
+        "revision_date": "2023-08-06T02:01:07",
+        "title": "California Children\u2019s Services (CCS) Program Referrals (cal child ref)"
+      },
+      "calchildsar": {
+        "revision_date": "2024-02-16T14:57:52",
+        "title": "California Children\u2019s Services (CCS) Program Service Authorization Request (SAR) (cal child sar)"
+      },
+      "calchildser": {
+        "revision_date": "2026-02-13T20:44:38",
+        "title": "California Children\u2019s Services (CCS) Program Service Code Groupings (cal child ser)"
+      },
+      "calchildspec": {
+        "revision_date": "2023-08-06T02:02:15",
+        "title": "California Children\u2019s Services (CCS) Program Special Care Centers (cal child spec)"
+      },
+      "childpresumelig": {
+        "revision_date": "2024-06-14T16:38:03",
+        "title": "Children\u2019s Presumptive Eligibility (child presum elig)"
+      },
+      "chwprev": {
+        "revision_date": "2026-07-16T16:33:07",
+        "title": "Community Health Worker (CHW) Preventive Services (chw prev)"
+      },
+      "cifco": {
+        "revision_date": "2023-11-16T15:42:19",
+        "title": "CIF Completion (cif co)"
+      },
+      "cifsp": {
+        "revision_date": "2023-08-06T01:56:33",
+        "title": "CIF Special Billing Instructions (cif sp)"
+      },
+      "cifsub": {
+        "revision_date": "2023-08-06T02:00:30",
+        "title": "CIF Submission and Timeliness Instructions (cif sub)"
+      },
+      "clinictrial": {
+        "revision_date": "2023-08-06T01:59:26",
+        "title": "Clinical Trials Policy (clinic trial)"
+      },
+      "cmscomp": {
+        "revision_date": "2026-06-16T15:38:03",
+        "title": "CMS-1500 Completion (cms comp)"
+      },
+      "cmsspec": {
+        "revision_date": "2023-08-06T01:59:35",
+        "title": "CMS-1500 Special Billing Instructions (cms spec)"
+      },
+      "cmssub": {
+        "revision_date": "2023-08-06T02:01:32",
+        "title": "CMS-1500 Submission and Timeliness Instructions (cms sub)"
+      },
+      "cmstips": {
+        "revision_date": "2025-08-15T17:12:41",
+        "title": "CMS-1500 Tips for Billing (cms tips)"
+      },
+      "correct": {
+        "revision_date": "2025-02-14T17:45:47",
+        "title": "Correct Coding Initiative: National (correct)"
+      },
+      "correctcod": {
+        "revision_date": "2023-08-06T01:59:00",
+        "title": "Correct Coding Initiative: National \u2013 Claim Preparation (correct cod)"
+      },
+      "cpeprocess": {
+        "revision_date": "2026-06-16T15:38:59",
+        "title": "Children\u2019s Presumptive Eligibility (CPE) Process (cpe process)"
+      },
+      "dental": {
+        "revision_date": "2023-08-06T02:02:14",
+        "title": "Dental Benefits (dental)"
+      },
+      "diabetes": {
+        "revision_date": "2023-08-06T02:00:07",
+        "title": "Diabetes Prevention Program (diabetes)"
+      },
+      "doula": {
+        "revision_date": "2025-12-16T17:21:43",
+        "title": "Doula Services (doula)"
+      },
+      "ecmoecls": {
+        "revision_date": "2025-10-16T16:53:59",
+        "title": "Extracorporeal Membrane Oxygenation/Extracorporeal Life Support  (ecmo ecls)"
+      },
+      "epsdt": {
+        "revision_date": "2025-12-16T17:22:11",
+        "title": "EPSDT (epsdt)"
+      },
+      "eval": {
+        "revision_date": "2026-03-16T16:34:51",
+        "title": "Evaluation & Management (E&M) (eval)"
+      },
+      "evwoman": {
+        "revision_date": "2026-04-16T16:50:50",
+        "title": "Every Woman Counts (ev woman)"
+      },
+      "evwomanexc": {
+        "revision_date": "2023-08-06T01:57:10",
+        "title": "Every Woman Counts Billing Examples: CMS-1500 (ev woman exc)"
+      },
+      "famplanning": {
+        "revision_date": "2026-05-18T17:42:35",
+        "title": "Family Planning (fam planning)"
+      },
+      "famplanningcms": {
+        "revision_date": "2023-08-06T01:57:06",
+        "title": "Family Planning Billing Example: CMS-1500 (fam planning cms)"
+      },
+      "formsleg": {
+        "revision_date": "2023-08-06T02:01:33",
+        "title": "Forms:  Legibility and Completion Standards (forms leg)"
+      },
+      "formsreo": {
+        "revision_date": "2023-11-16T15:44:20",
+        "title": "Forms Reorder Request:  Guidelines (forms reo)"
+      },
+      "formsreoma": {
+        "revision_date": "2023-08-06T01:57:47",
+        "title": "Forms Reorder Request: Medical Services and Allied Health (forms reo ma)"
+      },
+      "gender": {
+        "revision_date": "2025-11-21T18:47:31",
+        "title": "Gender Affirming Care Services (gender)"
+      },
+      "genecoun": {
+        "revision_date": "2026-01-16T17:30:25",
+        "title": "Genetic Counseling and Screening (gene coun)"
+      },
+      "geneex": {
+        "revision_date": "2023-08-06T01:56:40",
+        "title": "Genetic Screening Billing Examples: CMS-1500 (gene ex)"
+      },
+      "genetic": {
+        "revision_date": "2025-02-14T17:46:44",
+        "title": "Genetically Handicapped Persons Program (GHPP) (genetic)"
+      },
+      "hcpcs": {
+        "revision_date": "2023-08-06T02:02:06",
+        "title": "HCPCS Introduction (hcpcs)"
+      },
+      "hcpcsiii": {
+        "revision_date": "2023-12-15T16:38:14",
+        "title": "HCPCS Level III Interim Code List:  Reimbursable Medi-Cal-Only Codes (hcpcs iii)"
+      },
+      "hyst": {
+        "revision_date": "2025-10-16T16:23:03",
+        "title": "Hysterectomy (hyst)"
+      },
+      "immun": {
+        "revision_date": "2026-07-16T16:46:51",
+        "title": "Immunizations (immun)"
+      },
+      "immuncd": {
+        "revision_date": "2025-09-16T16:08:11",
+        "title": "Immunizations Code List (immun cd)"
+      },
+      "injectbilcms": {
+        "revision_date": "2026-03-16T16:36:23",
+        "title": "Injections: Billing Example for CMS-1500 (inject bil cms)"
+      },
+      "injectcdlist": {
+        "revision_date": "2026-07-16T16:47:22",
+        "title": "Injections: Code List (inject cd list)"
+      },
+      "injecthydra": {
+        "revision_date": "2023-12-15T16:39:44",
+        "title": "Injections:  Hydration (inject hydra)"
+      },
+      "justinv": {
+        "revision_date": "2026-06-16T15:40:17",
+        "title": "Justice-Involved (JI) Pre-Release Services (just inv)"
+      },
+      "medicaminor": {
+        "revision_date": "2025-08-15T17:16:39",
+        "title": "Medi-Cal Minor Consent Services (medi ca minor)"
+      },
+      "medicrcms": {
+        "revision_date": "2026-07-16T16:49:19",
+        "title": "Medicare/Medi-Cal Crossover Claims:  CMS-1500 (medi cr cms)"
+      },
+      "medicrcmsexm": {
+        "revision_date": "2023-08-06T01:56:07",
+        "title": "Medicare/Medi-Cal Crossover Claims:  CMS-1500 Billing Examples for Medical Services (medi cr cms exm)"
+      },
+      "medicrcmsprm": {
+        "revision_date": "2023-08-06T01:56:35",
+        "title": "Medicare/Medi-Cal Crossover Claims: CMS-1500 Pricing Examples for Medical Services (medi cr cms prm)"
+      },
+      "medinoncha": {
+        "revision_date": "2023-08-06T02:02:11",
+        "title": "Medicare Non-Covered Services:  Charts Introduction (medi non cha)"
+      },
+      "medinoncpt": {
+        "revision_date": "2026-01-16T17:39:13",
+        "title": "Medicare Non-Covered Services: CPT\u00ae Codes (medi non cpt)"
+      },
+      "medinonhcp": {
+        "revision_date": "2026-01-16T17:39:33",
+        "title": "Medicare Non-Covered Services: HCPCS Codes (medi non hcp)"
+      },
+      "medipromed": {
+        "revision_date": "2023-08-06T02:02:14",
+        "title": "Medicare Procedures: Medi-Cal Code Correlation List (medi pro med)"
+      },
+      "mednegastro": {
+        "revision_date": "2026-01-16T17:40:06",
+        "title": "Medicine: Gastroenterology (medne gastro)"
+      },
+      "mednehypoxy": {
+        "revision_date": "2025-10-16T16:58:46",
+        "title": "Medicine: Hyperbaric Oxygen Therapy (medne hyp oxy)"
+      },
+      "mednenutri": {
+        "revision_date": "2025-10-16T17:00:30",
+        "title": "Medicine: Nutrition Counseling (medne nutri)"
+      },
+      "medneother": {
+        "revision_date": "2026-01-16T17:40:25",
+        "title": "Medicine: Other Services (medne other)"
+      },
+      "modif": {
+        "revision_date": "2025-12-16T17:27:01",
+        "title": "Modifiers (modif)"
+      },
+      "modifapp": {
+        "revision_date": "2025-03-28T22:31:01",
+        "title": "Modifiers: Approved List (modif app)"
+      },
+      "modifused": {
+        "revision_date": "2026-07-16T16:49:57",
+        "title": "Modifiers Used with Procedure Codes (modif used)"
+      },
+      "newgate": {
+        "revision_date": "2025-02-14T17:56:09",
+        "title": "Newborn Gateway (new gate)"
+      },
+      "nonph": {
+        "revision_date": "2026-03-16T16:38:30",
+        "title": "Non-Physician Medical Practitioners (NMP) (non ph)"
+      },
+      "nonphcms": {
+        "revision_date": "2023-08-06T01:57:12",
+        "title": "Non-Physician Medical Practitioners (NMP) Billing Example:  CMS-1500 (non ph cms)"
+      },
+      "once": {
+        "revision_date": "2026-07-16T16:50:22",
+        "title": "Once-in-a-Lifetime Procedure Codes (once)"
+      },
+      "othhlth": {
+        "revision_date": "2023-08-06T02:02:29",
+        "title": "Other Health Coverage (OHC) (oth hlth)"
+      },
+      "othhlthcpt": {
+        "revision_date": "2025-03-14T16:12:29",
+        "title": "Other Health Coverage (OHC): CPT\u00ae and HCPCS Codes (oth hlth cpt)"
+      },
+      "pathanover": {
+        "revision_date": "2025-07-16T16:23:25",
+        "title": "Pathology:  An Overview of Enrollment and Proficiency Testing Requirements (path an over)"
+      },
+      "pathbil": {
+        "revision_date": "2026-06-16T15:43:33",
+        "title": "Pathology: Billing and Modifiers (path bil)"
+      },
+      "pathbilcms": {
+        "revision_date": "2023-08-06T02:00:04",
+        "title": "Pathology Billing Example:  CMS-1500 (path bil cms)"
+      },
+      "pathblood": {
+        "revision_date": "2025-07-16T16:24:19",
+        "title": "Pathology:  Blood Collection and Handling (path blood)"
+      },
+      "pathbloodex": {
+        "revision_date": "2023-08-06T01:57:07",
+        "title": "Pathology:  Blood Collection and Handling Billing Examples \u2013 CMS-1500 (path blood ex)"
+      },
+      "pathchem": {
+        "revision_date": "2026-06-16T15:44:03",
+        "title": "Pathology:  Chemistry (path chem)"
+      },
+      "pathcyto": {
+        "revision_date": "2023-08-06T02:01:30",
+        "title": "Pathology:  Cytopathology (path cyto)"
+      },
+      "pathdrug": {
+        "revision_date": "2024-01-16T17:46:50",
+        "title": "Pathology:  Drug Testing (path drug)"
+      },
+      "pathimmun": {
+        "revision_date": "2026-05-15T17:00:40",
+        "title": "Pathology:  Immunology (path immun)"
+      },
+      "pathmicro": {
+        "revision_date": "2026-05-15T17:01:05",
+        "title": "Pathology: Microbiology (path micro)"
+      },
+      "pathmolec": {
+        "revision_date": "2026-03-16T16:39:55",
+        "title": "Pathology: Molecular Pathology (path molec)"
+      },
+      "pathorgan": {
+        "revision_date": "2023-08-06T02:00:06",
+        "title": "Pathology:  Organ or Disease-Oriented Panels (path organ)"
+      },
+      "pathsurg": {
+        "revision_date": "2025-01-16T18:22:34",
+        "title": "Pathology: Surgical (path surg)"
+      },
+      "pathurin": {
+        "revision_date": "2023-08-06T02:02:15",
+        "title": "Pathology:  Urinalysis (path urin)"
+      },
+      "physicianlist": {
+        "revision_date": "2026-07-16T16:51:10",
+        "title": "List of Physician Administered Drugs and HCPCS Codes (physician list)"
+      },
+      "physicianndc": {
+        "revision_date": "2025-09-16T16:26:10",
+        "title": "Physician-Administered Drugs \u2013 NDC (physician ndc)"
+      },
+      "physicianndccms": {
+        "revision_date": "2023-08-06T01:59:57",
+        "title": "Physician-Administered Drugs \u2013 NDC: CMS-1500 Billing Instructions (physician ndc cms)"
+      },
+      "physicianover": {
+        "revision_date": "2026-03-16T16:44:07",
+        "title": "Physician-Administered Drugs (PADs) Overview (physician over)"
+      },
+      "physicianspec": {
+        "revision_date": "2026-07-16T16:51:55",
+        "title": "Physician-Administered Drugs (PADs) Special Billing (physician spec)"
+      },
+      "pregcom": {
+        "revision_date": "2025-07-16T16:25:15",
+        "title": "Pregnancy: Comprehensive Perinatal Services Program (CPSP) (preg com)"
+      },
+      "pregcomexc": {
+        "revision_date": "2025-07-16T16:25:32",
+        "title": "Pregnancy:  Comprehensive Perinatal Services Program (CPSP) Billing Examples - CMS-1500 (preg com exc)"
+      },
+      "pregcomlis": {
+        "revision_date": "2025-07-16T16:25:54",
+        "title": "Pregnancy: Comprehensive Perinatal Services (CPSP) List of Billing Codes"
+      },
+      "pregdeterm": {
+        "revision_date": "2025-02-14T17:57:07",
+        "title": "Pregnancy Determination (preg determ)"
+      },
+      "pregearly": {
+        "revision_date": "2026-04-16T16:57:38",
+        "title": "Pregnancy: Early Care and Diagnostic Services (preg early)"
+      },
+      "pregexcms": {
+        "revision_date": "2025-10-16T16:32:34",
+        "title": "Pregnancy Examples: CMS-1500 (preg ex cms)"
+      },
+      "pregfetal": {
+        "revision_date": "2023-08-06T02:02:00",
+        "title": "Pregnancy: Fetal Monitoring, Labor and Delivery Services (preg fetal)"
+      },
+      "pregglo": {
+        "revision_date": "2026-01-16T17:45:34",
+        "title": "Pregnancy: Global Billing (preg glo)"
+      },
+      "pregglocd": {
+        "revision_date": "2023-08-06T02:02:14",
+        "title": "Pregnancy:  Global Billing Codes (preg glo cd)"
+      },
+      "pregper": {
+        "revision_date": "2026-07-16T16:52:43",
+        "title": "Pregnancy: Per Visit Billing (preg per)"
+      },
+      "pregpercd": {
+        "revision_date": "2025-09-16T16:27:23",
+        "title": "Pregnancy:  Per-Visit Billing Codes (preg per cd)"
+      },
+      "pregpost": {
+        "revision_date": "2025-10-16T16:32:57",
+        "title": "Pregnancy: Postpartum and Newborn Referral Services (preg post)"
+      },
+      "pregshare": {
+        "revision_date": "2023-08-06T02:02:16",
+        "title": "Pregnancy:  Share of Cost (preg share)"
+      },
+      "presum": {
+        "revision_date": "2026-06-16T15:45:39",
+        "title": "Presumptive Eligibility for Pregnant People (presum)"
+      },
+      "presumbill": {
+        "revision_date": "2026-07-16T16:53:27",
+        "title": "Presumptive Eligibility for Pregnant People: Billing Codes (presum bill)"
+      },
+      "presumproc": {
+        "revision_date": "2024-09-16T18:44:14",
+        "title": "Presumptive Eligibility for Pregnant People Program Process (presum proc)"
+      },
+      "proplab": {
+        "revision_date": "2026-04-16T16:58:22",
+        "title": "Proprietary Laboratory Analyses (PLA) (prop lab)"
+      },
+      "provbil": {
+        "revision_date": "2023-11-16T16:53:53",
+        "title": "Provider Billing after Beneficiary Reimbursement (Conlan v. Shewry) (prov bil)"
+      },
+      "radi": {
+        "revision_date": "2026-01-16T17:47:55",
+        "title": "Radiology (radi)"
+      },
+      "radibilcms": {
+        "revision_date": "2023-08-06T01:57:13",
+        "title": "Radiology Billing Examples:  CMS-1500 (radi bil cms)"
+      },
+      "radidia": {
+        "revision_date": "2026-07-16T16:53:54",
+        "title": "Radiology: Diagnostic (radi dia)"
+      },
+      "radidiault": {
+        "revision_date": "2025-08-15T17:25:43",
+        "title": "Radiology:  Diagnostic Ultrasound (radi dia ult)"
+      },
+      "radinuc": {
+        "revision_date": "2025-10-16T16:34:56",
+        "title": "Radiology:  Nuclear Medicine (radi nuc)"
+      },
+      "radionc": {
+        "revision_date": "2026-01-16T17:48:52",
+        "title": "Radiology: Oncology (radi onc)"
+      },
+      "ratesmax": {
+        "revision_date": "2026-01-16T17:49:47",
+        "title": "Rates: Maximum Reimbursement (rates max)"
+      },
+      "ratesmaxlab": {
+        "revision_date": "2023-08-06T02:02:13",
+        "title": "Rates: Maximum Reimbursement for Laboratories (rates max lab)"
+      },
+      "remitadv": {
+        "revision_date": "2025-02-14T17:59:05",
+        "title": "Remittance Advice Details (RAD) (remit adv)"
+      },
+      "remitexamp": {
+        "revision_date": "2023-08-06T01:58:24",
+        "title": "Remittance Advice Details (RAD) Examples: Allied Health, Medical Services and Pharmacy (remit ex amp)"
+      },
+      "remitpay": {
+        "revision_date": "2023-08-06T02:02:30",
+        "title": "Remittance Advice Details (RAD):  Payments and Claim Status (remit pay)"
+      },
+      "sharecms": {
+        "revision_date": "2023-08-06T01:56:04",
+        "title": "Share of Cost (SOC): CMS-1500 (share cms)"
+      },
+      "sign": {
+        "revision_date": "2024-07-16T16:33:09",
+        "title": "Sign Language Interpretation (sign)"
+      },
+      "ster": {
+        "revision_date": "2025-12-16T17:29:49",
+        "title": "Sterilization (ster)"
+      },
+      "suppdrug": {
+        "revision_date": "2023-08-06T02:02:04",
+        "title": "Supplies and Drugs (supp drug)"
+      },
+      "suppdrugms": {
+        "revision_date": "2023-08-06T02:02:13",
+        "title": "Supplies and Drugs for Medical Services (supp drug ms)"
+      },
+      "surg": {
+        "revision_date": "2026-04-16T16:59:58",
+        "title": "Surgery (surg)"
+      },
+      "surgbilcms": {
+        "revision_date": "2023-08-06T01:55:57",
+        "title": "Surgery Billing Examples:  CMS-1500 (surg bil cms)"
+      },
+      "surgbilmod": {
+        "revision_date": "2026-01-16T17:52:40",
+        "title": "Surgery:  Billing With Modifiers (surg bil mod)"
+      },
+      "surgfemale": {
+        "revision_date": "2025-11-21T18:57:45",
+        "title": "Surgery:  Female Genital System (surg female)"
+      },
+      "surglap": {
+        "revision_date": "2025-11-21T18:58:18",
+        "title": "Surgery: Laparoscopy and Hysteroscopy (surg lap)"
+      },
+      "surgmale": {
+        "revision_date": "2026-01-16T17:55:15",
+        "title": "Surgery: Male Genital System (surg male)"
+      },
+      "surgurin": {
+        "revision_date": "2026-07-16T16:55:38",
+        "title": "Surgery:  Urinary System (surg urin)"
+      },
+      "tarandnon": {
+        "revision_date": "2025-12-26T23:29:51",
+        "title": "TAR and Non-Standard Benefits: Introduction to List (tar and non)"
+      },
+      "tarandnoncd0": {
+        "revision_date": "2026-07-16T16:56:16",
+        "title": "TAR and Non-Standard Benefits List: Codes 0001M thru 0999U (tar and non cd0)"
+      },
+      "tarandnoncd1": {
+        "revision_date": "2025-12-16T17:40:19",
+        "title": "TAR and Non-Standard Benefits List: Codes 10000 thru 19999 (tar and non cd1)"
+      },
+      "tarandnoncd2": {
+        "revision_date": "2026-01-16T17:57:25",
+        "title": "TAR and Non-Standard Benefits List: Codes 20000 thru 29999 (tar and non cd2)"
+      },
+      "tarandnoncd3": {
+        "revision_date": "2026-01-16T17:57:48",
+        "title": "TAR and Non-Standard Benefits List: Codes 30000 thru 39999 (tar and non cd3)"
+      },
+      "tarandnoncd4": {
+        "revision_date": "2026-03-16T16:52:31",
+        "title": "TAR and Non-Standard Benefits List: Codes 40000 thru 49999 (tar and non cd4)"
+      },
+      "tarandnoncd5": {
+        "revision_date": "2026-01-16T17:58:30",
+        "title": "TAR and Non-Standard Benefits List: Codes 50000 thru 59999 (tar and non cd5)"
+      },
+      "tarandnoncd6": {
+        "revision_date": "2026-01-16T17:58:51",
+        "title": "TAR and Non-Standard Benefits List: Codes 60000 thru 69999 (tar and non cd6)"
+      },
+      "tarandnoncd7": {
+        "revision_date": "2026-01-16T17:59:11",
+        "title": "TAR and Non-Standard Benefits List: Codes 70000 thru 79999 (tar and non cd7)"
+      },
+      "tarandnoncd8": {
+        "revision_date": "2026-04-16T17:02:22",
+        "title": "TAR and Non-Standard Benefits List: Codes 80000 thru 89999 (tar and non cd8)"
+      },
+      "tarandnoncd9": {
+        "revision_date": "2026-03-16T16:53:16",
+        "title": "TAR and Non-Standard Benefits List: Codes 90000 thru 99999 (tar and non cd9)"
+      },
+      "tarandnoncdab": {
+        "revision_date": "2026-04-16T17:02:48",
+        "title": "TAR and Non-Standard Benefits List: Codes A0000 thru B9999 (tar and non cdab)"
+      },
+      "tarandnoncdc": {
+        "revision_date": "2026-07-16T16:57:51",
+        "title": "TAR and Non-Standard Benefits List: Codes C0000 thru C9999 (tar and non cdc)"
+      },
+      "tarandnoncde": {
+        "revision_date": "2026-03-16T16:53:42",
+        "title": "TAR and Non-Standard Benefits List: Codes E0000 thru E9999 (tar and non cde)"
+      },
+      "tarandnoncdg": {
+        "revision_date": "2026-07-16T16:59:02",
+        "title": "TAR and Non-Standard Benefits List: Codes G0000 thru G9999 (tar and non cdg)"
+      },
+      "tarandnoncdhj": {
+        "revision_date": "2026-07-16T16:59:27",
+        "title": "TAR and Non-Standard Benefits List: Codes H0000 thru J9999 (tar and non cdhj)"
+      },
+      "tarandnoncdkl": {
+        "revision_date": "2026-07-16T16:59:58",
+        "title": "TAR and Non-Standard Benefits List: Codes K0000 thru L9999 (tar and non cdkl)"
+      },
+      "tarandnoncdmp": {
+        "revision_date": "2026-01-16T18:01:29",
+        "title": "TAR and Non-Standard Benefits List: Codes M0000 thru P9999 (tar and non cdmp)"
+      },
+      "tarandnoncdq": {
+        "revision_date": "2026-07-16T17:00:17",
+        "title": "TAR and Non-Standard Benefits List: Codes Q0000 thru Q9999 (tar and non cdq)"
+      },
+      "tarandnoncdrs": {
+        "revision_date": "2026-01-16T18:02:29",
+        "title": "TAR and Non-Standard Benefits List: Codes R0000 thru S9999 (tar and non cdrs)"
+      },
+      "tarandnoncdtv": {
+        "revision_date": "2025-12-16T18:11:24",
+        "title": "TAR and Non-Standard Benefits List: Codes T0000 thru V9999 (tar and non cdtv)"
+      },
+      "tarcomp": {
+        "revision_date": "2025-12-16T18:13:00",
+        "title": "TAR Completion (tar comp)"
+      },
+      "tardefer": {
+        "revision_date": "2023-08-06T01:54:55",
+        "title": "TAR Deferral/Denial Policy (Frank v. Kizer) (tar defer)"
+      },
+      "tarfield": {
+        "revision_date": "2024-03-15T16:33:34",
+        "title": "TAR Field Office Addresses (tar field)"
+      },
+      "tarsubmis": {
+        "revision_date": "2023-08-06T01:59:31",
+        "title": "TAR Submission:  Transmittal Form (tar submis)"
+      },
+      "tarsubmit": {
+        "revision_date": "2024-09-16T16:30:13",
+        "title": "TAR:  Submitting Appeals (tar submit)"
+      },
+      "tuber": {
+        "revision_date": "2023-08-06T02:01:36",
+        "title": "Tuberculosis Program (tuber)"
+      },
+      "vaccine": {
+        "revision_date": "2026-07-16T17:01:47",
+        "title": "Vaccines For Children (VFC) Program (vaccine)"
+      }
+    },
+    "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=obstetrics"
   }
 }

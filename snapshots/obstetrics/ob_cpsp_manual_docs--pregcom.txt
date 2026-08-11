@@ -1,0 +1,336 @@
+[[page 1]]
+preg com
+1
+Part 2 – Pregnancy: Comprehensive Perinatal Services Program (CPSP)
+Pregnancy: Comprehensive Perinatal Services Program
+(CPSP)
+Page updated: March 2024
+The Comprehensive Perinatal Services Program (CPSP) is a benefit of the Medi-Cal
+program. The program offers a wide range of services to pregnant Medi-Cal recipients from
+the date of conception through 60 days after the month of delivery. CPSP services are not
+intended to be provided to inpatients. Recipient and provider participation is voluntary.
+CPSP services are in addition to, not a replacement for, the services that are part of the
+American College of Obstetricians and Gynecologists (ACOG) visit standards.
+Note: For assistance in completing claims for CPSP services, refer to the Pregnancy:
+Comprehensive Perinatal Services Program (CPSP) Billing Examples section in this
+manual.
+Provider Participation
+Eligible Providers
+Hospital outpatient departments, community clinics, county clinics, individual physicians,
+physician groups, licensed midwives, and Certified Nurse Midwives (CNMs) are eligible to
+provide these services.‹‹ Providers must be actively enrolled in Medi-Cal under an
+organizational National Provider Identifier (NPI) and complete an application with the
+California Department of Public Health (CDPH) to participate as a CPSP provider. Eligibility
+and training information, including a “CPSP Online Training” and “Provider Handbook,” is
+available to new CPSP providers and new staff of existing CPSP providers on the CDPH
+CPSP website: www.cdph.ca.gov/Programs/CFH/DMCAH/CPSP.››
+Applying to Become a CPSP Provider
+‹‹To apply for or receive information regarding the CPSP provider enrollment application
+process, providers should visit CDPH’s CPSP website at:
+www.cdph.ca.gov/Programs/CFH/DMCAH/CPSP or email CDPH at:
+CPSPProviderEnrollment@cdph.ca.gov.››
+[[page 2]]
+preg com
+2
+Part 2 – Pregnancy: Comprehensive Perinatal Services Program (CPSP)
+Page updated: March 2024
+List of CPSP Practitioners
+Certified or enrolled CPSP providers may employ or contract with any or all of the following
+practitioners for the purpose of providing CPSP services:
+• Physicians, including general practitioners, family practice physicians, pediatricians, or
+obstetrician-gynecologists
+• Certified Nurse Midwives (CNMs)
+• Registered Nurses (RNs)
+• Nurse Practitioners (NPs)
+• Licensed Vocational Nurses (LVNs)
+• Physician Assistants (PAs)
+• Health Educators
+• Childbirth Educators
+• Registered Dieticians
+• Comprehensive Perinatal Health Workers
+• Social Workers
+• Psychologists
+• Marriage, Family and Child Counselors
+• Licensed Midwives (LMs)
+[[page 3]]
+preg com
+3
+Part 2 – Pregnancy: Comprehensive Perinatal Services Program (CPSP)
+Page updated: March 2024
+Policies and Reimbursement
+Introduction
+The following policies apply when providing comprehensive perinatal services:
+• Services must be provided by or under the personal supervision of a physician, with
+the exception of a CNM or LM as follows:
+– ‹‹A CNM or LM who is a Medi-Cal provider is eligible to become an enrolled CPSP
+provider without physician supervision.›› For more information on the physician
+supervision and billing requirements for CNMs/LMs, refer to the Non-Physician
+Medical Practitioners (NMP) section in this manual.
+• California Code of Regulations, Title 22, Section 51179.5, defines personal supervision
+as “evaluation, in accordance with protocols, by a licensed physician, of services
+performed by others through direct communication, either in person or through
+electronic means.” Each provider’s protocols must define how personal supervision by
+a physician occurs and is documented.
+• Only the Medi-Cal enrolled CPSP provider may bill for services. Reimbursement is
+made directly to the CPSP provider.
+• Reimbursement for nutritional, psychosocial, and health education services will be
+made only on an itemized basis and must not be billed globally.
+• Nutritional, psychosocial and health education services in excess of the maximum
+units of service require a Treatment Authorization Request (TAR). Refer to the
+Pregnancy: Comprehensive Perinatal Services Program (CPSP) List of Billing Codes
+section of this manual for information about maximum units of service.
+Non-Reimbursable Services
+Tobacco Cessation
+Refer to the Pregnancy: Early Care and Diagnostic Services section of this manual for
+information about provider requirements regarding pregnant and postpartum recipients who
+use tobacco.
+[[page 4]]
+preg com
+4
+Part 2 – Pregnancy: Comprehensive Perinatal Services Program (CPSP)
+Page updated: March 2024
+Reimbursable Services
+Services Reimbursable to CPSP Providers Only
+Providers who choose not to apply to become CPSP providers may continue to provide
+obstetrical services under Medi-Cal’s existing program.‹‹ However, only CPSP providers
+may be reimbursed for the following:››
+• Nutritional, psychosocial and health education services
+• Vitamin and mineral supplements
+• Client orientation
+• Case coordination
+Note: ‹‹If a CPSP provider contracts with an OB provider who is also a CPSP provider, both
+providers should have a Provider Agreement in place that specifies which CPSP
+services each provider will bill.››
+CPSP and Obstetrical Out-of-Clinic Services
+‹‹Hospital-based outpatient departments/clinics and non-hospital-based clinics that are
+CPSP-enrolled providers may bill for CPSP and obstetrical services that are provided off-site
+or out-of-clinic.›› These outpatient departments and clinics may bill for CPSP and obstetrical
+services that are provided in off-site locations such as a physician’s office, a school
+auditorium or a mobile van operated by a clinic.
+Hospital based outpatient departments/clinics and non-hospital-based clinics may bill for off-
+site CPSP and obstetrical services by using the following HCPCS codes with Place of
+Service code “99” (other) for Medical Services providers and facility type code “14” for
+Outpatient providers:
+HCPCS Code Description
+Z6200 thru Z6500 Comprehensive perinatal services
+Z1032, Z1034, Z1038 Antepartum and postpartum visits
+[[page 5]]
+preg com
+5
+Part 2 – Pregnancy: Comprehensive Perinatal Services Program (CPSP)
+Page updated: August 2020
+Date of Entry Into Care
+Entry into care is the date of the initial pregnancy-related office visit or the first initial
+assessment, whichever is provided first. Certain CPSP services, as outlined in this section,
+must be rendered within a limited number of weeks after a recipient enters into care.
+Pregnancy-Related Services
+Refer to the Pregnancy: Early Care and Diagnostic Services section of this manual for
+additional information.
+Billing Combined Assessments
+HCPCS code Z6500 (combined assessments) may only be billed when a recipient receives
+all three initial nutritional, health education and psychosocial assessments and the initial
+pregnancy-related office visit (Z1032) within four weeks of entry into care. The date of the
+last assessment must be shown as the date of service, and the provider must certify in the
+Remarks field (Box 80)/Additional Claim Information field (Box 19) of the claim that all three
+initial assessments were provided and enter all dates of service, even if all assessments
+were rendered on the same date.
+HCPCS code Z6500 is reimbursable once in six months unless the provider certifies on the
+claim that the recipient has become pregnant again within the six-month period.
+Claims for HCPCS code Z6500 are not reimbursable if the individual assessment codes
+(Z6200, Z6300 and Z6402) have been billed by the same provider, for the same recipient,
+within the previous six months. Conversely, claims for the individual assessment codes are
+not payable if HCPCS code Z6500 has been billed by the same provider, for the same
+recipient, within the previous six months.
+See Figure 1 in the Pregnancy: Comprehensive Perinatal Services Program (CPSP) Billing
+Examples section of this manual for a claim example.
+Billing Individual Assessments
+If fewer than three initial assessments are performed, or the initial assessments are not
+performed within four weeks of entry into care, the provider must bill for the actual
+assessments performed using the individual assessment codes (Z6200, Z6300 and/or
+Z6402).
+[[page 6]]
+preg com
+6
+Part 2 – Pregnancy: Comprehensive Perinatal Services Program (CPSP)
+Page updated: January 2024
+Sequence of Services
+The three initial assessments (nutrition, health education and psychosocial) and the initial
+pregnancy-related office visit (HCPCS code Z1032) may be provided in any order and at any
+time during the patient’s care. For example, if a patient does not consent to receive an initial
+psychosocial assessment until seven weeks after entry into care, the individual assessment
+(code Z6300), and any subsequent interventions, may still be performed and billed.
+Intervention Services
+The provider must complete the initial assessment within the discipline area (nutrition, health
+education or psychosocial) before rendering any intervention services within that discipline.
+Subsequent interventions (HCPCS codes Z6204, Z6206, etc.) may be provided before
+completing the remaining initial assessments. For example, providers who complete the
+initial psychosocial assessment may perform psychosocial interventions prior to completing
+the remaining two initial assessments.
+Note: Client orientation (code Z6400) and/or group perinatal education (code Z6412) may
+be rendered before the initial health education assessment is completed.
+Breast-Feeding-Related Services
+Nutritional counseling services (HCPCS codes Z6200 thru Z6208), psychosocial support
+services (HCPCS codes Z6300 thru Z6308) and health education services (HCPCS codes
+Z6400 thru Z6414) related to breast-feeding are covered by CPSP. When billing these
+services to CPSP, the appropriate HCPCS code should be entered in the Procedures,
+Services, or Supplies field (Box 24D) of the CMS-1500 claim form or HCPCS/Rates field
+(Box 44) of the UB-04 claim form.
+Medical Services providers refer to Figure 2 in the Pregnancy: Comprehensive Perinatal
+Services Program (CPSP) Billing Examples – CMS-1500 section for a claim example.
+Outpatient providers refer to Figure 7 in the Pregnancy: Comprehensive Perinatal Services
+Program (CPSP) Billing Examples – UB-04 section.
+Pasteurized Donor Human Breast Milk
+HCPCS code T2101 (human breast milk processing, storage and distribution only), to be
+billed per 3 ounces per unit, 35 ounces per day, only good for 30 days; can be used for
+medically necessary pasteurized donor human milk (PDHM) when obtained from a licensed
+and approved facility. Coverage may be up to 12 months of age. For more information, refer
+to the Pregnancy: Postpartum and Newborn Referral Services section in this manual.
+‹‹HCPCS code A4287 (disposable collection and storage bag for breast milk, any size, any
+type, each).››
+[[page 7]]
+preg com
+7
+Part 2 – Pregnancy: Comprehensive Perinatal Services Program (CPSP)
+Page updated: October 2023
+Preventive In-Home Services
+CPSP services provided in a recipient’s home may be reimbursed if the services are
+“preventive.” HCFA regulation 42 CFR 440.130 (c) defines “preventive services” as “services
+provided by a physician or other licensed practitioner of the healing arts within the scope of
+his practice under state law to (1) prevent disease, disability, and other health conditions or
+their progression, (2) prolong life, and (3) promote physical and mental health and
+efficiency.”
+Eligible In-Home Services Providers
+‹‹Only physicians and other licensed personnel (such as CNMs, LMs, RNs, LVNs, nurse
+practitioners, PAs and licensed social workers) may provide in-home CPSP services.
+Services rendered by a Certified Nursing Assistant (CNA) are not reimbursable.››
+Providers should indicate in the Remarks area or Additional Claim Information field (Box 19)
+of the claim the license number and type of professional that provided the in-home
+preventive service.
+Hospital Reimbursement: Outpatient Providers
+Use of the hospital outpatient facility is not separately payable with HCPCS codes
+Z6200 thru Z6500. Therefore, the hospital outpatient room rate (Z7500) will be denied when
+billed with codes Z6200 thru Z6500.
+HCPCS codes Z1032, Z1034 and Z1038 are reimbursed as a common office procedures at
+80 percent of the allowed rate when the facility type is outpatient (“13”). HCPCS code Z7600
+is payable when billed with Z1032, Z1034 or Z1038. These codes must cover the facility
+cost.
+[[page 8]]
+preg com
+8
+Part 2 – Pregnancy: Comprehensive Perinatal Services Program (CPSP)
+Page updated: July 2025
+Incentives for Early and Frequent Prenatal Care
+Introduction
+Early and frequent prenatal care billed by CPSP providers may include a reimbursement
+bonus.
+Billing Initial Office Visit: Modifier ZL
+‹‹The reimbursement for Z1032 will be based on the greater of the following two values:
+• The base rate plus the ZL modifier, or
+• The Targeted Rate Increase (TRI) rate››
+Modifier ZL is exclusively used to bill with HCPCS code Z1032 (initial comprehensive
+antepartum office visit). Billing with this modifier adds $56.63 to the reimbursement and
+certifies that the visit occurred within 16 weeks of the patient’s last menstrual period [LMP]
+(up to and including pregnancies of 16 weeks and 0/7ths days gestation only). The date of
+the LMP is entered in Date of Current Illness, Injury or Pregnancy (LMP) field (Box 14) on
+the CMS-1500 claim form and in the Remarks field (Box 80) on the UB-04 claim form.
+Modifier ZL is reimbursable only once during a pregnancy. Claims billed in excess of this
+limit will be denied.
+Note: When billing modifier ZL, providers must add $56.63 to the total charges.
+Medical Services providers see Figure 3 in the Pregnancy: Comprehensive Perinatal
+Services Program (CPSP) Billing Examples – CMS-1500 section for a claim example.
+Outpatient providers see Figure 1 in the Pregnancy: Comprehensive Perinatal Services
+Program (CPSP) Billing Examples – UB-04 section for a claim example.
+Billing Initial Office Visit: Early Entry Rendered by NMP
+When billing for entry into care within 16 weeks of LMP and the service is rendered by a
+Non-Physician Medical Practitioner (NMP), use the appropriate multiple modifiers instead of
+modifier ZL. NMPs include Certified Nurse Midwives (CNMs), Licensed Midwives (LMs),
+Nurse Practitioners (NPs) and Physician Assistants (PAs). In the Remarks field (Box 80) or
+Additional Claim Information field (Box 19), include the NMP name, California license
+number and type of NMP (for example, CNM, LM, NP or PA).
+[[page 9]]
+preg com
+9
+Part 2 – Pregnancy: Comprehensive Perinatal Services Program (CPSP)
+Page updated: July 2025
+Type of NMP HCPCS
+Multiple
+Modifier
+Note in Remarks Field (Box 80) or Additional Claim
+Information Field (Box 19) when Billing with Modifier
+99
+CNM 99 Modifier 99 = SB + additional modifiers as appropriate
+LM 99 Modifier 99 = U9 + additional modifiers as appropriate
+NP 99 Modifier 99 = SA + additional modifiers as appropriate
+PA 99 Modifier 99 = U7 + additional modifiers as appropriate
+Modifier Tips
+The preceding multiple modifier must be used whenever billing for a service that requires a
+multiple NMP modifier, not just when billing for early entry into care. Modifiers are not
+required when billing for HCPCS codes Z6200 thru Z6500.
+Share of Cost
+Requirements
+Recipients who choose to participate in the CPSP program are required to pay or obligate
+their Share of Cost each month even if the obstetrical services are billed globally.
+Treatment Authorization Requests
+Additional CPSP Services
+Comprehensive perinatal services are covered subject to the requirements specified on the
+preceding pages. Providers may submit a Treatment Authorization Request (TAR) for
+nutrition, psychosocial, or health education services in excess of the basic allowances if the
+provider documents those additional services are medically necessary.
+TARs requesting additional services must be completely filled out and include the following
+information:
+• Amount of time/number of services being requested
+• Anticipated benefit or outcome of additional services
+• Clinical findings of the high risk factors involved in the pregnancy
+• Description of the services being requested
+• Expected Date of Confinement (EDC)
+• Explanation of why the basic CPSP services will not be sufficient
+[[page 10]]
+preg com
+10
+Part 2 – Pregnancy: Comprehensive Perinatal Services Program (CPSP)
+Page updated: July 2025
+Enter the entire 11-digit TAR Control Number on the claim when billing for additional TAR
+authorized services. A copy of the TAR is not required when billing. Do not combine TAR
+and non-TAR services on the same claim form.
+See Figures 5 and 6 in the Pregnancy: Comprehensive Perinatal Services Program (CPSP)
+Billing Examples section of this manual for a TAR and claim example.
+Billing Instructions
+Introduction
+Use the following instructions when billing for CPSP services:
+• Comprehensive perinatal service procedure codes must be billed as individual charges
+for each date of service. “From-through” billing format cannot be used.
+• When a rendering provider number is required (for example, physician group billing),
+the provider number of the comprehensive perinatal physician must be used as the
+rendering provider. Do not use group provider numbers for the rendering provider.
+• Medi-Cal may recoup payments if an audit shows that the patient records lack
+documentation to establish that services were provided as billed.
+• Patients who receive Medi-Cal benefits following the birth of a child also may receive
+CPSP interventions in any area or discipline when an initial assessment is performed
+prior to the intervention.
+Calculating Billing Units
+CPSP support services are billed in units. One unit equals 15 minutes. Fractions of units are
+calculated this way:
+• 00 thru 07 minutes equals 0 units, which is not payable
+• 08 thru 22 minutes equals 1 unit
+• 23 thru 37 minutes equals 2 units
+• 38 thru 51 minutes equals 3 units
+Exceptions: HCPCS code Z6500 (see information elsewhere in this section). HCPCS
+codes Z6200, Z6300 and Z6402 are billed in 30-minute units.
+[[page 11]]
+preg com
+11
+Part 2 – Pregnancy: Comprehensive Perinatal Services Program (CPSP)
+Page updated: March 2024
+Legend
+Symbols used in the document above are explained in the following table.
+Symbol Description
+‹‹ This is a change mark symbol. It is used to indicate where on the page the
+most recent change begins.
+›› This is a change mark symbol. It is used to indicate where on the page the
+most recent change ends.
+* The coordination fee is only reimbursable if all three initial assessments and
+the initial pregnancy-related office visit are provided within four weeks of entry
+into care.
+‡ Maximum allowable reimbursement without authorization if all support
+services are provided and billed. In high risk circumstances, additional
+support services may be requested through the TAR process.

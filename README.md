@@ -1,8 +1,8 @@
 # Revenue Integrity Source Watch
 
 Automated change monitoring for California Medi-Cal and Family PACT payer program. This includes monitoring of provider
-manuals, program news, fee schedules, All Plan Letters, FQHC/RHC material and
-the NCCI Medicaid edit files.
+manuals, program news, fee schedules, All Plan Letters, FQHC/RHC material,
+CPSP perinatal billing sections and the NCCI Medicaid edit files.
 
 A scheduled script re-reads every source in `watchlist.yaml`, extracts and
 hashes the text, and compares it against the stored baseline. On a change it
@@ -22,7 +22,7 @@ this repository holds the code, the reports and the full history)
 **MCSS is the primary channel.** The Medi-Cal Subscription Service is DHCS's
 own free email service and announces most of what is monitored here.
 Subscribe at https://camcss.powerappsportals.com/ and select the relevant
-subscriptions (Family PACT, General Medicine, RHC/FQHC).
+subscriptions (Family PACT, General Medicine, RHC/FQHC, Obstetrics).
 
 **This tool is supplemental.** It does not replace MCSS. It adds a record of
 exactly what changed: text-based detection for PDFs so a metadata-only
@@ -38,10 +38,18 @@ each section PDF and captures its full text plus the "Page updated" stamp
 printed on each page. It reports which sections and which pages moved.
 
 The same depth extends to any other DHCS manual community by adding one
-watchlist entry. Inpatient Services, Clinics and Hospitals and General
-Medicine currently run as date-only revision notices instead, because those
-communities hold 115 to 246 PDFs each; they are upgraded to full text
+watchlist entry. Inpatient Services, Clinics and Hospitals, Obstetrics and
+General Medicine currently run as date-only revision notices instead, because
+those communities hold 115 to 246 PDFs each; they are upgraded to full text
 monitoring when a program earns it.
+
+A community can also be covered both ways at once. Obstetrics runs a date-only
+notice across all 172 sections, and the three Comprehensive Perinatal Services
+Program (CPSP) sections inside it are additionally monitored in full text, so
+a CPSP change arrives with the changed lines and the codes they touch while
+the rest of the manual still reports which sections moved. The same
+filename-filter mechanism scopes the RHC/FQHC sections inside Clinics and
+Hospitals.
 
 Coverage is exactly what `watchlist.yaml` lists, and only while those URLs
 stay valid. Agencies move pages and retire URLs; a source that reports

@@ -1,0 +1,176 @@
+[[page 1]]
+preg com exc
+1
+Part 2 – Pregnancy: CPSP Billing Examples – CMS-1500
+Pregnancy: Comprehensive Perinatal Services Program
+(CPSP) Billing Examples – CMS-1500
+Page updated: August 2020
+Examples in this section are to help providers bill for Comprehensive Perinatal Services
+Program (CPSP)services on the CMS-1500 claim form. Refer to the Pregnancy:
+Comprehensive Perinatal Services Program (CPSP) section of this manual for detailed
+policy information. Refer to the CMS-1500 Completion section of this manual for instructions
+to complete claim fields not explained in the following examples. For additional claim
+preparation information, refer to the Forms: Legibility and Completion Standards section of
+this manual.
+Billing Tips
+When completing claims, do not enter the decimal points in ICD-10-CM codes or dollar
+amounts. If requested information does not fit neatly in the Additional Claim Information field
+(Box 19) of the claim, type it on an 8½ x 11-inch sheet of paper and attach it to the claim.
+[[page 2]]
+preg com exc
+2
+Part 2 – Pregnancy: CPSP Billing Examples – CMS-1500
+Page updated: July 2025
+Combined Assessments and Initial Office Visit Within Four Weeks
+Figure 1: Combined assessments and initial pregnancy-related office visit billed within four
+weeks.
+‹‹The reimbursement for Z1032 will be based on the greater of the following two values:
+• The base rate plus the ZL modifier, or
+• The Targeted Rate Increase (TRI) rate››
+HCPCS code Z1032 (initial antepartum office visit) with ZL modifier (indicating the office visit
+occurred within 16 weeks of the Last Menstrual Period) and code Z6500 (combined
+assessments) are entered in the Procedures, Services or Supplies field (Box 24D).HCPCS
+code 6500 is reimbursable only when a recipient receives all three initial nutritional, health
+education and psychosocial assessments and the initial pregnancy-related office visit within
+four weeks of entry into care.
+An appropriate ICD-10-CM diagnosis code is entered in the Diagnosis or Nature of Illness or
+Injury field (Box 21). Because this claim is submitted with a diagnosis code, an ICD indicator
+is required between the dotted lines in the ICD Ind. area of Box 21. An indicator is required
+only when an ICD-10-CM/PCS code is entered on the claim.
+In the Date(s) of Service field (Box 24A), the date of the office visit, October 1, 2015 is
+entered on claim line 1 as 100115. (This is the recipient’s entry-into-care date.) The date of
+service entered on claim line 2 for HCPCS code Z6500 is October 14, 2015 (101415), which
+is the date of the last assessment. Enter Place of Service code 11 (office) in Box 24B.
+Certification that all three assessments were rendered and the dates they were provided are
+entered in the Additional Claim Information field (Box 19). In this example, all three services
+were provided on the same date of service.
+Enter the usual and customary charges in the Charges field (Box 24F). Enter a 1 in the Days
+or Units field (Box 24G) for both codes Z1032 and Z6500.
+Figure 1: Combined Assessments and Initial Pregnancy-Related
+Office Visit Billed Within Four Weeks.
+[[page 3]]
+preg com exc
+3
+Part 2 – Pregnancy: CPSP Billing Examples – CMS-1500
+Page updated: August 2020
+Antepartum Nutrition, Psychosocial and Health Assessment Services
+Figure 2: Billing follow-up antepartum nutritional counseling, psychosocial support and
+health education services.
+Breast-Feeding
+Follow-up antepartum nutritional counseling, psychosocial and health education codes are
+reimbursable for a variety of pre-delivery counseling services, including breast-feeding.
+HCPCS code Z6204 (follow-up antepartum nutrition assessment), code Z6304 (follow-up
+antepartum psychosocial assessment) and Z6406 (follow-up antepartum health education
+assessment) are entered in the Procedures, Services or Supplies field (Box 24D). These
+services are reimbursed on an itemized basis only and must not be billed globally.
+An appropriate ICD-10-CM diagnosis code is entered in the Diagnosis or Nature of Illness or
+Injury field (Box 21). Because this claim is submitted with a diagnosis code, an ICD indicator
+is required between the dotted lines in the ICD Ind. area of Box 21. An indicator is required
+only when an ICD-10-CM/PCS code is entered on the claim.
+In the Date(s) of Service field (Box 24A), the date the nutrition assessment (Z6204) service
+was rendered, October 1, 2015, is entered on claim line 1 as 100115. The dates of service
+for codes Z6304 and Z6406 are respectively entered as 100115 and 110715.
+Enter Place of Service code 11 (office) for each claim line in Box 24B.
+Enter the usual and customary charges in the Charges field (Box 24F). Units for these codes
+are billed in 15-minute increments. (Refer to “Calculating Billing Units” in the Pregnancy:
+Comprehensive Perinatal Services Program (CPSP) section of this manual for instructions to
+bill services rendered for more or less than 15 minutes.) Entering a 2 in the Days or Units
+field (Box 24G) for both codes Z6204 and Z6304 indicates that the provider spent at least 23
+minutes each performing the psychosocial and nutrition assessments. Entering a 1 for code
+Z6406 indicates the provider spent at least 8 minutes performing the health education
+assessment.
+[[page 4]]
+preg com exc
+4
+Part 2 – Pregnancy: CPSP Billing Examples – CMS-1500
+Page updated: August 2020
+This is a sample only. Please adapt to your billing situation.
+Figure 1: Combined Assessments and Initial Pregnancy-Related Office Visit
+Billed Within Four Weeks.
+Antepartum Nutrition, Early and Frequent Prenatal Care
+Figure 2: Billing follow-up antepartum nutritional counseling.
+Figure 3: Early entry into care (modifier ZL).
+The Department of Health Care Services (DHCS) established modifier ZL exclusively for use
+by CPSP providers. Modifier ZL, billed with the initial antepartum office visit (Z1032), adds
+$56.63 to the maximum reimbursement for the initial office visit.
+Enter the date of the Last Menstrual Period in the Date of Current Illness, Injury or
+Pregnancy (LMP) field (Box 14).
+Enter HCPCS code Z1032 with modifier ZL (indicating the office visit occurred within 16
+weeks of the Last Menstrual Period) in the Procedures, Services or Supplies field (Box 24D).
+Enter an appropriate ICD-10-CM diagnosis code in the Diagnosis or Nature of Illness or
+Injury field (Box 21). Because this claim is submitted with a diagnosis code, an ICD indicator
+is required between the dotted lines in the ICD Ind. area of Box 21. An indicator is required
+only when an ICD-10-CM/PCS code is entered on the claim.
+In the Date(s) of Service field (Box 24A), enter the date of the office visit in a six-digit format.
+Enter Place of Service code “11” (office) in Box 24B.
+Enter the usual and customary charges in the Charges field (Box 24F). Enter a 1 in the Days
+or Units field (Box 24G) for code Z1032.
+[[page 5]]
+preg com exc
+5
+Part 2 – Pregnancy: CPSP Billing Examples – CMS-1500
+Page updated: August 2020
+Figure 3: Initial Comprehensive Pregnancy-Related Office Visit With ZL Modifier Certifying
+that the Patient was Seen Within 16 Weeks of Her Last Menstrual Period.
+[[page 6]]
+preg com exc
+6
+Part 2 – Pregnancy: CPSP Billing Examples – CMS-1500
+Page updated: August 2020
+TAR and Claim for Reimbursement of Excess Services
+Figures 5 and 6: TAR and claim information for reimbursement of excess services.
+Providers may submit a Treatment Authorization Request (TAR) for approval of nutrition,
+psychosocial and/or health education services in excess of the maximums listed in the
+Pregnancy: Comprehensive Perinatal Services Program (CPSP) List of Billing Codes section
+of this manual.
+The TAR and claim on the following pages illustrate how the TAR and claim were completed
+for Jane Doe, who required additional nutritional services due to diabetes.
+Refer to the TAR Completion section of this manual for instructions to complete the TAR.
+For the claim, enter HCPCS code Z6204 (follow-up antepartum nutrition assessment) in the
+Procedures, Services or Supplies field (Box 24D) on separate claim lines due to the different
+dates of service.
+In the Date(s) of Service field (Box 24A), the first date of service, November 1, 2015, is
+entered on the claim line 1 as 110115 and the second date of service, November 7, 2015, is
+entered on claim line 2 as 110715. Enter Place of Service code 11 (office) in Box 24B.
+Enter the date of the Last Menstrual Period in the Date of Current Illness, Injury or
+Pregnancy (LMP) field (Box 14).
+An appropriate ICD-10-CM diagnosis code is entered in the Diagnosis or Nature of Illness or
+Injury field (Box 21). Because this claim is submitted with a diagnosis code, an ICD indicator
+is required between the dotted lines in the ICD Ind. area of Box 21. An indicator is required
+only when an ICD-10-CM/PCS code is entered on the claim.
+In this case, 30 minutes of follow-up nutrition services were rendered on November 1, 2015,
+and 30 minutes were rendered on
+November 7, 2015. A unit equals 15 minutes so a 2 is entered in the Days or Units field (Box
+24G) for each claim line. (Refer to “Calculating Billing Units” in the Pregnancy:
+Comprehensive Perinatal Services Program (CPSP) List of Billing Codes section of this
+manual for instructions to bill services rendered for more or less than 15 minutes.)
+Code Z6204 is reimbursable at $8.41 for each unit so $16.82 (2 x $8.41) is entered in the
+Charges field (Box 24F). The charges for both services are added together ($33.64) and
+entered in the Total Charge field (Box 28).
+Note: The entire 11-digit TAR control number (in this case, 01234567890) is entered in the
+Prior Authorization Number field (Box 23).
+[[page 7]]
+preg com exc
+7
+Part 2 – Pregnancy: CPSP Billing Examples – CMS-1500
+Page updated: August 2020
+Figure 5: Correctly Filled Out TAR for Additional CPSP Services.
+Corresponds to the Claim on the Next Page.
+[[page 8]]
+preg com exc
+8
+Part 2 – Pregnancy: CPSP Billing Examples – CMS-1500
+Page updated: August 2020
+Figure 6: Complete CMS-1500 Claim Form. Corresponds to TAR on Preceding Page.
+[[page 9]]
+preg com exc
+9
+Part 2 – Pregnancy: CPSP Billing Examples – CMS-1500
+Page updated: August 2020
+‹‹Legend››
+‹‹Symbols used in the document above are explained in the following table.››
+Symbol Description
+‹‹ This is a change mark symbol. It is used to indicate where on the page the
+most recent change begins.
+›› This is a change mark symbol. It is used to indicate where on the page the
+most recent change ends.
