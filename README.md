@@ -10,12 +10,10 @@ writes a before/after diff, lists the billing codes the changed lines appear
 to touch, rebuilds the dashboard, and opens a GitHub Issue for the run. Every
 prior version stays in git.
 
-A flag is a prompt to look, not a finding. Verify against the live official
-source before acting on anything here or updating a downstream reference
-(superbill, tipsheet, Epic review).
+Verify against the live official source before use.
 
 Dashboard: https://mp321.github.io/RevInt-SourceWatch/ (rebuilt every run;
-this repository holds the code, the reports and the full history)
+this repository holds the code and the reports)
 
 ## Detection layers
 
@@ -32,10 +30,7 @@ this page" statuses where automated checking is blocked.
 
 ## Scope
 
-Family PACT has the most coverage. The script reads the DHCS provider
-portal's manual list, which carries a Revision Date per section, then fetches
-each section PDF and captures its full text plus the "Page updated" stamp
-printed on each page. It reports which sections and which pages moved.
+The script reads the DHCS provider portal's manual list, which carries a Revision Date per section, then fetches each section PDF and captures its full text plus the "Page updated" stamp printed on each page. It reports which sections and which pages moved. Family PACT program currently has the most coverage. 
 
 The same depth extends to any other DHCS manual community by adding one
 watchlist entry. Inpatient Services, Clinics and Hospitals, Obstetrics and
