@@ -1,10 +1,10 @@
 # Change review
 
-**TL;DR:** 2 source(s) changed, no billing codes detected in the changes.
+**TL;DR:** 2 source(s) need review, no billing codes detected in the changes.
 
-[Back to the dashboard](https://mp321.github.io/RevInt-SourceWatch/) - script last ran 2026-08-10T14:55:21+00:00.
+[Back to the dashboard](https://mp321.github.io/RevInt-SourceWatch/) - script last ran 2026-08-10.
 
-Each block below is one flagged source: what happened, which billing codes moved (heuristic - **verify each against the linked source before acting**), and a working link to the exact spot in the official document.
+Each block below is one flagged source: what happened, any billing codes the changed lines appear to touch (heuristic - **verify each against the linked source before acting**), and a working link to the exact spot in the official document.
 
 <div style="height:1.6em"></div>
 

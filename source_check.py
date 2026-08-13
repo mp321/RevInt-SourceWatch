@@ -1333,6 +1333,10 @@ def esc(s) -> str:
 
 QUIET = {"unchanged", "metadata_only_unchanged"}
 GAPS = {"UNREACHABLE", "CONFIG_TODO"}    # fixable monitoring gaps
+# Render-only status for a watchlist entry the last run did not cover, e.g.
+# one added between runs. Never written to a report, the change log or the
+# baseline: it says "watched, nothing reported yet", not "checked and clear".
+NOT_YET_CHECKED = "not_yet_checked"
 CADENCE_NOTE = ("Checked by the weekly script run (Mondays 14:00 UTC, "
                 "GitHub Actions).")
 
@@ -1371,7 +1375,7 @@ TYPE_HOW = {
     "html": "The page is downloaded (conditional GET), scripts and styles are "
             "stripped, and the visible text is hashed and compared with the "
             "copy stored at the previous check.",
-    "linkpage": "The page's visible text is hashed AND every file link "
+    "linkpage": "The page's visible text is hashed, and every file link "
                 "matching the entry's pattern is collected; a new or removed "
                 "link is flagged even when the page text is unchanged.",
     "binary": "The raw file bytes are hashed and compared; no text is "
@@ -1398,6 +1402,7 @@ BADGE_STYLE = {
     "notice": ("Revision notice", "#1e4a7a", "#e8f1fb"),
     "gap":    ("Can't verify", "#7a4a00", "#fff6e0"),
     "ok":     ("Clear",        "#0f5132", "#e6f4ea"),
+    "pending": ("Not yet checked", "#3f4c5a", "#eef1f5"),
     "unknown": ("Unknown",     "#374151", "#f1f3f5"),
 }
 
@@ -1414,8 +1419,8 @@ VERDICT_LEGEND: list[tuple[str, str, str, str]] = [
     ("CHANGED", "review",
      "The extracted text of this source differs from the last run.",
      "Open the diff to see the exact lines, re-read that part of the live "
-     "source, then verify the listed registry rows (superbill, tipsheet, Epic "
-     "review as applicable)."),
+     "source, then update whatever it feeds downstream (superbill, tipsheet, "
+     "Epic review as applicable)."),
     ("NEW", "review",
      "First run for this source; its current state became the baseline.",
      "Skim the source once to confirm it is the right document."),
@@ -1431,11 +1436,11 @@ VERDICT_LEGEND: list[tuple[str, str, str, str]] = [
      "new URL so the script keeps monitoring it."),
     ("NEW_ISSUE", "review",
      "A probed bulletin issue number returned real content.",
-     "Read the new bulletin and triage anything affecting the registry."),
+     "Read the new bulletin and triage anything that affects billing."),
     ("REMOVED", "review",
      "A document disappeared from the portal's list.",
-     "Check the portal: retired, renamed, or moved? Update the registry "
-     "reference if the section is gone."),
+     "Check the portal: retired, renamed, or moved? If the section is gone, "
+     "repoint anything that cites it."),
     ("URL_CHANGED_IN_CONFIG", "review",
      "The URL in watchlist.yaml differs from the URL the baseline was built "
      "from.",
@@ -1444,8 +1449,7 @@ VERDICT_LEGEND: list[tuple[str, str, str, str]] = [
     ("CHANGED_METADATA_ONLY", "review",
      "The portal says this section was revised (new revision date or file id) "
      "but the PDF itself could not be downloaded, so there is no text diff.",
-     "Open the section on the portal, re-read it, and verify the listed "
-     "registry rows."),
+     "Open the section on the portal and re-read it by hand."),
     ("LIST_TRUNCATED", "review",
      "The portal returned fewer documents than its own count claims.",
      "Open the portal list and compare; some sections may be silently "
@@ -1460,8 +1464,8 @@ VERDICT_LEGEND: list[tuple[str, str, str, str]] = [
     ("UNREACHABLE", "gap",
      "The fetch failed this run (HTTP error, network error, robots.txt, or an "
      "off-site redirect) - the Why line says which.",
-     "If it persists more than one run, open the URL in a browser; the page "
-     "may have moved. Then fix watchlist.yaml. Until then this source is "
+     "If it persists more than one run, open the URL in a browser - the page "
+     "may have moved - and repoint watchlist.yaml. Until then this source is "
      "unmonitored."),
     ("MANUAL_REVIEW", "gap",
      "This source cannot be fetched automatically, by design (reason in the "
@@ -1480,6 +1484,10 @@ VERDICT_LEGEND: list[tuple[str, str, str, str]] = [
     ("CONFIG_TODO", "gap",
      "The watchlist entry is incomplete, so nothing is monitored for it yet.",
      "Finish the entry in watchlist.yaml; the Why line says what is missing."),
+    (NOT_YET_CHECKED, "pending",
+     "The entry is in watchlist.yaml but the last run did not cover it, "
+     "normally because it was added after that run.",
+     "Nothing to do; the next scheduled run reports it."),
     ("unchanged", "ok",
      "No change detected.",
      "Nothing to do."),
@@ -1658,10 +1666,14 @@ def fine_print(r: dict, last_change: dict[str, tuple[str, str]]) -> list[str]:
     through but do not process markdown inside it, so no markdown in here)."""
     is_manual = r.get("http") == "manual"
     url = r.get("url", "")
+    # Nothing was fetched for a not-yet-checked row, so it must not claim a
+    # URL was checked.
+    label = ("URL watched" if r.get("verdict") == NOT_YET_CHECKED
+             else "URL checked")
     li: list[str] = []
     if url:
         dn = download_note(url)
-        li.append(f'<li><b>URL checked:</b> <a href="{esc(url)}">{esc(url)}</a>'
+        li.append(f'<li><b>{label}:</b> <a href="{esc(url)}">{esc(url)}</a>'
                   + (f" {esc(dn.strip())}" if dn else "")
                   + (" (template; {issue} is the probed issue number)"
                      if r.get("type") == "bulletin_probe" else "") + "</li>")
@@ -1671,7 +1683,7 @@ def fine_print(r: dict, last_change: dict[str, tuple[str, str]]) -> list[str]:
                       "</a> - the page this file is published on. The script "
                       "checks the file itself; a person should start here.</li>")
     else:
-        li.append("<li><b>URL checked:</b> none configured yet.</li>")
+        li.append(f"<li><b>{label}:</b> none configured yet.</li>")
     if is_manual:
         li.append("<li><b>How:</b> Not fetched automatically. The weekly "
                   "script run lists it every time as a standing "
@@ -1685,7 +1697,11 @@ def fine_print(r: dict, last_change: dict[str, tuple[str, str]]) -> list[str]:
     else:
         how = TYPE_HOW.get(r.get("type", "html"), TYPE_HOW["html"])
         li.append(f"<li><b>How:</b> {how} {CADENCE_NOTE}</li>")
-        li.append(f"<li><b>This run:</b> {esc(r.get('verdict', ''))}"
+        # "This run" would be wrong for a row the run never covered.
+        li.append("<li><b>"
+                  + ("Status" if r.get("verdict") == NOT_YET_CHECKED
+                     else "This run")
+                  + f":</b> {esc(r.get('verdict', ''))}"
                   + (f" - {esc(r['detail'])}" if r.get("detail") else "")
                   + "</li>")
     if r.get("shell") is True and not is_manual:
@@ -1695,23 +1711,26 @@ def fine_print(r: dict, last_change: dict[str, tuple[str, str]]) -> list[str]:
                   f'open the page yourself when in doubt: <a href="{esc(url)}">'
                   f"{esc(url)}</a></li>")
     checked = (r.get("checked_at") or "")[:10]
-    li.append(f"<li><b>Last checked:</b> "
-              f"{checked if checked else 'never fetched automatically'}</li>")
+    li.append("<li><b>Last checked:</b> " + (
+        checked if checked
+        else "not covered by the last run"
+        if r.get("verdict") == NOT_YET_CHECKED
+        else "never fetched automatically") + "</li>")
     lc = last_change.get(r.get("id", ""))
     li.append("<li><b>Last recorded change:</b> "
               + (f"{lc[0][:10]} ({esc(lc[1])})" if lc
                  else "none since the change log began") + "</li>")
     if r.get("note"):
         li.append(f"<li><b>Watchlist note:</b> {esc(r['note'])}</li>")
+    # Only rendered when the watchlist actually names a follow-up. The old
+    # "Registry rows to verify" wording pointed at a registry this repo does
+    # not contain, and its empty state was a line that said nothing.
     keys, scope = registry_of(r)
     if keys or scope:
-        li.append("<li><b>Registry rows to verify on change:</b> "
+        li.append("<li><b>Follow-up when this changes:</b> "
                   + " - ".join(x for x in
                                (f"<code>{esc(keys)}</code>" if keys else "",
                                 esc(scope) if scope else "") if x) + "</li>")
-    else:
-        li.append("<li><b>Registry rows to verify on change:</b> none mapped "
-                  "in the watchlist; triage by judgment.</li>")
     if r.get("diff_report"):
         rel = repo_rel(r["diff_report"])
         li.append(f'<li><b>Latest diff report:</b> <a href="{blob_url(rel)}">'
@@ -1739,12 +1758,11 @@ def needs_review_item(r: dict, repeats: int = 0) -> list[str]:
                    f"page it is published on.")
     out.append(f"  - **What to do:** {md_cell(action_for(r['verdict']))}")
     if repeats > 1:
+        # The section intro already explains why a repeat flag is usually a
+        # republish; this only needs to carry the count.
         out.append(f"  - **Seen before:** flagged {repeats} times in the last "
-                   f"{RECENT_DAYS} days. If the source reads the same as "
-                   f"last time, the page most likely re-published or "
-                   f"re-shuffled its own files rather than changing policy - "
-                   f"note that and move on, and if it keeps repeating, "
-                   f"tighten or retire the watchlist entry.")
+                   f"{RECENT_DAYS} days. If it keeps repeating with nothing "
+                   f"behind it, tighten or retire the watchlist entry.")
     if r.get("diff_report"):
         rel = repo_rel(r["diff_report"])
         out.append(f"  - **Exact change:** [{md_cell(rel)}]({blob_url(rel)})")
@@ -1777,7 +1795,7 @@ def needs_review_item(r: dict, repeats: int = 0) -> list[str]:
                    f"{md_cell(stamps_display(r['page_updated']))}")
     keys, scope = registry_of(r)
     if keys or scope:
-        out.append("  - **Registry rows to verify:** "
+        out.append("  - **Follow-up:** "
                    + " - ".join(x for x in
                                 (f"`{md_cell(keys)}`" if keys else "",
                                  md_cell(scope) if scope else "") if x))
@@ -1799,8 +1817,45 @@ def section(title: str, spacer: bool = True) -> list[str]:
         [f"## {title}", "", SECTION_RULE, ""]
 
 
+def pending_rows(watchlist: Path | None, results: list[dict]) -> list[dict]:
+    """Render-only rows for watchlist entries the report does not cover.
+
+    The dashboard is built from the last run, so an entry added since then
+    would otherwise be missing from a page that claims to list every watched
+    source. manual_list and revision_watch entries report through child rows
+    ('<parent>--<doc>'), so a parent counts as covered when any child is.
+    These rows never reach the baseline, the change log or an alert issue."""
+    if not watchlist or not Path(watchlist).exists():
+        return []
+    seen = {r["id"] for r in results}
+    covered = seen | {i.split("--", 1)[0] for i in seen}
+    rows = []
+    for e in load_watchlist(Path(watchlist), None):
+        if e["id"] in covered:
+            continue
+        keys, rnote = entry_registry(e)
+        rows.append({
+            "program": e["program"], "id": e["id"],
+            "type": e.get("type", "html"),
+            # portal_page first: the mcweb entries watch a GraphQL endpoint,
+            # which is no use to a reader, and a real revision_watch row
+            # renders the portal page here too.
+            "url": e.get("portal_page")
+                   or e.get("url", e.get("url_template", "")),
+            "human_url": e.get("human_url", ""),
+            "verdict": NOT_YET_CHECKED,
+            "detail": "This entry is in the watchlist, but the last run did "
+                      "not cover it.",
+            "checked_at": "", "page_updated": "",
+            "note": e.get("note", e.get("manual_note", "")),
+            "registry_keys": ";".join(keys), "registry_note": rnote,
+        })
+    return rows
+
+
 def write_dashboard(path: Path, report: dict,
-                    log_path: Path | None = None) -> None:
+                    log_path: Path | None = None,
+                    watchlist: Path | None = None) -> None:
     """Render the GitHub Pages status page from a run report.
 
     Output is deterministic for a given report + change log: programs and
@@ -1811,12 +1866,32 @@ def write_dashboard(path: Path, report: dict,
     """
     last_change = last_change_map(log_path)
     repeat_counts = change_count_map(log_path, recent_cutoff())
-    results = sorted(report["results"], key=lambda r: (r["program"], r["id"]))
+    results = sorted(report["results"]
+                     + pending_rows(watchlist, report["results"]),
+                     key=lambda r: (r["program"], r["id"]))
     flagged = [r for r in results if r["verdict"] in NEEDS_REVIEW
                and r["verdict"] != "REVISION_NOTICE"]
     notices = [r for r in results if r["verdict"] == "REVISION_NOTICE"]
     gaps = [r for r in results if r["verdict"] in GAPS]
     cutoff = recent_cutoff()
+    # One row per source (its latest event), not one row per event.
+    recent = sorted(((g, v, i, df) for i, (g, v, df) in last_change.items()
+                     if g[:10] >= cutoff), reverse=True)
+
+    # Only name sections that this build actually renders.
+    guide = ["- **Needs review** - start here; this is what needs looking at "
+             "now."]
+    if gaps:
+        guide.append("- **Could not be checked automatically** - monitoring "
+                     "gaps, not source changes.")
+    if notices:
+        guide.append("- **Manual revision notices** - lower priority, "
+                     "date-only.")
+    if recent:
+        guide.append(f"- **Sources changed in the last {RECENT_DAYS} days** - "
+                     "the recent trail.")
+    guide.append("- **All sources by program** - current status of every "
+                 "watched source.")
 
     lines = [
         "# Revenue Integrity Source Watch", "",
@@ -1833,12 +1908,9 @@ def write_dashboard(path: Path, report: dict,
         f"**items needing review: {len(flagged)}**"
         + (f" · revision notices: {len(notices)}" if notices else ""), "",
         "**How to read this page**", "",
-        "Start at \"Needs review\" - that is what a person needs to look at "
-        "now. After it come lower-priority revision notices, everything that "
-        "changed in the last 60 days, and then the current status of every "
-        "watched source under \"All sources by program\". Status words like "
-        "`CHANGED` are explained in the [status legend](#status-legend) at "
-        "the bottom.", "",
+        *guide, "",
+        "Status words like `CHANGED` are explained in the "
+        "[status legend](#status-legend) at the bottom.", "",
         f"More detail: [change review page]({pages_home_url()}changes.html) "
         "(one block per change) · "
         f"[change history (CSV)]({blob_url('reports/changes_log.csv')}) · "
@@ -1849,15 +1921,13 @@ def write_dashboard(path: Path, report: dict,
     lines += section(f"Needs review ({len(flagged)})", spacer=False)
     if flagged:
         lines.append("Every item links to the source and, when text changed, "
-                     "to the exact before/after diff. If you open a source "
-                     "and cannot find anything that actually changed, that "
-                     "is a normal outcome: agencies re-publish files, "
+                     "to the exact before/after diff. Finding nothing behind "
+                     "a flag is a normal outcome: agencies re-publish files, "
                      "re-shuffle links and move pages without changing "
                      "policy, and the script cannot tell that apart from a "
-                     "real edit. Note it and move on - and if the same item "
-                     "keeps coming back with nothing behind it, its "
-                     "watchlist entry should be tightened or removed rather "
-                     "than re-read every week.")
+                     "real edit. Note it and move on; if the same item keeps "
+                     "coming back with nothing behind it, tighten or retire "
+                     "its watchlist entry.")
         lines.append("")
         for r in flagged:
             lines += needs_review_item(r, repeats=repeat_counts.get(r["id"], 0))
@@ -1893,15 +1963,17 @@ def write_dashboard(path: Path, report: dict,
                          f"{md_cell(r.get('detail') or '')}")
         lines.append("")
 
-    recent = sorted(((g, v, i, df) for i, (g, v, df) in last_change.items()
-                     if g[:10] >= cutoff), reverse=True)
     if recent:
         url_by_id = {r["id"]: open_url(r) for r in results}
-        lines += section(f"Changed in the last {RECENT_DAYS} days "
+        lines += section(f"Sources changed in the last {RECENT_DAYS} days "
                          f"({len(recent)})")
-        lines += ["The recent trail, newest first - use it to confirm what "
-                  "has been communicated downstream. Always verify against "
-                  "the live source before acting.", ""]
+        # "event", not "change": a NEW row means the source entered the log,
+        # not that it moved.
+        lines += ["The most recent change-log event per source, newest first. "
+                  "Use it to confirm what has been communicated downstream; "
+                  "every individual event is in the [change history (CSV)]"
+                  f"({blob_url('reports/changes_log.csv')}). Always verify "
+                  "against the live source before acting.", ""]
         for g, v, i, df in recent[:30]:
             link = (f"[{i}]({url_by_id[i]})" if url_by_id.get(i)
                     else f"`{i}`")
@@ -1926,13 +1998,22 @@ def write_dashboard(path: Path, report: dict,
     lines += section("All sources by program")
     lines += ["Every watched source and its current status, including the "
               "items flagged above. Jump to a program:", ""]
+    flagged_ids = {r["id"] for r in flagged}
     for prog in progs:
         rs = [r for r in results if r["program"] == prog]
         name = PROGRAM_NAMES.get(prog, prog)
-        n_flag = sum(1 for r in rs if r["verdict"] in NEEDS_REVIEW)
+        # Counted off the same lists the sections above render, so a program
+        # never claims a review item that "Needs review" does not show.
+        n_flag = sum(1 for r in rs if r["id"] in flagged_ids)
+        n_note = sum(1 for r in rs if r["verdict"] == "REVISION_NOTICE")
+        tail = ([f"{n_flag} need{'s' if n_flag == 1 else ''} review"]
+                if n_flag else [])
+        if n_note:
+            tail.append(f"{n_note} revision notice"
+                        f"{'' if n_note == 1 else 's'}")
         lines.append(f"- [{name}](#{anchor(name, prog)}) - {len(rs)} source"
                      f"{'s' if len(rs) != 1 else ''}"
-                     + (f", {n_flag} needs review" if n_flag else ""))
+                     + ("".join(", " + t for t in tail)))
     lines += ["",
               "Each source: status first, then its links, then a Details "
               "fold-out with exactly what is checked and the caveats.", ""]
@@ -1960,6 +2041,8 @@ def write_dashboard(path: Path, report: dict,
                 bits.append(f"revision {esc(stamps_display(r['page_updated']))}")
             checked = (r.get("checked_at") or "")[:10]
             bits.append(f"checked {checked}" if checked
+                        else "not in the last run"
+                        if r["verdict"] == NOT_YET_CHECKED
                         else "not fetched automatically")
             if r.get("diff_report"):
                 rel = repo_rel(r["diff_report"])
@@ -1974,18 +2057,17 @@ def write_dashboard(path: Path, report: dict,
             lines.append("")
 
     lines += ["### Source URLs at a glance", "",
-              "One row per watched URL, **colored by website** so sources "
-              "from the same site are easy to spot together.", "",
+              "One row per watched URL, grouped and **colored by website**.",
+              "",
               '<ul style="list-style:none;padding-left:0;font-size:.85em;'
               'line-height:1.7">']
-    for prog in progs:
-        for r in (r for r in results if r["program"] == prog):
-            if r.get("url"):
-                c = host_color(r["url"])
-                lines.append(
-                    f'<li style="color:{c};font-weight:600">{esc(r["id"])} - '
-                    f'<a href="{esc(r["url"])}" style="color:{c}">'
-                    f'{esc(r["url"])}</a></li>')
+    for r in sorted((r for r in results if r.get("url")),
+                    key=lambda r: (urlparse(r["url"]).hostname or "", r["id"])):
+        c = host_color(r["url"])
+        lines.append(
+            f'<li style="color:{c};font-weight:600">{esc(r["id"])} - '
+            f'<a href="{esc(r["url"])}" style="color:{c}">'
+            f'{esc(r["url"])}</a></li>')
     lines += ["</ul>", ""]
 
     lines += section("Status legend")
@@ -2035,18 +2117,18 @@ def write_changes_page(path: Path, report: dict,
     if not flagged:
         tldr = "nothing changed at the last check."
     else:
-        tldr = (f"{len(flagged)} source(s) changed, "
+        tldr = (f"{len(flagged)} source(s) need review, "
                 + (f"{n_codes} billing code(s) touched." if n_codes
                    else "no billing codes detected in the changes."))
     lines = [
         "# Change review", "",
         f"**TL;DR:** {tldr}", "",
         f"[Back to the dashboard]({pages_home_url()}) - script last ran "
-        f"{report['generated']}.", "",
-        "Each block below is one flagged source: what happened, which billing "
-        "codes moved (heuristic - **verify each against the linked source "
-        "before acting**), and a working link to the exact spot in the "
-        "official document.", "",
+        f"{report['generated'][:10]}.", "",
+        "Each block below is one flagged source: what happened, any billing "
+        "codes the changed lines appear to touch (heuristic - **verify each "
+        "against the linked source before acting**), and a working link to "
+        "the exact spot in the official document.", "",
     ]
     if not flagged:
         lines += [f"{badge('ok')} Nothing to review from the last check.", ""]
@@ -2091,7 +2173,7 @@ def write_changes_page(path: Path, report: dict,
             lines.append("")
         keys, scope = registry_of(r)
         if keys or scope:
-            lines.append("**Registry rows to verify:** "
+            lines.append("**Follow-up:** "
                          + " - ".join(x for x in
                                       (f"`{md_cell(keys)}`" if keys else "",
                                        md_cell(scope) if scope else "") if x))
@@ -2224,9 +2306,9 @@ def write_run_summary(root: Path, report: dict) -> None:
                 lines.append(f"  diff: {blob_url(repo_rel(r['diff_report']))}")
             keys, scope = registry_of(r)
             if keys:
-                lines.append(f"  Registry rows: {keys}")
+                lines.append(f"  follow-up: {keys}")
             if scope:
-                lines.append(f"  Registry scope: {scope}")
+                lines.append(f"  follow-up: {scope}")
             codes = r.get("codes_touched") or []
             if codes:
                 url = r.get("url", "")
@@ -2242,7 +2324,7 @@ def write_run_summary(root: Path, report: dict) -> None:
                         _code_ref(e, url, is_pdf) for e in removed))
             lines.append("")
         lines.append("Decision support only - verify against the live official "
-                     "source before updating the registry.")
+                     "source before acting on anything here.")
         (root / "run_summary.md").write_text("\n".join(lines), encoding="utf-8")
     except OSError:
         pass
@@ -2357,7 +2439,8 @@ def run(watchlist: Path, out_dir: Path, only, update: bool,
     if review:
         write_run_summary(root, report)
     if dashboard:
-        write_dashboard(dashboard, report, log_path=out_dir / "changes_log.csv")
+        write_dashboard(dashboard, report, log_path=out_dir / "changes_log.csv",
+                        watchlist=watchlist)
         write_changes_page(dashboard.parent / "changes.md", report,
                            log_path=out_dir / "changes_log.csv")
 
@@ -2456,7 +2539,8 @@ def main() -> int:
             return 1
         report = json.loads(report_path.read_text(encoding="utf-8"))
         dash = args.dashboard or Path("docs/index.md")
-        write_dashboard(dash, report, log_path=args.out / "changes_log.csv")
+        write_dashboard(dash, report, log_path=args.out / "changes_log.csv",
+                        watchlist=args.watchlist)
         write_changes_page(dash.parent / "changes.md", report,
                            log_path=args.out / "changes_log.csv")
         write_sources_csv(args.watchlist, args.out)

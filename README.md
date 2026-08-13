@@ -1,8 +1,9 @@
 # Revenue Integrity Source Watch
 
-Automated change monitoring for California Medi-Cal and Family PACT payer program. This includes monitoring of provider
-manuals, program news, fee schedules, All Plan Letters, FQHC/RHC material,
-CPSP perinatal billing sections and the NCCI Medicaid edit files.
+Automated change monitoring for the California Medi-Cal and Family PACT payer
+programs: provider manuals, program news, fee schedules, All Plan Letters,
+RHC/FQHC material, CPSP perinatal billing sections and the NCCI Medicaid edit
+files.
 
 A scheduled script re-reads every source in `watchlist.yaml`, extracts and
 hashes the text, and compares it against the stored baseline. On a change it
@@ -24,13 +25,18 @@ subscriptions (Family PACT, General Medicine, RHC/FQHC, Obstetrics).
 
 **This tool is supplemental.** It does not replace MCSS. It adds a record of
 exactly what changed: text-based detection for PDFs so a metadata-only
-republish raises no false alarm, per-section monitoring of the Family PACT
-manual, a stored snapshot of every prior version, and explicit "cannot see
-this page" statuses where automated checking is blocked.
+republish raises no false alarm, per-section monitoring of the Family PACT,
+RHC/FQHC and CPSP manual sections, a stored snapshot of every prior version,
+and explicit "cannot see this page" statuses where automated checking is
+blocked.
 
 ## Scope
 
-The script reads the DHCS provider portal's manual list, which carries a Revision Date per section, then fetches each section PDF and captures its full text plus the "Page updated" stamp printed on each page. It reports which sections and which pages moved. Family PACT program currently has the most coverage. 
+The script reads the DHCS provider portal's manual list, which carries a
+Revision Date per section, then fetches each section PDF and captures its full
+text plus the "Page updated" stamp printed on each page. It reports which
+sections and which pages moved. Family PACT has the deepest coverage: all 24
+of its manual sections are watched individually.
 
 The same depth extends to any other DHCS manual community by adding one
 watchlist entry. Inpatient Services, Clinics and Hospitals, Obstetrics and
@@ -159,8 +165,13 @@ Edit `watchlist.yaml`. Toggle a program with `enabled:`. Entry types:
 `human_url` points a reader at the landing page when the watched URL is a
 direct download. `manual: true` marks a source that cannot be fetched at all;
 it reports MANUAL_REVIEW every run, so use it only when the standing reminder
-is worth the noise. `registry_keys` and `registry_note` name the rows to
-re-verify when the source changes.
+is worth the noise. `registry_note` is free text naming the downstream
+follow-up when a source changes; it renders on the pages as "Follow-up" and is
+omitted where an entry does not set it. `registry_keys` is an optional id list
+for the same purpose, unused so far.
+
+A new entry appears on the dashboard as `not_yet_checked` until the next run
+reports on it, so the page always lists the whole watchlist.
 
 Before adding an entry, ask what it can report that someone would act on. An
 entry that returns the same status every week trains people to ignore the
@@ -179,6 +190,10 @@ Not fully visible: MANUAL_REVIEW, BLIND_SHELL, PROBE_INCONCLUSIVE,
 CONFIG_TODO, UNREACHABLE.
 
 Quiet: unchanged, metadata_only_unchanged.
+
+Render-only: not_yet_checked, for a watchlist entry the last run did not cover
+(usually added since). It never reaches the baseline, the change log or an
+alert issue.
 
 The dashboard explains each status under "Status legend".
 

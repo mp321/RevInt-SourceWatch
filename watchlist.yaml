@@ -11,8 +11,11 @@
 #                       worth the noise.
 #   human_url           landing page a reader should open when `url` is a
 #                       direct file download. The checker still fetches `url`.
-#   registry_keys /     registry rows to re-verify when this source changes
-#   registry_note       (v1.5 rename of master_*; the code reads both).
+#   registry_note       free text: the downstream follow-up when this source
+#                       changes. Renders on the pages as "Follow-up"; omitted
+#                       entirely where an entry does not set it.
+#   registry_keys       optional id list for the same purpose, unused so far.
+#                       (v1.5 rename of master_*; the code reads both.)
 #
 # ADMISSION RULE: an entry earns its place only if it can report something a
 # person would act on. An entry returning the identical status every run
