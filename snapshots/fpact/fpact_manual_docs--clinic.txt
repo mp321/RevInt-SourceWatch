@@ -825,7 +825,7 @@ each
 clinic
 19
 Family PACT – Clinic Formulary
-Page updated: October 2022
+Page updated: August 2026
 Family PACT Reimbursable Drugs Table: Norgestimate and Ethinyl Estradiol
 (continued)
 Drug/Dosage Form Size and/or Strength Billing Unit
@@ -866,24 +866,22 @@ Family PACT Reimbursable Drugs Table: Norgestrel and Ethinyl Estradiol
 Drug/Dosage Form Size and/or Strength Billing Unit
 Norgestrel and Ethinyl Estradiol‡
 (Tablets [21 or 28 tablets per packet])
-‹‹0.3 milligrams/
-30 micrograms››
+0.3 milligrams/
+30 micrograms
 each
 Norgestrel and Ethinyl Estradiol‡
 (Tablets [21 or 28 tablets per packet])
-‹‹0.5 milligrams/
-50 micrograms››
+0.5 milligrams/
+50 micrograms
 each
 Family PACT Reimbursable Drugs Table: Penicillin Benzathine
 Drug/Dosage Form Size and/or Strength Billing Unit
 Penicillin G Benzathine
 (Injection)
-Injection 1,200,000 units/
-2 milliliters
-each
+‹‹Injection 1,200,000 units›› each
 Penicillin G Benzathine
 (Injection)
-2,400,000 units/4 milliliters each
+‹‹2,400,000 units ›› each
 Penicillin G Benzathine Restrictions
 • For use in the treatment of syphilis
 [[page 20]]

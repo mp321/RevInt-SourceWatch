@@ -1,7 +1,7 @@
 {
   "ffs_sb94_fp_fee_schedule": {
     "byte_sha": "80e17ecbc8dc0126eb63bf5692ea53624bca8f793f35eba72f43cfaecf350cdf",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "\"7a7df96a5a77c614\"",
     "last_modified": "Fri, 10 Oct 2025 04:12:50 GMT",
     "links": [],
@@ -12,7 +12,7 @@
   },
   "ffs_tri_fee_schedule": {
     "byte_sha": "76fe5631e58421c1d78126a79466fca3fbe293e25d5cdc9970c1e96d761682ad",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "\"cdb6626985551ba6\"",
     "last_modified": "Fri, 10 Oct 2025 04:21:44 GMT",
     "links": [],
@@ -22,7 +22,7 @@
     "url": "https://www.dhcs.ca.gov/wp-content/uploads/2025/10/CY-2024-TRI-Fee-Schedule-Feb.xlsx"
   },
   "fpact_manual_docs": {
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "docs": [
       "00letter",
       "0bhwtouse",
@@ -53,7 +53,7 @@
   },
   "fpact_manual_docs--00letter": {
     "byte_sha": "7a500fd54e87a18395090bac044ae8c11d39ab9715728483209de466d143939e",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "B84C9830-1762-442B-BB11-268B9BB1008B",
     "last_modified": "Fri, 23 May 2025 00:02:23 GMT",
@@ -67,7 +67,7 @@
   },
   "fpact_manual_docs--0bhwtouse": {
     "byte_sha": "61b47f4ccbcaa8688d7ea78f10360a5688f49df586eb5ea6167cd8d0a94f000f",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "D5B367D8-ED60-4A57-A0F1-71B9626E038A",
     "last_modified": "Mon, 16 Jun 2025 16:12:25 GMT",
@@ -81,7 +81,7 @@
   },
   "fpact_manual_docs--1tocfpact": {
     "byte_sha": "68bb9bb5834517377816e3ef5343d2e9b87c00df921ba8d453b2a3d86f2b0f6b",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "5416438C-154C-4523-B1C8-8C3888870C71",
     "last_modified": "Fri, 23 May 2025 00:02:48 GMT",
@@ -95,7 +95,7 @@
   },
   "fpact_manual_docs--benclinic": {
     "byte_sha": "10e00d6a912c657140ad7245a5c491dbcd8e4d28795fe23f417805a80d881586",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "88BE8827-BF04-44FF-86AF-FF16018A7E43",
     "last_modified": "Fri, 21 Nov 2025 18:51:48 GMT",
@@ -109,7 +109,7 @@
   },
   "fpact_manual_docs--benfam": {
     "byte_sha": "c9026234cdd20a3c550cd31e42c8dde0637d73f8c4cfb13cad2c54b5f40b114c",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "BCA0E984-8DF3-4AD4-9499-7DFCA25DCAED",
     "last_modified": "Fri, 15 May 2026 16:52:05 GMT",
@@ -122,36 +122,36 @@
     "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/BCA0E984-8DF3-4AD4-9499-7DFCA25DCAED"
   },
   "fpact_manual_docs--benfamrel": {
-    "byte_sha": "5067f37109c93f392199914993880fdddd0dc2412120074dc90ae350e2f810e5",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "byte_sha": "4835487d798f9793c2d4219981d721a0521c3912c054ae5a06097870aec0f91e",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "B32916F9-83E4-4C1A-B089-BF8E6C601FA8",
-    "last_modified": "Fri, 15 May 2026 16:52:25 GMT",
+    "last_modified": "Fri, 14 Aug 2026 16:22:28 GMT",
     "links": [],
-    "page_updated": "p1: May 2024|p2: May 2024|p3: August 2020|p4: January 2026|p5: January 2026|p6: January 2026|p7: May 2023|p8: May 2023|p9: December 2025|p10: December 2025|p11: May 2023|p12: December 2025|p13: December 2025|p14: December 2025|p15: May 2023|p16: April 2025|p17: December 2025|p18: May 2023|p19: May 2023|p20: May 2023|p21: May 2026|p22: May 2026|p23: May 2023|p24: May 2023|p25: May 2026|p26: May 2026|p27: May 2023|p28: May 2023|p29: May 2023|p30: May 2023|p31: May 2023|p33: May 2023|p34: May 2023|p35: January 2026",
-    "revision_date": "2026-05-15T16:52:25",
+    "page_updated": "p1: May 2024|p2: May 2024|p3: August 2020|p4: August 2026|p5: August 2026|p6: August 2026|p7: August 2026|p8: August 2026|p9: August 2026|p10: August 2026|p11: August 2026|p12: August 2026|p13: August 2026|p14: August 2026|p15: August 2026|p16: August 2026|p17: August 2026|p18: August 2026|p19: August 2026|p20: August 2026|p21: August 2026|p22: August 2026|p23: August 2026|p24: August 2026|p25: August 2026|p26: August 2026|p27: August 2026|p28: August 2026|p29: August 2026|p30: August 2026|p31: August 2026|p32: August 2026|p33: August 2026|p34: August 2026|p35: August 2026|p36: August 2026",
+    "revision_date": "2026-08-14T16:22:28",
     "shell": false,
-    "text_sha": "27c7ae48fb40c0b1606f3bf681f21d329e20db2a3e2806daac726100c8e4c4f6",
+    "text_sha": "d872825a73c527b4e945039457bda5ab5e927d68e7b20b5daf3bf71101b65330",
     "title": "Benefits: Family Planning-Related Services (ben fam rel)",
     "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B32916F9-83E4-4C1A-B089-BF8E6C601FA8"
   },
   "fpact_manual_docs--bengrid": {
-    "byte_sha": "ca7997e2742439828f5cf8dab559bbf8ef88fdba9101a63381fbc9c027c78e60",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "byte_sha": "b492425b62be0a1bbd12319f0c0a9363531aabd8c931bdd880ecb397bb515577",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "59A4DC78-0B85-42B8-90A1-29DF9A757683",
-    "last_modified": "Mon, 18 May 2026 17:42:58 GMT",
+    "last_modified": "Fri, 14 Aug 2026 16:22:54 GMT",
     "links": [],
-    "page_updated": "p1: August 2020|p2: October 2021|p3: October 2021|p4: October 2021|p5: September 2025|p6: October 2021|p7: March 2026|p8: October 2021|p9: October 2021|p10: October 2021|p11: October 2021|p12: August 2022|p13: August 2022|p14: August 2022|p15: October 2021|p16: October 2021|p17: October 2021|p18: July 2022|p19: July 2022|p20: May 2023|p21: January 2026|p22: May 2023|p23: May 2023|p24: May 2023|p25: May 2023|p26: October 2023|p27: October 2023|p28: October 2023|p29: October 2023|p30: October 2023|p31: May 2026|p32: May 2026|p33: October 2023|p34: October 2023|p35: January 2026|p36: January 2026|p37: January 2026|p38: January 2026|p39: May 2026|p40: May 2026|p41: May 2026|p42: May 2026|p43: May 2026|p44: May 2026|p45: May 2026|p46: May 2026|p47: May 2026|p48: October 2023|p49: October 2023|p50: October 2023|p51: October 2023|p52: August 2024|p53: March 2026|p54: March 2026|p55: October 2023|p56: October 2023|p57: January 2026|p58: October 2023|p59: May 2026|p60: October 2023|p61: October 2023",
-    "revision_date": "2026-05-18T17:42:58",
+    "page_updated": "p1: August 2020|p2: October 2021|p3: October 2021|p4: October 2021|p5: September 2025|p6: October 2021|p7: March 2026|p8: October 2021|p9: October 2021|p10: October 2021|p11: October 2021|p12: August 2022|p13: August 2022|p14: August 2022|p15: October 2021|p16: October 2021|p17: October 2021|p18: August 2026|p19: July 2022|p20: May 2023|p21: January 2026|p22: August 2026|p23: August 2026|p24: August 2026|p25: August 2026|p26: October 2023|p27: October 2023|p28: August 2026|p29: August 2026|p30: August 2026|p31: May 2026|p32: May 2026|p33: October 2023|p34: October 2023|p35: January 2026|p36: January 2026|p37: January 2026|p38: January 2026|p39: May 2026|p40: May 2026|p41: May 2026|p42: May 2026|p43: May 2026|p44: May 2026|p45: August 2026|p46: May 2026|p47: May 2026|p48: October 2023|p49: October 2023|p50: October 2023|p51: October 2023|p52: August 2024|p53: March 2026|p54: March 2026|p55: October 2023|p56: October 2023|p57: January 2026|p58: October 2023|p59: May 2026|p60: October 2023|p61: October 2023",
+    "revision_date": "2026-08-14T16:22:54",
     "shell": false,
-    "text_sha": "324f09f989004de8639f4b8f3b0e2210fb76170396298cd8b8f3ba120b54f004",
+    "text_sha": "62410c78edeca7325b15074dfbf4ba98f40cb1fc24cd4ed211c30f55b850e394",
     "title": "Benefits Grid (ben grid)",
     "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/59A4DC78-0B85-42B8-90A1-29DF9A757683"
   },
   "fpact_manual_docs--claimcms": {
     "byte_sha": "8030c8cd281cba8125d04f8b0f2de2e6d43c33dcb4d63ea1be0cd0b5a382410b",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "EBC8AE98-3518-404D-92E3-2FB7CFEB234D",
     "last_modified": "Thu, 16 Oct 2025 16:11:54 GMT",
@@ -165,7 +165,7 @@
   },
   "fpact_manual_docs--claimub": {
     "byte_sha": "c4d62c48bdb439b668be578d3b7eb910d0f7870e2e2782e78c65df79db211b2a",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "99A15B51-5AE1-45B4-BEB3-300F9FA3974F",
     "last_modified": "Thu, 16 Oct 2025 16:12:21 GMT",
@@ -179,7 +179,7 @@
   },
   "fpact_manual_docs--clientelig": {
     "byte_sha": "80d709ac7192567524a32122d4e5881caadd6e75ab0034cb64c1ee896c15f80e",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "907504BF-B611-4569-AA2F-AD19852DC99A",
     "last_modified": "Thu, 16 Apr 2026 16:43:52 GMT",
@@ -192,22 +192,22 @@
     "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/907504BF-B611-4569-AA2F-AD19852DC99A"
   },
   "fpact_manual_docs--clinic": {
-    "byte_sha": "109b9015c71d2ccf45f0aa5cf5e3723621a55379cb4a4ba9df30343d34e36400",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "byte_sha": "73ad63c457b910353ada82c533fca25103e994eff1b9888982d69fcf4addcb55",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "235F5DF8-9BF2-4851-839C-9C857C757B10",
-    "last_modified": "Fri, 15 May 2026 16:53:48 GMT",
+    "last_modified": "Fri, 14 Aug 2026 16:23:28 GMT",
     "links": [],
-    "page_updated": "p1: June 2022|p2: January 2022|p3: July 2022|p4: November 2022|p5: May 2026|p6: September 2020|p7: June 2022|p8: August 2024|p9: August 2024|p10: October 2022|p11: October 2022|p12: September 2025|p13: May 2026|p14: April 2024|p15: August 2024|p16: October 2022|p17: June 2022|p18: October 2022|p19: October 2022|p20: June 2022|p21: July 2022|p22: August 2022|p23: November 2022|p24: September 2020",
-    "revision_date": "2026-05-15T16:53:48",
+    "page_updated": "p1: June 2022|p2: January 2022|p3: July 2022|p4: November 2022|p5: May 2026|p6: September 2020|p7: June 2022|p8: August 2024|p9: August 2024|p10: October 2022|p11: October 2022|p12: September 2025|p13: May 2026|p14: April 2024|p15: August 2024|p16: October 2022|p17: June 2022|p18: October 2022|p19: August 2026|p20: June 2022|p21: July 2022|p22: August 2022|p23: November 2022|p24: September 2020",
+    "revision_date": "2026-08-14T16:23:28",
     "shell": false,
-    "text_sha": "b22f488a96bcb407da0fb1f0d67ffa2be860036eeec44303035eef85a5ca63fc",
+    "text_sha": "22139b21c235f9b232ae95b0c0dc37f193b5663e75d15ddd92cc44bda4274731",
     "title": "Clinic Formulary (clinic)",
     "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/235F5DF8-9BF2-4851-839C-9C857C757B10"
   },
   "fpact_manual_docs--drug": {
     "byte_sha": "3bd030937441f773ad6ab22a6b2147bd8771711c749a825e74cefaa7f43d4535",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "7C45AD4C-2A15-41B5-98E1-93F2C94370D5",
     "last_modified": "Mon, 16 Mar 2026 16:27:32 GMT",
@@ -221,7 +221,7 @@
   },
   "fpact_manual_docs--drugonsite": {
     "byte_sha": "91a232597bd0d565bbcaefcd4960ea22c3c9de9b96b7038a877e2229b4bfb5ac",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "796C137C-F4E2-44CF-BE51-CCC0D94D7EAC",
     "last_modified": "Tue, 16 Jun 2026 15:30:42 GMT",
@@ -235,7 +235,7 @@
   },
   "fpact_manual_docs--fam": {
     "byte_sha": "61b330d5eec9b4313f092f0f6bb049d13b5d0ce25296f16e98c1d1d9ee2212b9",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "A3EA3460-4D92-45A3-9F1C-BF9B8A2DC528",
     "last_modified": "Thu, 16 Jan 2025 17:32:57 GMT",
@@ -249,7 +249,7 @@
   },
   "fpact_manual_docs--hapid": {
     "byte_sha": "2a989afff1c113e9a7f513d5e84b4d4ae53328298613906e84d812e8418b7ecc",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "4DD29A09-8E9C-4E33-A06C-4F2EFC196326",
     "last_modified": "Mon, 16 Jun 2025 16:11:43 GMT",
@@ -262,22 +262,22 @@
     "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/4DD29A09-8E9C-4E33-A06C-4F2EFC196326"
   },
   "fpact_manual_docs--lab": {
-    "byte_sha": "f610814a177eb884a9f6eeae2f452f926f06ef77e574570c7e4675d75c6cd553",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "byte_sha": "002fafb24b0baf66b2dd19bd469c7277cec17a45e32563fd64cb546325b0dde0",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "C9BE0AAF-EEFB-433A-88AF-43D59741B72B",
-    "last_modified": "Tue, 20 Jan 2026 17:54:24 GMT",
+    "last_modified": "Fri, 14 Aug 2026 16:23:59 GMT",
     "links": [],
-    "page_updated": "p1: September 2020|p2: December 2025|p3: December 2025|p4: December 2025|p5: December 2025|p6: December 2025|p7: December 2025|p8: December 2025|p9: April 2022|p10: December 2025|p11: December 2025|p12: April 2022|p13: December 2025|p14: December 2025|p15: December 2025|p16: December 2025|p17: December 2025|p18: December 2025|p19: December 2025|p20: December 2025|p21: December 2025|p22: December 2021|p23: December 2021|p24: December 2025|p25: December 2025|p26: October 2022|p27: October 2022|p28: October 2022|p29: October 2022|p30: February 2023|p31: December 2025|p32: December 2021|p33: December 2025|p34: December 2025|p35: April 2025|p36: December 2025|p37: December 2025|p38: January 2026|p39: January 2026|p40: January 2026|p41: December 2025|p42: December 2025|p43: October 2023|p44: October 2023|p45: December 2022|p46: December 2022|p47: December 2022|p48: December 2022|p49: December 2022|p50: December 2022|p51: December 2025",
-    "revision_date": "2026-01-20T17:54:24",
+    "page_updated": "p1: September 2020|p2: December 2025|p3: December 2025|p4: December 2025|p5: December 2025|p6: December 2025|p7: December 2025|p8: December 2025|p9: April 2022|p10: December 2025|p11: December 2025|p12: April 2022|p13: December 2025|p14: December 2025|p15: December 2025|p16: December 2025|p17: December 2025|p18: December 2025|p19: December 2025|p20: December 2025|p21: December 2025|p22: December 2021|p23: December 2021|p24: December 2025|p25: December 2025|p26: October 2022|p27: October 2022|p28: October 2022|p29: October 2022|p30: February 2023|p31: December 2025|p32: December 2021|p33: December 2025|p34: December 2025|p35: August 2026|p36: August 2026|p37: August 2026|p38: August 2026|p39: August 2026|p40: August 2026|p41: August 2026|p42: August 2026|p43: August 2026|p44: August 2026|p45: August 2026|p46: August 2026|p47: August 2026|p48: August 2026|p49: August 2026|p50: August 2026|p51: August 2026|p52: August 2026|p53: August 2026",
+    "revision_date": "2026-08-14T16:23:59",
     "shell": false,
-    "text_sha": "8e1619b021c38f1f6ec6b78534259b5f37d43341d26e4f73e6370b63559f1ffc",
+    "text_sha": "8a0ea4edc044c2f7fabe77df3a2a3bc5db285365645bb7ca917799420e53ff50",
     "title": "Laboratory Services (lab)",
     "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C9BE0AAF-EEFB-433A-88AF-43D59741B72B"
   },
   "fpact_manual_docs--office": {
     "byte_sha": "42b7b120d6ee5f1c5888b4377e58999c19f2c25a8b88238f0ce9eb4d7a8594d6",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "7CD4E2BB-3DF5-4FEC-9B68-9D8841D0A55F",
     "last_modified": "Tue, 16 Jul 2024 16:09:38 GMT",
@@ -291,7 +291,7 @@
   },
   "fpact_manual_docs--pharm": {
     "byte_sha": "2f7cb264820eb71eab3c713fe052f7f1d37594712f43998f610e4574d690c223",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "B4632038-8414-4115-BE87-3AF4C0B42E00",
     "last_modified": "Sun, 06 Aug 2023 02:00:31 GMT",
@@ -305,7 +305,7 @@
   },
   "fpact_manual_docs--pharmacy": {
     "byte_sha": "056fa6a6710a769059ad0a11e9f477023b60accf479296a18ec4cbb4ec1caca9",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "5D034DCC-2326-4204-A490-63334447067F",
     "last_modified": "Thu, 16 Oct 2025 16:12:48 GMT",
@@ -319,7 +319,7 @@
   },
   "fpact_manual_docs--progstand": {
     "byte_sha": "9463274b67162a9d5f831425d7747b7d3cabfa377ec6da79ef1cb9d25f2c8699",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "AC89DF41-778B-49CD-ACF4-EAF9C4644904",
     "last_modified": "Thu, 16 Jul 2026 16:28:52 GMT",
@@ -333,7 +333,7 @@
   },
   "fpact_manual_docs--provenrollres": {
     "byte_sha": "1cc2e3188a5c8c3c4188c90e4447994e6be5bde0f29183b91cd7962d2267d5b3",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "1FC58406-1722-4888-80A5-7B1DBBEB9F29",
     "last_modified": "Thu, 16 Jul 2026 16:29:22 GMT",
@@ -347,7 +347,7 @@
   },
   "fpact_manual_docs--provrel": {
     "byte_sha": "0636f69575b332562ee4b85173f2c425e384743298bfd8fc1ad1e3eb8a06f4ff",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "AAB9378C-D021-4208-AB7A-B6A7A7549643",
     "last_modified": "Fri, 14 Feb 2025 17:38:10 GMT",
@@ -361,7 +361,7 @@
   },
   "fpact_manual_docs--radif": {
     "byte_sha": "f14cd7994e916f9ff5f14de60f7ce1cdff95be0d840d1979874faf4ce5fc5692",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "A8A04AB0-8C04-4653-9A48-0C765462A3A0",
     "last_modified": "Sun, 06 Aug 2023 02:02:15 GMT",
@@ -375,7 +375,7 @@
   },
   "fpact_manual_docs--tarf": {
     "byte_sha": "5d4a34fa617105e63e9beeb14fe5489d65b049676bd3d767a86b3b0ea2b74069",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "0CEE81EC-C0E9-4B4A-89FD-AE96C95FA705",
     "last_modified": "Mon, 21 Aug 2023 21:13:15 GMT",
@@ -388,8 +388,8 @@
     "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/0CEE81EC-C0E9-4B4A-89FD-AE96C95FA705"
   },
   "fpact_news_archive": {
-    "byte_sha": "0437be2889c10ff8f0081066d7767dc4536e50c6c9b35ac90741b2fc97874d0e",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "byte_sha": "4604acf4f4b175b6de8c882754bbfdcc3f3acc2a18aae6ec8c61b538e2998747",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "last_modified": "",
     "links": [
@@ -434,19 +434,19 @@
     "url": "https://familypact.org/news-and-updates-archive/"
   },
   "fqhc_cms_center": {
-    "byte_sha": "30da36f74d97b6f85697b16c8f37424864f5c6332334014384c1bed0fe7d0763",
-    "checked_at": "2026-08-10T14:54:00+00:00",
-    "etag": "\"1786372246-gzip\"",
-    "last_modified": "Mon, 10 Aug 2026 14:30:46 GMT",
+    "byte_sha": "8572d3d70ea856e6734602847b255a8a3967fff7363ee68981935858fe763aec",
+    "checked_at": "2026-08-17T14:22:47+00:00",
+    "etag": "\"1786972003-gzip\"",
+    "last_modified": "Mon, 17 Aug 2026 13:06:43 GMT",
     "links": [],
     "page_updated": "",
     "shell": false,
-    "text_sha": "e138806cd9906887dba7a10eda5700da7d4b2cb1f6f1a2b6031220f8c282e9a9",
+    "text_sha": "329d2a3587fcab8e72db6645e8a8625b76ba03aa032eaeb6dcbdb005a0182584",
     "url": "https://www.cms.gov/medicare/payment/prospective-payment-systems/federally-qualified-health-centers-fqhc-center"
   },
   "fqhc_dhcs_3097_page": {
-    "byte_sha": "d473f1656d9f038873df14e3c1bc12769ec9892ca55b167b6671dccbfbe21333",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "byte_sha": "a1e1ef00ed0cc6fd295a232fa26b7c6530811f034a172685ba72091e7fe1c024",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "last_modified": "",
     "links": [],
@@ -456,7 +456,7 @@
     "url": "https://www.dhcs.ca.gov/forms-laws-publications/forms/cost-report-forms-and-documents/"
   },
   "fqhc_rural_manual_docs": {
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "docs": [
       "rural",
       "ruralcd",
@@ -467,7 +467,7 @@
   },
   "fqhc_rural_manual_docs--rural": {
     "byte_sha": "a75b6be8251d7935847315228e5060186c3c504d857fbeebbc19b326ad69153c",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "C983B7D9-42B3-4543-BF93-D272AB764BDD",
     "last_modified": "Thu, 16 Jul 2026 16:54:22 GMT",
@@ -481,7 +481,7 @@
   },
   "fqhc_rural_manual_docs--ruralcd": {
     "byte_sha": "abc57c527eac0cce1b45fc9993b563ea8d4786558b5cbadb8ace520a24a0ad1b",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "2D80A3B6-A32B-4131-BE63-12EE7243A849",
     "last_modified": "Tue, 16 Jun 2026 15:46:44 GMT",
@@ -495,7 +495,7 @@
   },
   "fqhc_rural_manual_docs--ruralex": {
     "byte_sha": "14c79e2b900deedc6831b1493855a32f8176381570572ed2f0b5a00d8c08c290",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "08EC7DD1-AABE-4187-9D9E-F155C3DAF1CA",
     "last_modified": "Sun, 06 Aug 2023 01:58:46 GMT",
@@ -509,7 +509,7 @@
   },
   "fqhc_rural_manual_docs--ruralhosp": {
     "byte_sha": "5ce88309e13465aa036cd51e157c21d5c2a741f959a69122b6fe35c9233bb31f",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "3E8C0259-6D59-4F20-BFA3-E5AE5754F39D",
     "last_modified": "Tue, 16 Jan 2024 18:04:36 GMT",
@@ -522,8 +522,8 @@
     "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/3E8C0259-6D59-4F20-BFA3-E5AE5754F39D"
   },
   "mcp_apl_index": {
-    "byte_sha": "7103283fc070f81bcaf429a20b32c0e6cb5da135cefab3df20bb563c913689b3",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "byte_sha": "c982e25acaa213e09f23d2e54af66adf352f231750e73f696e61763febeba5a8",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "last_modified": "",
     "links": [],
@@ -534,7 +534,7 @@
   },
   "mcp_boilerplate_contract": {
     "byte_sha": "dd188064463d4d7b3fd7496bdf388fe2c16461ddf2372a4c45745c66d936d2ca",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "\"599cbbdeb621ec96\"",
     "last_modified": "Fri, 10 Oct 2025 07:12:09 GMT",
     "links": [],
@@ -545,7 +545,7 @@
   },
   "mcp_tri_faq": {
     "byte_sha": "eb4a4b4b59ca87a3cad5690cae9f23295d0001fa0ae414387d46138defc3c705",
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "\"7e0bf12553e51cee\"",
     "last_modified": "Thu, 09 Oct 2025 22:51:52 GMT",
     "links": [],
@@ -555,10 +555,10 @@
     "url": "https://www.dhcs.ca.gov/services/Documents/DirectedPymts/CY-2024-TRI-FAQ-20250312.pdf"
   },
   "ncci_medicaid_files": {
-    "byte_sha": "6290142bb11c0bc747e5648596656b4bbdf45413bdd3f51adb68be735bb6951a",
-    "checked_at": "2026-08-10T14:54:00+00:00",
-    "etag": "\"1786371607-gzip\"",
-    "last_modified": "Mon, 10 Aug 2026 14:20:07 GMT",
+    "byte_sha": "9175fe058911f107312ba35c7719907e329494e3b075d48328c50344463309ba",
+    "checked_at": "2026-08-17T14:22:47+00:00",
+    "etag": "\"1786975115-gzip\"",
+    "last_modified": "Mon, 17 Aug 2026 13:58:35 GMT",
     "links": [
       "/files/zip/medicaid-ncci-2026-q3-change-report-effective-07012026.zip",
       "/files/zip/medicaid-ncci-2026-q3-mue-edits-durable-medical-equipment-services.zip",
@@ -577,11 +577,11 @@
     ],
     "page_updated": "",
     "shell": false,
-    "text_sha": "08d75b789ec1a404e3bdc851f87e29a3230beb4fa8a02ae3819dd74fb7dd6d1e",
+    "text_sha": "b616d431004f51a481188ef2cdc819d64c5aea795a0138d2312e7b116753c153",
     "url": "https://www.cms.gov/medicare/coding-billing/ncci-medicaid/medicaid-ncci-edit-files"
   },
   "ob_cpsp_manual_docs": {
-    "checked_at": "2026-08-11T23:04:47+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "docs": [
       "pregcom",
       "pregcomexc",
@@ -591,7 +591,7 @@
   },
   "ob_cpsp_manual_docs--pregcom": {
     "byte_sha": "b1093532f75c807fa03dffa6088a9ba99647a0b7aad2bd91c2448f4ddf756173",
-    "checked_at": "2026-08-11T23:04:47+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "7E3FF663-2682-4A45-82A5-688A7D42FD46",
     "last_modified": "Wed, 16 Jul 2025 16:25:15 GMT",
@@ -605,7 +605,7 @@
   },
   "ob_cpsp_manual_docs--pregcomexc": {
     "byte_sha": "d483d047b8ad385710b8a886a577cc9d84be126d5b3261bc0c0f76ae966bf3af",
-    "checked_at": "2026-08-11T23:04:47+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "21AA9E49-37BD-473D-BBF6-0756C8ED95C6",
     "last_modified": "Wed, 16 Jul 2025 16:25:32 GMT",
@@ -619,7 +619,7 @@
   },
   "ob_cpsp_manual_docs--pregcomlis": {
     "byte_sha": "a61f7dc1f13eb92feef9af46e5655903806d19289b6d7ce41fa0797262cfc5c7",
-    "checked_at": "2026-08-11T23:04:47+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "etag": "",
     "file_id": "B49DC7A8-9C98-475A-AFF8-F3702FE0AB0F",
     "last_modified": "Wed, 16 Jul 2025 16:25:54 GMT",
@@ -632,7 +632,7 @@
     "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B49DC7A8-9C98-475A-AFF8-F3702FE0AB0F"
   },
   "rev_clinics_hospitals_manuals": {
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "docs": {
       "00medi-cal": {
         "revision_date": "2023-08-06T02:02:14",
@@ -855,7 +855,7 @@
         "title": "Dyadic Services Billing Examples for Federally Qualified Health Center and Rural Health Clinic Providers (dyadic ex)"
       },
       "dyadicser": {
-        "revision_date": "2026-02-13T17:31:50",
+        "revision_date": "2026-08-14T16:34:37",
         "title": "Dyadic Services (dyadic ser)"
       },
       "ecmoecls": {
@@ -871,7 +871,7 @@
         "title": "End of Life Option Act Services Billing Examples: UB-04 (eloa ub)"
       },
       "epsdt": {
-        "revision_date": "2025-12-16T17:22:11",
+        "revision_date": "2026-08-14T16:35:00",
         "title": "EPSDT (epsdt)"
       },
       "epsdtschool": {
@@ -891,7 +891,7 @@
         "title": "Every Woman Counts Billing Examples: UB-04 (ev woman exub)"
       },
       "famplanning": {
-        "revision_date": "2026-05-18T17:42:35",
+        "revision_date": "2026-08-14T16:35:32",
         "title": "Family Planning (fam planning)"
       },
       "famplanningub": {
@@ -943,7 +943,7 @@
         "title": "Hoptel Services (hoptel)"
       },
       "hospic": {
-        "revision_date": "2026-04-16T16:51:15",
+        "revision_date": "2026-08-14T16:35:55",
         "title": "Hospice Care (hospic)"
       },
       "hyst": {
@@ -951,11 +951,11 @@
         "title": "Hysterectomy (hyst)"
       },
       "immun": {
-        "revision_date": "2026-07-16T16:46:51",
+        "revision_date": "2026-08-14T16:36:20",
         "title": "Immunizations (immun)"
       },
       "immuncd": {
-        "revision_date": "2025-09-16T16:08:11",
+        "revision_date": "2026-08-14T16:36:34",
         "title": "Immunizations Code List (immun cd)"
       },
       "incont": {
@@ -1087,7 +1087,7 @@
         "title": "Modifiers: Approved List (modif app)"
       },
       "modifused": {
-        "revision_date": "2026-07-16T16:49:57",
+        "revision_date": "2026-08-14T16:37:05",
         "title": "Modifiers Used with Procedure Codes (modif used)"
       },
       "newborn": {
@@ -1107,7 +1107,7 @@
         "title": "Non-Physician Medical Practitioners (NMP) Billing Example:  UB-04 (non ph ub)"
       },
       "nonspecmental": {
-        "revision_date": "2026-01-16T17:42:41",
+        "revision_date": "2026-08-14T16:37:35",
         "title": "Non-Specialty Mental Health Services: Psychiatric and Psychological Services (non spec mental)"
       },
       "once": {
@@ -1189,6 +1189,10 @@
       "pathurin": {
         "revision_date": "2023-08-06T02:02:15",
         "title": "Pathology:  Urinalysis (path urin)"
+      },
+      "physician340b": {
+        "revision_date": "2026-08-14T16:40:52",
+        "title": "Physician-Administered Drugs (PADs) 340B Policy (physician 340b)"
       },
       "physicianlist": {
         "revision_date": "2026-07-16T16:51:10",
@@ -1475,7 +1479,7 @@
         "title": "Surgery:  Urinary System (surg urin)"
       },
       "tarandnon": {
-        "revision_date": "2025-12-26T23:29:51",
+        "revision_date": "2026-08-14T16:38:08",
         "title": "TAR and Non-Standard Benefits: Introduction to List (tar and non)"
       },
       "tarandnoncd0": {
@@ -1587,11 +1591,11 @@
         "title": "Transplants (transplant)"
       },
       "tribalfqhc": {
-        "revision_date": "2025-11-14T17:50:58",
+        "revision_date": "2026-08-14T16:38:35",
         "title": "Tribal Federally Qualified Health Centers (Tribal FQHCs) (tribal fqhc)"
       },
       "tribalfqhccd": {
-        "revision_date": "2024-09-16T16:31:17",
+        "revision_date": "2026-08-14T16:38:52",
         "title": "Tribal Federally Qualified Health Centers (Tribal FQHCs): Billing Codes (tribal fqhc cd)"
       },
       "tuber": {
@@ -1599,7 +1603,7 @@
         "title": "Tuberculosis Program (tuber)"
       },
       "ubcompop": {
-        "revision_date": "2026-06-16T15:49:52",
+        "revision_date": "2026-08-14T16:40:00",
         "title": "UB-04 Completion: Outpatient Services (ub comp op)"
       },
       "ubspecop": {
@@ -1607,7 +1611,7 @@
         "title": "UB-04 Special Billing Instructions for Outpatient Services (ub spec op)"
       },
       "ubsub": {
-        "revision_date": "2024-01-16T18:30:10",
+        "revision_date": "2026-08-14T16:40:21",
         "title": "UB-04 Submission and Timeliness Instructions (ub sub)"
       },
       "ubtipsop": {
@@ -1615,14 +1619,14 @@
         "title": "UB-04 Tips for Billing:  Outpatient Services (ub tips op)"
       },
       "vaccine": {
-        "revision_date": "2026-07-16T17:01:47",
+        "revision_date": "2026-08-14T16:40:44",
         "title": "Vaccines For Children (VFC) Program (vaccine)"
       }
     },
     "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=clinics-and-hospitals"
   },
   "rev_general_medicine_manuals": {
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "docs": {
       "00medi-cal": {
         "revision_date": "2023-08-06T02:02:14",
@@ -1833,7 +1837,7 @@
         "title": "Dyadic Services Billing Examples for Federally Qualified Health Center and Rural Health Clinic Providers (dyadic ex)"
       },
       "dyadicser": {
-        "revision_date": "2026-02-13T17:31:50",
+        "revision_date": "2026-08-14T16:34:37",
         "title": "Dyadic Services (dyadic ser)"
       },
       "ecmoecls": {
@@ -1849,7 +1853,7 @@
         "title": "End of Life Option Act Services Billing Examples: CMS-1500 (eloa cms)"
       },
       "epsdt": {
-        "revision_date": "2025-12-16T17:22:11",
+        "revision_date": "2026-08-14T16:35:00",
         "title": "EPSDT (epsdt)"
       },
       "epsdtschool": {
@@ -1869,7 +1873,7 @@
         "title": "Every Woman Counts Billing Examples: CMS-1500 (ev woman exc)"
       },
       "famplanning": {
-        "revision_date": "2026-05-18T17:42:35",
+        "revision_date": "2026-08-14T16:35:32",
         "title": "Family Planning (fam planning)"
       },
       "famplanningcms": {
@@ -1917,7 +1921,7 @@
         "title": "Heroin Detoxification (heroin)"
       },
       "hospic": {
-        "revision_date": "2026-04-16T16:51:15",
+        "revision_date": "2026-08-14T16:35:55",
         "title": "Hospice Care (hospic)"
       },
       "hyst": {
@@ -1925,11 +1929,11 @@
         "title": "Hysterectomy (hyst)"
       },
       "immun": {
-        "revision_date": "2026-07-16T16:46:51",
+        "revision_date": "2026-08-14T16:36:20",
         "title": "Immunizations (immun)"
       },
       "immuncd": {
-        "revision_date": "2025-09-16T16:08:11",
+        "revision_date": "2026-08-14T16:36:34",
         "title": "Immunizations Code List (immun cd)"
       },
       "incont": {
@@ -2053,7 +2057,7 @@
         "title": "Modifiers: Approved List (modif app)"
       },
       "modifused": {
-        "revision_date": "2026-07-16T16:49:57",
+        "revision_date": "2026-08-14T16:37:05",
         "title": "Modifiers Used with Procedure Codes (modif used)"
       },
       "newborn": {
@@ -2073,7 +2077,7 @@
         "title": "Non-Physician Medical Practitioners (NMP) Billing Example:  CMS-1500 (non ph cms)"
       },
       "nonspecmental": {
-        "revision_date": "2026-01-16T17:42:41",
+        "revision_date": "2026-08-14T16:37:35",
         "title": "Non-Specialty Mental Health Services: Psychiatric and Psychological Services (non spec mental)"
       },
       "once": {
@@ -2159,6 +2163,10 @@
       "pathurin": {
         "revision_date": "2023-08-06T02:02:15",
         "title": "Pathology:  Urinalysis (path urin)"
+      },
+      "physician340b": {
+        "revision_date": "2026-08-14T16:40:52",
+        "title": "Physician-Administered Drugs (PADs) 340B Policy (physician 340b)"
       },
       "physicianlist": {
         "revision_date": "2026-07-16T16:51:10",
@@ -2421,7 +2429,7 @@
         "title": "Surgery:  Urinary System (surg urin)"
       },
       "tarandnon": {
-        "revision_date": "2025-12-26T23:29:51",
+        "revision_date": "2026-08-14T16:38:08",
         "title": "TAR and Non-Standard Benefits: Introduction to List (tar and non)"
       },
       "tarandnoncd0": {
@@ -2537,14 +2545,14 @@
         "title": "Tuberculosis Program (tuber)"
       },
       "vaccine": {
-        "revision_date": "2026-07-16T17:01:47",
+        "revision_date": "2026-08-14T16:40:44",
         "title": "Vaccines For Children (VFC) Program (vaccine)"
       }
     },
     "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=general-medicine"
   },
   "rev_inpatient_manuals": {
-    "checked_at": "2026-08-10T14:54:00+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "docs": {
       "00medi-cal": {
         "revision_date": "2023-08-06T02:02:14",
@@ -2695,7 +2703,7 @@
         "title": "Hoptel Services (hoptel)"
       },
       "hospic": {
-        "revision_date": "2026-04-16T16:51:15",
+        "revision_date": "2026-08-14T16:35:55",
         "title": "Hospice Care (hospic)"
       },
       "hospitaldir": {
@@ -2839,7 +2847,7 @@
         "title": "Sterilization (ster)"
       },
       "tarandnon": {
-        "revision_date": "2025-12-26T23:29:51",
+        "revision_date": "2026-08-14T16:38:08",
         "title": "TAR and Non-Standard Benefits: Introduction to List (tar and non)"
       },
       "tarandnoncd0": {
@@ -2983,7 +2991,7 @@
         "title": "Transplants:  Donor Protocol (transplant proto)"
       },
       "ubcompip": {
-        "revision_date": "2026-06-16T15:48:50",
+        "revision_date": "2026-08-14T16:39:16",
         "title": "UB-04 Completion:  Inpatient Services (ub comp ip)"
       },
       "ubcompipex": {
@@ -2995,7 +3003,7 @@
         "title": "UB-04 Special Billing Instructions for Inpatient Services (ub spec ip)"
       },
       "ubsub": {
-        "revision_date": "2024-01-16T18:30:10",
+        "revision_date": "2026-08-14T16:40:21",
         "title": "UB-04 Submission and Timeliness Instructions (ub sub)"
       },
       "ubtipsip": {
@@ -3010,7 +3018,7 @@
     "url": "https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=inpatient-services"
   },
   "rev_obstetrics_manuals": {
-    "checked_at": "2026-08-11T23:03:34+00:00",
+    "checked_at": "2026-08-17T14:22:47+00:00",
     "docs": {
       "00medi-cal": {
         "revision_date": "2023-08-06T02:02:14",
@@ -3177,7 +3185,7 @@
         "title": "Extracorporeal Membrane Oxygenation/Extracorporeal Life Support  (ecmo ecls)"
       },
       "epsdt": {
-        "revision_date": "2025-12-16T17:22:11",
+        "revision_date": "2026-08-14T16:35:00",
         "title": "EPSDT (epsdt)"
       },
       "eval": {
@@ -3193,7 +3201,7 @@
         "title": "Every Woman Counts Billing Examples: CMS-1500 (ev woman exc)"
       },
       "famplanning": {
-        "revision_date": "2026-05-18T17:42:35",
+        "revision_date": "2026-08-14T16:35:32",
         "title": "Family Planning (fam planning)"
       },
       "famplanningcms": {
@@ -3241,11 +3249,11 @@
         "title": "Hysterectomy (hyst)"
       },
       "immun": {
-        "revision_date": "2026-07-16T16:46:51",
+        "revision_date": "2026-08-14T16:36:20",
         "title": "Immunizations (immun)"
       },
       "immuncd": {
-        "revision_date": "2025-09-16T16:08:11",
+        "revision_date": "2026-08-14T16:36:34",
         "title": "Immunizations Code List (immun cd)"
       },
       "injectbilcms": {
@@ -3321,7 +3329,7 @@
         "title": "Modifiers: Approved List (modif app)"
       },
       "modifused": {
-        "revision_date": "2026-07-16T16:49:57",
+        "revision_date": "2026-08-14T16:37:05",
         "title": "Modifiers Used with Procedure Codes (modif used)"
       },
       "newgate": {
@@ -3403,6 +3411,10 @@
       "pathurin": {
         "revision_date": "2023-08-06T02:02:15",
         "title": "Pathology:  Urinalysis (path urin)"
+      },
+      "physician340b": {
+        "revision_date": "2026-08-14T16:40:52",
+        "title": "Physician-Administered Drugs (PADs) 340B Policy (physician 340b)"
       },
       "physicianlist": {
         "revision_date": "2026-07-16T16:51:10",
@@ -3589,7 +3601,7 @@
         "title": "Surgery:  Urinary System (surg urin)"
       },
       "tarandnon": {
-        "revision_date": "2025-12-26T23:29:51",
+        "revision_date": "2026-08-14T16:38:08",
         "title": "TAR and Non-Standard Benefits: Introduction to List (tar and non)"
       },
       "tarandnoncd0": {
@@ -3697,7 +3709,7 @@
         "title": "Tuberculosis Program (tuber)"
       },
       "vaccine": {
-        "revision_date": "2026-07-16T17:01:47",
+        "revision_date": "2026-08-14T16:40:44",
         "title": "Vaccines For Children (VFC) Program (vaccine)"
       }
     },

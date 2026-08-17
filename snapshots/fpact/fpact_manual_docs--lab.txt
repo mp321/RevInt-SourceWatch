@@ -2200,7 +2200,138 @@ required
 lab
 35
 Family PACT – Laboratory Services
-Page updated: April 2025
+Page updated: August 2026
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+‹‹87494§
+Chlamydia
+trachomatis and
+Neisseria
+gonorrhoeae,
+multiplex amplified
+probe technique
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+Screening:
+Z11.3, Z11.8,
+Z20.2, Z22.4,
+Z72.51 thru
+Z72.53, Z86.19
+No Female
+Less than 25 years:
+Routine annual
+screening, any
+provider. No
+additional ICD-10-
+CM code required
+Less than 25 years:
+Screening more
+than 1x per year,
+same provider,
+additional ICD-10-
+CM code required
+Greater than or
+equal to 25 years:
+Additional ICD-
+10CM code required
+››
+‹‹87494
+Chlamydia
+trachomatis and
+Neisseria
+gonorrhoeae,
+multiplex amplified
+probe technique
+Z30.011,
+Z30.013, Z30.015
+thru Z30.018,
+Z30.02, Z30.41,
+Z30.42, Z30.430
+thru Z30.433,
+Z30.44 thru
+Z30.46, Z30.49,
+Z98.51
+Diagnostic:
+A54.01,
+A54.03, A54.5,
+A54.6, A56.01,
+A56.09, A56.3,
+A56.4, N34.1,
+N34.2, N34.3,
+N70.03,
+N70.93, N72,
+N89.8, N94.10
+thru N94.12,
+N94.19,
+N94.89, R30.0,
+R30.9
+No Female
+Any age: Additional
+ICD-10-CM code
+required››
+[[page 36]]
+lab
+36
+Family PACT – Laboratory Services
+Page updated: August 2026
+Family PACT Laboratory Services Grid (continued)
+CPT Code ICD-10-CM
+Diagnosis Code
+Additional
+ICD-10-CM
+Diagnosis
+Code
+TAR Gender/Age/Usage
+Restrictions
+‹‹87494
+Chlamydia
+trachomatis and
+Neisseria
+gonorrhoeae,
+multiplex amplified
+probe technique
+Z30.018, Z30.02,
+Z30.49, Z98.52
+Screening:
+Z11.3, Z11.8,
+Z20.2, Z22.4,
+Z72.51 thru
+Z72.53, Z86.19
+Diagnostic:
+A56.01, A56.3,
+A54.01,
+A54.22, A54.5,
+A54.6, A56.4,
+N34.1, N34.2,
+N34.3, N45.1,
+N45.3, R30.0,
+R30.9,
+N50.811,
+N50.812,
+N50.819
+No Male
+Any age: Additional
+ICD-10-CM code
+required››
+[[page 37]]
+lab
+37
+Family PACT – Laboratory Services
+Page updated: August 2026
 Family PACT Laboratory Services Grid (continued)
 CPT Code ICD-10-CM
 Diagnosis Code
@@ -2227,12 +2358,12 @@ Z30.44 thru
 Z30.46, Z30.49,
 Z98.51
 N76.6 No Female
-‹‹Only as necessary
+Only as necessary
 to evaluate genital
 ulcers of
 unconfirmed
 etiology. Limited to
-Herpes››
+Herpes
 87529
 Infectious agent
 detection by nucleic
@@ -2243,12 +2374,12 @@ technique
 Z30.018, Z30.02,
 Z30.49, Z98.52
 N48.5 No Male
-‹‹Only as necessary
+Only as necessary
 to evaluate genital
 ulcers of
 unconfirmed
 etiology. Limited to
-Herpes››
+Herpes
 87535
 Infectious agent
 detection by nucleic
@@ -2273,11 +2404,11 @@ HIV-1/HIV-2
 differentiation assay
 results are negative
 or indeterminate
-[[page 36]]
+[[page 38]]
 lab
-36
+38
 Family PACT – Laboratory Services
-Page updated: December 2025
+Page updated: August 2026
 Family PACT Laboratory Services Grid (continued)
 CPT Code ICD-10-CM
 Diagnosis Code
@@ -2304,7 +2435,7 @@ HIV-1/HIV-2
 differentiation assay
 results are negative
 or indeterminate
-‹‹87563§››
+87563§
 Infectious agent
 detection by nucleic
 acid (DNA or RNA);
@@ -2336,7 +2467,7 @@ and billed as a
 screening test in
 asymptomatic
 persons
-‹‹87563§››
+87563§
 Infectious agent
 detection by nucleic
 acid (DNA or RNA);
@@ -2363,11 +2494,11 @@ billed as a
 screening test in
 asymptomatic
 persons
-[[page 37]]
+[[page 39]]
 lab
-37
+39
 Family PACT – Laboratory Services
-Page updated: December 2025
+Page updated: August 2026
 Family PACT Laboratory Services Grid (continued)
 CPT Code ICD-10-CM
 Diagnosis Code
@@ -2377,7 +2508,7 @@ Diagnosis
 Code
 TAR Gender/Age/Usage
 Restrictions
-‹‹87591§››
+87591§
 Neisseria
 gonorrhoeae,
 amplified probe
@@ -2416,7 +2547,7 @@ equal to 25 years:
 Additional
 ICD-10-CM code
 required
-‹‹87591§››
+87591§
 Neisseria
 gonorrhoeae,
 amplified probe
@@ -2450,11 +2581,11 @@ Female
 Any age: Additional
 ICD-10-CM code
 required
-[[page 38]]
+[[page 40]]
 lab
-38
+40
 Family PACT – Laboratory Services
-Page updated: January 2026
+Page updated: August 2026
 Family PACT Laboratory Services Grid (continued)
 CPT Code ICD-10-CM
 Diagnosis Code
@@ -2509,21 +2640,25 @@ Z30.44 thru
 Z30.46, Z30.49,
 Z98.51
 Not applicable No Females
-30 thru 65 years of
+‹‹30 thru 65 years of
 age, for HPV-based
 cervical cancer
 screening, once
 every five years,
-any provider. See
-the Benefits: Family
+any provider, or
+three years
+following a
+client-collected
+specimen. See the
+Benefits: Family
 Planning-Related
 Services section in
-this manual.
-[[page 39]]
+this manual.››
+[[page 41]]
 lab
-39
+41
 Family PACT – Laboratory Services
-Page updated: January 2026
+Page updated: August 2026
 Family PACT Laboratory Services Grid (continued)
 CPT Code ICD-10-CM
 Diagnosis Code
@@ -2594,7 +2729,7 @@ Benefits: Family
 Planning-Related
 Services section in
 this manual.
-‹‹87626
+87626
 Detection test by
 nucleic acid for
 Human
@@ -2612,21 +2747,25 @@ Z30.44 thru
 Z30.46, Z30.49,
 Z98.51
 Not applicable No Females
-30 thru 65 years of
+‹‹30 thru 65 years of
 age, for HPV-based
 cervical cancer
 screening, once
 every five years,
-any provider. See
-the Benefits: Family
+any provider, or
+three years
+following a
+client-collected
+specimen. See the
+Benefits: Family
 Planning-Related
 Services section in
 this manual.››
-[[page 40]]
+[[page 42]]
 lab
-40
+42
 Family PACT – Laboratory Services
-Page updated: January 2026
+Page updated: August 2026
 Family PACT Laboratory Services Grid (continued)
 CPT Code ICD-10-CM
 Diagnosis Code
@@ -2636,7 +2775,7 @@ Diagnosis
 Code
 TAR Gender/Age/Usage
 Restrictions
-‹‹87626
+87626
 Detection test by
 nucleic acid for
 Human
@@ -2672,7 +2811,7 @@ See the Benefits:
 Family Planning-
 Related Services
 section in this
-manual.››
+manual.
 87661
 Infectious agent
 detection by nucleic
@@ -2721,11 +2860,11 @@ No Male
 For the evaluation
 of persistent or
 recurrent NGU
-[[page 41]]
+[[page 43]]
 lab
-41
+43
 Family PACT – Laboratory Services
-Page updated: December 2025
+Page updated: August 2026
 Family PACT Laboratory Services Grid (continued)
 CPT Code ICD-10-CM
 Diagnosis Code
@@ -2735,7 +2874,7 @@ Diagnosis
 Code
 TAR Gender/Age/Usage
 Restrictions
-‹‹87806§››
+87806§
 Infectious agent
 antigen detection by
 immunoassay with
@@ -2753,7 +2892,7 @@ Z30.433, Z30.44
 thru Z30.46,
 Z30.49, Z98.51
 Not applicable No Female
-‹‹87806§››
+87806§
 Infectious agent
 antigen detection by
 immunoassay with
@@ -2765,7 +2904,7 @@ antibodies
 Z30.02, Z30.018,
 Z98.52
 Not applicable No Male
-‹‹87808§››
+87808§
 Infectious agent
 antigen detection by
 immunoassay with
@@ -2796,11 +2935,11 @@ guidelines, see the
 Benefits: Family
 Planning section in
 this manual.
-[[page 42]]
+[[page 44]]
 lab
-42
+44
 Family PACT – Laboratory Services
-Page updated: December 2025
+Page updated: August 2026
 Family PACT Laboratory Services Grid (continued)
 CPT Code ICD-10-CM
 Diagnosis Code
@@ -2810,7 +2949,7 @@ Diagnosis
 Code
 TAR Gender/Age/Usage
 Restrictions
-‹‹87808§››
+87808§
 Infectious agent
 antigen detection by
 immunoassay with
@@ -2872,11 +3011,11 @@ women ages 21
 through 65
 regardless of sexual
 history *
-[[page 43]]
+[[page 45]]
 lab
-43
+45
 Family PACT – Laboratory Services
-Page updated: October 2023
+Page updated: August 2026
 Family PACT Laboratory Services Grid (continued)
 CPT Code ICD-10-CM
 Diagnosis Code
@@ -2959,11 +3098,11 @@ women ages 21
 through 65
 regardless of sexual
 history *
-[[page 44]]
+[[page 46]]
 lab
-44
+46
 Family PACT – Laboratory Services
-Page updated: October 2023
+Page updated: August 2026
 Family PACT Laboratory Services Grid (continued)
 CPT Code ICD-10-CM
 Diagnosis Code
@@ -3047,11 +3186,11 @@ women ages 21
 through 65
 regardless of sexual
 history *
-[[page 45]]
+[[page 47]]
 lab
-45
+47
 Family PACT – Laboratory Services
-Page updated: December 2022
+Page updated: August 2026
 Family PACT Laboratory Services Grid (continued)
 CPT Code ICD-10-CM
 Diagnosis Code
@@ -3117,11 +3256,11 @@ women ages 21
 through 65
 regardless of sexual
 history *
-[[page 46]]
+[[page 48]]
 lab
-46
+48
 Family PACT – Laboratory Services
-Page updated: December 2022
+Page updated: August 2026
 Family PACT Laboratory Services Grid (continued)
 CPT Code ICD-10-CM
 Diagnosis Code
@@ -3161,13 +3300,13 @@ Level II - Surgical
 pathology, gross and
 microscopic
 examination
-Z30.2, Z98.52 Not applicable No Female
+Z30.2, Z98.52 Not applicable No ‹‹Male››
 Two specimens only
-[[page 47]]
+[[page 49]]
 lab
-47
+49
 Family PACT – Laboratory Services
-Page updated: December 2022
+Page updated: August 2026
 Family PACT Laboratory Services Grid (continued)
 CPT Code ICD-10-CM
 Diagnosis Code
@@ -3257,11 +3396,11 @@ wart treatment
 candidate, the CPT
 procedure is not
 required.
-[[page 48]]
+[[page 50]]
 lab
-48
+50
 Family PACT – Laboratory Services
-Page updated: December 2022
+Page updated: August 2026
 Family PACT Laboratory Services Grid (continued)
 CPT Code ICD-10-CM
 Diagnosis Code
@@ -3326,11 +3465,11 @@ complication due to
 intrauterine device
 (IUD)/intrauterine
 system (IUS)
-[[page 49]]
+[[page 51]]
 lab
-49
+51
 Family PACT – Laboratory Services
-Page updated: December 2022
+Page updated: August 2026
 Family PACT Laboratory Services Grid (continued)
 CPT Code ICD-10-CM
 Diagnosis Code
@@ -3394,11 +3533,11 @@ specimens collected
 by LEEP procedure
 (CPT code 57460 or
 57461).
-[[page 50]]
+[[page 52]]
 lab
-50
+52
 Family PACT – Laboratory Services
-Page updated: December 2022
+Page updated: August 2026
 Family PACT Laboratory Services Grid (continued)
 CPT Code ICD-10-CM
 Diagnosis Code
@@ -3437,22 +3576,23 @@ Restricted to ages
 equal to or greater
 than 15, when
 clinically indicated.
-CPT code 88342 is covered for women ages ≥15 years, based on The Lower Anogenital
-Squamous Terminology (LAST) Standardization Project for HPV- Associated Lesions:
-Background and Consensus Recommendations from the College of American Pathologists
-and the American Society for Colposcopy and Cervical Pathology 2012, under the following
-circumstances:
-• To aid in differential diagnosis between CIN 2 and CIN 3 and a mimic of precancer
-(e.g. immature metaplasia, reparative epithelial changes, atrophy or tangential cutting)
+CPT code 88342 is covered for women ages greater than or equal to 15 years, based on
+The Lower Anogenital Squamous Terminology (LAST) Standardization Project for HPV-
+Associated Lesions: Background and Consensus Recommendations from the College of
+American Pathologists and the American Society for Colposcopy and Cervical Pathology
+2012, under the following circumstances:
+• To aid in differential diagnosis between CIN 2 and CIN 3 and a mimic of precancer (for
+example, immature metaplasia, reparative epithelial changes, atrophy or tangential
+cutting)
 • Anytime a morphologic CIN 2 diagnosis is considered
 • As an adjudication tool for cases with professional disagreement
-• As an adjunct to morphologic assessment for biopsy specimens interpreted as ≤ CIN 1
-that are high risk for missed high-grade disease.
-[[page 51]]
+• As an adjunct to morphologic assessment for biopsy specimens interpreted as less
+than or equal to CIN 1 that are high risk for missed high-grade disease.
+[[page 53]]
 lab
-51
+53
 Family PACT – Laboratory Services
-Page updated: December 2025
+Page updated: August 2026
 Legend
 Symbols used in the document above are explained in the following table.
 Symbol Description
@@ -3482,7 +3622,7 @@ Adequate negative prior screening is defined as three consecutive
 negative cytology results or two consecutive negative co-tests within the
 10 years before cessation of screening, with the most recent test
 occurring within the past five years.
-‹‹∞ Provider-Performed Microscopy Procedure››
-‹‹§ Includes CLIA-waived tests. Refer to the Pathology: Billing and Modifiers
+∞ Provider-Performed Microscopy Procedure
+§ Includes CLIA-waived tests. Refer to the Pathology: Billing and Modifiers
 section of the Part 2 manual for information on billing, including the use of QW
-modifier for CLIA waived tests.››
+modifier for CLIA waived tests.

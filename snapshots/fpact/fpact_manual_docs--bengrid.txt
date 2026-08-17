@@ -731,29 +731,30 @@ indeterminate)
 ben grid
 18
 Family PACT – Benefits Grid
-Page updated: July 2022
+Page updated: August 2026
 Reproductive Health Screening Tests (continued)
 CPT Codes Reflex Testing (based on a positive screening test
 result)
 Restrictions
 87491 § (NAAT – Chlamydia)
+‹‹87494 § (NAAT –
+Chlamydia, Gonorrhea)››
 87591 § (NAAT – Gonorrhea)
 None Refer to the Chlamydia
 Trachomatis (CT) and
 Neisseria gonorrhoeae (GC)
 screening guidelines
-‹‹87661 (NAAT –
-Trichomonas)
+87661 (NAAT – Trichomonas)
 87808 (T. vaginalis
 immunoassay)
 None Females only
 Refer to the trichomoniasis
-screening guidelines››
+screening guidelines
 CT and GC screening tests for females 25 years of age and older and males of all ages require an additional ICD-10-CM
 code. Females under 25 years of age may require an additional ICD-10-CM code. For additional information, refer to the
 Benefits: Family Planning section in this manual.
-‹‹Trichomoniasis screening tests require an additional ICD-10-CM code. For additional information, refer to the Benefits:
-Family Planning section in this manual.››
+Trichomoniasis screening tests require an additional ICD-10-CM code. For additional information, refer to the Benefits: Family
+Planning section in this manual.
 [[page 19]]
 ben grid
 19
@@ -814,7 +815,7 @@ information and claim requirements.
 ben grid
 22
 Family PACT – Benefits Grid
-Page updated: May 2023
+Page updated: August 2026
 Family Planning-Related Services: Management of Sexually Transmitted Infections
 (STIs)
 Treatment or diagnostic testing of specified sexually transmitted infections (STIs) may be provided as clinically indicated. For
@@ -841,6 +842,9 @@ None 87205: Gram stain −
 symptomatic males only
 87491: CT, amplified
 probe technique
+‹‹87494: CT, GC,
+amplified probe
+technique››
 None R: Doxycycline
 A: Azithromycin
 A: Levofloxacin
@@ -848,7 +852,7 @@ A: Levofloxacin
 ben grid
 23
 Family PACT – Benefits Grid
-Page updated: May 2023
+Page updated: August 2026
 Family Planning-Related Services (9)
 ICD-10-CM Code and Description Procedures Laboratory Supplies Medications (8)
 N72 (Inflammatory disease of cervix
@@ -871,13 +875,16 @@ None 87205: Gram stain −
 symptomatic males only
 87491: CT, amplified
 probe technique
+‹‹87494: CT, GC,
+amplified probe
+technique››
 None R: Doxycycline
 A: Azithromycin
 [[page 24]]
 ben grid
 24
 Family PACT – Benefits Grid
-Page updated: May 2023
+Page updated: August 2026
 Family Planning-Related Services (9) (continued)
 ICD-10-CM Code and Description Procedures Laboratory Supplies Medications (8)
 Gonorrhea
@@ -907,6 +914,9 @@ R30.9 (Painful micturition, unspecified)
 Z20.2 (STI[GC]-exposed partner) (M/F)
 None 87205: Gram stain –
 symptomatic males only
+‹‹87494: CT, GC,
+amplified probe
+technique››
 87591: GC, amplified
 probe technique
 None R: Ceftriaxone
@@ -918,7 +928,7 @@ Azithromycin
 ben grid
 25
 Family PACT – Benefits Grid
-Page updated: May 2023
+Page updated: August 2026
 Family Planning-Related Services (9) (continued)
 ICD-10-CM Code and Description Procedures Laboratory Supplies Medications (8)
 Epididymitis
@@ -935,6 +945,9 @@ microscopy
 symptomatic males only
 87491: CT, amplified
 probe technique
+‹‹87494: CT, GC,
+amplified probe
+technique››
 87591: GC, amplified
 probe technique
 87563: M genitalium,
@@ -992,15 +1005,18 @@ A: Azithromycin
 ben grid
 28
 Family PACT – Benefits Grid
-Page updated: October 2023
+Page updated: August 2026
 Family Planning-Related Services (9) (continued)
 ICD-10-CM Code and Description Procedures Laboratory Supplies Medications (8)
-‹‹Acute Nongonococcal Urethritis
-(NGU) (continued)››
+Acute Nongonococcal Urethritis
+(NGU) (continued)
 N34.1 (Nonspecific urethritis)
 None 87210: Wet mount
 87491: CT, amplified
 probe technique
+‹‹87494: CT, GC,
+amplified probe
+technique››
 87591: GC, amplified
 probe technique
 Q0111: Wet mount
@@ -1010,16 +1026,19 @@ A: Azithromycin
 ben grid
 29
 Family PACT – Benefits Grid
-Page updated: October 2023
+Page updated: August 2026
 Family Planning-Related Services (9) (continued)
 ICD-10-CM Code and Description Procedures Laboratory Supplies Medications (8)
-‹‹Recurrent/persistent NGU
+Recurrent/persistent NGU
 N34.1 (Nonspecific urethritis)
 N34.2 (Other urethritis)
 N34.3 (Urethral syndrome, unspecified)
 None 87210: Wet mount
 87491: CT, amplified
 probe technique
+‹‹87494: CT, GC,
+amplified probe
+technique››
 87563: M genitalium,
 amplified probe
 technique
@@ -1034,12 +1053,12 @@ followed by
 Moxifloxacin
 A: Doxycycline
 followed by
-Azithromycin››
+Azithromycin
 [[page 30]]
 ben grid
 30
 Family PACT – Benefits Grid
-Page updated: October 2023
+Page updated: August 2026
 Family Planning-Related Services (9) (continued)
 ICD-10-CM Code and Description Procedures Laboratory Supplies Medications (8)
 PID (Uncomplicated outpatient only)
@@ -1047,8 +1066,8 @@ N70.03 (Acute salpingitis and oophoritis)
 N70.93 (Salpingitis and oophoritis,
 unspecified)
 N94.10 (Unspecified dyspareunia) (F)
-N94.11 (Superficial [introital] dyspareunia)
-(F)
+N94.11 (Superficial [introital]
+dyspareunia) (F)
 N94.12 (Deep dyspareunia) (F)
 N94.19 (Other specified dyspareunia) (F)
 N94.89 (Other conditions associated with
@@ -1063,10 +1082,13 @@ for transfer to lab
 85652: ESR
 87491: CT, amplified
 probe technique
+‹‹87494: CT, GC,
+amplified probe
+technique››
 87591: GC, amplified
 probe technique
-None R: Ceftriaxone injection
-plus
+None R: Ceftriaxone
+injection plus
 Doxycycline with
 Metronidazole
 A: Cefoxitin injection
@@ -1145,8 +1167,8 @@ ICD-10-CM Code and Description Procedures Laboratory Supplies Medications (8)
 Bacterial Vaginosis (BV)
 N76.0 (Acute vaginitis)
 ‹‹Presumptive Dx
-Z20.2 (BV –exposed partner),
-males only (37)››
+Z20.2 (BV –exposed partner), males
+only ‹‹(37)››
 None 83986: pH (females only)
 ‹‹87210: Wet mount
 (females only)
@@ -1872,7 +1894,7 @@ S5001
 ben grid
 45
 Family PACT – Benefits Grid
-Page updated: May 2026
+Page updated: August 2026
 Family Planning-Related Conditions Drug Regimens (continued)
 Condition Medication Dosage Size Regimens * Fill Frequency
 (days) Notes Clinic Code
@@ -1929,10 +1951,8 @@ secondary,
 early latent
 Penicillin G
 benzathine
-1.2 mil units/2
-ml
-2.4 mil units/4
-ml
+‹‹1.2 mil units››
+‹‹2.4 mil units››
 2.4 mil units IM
 X 1
 None Recommended
@@ -1945,10 +1965,8 @@ unknown
 duration
 Penicillin G
 benzathine
-1.2 mil units/2
-ml
-2.4 mil units/4
-ml
+‹‹1.2 mil units››
+‹‹2.4 mil units››
 2.4 mil units IM
 q wk X 3 doses
 None Recommended
