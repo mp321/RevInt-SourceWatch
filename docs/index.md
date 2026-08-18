@@ -21,31 +21,35 @@ More detail: [change review page](https://mp321.github.io/RevInt-SourceWatch/cha
 
 Every item links to the source and, when text changed, to the exact before/after diff. Finding nothing behind a flag is a normal outcome: agencies re-publish files, re-shuffle links and move pages without changing policy, and the script cannot tell that apart from a real edit. Note it and move on; if the same item keeps coming back with nothing behind it, tighten or retire its watchlist entry.
 
-- <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> `CHANGED` - [fpact_manual_docs--benfamrel](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B32916F9-83E4-4C1A-B089-BF8E6C601FA8) _(Family PACT)_
+- <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> `CHANGED` - [fpact_manual_docs--benfamrel](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact) _(Family PACT)_
   - **What happened:** The text of this document is not the same as the copy stored at the last check.
+  - **Watched file:** `https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B32916F9-83E4-4C1A-B089-BF8E6C601FA8` - a portal endpoint readable only by the checker; the link above opens the portal list it belongs to.
   - **What to do:** Open the diff to see the exact lines, re-read that part of the live source, then update whatever it feeds downstream (superbill, tipsheet, Epic review as applicable).
   - **Exact change:** [reports/diffs/20260817T142303Z_fpact--fpact_manual_docs--benfamrel.md](https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260817T142303Z_fpact--fpact_manual_docs--benfamrel.md)
-  - **Codes touched (heuristic, verify each):** `85651` (CPT, both) [p.17](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B32916F9-83E4-4C1A-B089-BF8E6C601FA8#page=17); `33` (modifier, both) [p.4](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B32916F9-83E4-4C1A-B089-BF8E6C601FA8#page=4); `81000` (CPT, removed, medium conf.) [p.10](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B32916F9-83E4-4C1A-B089-BF8E6C601FA8#page=10); `85025` (CPT, removed, medium conf.) [p.17](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B32916F9-83E4-4C1A-B089-BF8E6C601FA8#page=17); `87491` (CPT, removed, medium conf.) [p.17](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B32916F9-83E4-4C1A-B089-BF8E6C601FA8#page=17); `87624` (CPT, both, medium conf.) [p.6](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B32916F9-83E4-4C1A-B089-BF8E6C601FA8#page=6); `B37.31` (ICD-10-CM, both, medium conf.) [p.21](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B32916F9-83E4-4C1A-B089-BF8E6C601FA8#page=21); `Q0111` (HCPCS, both, low conf.) [p.14](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B32916F9-83E4-4C1A-B089-BF8E6C601FA8#page=14) - plus 3 more in the diff report
+  - **Codes on the changed lines (heuristic, verify each):** `85651` (CPT, both) p.17; `33` (modifier, both) p.4; `81000` (CPT, removed, medium conf.) p.10; `85025` (CPT, removed, medium conf.) p.17; `87491` (CPT, removed, medium conf.) p.17; `87624` (CPT, both, medium conf.) p.6; `B37.31` (ICD-10-CM, both, medium conf.) p.21; `Q0111` (HCPCS, both, low conf.) p.14 - plus 3 more in the diff report
   - **Revision stamp:** 2026-08-14T16:22:28
   - **Follow-up:** ppbi_source_section rows for any changed section
-- <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> `CHANGED` - [fpact_manual_docs--bengrid](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/59A4DC78-0B85-42B8-90A1-29DF9A757683) _(Family PACT)_
+- <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> `CHANGED` - [fpact_manual_docs--bengrid](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact) _(Family PACT)_
   - **What happened:** The text of this document is not the same as the copy stored at the last check.
+  - **Watched file:** `https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/59A4DC78-0B85-42B8-90A1-29DF9A757683` - a portal endpoint readable only by the checker; the link above opens the portal list it belongs to.
   - **What to do:** Open the diff to see the exact lines, re-read that part of the live source, then update whatever it feeds downstream (superbill, tipsheet, Epic review as applicable).
   - **Exact change:** [reports/diffs/20260817T142306Z_fpact--fpact_manual_docs--bengrid.md](https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260817T142306Z_fpact--fpact_manual_docs--bengrid.md)
-  - **Codes touched (heuristic, verify each):** `N94.11` (ICD-10-CM, both, low conf.) [p.30](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/59A4DC78-0B85-42B8-90A1-29DF9A757683#page=30); `Z20.2` (ICD-10-CM, both, low conf.) [p.32](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/59A4DC78-0B85-42B8-90A1-29DF9A757683#page=32)
+  - **Codes on the changed lines (heuristic, verify each):** `N94.11` (ICD-10-CM, both, low conf.) p.30; `Z20.2` (ICD-10-CM, both, low conf.) p.32
   - **Revision stamp:** 2026-08-14T16:22:54
   - **Follow-up:** ppbi_source_section rows for any changed section
-- <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> `CHANGED` - [fpact_manual_docs--clinic](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/235F5DF8-9BF2-4851-839C-9C857C757B10) _(Family PACT)_
+- <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> `CHANGED` - [fpact_manual_docs--clinic](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact) _(Family PACT)_
   - **What happened:** The text of this document is not the same as the copy stored at the last check.
+  - **Watched file:** `https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/235F5DF8-9BF2-4851-839C-9C857C757B10` - a portal endpoint readable only by the checker; the link above opens the portal list it belongs to.
   - **What to do:** Open the diff to see the exact lines, re-read that part of the live source, then update whatever it feeds downstream (superbill, tipsheet, Epic review as applicable).
   - **Exact change:** [reports/diffs/20260817T142316Z_fpact--fpact_manual_docs--clinic.md](https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260817T142316Z_fpact--fpact_manual_docs--clinic.md)
   - **Revision stamp:** 2026-08-14T16:23:28
   - **Follow-up:** ppbi_source_section rows for any changed section
-- <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> `CHANGED` - [fpact_manual_docs--lab](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C9BE0AAF-EEFB-433A-88AF-43D59741B72B) _(Family PACT)_
+- <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> `CHANGED` - [fpact_manual_docs--lab](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact) _(Family PACT)_
   - **What happened:** The text of this document is not the same as the copy stored at the last check.
+  - **Watched file:** `https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C9BE0AAF-EEFB-433A-88AF-43D59741B72B` - a portal endpoint readable only by the checker; the link above opens the portal list it belongs to.
   - **What to do:** Open the diff to see the exact lines, re-read that part of the live source, then update whatever it feeds downstream (superbill, tipsheet, Epic review as applicable).
   - **Exact change:** [reports/diffs/20260817T142327Z_fpact--fpact_manual_docs--lab.md](https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260817T142327Z_fpact--fpact_manual_docs--lab.md)
-  - **Codes touched (heuristic, verify each):** `88342` (CPT, both) [p.50](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C9BE0AAF-EEFB-433A-88AF-43D59741B72B#page=50); `A54.01` (ICD-10-CM, added, low conf.) [p.31](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C9BE0AAF-EEFB-433A-88AF-43D59741B72B#page=31); `A54.03` (ICD-10-CM, added, low conf.) [p.35](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C9BE0AAF-EEFB-433A-88AF-43D59741B72B#page=35); `A54.22` (ICD-10-CM, added, low conf.) [p.30](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C9BE0AAF-EEFB-433A-88AF-43D59741B72B#page=30); `A54.5` (ICD-10-CM, added, low conf.) [p.35](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C9BE0AAF-EEFB-433A-88AF-43D59741B72B#page=35); `A54.6` (ICD-10-CM, added, low conf.) [p.30](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C9BE0AAF-EEFB-433A-88AF-43D59741B72B#page=30); `A56.01` (ICD-10-CM, added, low conf.) [p.30](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C9BE0AAF-EEFB-433A-88AF-43D59741B72B#page=30); `A56.09` (ICD-10-CM, added, low conf.) [p.34](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C9BE0AAF-EEFB-433A-88AF-43D59741B72B#page=34) - plus 41 more in the diff report
+  - **Codes on the changed lines (heuristic, verify each):** `88342` (CPT, both) p.50; `A54.01` (ICD-10-CM, added, low conf.) p.31; `A54.03` (ICD-10-CM, added, low conf.) p.35; `A54.22` (ICD-10-CM, added, low conf.) p.30; `A54.5` (ICD-10-CM, added, low conf.) p.35; `A54.6` (ICD-10-CM, added, low conf.) p.30; `A56.01` (ICD-10-CM, added, low conf.) p.30; `A56.09` (ICD-10-CM, added, low conf.) p.34 - plus 41 more in the diff report
   - **Revision stamp:** 2026-08-14T16:23:59
   - **Follow-up:** ppbi_source_section rows for any changed section
 - <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> `CHANGED` - [fqhc_cms_center](https://www.cms.gov/medicare/payment/prospective-payment-systems/federally-qualified-health-centers-fqhc-center) _(FQHC)_
@@ -53,7 +57,7 @@ Every item links to the source and, when text changed, to the exact before/after
   - **What to do:** Open the diff to see the exact lines, re-read that part of the live source, then update whatever it feeds downstream (superbill, tipsheet, Epic review as applicable).
   - **Seen before:** flagged 3 times in the last 60 days. If it keeps repeating with nothing behind it, tighten or retire the watchlist entry.
   - **Exact change:** [reports/diffs/20260817T142351Z_fqhc--fqhc_cms_center.md](https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260817T142351Z_fqhc--fqhc_cms_center.md)
-  - **Codes touched (heuristic, verify each):** `10501` (CPT, both, medium conf.)
+  - **Codes on the changed lines (heuristic, verify each):** `10501` (CPT, both, medium conf.)
 - <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> `CHANGED` - [ncci_medicaid_files](https://www.cms.gov/medicare/coding-billing/ncci-medicaid/medicaid-ncci-edit-files) _(NCCI)_
   - **What happened:** The text of this document is not the same as the copy stored at the last check.
   - **What to do:** Open the diff to see the exact lines, re-read that part of the live source, then update whatever it feeds downstream (superbill, tipsheet, Epic review as applicable).
@@ -83,10 +87,10 @@ The most recent change-log event per source, newest first. Use it to confirm wha
 - 2026-08-17 - [rev_clinics_hospitals_manuals](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=clinics-and-hospitals) - `REVISION_NOTICE`
 - 2026-08-17 - [ncci_medicaid_files](https://www.cms.gov/medicare/coding-billing/ncci-medicaid/medicaid-ncci-edit-files) - `CHANGED` - [what changed](https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260817T142415Z_ncci--ncci_medicaid_files.md)
 - 2026-08-17 - [fqhc_cms_center](https://www.cms.gov/medicare/payment/prospective-payment-systems/federally-qualified-health-centers-fqhc-center) - `CHANGED` - [what changed](https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260817T142351Z_fqhc--fqhc_cms_center.md)
-- 2026-08-17 - [fpact_manual_docs--lab](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C9BE0AAF-EEFB-433A-88AF-43D59741B72B) - `CHANGED` - [what changed](https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260817T142327Z_fpact--fpact_manual_docs--lab.md)
-- 2026-08-17 - [fpact_manual_docs--clinic](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/235F5DF8-9BF2-4851-839C-9C857C757B10) - `CHANGED` - [what changed](https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260817T142316Z_fpact--fpact_manual_docs--clinic.md)
-- 2026-08-17 - [fpact_manual_docs--bengrid](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/59A4DC78-0B85-42B8-90A1-29DF9A757683) - `CHANGED` - [what changed](https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260817T142306Z_fpact--fpact_manual_docs--bengrid.md)
-- 2026-08-17 - [fpact_manual_docs--benfamrel](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B32916F9-83E4-4C1A-B089-BF8E6C601FA8) - `CHANGED` - [what changed](https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260817T142303Z_fpact--fpact_manual_docs--benfamrel.md)
+- 2026-08-17 - [fpact_manual_docs--lab](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact) - `CHANGED` - [what changed](https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260817T142327Z_fpact--fpact_manual_docs--lab.md)
+- 2026-08-17 - [fpact_manual_docs--clinic](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact) - `CHANGED` - [what changed](https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260817T142316Z_fpact--fpact_manual_docs--clinic.md)
+- 2026-08-17 - [fpact_manual_docs--bengrid](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact) - `CHANGED` - [what changed](https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260817T142306Z_fpact--fpact_manual_docs--bengrid.md)
+- 2026-08-17 - [fpact_manual_docs--benfamrel](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact) - `CHANGED` - [what changed](https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260817T142303Z_fpact--fpact_manual_docs--benfamrel.md)
 - 2026-08-03 - [mcp_apl_index](https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx) - `CHANGED` - [what changed](https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260803T162103Z_managed_medi_cal--mcp_apl_index.md)
 - 2026-07-27 - [ffs_tri_fee_schedule](https://www.dhcs.ca.gov/medi-cal-targeted-provider-rate-increases-and-investments/) - `NEW`
 - 2026-07-27 - [fpact_news_archive](https://familypact.org/news-and-updates-archive/) - `LINKS_CHANGED`
@@ -113,12 +117,13 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fpact_manual_docs--00letter - `unchanged`
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B84C9830-1762-442B-BB11-268B9BB1008B">Open the source</a> - revision 2025-05-23T00:02:23 - checked 2026-08-17</p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">Open the portal list</a> - revision 2025-05-23T00:02:23 - checked 2026-08-17</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B84C9830-1762-442B-BB11-268B9BB1008B">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B84C9830-1762-442B-BB11-268B9BB1008B</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B84C9830-1762-442B-BB11-268B9BB1008B</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> unchanged</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -130,12 +135,13 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fpact_manual_docs--0bhwtouse - `unchanged`
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/D5B367D8-ED60-4A57-A0F1-71B9626E038A">Open the source</a> - revision 2025-06-16T16:12:25 - checked 2026-08-17</p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">Open the portal list</a> - revision 2025-06-16T16:12:25 - checked 2026-08-17</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/D5B367D8-ED60-4A57-A0F1-71B9626E038A">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/D5B367D8-ED60-4A57-A0F1-71B9626E038A</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/D5B367D8-ED60-4A57-A0F1-71B9626E038A</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> unchanged</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -147,12 +153,13 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fpact_manual_docs--1tocfpact - `unchanged`
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/5416438C-154C-4523-B1C8-8C3888870C71">Open the source</a> - revision 2025-05-23T00:02:48 - checked 2026-08-17</p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">Open the portal list</a> - revision 2025-05-23T00:02:48 - checked 2026-08-17</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/5416438C-154C-4523-B1C8-8C3888870C71">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/5416438C-154C-4523-B1C8-8C3888870C71</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/5416438C-154C-4523-B1C8-8C3888870C71</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> unchanged</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -164,12 +171,13 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fpact_manual_docs--benclinic - `unchanged`
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/88BE8827-BF04-44FF-86AF-FF16018A7E43">Open the source</a> - revision 2025-11-21T18:51:48 - checked 2026-08-17</p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">Open the portal list</a> - revision 2025-11-21T18:51:48 - checked 2026-08-17</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/88BE8827-BF04-44FF-86AF-FF16018A7E43">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/88BE8827-BF04-44FF-86AF-FF16018A7E43</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/88BE8827-BF04-44FF-86AF-FF16018A7E43</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> unchanged</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -181,12 +189,13 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fpact_manual_docs--benfam - `unchanged`
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/BCA0E984-8DF3-4AD4-9499-7DFCA25DCAED">Open the source</a> - revision 2026-05-15T16:52:05 - checked 2026-08-17</p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">Open the portal list</a> - revision 2026-05-15T16:52:05 - checked 2026-08-17</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/BCA0E984-8DF3-4AD4-9499-7DFCA25DCAED">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/BCA0E984-8DF3-4AD4-9499-7DFCA25DCAED</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/BCA0E984-8DF3-4AD4-9499-7DFCA25DCAED</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> unchanged</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -198,14 +207,15 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> fpact_manual_docs--benfamrel - `CHANGED` <span style="display:inline-block;padding:.05em .5em;border-radius:1em;font-size:.72em;font-weight:600;background:#fff3cd;color:#6b4e00;white-space:nowrap">changed 2026-08-17</span>
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B32916F9-83E4-4C1A-B089-BF8E6C601FA8">Open the source</a> - revision 2026-08-14T16:22:28 - checked 2026-08-17 - <a href="https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260817T142303Z_fpact--fpact_manual_docs--benfamrel.md">text diff</a></p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">Open the portal list</a> - revision 2026-08-14T16:22:28 - checked 2026-08-17 - <a href="https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260817T142303Z_fpact--fpact_manual_docs--benfamrel.md">text diff</a></p>
 
 <p style="margin:.2em 0 .2em 2em"><b>Why:</b> The text of this document is not the same as the copy stored at the last check.</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B32916F9-83E4-4C1A-B089-BF8E6C601FA8">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B32916F9-83E4-4C1A-B089-BF8E6C601FA8</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B32916F9-83E4-4C1A-B089-BF8E6C601FA8</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> CHANGED - content text hash differs</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -218,14 +228,15 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> fpact_manual_docs--bengrid - `CHANGED` <span style="display:inline-block;padding:.05em .5em;border-radius:1em;font-size:.72em;font-weight:600;background:#fff3cd;color:#6b4e00;white-space:nowrap">changed 2026-08-17</span>
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/59A4DC78-0B85-42B8-90A1-29DF9A757683">Open the source</a> - revision 2026-08-14T16:22:54 - checked 2026-08-17 - <a href="https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260817T142306Z_fpact--fpact_manual_docs--bengrid.md">text diff</a></p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">Open the portal list</a> - revision 2026-08-14T16:22:54 - checked 2026-08-17 - <a href="https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260817T142306Z_fpact--fpact_manual_docs--bengrid.md">text diff</a></p>
 
 <p style="margin:.2em 0 .2em 2em"><b>Why:</b> The text of this document is not the same as the copy stored at the last check.</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/59A4DC78-0B85-42B8-90A1-29DF9A757683">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/59A4DC78-0B85-42B8-90A1-29DF9A757683</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/59A4DC78-0B85-42B8-90A1-29DF9A757683</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> CHANGED - content text hash differs</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -238,12 +249,13 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fpact_manual_docs--claimcms - `unchanged`
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/EBC8AE98-3518-404D-92E3-2FB7CFEB234D">Open the source</a> - revision 2025-10-16T16:11:54 - checked 2026-08-17</p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">Open the portal list</a> - revision 2025-10-16T16:11:54 - checked 2026-08-17</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/EBC8AE98-3518-404D-92E3-2FB7CFEB234D">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/EBC8AE98-3518-404D-92E3-2FB7CFEB234D</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/EBC8AE98-3518-404D-92E3-2FB7CFEB234D</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> unchanged</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -255,12 +267,13 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fpact_manual_docs--claimub - `unchanged`
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/99A15B51-5AE1-45B4-BEB3-300F9FA3974F">Open the source</a> - revision 2025-10-16T16:12:21 - checked 2026-08-17</p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">Open the portal list</a> - revision 2025-10-16T16:12:21 - checked 2026-08-17</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/99A15B51-5AE1-45B4-BEB3-300F9FA3974F">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/99A15B51-5AE1-45B4-BEB3-300F9FA3974F</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/99A15B51-5AE1-45B4-BEB3-300F9FA3974F</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> unchanged</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -272,12 +285,13 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fpact_manual_docs--clientelig - `unchanged`
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/907504BF-B611-4569-AA2F-AD19852DC99A">Open the source</a> - revision 2026-04-16T16:43:52 - checked 2026-08-17</p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">Open the portal list</a> - revision 2026-04-16T16:43:52 - checked 2026-08-17</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/907504BF-B611-4569-AA2F-AD19852DC99A">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/907504BF-B611-4569-AA2F-AD19852DC99A</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/907504BF-B611-4569-AA2F-AD19852DC99A</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> unchanged</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -289,14 +303,15 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> fpact_manual_docs--clinic - `CHANGED` <span style="display:inline-block;padding:.05em .5em;border-radius:1em;font-size:.72em;font-weight:600;background:#fff3cd;color:#6b4e00;white-space:nowrap">changed 2026-08-17</span>
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/235F5DF8-9BF2-4851-839C-9C857C757B10">Open the source</a> - revision 2026-08-14T16:23:28 - checked 2026-08-17 - <a href="https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260817T142316Z_fpact--fpact_manual_docs--clinic.md">text diff</a></p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">Open the portal list</a> - revision 2026-08-14T16:23:28 - checked 2026-08-17 - <a href="https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260817T142316Z_fpact--fpact_manual_docs--clinic.md">text diff</a></p>
 
 <p style="margin:.2em 0 .2em 2em"><b>Why:</b> The text of this document is not the same as the copy stored at the last check.</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/235F5DF8-9BF2-4851-839C-9C857C757B10">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/235F5DF8-9BF2-4851-839C-9C857C757B10</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/235F5DF8-9BF2-4851-839C-9C857C757B10</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> CHANGED - content text hash differs</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -309,12 +324,13 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fpact_manual_docs--drug - `unchanged`
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/7C45AD4C-2A15-41B5-98E1-93F2C94370D5">Open the source</a> - revision 2026-03-16T16:27:32 - checked 2026-08-17</p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">Open the portal list</a> - revision 2026-03-16T16:27:32 - checked 2026-08-17</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/7C45AD4C-2A15-41B5-98E1-93F2C94370D5">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/7C45AD4C-2A15-41B5-98E1-93F2C94370D5</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/7C45AD4C-2A15-41B5-98E1-93F2C94370D5</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> unchanged</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -326,12 +342,13 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fpact_manual_docs--drugonsite - `unchanged`
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/796C137C-F4E2-44CF-BE51-CCC0D94D7EAC">Open the source</a> - revision 2026-06-16T15:30:42 - checked 2026-08-17</p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">Open the portal list</a> - revision 2026-06-16T15:30:42 - checked 2026-08-17</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/796C137C-F4E2-44CF-BE51-CCC0D94D7EAC">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/796C137C-F4E2-44CF-BE51-CCC0D94D7EAC</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/796C137C-F4E2-44CF-BE51-CCC0D94D7EAC</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> unchanged</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -343,12 +360,13 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fpact_manual_docs--fam - `unchanged`
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/A3EA3460-4D92-45A3-9F1C-BF9B8A2DC528">Open the source</a> - revision 2025-01-16T17:32:57 - checked 2026-08-17</p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">Open the portal list</a> - revision 2025-01-16T17:32:57 - checked 2026-08-17</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/A3EA3460-4D92-45A3-9F1C-BF9B8A2DC528">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/A3EA3460-4D92-45A3-9F1C-BF9B8A2DC528</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/A3EA3460-4D92-45A3-9F1C-BF9B8A2DC528</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> unchanged</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -360,12 +378,13 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fpact_manual_docs--hapid - `unchanged`
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/4DD29A09-8E9C-4E33-A06C-4F2EFC196326">Open the source</a> - revision 2025-06-16T16:11:43 - checked 2026-08-17</p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">Open the portal list</a> - revision 2025-06-16T16:11:43 - checked 2026-08-17</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/4DD29A09-8E9C-4E33-A06C-4F2EFC196326">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/4DD29A09-8E9C-4E33-A06C-4F2EFC196326</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/4DD29A09-8E9C-4E33-A06C-4F2EFC196326</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> unchanged</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -377,14 +396,15 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> fpact_manual_docs--lab - `CHANGED` <span style="display:inline-block;padding:.05em .5em;border-radius:1em;font-size:.72em;font-weight:600;background:#fff3cd;color:#6b4e00;white-space:nowrap">changed 2026-08-17</span>
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C9BE0AAF-EEFB-433A-88AF-43D59741B72B">Open the source</a> - revision 2026-08-14T16:23:59 - checked 2026-08-17 - <a href="https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260817T142327Z_fpact--fpact_manual_docs--lab.md">text diff</a></p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">Open the portal list</a> - revision 2026-08-14T16:23:59 - checked 2026-08-17 - <a href="https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260817T142327Z_fpact--fpact_manual_docs--lab.md">text diff</a></p>
 
 <p style="margin:.2em 0 .2em 2em"><b>Why:</b> The text of this document is not the same as the copy stored at the last check.</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C9BE0AAF-EEFB-433A-88AF-43D59741B72B">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C9BE0AAF-EEFB-433A-88AF-43D59741B72B</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C9BE0AAF-EEFB-433A-88AF-43D59741B72B</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> CHANGED - content text hash differs</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -397,12 +417,13 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fpact_manual_docs--office - `unchanged`
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/7CD4E2BB-3DF5-4FEC-9B68-9D8841D0A55F">Open the source</a> - revision 2024-07-16T16:09:38 - checked 2026-08-17</p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">Open the portal list</a> - revision 2024-07-16T16:09:38 - checked 2026-08-17</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/7CD4E2BB-3DF5-4FEC-9B68-9D8841D0A55F">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/7CD4E2BB-3DF5-4FEC-9B68-9D8841D0A55F</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/7CD4E2BB-3DF5-4FEC-9B68-9D8841D0A55F</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> unchanged</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -414,12 +435,13 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fpact_manual_docs--pharm - `unchanged`
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B4632038-8414-4115-BE87-3AF4C0B42E00">Open the source</a> - revision 2023-08-06T02:00:31 - checked 2026-08-17</p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">Open the portal list</a> - revision 2023-08-06T02:00:31 - checked 2026-08-17</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B4632038-8414-4115-BE87-3AF4C0B42E00">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B4632038-8414-4115-BE87-3AF4C0B42E00</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B4632038-8414-4115-BE87-3AF4C0B42E00</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> unchanged</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -431,12 +453,13 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fpact_manual_docs--pharmacy - `unchanged`
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/5D034DCC-2326-4204-A490-63334447067F">Open the source</a> - revision 2025-10-16T16:12:48 - checked 2026-08-17</p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">Open the portal list</a> - revision 2025-10-16T16:12:48 - checked 2026-08-17</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/5D034DCC-2326-4204-A490-63334447067F">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/5D034DCC-2326-4204-A490-63334447067F</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/5D034DCC-2326-4204-A490-63334447067F</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> unchanged</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -448,12 +471,13 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fpact_manual_docs--progstand - `unchanged`
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/AC89DF41-778B-49CD-ACF4-EAF9C4644904">Open the source</a> - revision 2026-07-16T16:28:52 - checked 2026-08-17</p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">Open the portal list</a> - revision 2026-07-16T16:28:52 - checked 2026-08-17</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/AC89DF41-778B-49CD-ACF4-EAF9C4644904">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/AC89DF41-778B-49CD-ACF4-EAF9C4644904</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/AC89DF41-778B-49CD-ACF4-EAF9C4644904</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> unchanged</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -465,12 +489,13 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fpact_manual_docs--provenrollres - `unchanged`
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/1FC58406-1722-4888-80A5-7B1DBBEB9F29">Open the source</a> - revision 2026-07-16T16:29:22 - checked 2026-08-17</p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">Open the portal list</a> - revision 2026-07-16T16:29:22 - checked 2026-08-17</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/1FC58406-1722-4888-80A5-7B1DBBEB9F29">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/1FC58406-1722-4888-80A5-7B1DBBEB9F29</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/1FC58406-1722-4888-80A5-7B1DBBEB9F29</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> unchanged</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -482,12 +507,13 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fpact_manual_docs--provrel - `unchanged`
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/AAB9378C-D021-4208-AB7A-B6A7A7549643">Open the source</a> - revision 2025-02-14T17:38:10 - checked 2026-08-17</p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">Open the portal list</a> - revision 2025-02-14T17:38:10 - checked 2026-08-17</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/AAB9378C-D021-4208-AB7A-B6A7A7549643">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/AAB9378C-D021-4208-AB7A-B6A7A7549643</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/AAB9378C-D021-4208-AB7A-B6A7A7549643</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> unchanged</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -499,12 +525,13 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fpact_manual_docs--radif - `unchanged`
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/A8A04AB0-8C04-4653-9A48-0C765462A3A0">Open the source</a> - revision 2023-08-06T02:02:15 - checked 2026-08-17</p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">Open the portal list</a> - revision 2023-08-06T02:02:15 - checked 2026-08-17</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/A8A04AB0-8C04-4653-9A48-0C765462A3A0">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/A8A04AB0-8C04-4653-9A48-0C765462A3A0</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/A8A04AB0-8C04-4653-9A48-0C765462A3A0</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> unchanged</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -516,12 +543,13 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fpact_manual_docs--tarf - `unchanged`
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/0CEE81EC-C0E9-4B4A-89FD-AE96C95FA705">Open the source</a> - revision 2023-08-21T21:13:15 - checked 2026-08-17</p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">Open the portal list</a> - revision 2023-08-21T21:13:15 - checked 2026-08-17</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/0CEE81EC-C0E9-4B4A-89FD-AE96C95FA705">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/0CEE81EC-C0E9-4B4A-89FD-AE96C95FA705</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/0CEE81EC-C0E9-4B4A-89FD-AE96C95FA705</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=family-pact</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> unchanged</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -587,12 +615,13 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fqhc_rural_manual_docs--rural - `unchanged`
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C983B7D9-42B3-4543-BF93-D272AB764BDD">Open the source</a> - revision 2026-07-16T16:54:22 - checked 2026-08-17</p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=clinics-and-hospitals">Open the portal list</a> - revision 2026-07-16T16:54:22 - checked 2026-08-17</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C983B7D9-42B3-4543-BF93-D272AB764BDD">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C983B7D9-42B3-4543-BF93-D272AB764BDD</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C983B7D9-42B3-4543-BF93-D272AB764BDD</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=clinics-and-hospitals">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=clinics-and-hospitals</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> unchanged</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -604,12 +633,13 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fqhc_rural_manual_docs--ruralcd - `unchanged`
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/2D80A3B6-A32B-4131-BE63-12EE7243A849">Open the source</a> - revision 2026-06-16T15:46:44 - checked 2026-08-17</p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=clinics-and-hospitals">Open the portal list</a> - revision 2026-06-16T15:46:44 - checked 2026-08-17</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/2D80A3B6-A32B-4131-BE63-12EE7243A849">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/2D80A3B6-A32B-4131-BE63-12EE7243A849</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/2D80A3B6-A32B-4131-BE63-12EE7243A849</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=clinics-and-hospitals">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=clinics-and-hospitals</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> unchanged</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -621,12 +651,13 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fqhc_rural_manual_docs--ruralex - `unchanged`
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/08EC7DD1-AABE-4187-9D9E-F155C3DAF1CA">Open the source</a> - revision 2023-08-06T01:58:46 - checked 2026-08-17</p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=clinics-and-hospitals">Open the portal list</a> - revision 2023-08-06T01:58:46 - checked 2026-08-17</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/08EC7DD1-AABE-4187-9D9E-F155C3DAF1CA">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/08EC7DD1-AABE-4187-9D9E-F155C3DAF1CA</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/08EC7DD1-AABE-4187-9D9E-F155C3DAF1CA</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=clinics-and-hospitals">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=clinics-and-hospitals</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> unchanged</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -638,12 +669,13 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> fqhc_rural_manual_docs--ruralhosp - `unchanged`
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/3E8C0259-6D59-4F20-BFA3-E5AE5754F39D">Open the source</a> - revision 2024-01-16T18:04:36 - checked 2026-08-17</p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=clinics-and-hospitals">Open the portal list</a> - revision 2024-01-16T18:04:36 - checked 2026-08-17</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/3E8C0259-6D59-4F20-BFA3-E5AE5754F39D">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/3E8C0259-6D59-4F20-BFA3-E5AE5754F39D</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/3E8C0259-6D59-4F20-BFA3-E5AE5754F39D</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=clinics-and-hospitals">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=clinics-and-hospitals</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> unchanged</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -766,12 +798,13 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> ob_cpsp_manual_docs--pregcom - `unchanged`
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/7E3FF663-2682-4A45-82A5-688A7D42FD46">Open the source</a> - revision 2025-07-16T16:25:15 - checked 2026-08-17</p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=obstetrics">Open the portal list</a> - revision 2025-07-16T16:25:15 - checked 2026-08-17</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/7E3FF663-2682-4A45-82A5-688A7D42FD46">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/7E3FF663-2682-4A45-82A5-688A7D42FD46</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/7E3FF663-2682-4A45-82A5-688A7D42FD46</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=obstetrics">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=obstetrics</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> unchanged</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -783,12 +816,13 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> ob_cpsp_manual_docs--pregcomexc - `unchanged`
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/21AA9E49-37BD-473D-BBF6-0756C8ED95C6">Open the source</a> - revision 2025-07-16T16:25:32 - checked 2026-08-17</p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=obstetrics">Open the portal list</a> - revision 2025-07-16T16:25:32 - checked 2026-08-17</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/21AA9E49-37BD-473D-BBF6-0756C8ED95C6">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/21AA9E49-37BD-473D-BBF6-0756C8ED95C6</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/21AA9E49-37BD-473D-BBF6-0756C8ED95C6</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=obstetrics">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=obstetrics</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> unchanged</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -800,12 +834,13 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 #### <span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#e6f4ea;color:#0f5132;white-space:nowrap">Clear</span> ob_cpsp_manual_docs--pregcomlis - `unchanged`
 
-<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B49DC7A8-9C98-475A-AFF8-F3702FE0AB0F">Open the source</a> - revision 2025-07-16T16:25:54 - checked 2026-08-17</p>
+<p style="margin:.2em 0 .2em 2em"><a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=obstetrics">Open the portal list</a> - revision 2025-07-16T16:25:54 - checked 2026-08-17</p>
 
 <details style="margin:.3em 0 1.1em 2em">
 <summary>Details: exactly what is checked here, how, and its caveats</summary>
 <ul style="line-height:1.6;margin:.5em 0;padding-left:1.4em">
-<li><b>URL checked:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B49DC7A8-9C98-475A-AFF8-F3702FE0AB0F">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B49DC7A8-9C98-475A-AFF8-F3702FE0AB0F</a></li>
+<li><b>URL checked:</b> <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B49DC7A8-9C98-475A-AFF8-F3702FE0AB0F</code> - a portal endpoint that returns the document only to the checker's token, so it does not open in a browser</li>
+<li><b>Where to open it:</b> <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=obstetrics">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=obstetrics</a> - the portal list this section is published in; open it there.</li>
 <li><b>How:</b> The portal's JSON list endpoint is queried; every document it lists is watched individually (PDF text hash plus the portal's revision date). New documents are auto-discovered and removals are flagged. Checked by the weekly script run (Mondays 14:00 UTC, GitHub Actions).</li>
 <li><b>This run:</b> unchanged</li>
 <li><b>Last checked:</b> 2026-08-17</li>
@@ -895,41 +930,41 @@ Each source: status first, then its links, then a Details fold-out with exactly 
 
 ### Source URLs at a glance
 
-One row per watched URL, grouped and **colored by website**.
+One row per watched URL, grouped and **colored by website**. Portal endpoints are shown as plain text: they return their document only to the checker's token, so the link to open is the portal page on that source's row above.
 
 <ul style="list-style:none;padding-left:0;font-size:.85em;line-height:1.7">
 <li style="color:#14632e;font-weight:600">fpact_news_archive - <a href="https://familypact.org/news-and-updates-archive/" style="color:#14632e">https://familypact.org/news-and-updates-archive/</a></li>
-<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--00letter - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B84C9830-1762-442B-BB11-268B9BB1008B" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B84C9830-1762-442B-BB11-268B9BB1008B</a></li>
-<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--0bhwtouse - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/D5B367D8-ED60-4A57-A0F1-71B9626E038A" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/D5B367D8-ED60-4A57-A0F1-71B9626E038A</a></li>
-<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--1tocfpact - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/5416438C-154C-4523-B1C8-8C3888870C71" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/5416438C-154C-4523-B1C8-8C3888870C71</a></li>
-<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--benclinic - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/88BE8827-BF04-44FF-86AF-FF16018A7E43" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/88BE8827-BF04-44FF-86AF-FF16018A7E43</a></li>
-<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--benfam - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/BCA0E984-8DF3-4AD4-9499-7DFCA25DCAED" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/BCA0E984-8DF3-4AD4-9499-7DFCA25DCAED</a></li>
-<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--benfamrel - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B32916F9-83E4-4C1A-B089-BF8E6C601FA8" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B32916F9-83E4-4C1A-B089-BF8E6C601FA8</a></li>
-<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--bengrid - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/59A4DC78-0B85-42B8-90A1-29DF9A757683" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/59A4DC78-0B85-42B8-90A1-29DF9A757683</a></li>
-<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--claimcms - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/EBC8AE98-3518-404D-92E3-2FB7CFEB234D" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/EBC8AE98-3518-404D-92E3-2FB7CFEB234D</a></li>
-<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--claimub - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/99A15B51-5AE1-45B4-BEB3-300F9FA3974F" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/99A15B51-5AE1-45B4-BEB3-300F9FA3974F</a></li>
-<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--clientelig - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/907504BF-B611-4569-AA2F-AD19852DC99A" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/907504BF-B611-4569-AA2F-AD19852DC99A</a></li>
-<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--clinic - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/235F5DF8-9BF2-4851-839C-9C857C757B10" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/235F5DF8-9BF2-4851-839C-9C857C757B10</a></li>
-<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--drug - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/7C45AD4C-2A15-41B5-98E1-93F2C94370D5" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/7C45AD4C-2A15-41B5-98E1-93F2C94370D5</a></li>
-<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--drugonsite - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/796C137C-F4E2-44CF-BE51-CCC0D94D7EAC" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/796C137C-F4E2-44CF-BE51-CCC0D94D7EAC</a></li>
-<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--fam - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/A3EA3460-4D92-45A3-9F1C-BF9B8A2DC528" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/A3EA3460-4D92-45A3-9F1C-BF9B8A2DC528</a></li>
-<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--hapid - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/4DD29A09-8E9C-4E33-A06C-4F2EFC196326" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/4DD29A09-8E9C-4E33-A06C-4F2EFC196326</a></li>
-<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--lab - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C9BE0AAF-EEFB-433A-88AF-43D59741B72B" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C9BE0AAF-EEFB-433A-88AF-43D59741B72B</a></li>
-<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--office - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/7CD4E2BB-3DF5-4FEC-9B68-9D8841D0A55F" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/7CD4E2BB-3DF5-4FEC-9B68-9D8841D0A55F</a></li>
-<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--pharm - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B4632038-8414-4115-BE87-3AF4C0B42E00" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B4632038-8414-4115-BE87-3AF4C0B42E00</a></li>
-<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--pharmacy - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/5D034DCC-2326-4204-A490-63334447067F" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/5D034DCC-2326-4204-A490-63334447067F</a></li>
-<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--progstand - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/AC89DF41-778B-49CD-ACF4-EAF9C4644904" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/AC89DF41-778B-49CD-ACF4-EAF9C4644904</a></li>
-<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--provenrollres - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/1FC58406-1722-4888-80A5-7B1DBBEB9F29" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/1FC58406-1722-4888-80A5-7B1DBBEB9F29</a></li>
-<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--provrel - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/AAB9378C-D021-4208-AB7A-B6A7A7549643" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/AAB9378C-D021-4208-AB7A-B6A7A7549643</a></li>
-<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--radif - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/A8A04AB0-8C04-4653-9A48-0C765462A3A0" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/A8A04AB0-8C04-4653-9A48-0C765462A3A0</a></li>
-<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--tarf - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/0CEE81EC-C0E9-4B4A-89FD-AE96C95FA705" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/0CEE81EC-C0E9-4B4A-89FD-AE96C95FA705</a></li>
-<li style="color:#5b2d86;font-weight:600">fqhc_rural_manual_docs--rural - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C983B7D9-42B3-4543-BF93-D272AB764BDD" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C983B7D9-42B3-4543-BF93-D272AB764BDD</a></li>
-<li style="color:#5b2d86;font-weight:600">fqhc_rural_manual_docs--ruralcd - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/2D80A3B6-A32B-4131-BE63-12EE7243A849" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/2D80A3B6-A32B-4131-BE63-12EE7243A849</a></li>
-<li style="color:#5b2d86;font-weight:600">fqhc_rural_manual_docs--ruralex - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/08EC7DD1-AABE-4187-9D9E-F155C3DAF1CA" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/08EC7DD1-AABE-4187-9D9E-F155C3DAF1CA</a></li>
-<li style="color:#5b2d86;font-weight:600">fqhc_rural_manual_docs--ruralhosp - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/3E8C0259-6D59-4F20-BFA3-E5AE5754F39D" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/3E8C0259-6D59-4F20-BFA3-E5AE5754F39D</a></li>
-<li style="color:#5b2d86;font-weight:600">ob_cpsp_manual_docs--pregcom - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/7E3FF663-2682-4A45-82A5-688A7D42FD46" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/7E3FF663-2682-4A45-82A5-688A7D42FD46</a></li>
-<li style="color:#5b2d86;font-weight:600">ob_cpsp_manual_docs--pregcomexc - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/21AA9E49-37BD-473D-BBF6-0756C8ED95C6" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/21AA9E49-37BD-473D-BBF6-0756C8ED95C6</a></li>
-<li style="color:#5b2d86;font-weight:600">ob_cpsp_manual_docs--pregcomlis - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B49DC7A8-9C98-475A-AFF8-F3702FE0AB0F" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B49DC7A8-9C98-475A-AFF8-F3702FE0AB0F</a></li>
+<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--00letter - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B84C9830-1762-442B-BB11-268B9BB1008B</code></li>
+<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--0bhwtouse - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/D5B367D8-ED60-4A57-A0F1-71B9626E038A</code></li>
+<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--1tocfpact - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/5416438C-154C-4523-B1C8-8C3888870C71</code></li>
+<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--benclinic - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/88BE8827-BF04-44FF-86AF-FF16018A7E43</code></li>
+<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--benfam - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/BCA0E984-8DF3-4AD4-9499-7DFCA25DCAED</code></li>
+<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--benfamrel - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B32916F9-83E4-4C1A-B089-BF8E6C601FA8</code></li>
+<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--bengrid - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/59A4DC78-0B85-42B8-90A1-29DF9A757683</code></li>
+<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--claimcms - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/EBC8AE98-3518-404D-92E3-2FB7CFEB234D</code></li>
+<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--claimub - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/99A15B51-5AE1-45B4-BEB3-300F9FA3974F</code></li>
+<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--clientelig - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/907504BF-B611-4569-AA2F-AD19852DC99A</code></li>
+<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--clinic - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/235F5DF8-9BF2-4851-839C-9C857C757B10</code></li>
+<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--drug - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/7C45AD4C-2A15-41B5-98E1-93F2C94370D5</code></li>
+<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--drugonsite - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/796C137C-F4E2-44CF-BE51-CCC0D94D7EAC</code></li>
+<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--fam - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/A3EA3460-4D92-45A3-9F1C-BF9B8A2DC528</code></li>
+<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--hapid - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/4DD29A09-8E9C-4E33-A06C-4F2EFC196326</code></li>
+<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--lab - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C9BE0AAF-EEFB-433A-88AF-43D59741B72B</code></li>
+<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--office - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/7CD4E2BB-3DF5-4FEC-9B68-9D8841D0A55F</code></li>
+<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--pharm - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B4632038-8414-4115-BE87-3AF4C0B42E00</code></li>
+<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--pharmacy - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/5D034DCC-2326-4204-A490-63334447067F</code></li>
+<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--progstand - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/AC89DF41-778B-49CD-ACF4-EAF9C4644904</code></li>
+<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--provenrollres - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/1FC58406-1722-4888-80A5-7B1DBBEB9F29</code></li>
+<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--provrel - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/AAB9378C-D021-4208-AB7A-B6A7A7549643</code></li>
+<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--radif - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/A8A04AB0-8C04-4653-9A48-0C765462A3A0</code></li>
+<li style="color:#5b2d86;font-weight:600">fpact_manual_docs--tarf - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/0CEE81EC-C0E9-4B4A-89FD-AE96C95FA705</code></li>
+<li style="color:#5b2d86;font-weight:600">fqhc_rural_manual_docs--rural - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/C983B7D9-42B3-4543-BF93-D272AB764BDD</code></li>
+<li style="color:#5b2d86;font-weight:600">fqhc_rural_manual_docs--ruralcd - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/2D80A3B6-A32B-4131-BE63-12EE7243A849</code></li>
+<li style="color:#5b2d86;font-weight:600">fqhc_rural_manual_docs--ruralex - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/08EC7DD1-AABE-4187-9D9E-F155C3DAF1CA</code></li>
+<li style="color:#5b2d86;font-weight:600">fqhc_rural_manual_docs--ruralhosp - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/3E8C0259-6D59-4F20-BFA3-E5AE5754F39D</code></li>
+<li style="color:#5b2d86;font-weight:600">ob_cpsp_manual_docs--pregcom - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/7E3FF663-2682-4A45-82A5-688A7D42FD46</code></li>
+<li style="color:#5b2d86;font-weight:600">ob_cpsp_manual_docs--pregcomexc - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/21AA9E49-37BD-473D-BBF6-0756C8ED95C6</code></li>
+<li style="color:#5b2d86;font-weight:600">ob_cpsp_manual_docs--pregcomlis - <code>https://mcweb.apps.prd.cammis.medi-cal.ca.gov/assets/B49DC7A8-9C98-475A-AFF8-F3702FE0AB0F</code></li>
 <li style="color:#5b2d86;font-weight:600">rev_clinics_hospitals_manuals - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=clinics-and-hospitals" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=clinics-and-hospitals</a></li>
 <li style="color:#5b2d86;font-weight:600">rev_general_medicine_manuals - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=general-medicine" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=general-medicine</a></li>
 <li style="color:#5b2d86;font-weight:600">rev_inpatient_manuals - <a href="https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=inpatient-services" style="color:#5b2d86">https://mcweb.apps.prd.cammis.medi-cal.ca.gov/publications/manual?community=inpatient-services</a></li>
@@ -974,7 +1009,7 @@ One row per watched URL, grouped and **colored by website**.
 
 ---
 
-**Keeping it working:** if the date of the last check at the top of this page is more than 35 days old, the script may not be running - notify the maintainer. Sources move: when an agency changes a URL, retires a page or reorganizes a portal, the watchlist entry has to be updated before that source is monitored again, so treat a source that has been unreachable for more than one check as unwatched until it is fixed.
+**Keeping it working:** if the date of the last check at the top of this page is more than 35 days old, the script may not be running - notify the maintainer. Sources move, and a moved source is not watched until its watchlist entry is repointed, so treat anything unreachable for more than one check as unwatched until it is fixed.
 
 This page is rebuilt by each script run (`write_dashboard` in [source_check.py](https://github.com/mp321/RevInt-SourceWatch/blob/main/source_check.py)); edit that, not this file.
 
