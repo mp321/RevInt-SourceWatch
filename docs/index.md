@@ -1,17 +1,17 @@
 # Revenue Integrity Source Watch
 
-This page keeps track of the official sources behind Revenue Integrity work - Medi-Cal and Family PACT provider manuals, bulletins, fee schedule pages and policy letters - and shows what has changed on them. A script re-reads each source on a schedule and lists anything that moved since the previous check, so updates can be caught and routed (provider communication, superbill or tipsheet, Epic review) instead of being noticed by accident. **Always review and validate anything here against the live official source before using it or acting on it.**
+This page keeps track of the official sources behind Revenue Integrity work Medi-Cal and Family PACT provider manuals, bulletins, fee schedule pages and policy letters and shows what has changed. A script runs that reads each source on a schedule and lists anything that moved since the previous check. **Always review and validate anything here against the live official source before using it or acting on it.**
 
 **Last check:** script ran 2026-08-17 · **items needing review: 6** · revision notices: 4
 
-**How to read this page**
+**Sections on this page**
 
-- **Needs review** - start here; this is what needs looking at now.
-- **Manual revision notices** - lower priority, date-only.
-- **Sources changed in the last 60 days** - the recent trail.
+- **Needs review** 
+- **Manual revision notices** 
+- **Sources changed in the last 60 days** 
 - **All sources by program** - current status of every watched source.
 
-Status words like `CHANGED` are explained in the [status legend](#status-legend) at the bottom.
+Status words are explained in the [status legend](#status-legend) at the bottom.
 
 More detail: [change review page](https://mp321.github.io/RevInt-SourceWatch/changes.html) (one block per change) · [change history (CSV)](https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/changes_log.csv) · [watchlist](https://github.com/mp321/RevInt-SourceWatch/blob/main/watchlist.yaml) · [all reports](https://github.com/mp321/RevInt-SourceWatch/tree/main/reports)
 
