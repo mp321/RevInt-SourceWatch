@@ -284,12 +284,35 @@ def download_note(url: str) -> str:
     return ""
 
 
+# The mcweb portal serves manual PDFs as Directus file ids and its document
+# list from a GraphQL endpoint. Both answer only to the portal's bearer token:
+# opening one in a browser returns a JSON permission error, not the document
+# (verified 2026-08-17, with and without ?download). The checker still reads
+# them; the pages should never offer one as something a reader can click.
+MACHINE_ENDPOINT_RE = re.compile(r"^/(assets/[0-9A-Fa-f-]{36}|graphql)/?$")
+
+
+def machine_endpoint(url: str) -> bool:
+    """True when a watched URL is readable by the checker but not by a click.
+    Such a URL renders as plain text and the entry's portal_page is linked
+    instead."""
+    return bool(MACHINE_ENDPOINT_RE.match(urlparse(url or "").path))
+
+
+def url_html(url: str) -> str:
+    """A watched URL as HTML: a link when a reader can open it, plain text
+    when only the checker can."""
+    return (f"<code>{esc(url)}</code>" if machine_endpoint(url)
+            else f'<a href="{esc(url)}">{esc(url)}</a>')
+
+
 def page_link(url: str, page, is_pdf: bool) -> str:
     """Markdown cell for a page reference: a working deep link when the source
-    is a PDF (browser viewers honor #page=N), plain text otherwise."""
+    is a PDF a reader can open (browser viewers honor #page=N), plain text
+    otherwise."""
     if page is None:
         return ""
-    if is_pdf and url:
+    if is_pdf and url and not machine_endpoint(url):
         return f"[p.{page}]({url}#page={page})"
     return f"p.{page}"
 
@@ -853,7 +876,7 @@ class SnapshotStore:
                           "Machine-extracted text; diffs can contain extraction noise.",
                           ""]
                 if codes:
-                    lines += ["## Possible billing codes touched",
+                    lines += ["## Billing codes on the changed lines",
                               "",
                               "Heuristic extraction from changed lines only - "
                               "**verify every row against the live source "
@@ -955,13 +978,16 @@ def check_manual_list(entry: dict, base: dict, fetch: Fetcher, snaps: SnapshotSt
     eid, program = entry["id"], entry["program"]
     rows: list[dict] = []
     frag: dict = {}
+    # The watched URLs here are token-only endpoints, so every row carries the
+    # portal page as the URL a person opens (open_url reads human_url first).
+    portal = entry.get("portal_page") or entry.get("url", "")
 
     def row(rid, verdict, detail, url="", page_updated="", report=""):
         rkeys, rnote = entry_registry(entry)
         return {"program": program, "id": rid, "checked_at": ts,
                 "type": "manual_list", "verdict": verdict, "detail": detail,
                 "page_updated": page_updated, "shell": "", "http": "",
-                "url": url or entry.get("url", ""),
+                "url": url or entry.get("url", ""), "human_url": portal,
                 "registry_keys": ";".join(rkeys),
                 "registry_note": rnote,
                 "note": entry.get("note", ""), "diff_report": report}
@@ -972,8 +998,6 @@ def check_manual_list(entry: dict, base: dict, fetch: Fetcher, snaps: SnapshotSt
                         "endpoint (README: one-time DevTools step)"))
         frag[eid] = base.get(eid, {})
         return rows, frag
-
-    portal = entry.get("portal_page") or entry.get("url", "")
 
     # Credential: env secret first, public bundle token as self-healing
     # fallback (see DIRECTUS_TOKEN_RE). No token value is logged or stored.
@@ -1122,7 +1146,9 @@ def check_manual_list(entry: dict, base: dict, fetch: Fetcher, snaps: SnapshotSt
             detail = f"portal revision date '{rev_prev}' -> '{d['revision_date']}'"
         report = snaps.handle(entry["program"], cid, verdict, sig, d["url"],
                               extra={"Title": d["title"],
-                                     "Portal revision date": d["revision_date"] or "n/a"})
+                                     "Portal revision date":
+                                         d["revision_date"] or "n/a",
+                                     "Portal page": portal})
         if status == "304":
             frag[cid] = {**prev, "checked_at": ts,
                          "revision_date": d["revision_date"] or rev_prev,
@@ -1673,15 +1699,23 @@ def fine_print(r: dict, last_change: dict[str, tuple[str, str]]) -> list[str]:
     li: list[str] = []
     if url:
         dn = download_note(url)
-        li.append(f'<li><b>{label}:</b> <a href="{esc(url)}">{esc(url)}</a>'
+        gated = machine_endpoint(url)
+        li.append(f"<li><b>{label}:</b> {url_html(url)}"
                   + (f" {esc(dn.strip())}" if dn else "")
+                  + (" - a portal endpoint that returns the document only to "
+                     "the checker's token, so it does not open in a browser"
+                     if gated else "")
                   + (" (template; {issue} is the probed issue number)"
                      if r.get("type") == "bulletin_probe" else "") + "</li>")
         if r.get("human_url"):
             li.append('<li><b>Where to open it:</b> '
                       f'<a href="{esc(r["human_url"])}">{esc(r["human_url"])}'
-                      "</a> - the page this file is published on. The script "
-                      "checks the file itself; a person should start here.</li>")
+                      "</a> - "
+                      + ("the portal list this section is published in; open "
+                         "it there." if gated else
+                         "the page this file is published on. The script "
+                         "checks the file itself; a person should start "
+                         "here.") + "</li>")
     else:
         li.append(f"<li><b>{label}:</b> none configured yet.</li>")
     if is_manual:
@@ -1753,9 +1787,14 @@ def needs_review_item(r: dict, repeats: int = 0) -> list[str]:
            f"  - **What happened:** {md_cell(plain_why(r)) or 'no detail recorded.'}"]
     out += link_change_bullets(r, indent="    ")
     if r.get("human_url") and r.get("url"):
-        out.append(f"  - **Watched file:** [{md_cell(r['url'])}]({r['url']})"
-                   f"{download_note(r['url'])} - the link above opens the "
-                   f"page it is published on.")
+        out.append("  - **Watched file:** "
+                   + (f"`{md_cell(r['url'])}` - a portal endpoint readable "
+                      "only by the checker; the link above opens the portal "
+                      "list it belongs to."
+                      if machine_endpoint(r["url"]) else
+                      f"[{md_cell(r['url'])}]({r['url']})"
+                      f"{download_note(r['url'])} - the link above opens the "
+                      "page it is published on."))
     out.append(f"  - **What to do:** {md_cell(action_for(r['verdict']))}")
     if repeats > 1:
         # The section intro already explains why a repeat flag is usually a
@@ -1788,8 +1827,8 @@ def needs_review_item(r: dict, repeats: int = 0) -> list[str]:
             parts.append(ref)
         more = f" - plus {len(codes) - 8} more in the diff report" \
             if len(codes) > 8 else ""
-        out.append("  - **Codes touched (heuristic, verify each):** "
-                   + "; ".join(parts) + more)
+        out.append("  - **Codes on the changed lines (heuristic, verify "
+                   "each):** " + "; ".join(parts) + more)
     if r.get("page_updated"):
         out.append(f"  - **Revision stamp:** "
                    f"{md_cell(stamps_display(r['page_updated']))}")
@@ -1853,6 +1892,32 @@ def pending_rows(watchlist: Path | None, results: list[dict]) -> list[dict]:
     return rows
 
 
+def with_reader_urls(results: list[dict],
+                     watchlist: Path | None) -> list[dict]:
+    """Rows with the URL a person opens filled in.
+
+    manual_list children watch a token-only portal endpoint, so the reader's
+    link is the entry's portal_page. A run writes that onto the row; this
+    fills it in for reports stored before it did, which is what a
+    --dashboard-only rebuild renders from. Rows are copied, never mutated."""
+    if not watchlist or not Path(watchlist).exists():
+        return results
+    try:
+        portals = {e["id"]: e["portal_page"]
+                   for e in load_watchlist(Path(watchlist), None)
+                   if e.get("portal_page")}
+    except (OSError, yaml.YAMLError):
+        return results
+    out = []
+    for r in results:
+        portal = portals.get((r.get("id") or "").split("--", 1)[0], "")
+        if (portal and not r.get("human_url")
+                and machine_endpoint(r.get("url", ""))):
+            r = {**r, "human_url": portal}
+        out.append(r)
+    return out
+
+
 def write_dashboard(path: Path, report: dict,
                     log_path: Path | None = None,
                     watchlist: Path | None = None) -> None:
@@ -1866,7 +1931,7 @@ def write_dashboard(path: Path, report: dict,
     """
     last_change = last_change_map(log_path)
     repeat_counts = change_count_map(log_path, recent_cutoff())
-    results = sorted(report["results"]
+    results = sorted(with_reader_urls(report["results"], watchlist)
                      + pending_rows(watchlist, report["results"]),
                      key=lambda r: (r["program"], r["id"]))
     flagged = [r for r in results if r["verdict"] in NEEDS_REVIEW
@@ -2032,9 +2097,15 @@ def write_dashboard(path: Path, report: dict,
             if open_url(r):
                 opened = open_url(r)
                 dn = download_note(opened)
-                bits.append(f'<a href="{esc(opened)}">Open the source</a>'
+                # A token-only endpoint has no reader link of its own, so the
+                # label says where the link actually goes and the fold-out
+                # carries the endpoint itself.
+                gated = machine_endpoint(r.get("url", ""))
+                bits.append(f'<a href="{esc(opened)}">'
+                            + ("Open the portal list" if gated
+                               else "Open the source") + "</a>"
                             + (f" {esc(dn.strip())}" if dn else ""))
-                if r.get("human_url") and r.get("url"):
+                if r.get("human_url") and r.get("url") and not gated:
                     bits.append(f'<a href="{esc(r["url"])}">watched file</a>'
                                 + f" {esc(download_note(r['url']).strip())}")
             if r.get("page_updated"):
@@ -2057,17 +2128,21 @@ def write_dashboard(path: Path, report: dict,
             lines.append("")
 
     lines += ["### Source URLs at a glance", "",
-              "One row per watched URL, grouped and **colored by website**.",
-              "",
+              "One row per watched URL, grouped and **colored by website**. "
+              "Portal endpoints are shown as plain text: they return their "
+              "document only to the checker's token, so the link to open is "
+              "the portal page on that source's row above.", "",
               '<ul style="list-style:none;padding-left:0;font-size:.85em;'
               'line-height:1.7">']
     for r in sorted((r for r in results if r.get("url")),
                     key=lambda r: (urlparse(r["url"]).hostname or "", r["id"])):
         c = host_color(r["url"])
-        lines.append(
-            f'<li style="color:{c};font-weight:600">{esc(r["id"])} - '
-            f'<a href="{esc(r["url"])}" style="color:{c}">'
-            f'{esc(r["url"])}</a></li>')
+        shown = (f"<code>{esc(r['url'])}</code>"
+                 if machine_endpoint(r["url"]) else
+                 f'<a href="{esc(r["url"])}" style="color:{c}">'
+                 f'{esc(r["url"])}</a>')
+        lines.append(f'<li style="color:{c};font-weight:600">'
+                     f"{esc(r['id'])} - {shown}</li>")
     lines += ["</ul>", ""]
 
     lines += section("Status legend")
@@ -2082,11 +2157,10 @@ def write_dashboard(path: Path, report: dict,
     lines += ["---", "",
               "**Keeping it working:** if the date of the last check at the "
               "top of this page is more than 35 days old, the script may not "
-              "be running - notify the maintainer. Sources move: when an "
-              "agency changes a URL, retires a page or reorganizes a portal, "
-              "the watchlist entry has to be updated before that source is "
-              "monitored again, so treat a source that has been unreachable "
-              "for more than one check as unwatched until it is fixed.", "",
+              "be running - notify the maintainer. Sources move, and a moved "
+              "source is not watched until its watchlist entry is repointed, "
+              "so treat anything unreachable for more than one check as "
+              "unwatched until it is fixed.", "",
               "This page is rebuilt by each script run (`write_dashboard` in "
               f"[source_check.py]({blob_url('source_check.py')})); edit that, "
               "not this file.", "",
@@ -2104,13 +2178,15 @@ def write_dashboard(path: Path, report: dict,
 
 
 def write_changes_page(path: Path, report: dict,
-                       log_path: Path | None = None) -> None:
+                       log_path: Path | None = None,
+                       watchlist: Path | None = None) -> None:
     """Team-facing change review page (docs/changes.md, published on Pages
     next to the dashboard). One block per item needing review: what changed
     in plain language, the exact codes with page-anchored deep links into the
     source, and the full diff. Built for minimal reading - every line points
     at a working URL for the source of truth."""
-    results = sorted(report["results"], key=lambda r: (r["program"], r["id"]))
+    results = sorted(with_reader_urls(report["results"], watchlist),
+                     key=lambda r: (r["program"], r["id"]))
     flagged = [r for r in results if r["verdict"] in NEEDS_REVIEW]
     n_codes = len({e["code"] for r in flagged
                    for e in (r.get("codes_touched") or [])})
@@ -2118,17 +2194,18 @@ def write_changes_page(path: Path, report: dict,
         tldr = "nothing changed at the last check."
     else:
         tldr = (f"{len(flagged)} source(s) need review, "
-                + (f"{n_codes} billing code(s) touched." if n_codes
-                   else "no billing codes detected in the changes."))
+                + (f"{n_codes} billing code(s) on the changed lines."
+                   if n_codes
+                   else "no billing codes detected on the changed lines."))
     lines = [
         "# Change review", "",
         f"**TL;DR:** {tldr}", "",
         f"[Back to the dashboard]({pages_home_url()}) - script last ran "
         f"{report['generated'][:10]}.", "",
         "Each block below is one flagged source: what happened, any billing "
-        "codes the changed lines appear to touch (heuristic - **verify each "
-        "against the linked source before acting**), and a working link to "
-        "the exact spot in the official document.", "",
+        "codes found on the changed lines (heuristic - **verify each against "
+        "the linked source before acting**), and a link to the official "
+        "document.", "",
     ]
     if not flagged:
         lines += [f"{badge('ok')} Nothing to review from the last check.", ""]
@@ -2148,14 +2225,20 @@ def write_changes_page(path: Path, report: dict,
                          f"({opened}){download_note(opened)}")
             if r.get("human_url") and r.get("url"):
                 lines.append("")
-                lines.append(f"**Watched file:** [{md_cell(r['url'])}]"
-                             f"({r['url']}){download_note(r['url'])}")
+                lines.append("**Watched file:** "
+                             + (f"`{md_cell(r['url'])}` - a portal endpoint "
+                                "readable only by the checker; open the "
+                                "source link above."
+                                if machine_endpoint(r["url"]) else
+                                f"[{md_cell(r['url'])}]({r['url']})"
+                                f"{download_note(r['url'])}"))
             lines.append("")
         codes = r.get("codes_touched") or []
         if codes:
             url = r.get("url", "")
             is_pdf = any(e["page"] is not None for e in codes)
-            lines += ["**Codes that moved** (machine-extracted, verify each):",
+            lines += ["**Codes on the changed lines** (machine-extracted, "
+                      "verify each):",
                       "",
                       "| Code | System | What | Confidence "
                       "| Open at |", "|---|---|---|---|---|"]
@@ -2244,7 +2327,8 @@ def _code_ref(e: dict, url: str, is_pdf: bool) -> str:
     if e["confidence"] != "high":
         bits.append(f"{e['confidence']} confidence")
     if e["page"] is not None:
-        bits.append(f"p.{e['page']} {url}#page={e['page']}" if is_pdf and url
+        deep = is_pdf and url and not machine_endpoint(url)
+        bits.append(f"p.{e['page']} {url}#page={e['page']}" if deep
                     else f"p.{e['page']}")
     return f"{e['code']} ({', '.join(bits)})"
 
@@ -2291,8 +2375,8 @@ def write_run_summary(root: Path, report: dict) -> None:
             if r["id"] not in report["needs_review"]:
                 continue
             lines.append(f"[{r['program']}] {r['id']} - {r['verdict']}")
-            if r.get("url"):
-                lines.append(f"  {r['url']}")
+            if open_url(r):
+                lines.append(f"  {open_url(r)}")
             lines.append(f"  what happened: {plain_why(r) or r['detail']}")
             parsed = parse_link_detail(r.get("detail"))
             if parsed:
@@ -2315,7 +2399,8 @@ def write_run_summary(root: Path, report: dict) -> None:
                 is_pdf = any(e["page"] is not None for e in codes)
                 added = [e for e in codes if e["direction"] in ("added", "both")]
                 removed = [e for e in codes if e["direction"] in ("removed", "both")]
-                lines.append("  Codes touched (heuristic - verify each):")
+                lines.append("  Codes on the changed lines "
+                             "(heuristic - verify each):")
                 if added:
                     lines.append("    added:   " + ", ".join(
                         _code_ref(e, url, is_pdf) for e in added))
@@ -2442,7 +2527,8 @@ def run(watchlist: Path, out_dir: Path, only, update: bool,
         write_dashboard(dashboard, report, log_path=out_dir / "changes_log.csv",
                         watchlist=watchlist)
         write_changes_page(dashboard.parent / "changes.md", report,
-                           log_path=out_dir / "changes_log.csv")
+                           log_path=out_dir / "changes_log.csv",
+                           watchlist=watchlist)
 
     print(f"\nneeds review: {len(review)}  ->  {out_dir}/check_{stamp}.csv")
     if update:
@@ -2542,7 +2628,8 @@ def main() -> int:
         write_dashboard(dash, report, log_path=args.out / "changes_log.csv",
                         watchlist=args.watchlist)
         write_changes_page(dash.parent / "changes.md", report,
-                           log_path=args.out / "changes_log.csv")
+                           log_path=args.out / "changes_log.csv",
+                           watchlist=args.watchlist)
         write_sources_csv(args.watchlist, args.out)
         print(f"dashboard + changes page regenerated from {report_path} "
               f"-> {dash}, {dash.parent / 'changes.md'}")

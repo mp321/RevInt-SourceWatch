@@ -1,15 +1,18 @@
 # Revenue Integrity Source Watch
 
-Automated change monitoring for the California Medi-Cal and Family PACT payer
-programs: provider manuals, program news, fee schedules, All Plan Letters,
+A weekly change check on the official California Medi-Cal and Family PACT
+billing documents. Each run takes a snapshot of every source, compares it
+against the previous snapshot, and names exactly what changed: which
+document, which page, and when.
+
+It watches provider manuals, program news, fee schedules, All Plan Letters,
 RHC/FQHC material, CPSP perinatal billing sections and the NCCI Medicaid edit
 files.
 
-A scheduled script re-reads every source in `watchlist.yaml`, extracts and
-hashes the text, and compares it against the stored baseline. On a change it
-writes a before/after diff, lists the billing codes the changed lines appear
-to touch, rebuilds the dashboard, and opens a GitHub Issue for the run. Every
-prior version stays in git.
+Sources are listed in `watchlist.yaml`. On a change the script writes a
+before/after diff, lists any billing codes found on the changed lines,
+rebuilds the dashboard, and opens a GitHub Issue which is a simple method to
+email found changes to the user. Every prior version stays in git.
 
 Verify against the live official source before use.
 
@@ -23,38 +26,36 @@ own free email service and announces most of what is monitored here.
 Subscribe at https://camcss.powerappsportals.com/ and select the relevant
 subscriptions (Family PACT, General Medicine, RHC/FQHC, Obstetrics).
 
-**This tool is supplemental.** It does not replace MCSS. It adds a record of
-exactly what changed: text-based detection for PDFs so a metadata-only
-republish raises no false alarm, per-section monitoring of the Family PACT,
-RHC/FQHC and CPSP manual sections, a stored snapshot of every prior version,
-and explicit "cannot see this page" statuses where automated checking is
-blocked.
+**This tool is supplemental to MCSS.** What it adds is a
+record of exactly what changed: full-text detection for PDFs, so a
+metadata-only republish raises no false alarm; per-section monitoring of the
+Family PACT, RHC/FQHC and CPSP (Obstetrics program) manual sections; a stored snapshot of every
+prior version; and a named status for every source it cannot read, so a monitoring gap shows on the page instead of passing as silence.
 
 ## Scope
 
-The script reads the DHCS provider portal's manual list, which carries a
-Revision Date per section, then fetches each section PDF and captures its full
-text plus the "Page updated" stamp printed on each page. It reports which
-sections and which pages moved. Family PACT has the deepest coverage: all 24
-of its manual sections are watched individually.
+Manual sections are monitored at two depths, both driven from the DHCS
+provider portal's document list and its per-section Revision Date.
 
-The same depth extends to any other DHCS manual community by adding one
-watchlist entry. Inpatient Services, Clinics and Hospitals, Obstetrics and
-General Medicine currently run as date-only revision notices instead, because
-those communities hold 115 to 246 PDFs each; they are upgraded to full text
-monitoring when a program earns it.
+**Full text (31 sections).** All 24 Family PACT sections, the four RHC/FQHC
+sections inside Clinics and Hospitals, and the three CPSP perinatal sections
+inside Obstetrics. Each section PDF is fetched every run and its whole text
+hashed, along with the "Page updated" stamp printed on each page. A change
+reports the section, the pages whose stamp moved, the before/after diff and
+any billing codes on the changed lines.
 
-A community can also be covered both ways at once. Obstetrics runs a date-only
-notice across all 172 sections, and the three Comprehensive Perinatal Services
-Program (CPSP) sections inside it are additionally monitored in full text, so
-a CPSP change arrives with the changed lines and the codes they touch while
-the rest of the manual still reports which sections moved. The same
-filename-filter mechanism scopes the RHC/FQHC sections inside Clinics and
-Hospitals.
+**Revision date only.** Inpatient Services, Clinics and Hospitals, General
+Medicine and Obstetrics hold 115 to 246 sections each, so those communities
+are watched by Revision Date alone: the notice names the sections that moved,
+with no text and no diff. Any community moves to full text by adding one
+watchlist entry, filtered by filename where only part of it is wanted.
 
-Coverage is exactly what `watchlist.yaml` lists, and only while those URLs
-stay valid. Agencies move pages and retire URLs; a source that reports
-UNREACHABLE for more than one run needs its entry fixed.
+A community can run both ways at once. Obstetrics reports date-only notices
+across all 172 of its sections while its three CPSP sections are also read in
+full, so a CPSP change arrives with its diff and the rest of the manual still
+reports which sections moved.
+
+Coverage is exactly what `watchlist.yaml` lists, and only while those URLs keep working. When a source moves, its entry has to be repointed before it is watched again: a source reporting UNREACHABLE for more than one run is not being watched.
 
 ## Where to look
 
@@ -89,8 +90,8 @@ without touching the checker.
 ## Reading a flagged item
 
 Each item shows the source, its status, what happened, any billing codes the
-text heuristic caught (with `url#page=N` deep links for PDFs), and a link to
-the diff when text changed. In a diff, `-` lines were removed and `+` lines
+text heuristic caught (with `url#page=N` deep links where the PDF opens
+directly), and a link to the diff when text changed. In a diff, `-` lines were removed and `+` lines
 added.
 
 Finding nothing behind a flag is a normal outcome. Sources republish files,
@@ -117,7 +118,8 @@ verification.** It can be wrong or incomplete, especially on table-heavy PDFs.
   medium, distinctive format with no vocabulary low. When unsure, the code is
   included at low confidence rather than dropped.
 - Page numbers come from the extracted PDF text and render as `url#page=N`
-  deep links, which browser PDF viewers honor.
+  deep links, which browser PDF viewers honor. For a PDF that only the checker
+  can fetch, the page number is shown without a link.
 
 `tests/test_code_extraction.py` covers this plus the fetch guards that keep a
 bad response from being mistaken for a change. Run `python -m pytest tests/`.
@@ -209,6 +211,9 @@ The dashboard explains each status under "Status legend".
   source is unwatched until the fetch works again.
 - mcweb portal pages are client-rendered. Without the JSON endpoint wired up,
   an entry stays honestly blind and MCSS covers detection.
+- The portal serves manual PDFs from an endpoint that answers only to its own
+  token, so those URLs cannot be opened by clicking. The pages show the
+  endpoint as plain text and link the portal list to open the section from.
 - leginfo statutes and eCFR text are not monitored; both block automated
   fetches. eCFR publishes a public API that would bring Title 42 Part 405 back
   under watch.
