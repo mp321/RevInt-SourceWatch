@@ -1,6 +1,6 @@
 # Revenue Integrity Source Watch
 
-This page track changes in the official sources used by Revenue Integrity, mainly medical payer programs such as Medi-Cal and associated programs (Family PACT, CPSP etc). A script runs automatically on a scheduled cadence and checks each source, highlighting anything changed since the previous review, helping catch updates relevant to billing and revenue integrity (ICD-10 changes, coverage rules etc). **Always review and validate any listed change against the live official source before use.**
+This page tracks changes in the official sources used by Revenue Integrity, mainly medical payer programs such as Medi-Cal and associated programs. A script runs on a scheduled cadence and checks each source, highlighting anything changed since the previous review, helping catch updates relevant to billing and revenue integrity (ICD-10 changes, coverage rules etc). **Always review and validate any listed change against the live official source before use.**
 
 **Last check:** script ran 2026-08-17 · **items needing review: 6** · revision notices: 4
 
