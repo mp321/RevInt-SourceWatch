@@ -1960,22 +1960,20 @@ def write_dashboard(path: Path, report: dict,
 
     lines = [
         "# Revenue Integrity Source Watch", "",
-        "This page keeps track of the official sources behind Revenue "
-        "Integrity work - Medi-Cal and Family PACT provider manuals, "
-        "bulletins, fee schedule pages and policy letters - and shows what "
-        "has changed on them. A script re-reads each source on a schedule "
-        "and lists anything that moved since the previous check, so updates "
-        "can be caught and routed (provider communication, superbill or "
-        "tipsheet, Epic review) instead of being noticed by accident. "
-        "**Always review and validate anything here against the live "
-        "official source before using it or acting on it.**", "",
+        "This page track changes in the official sources used by Revenue "
+        "Integrity, mainly medical payer programs such as Medi-Cal and associated programs (Family PACT, CPSP etc). "
+        "A script runs automatically on a scheduled cadence and checks each source, highlighting "
+        "anything changed since the last review, helping catch updates "
+        "relevant to billing and revenue integrity (ICD-10 changes, coverage rules etc). "
+        "**Always review and validate any listed change against the live "
+        "official source before use.**", "",
         f"**Last check:** script ran {report['generated'][:10]} · "
         f"**items needing review: {len(flagged)}**"
         + (f" · revision notices: {len(notices)}" if notices else ""), "",
         "**How to read this page**", "",
         *guide, "",
-        "Status words like `CHANGED` are explained in the "
-        "[status legend](#status-legend) at the bottom.", "",
+        "Status words are explained at the bottom in "
+        "[status legend](#status-legend).", "",
         f"More detail: [change review page]({pages_home_url()}changes.html) "
         "(one block per change) · "
         f"[change history (CSV)]({blob_url('reports/changes_log.csv')}) · "
@@ -2157,17 +2155,11 @@ def write_dashboard(path: Path, report: dict,
     lines += ["---", "",
               "**Keeping it working:** if the date of the last check at the "
               "top of this page is more than 35 days old, the script may not "
-              "be running - notify the maintainer. Sources move, and a moved "
-              "source is not watched until its watchlist entry is repointed, "
-              "so treat anything unreachable for more than one check as "
-              "unwatched until it is fixed.", "",
-              "This page is rebuilt by each script run (`write_dashboard` in "
-              f"[source_check.py]({blob_url('source_check.py')})); edit that, "
-              "not this file.", "",
+              "be running - notify the maintainer. Sources can change, so update watchlist as needed.", "",
+              "This page is rebuilt each time script runs (`write_dashboard` method in "
+              f"[source_check.py]({blob_url('source_check.py')})); edit that to update this page.", "",
               "Provided as-is, without warranty of any kind, as general "
-              "decision support. It is not legal, coding or billing advice "
-              "and is not a source of record - the live official source "
-              "always governs. Built and maintained by "
+              "decision support. It is not legal, coding or billing advice - always refer to the live official source. Built and maintained by "
               "[Michael Phipps](https://github.com/mp321); released under "
               f"the MIT license ([LICENSE]({blob_url('LICENSE')})). If you "
               "reuse or adapt it, a credit link back to the "
@@ -2180,11 +2172,11 @@ def write_dashboard(path: Path, report: dict,
 def write_changes_page(path: Path, report: dict,
                        log_path: Path | None = None,
                        watchlist: Path | None = None) -> None:
-    """Team-facing change review page (docs/changes.md, published on Pages
+    """Change review page (docs/changes.md, published on Pages
     next to the dashboard). One block per item needing review: what changed
     in plain language, the exact codes with page-anchored deep links into the
     source, and the full diff. Built for minimal reading - every line points
-    at a working URL for the source of truth."""
+    at a URL for the source of truth review."""
     results = sorted(with_reader_urls(report["results"], watchlist),
                      key=lambda r: (r["program"], r["id"]))
     flagged = [r for r in results if r["verdict"] in NEEDS_REVIEW]
@@ -2291,8 +2283,8 @@ def write_changes_page(path: Path, report: dict,
         lines += rows
         lines += ["</table>", "</details>", ""]
     lines += ["---", "",
-              "Machine-generated review aid, rebuilt by each script run. "
-              "Not a source of record and not billing advice - validate every "
+              "Machine-generated review aid, rebuilt each time script is ran. "
+              "Do not consider an official source of record - validate any "
               "item against the live official source before acting. Provided "
               "as-is, without warranty. Built and maintained by "
               "[Michael Phipps](https://github.com/mp321); released under the "
