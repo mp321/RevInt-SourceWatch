@@ -227,14 +227,14 @@ J7296 Levonorgestrel IU (kyleena) 19.5 mg 1 IUC
 drug
 7
 Family PACT – Drugs: Onsite Dispensing Billing Instructions
-Page updated: March 2026
+Page updated: September 2026
 Table of Onsite Dispensed Contraceptives Billed with NDC (continued)
 HCPCS Code Contraceptives Dosage Size
 J7297 Levonorgestrel IU (Liletta), 52 mg 1 IUC
 J7298 Levonorgestrel IU (Mirena), 52 mg 1 IUC
-‹‹J7299 Intrauterine copper contraceptive (Miudella) 1 IUC››
-J7300 ‹‹Intrauterine copper contraceptive
-(Paragard)››
+J7299 Intrauterine copper contraceptive (Miudella) 1 IUC
+J7300 Intrauterine copper contraceptive
+(Paragard)
 1 IUC
 J7301 Levonorgestrel IU (Skyla), 13.5 mg 1 IUC
 J7304U1 Contraceptive patch (norelgestromin and
@@ -243,9 +243,7 @@ ethinyl estradiol transdermal system)
 J7304U2 Contraceptive patch (levonorgestrel and
 ethinyl estradiol transdermal system)
 1 patch
-J7307 Etonogestrel contraceptive implant
-(Implanon)
-1 implant
+J7307 ‹‹Etonogestrel contraceptive implant›› 1 implant
 S4993 Oral contraceptives 1 cycle
 Onsite Dispensing Price Guide
 The Drugs: Onsite Dispensing Price Guide section contains the following information for

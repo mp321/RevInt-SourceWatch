@@ -1038,17 +1038,19 @@ There are no additional laboratory tests for this method.
 ben fam
 32
 Family PACT – Benefits: Family Planning
-Page updated: June 2022
+Page updated: September 2026
 Natural Family Planning
 Encounters for natural family planning are billed with the following ICD-10-CM codes.
-‹‹ICD-10-CM Code Table: Natural Family Planning››
+ICD-10-CM Code Table: Natural Family Planning
 ICD-10-CM Code Description
 Z30.02 Counseling and instruction in natural family planning to avoid
 pregnancy
 Z31.61 Procreative counseling and advice using natural family planning
+‹‹Fertility Awareness Methods (FAM) and Lactation Amenorrhea Method (LAM) may be
+included in natural family planning services.››
 Services reimbursable under ICD-10-CM code Z31.61 are limited to the following:
 Office Visits
-‹‹CPT Code Table: Office Visits››
+CPT Code Table: Office Visits
 CPT Code Description
 99202, 99203 New patient
 99211 thru 99213 Established patient
@@ -1057,8 +1059,8 @@ Visits – New and Established Clients” on a preceding page in this section.
 Use of codes 99202, 99203, 99211 thru 99213 or 99401U6 thru 99403U6, with inclusive
 diagnosis code Z31.61, are limited to a maximum of two occurrences in any combination in a
 12-month period per recipient, per provider.
-‹‹Laboratory››
-‹‹CPT Code Table: Laboratory››
+Laboratory
+CPT Code Table: Laboratory
 CPT Code Description
 81025 Urine pregnancy test, by visual color comparison methods
 Supplies
