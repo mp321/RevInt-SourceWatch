@@ -1,10 +1,24 @@
 # Change review
 
-**TL;DR:** 1 source(s) need review, no billing codes detected on the changed lines.
+**TL;DR:** 3 source(s) need review, no billing codes detected on the changed lines.
 
-[Back to the dashboard](https://mp321.github.io/RevInt-SourceWatch/) - script last ran 2026-09-28.
+[Back to the dashboard](https://mp321.github.io/RevInt-SourceWatch/) - script last ran 2026-10-05.
 
 Each block below is one flagged source: what happened, any billing codes found on the changed lines (heuristic - **verify each against the linked source before acting**), and a link to the official document.
+
+<div style="height:1.6em"></div>
+
+## fqhc_cms_center - FQHC
+
+<div style="height:3px;background:#1f4e79;border-radius:2px;margin:.15em 0 1.2em"></div>
+
+<span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> `CHANGED` - detected 2026-10-05
+
+**What happened:** The text of this document is not the same as the copy stored at the last check.
+
+**Source of truth:** [https://www.cms.gov/medicare/payment/prospective-payment-systems/federally-qualified-health-centers-fqhc-center](https://www.cms.gov/medicare/payment/prospective-payment-systems/federally-qualified-health-centers-fqhc-center)
+
+**Full before/after diff:** [reports/diffs/20261005T212615Z_fqhc--fqhc_cms_center.md](https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20261005T212615Z_fqhc--fqhc_cms_center.md)
 
 <div style="height:1.6em"></div>
 
@@ -12,13 +26,27 @@ Each block below is one flagged source: what happened, any billing codes found o
 
 <div style="height:3px;background:#1f4e79;border-radius:2px;margin:.15em 0 1.2em"></div>
 
-<span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> `CHANGED` - detected 2026-09-28
+<span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> `CHANGED` - detected 2026-10-05
 
 **What happened:** The text of this document is not the same as the copy stored at the last check.
 
 **Source of truth:** [https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx](https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx)
 
-**Full before/after diff:** [reports/diffs/20260928T202226Z_managed_medi_cal--mcp_apl_index.md](https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260928T202226Z_managed_medi_cal--mcp_apl_index.md)
+**Full before/after diff:** [reports/diffs/20261005T212611Z_managed_medi_cal--mcp_apl_index.md](https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20261005T212611Z_managed_medi_cal--mcp_apl_index.md)
+
+<div style="height:1.6em"></div>
+
+## ncci_medicaid_files - NCCI
+
+<div style="height:3px;background:#1f4e79;border-radius:2px;margin:.15em 0 1.2em"></div>
+
+<span style="display:inline-block;padding:.1em .6em;border-radius:1em;font-size:.82em;font-weight:600;background:#ffebe9;color:#7a271a;white-space:nowrap">Needs review</span> `CHANGED` - detected 2026-10-05
+
+**What happened:** The text of this document is not the same as the copy stored at the last check.
+
+**Source of truth:** [https://www.cms.gov/medicare/coding-billing/ncci-medicaid/medicaid-ncci-edit-files](https://www.cms.gov/medicare/coding-billing/ncci-medicaid/medicaid-ncci-edit-files)
+
+**Full before/after diff:** [reports/diffs/20261005T212639Z_ncci--ncci_medicaid_files.md](https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20261005T212639Z_ncci--ncci_medicaid_files.md)
 
 <div style="height:1.6em"></div>
 
@@ -30,6 +58,9 @@ Each block below is one flagged source: what happened, any billing codes found o
 <summary>Last 20 recorded change event(s) (newest first)</summary>
 <table style="font-size:.9em;line-height:1.5">
 <tr><th>Date</th><th>Source</th><th>Status</th><th>Diff</th></tr>
+<tr><td>2026-10-05</td><td><code>ncci_medicaid_files</code></td><td><code>CHANGED</code></td><td><a href="https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20261005T212639Z_ncci--ncci_medicaid_files.md">diff</a></td></tr>
+<tr><td>2026-10-05</td><td><code>fqhc_cms_center</code></td><td><code>CHANGED</code></td><td><a href="https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20261005T212615Z_fqhc--fqhc_cms_center.md">diff</a></td></tr>
+<tr><td>2026-10-05</td><td><code>mcp_apl_index</code></td><td><code>CHANGED</code></td><td><a href="https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20261005T212611Z_managed_medi_cal--mcp_apl_index.md">diff</a></td></tr>
 <tr><td>2026-09-28</td><td><code>mcp_apl_index</code></td><td><code>CHANGED</code></td><td><a href="https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260928T202226Z_managed_medi_cal--mcp_apl_index.md">diff</a></td></tr>
 <tr><td>2026-09-21</td><td><code>rev_general_medicine_manuals</code></td><td><code>REVISION_NOTICE</code></td><td></td></tr>
 <tr><td>2026-09-21</td><td><code>rev_obstetrics_manuals</code></td><td><code>REVISION_NOTICE</code></td><td></td></tr>
@@ -47,9 +78,6 @@ Each block below is one flagged source: what happened, any billing codes found o
 <tr><td>2026-08-31</td><td><code>rev_clinics_hospitals_manuals</code></td><td><code>REVISION_NOTICE</code></td><td></td></tr>
 <tr><td>2026-08-31</td><td><code>fqhc_cms_center</code></td><td><code>CHANGED</code></td><td><a href="https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260831T194936Z_fqhc--fqhc_cms_center.md">diff</a></td></tr>
 <tr><td>2026-08-24</td><td><code>mcp_apl_index</code></td><td><code>CHANGED</code></td><td><a href="https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260824T143811Z_managed_medi_cal--mcp_apl_index.md">diff</a></td></tr>
-<tr><td>2026-08-17</td><td><code>ncci_medicaid_files</code></td><td><code>CHANGED</code></td><td><a href="https://github.com/mp321/RevInt-SourceWatch/blob/main/reports/diffs/20260817T142415Z_ncci--ncci_medicaid_files.md">diff</a></td></tr>
-<tr><td>2026-08-17</td><td><code>rev_general_medicine_manuals</code></td><td><code>REVISION_NOTICE</code></td><td></td></tr>
-<tr><td>2026-08-17</td><td><code>rev_obstetrics_manuals</code></td><td><code>REVISION_NOTICE</code></td><td></td></tr>
 </table>
 </details>
 

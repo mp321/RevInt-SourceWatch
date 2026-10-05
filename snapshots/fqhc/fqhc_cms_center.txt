@@ -85,8 +85,7 @@ title h3 About Us Data resources Letters Regulations & Guidance Training resourc
 Coverage Transitions Initiatives Back to main menu section title h2 Burden Reduction Back to menu
 section title h3 Overview Crushing Fraud, Waste, & Abuse Back to menu section title h3 Overview
 E-health Back to menu section title h3 Overview Electronic Prior Authorization Back to menu section
-title h3 Overview Flu Back to menu section title h3 Overview Health Equity Back to menu section
-title h3 Coverage to Care Cobertura de atención Grants & awards Health Technology Ecosystem Back to
+title h3 Overview Flu Back to menu section title h3 Overview Health Technology Ecosystem Back to
 menu section title h3 Overview Healthcare Advisory Committee Back to menu section title h3 Overview
 Healthplan price transparency Back to menu section title h3 Overview Hospital price transparency
 Back to menu section title h3 Overview Innovation Center Back to menu section title h3 Overview
