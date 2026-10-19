@@ -118,7 +118,7 @@ rural cd
 4
 Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs):
 Billing Codes
-Page updated: June 2026
+Page updated: October 2026
 In addition, providers are required to keep copies of billing records, including supporting
 documents (for example, authorization approvals, lab orders and results, and invoices for
 drugs or supplies). All documentation must be legible, dated, timed, and authenticated by
@@ -133,7 +133,7 @@ Health Centers (FQHCs) section of this manual.
 Billing Forms
 When submitting claims directly to DHCS, RHC and FQHC providers should submit the ASC
 X12N 837I standard electronic form through the Computer Media Claims (CMC) system or
-use the CMS Form 1450 (UB-04) paper claim form, unless otherwise instructed.›› For more
+use the CMS Form 1450 (UB-04) paper claim form, unless otherwise instructed. For more
 information on how to complete the forms, refer to the UB-04 Completion: Outpatient
 Services and UB-04 Submission and Timeliness Instructions section of this manual or
 Special Billing Instructions: Federally Qualified Health Centers Rural Health Clinics and
@@ -146,20 +146,26 @@ and must include the physical address of the location where services were render
 Box 1). This requirement is mandated to ensure compliance with Medi-Cal billing standards
 and to accurately attribute the service to the appropriate location for crossover, Medi-Cal
 MCP, and Medi-Cal fee-for-service claims.
-Informational Lines
-An informational line is an associated line item(s) listed immediately following the Health
-Insurance Portability and Accountability Act (HIPAA)-compliant RHC or FQHC per-visit
-billing code set used to bill the visit with the Medi-Cal member.›› Informational lines contain
-all CPT-4 Level I or HCPCS Level II code(s) that identify the actual service(s) provided.
-When billing for RHC or FQHC covered services, informational lines should be included in
-addition to the RHC or FQHC per visit billing code sets included in this manual.
-Note: Informational lines are not separately reimbursed.
+‹‹ICD-10-CM Code Requirement
+RHC and FQHC providers must include at least one clinically appropriate ICD-10-CM code
+when completing a UB-04 claim form or the 837I electronic form. Providers can include
+ICD-10-CM codes in Box 67 of the UB-04 claim form.
+For UB-04 claim completion instructions, refer to the UB-04 Completion: Outpatient Services
+section of the provider manual.››
 [[page 5]]
 rural cd
 5
 Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs):
 Billing Codes
-Page updated: June 2026
+Page updated: October 2026
+Informational Lines
+An informational line is an associated line item(s) listed immediately following the Health
+Insurance Portability and Accountability Act (HIPAA)-compliant RHC or FQHC per-visit
+billing code set used to bill the visit with the Medi-Cal member. Informational lines contain all
+CPT-4 Level I or HCPCS Level II code(s) that identify the actual service(s) provided.
+When billing for RHC or FQHC covered services, informational lines should be included in
+addition to the RHC or FQHC per visit billing code sets included in this manual.
+Note: Informational lines are not separately reimbursed.
 When submitting informational lines, RHC and FQHC providers should remember the
 following:
 • The Revenue Code field on the information claim detail line must be a four-digit
@@ -187,16 +193,16 @@ FQHC providers not assigned as the member’s primary care physician or clinic) 
 to coordinate with the Medi-Cal member’s MCP for authorization and payment. The clinic
 must obtain prior authorization to act as an OON provider and redirect the member to their
 in-network provider or request reassignment from MCP to their clinic.
-Members enrolled in a Medi-Cal MCP or Medi-Cal Dental Managed Care (DMC) plan must
-receive services from in-network MCP providers, except in urgent or other isolated
-circumstances. If the member is not enrolled in a Medi-Cal Dental managed care plan, a
-straight Medi-Cal dental visit may be billed, per-visit code 03.
 [[page 6]]
 rural cd
 6
 Part 2 – Rural Health Clinics (RHCs) and Federally Qualified Health Centers (FQHCs):
 Billing Codes
-Page updated: June 2026
+Page updated: October 2026
+Members enrolled in a Medi-Cal MCP or Medi-Cal Dental Managed Care (DMC) plan must
+receive services from in-network MCP providers, except in urgent or other isolated
+circumstances. If the member is not enrolled in a Medi-Cal Dental managed care plan, a
+straight Medi-Cal dental visit may be billed, per-visit code 03.
 If an RHC or FQHC delivers an urgent or isolated medical, mental health, or dental service
 to a member not assigned to them, the RHC or FQHC must:
 • Document and retain records of all efforts to obtain OON authorization from the
@@ -253,8 +259,8 @@ All questions and correspondence should be directed to DHCS’ A&I Division, FRO
 email at: clinics@dhcs.ca.gov.
 Medical or Mental Health Services for Medi-Cal Fee-For-Service
 Members
-Table of Per-Visit Billing Code Set: Medical or Mental Health Services for Fee-
-For-Service Members
+Table of Per-Visit Billing Code Set: Medical or Mental Health Services for
+Fee-For-Service Members
 Revenue
 Code
 Procedure Code
@@ -342,8 +348,7 @@ Procedure
 Code and
 Modifier
 Description
-0521 T1015 SE Dental services that are delivered to members enrolled in
-a Medi-Cal DMC plan
+0521 T1015 SE Dental services that are delivered to members enrolled in a Medi-Cal DMC plan
 RHC and FQHC providers must use this MCP differential rate (wrap) per-visit billing code set
 (revenue and procedure codes with modifier) for dental services rendered to an MCP
 member enrolled in a DMC Plan.
@@ -504,12 +509,12 @@ When the Medi-Cal eligibility verification system indicates a member has origina
 coverage, Medicare must be billed first to the appropriate Medicare Administrative
 Contractor (MAC) for processing.
 For members enrolled in a Medicare Advantage non-capitated arrangement, the clinic must
-bill the Medicare Advantage plan first, then the MAC, for the Medicare Advantage Wrap-
-Around Payment (Revenue Code 519) before billing Medi-Cal.
-Note (For UB-04 claim forms): Do not enter Medicare status information in Condition Codes
-(boxes 24-30) fields. The following statement must be included in the Remarks (Box
-80) field of the claim or submit it as an 8 1/2" x 11" attachment: “For a fee-for-service
-Medi-Cal member enrolled in a fee-for-service Medicare Advantage Plan.”
+bill the Medicare Advantage plan first, then the MAC, for the Medicare Advantage
+Wrap-Around Payment (Revenue Code 519) before billing Medi-Cal.
+Note: (For UB-04 claim forms): Do not enter Medicare status information in Condition
+Codes (boxes 24-30) fields. The following statement must be included in the Remarks
+(Box 80) field of the claim or submit it as an 8 1/2" x 11" attachment: “For a fee-for-
+service Medi-Cal member enrolled in a fee-for-service Medicare Advantage Plan.”
 Table of Per Visit Billing Code Sets: Cross Over Claims Payment for Fee-For-Service
 Members Enrolled in Medicare Advantage Plan (Capitated Arrangement)
 Revenue

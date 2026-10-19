@@ -1770,9 +1770,9 @@ urethral procedures, NOS)
 ben fam
 52
 Family PACT – Benefits: Family Planning
-Page updated: June 2022
+Page updated: October 2026
 Procedures
-‹‹CPT Code Table: Procedures››
+CPT Code Table: Procedures
 CPT Code Description
 54865 Exploration of epididymis, with or without biopsy
 55110 Scrotal exploration
@@ -1780,6 +1780,13 @@ CPT Code Description
 Reproductive Health Screening Tests
 These services may be provided as clinically indicated. These services are not reimbursable
 for Z30.012, Z30.09 and Z31.61 as noted in preceding pages in this section.
+‹‹Client/Self-Collected Specimens
+Consistent with all applicable U.S. Food and Drug Administration (FDA) guidance,
+indications and labeling, Family PACT covers laboratory testing using client/self-collected
+specimens (for example, STI testing), whether collected in a healthcare facility or outside of
+a healthcare facility.
+Note: Claims must include the applicable CPT code associated with the laboratory test, as
+listed in this policy section and any other applicable sections.››
 Table of Reproductive Health Screening Tests
 CPT Code Description
 Reflex Testing (based on a
