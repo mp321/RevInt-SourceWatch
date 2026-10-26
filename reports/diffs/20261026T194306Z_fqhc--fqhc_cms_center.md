@@ -1,0 +1,260 @@
+# Change: fqhc_cms_center
+
+- Program: fqhc
+- Source: https://www.cms.gov/medicare/payment/prospective-payment-systems/federally-qualified-health-centers-fqhc-center
+- Detected: 2026-10-26T19:43:06+00:00
+
+Verify against the live official source before acting.
+Machine-extracted text; diffs can contain extraction noise.
+
+## Billing codes on the changed lines
+
+Heuristic extraction from changed lines only - **verify every row against the live source before acting**. Page numbers come from the extracted-text snapshot; this source is not a PDF, so no page links.
+
+| Code | System | Direction | Confidence | Page | Context (excerpt) |
+|---|---|---|---|---|---|
+| `10501` | CPT | both | medium |  | Supporting Information (PDF) Section 10501 of the Patient Protection and Affordable Care Act of 2010 |
+
+## Text diff (previous -> current)
+
+```diff
+--- previous
++++ current
+@@ -25,48 +25,49 @@
+ Conditions (HAC) Physician bonuses in Health Professional Shortage Areas (HPSAs) Bankruptcy
+ Sustainable Growth Rates & Conversion Factors Competitive acquisition Medicare Advantage Rates &
+-Statistics Medicare-Medicaid coordination Back to menu section title h3 Qualified Medicare
+-beneficiary program Resources Qualified Medicare beneficiary program Spotlight Events Financial
+-alignment initiative Initiative to reduce avoidable hospitalizations Reports & Guidance Program of
+-All-Inclusive Care for the Elderly (PACE) Reporting Fraud Resources for Medicare-Medicaid plans
+-Resources for State Medicaid Agencies Healthcare Fraud Prevention Partnership Clinical Templates
+-Appeals & grievances Back to menu section title h3 Original Medicare appeals Managed Care appeals &
+-grievances Medicare Prescription drug appeals & grievances Ombudsman Center Appeals Decision Search
+-(Part C & Part D) Quality Back to menu section title h3 Value-based programs Person & Family
+-Engagement Quality Improvement Programs Nursing home quality improvement Inpatient Rehabilitation
+-Facility (IRF) Quality Reporting Program (QRP) Home Health Quality Reporting Program ESRD Quality
+-Incentive Program CMS National Quality Strategy Hospice Quality Reporting Program Long-Term Care
+-Hospital (LTCH) Quality Reporting Program (QRP) Appropriate Use Criteria Program Quality measures
+-Medicare Advantage quality improvement program Physician compare initiative Quality initiatives Part
+-C and D Performance Data Skilled Nursing Facility (SNF) Quality Reporting Program (QRP) Health &
+-safety standards Back to menu section title h3 Quality, Safety & Oversight Group (QSOG) Quality,
+-safety & oversight general information Certification & compliance Emergency preparedness Clinical
+-Laboratory Improvement Amendments (CLIA) Accreditation programs Conditions for coverage &
+-participation Home Health Agencies Employers & plan sponsors Back to menu section title h3
+-Creditable coverage IC-Placeholder-1 Audits & Compliance Back to menu section title h3 Part A cost
+-report audit Part C/Part D compliance & audits Forms & notices Back to menu section title h3 CMS
+-forms CMS forms list Beneficiary Notices Initiative (BNI) Health & drug plans Back to menu section
+-title h3 Plan payment Plan payment data Medical loss ratio Managed care marketing Medicare Advantage
+-application Medigap (Medicare supplement health insurance) Medical Savings Account (MSA) Private
+-Fee-for-Service Plans Health Care Prepayment Plans (HCPPs) Cost plans Special needs plans Network
+-adequacy Report a provider complaint about an MA plan Medicare Prescription Payment Plan
+-Coordination of benefits & recovery Back to menu section title h3 Overview Mandatory Insurer
+-Reporting for Group Health Plans (GHP) Mandatory insurer reporting (NGHP) Workers' comp Medicare set
+-aside arrangements Attorney services Beneficiary services COBA Trading Partners Employer services
+-Insurer services Prescription drug assistance programs Provider services Settlements Back to menu
+-section title h3 Jimmo Settlement Ryan Settlement Medicaid/CHIP Back to main menu section title h2
+-What is Medicaid? Back to menu section title h3 Visit Medicaid.gov View Medicaid maps Visit CHIP.gov
+-Medicare-Medicaid Coordination Back to menu section title h3 Integrated care resources Initiative to
+-reduce avoidable hospitalizations Financial alignment initiative Medicaid Integrity Institute RG-
+-Placeholder-1 IC-Placeholder-2 Community engagement support Back to menu section title h3
+-Eligibility made easy (Emmy) Marketplace & Private Insurance Back to main menu section title h2
+-About the Marketplace Back to menu section title h3 Marketplace oversight Affordable Care Act
+-Overview of the exchanges Exchange coverage maps Medicare and the Marketplace Health Insurance
+-Marketplace quality initiatives Private Health Insurance Back to menu section title h3 Patient’s
+-Bill of Rights Medical loss ratio Annual limits Review of insurance rates Market rating Self-funded,
+-non-federal governmental plans Grandfathered plans Health Reimbursement Arrangements Coverage for
+-young adults Student health plans Mental health parity and addiction equity Prevention Consumer
+-protections & enforcement Pre-existing condition insurance plan Qualifying Health Coverage (QHC) RG-
+-Placeholder-2 In-person assisters Back to menu section title h3 Information for Partners Assister
+-outreach & education Applications, forms, & notices Assister programs & procedures Assister
++Statistics Medicare-Medicaid coordination Back to menu section title h3 Program Integrity Pillars
++for Medicaid and the Children’s Health Insurance Program (CHIP) Qualified Medicare beneficiary
++program Resources Qualified Medicare beneficiary program Spotlight Events Financial alignment
++initiative Initiative to reduce avoidable hospitalizations Reports & Guidance Program of All-
++Inclusive Care for the Elderly (PACE) Reporting Fraud Resources for Medicare-Medicaid plans Program
++Integrity Pillars for Medicaid and the Children’s Health Insurance Program (CHIP) Healthcare Fraud
++Prevention Partnership Clinical Templates Appeals & grievances Back to menu section title h3
++Original Medicare appeals Managed Care appeals & grievances Medicare Prescription drug appeals &
++grievances Ombudsman Center Appeals Decision Search (Part C & Part D) Quality Back to menu section
++title h3 Value-based programs Person & Family Engagement Quality Improvement Programs Nursing home
++quality improvement Inpatient Rehabilitation Facility (IRF) Quality Reporting Program (QRP) Home
++Health Quality Reporting Program ESRD Quality Incentive Program CMS National Quality Strategy
++Hospice Quality Reporting Program Long-Term Care Hospital (LTCH) Quality Reporting Program (QRP)
++Appropriate Use Criteria Program Quality measures Medicare Advantage quality improvement program
++Physician compare initiative Quality initiatives Part C and D Performance Data Skilled Nursing
++Facility (SNF) Quality Reporting Program (QRP) Health & safety standards Back to menu section title
++h3 Quality, Safety & Oversight Group (QSOG) Quality, safety & oversight general information
++Certification & compliance Emergency preparedness Clinical Laboratory Improvement Amendments (CLIA)
++Accreditation programs Conditions for coverage & participation Home Health Agencies Employers & plan
++sponsors Back to menu section title h3 Creditable coverage IC-Placeholder-1 Audits & Compliance Back
++to menu section title h3 Part A cost report audit Part C/Part D compliance & audits Forms & notices
++Back to menu section title h3 CMS forms CMS forms list Beneficiary Notices Initiative (BNI) Health &
++drug plans Back to menu section title h3 Plan payment Plan payment data Medical loss ratio Managed
++care marketing Medicare Advantage application Medigap (Medicare supplement health insurance) Medical
++Savings Account (MSA) Private Fee-for-Service Plans Health Care Prepayment Plans (HCPPs) Cost plans
++Special needs plans Network adequacy Report a provider complaint about an MA plan Medicare
++Prescription Payment Plan Coordination of benefits & recovery Back to menu section title h3 Overview
++Mandatory Insurer Reporting for Group Health Plans (GHP) Mandatory insurer reporting (NGHP) Workers'
++comp Medicare set aside arrangements Attorney services Beneficiary services COBA Trading Partners
++Employer services Insurer services Prescription drug assistance programs Provider services
++Settlements Back to menu section title h3 Jimmo Settlement Ryan Settlement Medicaid/CHIP Back to
++main menu section title h2 What is Medicaid? Back to menu section title h3 Visit Medicaid.gov View
++Medicaid maps Visit CHIP.gov Medicare-Medicaid Coordination Back to menu section title h3 Integrated
++care resources Initiative to reduce avoidable hospitalizations Financial alignment initiative
++Medicaid Integrity Institute RG-Placeholder-1 IC-Placeholder-2 Community engagement support Back to
++menu section title h3 Eligibility made easy (Emmy) Marketplace & Private Insurance Back to main menu
++section title h2 About the Marketplace Back to menu section title h3 Marketplace oversight
++Affordable Care Act Overview of the exchanges Exchange coverage maps Medicare and the Marketplace
++Health Insurance Marketplace quality initiatives Private Health Insurance Back to menu section title
++h3 Patient’s Bill of Rights Medical loss ratio Annual limits Review of insurance rates Market rating
++Self-funded, non-federal governmental plans Grandfathered plans Health Reimbursement Arrangements
++Coverage for young adults Student health plans Mental health parity and addiction equity Prevention
++Consumer protections & enforcement Pre-existing condition insurance plan Qualifying Health Coverage
++(QHC) RG-Placeholder-2 In-person assisters Back to menu section title h3 Information for Partners
++Assister outreach & education Applications, forms, & notices Assister programs & procedures Assister
+ technical resources Assister training & webinars Assister Support Hub Agents & Brokers Back to menu
+ section title h3 Resources for Agent & Brokers Registration & training Open enrollment Direct
+@@ -86,72 +87,72 @@
+ section title h3 Overview Crushing Fraud, Waste, & Abuse Back to menu section title h3 Overview
+ E-health Back to menu section title h3 Overview Electronic Prior Authorization Back to menu section
+-title h3 Overview Flu Back to menu section title h3 Overview Health Technology Ecosystem Back to
+-menu section title h3 Overview Healthcare Advisory Committee Back to menu section title h3 Overview
+-Healthplan price transparency Back to menu section title h3 Overview Hospital price transparency
+-Back to menu section title h3 Overview Innovation Center Back to menu section title h3 Overview
+-About Key Concepts Model Data Value-Based Care Spotlight Innovation Models Where Innovation is
+-Happening Evaluations & Research Reports Lookup tools Back to menu section title h3 Overview Make
+-Hospital Food Healthier Pledge Back to menu section title h3 Overview Marketplace Open Enrollment
+-Back to menu section title h3 Overview Maternal Health Back to menu section title h3 Overview
+-Medicare OE partner resources Back to menu section title h3 Overview Medicare Open Enrollment Back
+-to menu section title h3 Overview Medicare Prescription Drug Affordability Back to menu section
+-title h3 Overview No Surprise Billing Back to menu section title h3 Overview Nursing Home Careers
+-Back to menu section title h3 Overview Get up to $40,000 in student loan repayment Open Payments
+-Back to menu section title h3 Overview Opioids Back to menu section title h3 Overview Your Patient
+-Rights Back to menu section title h3 Emergency Room Rights Medical bill rights Training & Education
+-Back to main menu section title h2 Medicare Training Back to menu section title h3 General resources
+-Open Enrollment resources Partner outreach resources Back to menu section title h3 Partner with CMS
+-National Medicare Education Program (NMEP) Low-Income Subsidy (LIS) outreach Faith-Based Partners
+-Rural Health Partners American Indian/Alaska Native Partnering with CMS Center Medicare Learning
+-Network® (MLN) Back to menu section title h3 Resources & training Newsletter Partnerships Compliance
+-CMS Open Door Forums Back to menu section title h3 About Open Door Forums Ambulance End-Stage Renal
+-Disease (ESRD) Dialysis Facility Care Compare Home Health, Hospice & Durable Medical Equipment (DME)
+-Hospital Long-Term Services & Supports Physicians, Nurses and Allied Health Professionals Rural
+-Health Skilled Nursing Facilities (SNFs)/Long-Term Care Special Open Door forums Look up topics Back
+-to menu section title h3 Medicare Medicaid CHIP American Indian/Alaska Native Center Quality of care
+-Special populations Fraud & abuse States Privacy Health conditions & campaigns New Medicare Card
+-HIPAA Administrative Simplification Learn More Back to menu section title h3 Attend events Find
+-resources Get training Find tools to help you help others Get digital media Find your provider type
+-Back to menu section title h3 Physicians & other health professionals Facilities Health & drug plans
+-Employers & unions FQHC Information Center Federally Qualified Health Centers Information Center
+-Your one-stop resource for Medicare payment rates, billing guidance, policy updates, and tools for
+-federally qualified health centers (FQHCs). Announcements Latest News CY 2026 Physician Fee Schedule
+-(PFS) Final Rule Effective January 1, 2026 Rural Health Clinic (RHC)/FQHC CY 2026 Non-Facility
+-Payment Rates View all announcements Resources Enrollment & Participation Medicare Provider-Supplier
+-Enrollment Enrollment Applications Conditions for Coverage (CfCs) & Conditions of Participation
+-(CoPs) CfC and CoP: RHC/FQHC Quality, Safety & Oversight - General Information FQHC Location
+-Identifier Coverage Medicare Coverage Medicare Coverage Database Program Manuals & Transmittals
+-Manuals State Medicaid Manual - Paper-Based Manual Medicare Claims Processing Manual, Chapter 9:
+-RHCs/FQHCs Medicare Benefit Policy Internet Only Manual, Chapter 13: RHC & FQHC Services
+-Transmittals Policies, Regulations, & Legislation Revisions to Payment Policies Under the Physician
+-Fee Schedule & Other Revisions to Part B for CY 2019 Revisions to Payment Policies under the
+-Physician Fee Schedule & Other Revisions to Part B for CY 2018 Previous FQHC Regulations & Other
+-Supporting Information (PDF) Section 10501 of the Patient Protection and Affordable Care Act of 2010
+-, as consolidated and amended through May 10, 2010 Billing & Payment CY 2026 Payment Rate Update to
+-the FQHC PPS (PDF) CY 2025 Payment Rate Update to the FQHC PPS (PDF) CY 2024 Payment Rate Update to
+-the FQHC PPS CY 2023 Payment Rate Update to the FQHC PPS CY 2022 Payment Rate Update to the FQHC PPS
+-CY 2021 Payment Rate Update to the FQHC PPS CY 2020 Payment Rate Update to the FQHC PPS
+-Grandfathered Tribal FQHCs Independent RHC & Freestanding FQHC Cost Report Form: CMS 222-92 (ZIP)
+-Coding HCPCS ICD-10 FQHC PPS Specific Payment Codes (PDF) - Updated 12/07/2017 FQHC Preventive
+-Services (PDF) : Information on preventive services in FQHCs including HCPCS coding, same day
+-billing, and waivers of co-insurance. Educational Resources Chronic Care Management Services (PDF)
+-booklet SE22001: Mental Health Visits via Telecommunications for RHCs & FQHCs Medicare Learning
+-Network® FAQs CY 2025 Telehealth FAQ (PDF) CY 2022 Physician Fee Schedule Final Rule FAQs (PDF) FQHC
+-PPS FAQs (PDF) - Updated 11/21/2019 COVID-19 FAQs for RHCs & FQHCs (PDF) Virtual Communication
+-Services in RHCs & FQHCs FAQs (PDF) Stay Informed Subscribe to our MLN Connects® newsletter to learn
+-about Medicare coverage, billing, and payment updates for health care providers Visit the Newsroom
+-for press releases and fact sheets Contacts Find your Medicare Administrative Contractor's website
+-Downloads FQHC GAFs - 01/01/2026 - 12/31/2026 FQHC GAFs - 01/01/2025 - 12/31/2025 FQHC GAFs -
+-01/01/2024 - 12/31/2024 (Updated 03/12/2024) FQHC GAFs - 01/01/2023 - 12-31/2023 FQHC GAFs -
+-01/01/2022 - 12/31/2022 FQHC GAFs - 01/01/2021 - 12/31/2021 FQHC GAFs - 01/01/2020 - 12/31/2020 FQHC
+-GAFs - 01/01/2019 – 12/31/2019 FQHC GAFs - 01/01/2018 – 12/31/2018 Previous FQHC PPS Geographic
+-Adjustment Factors Page Last Modified: 07/07/2026 12:19 PM Get email updates Sign up to get the
+-latest information about your choice of CMS topics. You can decide how often to receive updates.
+-Email Sign up - opens in a new window Sign up CMS & HHS Websites CMS & HHS Websites Medicare.gov
+-Medicaid.gov InsureKidsNow.gov HealthCare.gov HHS.gov HHS.gov/Open About CMS About CMS About Us
+-Careers Newsroom Tools Tools Acronyms Archive Contacts Glossary Helpful Links Helpful Links Privacy
+-Policy Plain Language Privacy Settings Nondiscrimination & Accessibility Developer Information
+-Vulnerability Disclosure Policy USA Government Sites USA Government Sites Freedom of Information Act
+-No Fear Act Inspector General USA.gov Connect with CMS Linkedin link Youtube link Facebook link
+-Twitter link A federal government website managed and paid for by the U.S. Centers for Medicare &
+-Medicaid Services. 7500 Security Boulevard, Baltimore, MD 21244
++title h3 Overview Employer Statement of Support Flu Back to menu section title h3 Overview Health
++Technology Ecosystem Back to menu section title h3 Overview Healthcare Advisory Committee Back to
++menu section title h3 Overview Healthplan price transparency Back to menu section title h3 Overview
++Hospital price transparency Back to menu section title h3 Overview Innovation Center Back to menu
++section title h3 Overview About Key Concepts Model Data Value-Based Care Spotlight Innovation Models
++Where Innovation is Happening Evaluations & Research Reports Lookup tools Back to menu section title
++h3 Overview Make Hospital Food Healthier Pledge Back to menu section title h3 Overview Marketplace
++Open Enrollment Back to menu section title h3 Overview Maternal Health Back to menu section title h3
++Overview Medicare OE partner resources Back to menu section title h3 Overview Medicare Open
++Enrollment Back to menu section title h3 Overview Medicare Prescription Drug Affordability Back to
++menu section title h3 Overview No Surprise Billing Back to menu section title h3 Overview Nursing
++Home Careers Back to menu section title h3 Overview Get up to $40,000 in student loan repayment Open
++Payments Back to menu section title h3 Overview Opioids Back to menu section title h3 Overview Your
++Patient Rights Back to menu section title h3 Emergency Room Rights Medical bill rights Training &
++Education Back to main menu section title h2 Medicare Training Back to menu section title h3 General
++resources Open Enrollment resources Partner outreach resources Back to menu section title h3 Partner
++with CMS National Medicare Education Program (NMEP) Low-Income Subsidy (LIS) outreach Faith-Based
++Partners Rural Health Partners American Indian/Alaska Native Partnering with CMS Center Medicare
++Learning Network® (MLN) Back to menu section title h3 Resources & training Newsletter Partnerships
++Compliance CMS Open Door Forums Back to menu section title h3 About Open Door Forums Ambulance End-
++Stage Renal Disease (ESRD) Dialysis Facility Care Compare Home Health, Hospice & Durable Medical
++Equipment (DME) Hospital Long-Term Services & Supports Physicians, Nurses and Allied Health
++Professionals Rural Health Skilled Nursing Facilities (SNFs)/Long-Term Care Special Open Door forums
++Look up topics Back to menu section title h3 Medicare Medicaid CHIP American Indian/Alaska Native
++Center Quality of care Special populations Fraud & abuse States Privacy Health conditions &
++campaigns New Medicare Card HIPAA Administrative Simplification Learn More Back to menu section
++title h3 Attend events Find resources Get training Find tools to help you help others Get digital
++media Find your provider type Back to menu section title h3 Physicians & other health professionals
++Facilities Health & drug plans Employers & unions FQHC Information Center Federally Qualified Health
++Centers Information Center Your one-stop resource for Medicare payment rates, billing guidance,
++policy updates, and tools for federally qualified health centers (FQHCs). Announcements Latest News
++CY 2026 Physician Fee Schedule (PFS) Final Rule Effective January 1, 2026 Rural Health Clinic
++(RHC)/FQHC CY 2026 Non-Facility Payment Rates View all announcements Resources Enrollment &
++Participation Medicare Provider-Supplier Enrollment Enrollment Applications Conditions for Coverage
++(CfCs) & Conditions of Participation (CoPs) CfC and CoP: RHC/FQHC Quality, Safety & Oversight -
++General Information FQHC Location Identifier Coverage Medicare Coverage Medicare Coverage Database
++Program Manuals & Transmittals Manuals State Medicaid Manual - Paper-Based Manual Medicare Claims
++Processing Manual, Chapter 9: RHCs/FQHCs Medicare Benefit Policy Internet Only Manual, Chapter 13:
++RHC & FQHC Services Transmittals Policies, Regulations, & Legislation Revisions to Payment Policies
++Under the Physician Fee Schedule & Other Revisions to Part B for CY 2019 Revisions to Payment
++Policies under the Physician Fee Schedule & Other Revisions to Part B for CY 2018 Previous FQHC
++Regulations & Other Supporting Information (PDF) Section 10501 of the Patient Protection and
++Affordable Care Act of 2010 , as consolidated and amended through May 10, 2010 Billing & Payment CY
++2026 Payment Rate Update to the FQHC PPS (PDF) CY 2025 Payment Rate Update to the FQHC PPS (PDF) CY
++2024 Payment Rate Update to the FQHC PPS CY 2023 Payment Rate Update to the FQHC PPS CY 2022 Payment
++Rate Update to the FQHC PPS CY 2021 Payment Rate Update to the FQHC PPS CY 2020 Payment Rate Update
++to the FQHC PPS Grandfathered Tribal FQHCs Independent RHC & Freestanding FQHC Cost Report Form: CMS
++222-92 (ZIP) Coding HCPCS ICD-10 FQHC PPS Specific Payment Codes (PDF) - Updated 12/07/2017 FQHC
++Preventive Services (PDF) : Information on preventive services in FQHCs including HCPCS coding, same
++day billing, and waivers of co-insurance. Educational Resources Chronic Care Management Services
++(PDF) booklet SE22001: Mental Health Visits via Telecommunications for RHCs & FQHCs Medicare
++Learning Network® FAQs CY 2025 Telehealth FAQ (PDF) CY 2022 Physician Fee Schedule Final Rule FAQs
++(PDF) FQHC PPS FAQs (PDF) - Updated 11/21/2019 COVID-19 FAQs for RHCs & FQHCs (PDF) Virtual
++Communication Services in RHCs & FQHCs FAQs (PDF) Stay Informed Subscribe to our MLN Connects®
++newsletter to learn about Medicare coverage, billing, and payment updates for health care providers
++Visit the Newsroom for press releases and fact sheets Contacts Find your Medicare Administrative
++Contractor's website Downloads FQHC GAFs - 01/01/2026 - 12/31/2026 FQHC GAFs - 01/01/2025 -
++12/31/2025 FQHC GAFs - 01/01/2024 - 12/31/2024 (Updated 03/12/2024) FQHC GAFs - 01/01/2023 -
++12-31/2023 FQHC GAFs - 01/01/2022 - 12/31/2022 FQHC GAFs - 01/01/2021 - 12/31/2021 FQHC GAFs -
++01/01/2020 - 12/31/2020 FQHC GAFs - 01/01/2019 – 12/31/2019 FQHC GAFs - 01/01/2018 – 12/31/2018
++Previous FQHC PPS Geographic Adjustment Factors Page Last Modified: 07/07/2026 12:19 PM Get email
++updates Sign up to get the latest information about your choice of CMS topics. You can decide how
++often to receive updates. Email Sign up - opens in a new window Sign up CMS & HHS Websites CMS & HHS
++Websites Medicare.gov Medicaid.gov InsureKidsNow.gov HealthCare.gov HHS.gov HHS.gov/Open About CMS
++About CMS About Us Careers Newsroom Tools Tools Acronyms Archive Contacts Glossary Helpful Links
++Helpful Links Privacy Policy Plain Language Privacy Settings Nondiscrimination & Accessibility
++Developer Information Vulnerability Disclosure Policy USA Government Sites USA Government Sites
++Freedom of Information Act No Fear Act Inspector General USA.gov Connect with CMS Linkedin link
++Youtube link Facebook link Twitter link A federal government website managed and paid for by the
++U.S. Centers for Medicare & Medicaid Services. 7500 Security Boulevard, Baltimore, MD 21244
+```
