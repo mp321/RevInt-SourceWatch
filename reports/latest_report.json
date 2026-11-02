@@ -1,20 +1,16 @@
 {
-  "generated": "2026-10-26T19:43:29+00:00",
+  "generated": "2026-11-02T22:35:38+00:00",
   "needs_review": [
-    "fpact_news_archive",
-    "fqhc_cms_center",
-    "rev_clinics_hospitals_manuals",
-    "rev_general_medicine_manuals",
-    "ncci_medicaid_files"
+    "fqhc_cms_center"
   ],
   "results": [
     {
       "program": "fpact",
       "id": "fpact_news_archive",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "linkpage",
-      "verdict": "CHANGED",
-      "detail": "content text hash differs",
+      "verdict": "unchanged",
+      "detail": "",
       "page_updated": "",
       "shell": false,
       "http": "200",
@@ -23,13 +19,13 @@
       "registry_keys": "",
       "registry_note": "triage per announcement",
       "note": "Program news archive; new post or PDF links = policy updates to read. Pattern excludes feed/json noise. Also catches re-versioned artifacts (e.g. a new Superbill filename).",
-      "diff_report": "reports/diffs/20261026T194209Z_fpact--fpact_news_archive.md",
+      "diff_report": "",
       "codes_touched": []
     },
     {
       "program": "fpact",
       "id": "fpact_manual_docs--00letter",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -47,7 +43,7 @@
     {
       "program": "fpact",
       "id": "fpact_manual_docs--0bhwtouse",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -65,7 +61,7 @@
     {
       "program": "fpact",
       "id": "fpact_manual_docs--1tocfpact",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -83,7 +79,7 @@
     {
       "program": "fpact",
       "id": "fpact_manual_docs--benclinic",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -101,7 +97,7 @@
     {
       "program": "fpact",
       "id": "fpact_manual_docs--benfam",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -119,7 +115,7 @@
     {
       "program": "fpact",
       "id": "fpact_manual_docs--benfamrel",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -137,7 +133,7 @@
     {
       "program": "fpact",
       "id": "fpact_manual_docs--bengrid",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -155,7 +151,7 @@
     {
       "program": "fpact",
       "id": "fpact_manual_docs--claimcms",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -173,7 +169,7 @@
     {
       "program": "fpact",
       "id": "fpact_manual_docs--claimub",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -191,7 +187,7 @@
     {
       "program": "fpact",
       "id": "fpact_manual_docs--clientelig",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -209,7 +205,7 @@
     {
       "program": "fpact",
       "id": "fpact_manual_docs--clinic",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -227,7 +223,7 @@
     {
       "program": "fpact",
       "id": "fpact_manual_docs--drug",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -245,7 +241,7 @@
     {
       "program": "fpact",
       "id": "fpact_manual_docs--drugonsite",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -263,7 +259,7 @@
     {
       "program": "fpact",
       "id": "fpact_manual_docs--fam",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -281,7 +277,7 @@
     {
       "program": "fpact",
       "id": "fpact_manual_docs--hapid",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -299,7 +295,7 @@
     {
       "program": "fpact",
       "id": "fpact_manual_docs--lab",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -317,7 +313,7 @@
     {
       "program": "fpact",
       "id": "fpact_manual_docs--office",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -335,7 +331,7 @@
     {
       "program": "fpact",
       "id": "fpact_manual_docs--pharm",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -353,7 +349,7 @@
     {
       "program": "fpact",
       "id": "fpact_manual_docs--pharmacy",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -371,7 +367,7 @@
     {
       "program": "fpact",
       "id": "fpact_manual_docs--progstand",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -389,7 +385,7 @@
     {
       "program": "fpact",
       "id": "fpact_manual_docs--provenrollres",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -407,7 +403,7 @@
     {
       "program": "fpact",
       "id": "fpact_manual_docs--provrel",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -425,7 +421,7 @@
     {
       "program": "fpact",
       "id": "fpact_manual_docs--radif",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -443,7 +439,7 @@
     {
       "program": "fpact",
       "id": "fpact_manual_docs--tarf",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -461,7 +457,7 @@
     {
       "program": "medi_cal_ffs",
       "id": "ffs_tri_fee_schedule",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "binary",
       "verdict": "unchanged",
       "detail": "304 not modified",
@@ -479,7 +475,7 @@
     {
       "program": "medi_cal_ffs",
       "id": "ffs_sb94_fp_fee_schedule",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "binary",
       "verdict": "unchanged",
       "detail": "304 not modified",
@@ -497,7 +493,7 @@
     {
       "program": "managed_medi_cal",
       "id": "mcp_apl_index",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "html",
       "verdict": "unchanged",
       "detail": "",
@@ -515,7 +511,7 @@
     {
       "program": "managed_medi_cal",
       "id": "mcp_boilerplate_contract",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "pdf",
       "verdict": "unchanged",
       "detail": "304 not modified",
@@ -533,7 +529,7 @@
     {
       "program": "managed_medi_cal",
       "id": "mcp_tri_faq",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "pdf",
       "verdict": "unchanged",
       "detail": "304 not modified",
@@ -551,7 +547,7 @@
     {
       "program": "fqhc",
       "id": "fqhc_cms_center",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "html",
       "verdict": "CHANGED",
       "detail": "content text hash differs",
@@ -563,14 +559,14 @@
       "registry_keys": "",
       "registry_note": "",
       "note": "G2025 rate, care-management code set, telehealth expiries.",
-      "diff_report": "reports/diffs/20261026T194306Z_fqhc--fqhc_cms_center.md",
+      "diff_report": "reports/diffs/20261102T223516Z_fqhc--fqhc_cms_center.md",
       "codes_touched": [
         {
           "code": "10501",
           "system": "CPT",
           "direction": "both",
           "confidence": "medium",
-          "context": "Supporting Information (PDF) Section 10501 of the Patient Protection and Affordable Care Act of 2010",
+          "context": "Regulations & Other Supporting Information (PDF) Section 10501 of the Patient Protection and",
           "page": null
         }
       ]
@@ -578,7 +574,7 @@
     {
       "program": "fqhc",
       "id": "fqhc_dhcs_3097_page",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "html",
       "verdict": "unchanged",
       "detail": "",
@@ -596,7 +592,7 @@
     {
       "program": "fqhc",
       "id": "fqhc_rural_manual_docs--rural",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -614,7 +610,7 @@
     {
       "program": "fqhc",
       "id": "fqhc_rural_manual_docs--ruralcd",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -632,7 +628,7 @@
     {
       "program": "fqhc",
       "id": "fqhc_rural_manual_docs--ruralex",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -650,7 +646,7 @@
     {
       "program": "fqhc",
       "id": "fqhc_rural_manual_docs--ruralhosp",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -668,7 +664,7 @@
     {
       "program": "obstetrics",
       "id": "ob_cpsp_manual_docs--pregcom",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -686,7 +682,7 @@
     {
       "program": "obstetrics",
       "id": "ob_cpsp_manual_docs--pregcomexc",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -704,7 +700,7 @@
     {
       "program": "obstetrics",
       "id": "ob_cpsp_manual_docs--pregcomlis",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "manual_list",
       "verdict": "unchanged",
       "detail": "",
@@ -722,7 +718,7 @@
     {
       "program": "revision_notices",
       "id": "rev_inpatient_manuals",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "revision_watch",
       "verdict": "unchanged",
       "detail": "115 sections, no revision-date movement",
@@ -739,10 +735,10 @@
     {
       "program": "revision_notices",
       "id": "rev_clinics_hospitals_manuals",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "revision_watch",
-      "verdict": "REVISION_NOTICE",
-      "detail": "1 of 247 manual sections moved: 'List of Contracted Incontinence Creams and Washes' revised 2026-10-16 -> 2026-10-20",
+      "verdict": "unchanged",
+      "detail": "247 sections, no revision-date movement",
       "page_updated": "",
       "shell": "",
       "http": "",
@@ -756,7 +752,7 @@
     {
       "program": "revision_notices",
       "id": "rev_obstetrics_manuals",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "revision_watch",
       "verdict": "unchanged",
       "detail": "173 sections, no revision-date movement",
@@ -773,10 +769,10 @@
     {
       "program": "revision_notices",
       "id": "rev_general_medicine_manuals",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "revision_watch",
-      "verdict": "REVISION_NOTICE",
-      "detail": "1 of 230 manual sections moved: 'List of Contracted Incontinence Creams and Washes' revised 2026-10-16 -> 2026-10-20",
+      "verdict": "unchanged",
+      "detail": "230 sections, no revision-date movement",
       "page_updated": "",
       "shell": "",
       "http": "",
@@ -790,10 +786,10 @@
     {
       "program": "ncci",
       "id": "ncci_medicaid_files",
-      "checked_at": "2026-10-26T19:42:06+00:00",
+      "checked_at": "2026-11-02T22:34:19+00:00",
       "type": "linkpage",
-      "verdict": "CHANGED",
-      "detail": "content text hash differs",
+      "verdict": "unchanged",
+      "detail": "",
       "page_updated": "",
       "shell": false,
       "http": "200",
@@ -802,7 +798,7 @@
       "registry_keys": "",
       "registry_note": "",
       "note": "Quarterly PTP/MUE file drops appear as new links (first run captured the 2026 Q3 set effective 07/01/2026). File links are direct downloads (.zip/.xlsx).",
-      "diff_report": "reports/diffs/20261026T194329Z_ncci--ncci_medicaid_files.md",
+      "diff_report": "",
       "codes_touched": []
     }
   ]
